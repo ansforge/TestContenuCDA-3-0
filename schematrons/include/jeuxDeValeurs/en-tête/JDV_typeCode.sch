@@ -18,10 +18,9 @@
         31/05/11 : FMY ASIP/PRAS : Création
         27/10/20 : renommage de ce schématron en JDV_typeCode (ancien nom documentCode)
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_typeCode" is-a="abstractTypeCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_typeCode" is-a="dansJeuDeValeurs">
     <p>Conformité au CI-SIS du type de document</p>
-    <param name="path_jdv1" value="$jdv_typeCode_1"/>
-    <param name="path_jdv2" value="$jdv_typeCode_2"/>
+    <param name="path_jdv" value="$jdv_typeCode"/>
     <param name="vue_elt" value="'ClinicalDocument/code'"/>
     <param name="xpath_elt" value="cda:ClinicalDocument/cda:code"/>
     <param name="nullFlavor" value="0"/>

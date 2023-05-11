@@ -13,7 +13,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_OBP">
     
     <rule context='cda:ClinicalDocument'>
-         
+        
         <assert test="cda:participant">
             [Entete_OBP] Le médecin traitant est un élément obligatoire des modèles OBP
         </assert>

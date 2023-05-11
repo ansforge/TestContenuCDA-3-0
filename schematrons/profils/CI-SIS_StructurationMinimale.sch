@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- 
     CI-SIS_StructurationMinimale.sch
     ......................................................................................................................................................
@@ -83,7 +84,6 @@
     <include href="../abstract/abstractSpecialty.sch"/> 
     <include href="../abstract/abstractStandardIndustryClassCode.sch"/>
     <include href="../abstract/typeCodeDansJeuDeValeurs.sch"/> 
-    <include href="../abstract/abstractTypeCode.sch"/>
     <include href="../abstract/abstractEncompassingEncounterCode.sch"/>
     
     
@@ -247,9 +247,7 @@
         <let name="jdv_participantAssociatedEntityCode_6" value="'../../jeuxDeValeurs/TRE_R96-AutreProfDomSanitaire.xml'"/>
         <let name="jdv_standardIndustryClassCode_1" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
         <let name="jdv_standardIndustryClassCode_2" value="'../../jeuxDeValeurs/TRE_A01-CadreExercice.xml'"/>
-        <let name="jdv_typeCode_1" value="'../../jeuxDeValeurs/TRE_A04-Loinc.xml'"/>
-        <let name="jdv_typeCode_2" value="'../../jeuxDeValeurs/TRE_A05-TypeDocComplementaire.xml'"/>
-        <!-- <let name="jdv_typeCode" value="'../../jeuxDeValeurs/JDV_J07-XdsTypeCode-CISIS.xml'"/> --> 
+        <let name="jdv_typeCode" value="'../../jeuxDeValeurs/JDV_J07-XdsTypeCode-CISIS.xml'"/> 
         <let name="jdv_confidentialityCode" value="'../../jeuxDeValeurs/TRE_A08-HL7Confidentiality.xml'"/>
         <let name="jdv_encompassingEncounterCode_1" value="'../../jeuxDeValeurs/TRE_R304-HL7v3ActCode.xml'"/>
         <let name="jdv_encompassingEncounterCode_2" value="'../../jeuxDeValeurs/TRE_R305-TypeRencontre.xml'"/>

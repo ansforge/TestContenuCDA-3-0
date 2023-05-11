@@ -9,6 +9,7 @@
     28/10/2013 : Création - OBP_activeProblemSectionEntries20131028.sch
     25/10/2017 : Renommage du schématron en S_activeProblem_OBP.sch
     24/10/2022 : version 2022.01
+    11/05/2023 : Version 2023.01
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="S_activeProblem_OBP-SAP">
@@ -27,12 +28,6 @@
         </assert>
         <assert test="//cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:value/@code='O42'">
             [S_activeProblem_OBP-SAP] : La section FR-Problemes-actifs doit contenir une entrée FR-Probleme pour "Rupture prématurée des membranes"
-        </assert>
-        <assert test="//cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:value/@code='O16'">
-            [S_activeProblem_OBP-SAP] : La section FR-Problemes-actifs doit contenir une entrée FR-Probleme pour "Hypertension de la mère, sans précision"
-        </assert>
-        <assert test="//cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:value/@code='E14'">
-            [S_activeProblem_OBP-SAP] : La section FR-Problemes-actifs doit contenir une entrée FR-Probleme pour "Diabète sucré, sans précision"
         </assert>
         <assert test="//cda:act/cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:value/@code='N39.0'">
             [S_activeProblem_OBP-SAP] : La section FR-Problemes-actifs doit contenir une entrée FR-Probleme pour "Infection des voies urinaires, siège non précisé"

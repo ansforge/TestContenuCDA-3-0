@@ -7,6 +7,7 @@
     Historique :
     07/02/2018 : Création
     25/10/2022 : Version 2022.01
+    11/05/2023 : Version 2023.01
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_OBP-SAP">
@@ -17,10 +18,10 @@
             [Entete_OBP-SAP] Le template du modèle OBP-SAP (1.2.250.1.213.1.1.1.12.1) doit être présent.
         </assert>
         
-        <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
-            [Entete_OBP-SAP] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1". 
+        <assert test="./cda:code[@code='57055-6' and @codeSystem='2.16.840.1.113883.6.1']"> 
+            [Entete_OBP-SAP] L'élément code doit avoir @code ="57055-6" et @codeSystem = "2.16.840.1.113883.6.1". 
         </assert>
-         
+        
         <assert test="cda:participant">
             [Entete_OBP-SAP] Le médecin traitant est un élément obligatoire du modèle OBP-SAP
         </assert>
@@ -34,9 +35,10 @@
         
     </rule>
     <rule context="cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent">
-        <assert test="cda:code[@code='57055-6']">
-            [Entete_OBP-SAP] L'attribut code de documentationOf/serviceEvent/Code est fixé à '57055-6'
-        </assert>        
+        
+        <assert test="cda:code[@code='11429006']">
+            [Entete_OBP-SAP] L'attribut code de documentationOf/serviceEvent/Code est fixé à '11429006'
+        </assert>       
     </rule>    
     
 </pattern>
