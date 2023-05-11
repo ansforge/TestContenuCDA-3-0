@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Créé par nmahraz, le 03/02/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.705" displayName="JDV_Actes-CS8-CISIS" version="test"><ConceptList><Concept code="MED-174" displayName="Gestes techniques spécialisés" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="GEN-085" displayName="Dépistage néonatal" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>

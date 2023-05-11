@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_ExamenMicroscopiqueTumeurNiveauInfiltration_CISIS" is-a="dansJeuDeValeurs">
+    <param name="path_jdv" value="$jdv_ExamenMicroscopiqueTumeurNiveauInfiltration_CISIS"/>
+    <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value"/>
+    <param name="xpath_elt" value="cda:procedure[cda:templateId/@root='1.3.6.1.4.1.19376.1.8.1.4.9' 
+        and cda:code/@code='96115-1']/cda:value"/>
+    <param name="nullFlavor" value="0"/>
+</pattern> 
+
+
+

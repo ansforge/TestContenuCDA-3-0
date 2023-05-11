@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Créé par nmahraz, le 03/02/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
+    <ValueSet id="1.2.250.1.213.1.1.5.111" displayName="JDV_DateCons-CISIS" version="test">
+        <ConceptList>
+            <Concept code="GEN-109" displayName="Non suivie" codeSystem="1.2.250.1.213.1.1.4.322"
+                dateValid="20100101000000" dateFin=""/>
+            <Concept code="GEN-094" displayName="1er trimestre" codeSystem="1.2.250.1.213.1.1.4.322"
+                dateValid="20100101000000" dateFin="20230206000000"/>
+            <Concept code="57630001" displayName="premier trimestre de la grossesse" codeSystem="2.16.840.1.113883.6.96"
+                dateValid="20230206000000" dateFin=""/>
+            <Concept code="GEN-095" displayName="2ème trimestre"
+                codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230206000000"/>
+            <Concept code="59466002" displayName="deuxième trimestre de la grossesse"
+                codeSystem="2.16.840.1.113883.6.96" dateValid="20230206000000" dateFin=""/>
+            <Concept code="GEN-096" displayName="3ème trimestre"
+                codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230206000000"/>
+            <Concept code="41587001" displayName="troisième trimestre de la grossesse"
+                codeSystem="2.16.840.1.113883.6.96" dateValid="20230206000000" dateFin=""/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

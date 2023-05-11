@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20200529120000" dateValid="20200529120000" description="Civilité pour ENREG" displayName="JDV_J113-Civilite-ENREG.tabs" id="1.2.250.1.213.1.6.1.184" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J113-Civilite-ENREG">
+        <ConceptList>
+            <Concept code="M" codeSystem="1.2.250.1.213.1.6.1.69" displayName="Monsieur"/>
+            <Concept code="MME" codeSystem="1.2.250.1.213.1.6.1.69" displayName="Madame"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20200424120000" dateValid="20101104000000" description="Producteur de document non PS" displayName="TRE_A00-ProducteurDocNonPS.tabs" id="1.2.250.1.213.1.1.4.6" typeFichier="TRE" urlFichier="https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS">
+        <ConceptList>
+            <Concept code="ALIM_AM" codeSystem="1.2.250.1.213.1.1.4.6" dateFin="" dateMaj="20160901000000" dateValid="20160901000000" displayName="Alimentation automatique à partir du Système d'Information de l'Assurance Maladie" longDesignation="Alimentation auto à partir du SI de l'Ass Maladie" shortDesignation="Alim auto à partir du SI-AM"/>
+            <Concept code="DISPOSITIF" codeSystem="1.2.250.1.213.1.1.4.6" dateFin="" dateMaj="20101104000000" dateValid="20101104000000" displayName="Dispositif médical" longDesignation="Dispositif médical" shortDesignation="Dispositif médical"/>
+            <Concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" dateFin="" dateMaj="20101104000000" dateValid="20101104000000" displayName="Expression personnelle du patient" longDesignation="Expression personnelle du patient" shortDesignation="Expres perso patient"/>
+            <Concept code="SECRETARIAT_MEDICAL" codeSystem="1.2.250.1.213.1.1.4.6" dateFin="" dateMaj="20101104000000" dateValid="20101104000000" displayName="Secrétariat médical" longDesignation="Secrétariat médical" shortDesignation="Secrétariat médical"/>
+            <Concept code="AUTOMATE" codeSystem="1.2.250.1.213.1.1.4.6" dateFin="" dateMaj="20190426120000" dateValid="20190426120000" displayName="Automate" longDesignation="Automate" shortDesignation="Automate"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
