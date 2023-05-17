@@ -62,9 +62,9 @@
         </assert>
         
         <!-- Vérifier que la section 'FR-Signes-vitaux' contient [1..1] entrée Entrée FR-Signe-vital-observé "1.3.6.1.4.1.19376.1.5.3.1.4.13.2" : Saturation en oxygène -->
-        <assert test='count(.//cda:observation[cda:templateId/@root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2" and cda:code/@code="2708-6"])=1'>
+        <assert test='count(.//cda:observation[cda:templateId/@root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2" and cda:code/@code="59408-5"])=1'>
             [S_SignesVitaux-CISIS.sch] Erreur de conformité au modèle ANEST-CR-CPA : Une section FR-Signes-vitaux (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2) doit obligatoirement contenir une entrée [1..1] FR-Signe-vital-observé "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"
-            avec un élément code dont l'attribut @code='2708-6'.
+            avec un élément code dont l'attribut @code='59408-5'.
         </assert>
         
     </rule>
