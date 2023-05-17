@@ -5,6 +5,6 @@
     <param name="vue_elt"
         value="ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value"/>
     <param name="xpath_elt"
-        value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:organizer/cda:component/cda:observation[cda:code/@code='33725-3']/cda:value"/>
+        value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:organizer/cda:component/cda:observation[cda:code/@code='33731-1']/cda:value"/>
     <param name="nullFlavor" value="0"/>
 </pattern>

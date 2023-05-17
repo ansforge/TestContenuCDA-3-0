@@ -13,7 +13,7 @@
     <p>Conformité CI-SIS du type PM</p>
     <param name="path_jdv" value="$jdv_UFCV_TypeDM-CARD-F-PRC-PSC"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/supply/entryRelationship/observation/value"/>
-    <param name="xpath_elt" value="cda:supply[cda:templateId/@root='1.2.250.1.213.1.1.3.20' and cda:participant/cda:participantRole/cda:playingDevice/cda:code[@code='D0001-2']]//cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.1' and cda:code/@code='L0036']/cda:value"/>
+    <param name="xpath_elt" value="cda:supply[cda:templateId/@root='1.2.250.1.213.1.1.3.20' and cda:participant/cda:participantRole/cda:playingDevice/cda:code[@code='D0001-2']]//cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13' and cda:code/@code='L0036']/cda:value"/>
     <param name="nullFlavor" value="0"/>
 </pattern>   
 
