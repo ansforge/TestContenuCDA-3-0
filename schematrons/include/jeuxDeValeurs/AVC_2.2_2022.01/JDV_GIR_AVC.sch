@@ -9,6 +9,6 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_GIR_AVC" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$jdv_AVC_GIR"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/value"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation/cda:value[@displayName='']"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:code[cda:translation/@code='MED-346']]/cda:value"/>
     <param name="nullFlavor" value="1"/>
 </pattern> 

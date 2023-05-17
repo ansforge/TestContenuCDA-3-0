@@ -9,8 +9,8 @@
 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_TroubleVisuel" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$JDV_TroubleVisuel"/>
-    <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/entryRelationship/observation/value"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='H53.9']/cda:entryRelationship/cda:observation/cda:value"/>
+    <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/targetSiteCode"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='H53.9']/cda:targetSiteCode"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   
 

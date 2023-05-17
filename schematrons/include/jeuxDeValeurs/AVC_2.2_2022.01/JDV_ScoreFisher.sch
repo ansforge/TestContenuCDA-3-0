@@ -10,7 +10,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_ScoreFisher" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$JDV_ScoreFisher"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/entryRelationship/observation/interpretationCode"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='D3-89110']/cda:entryRelationship/cda:observation/cda:interpretationCode"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation/cda:entryRelationship/cda:observation[cda:code/@code='MED-485']/cda:interpretationCode"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   
 
