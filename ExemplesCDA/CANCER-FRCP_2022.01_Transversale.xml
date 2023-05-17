@@ -1271,7 +1271,7 @@
                                     <originalText><reference value="#morphologie-1"/></originalText>
                                 </value> -->
                   <!-- [0..1] Topographie : JDV_Tumeur-CISIS -->
-                  <targetSiteCode code="C50.2" displayName="Quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O">
+                  <targetSiteCode code="C50.2" displayName="Tumeur maligne du quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#topographie-1" />
                     </originalText>

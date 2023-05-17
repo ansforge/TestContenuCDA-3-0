@@ -608,7 +608,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.50" />
                   <id root="B9F74538-834B-441A-BEA8-707EF4644160" />
-                  <code code="2708-6" displayName="Saturation en oxygène" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <code code="59408-5" displayName="Saturation en oxygène" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <text>
                     <reference value="#frequence-cardiaque" />
                   </text>
@@ -2098,7 +2098,7 @@
                 <low value="20200323" />
               </effectiveTime>
               <!-- JDV_FacteursDeRisqueProfessionnels-CISIS (1.2.250.1.213.1.1.5.490) -->
-              <value xsi:type="CD" code="43164-3" displayName="Silice" codeSystem="2.16.840.1.113883.6.1" />
+              <value xsi:type="CD" code="83581005" displayName="silice colloidale" codeSystem="2.16.840.1.113883.6.96" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Habitus-Mode-de-vie : Risques environnementaux -->

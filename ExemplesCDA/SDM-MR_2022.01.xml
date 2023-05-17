@@ -125,7 +125,7 @@
     <time value="20190128120000+0100" />
     <assignedAuthor>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-      <code code="G15_10/SCH39" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>48</houseNumber>
         <streetName>Bd Sérurier</streetName>
@@ -196,7 +196,7 @@
     <signatureCode code="S" />
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-      <code code="G15_10/SCH39" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>48</houseNumber>
         <streetName>Bd Sérurier</streetName>
@@ -722,7 +722,7 @@
                 <time nullFlavor="NA" />
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-                  <code code="G15_10/SCH39" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
                   <addr nullFlavor="NASK" />
                   <telecom nullFlavor="NASK" />
                   <assignedPerson>
@@ -869,7 +869,7 @@
                 <time nullFlavor="NA"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-                  <code code="G15_10/SCH39" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
                   <addr>
                     <houseNumber>48</houseNumber>
                     <streetName>Bd Sérurier</streetName>
@@ -1248,7 +1248,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
-                  <value xsi:type="CD" code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" />
+                  <value xsi:type="CD" code="GEN-092.04.17" displayName="Autre technique diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" />
                 </observation>
               </entryRelationship>
               <!-- [1..*] FR-Simple-Observation : Investigations réalisées  -->

@@ -2164,7 +2164,7 @@
                   <c:code code="MED-568" displayName="Traitement"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="MED-124" displayName="Autres traitements (à préciser)"
+                      <c:value code="GEN-092.03.01" displayName="Autre(s) traitement(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </c:qualifier>
                   </c:code>
@@ -2518,7 +2518,7 @@
                   <c:code code="MED-570" displayName="Mesure associée"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="GEN-092" displayName="Autre"
+                      <c:value code="GEN-092.04.11" displayName="Autre mesure"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </c:qualifier>
                   </c:code>
@@ -3465,7 +3465,7 @@
                   <c:code code="MED-573" displayName="Accompagnement social ou socioprofessionnel"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="GEN-092" displayName="Autre"
+                      <c:value code="GEN-092.04.08" displayName="Autre type d'accompagnement socioprofessionnel"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </c:qualifier>
                   </c:code>
@@ -3658,8 +3658,8 @@
                   <!-- Date de mise à jour du statut du document -->
                   <c:effectiveTime value="20210113"/>
                   <!-- Statut du document -->
-                  <c:value xsi:type="c:CD" code="GEN-068" displayName="Validé"
-                    codeSystem="1.2.250.1.213.1.1.4.322"/>
+                  <c:value xsi:type="c:CD" code="9571008" displayName="approuvé"
+                    codeSystem="2.16.840.1.113883.6.96"/>
                   <!-- [0..1] Entrée FR-Commentaire-ER : Commentaire sur le document -->
                   <c:entryRelationship inversionInd="true" typeCode="SUBJ">
                     <c:act classCode="ACT" moodCode="EVN">

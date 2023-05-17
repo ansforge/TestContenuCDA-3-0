@@ -1318,7 +1318,7 @@
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
                      <!-- Valeur provenant de JDV_MotifHospitalisationCSE-CISIS(1.2.250.1.213.1.1.5.681)  -->
-                     <value xsi:type="CD" code="GEN-092" displayName="Autre"
+                     <value xsi:type="CD" code="GEN-092.01.08" displayName="Autre motif d'hospitalisation"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <!-- Pas d'autres motif d'hospitalisation (value="false") donc pas d'entryrelationship FR-Commentaire-ER 
                      venant préciser le motif d'hospitalisation -->

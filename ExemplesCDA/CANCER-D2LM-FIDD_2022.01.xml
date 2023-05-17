@@ -276,7 +276,7 @@
   </participant>
   
   <!-- participant : Gynécologue -->
-  <participant typeCode="TRC">
+  <participant typeCode="CON">
     <functionCode code="CORRE" displayName="Correspondant" codeSystem="1.2.250.1.213.1.1.4.2.280"/>
     <time nullFlavor="NA"/>
     <associatedEntity classCode="PROV">
@@ -314,7 +314,7 @@
   </participant>
   
   <!-- participant : Sage-femme -->
-  <participant typeCode="TRC">
+  <participant typeCode="CON">
     <functionCode code="CORRE" displayName="Correspondant" codeSystem="1.2.250.1.213.1.1.4.2.280"/>
     <time nullFlavor="NA"/>
     <associatedEntity classCode="PROV">

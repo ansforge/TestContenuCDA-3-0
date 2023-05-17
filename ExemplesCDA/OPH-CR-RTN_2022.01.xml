@@ -236,7 +236,7 @@
   </participant>
 
   <!-- Ophtalmologiste -->
-  <participant typeCode="REFT">
+  <participant typeCode="CON">
     <functionCode code="CORRE" displayName="Correspondant" codeSystem="1.2.250.1.213.1.1.4.2.280"></functionCode>
     <time xsi:type="IVL_TS">
       <low value="20211104111700+0100" />
