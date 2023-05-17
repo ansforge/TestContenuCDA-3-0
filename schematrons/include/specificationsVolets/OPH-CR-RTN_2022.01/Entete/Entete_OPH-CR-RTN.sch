@@ -24,10 +24,10 @@
         </assert>
         
         <!-- Volet OPH-CR-RTN : "L'ophtalmologiste est un élément obligatoire" -->
-        <assert test="cda:participant[@typeCode='REFT']"> 
+        <assert test="cda:participant[@typeCode='CON']"> 
             [Entete_OPH-CR-RTN] Erreur de conformité : 
             L'élément participant ophtalmologiste  est un élément obligatoire du volet OPH-CR-RTN 
-            (attribut typeCode fixé à 'REFT')
+            (attribut typeCode fixé à 'CON')
         </assert>
         
         <assert test="cda:participant[@typeCode='REF']/cda:associatedEntity/cda:telecom"> 
