@@ -20,17 +20,18 @@
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_AVC-AUNV_2.2_2022.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_AVC-AUNV_2.2_2022.01.sch">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    schemaVersion="CI-SIS_AVC-AUNV_2.2_2022.01.sch">
     <title>Vérification de la conformité au modèle AVC-AUNV_2.2</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
     <ns prefix="svs" uri="urn:ihe:iti:svs:2008"/>
-    
+
     <!-- Abstract patterns -->
     <include href="abstract/dansJeuDeValeurs.sch"/>
-    <include href="abstract/IVL_TS.sch"/>   
-    
+    <include href="abstract/IVL_TS.sch"/>
+
     <!-- JDV -->
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ModeDeTransport.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TopoTrouble.sch"/>
@@ -38,8 +39,6 @@
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_LateraliteManuelle.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TroubleVisuel.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_AutresSymptomesAVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TypeDiabete.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TypeMigraine.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_CddFA.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_SiteIntervention.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_AutreSymptomeExNeuro.sch"/>
@@ -69,19 +68,23 @@
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_LocaThromboseVeineuse.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TypeTraitementIV.sch"/>
     <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_StatutEvt.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ScoreFisher.sch"/>   
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_AntecedantsMedicaux-CISIS.sch"/>  
-    
+    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ScoreFisher.sch"/>
+    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_AntecedantsMedicaux-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenHemostaseAUVN.sch"/>
+    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenBiochimieAUVN.sch"/>
+    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenHematologieAUNV.sch"/>
+
+
     <!--Entete-->
     <include href="include/specificationsVolets/AVC-AUNV_2.2_2022.01/Entete/Entete_AVC-AUNV.sch"/>
-    
+
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
     <!-- ::::::::::::::::::::::::::::::::::::: -->
-    
+
     <phase id="CI-SIS_AVC-AUNV_2.2_2022.01">
         <active pattern="variables"/>
-        
+
         <!-- JDV -->
         <active pattern="JDV_ModeDeTransport"/>
         <active pattern="JDV_TopoTrouble"/>
@@ -89,8 +92,6 @@
         <active pattern="JDV_LateraliteManuelle"/>
         <active pattern="JDV_TroubleVisuel"/>
         <active pattern="JDV_AutresSymptomesAVC"/>
-        <active pattern="JDV_TypeDiabete"/>
-        <active pattern="JDV_TypeMigraine"/>
         <active pattern="JDV_CddFA"/>
         <active pattern="JDV_SiteIntervention"/>
         <active pattern="JDV_AutreSymptomeExNeuro"/>
@@ -120,14 +121,18 @@
         <active pattern="JDV_LocaThromboseVeineuse"/>
         <active pattern="JDV_TypeTraitementIV"/>
         <active pattern="JDV_StatutEvt"/>
-        <active pattern="JDV_ScoreFisher"/>  
-        <active pattern="JDV_AntecedantsMedicaux-CISIS"/> 
-        
+        <active pattern="JDV_ScoreFisher"/>
+        <active pattern="JDV_AntecedantsMedicaux-CISIS"/>
+        <active pattern="JDV_ExamenHemostaseAUVN-CISIS"/>
+        <active pattern="JDV_ExamenBiochimieAUVN-CISIS"/>
+        <active pattern="JDV_ExamenHematologieAUNV-CISIS"/>
+
+
         <!--Entete-->
         <active pattern="Entete_AVC-AUNV"/>
-        
+
     </phase>
-    
+
     <!--=<<o#%@O[ Variables globales ]O@%#o>>=-->
     <pattern id="variables">
 
@@ -135,17 +140,18 @@
         <let name="JDV_ModeDeTransport" value="'../jeuxDeValeurs/JDV_ModeDeTransport-CISIS.xml'"/>
         <let name="JDV_TopoTrouble" value="'../jeuxDeValeurs/JDV_TopoTrouble-CISIS.xml'"/>
         <let name="JDV_Lateralite" value="'../jeuxDeValeurs/JDV_Lateralite-CISIS.xml'"/>
-        <let name="JDV_LateraliteManuelle" value="'../jeuxDeValeurs/JDV_LateraliteManuelle-CISIS.xml'"/>
+        <let name="JDV_LateraliteManuelle"
+            value="'../jeuxDeValeurs/JDV_LateraliteManuelle-CISIS.xml'"/>
         <let name="JDV_TroubleVisuel" value="'../jeuxDeValeurs/JDV_TroubleVisuel-CISIS.xml'"/>
-        <let name="JDV_AutresSymptomesAVC" value="'../jeuxDeValeurs/JDV_AutresSymptomesAVC-CISIS.xml'"/>
-        <let name="JDV_TypeDiabete" value="'../jeuxDeValeurs/JDV_TypeDiabete-CISIS.xml'"/>
-        <let name="JDV_TypeMigraine" value="'../jeuxDeValeurs/JDV_TypeMigraine-CISIS.xml'"/>
+        <let name="JDV_AutresSymptomesAVC"
+            value="'../jeuxDeValeurs/JDV_AutresSymptomesAVC-CISIS.xml'"/>
         <let name="JDV_CddFA" value="'../jeuxDeValeurs/JDV_CddFA-CISIS.xml'"/>
         <let name="JDV_SiteIntervention" value="'../jeuxDeValeurs/JDV_SiteIntervention-CISIS.xml'"/>
-        <let name="JDV_AutreSymptomeExNeuro" value="'../jeuxDeValeurs/JDV_AutreSymptomeExNeuro-CISIS.xml'"/>
-        <let name="JDV_NIHSSConsInt" value="'../jeuxDeValeurs/JDV_NIHSSConsInt-CISIS.xml'"/>  
-        <let name="JDV_NIHSSLocqInt" value="'../jeuxDeValeurs/JDV_NIHSSLocqInt-CISIS.xml'"/>  
-        <let name="JDV_NIHSSLoccInt" value="'../jeuxDeValeurs/JDV_NIHSSLoccInt-CISIS.xml'"/>  
+        <let name="JDV_AutreSymptomeExNeuro"
+            value="'../jeuxDeValeurs/JDV_AutreSymptomeExNeuro-CISIS.xml'"/>
+        <let name="JDV_NIHSSConsInt" value="'../jeuxDeValeurs/JDV_NIHSSConsInt-CISIS.xml'"/>
+        <let name="JDV_NIHSSLocqInt" value="'../jeuxDeValeurs/JDV_NIHSSLocqInt-CISIS.xml'"/>
+        <let name="JDV_NIHSSLoccInt" value="'../jeuxDeValeurs/JDV_NIHSSLoccInt-CISIS.xml'"/>
         <let name="JDV_NIHSSOculInt" value="'../jeuxDeValeurs/JDV_NIHSSOculInt-CISIS.xml'"/>
         <let name="JDV_NIHSSCvInt" value="'../jeuxDeValeurs/JDV_NIHSSCvInt-CISIS.xml'"/>
         <let name="JDV_NIHSSPfInt" value="'../jeuxDeValeurs/JDV_NIHSSPfInt-CISIS.xml'"/>
@@ -157,8 +163,10 @@
         <let name="JDV_NIHSSDysInt" value="'../jeuxDeValeurs/JDV_NIHSSDysInt-CISIS.xml'"/>
         <let name="JDV_NIHSSNeglInt" value="'../jeuxDeValeurs/JDV_NIHSSNeglInt-CISIS.xml'"/>
         <let name="JDV_InterpretationECG" value="'../jeuxDeValeurs/JDV_InterpretationECG-CISIS.xml'"/>
-        <let name="JDV_TypeLesionImagerie" value="'../jeuxDeValeurs/JDV_TypeLesionImagerie-CISIS.xml'"/>
-        <let name="JDV_territoireInfarctus" value="'../jeuxDeValeurs/JDV_territoireInfarctus-CISIS.xml'"/>
+        <let name="JDV_TypeLesionImagerie"
+            value="'../jeuxDeValeurs/JDV_TypeLesionImagerie-CISIS.xml'"/>
+        <let name="JDV_territoireInfarctus"
+            value="'../jeuxDeValeurs/JDV_territoireInfarctus-CISIS.xml'"/>
         <let name="JDV_ArtereAnt" value="'../jeuxDeValeurs/JDV_ArtereAnt-CISIS.xml'"/>
         <let name="JDV_ArterePost" value="'../jeuxDeValeurs/JDV_ArterePost-CISIS.xml'"/>
         <let name="JDV_ArtereTronc" value="'../jeuxDeValeurs/JDV_ArtereTronc-CISIS.xml'"/>
@@ -166,12 +174,19 @@
         <let name="JDV_HemisphereLobaire" value="'../jeuxDeValeurs/JDV_HemisphereLobaire-CISIS.xml'"/>
         <let name="JDV_HemisphereProfond" value="'../jeuxDeValeurs/JDV_HemisphereProfond-CISIS.xml'"/>
         <let name="JDV_CerveletLoc" value="'../jeuxDeValeurs/JDV_CerveletLoc-CISIS.xml'"/>
-        <let name="JDV_LocaThromboseVeineuse" value="'../jeuxDeValeurs/JDV_LocaThromboseVeineuse-CISIS.xml'"/>
+        <let name="JDV_LocaThromboseVeineuse"
+            value="'../jeuxDeValeurs/JDV_LocaThromboseVeineuse-CISIS.xml'"/>
         <let name="JDV_TypeTraitementIV" value="'../jeuxDeValeurs/JDV_TypeTraitementIV-CISIS.xml'"/>
         <let name="JDV_StatutEvt" value="'../jeuxDeValeurs/JDV_StatutEvt-CISIS.xml'"/>
         <let name="JDV_ScoreFisher" value="'../jeuxDeValeurs/JDV_ScoreFisher-CISIS.xml'"/>
-        <let name="JDV_AntecedantsMedicaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedantsMedicaux-CISIS.xml'"/>
-        
-        
+        <let name="JDV_AntecedantsMedicaux-CISIS"
+            value="'../jeuxDeValeurs/JDV_AntecedantsMedicaux-CISIS.xml'"/>
+        <let name="JDV_ExamenHemostaseAUVN-CISIS"
+            value="'../jeuxDeValeurs/JDV_ExamenHemostaseAUVN-CISIS.xml'"/>
+        <let name="JDV_ExamenBiochimieAUVN-CISIS"
+            value="'../jeuxDeValeurs/JDV_ExamenBiochimieAUVN-CISIS.xml'"/>
+        <let name="JDV_ExamenHematologieAUNV-CISIS"
+            value="'../jeuxDeValeurs/JDV_ExamenHematologieAUVN-CISIS.xml'"/>
+
     </pattern>
 </schema>

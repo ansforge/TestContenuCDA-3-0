@@ -42,7 +42,6 @@
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_ClassificationRingMessmer-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_AccesArtere-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_HL7_ActPriority-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_TypeDM-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_TypeProduitSanguinLabile-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_RouteofAdministration-CISIS.sch"/>
     
@@ -79,7 +78,6 @@
         <active pattern="JDV_ClassificationRingMessmer-CISIS"/>
         <active pattern="JDV_AccesArtere-CISIS"/>
         <active pattern="JDV_HL7_ActPriority-CISIS"/>
-        <active pattern="JDV_TypeDM-CISIS"/>
         <active pattern="JDV_TypeProduitSanguinLabile-CISIS"/>
         <active pattern="JDV_RouteofAdministration-CISIS"/>
         
@@ -116,7 +114,6 @@
         <let name="JDV_ClassificationRingMessmer-CISIS" value="'../jeuxDeValeurs/JDV_ClassificationRingMessmer-CISIS.xml'"/>
         <let name="JDV_AccesArtere-CISIS" value="'../jeuxDeValeurs/JDV_AccesArtere-CISIS.xml'"/>
         <let name="JDV_HL7_ActPriority-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ActPriority-CISIS.xml'"/>
-        <let name="JDV_TypeDM-CISIS" value="'../jeuxDeValeurs/JDV_TypeDM-CISIS.xml'"/>
         <let name="JDV_TypeProduitSanguinLabile-CISIS" value="'../jeuxDeValeurs/JDV_TypeProduitSanguinLabile-CISIS.xml'"/>
         <let name="JDV_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/>
         

@@ -69,7 +69,6 @@
     <!-- JDV -->
     <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_Activite-CISIS.sch"/>    
     <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_CauseAccidentDom-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_NiveauEtude-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_Profession-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_TypeGarde-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS9_2022.01/JDV_VaccinCSE9-CISIS.sch"/>
@@ -109,7 +108,6 @@
         <!-- JDV -->
         <active pattern="JDV_Activite-CISIS"/>
         <active pattern="JDV_CauseAccidentDom-CISIS"/>
-        <active pattern="JDV_NiveauEtude-CISIS"/>
         <active pattern="JDV_Profession-CISIS"/>        
         <active pattern="JDV_TypeGarde-CISIS"/>
         <active pattern="JDV_VaccinCSE9-CISIS"/>
@@ -122,7 +120,6 @@
         <!-- chemins relatifs des fichiers jeux de valeurs -->
         <let name="JDV_Activite-CISIS" value="'../jeuxDeValeurs/JDV_Activite-CISIS.xml'"/>
         <let name="JDV_CauseAccidentDom-CISIS" value="'../jeuxDeValeurs/JDV_CauseAccidentDom-CISIS.xml'"/>
-        <let name="JDV_NiveauEtude-CISIS" value="'../jeuxDeValeurs/JDV_NiveauEtude-CISIS.xml'"/> 
         <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession-CISIS.xml'"/>         
         <let name="JDV_TypeGarde-CISIS" value="'../jeuxDeValeurs/JDV_TypeGarde-CISIS.xml'"/> 
         <let name="JDV_VaccinCSE9-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE9-CISIS.xml'"/> 

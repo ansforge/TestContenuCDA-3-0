@@ -31,7 +31,6 @@
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_AppreciationDiagnosticEntree_SDMMR.sch"/>
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_CasSporadiqueFamilial_SDMMR.sch"/>
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_MalformationAntenatale_SDMMR.sch"/>
-    <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_ModeConfirmationDiagnostic_SDMMR.sch"/>
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_ObjectifActivite_SDMMR.sch"/>
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_PatientAdressePar_SDMMR.sch"/>
     <include href="include/jeuxDeValeurs/SDM-MR_2022.01/JDV_StatutActuelDiagnostic_SDMMR.sch"/>
@@ -56,7 +55,6 @@
         <active pattern="JDV_AppreciationDiagnosticEntree_SDMMR"/>
         <active pattern="JDV_CasSporadiqueFamilial_SDMMR"/>
         <active pattern="JDV_MalformationAntenatale_SDMMR"/>
-        <active pattern="JDV_ModeConfirmationDiagnostic_SDMMR"/>
         <active pattern="JDV_ObjectifActivite_SDMMR"/>
         <active pattern="JDV_PatientAdressePar_SDMMR"/>
         <active pattern="JDV_StatutActuelDiagnostic_SDMMR"/>
@@ -72,7 +70,6 @@
         <let name="jdv_AppreciationDiagnosticEntree" value="'../jeuxDeValeurs/JDV_AppreciationDiagnosticCentre-CISIS.xml'"/>
         <let name="jdv_CasSporadiqueFamilial" value="'../jeuxDeValeurs/JDV_CasSporadiqueFamilial-CISIS.xml'"/>
         <let name="jdv_MalformationAntenatale" value="'../jeuxDeValeurs/JDV_MalformationAntenatale-CISIS.xml'"/>
-        <let name="jdv_ModeConfirmationDiagnostic" value="'../jeuxDeValeurs/JDV_InvestigationsRealisees-CISIS'"/>
         <let name="jdv_ObjectifActivite" value="'../jeuxDeValeurs/JDV_ObjectifActivite-CISIS.xml'"/>
         <let name="jdv_StatutActuelDiagnostic" value="'../jeuxDeValeurs/JDV_StatutActuelDiagnostic-CISIS.xml'"/>
         <let name="jdv_PatientAdressePar" value="'../jeuxDeValeurs/JDV_PatientAdressePar-CISIS.xml'"/>

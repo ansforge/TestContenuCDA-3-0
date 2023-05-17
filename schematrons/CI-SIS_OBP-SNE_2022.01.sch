@@ -41,7 +41,6 @@
     <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_CirconstancesDeces_OBP-SNE.sch"/>
     <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_GesteReanimationNN_OBP-SNE.sch"/>
     <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_approachSiteCode_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_PrelevementsPeriph_OBP-SNE.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
@@ -66,7 +65,6 @@
         <active pattern="JDV_CirconstancesDeces_OBP-SNE"/>
         <active pattern="JDV_GesteReanimationNN_OBP-SNE"/>
         <active pattern="JDV_approachSiteCode_OBP-SNE"/>
-        <active pattern="JDV_PrelevementsPeriph_OBP-SNE"/>
  
     </phase>
     
@@ -82,7 +80,6 @@
         <let name="jdv_AspectLA_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_AspectLA-CISIS.xml'"/>
         <let name="jdv_CirconstancesDeces_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_CirconstancesDeces-CISIS.xml'"/>
         <let name="jdv_GesteReanimationNN_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_GesteReanimationNN-CISIS.xml'"/>
-        <let name="jdv_PrelevementsPeriph_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_PrelevementsPeriph-CISIS.xml'"/>
         
     </pattern>
 </schema>
