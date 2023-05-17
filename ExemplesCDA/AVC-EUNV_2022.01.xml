@@ -1503,7 +1503,7 @@
               <value xsi:type="BL" value="true" />
             </observation>
           </entry>
-          <!-- Dépression  -->
+          <!-- Complication neuropsychiatrique -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <!-- Conformité IHE PCC -->
@@ -1511,14 +1511,32 @@
               <!-- Conformité CI-SIS Simple Observation -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="07CEB1C2-096C-4513-83CF-61E8734D7BFC" />
-              <code code="F-92300" displayName="Dépression" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="MED-522" displayName="Complication neuropsychiatrique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
-                <reference value="dep">
+                <reference value="compliDig">
                 </reference>
               </text>
               <statusCode code="completed" />
-              <effectiveTime nullFlavor="NA" />
+              <effectiveTime value="20140112" />
               <value xsi:type="BL" value="true" />
+              <!-- Dépression -->
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <!-- Conformité CI-SIS Simple Observation -->
+                  <templateId root="1.2.250.1.213.1.1.3.48" />
+                  <id root="07CEB1C2-096C-4513-83CF-61E8734D7BFC" />
+                  <code code="F-92300" displayName="Dépression" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="dep">
+                    </reference>
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="BL" value="true" />
+                </observation>
+              </entryRelationship>
             </observation>
           </entry>
           <!-- Insuffisance cardiaque aiguë -->
@@ -1899,6 +1917,12 @@
                   <td>1.2</td>
                   <td>mL/min</td>
                 </tr>
+                <tr>
+                  <td>01/10/2018</td>
+                  <td>C Réactive protéine</td>
+                  <td>1.2</td>
+                  <td>mg/L</td>
+                </tr>
               </tbody>
             </table>
           </text>
@@ -2065,6 +2089,21 @@
                   <value xsi:type="PQ" value="111.6" unit="mL/min" />
                 </observation>
               </entryRelationship>
+              <!-- C Réactive protéine-->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.3.1.6" />
+                  <!-- Conformité CI-SIS -->
+                  <templateId root="1.2.250.1.213.1.1.3.80" />
+                  <id root="1E0CDFB6-1E9B-4139-994E-BD0E4D40F301" />
+                  <code code="1988-5" displayName="C Réactive protéine [Masse/Volume]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                    <originalText><reference value="#creactiveproteine"/></originalText>
+                  </code>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20110622" />
+                  <value xsi:type="PQ" value="1.2" unit="mg/L" />
+                </observation>
+              </entryRelationship>
             </act>
           </entry>
         </section>
@@ -2094,12 +2133,6 @@
               <tbody>
                 <tr>
                   <td>01/10/2018</td>
-                  <td>C Réactive protéine</td>
-                  <td>1.2</td>
-                  <td>mg/L</td>
-                </tr>
-                <tr>
-                  <td>01/10/2018</td>
                   <td>TCA</td>
                   <td>27</td>
                   <td>s</td>
@@ -2125,23 +2158,8 @@
             <!-- Conformité CI-SIS -->
             <templateId root="1.2.250.1.213.1.1.3.21" />
             <act classCode="ACT" moodCode="EVN">
-              <code code="18719-5" displayName="Biochimie" codeSystem="2.16.840.1.113883.6.1" />
+              <code code="18720-3" displayName="Hémostase" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <statusCode code="completed" />
-              <!-- C Réactive protéine-->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="1.3.6.1.4.1.19376.1.3.1.6" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.80" />
-                  <id root="1E0CDFB6-1E9B-4139-994E-BD0E4D40F301" />
-                  <code code="1988-5" displayName="C Réactive protéine [Masse/Volume]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                    <originalText><reference value="#creactiveproteine"/></originalText>
-                  </code>
-                  <statusCode code="completed" />
-                  <effectiveTime value="20110622" />
-                  <value xsi:type="PQ" value="1.2" unit="mg/L" />
-                </observation>
-              </entryRelationship>
               <!-- TCA -->
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
