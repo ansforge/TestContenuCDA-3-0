@@ -14,6 +14,6 @@
     <p>Conformité du niveau d'études de la personne au CI-SIS</p>
     <param name="path_jdv" value="$JDV_NiveauEtude-CISIS"/>
     <param name="vue_elt" value="'ClinicalDocument/author/assignedAuthor/code'"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' and cda:code/@code='S-00610']/cda:value"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' and cda:code/@code='57712-2']/cda:value"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   

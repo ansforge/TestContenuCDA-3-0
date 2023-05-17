@@ -13,6 +13,6 @@
     <p>Contrôle du mode début travail</p>
     <param name="path_jdv" value="$JDV_ModeDebutTravail-CISIS"/>
     <param name="vue_elt" value="/ClinicalDocument/component/structuredBody/component/section/entry/observation/value"/>
-    <param name="xpath_elt" value="cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13' and cda:code/@code='F-84640']/cda:value"/>
+    <param name="xpath_elt" value="cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13' and cda:code/@code='73813-8']/cda:value"/>
     <param name="nullFlavor" value="0"/>
 </pattern> 

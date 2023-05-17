@@ -14,6 +14,6 @@
     <p>Conformité du type de garde de l'enfant</p>
     <param name="path_jdv" value="$JDV_TypeGarde-CISIS"/>
     <param name="vue_elt" value="'ClinicalDocument/component/structuredBody/component/section/entry/observation/value'"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' and cda:code/@code='S-80000']/cda:value"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' and cda:code/cda:qualifier/cda:value/@code='PAT-048']/cda:value"/>
     <param name="nullFlavor" value="0"/>
 </pattern>   
