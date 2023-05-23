@@ -25,10 +25,10 @@
     <include href="abstract/dansJeuDeValeurs.sch"/>
     <include href="abstract/IVL_TS.sch"/>  
     
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_etiologieInfarctus_AVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_etiologieHemorragie_AVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_raisonAbsenceEtiologie_AVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_AntecedantsMedicaux-CISIS.sch"/> 
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_etiologieInfarctus_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_etiologieHemorragie_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_raisonAbsenceEtiologie_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_AntecedantsMedicaux-CISIS.sch"/> 
     
     <!--Entete-->
     <include href="include/specificationsVolets/AVC-SUNV_2.2_2022.01/Entete/Entete_AVC-SUNV.sch"/>

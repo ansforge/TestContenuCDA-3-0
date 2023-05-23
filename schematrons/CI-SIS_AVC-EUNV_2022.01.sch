@@ -23,14 +23,19 @@
     <include href="abstract/IVL_TS.sch"/>
     
     <!--JDV-->
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ComplicationNeurologique-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_complication-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_InvestigationsRealiseesEUNV-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenHematologieEUVN-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenHemostaseEUNV-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_ExamenBiochimieEUNV-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/AVC_2.2_2022.01/JDV_TypeActeEUVN-CISIS.sch"/>
-   
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_ComplicationNeurologique-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complication-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_InvestigationsRealiseesEUNV-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_ExamenHematologieEUVN-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_ExamenHemostaseEUNV-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_ExamenBiochimieEUNV-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_TypeActeEUVN-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complicationDigestive-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complicationneuropsychiatriques-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complicationThromboembolique-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complicationUrinaire-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-EUNV_2022.01/JDV_complicationPulmonaire-CISIS.sch"/>
+    
     <!--Entete-->
     <include href="include/specificationsVolets/AVC-EUNV_2.2_2022.01/Entete/Entete_AVC-EUNV.sch"/>
     
@@ -44,6 +49,11 @@
         <active pattern="JDV_ExamenBiochimieEUNV-CISIS"/>
         <active pattern="JDV_TypeActeEUVN-CISIS"/>
         <active pattern="Entete_AVC-EUNV"/>
+        <active pattern="JDV_ComplicationPulmonaire-CISIS"/>
+        <active pattern="JDV_complicationneuropsychiatriques-CISIS"/>
+        <active pattern="JDV_complicationUrinaire-CISIS"/>
+        <active pattern="JDV_complicationThromboembolique-CISIS"/>
+        <active pattern="JDV_complicationDigestive-CISIS"/>
     </phase>
     
     <!-- Variables globales -->
@@ -57,5 +67,10 @@
         <let name="JDV_ExamenHemostaseEUNV-CISIS" value="'../jeuxDeValeurs/JDV_ExamenHemostaseEUVN-CISIS.xml'"/>
         <let name="JDV_ExamenBiochimieEUNV-CISIS" value="'../jeuxDeValeurs/JDV_ExamenBiochimieEUVN-CISIS.xml'"/>
         <let name="JDV_TypeActeEUVN-CISIS" value="'../jeuxDeValeurs/JDV_TypeActeEUVN-CISIS.xml'"/>
+        <let name="JDV_ComplicationPulmonaire-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationPulmonaire-CISIS.xml'"/>
+        <let name="JDV_complicationneuropsychiatriques-CISIS" value="'../jeuxDeValeurs/JDV_complicationneuropsychiatriques-CISIS.xml'"/>
+        <let name="JDV_complicationUrinaire-CISIS" value="'../jeuxDeValeurs/JDV_complicationUrinaire-CISIS.xml'"/>
+        <let name="JDV_complicationThromboembolique-CISIS" value="'../jeuxDeValeurs/JDV_complicationThromboembolique-CISIS.xml'"/>
+        <let name="JDV_complicationDigestive-CISIS" value="'../jeuxDeValeurs/JDV_complicationDigestive-CISIS.xml'"/>
     </pattern>
 </schema>
