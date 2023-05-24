@@ -62,7 +62,7 @@
             <!-- Adresse du patient -->
             <addr>
                 <houseNumber>28</houseNumber>
-                <streetName>Av de Breteuil</streetName>
+                <streetName>Avenue de Breteuil</streetName>
                 <unitID>Escalier A</unitID>
                 <postalCode>75007</postalCode>
                 <city>PARIS</city>
@@ -75,12 +75,14 @@
             <!-- Identité du patient -->
             <patient classCode="PSN">
                 <name>
+                    <!-- Nom et prénom(s) de naissance -->
                     <family qualifier="BR">DECOURCY</family>
+                    <given>Marie</given>
+                    <!-- Nom et prénom utilisés -->
                     <family qualifier="CL">DUCOUT</family>
+                    <given qualifier="CL">Pierrette Laurence</given>
+                    <!-- Nom d'usage -->
                     <family qualifier="SP">LE BARS</family>
-                    <given qualifier="BR">Marie</given>
-                    <given qualifier="CL">Pierrette</given>
-                    <given qualifier="CL">Laurence</given>
                 </name>
                 <administrativeGenderCode code="F" displayName="Féminin"
                     codeSystem="2.16.840.1.113883.5.1"/>
@@ -89,7 +91,7 @@
                 <guardian>
                     <addr use="H">
                         <houseNumber>24</houseNumber>
-                        <streetName>Av de Breteuil</streetName>
+                        <streetName>Avenue de Breteuil</streetName>
                         <postalCode>75007</postalCode>
                         <city>PARIS</city>
                         <country>FRANCE</country>

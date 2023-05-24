@@ -70,7 +70,7 @@
 					<!-- Adresse -->
 					<c:addr use="H">
 						<c:houseNumber>28</c:houseNumber>
-						<c:streetName>Av de Breteuil</c:streetName>
+						<c:streetName>Avenue de Breteuil</c:streetName>
 						<c:unitID>Escalier A</c:unitID>
 						<c:postalCode>75007</c:postalCode>
 						<c:city>Paris</c:city>
@@ -83,11 +83,14 @@
 					<!-- Identité du patient -->
 					<c:patient classCode="PSN">
 						<c:name>
-							<c:given qualifier="BR">RUTH</c:given>
-							<c:given>ISABELLE</c:given>
-							<c:family qualifier="BR">NESSI</c:family>
-							<c:family qualifier="SP">DECOURCY</c:family>
+							<!-- Nom et prénom(s) de naissance -->
+							<c:family qualifier="BR">NESSI</c:family>            
+							<c:given>Ruth Isabelle</c:given>
+							<!-- Nom et prénom utilisés -->
 							<c:family qualifier="CL">DECOURCY</c:family>
+							<c:given qualifier="CL">Ruth</c:given> 
+							<!-- Nom d'usage -->
+							<c:family qualifier="SP">DECOURCY</c:family>
 						</c:name>
 						<c:administrativeGenderCode code="F" displayName="Féminin"
 							codeSystem="2.16.840.1.113883.5.1"/>
@@ -96,7 +99,7 @@
 						<c:guardian>
 							<c:addr use="H">
 								<c:houseNumber>28</c:houseNumber>
-								<c:streetName>Av de Breteuil</c:streetName>
+								<c:streetName>Avenue de Breteuil</c:streetName>
 								<c:postalCode>75007</c:postalCode>
 								<c:city>PARIS</c:city>
 								<c:country>FRANCE</c:country>
@@ -132,7 +135,7 @@
 						codeSystem="1.2.250.1.213.1.1.4.5"/>
 					<c:addr>
 						<c:houseNumber>8</c:houseNumber>
-						<c:streetName>Av Frédéric Bastia</c:streetName>
+						<c:streetName>Avenue Frédéric Bastia</c:streetName>
 						<c:postalCode>92100</c:postalCode>
 						<c:city>BOULOGNE-BILLANCOURT</c:city>
 					</c:addr>

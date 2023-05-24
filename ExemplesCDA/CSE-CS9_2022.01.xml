@@ -74,7 +74,7 @@
          <!-- Adresse du patient (obligatoire pour le CSE) -->
          <addr>
             <houseNumber>24</houseNumber>
-            <streetName>Av de Breteuil</streetName>
+            <streetName>Avenue de Breteuil</streetName>
             <postalCode>75007</postalCode>
             <city>PARIS</city>
             <country>FRANCE</country>
@@ -82,8 +82,12 @@
          <telecom value="tel:0147150000" use="H"/>
          <patient classCode="PSN">
             <name>
-               <family qualifier="BR">DECOURCY</family>
-               <given>Alice</given>
+               <!-- Nom et prénom(s) de naissance -->
+               <family qualifier="BR">NESSI</family>            
+               <given>Ruth Isabelle</given>
+               <!-- Nom et prénom utilisés -->
+               <family qualifier="CL">DECOURCY</family>
+               <given qualifier="CL">Ruth</given>   
             </name>
             <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
             <birthTime value="20210601"/>
@@ -91,7 +95,7 @@
             <guardian>
                <addr use="H">
                   <houseNumber>24</houseNumber>
-                  <streetName>Av de Breteuil</streetName>
+                  <streetName>Avenue de Breteuil</streetName>
                   <postalCode>75007</postalCode>
                   <city>PARIS</city>
                   <country>FRANCE</country>
@@ -156,7 +160,7 @@
          <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111"/>
          <addr use="H">
             <houseNumber>24</houseNumber>
-            <streetName>Av de Breteuil</streetName>
+            <streetName>Avenue de Breteuil</streetName>
             <postalCode>75007</postalCode>
             <city>PARIS</city>
          </addr>
@@ -177,7 +181,7 @@
          <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111"/>
          <addr use="H">
             <houseNumber>24</houseNumber>
-            <streetName>Av de Breteuil</streetName>
+            <streetName>Avenue de Breteuil</streetName>
             <postalCode>75007</postalCode>
             <city>PARIS</city>
          </addr>
@@ -500,7 +504,7 @@
                            <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111"/>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
-                              <streetName>Av de Breteuil</streetName>
+                              <streetName>Avenue de Breteuil</streetName>
                               <postalCode>75007</postalCode>
                               <city>Paris</city>
                            </addr>

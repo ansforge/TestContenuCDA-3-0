@@ -88,12 +88,14 @@
           <c:patient classCode="PSN">
             <c:name>
               <c:prefix>MME</c:prefix>
+              <!-- Nom et prénom(s) de naissance -->
               <c:family qualifier="BR">DECOURCY</c:family>
+              <c:given>Marie</c:given>
+              <!-- Nom et prénom utilisés -->
               <c:family qualifier="CL">DUCOUT</c:family>
+              <c:given qualifier="CL">Pierrette Laurence</c:given>
+              <!-- Nom d'usage -->
               <c:family qualifier="SP">LE BARS</c:family>
-              <c:given qualifier="BR">Marie</c:given>
-              <c:given qualifier="CL">Pierrette</c:given>
-              <c:given qualifier="CL">Laurence</c:given>
             </c:name>
             <c:administrativeGenderCode code="F" displayName="Féminin"
               codeSystem="2.16.840.1.113883.5.1"/>

@@ -72,7 +72,7 @@
       <!-- Adresse du patient -->
       <addr>
         <houseNumber>28</houseNumber>
-        <streetName>Av de Breteuil</streetName>
+        <streetName>Avenue de Breteuil</streetName>
         <unitID>Escalier A</unitID>
         <postalCode>75007</postalCode>
         <city>PARIS</city>
@@ -85,11 +85,14 @@
       <!-- Identité du patient -->
       <patient classCode="PSN">
         <name>
-          <given qualifier="BR">RUTH</given>
-          <given>ISABELLE</given>
-          <family qualifier="BR">NESSI</family>
-          <family qualifier="SP">DECOURCY</family>
+          <!-- Nom et prénom(s) de naissance -->
+          <family qualifier="BR">NESSI</family>            
+          <given>Ruth Isabelle</given>
+          <!-- Nom et prénom utilisés -->
           <family qualifier="CL">DECOURCY</family>
+          <given qualifier="CL">Ruth</given> 
+          <!-- Nom d'usage -->
+          <family qualifier="SP">DECOURCY</family>
         </name>
         <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1" />
         <birthTime value="19770714" />
@@ -97,7 +100,7 @@
         <guardian>
           <addr use="H">
             <houseNumber>28</houseNumber>
-            <streetName>Av de Breteuil</streetName>
+            <streetName>Avenue de Breteuil</streetName>
             <postalCode>75007</postalCode>
             <city>PARIS</city>
             <country>FRANCE</country>
