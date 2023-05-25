@@ -75,13 +75,11 @@
             <patient classCode="PSN">
                 <name>
                     <!-- Nom et prénom(s) de naissance -->
-                    <family qualifier="BR">DECOURCY</family>
-                    <given>Marie</given>
+                    <family qualifier="BR">NESSI</family>            
+                    <given>Ruth Isabelle</given>
                     <!-- Nom et prénom utilisés -->
-                    <family qualifier="CL">DUCOUT</family>
-                    <given qualifier="CL">Pierrette Laurence</given>
-                    <!-- Nom d'usage -->
-                    <family qualifier="SP">LE BARS</family>
+                    <family qualifier="CL">DECOURCY</family>
+                    <given qualifier="CL">Ruth</given>   
                 </name>
                 <administrativeGenderCode code="F" displayName="Féminin"
                     codeSystem="2.16.840.1.113883.5.1"/>

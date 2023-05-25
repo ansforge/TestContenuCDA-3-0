@@ -90,9 +90,7 @@
                     <given>Ruth Isabelle</given>
                     <!-- Nom et prénom utilisés -->
                     <family qualifier="CL">DECOURCY</family>
-                    <given qualifier="CL">Ruth</given> 
-                    <!-- Nom d'usage -->
-                    <family qualifier="SP">DECOURCY</family>
+                    <given qualifier="CL">Ruth</given>   
                 </name>
                 <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
                 <birthTime value="19770714"/>
