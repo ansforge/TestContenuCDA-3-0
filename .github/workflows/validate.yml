@@ -33,7 +33,7 @@ jobs:
         run: |
           cd validateCDA
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
-          foreach($file in Get-ChildItem $SomeFolder){
+          foreach($file in Get-ChildItem ../testContenuCDA/ExemplesCDA){
             java -cp ./librairie/* ./validate.java -i $file -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
           } 
 
