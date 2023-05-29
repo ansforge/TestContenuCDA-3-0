@@ -13,7 +13,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Programme to validate
+      - name: Get soft to validate
         uses: actions/checkout@main
         with:
           persist-credentials: false
@@ -26,7 +26,9 @@ jobs:
         with:      
           path: testContenuCDA
       
-
+      - name: Validate        
+        run: |
+          java -cp ./validateCDA/librairie/* ./validateCDA/validate.java -i ./testContenuCDA/ExemplesCDA/ANEST-CR-ANEST_2022.01.xml -o ./validateCDA/report
       
         
       # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
