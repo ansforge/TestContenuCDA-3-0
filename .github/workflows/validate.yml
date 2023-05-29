@@ -29,6 +29,7 @@ jobs:
       - name: Validate        
         run: |
           cd validateCDA
+          javac -cp ./librairie/* ./validate.java
           java -cp ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ANEST-CR-ANEST_2022.01.xml -o ./report
       
         
