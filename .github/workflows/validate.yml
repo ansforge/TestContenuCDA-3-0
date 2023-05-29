@@ -33,9 +33,10 @@ jobs:
         run: |
           cd validateCDA
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
-          For /R ../testContenuCDA/ExemplesCDA %%G IN (*.xml)  do ( 
-          java -cp ./librairie/* ./validate.java -i %%G -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
-          )
+          foreach($file in Get-ChildItem $SomeFolder){
+            java -cp ./librairie/* ./validate.java -i $file -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
+          } 
+
         
       # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
       # This will overwrite the currently published HTML page.
