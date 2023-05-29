@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="164e6717-c522-4f5c-9521-9b884007ae3f">
+    <gvr:validationOverview validationDateTime="2025-05-05T16:34:27.000Z" validationOverallResult="PASSED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>.Structuration minimale des documents de santé v1.12</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="434" numberOfErrors="0" numberOfWarnings="1"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="432" numberOfErrors="0" numberOfWarnings="1"/>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(CI-SISRelatedDocument)/d20895e17-true-d20919e0: this element 'versionNumber' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:id[not(@nullFlavor)] (rule-reference: d20895e17-true-d20919e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/relatedDocument/parentDocument/versionNumber</gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+</gvr:validationReport>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="63f9ec89-3acf-4533-b1f4-a8a26a0df450">
+    <gvr:validationOverview validationDateTime="2025-05-05T16:37:15.000Z" validationOverallResult="FAILED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>TLM_CR_2022.01</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="655" numberOfErrors="3" numberOfWarnings="0"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="653" numberOfErrors="3" numberOfWarnings="0"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(TLM-CR_2022.01): [Entete_TLM-CR] Le code de l'acte documenté est obligatoire et doit être égal à 'TCG' ou 'TC' ou 'TE1' ou 'TE2' ou 'TLD' ou 'TLL' ou 'TLM' ou 'TLS'.</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(TLM-CR_2022.01): The value for displayName SHALL be 'Compte-rendu d''acte de télémédecine'. Found: "CR d'examens biologiques"</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/code</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(TLM-CR_2022.01): The value for code SHALL be '85208-7'. Found: "11502-2"</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/code</gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+</gvr:validationReport>
