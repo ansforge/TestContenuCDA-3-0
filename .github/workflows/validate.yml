@@ -3,6 +3,7 @@ name: validate
 on:
   workflow_call:
   workflow_dispatch:
+  push:
 
 
 
@@ -35,7 +36,7 @@ jobs:
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
           Get-ChildItem –Path "../testContenuCDA/ExemplesCDA/*.xml" –Recurse |
           Foreach-Object {
-            java -cp ./librairie/* ./validate.java -i $_.FullNameo D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
+            java -cp ./librairie/* ./validate.java -i $_.FullName -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
           }
 
 
