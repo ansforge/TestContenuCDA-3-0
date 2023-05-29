@@ -33,7 +33,7 @@ jobs:
         run: |
           cd validateCDA
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
-          Get-ChildItem –Path ".\cda\*.xml" –Recurse |
+          Get-ChildItem –Path "../testContenuCDA/ExemplesCDA/*.xml" –Recurse |
           Foreach-Object {
             java -cp ./librairie/* ./validate.java -i $_.FullNameo D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
           }
