@@ -39,7 +39,7 @@
   <!-- Identifiant unique du document -->
   <id root="1.2.250.1.213.1.1.1.40.1"/>
   <!-- Type de document -->
-  <code code="77436-4" displayName="CR d'anesthésie" codeSystem="2.16.840.1.113883.6.1"
+  <code code="77436-4test" displayName="CR d'anesthésie" codeSystem="2.16.840.1.113883.6.1"
     codeSystemName="LOINC"/>
   <!-- Titre du document -->
   <title>Compte rendu d'anesthésie</title>
