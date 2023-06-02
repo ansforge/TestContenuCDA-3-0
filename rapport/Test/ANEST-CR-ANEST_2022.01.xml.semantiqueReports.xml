@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="1291caca-26e0-4c17-8306-c8df14b233e4">
-    <gvr:validationOverview validationDateTime="2023-02-06T09:01:30.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="4c0db756-2c83-4138-8654-97097a09406e">
+    <gvr:validationOverview validationDateTime="2023-02-06T09:06:30.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,14 +11,24 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="201" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="201" numberOfErrors="1" numberOfWarnings="0"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="199" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="199" numberOfErrors="1" numberOfWarnings="0"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>
+	  CodeSystem : "2.16.840.1.113883.6.1" 
+	  CodeSystemName : "LOINC" 
+	  Code  : "77436-4test"
+	  DisplayName : CR d'anesthésie
+         (Validation  sémantique)
+	 </gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/code</gvr:locationInValidatedObject>
+        </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
