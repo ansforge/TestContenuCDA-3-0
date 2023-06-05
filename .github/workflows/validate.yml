@@ -28,8 +28,8 @@ jobs:
           path: testContenuCDA
       - uses: actions/setup-java@v3
         with:
-          distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '17'      
+          distribution: 'oracle'
+          java-version: '17'    
       - name: Validate        
         run: |
           cd validateCDA
