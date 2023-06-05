@@ -49,5 +49,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./report
-          destination_dir: rapport/${{ steps.branch-name.outputs.current_branch }}
+          destination_dir: rapport_bis/${{ steps.branch-name.outputs.current_branch }}
           commit_message: ' ${{ github.event.head_commit.message }}'
