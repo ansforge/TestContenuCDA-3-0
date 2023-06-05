@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="d9d5ddec-9c3c-4c02-bc69-d450a0a44ba1">
+    <gvr:validationOverview validationDateTime="2023-05-06T07:10:58.000Z" validationOverallResult="PASSED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>AVC-EUNV_2022.01</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="1979" numberOfErrors="0" numberOfWarnings="16"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1977" numberOfErrors="0" numberOfWarnings="16"/>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[4]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[6]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[6]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[7]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[7]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d375209e4-true-d375363e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d375209e4-true-d375363e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[9]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d378449e41-true-d378848e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d378449e41-true-d378848e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[4]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d519153e41-true-d519552e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d519153e41-true-d519552e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[5]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d448801e41-true-d449200e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d448801e41-true-d449200e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[6]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+</gvr:validationReport>
