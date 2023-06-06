@@ -35,6 +35,8 @@
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_StatutGrossesse-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueTechniqueImg-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueQuantite-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_RegionAnatomique-CISIS.sch"/>
+    
  
     
     <!-- Entete -->
@@ -73,6 +75,8 @@
         <active pattern="JDV_StatutGrossesse-CISIS"/>
         <active pattern="JDV_LocalisationAnatomiqueTechniqueImg-CISIS"/>
         <active pattern="JDV_LocalisationAnatomiqueQuantite-CISIS"/>
+        <active pattern="JDV_RegionAnatomique-CISIS"/>
+        
         
         <!-- Sections spécifiques au volet CI-SIS_IMG-CR-IMG -->
         <active pattern="S_EducationDuPatient_IMG-CR-IMG"/>
@@ -104,6 +108,7 @@
         <let name="JDV_StatutGrossesse-CISIS" value="'../jeuxDeValeurs/JDV_StatutGrossesse-CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueTechniqueImg-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueQuantite-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
+        <let name="JDV_RegionAnatomique-CISIS" value="'../jeuxDeValeurs/JDV_RegionAnatomique-CISIS.xml'"/>
         
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">    
             <!-- présence des sections obligatoires --> 
