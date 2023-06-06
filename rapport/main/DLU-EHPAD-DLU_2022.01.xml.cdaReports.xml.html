@@ -1,1 +1,16 @@
-Echec :  DLU-EHPAD-DLU_2022.01.xml(DLU-EHPAD-DLU_2022.01)
+<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsebd3c00af-85c4-485b-913a-8e6a159aa5a6" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-DLU-EHPAD-DLU_2022.01 : FAILED<br/>Nombre d'erreurs : 1<br/>Nombre de warnings :  2<br/>Temps d'execution :  8<br/>Nombre de règles:  2851</button></h2><div id="panelsStayOpen-collapsebd3c00af-85c4-485b-913a-8e6a159aa5a6" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
+    
+    
+    <tr><td>Syntactic validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Schema validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Object Checker validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
+        
+        <tr><td>ERROR</td><td class=".small"><small>(FR-Directive-anticipee): element hl7:code[concat(@code, @codeSystem) = doc('schematron/COMMON/VALUESETS/voc-1.2.250.1.213.1.1.5.136-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] is mandatory [min 1x].<br/>/ClinicalDocument/component/structuredBody/component[7]/section/entry/observation</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>(FR-Traitements)/d719313e468-true-d719828e0: this element 'translation' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:low | hl7:high (rule-reference: d719313e468-true-d719828e0)<br/>/ClinicalDocument/component/structuredBody/component[5]/section/entry/substanceAdministration/doseQuantity/translation</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>(FR-Directives-anticipees)/d736011e4-true-d736115e0: this element 'code' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13.7'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '2.16.840.1.113883.10.20.1.17'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.54'] | hl7:id[not(@nullFlavor)] | hl7:code[concat(@code, @codeSystem) = doc('schematron/COMMON/VALUESETS/voc-1.2.250.1.213.1.1.5.136-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] | hl7:text[not(@nullFlavor)] | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:value | hl7:reference[hl7:templateId[@root = '2.16.840.1.113883.10.20.1.36']] (rule-reference: d736011e4-true-d736115e0)<br/>/ClinicalDocument/component/structuredBody/component[7]/section/entry/observation/code</small></td></tr>
+    </table></td></tr>
+</tbody></table></div></div></div>
