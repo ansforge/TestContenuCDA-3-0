@@ -385,7 +385,7 @@
           </qualifier>
         </translation>
         <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
-        <translation code="69536005" displayName="tête" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+        <translation code="774007" displayName="structure de la tête et/ou du cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           </qualifier>
@@ -455,7 +455,7 @@
           </qualifier>
         </translation>
         <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
-        <translation code="45048000​" displayName="cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+        <translation code="774007" displayName="structure de la tête et/ou du cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           </qualifier>
@@ -524,7 +524,7 @@
           </qualifier>
         </translation>
         <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
-        <translation code="67734004" displayName="thorax" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+        <translation code="67734004" displayName="segment thoracique du tronc" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           </qualifier>
@@ -1195,7 +1195,7 @@
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
-                        <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (1.2.250.1.213.1.1.5.695)  -->  
+                        <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (1.2.250.1.213.1.1.5.690)  -->  
                         <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-01-radiopharmaceutique"/>
