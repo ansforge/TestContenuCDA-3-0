@@ -33,7 +33,7 @@ jobs:
       - name: Validate        
         run: |
           cd validateCDA
-          javac  -classpath ./librairie/* ./validate.java
+          javac  -cp ".:./librairie/*" ./validate.java
  
 
       - name: Get branch names
