@@ -33,8 +33,8 @@ jobs:
       - name: Validate        
         run: |
           cd validateCDA
-          export CLASSPATH=/home/runner/work/TestContenuCDA-3-0/TestContenuCDA-3-0/validateCDA/commons-cli-1.5.0.jar:.
-          java -Xms2g -Xmx4g -classpath ./librairie/*.jar ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
+          apt install libcommons-cli-java
+          javac -Xms2g -Xmx4g -classpath ./librairie/*.jar ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
 
 
       - name: Get branch names
