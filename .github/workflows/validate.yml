@@ -33,6 +33,8 @@ jobs:
       - name: Validate        
         run: |
           cd validateCDA
+          sudo apt-get update
+          sudo apt-get install libcommons-cli-java
           java -Xms2g -Xmx4g -classpath .;./librairie/commons-cli-1.5.0.jar ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
 
 
