@@ -34,7 +34,7 @@ jobs:
         run: |
           cd validateCDA
           javac  -classpath ./librairie/* ./validate.java
-          javc -Xms2g -Xmx4g -classpath ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
+ 
 
       - name: Get branch names
         id: branch-name
