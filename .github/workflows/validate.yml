@@ -33,10 +33,8 @@ jobs:
       - name: Validate        
         run: |
           cd validateCDA
-          sudo apt-get update
-          sudo apt-get install libcommons-cli-java
-          java -Xms2g -Xmx4g -classpath ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
-
+          javac  -classpath ./librairie/* ./validate.java
+          javc -Xms2g -Xmx4g -classpath ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o ./report 
 
       - name: Get branch names
         id: branch-name
