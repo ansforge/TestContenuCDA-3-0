@@ -25,6 +25,7 @@
 		18/05/2020 : création
 		22/10/2020 : correction des professions/spécialités des PS
 		28/10/2022 : Version 2022.01
+		12/06/2023 : Correction de la version à 2021.01
 		**********************************************************************************************************
   -->
 
@@ -43,7 +44,7 @@
   <!-- Conformité spécifications CI-SIS -->
   <templateId root="1.2.250.1.213.1.1.1.1"/>
   <!-- Conformité au modèle du document CNAM-HR -->
-  <templateId root="1.2.250.1.213.1.1.1.36" extension="2022.01"/>
+  <templateId root="1.2.250.1.213.1.1.1.36" extension="2021.01"/>
   <!-- Identifiant unique du document -->
   <id root="1.2.250.1.213.1.1.1.36.2"/>
   <!-- Type du document -->
