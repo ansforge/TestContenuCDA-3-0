@@ -7,7 +7,7 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_CNAM-HR_2022.01.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_CNAM-HR_2021.01.sch"?>
 
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
