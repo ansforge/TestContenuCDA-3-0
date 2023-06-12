@@ -59,22 +59,22 @@
     </rule>
     
     <rule context='cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer'>
-        <assert test="cda:id">
+        <assert test="cda:assignedEntity/cda:id">
             [Entete_CNAM-HR] L'identifiant du PS est obligatoire.
         </assert>
-        <assert test="cda:assignedEntity/cda:assignedPerson/cda:name">
+        <assert test="not(cda:assignedEntity/cda:assignedPerson) or cda:assignedEntity/cda:assignedPerson/cda:name">
             [Entete_CNAM-HR] Le nom du directeur de laboratoire est obligatoire.
         </assert>
     </rule>
-
+    
     <rule context='cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter'>
-        <assert test="cda:responsibleParty/cda:assignedEntity/cda:id">
+        <assert test="not(cda:responsibleParty) or cda:responsibleParty/cda:assignedEntity/cda:id">
             [Entete_CNAM-HR] L'identifiant du PS doit être présent (responsibleParty/assignedEntity/id)
         </assert>
-        <assert test="cda:responsibleParty/cda:assignedEntity/cda:code">
+        <assert test="not(cda:responsibleParty) or cda:responsibleParty/cda:assignedEntity/cda:code">
             [Entete_CNAM-HR] La profession/spécialité du PS doit être présente (responsibleParty/assignedEntity/code)
         </assert>
-        <assert test="cda:responsibleParty/cda:assignedEntity/cda:assignedPerson/cda:name/cda:family">
+        <assert test="not(cda:responsibleParty) or cda:responsibleParty/cda:assignedEntity/cda:assignedPerson/cda:name/cda:family">
             [Entete_CNAM-HR] L'identité du PS doit être présente (responsibleParty/assignedEntity/assignedPerson/name/family)
         </assert>
 
