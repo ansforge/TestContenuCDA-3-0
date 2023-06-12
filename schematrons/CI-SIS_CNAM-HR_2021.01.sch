@@ -27,12 +27,12 @@
         
         <!-- JDV -->
         <!-- les JDV spécifiques CNAM ne sont pas contrôlés 
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_BDM_CNAM-HR-CISIS.sch"/>
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_BDM_CA_CNAM-HR-CISIS.sch"/>
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_BDM_ATC_CNAM-HR-CISIS.sch"/>
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_LPP_CNAM-HR-CISIS.sch"/>
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_sejours_actes_CNAM-HR-CISIS.sch"/>
-        <include href="include/jeuxDeValeurs/CNAM-HR_2021.01/JDV_sejours_acte_CNAM-HR-CISIS.sch"/>-->
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_BDM_CNAM-HR-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_BDM_CA_CNAM-HR-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_BDM_ATC_CNAM-HR-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_LPP_CNAM-HR-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_sejours_actes_CNAM-HR-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/CNAM-HR_2022.01/JDV_sejours_acte_CNAM-HR-CISIS.sch"/>-->
         
         <!-- Entrées -->
         <include href="include/specificationsVolets/CNAM-HR_2021.01/Entrees/E_FR-ActesInterventions_CNAM-HR.sch"/>
@@ -51,6 +51,7 @@
         <phase id="CI-SIS_CNAM-HR_2021.01">
                 <active pattern="variables"/>
                 <p>Vérification complète de la conformité au CI-SIS</p>
+                <active pattern="Entete_CNAM-HR"/>
                 <!-- JDV -->        
                 <!-- les JDV spécifiques CNAM ne sont pas contrôlés -->
                 
