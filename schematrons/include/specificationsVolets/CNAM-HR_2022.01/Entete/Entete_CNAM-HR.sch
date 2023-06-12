@@ -17,8 +17,8 @@
         <assert test='cda:code[@code="REMB" and @displayName="Données de remboursement" and @codeSystem="1.2.250.1.213.1.1.4.12"]'>
             [Entete_CNAM-HR] L'élément code est obligatoire et doit être fixé à @code="REMB" @displayName="Données de remboursement" @codeSystem="1.2.250.1.213.1.1.4.12".
         </assert>
-        <assert test='cda:templateId[@root="1.2.250.1.213.1.1.1.36" and @extension="2022.01"]'>
-            [Entete_CNAM-HR] L'élément templateId fixé à @root="1.2.250.1.213.1.1.1.36" et @extension="2022.01" est obligatoire
+        <assert test='cda:templateId[@root="1.2.250.1.213.1.1.1.36" and @extension="2021.01"]'>
+            [Entete_CNAM-HR] L'élément templateId fixé à @root="1.2.250.1.213.1.1.1.36" et @extension="2021.01" est obligatoire
         </assert>
     </rule>
     
