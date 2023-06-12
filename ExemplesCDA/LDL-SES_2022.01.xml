@@ -1241,7 +1241,7 @@
                     <!-- Conformité CI-SIS -->
                     <templateId root="1.2.250.1.213.1.1.2.137" />
                     <id root="29085A50-9B57-48CB-9295-3DFCDD194069"/>
-                    <code code="48765-2" displayName="Allergies, réactions adverses, alertes" 
+                    <code code="48765-2" displayName="Allergies et hypersensibilités" 
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <title>Allergies identifiées pendant le séjour</title>
                     <!-- Bloc narratif de la section -->
