@@ -1,1 +1,52 @@
-Echec :  ANEST-CR-CPA_2022.01.xml(ANEST-CR-CPA_2022.01)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="6f3c25c0-74b2-4e86-a871-d9a00e30205a">
+    <gvr:validationOverview validationDateTime="2024-01-06T08:44:50.000Z" validationOverallResult="FAILED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>ANEST-CR-CPA_2022.01</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="1400" numberOfErrors="1" numberOfWarnings="6"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1398" numberOfErrors="1" numberOfWarnings="6"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(ANEST-CR-CPA): Dans un CR de consultation pré-anesthésique, le signe vital "Saturation en oxygène" est obligatoire</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Examen-physique-detaille-code)/d558527e1-true-d558668e0: this element 'entry' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.33'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.102'] | hl7:id | hl7:code[(@code = '10208-7' and @codeSystem = '2.16.840.1.113883.6.1')] | hl7:title | hl7:text[not(@nullFlavor)] | hl7:entry[hl7:observation[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5'] and hl7:templateId[@root = '2.16.840.1.113883.10.20.1.28']]] (rule-reference: d558527e1-true-d558668e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/component/section/entry</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Examen-physique-detaille-code)/d552683e1-true-d552824e0: this element 'entry' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.30'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.99'] | hl7:id | hl7:code[(@code = '11412-4' and @codeSystem = '2.16.840.1.113883.6.1')] | hl7:title | hl7:text[not(@nullFlavor)] | hl7:entry[hl7:observation[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5'] and hl7:templateId[@root = '2.16.840.1.113883.10.20.1.28']]] (rule-reference: d552683e1-true-d552824e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/component[2]/section/entry</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Examen-physique-detaille-code)/d552683e1-true-d552824e0: this element 'entry' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.30'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.99'] | hl7:id | hl7:code[(@code = '11412-4' and @codeSystem = '2.16.840.1.113883.6.1')] | hl7:title | hl7:text[not(@nullFlavor)] | hl7:entry[hl7:observation[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5'] and hl7:templateId[@root = '2.16.840.1.113883.10.20.1.28']]] (rule-reference: d552683e1-true-d552824e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/component[2]/section/entry[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Examen-physique-detaille-code)/d552683e1-true-d552824e0: this element 'entry' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.30'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.99'] | hl7:id | hl7:code[(@code = '11412-4' and @codeSystem = '2.16.840.1.113883.6.1')] | hl7:title | hl7:text[not(@nullFlavor)] | hl7:entry[hl7:observation[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5'] and hl7:templateId[@root = '2.16.840.1.113883.10.20.1.28']]] (rule-reference: d552683e1-true-d552824e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/component[2]/section/entry[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Problemes-actifs)/d572314e4-true-d572462e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '2.16.840.1.113883.10.20.1.27'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.1'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.2'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.39'] | hl7:id[not(@nullFlavor)] | hl7:statusCode[@code = doc('schematron/COMMON/VALUESETS/voc-2.16.840.1.113883.1.11.15933-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor] | hl7:code[@nullFlavor = 'NA'] | hl7:effectiveTime[hl7:low] | hl7:entryRelationship[hl7:observation[hl7:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.5']]] (rule-reference: d572314e4-true-d572462e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[3]/section/entry/act/entryRelationship[12]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Allergies-et-hypersensibilites)/d578142e191-true-d581486e0: this element 'act' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:observation[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13']] (rule-reference: d578142e191-true-d581486e0)</gvr:constraintDescription>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[11]/section/entry/act/entryRelationship/observation/entryRelationship[3]/act</gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+</gvr:validationReport>
