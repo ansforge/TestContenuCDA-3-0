@@ -917,7 +917,7 @@
                   <effectiveTime>
                     <low value="2010" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="MED-047" displayName="Chirurgie pour lésion bénigne" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                  <value xsi:type="CD" code="118445002" displayName="ablation d'un néoplasme bénin" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#chirurgie-lesion-benigne-gauche">
                       </reference>
@@ -2525,7 +2525,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20210729" />                      
                       <!-- valeur issue du JDV_Classification_ACR-Echographie-CISIS (1.2.250.1.213.1.1.5.657) -->
-                      <value xsi:type="CD" code="MED-1099" displayName="ACR 1" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <value xsi:type="CD" code="370611004" displayName="excision d'un néoplasme maligne" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     </observation>
                   </entryRelationship>
                   <!-- [1..1] Entrée FR-Simple-Observation : Résultat de l'échographie Sein gauche + ACR échographie (ACR de 1 à 5) -->
