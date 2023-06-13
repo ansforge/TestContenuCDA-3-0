@@ -14,7 +14,7 @@
     <!-- ****** Contexte = aNTENATAL TESTING BATTERY ****** -->
     
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.1.21.3.10"]'>
-        <assert test='.//cda:observation[cda:code/@code="51659-1"]/cda:value[@code="MED-214" or @code="MED-215" or @nullFlavor]'>
+        <assert test='.//cda:observation[cda:code/@code="51659-1"]/cda:value[@code="406117000" or @code="406118005" or @nullFlavor]'>
             [E_rechHbs_CSE] La recherche d'Ag Hbs doit être négative, positive, ou non faite. Dans ce dernier cas, l'élément nullFlavor peut être utilisé
         </assert>
     </rule>
