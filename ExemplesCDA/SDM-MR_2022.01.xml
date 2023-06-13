@@ -1129,7 +1129,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <value xsi:type="CD" code="GEN-020" displayName="à l'âge de" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                  <value xsi:type="CD" code="767023003" displayName="période de la vie entre la naissance et la mort" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- [0..1] FR-Simple-Observation : Précision de l'âge premiers signes -->
@@ -1180,7 +1180,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <value xsi:type="CD" code="GEN-020" displayName="à l'âge de" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                  <value xsi:type="CD" code="767023003" displayName="période de la vie entre la naissance et la mort" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- [0..1] FR-Simple-Observation : Précision sur l'âge au diagnostic -->
