@@ -1310,7 +1310,7 @@
               <text><reference value="#habitus-03"/></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
-              <value xsi:type="CD" code="8063-14-7" displayName="Cannabis" codeSystem="1.2.250.1.213.2.72" codeSystemName="ChemIDPlus"/>                
+              <value xsi:type="CD" code="398705004" displayName="Cannabis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             </observation>
           </entry>          
           <!-- [0..1] Entrée FR-Commentaire-ER :  Commentaire -->
