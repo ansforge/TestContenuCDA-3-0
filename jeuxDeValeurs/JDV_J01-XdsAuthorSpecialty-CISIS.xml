@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20220826120000" dateValid="20121112000000" description="XDS authorSpecialty CI-SIS" displayName="JDV_J01-XdsAuthorSpecialty-CISIS.tabs" id="1.2.250.1.213.1.1.5.461" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS">
+    <ValueSet dateFin="" dateMaj="20230127120000" dateValid="20121112000000" description="XDS authorSpecialty CI-SIS" displayName="JDV_J01-XdsAuthorSpecialty-CISIS.tabs" id="1.2.250.1.213.1.1.5.461" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS">
         <ConceptList>
             <Concept code="ALIM_AM" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Alimentation automatique à partir du Système d'Information de l'Assurance Maladie"/>
             <Concept code="DISPOSITIF" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Dispositif médical"/>
@@ -350,7 +350,6 @@
             <Concept code="329" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en génétique"/>
             <Concept code="350" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide à domicile"/>
             <Concept code="351" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant(e) maternel(le)"/>
-            <Concept code="352" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Autre salarié de la structure sociale"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>
