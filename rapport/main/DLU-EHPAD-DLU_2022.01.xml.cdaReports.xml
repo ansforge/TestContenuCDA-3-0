@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="3e41ee5f-0851-403e-a221-571228d8eb7b">
-    <gvr:validationOverview validationDateTime="2024-05-06T06:09:37.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="4911fb08-658c-47b3-bf04-fd5de8688c35">
+    <gvr:validationOverview validationDateTime="2024-10-06T04:47:55.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,26 +11,18 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="2851" numberOfErrors="1" numberOfWarnings="2"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="10540" numberOfErrors="0" numberOfWarnings="1"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2849" numberOfErrors="1" numberOfWarnings="2"/>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(FR-Directive-anticipee): element hl7:code[concat(@code, @codeSystem) = doc('schematron/COMMON/VALUESETS/voc-1.2.250.1.213.1.1.5.136-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] is mandatory [min 1x].</gvr:constraintDescription>
-            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[7]/section/entry/observation</gvr:locationInValidatedObject>
-        </gvr:constraint>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="10538" numberOfErrors="0" numberOfWarnings="1"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(FR-Traitements)/d719313e468-true-d719828e0: this element 'translation' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:low | hl7:high (rule-reference: d719313e468-true-d719828e0)</gvr:constraintDescription>
+            <gvr:constraintDescription>(FR-Traitements)/d127916e679-true-d128364e0: this element 'translation' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:low | hl7:high (rule-reference: d127916e679-true-d128364e0)</gvr:constraintDescription>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[5]/section/entry/substanceAdministration/doseQuantity/translation</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(FR-Directives-anticipees)/d736011e4-true-d736115e0: this element 'code' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13.7'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '2.16.840.1.113883.10.20.1.17'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.54'] | hl7:id[not(@nullFlavor)] | hl7:code[concat(@code, @codeSystem) = doc('schematron/COMMON/VALUESETS/voc-1.2.250.1.213.1.1.5.136-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] | hl7:text[not(@nullFlavor)] | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:value | hl7:reference[hl7:templateId[@root = '2.16.840.1.113883.10.20.1.36']] (rule-reference: d736011e4-true-d736115e0)</gvr:constraintDescription>
-            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[7]/section/entry/observation/code</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>

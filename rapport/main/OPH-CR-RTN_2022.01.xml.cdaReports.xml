@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="c847b4ba-29ec-43bb-b8e6-5534501454f5">
-    <gvr:validationOverview validationDateTime="2024-05-06T06:14:48.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="b0619e51-d53c-4dd8-acb0-bda18408b36c">
+    <gvr:validationOverview validationDateTime="2024-10-06T04:54:58.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,18 +11,14 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="1427" numberOfErrors="1" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4696" numberOfErrors="0" numberOfWarnings="0"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1425" numberOfErrors="1" numberOfWarnings="0"/>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(OPH-CR-RTN_2022.01): [Entete_OPH-CR-RTN] Erreur de conformité : L'élément participant ophtalmologiste  est un élément obligatoire du volet OPH-CR-RTN (attribut typeCode fixé à 'REFT')</gvr:constraintDescription>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="4694" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
 </gvr:validationReport>
