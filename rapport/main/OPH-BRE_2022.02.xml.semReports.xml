@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="3b6df9e4-60be-47c9-aecf-ac3a6e74e4b0">
-    <gvr:validationOverview validationDateTime="2023-01-07T10:46:26.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="1dc2cd9f-8e90-4e5b-a28e-49a4d6800d5f">
+    <gvr:validationOverview validationDateTime="2023-04-07T13:22:50.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
