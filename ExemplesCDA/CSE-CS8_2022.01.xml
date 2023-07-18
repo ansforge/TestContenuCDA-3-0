@@ -1523,11 +1523,11 @@
                            <id root="582BB12C-7B63-11EB-9439-0242AC130039"/>
                            <code code="51659-1" displayName="Recherche Ag Hbs"
                               codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <text><reference value="HBs"/></text>
+                           <text><reference value="#HBs"/></text>
                            <statusCode code="completed"/>
                            <effectiveTime nullFlavor="UNK"/>
-                           <value xsi:type="CD" code="MED-215" displayName="HBsAg EIA negative"
-                              codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                           <value xsi:type="CD" code="406118005" displayName="dosage immuno-enzymatique de l'antigène de surface de l'hépatite B négatif"
+                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                            <subject typeCode="SBJ">
                               <relatedSubject>
                                  <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111"/>

@@ -433,6 +433,7 @@
                       <code nullFlavor="NA">
                         <originalText><reference value="#a3"/></originalText>
                       </code>
+                      <text/>
                       <reference typeCode="REFR">
                         <externalDocument classCode="DOC" moodCode="EVN">
                           <!-- Identifiant unique du document de référence -->
