@@ -17,7 +17,7 @@
             <let name="count_valueFalse" value="(count(cda:value[@value='false']))"/>
             
             <!-- Test des templateId pour l'entrée "FR-Hors-AMM" -->
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.3.48'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']">
+            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.3.48'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']  and cda:templateId[@root='1.2.250.1.213.1.1.3.48.12']">
                 [1] [E_horsAMM_ANS.sch] Erreur de conformité CI-SIS : 
                 L'entrée "FR-Hors-AMM" doit comporter trois 'templateId' :
                 - Un premier 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.13"

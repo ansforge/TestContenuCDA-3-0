@@ -57,6 +57,16 @@
                 [E_procedureEntry_int] Erreur de conformité PCC : Dans l'entrée "Procedure" en mode "INT", si l'élément "effectiveTime" est omis alors l'élément "priorityCode" est obligatoire. 
                 L'élément "priorityCode" peut être précisé dans d'autres modes pour indiquer le degré de priorité de la procédure.
             </assert>
+            
+            <assert test="not(cda:entryRelationship[@typeCode='COMP' and @inversionCode='true']/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']) or cda:entryRelationship[@typeCode='COMP' and @inversionCode='true']/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']/code">
+                [E_procedureEntry_int] Erreur de conformité CI-SIS : Si l'entrée 'Référence interne' est présente, les attributs @typeCode et @inversionCode doivent avoir les valeurs suivantes 'COMP' et 'true'.
+                L'élément code de l'entrée est obligatoire [1..1].
+            </assert>
+            
+            <assert test="not(cda:entryRelationship[@typeCode='RSON']/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']) or cda:entryRelationship[@typeCode='RSON']/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']/cda:code">
+                [E_procedureEntry_int] Erreur de conformité CI-SIS : Si l'entrée 'Référence interne' est présente, l'attribut @typeCode doit avoir la valeur suivante 'RSON'.
+                L'élément code de l'entrée est obligatoire [1..1].
+            </assert>
     
         </rule>
 </pattern>

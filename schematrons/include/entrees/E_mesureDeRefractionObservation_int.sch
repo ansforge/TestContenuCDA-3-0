@@ -2,7 +2,7 @@
 
 <!--                  
     E_mesureDeRefractionObservation_int
-   Teste la conformité de l'entrée mesure de refraction Observation en fonctionn de la conformité IHE-PCC
+   Teste la conformité de l'entrée mesure de refraction Observation en fonctionn de la conformité IHE EYE CARE GEE
     
     Historique :
     31/05/2021 : Création

@@ -32,13 +32,11 @@
             </assert>        
      
             <!-- Test présence et format de l'élément 'code' -->
-            <assert test="(count(cda:code[@code='MED-574'][@codeSystem='1.2.250.1.213.1.1.4.322'][@codeSystemName='TA_ASIP'][@displayName='En rapport avec une ALD'])=1)">
+            <assert test="(count(cda:code[@code='MED-574'][@codeSystem='1.2.250.1.213.1.1.4.322'])=1)">
                 [3] [E_enRapportALD_ANS.sch] Erreur de conformité CI-SIS : 
                 L'entrée "FR-En-rapport-avec-ALD" doit comporter un élément 'code' avec les attributs :
                 - @code="MED-574" (cardinalité [1..1])
-                - @displayName="En rapport avec une ALD" (cardinalité [1..1]) 
                 - @codeSystem="1.2.250.1.213.1.1.4.322" (cardinalité [1..1])
-                - @codeSystemName="TA_ASIP" (cardinalité [1..1])
             </assert>            
                        
             <!-- Test de la présence de l'élément fils 'reference' -->

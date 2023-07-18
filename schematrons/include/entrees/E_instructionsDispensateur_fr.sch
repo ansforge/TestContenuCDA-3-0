@@ -14,13 +14,12 @@
   
     <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']">
      
-        <!-- Test des templateId pour l'entrée "FR-Instructions-au-dispensateur" 
-        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.3.34']">
+        <!-- Test des templateId pour l'entrée "FR-Instructions-au-dispensateur" -->
+        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1'] and cda:templateId[@root='2.16.840.1.113883.10.20.1.43']">
             [E_instructionsDispensateur_fr.sch] Erreur de conformité CI-SIS : L'entryRelationship "FR-Instructions-au-dispensateur" doit avoir trois occurrences de 'templateId' :
             - Un premier 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1" (Conformité de l'entrée au parent IHE PCC)
             - Un deuxième 'templateId' dont l'attribut @root="2.16.840.1.113883.10.20.1.43" (Conformité de l'entrée au parent CDA)
-            - Un troisième 'templateId' dont l'attribut @root="1.2.250.1.213.1.1.3.34" (Conformité de l'entrée au format CI-SIS)
-        </assert> -->
+        </assert> 
     </rule>
         
 </pattern>
