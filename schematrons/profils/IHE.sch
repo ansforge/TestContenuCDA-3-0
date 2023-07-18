@@ -137,12 +137,53 @@
     <include href="../include/sections/S_transportMode.sch"/>
     <include href="../include/sections/S_vitalSigns.sch"/>
     <include href="../include/sections/S_historyOfPresentIllness.sch"/>
+    <include href="../include/sections/S_alignementOculaireEtMotilite.sch"/>
+    <include href="../include/sections/S_antecedentsChirurgicauxOculaires.sch"/>
+    <include href="../include/sections/S_examenDuChampVisuel.sch"/>
+    <include href="../include/sections/S_pressionIntraoculaire.sch"/>
+    <include href="../include/sections/S_testDeLaVision.sch"/>
+    <include href="../include/sections/S_traitementsOphtalmiques.sch"/>
+    <include href="../include/sections/S_segmentOculaireAnterieur.sch"/>
+    <include href="../include/sections/S_segmentOculairePosterieur.sch"/>
+    <include href="../include/sections/S_ocularCodedListOfSurgeries.sch"/>
+    <include href="../include/sections/S_ocularListOfSurgeries.sch"/>
+    <include href="../include/sections/S_intakeAndOutputSection.sch"/>
+    <include href="../include/sections/S_chestWall.sch"/>
+    <include href="../include/sections/S_neck.sch"/>
+    <include href="../include/sections/S_dispense.sch"/>
+    <include href="../include/sections/S_visibleImplantedMedicalDevices.sch"/>
+    <include href="../include/sections/S_geriatricDepressionScale.sch"/>
+    <include href="../include/sections/S_painScaleAssessment.sch"/>
+    <include href="../include/sections/S_bradenScore.sch"/>
+    <include href="../include/sections/S_extremities.sch"/>
+    <include href="../include/sections/S_reviewOfSystems.sch"/>
+    <include href="../include/sections/S_nose.sch"/>
+    <include href="../include/sections/S_pelvis.sch"/>
+    <include href="../include/sections/S_breast.sch"/>
+    <include href="../include/sections/S_lacrimal.sch"/>
+    <include href="../include/sections/S_head.sch"/>
+    <include href="../include/sections/S_vessels.sch"/>
+    <include href="../include/sections/S_foreignTravel.sch"/>
     
     <!-- OPH-BRE -->
     <include href="../include/sections/S_examenPhysiqueOculaire.sch"/>
     <include href="../include/sections/S_mesureDeLaRefraction.sch"/>
     <include href="../include/sections/S_analyseDesDispositifsOculaires.sch"/>
     <include href="../include/sections/S_bilanOphtalmologique.sch"/>
+    
+    <!-- DICOM -->
+    <include href="../include/sections/S_DICOM-acteImagerie.sch"/>
+    <include href="../include/sections/S_DICOM-addendum.sch"/>
+    <include href="../include/sections/S_DICOM-complications.sch"/>
+    <include href="../include/sections/S_DICOM_Conclusion.sch"/>
+    <include href="../include/sections/S_DICOM_DemandeExamen.sch"/>
+    <include href="../include/sections/S_DICOM_ExamenComparatif.sch"/>
+    <include href="../include/sections/S_DICOM_ExpositionsAuxRadiations.sch"/>
+    <include href="../include/sections/S_DICOM_HistoriqueMedical.sch"/>
+    <include href="../include/sections/S_DICOM_InformationClinique.sch"/>
+    <include href="../include/sections/S_DICOM_MotifActe.sch"/>
+    <include href="../include/sections/S_DICOM_CatalogueObjets.sch"/>
+    <include href="../include/sections/S_DICOM_Resultat.sch"/>
 
     <!-- Entrées IHE -->
     <include href="../include/entrees/E_allergiesAndIntoleranceConcern_int.sch"/>
@@ -192,6 +233,31 @@
     <include href="../include/entrees/E_vitalSignsObservation_int.sch"/>
     <include href="../include/entrees/E_vitalSignsOrganizer_int.sch"/>    
     <include href="../include/entrees/E_updateInformationOrganizer_int.sch"/>
+    <include href="../include/entrees/E_acteSubstitution_int.sch"/>
+    <include href="../include/entrees/E_diagnosticDuCancer_int.sch"/>
+    <include href="../include/entrees/E_dateRetraite_int.sch"/>
+    <include href="../include/entrees/E_doseAntigene_int.sch"/>
+    <include href="../include/entrees/E_directiveAnticipee_int.sch"/>
+    <include href="../include/entrees/E_dureeOccupationPoste_int.sch"/>
+    <include href="../include/entrees/E_specimenReceived_int.sch"/>
+    <include href="../include/entrees/E_specimenIdentified_int.sch"/>
+    <include href="../include/entrees/E_fluideIntraveineux_int.sch"/>
+    <include href="../include/entrees/E_surveyPanel_int.sch"/>
+    <include href="../include/entrees/E_horairesDeTravail_int.sch"/>
+    <include href="../include/entrees/E_traitementDispense_int.sch"/>
+    <include href="../include/entrees/E_usualOccupationAndIndustryObservationEntry_int.sch"/>
+    <include href="../include/entrees/E_referencetoPrescriptionItemEntry_int.sch"/>
+    <include href="../include/entrees/E_referencetoPharmaceuticalAdviceItemEntry_int.sch"/>
+    <include href="../include/entrees/E_referencetoMedicationAdministrationItemEntry_int.sch"/>
+    <include href="../include/entrees/E_referencesExternes_int.sch"/>
+    <include href="../include/entrees/E_referenceItemDispensation_int.sch"/>
+    <include href="../include/entrees/E_painScoreObservation_int.sch"/>
+    <include href="../include/entrees/E_organismeAssuranceMaladie_int.sch"/>
+    <include href="../include/entrees/E_mesuresKeratometriquesOrganizer_int.sch"/>
+    <include href="../include/entrees/E_mesureKeratometriqueObservation_int.sch"/>
+    <include href="../include/entrees/E_laboratoryObservation_int.sch"/>
+    <include href="../include/entrees/E_laboratoryIsolateOrganizer_int.sch"/>
+    
     
     <!-- OPH-BRE -->
     <include href="../include/entrees/E_mesuresDispositifsOculaires_int.sch"/>
@@ -200,6 +266,21 @@
     <include href="../include/entrees/E_mesureDeRefractionObservation_int.sch"/>
     <include href="../include/entrees/E_mesuresAcuiteVisuelle_int.sch"/>
     <include href="../include/entrees/E_mesuresAcuiteVisuelleObservation_int.sch"/>
+    
+    <!-- DICOM -->
+    <include href="../include/entrees/E_DICOMAdministrationProduitDeSante_int.sch"/>
+    <include href="../include/entrees/E_DICOMAdministrationRadiopharmaceutique_int.sch"/>
+    <include href="../include/entrees/E_DICOMCadresAafficher_int.sch"/>
+    <include href="../include/entrees/E_DICOMExamenImagerie_int.sch"/>
+    <include href="../include/entrees/E_DICOMExpositionPatient_int.sch"/>
+    <include href="../include/entrees/E_DICOMCadresReferences_int.sch"/>
+    <include href="../include/entrees/E_DICOM_Observation_int.sch"/>
+    <include href="../include/entrees/E_DICOM_Quantite_int.sch"/>
+    <include href="../include/entrees/E_DICOM_SOPInstanceObservation_int.sch"/>
+    <include href="../include/entrees/E_DICOM_SerieImagerie_int.sch"/>
+    <include href="../include/entrees/E_DICOM_objectifDeReference_int.sch"/>
+    <include href="../include/entrees/E_DICOM_TechniqueImagerie_int.sch"/>
+   
    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
@@ -301,6 +382,47 @@
         <active pattern="S_transportMode"/>
         <active pattern="S_vitalSigns"/>
         <active pattern="S_historyOfPresentIllness"/>
+        <active pattern="S_alignementOculaireEtMotilite"/>
+        <active pattern="S_antecedentsChirurgicauxOculaires"/> 
+        <active pattern="S_examenDuChampVisuel"/>
+        <active pattern="S_pressionIntraoculaire"/>
+        <active pattern="S_testDeLaVision"/>
+        <active pattern="S_traitementsOphtalmiques"/>
+        <active pattern="S_segmentOculaireAnterieur"/>
+        <active pattern="S_segmentOculairePosterieur"/>
+        <active pattern="S_ocularCodedListOfSurgeries"/>
+        <active pattern="S_ocularListOfSurgeries"/>
+        <active pattern="S_intakeAndOutputSection"/>
+        <active pattern="S_chestWall"/>
+        <active pattern="S_neck"/>
+        <active pattern="S_dispense"/>
+        <active pattern="S_visibleImplantedMedicalDevices"/>
+        <active pattern="S_geriatricDepressionScale"/>
+        <active pattern="S_painScaleAssessment"/>
+        <active pattern="S_bradenScore"/>
+        <active pattern="S_extremities"/>
+        <active pattern="S_reviewOfSystems"/>
+        <active pattern="S_nose"/>
+        <active pattern="S_pelvis"/>
+        <active pattern="S_breast"/>
+        <active pattern="S_lacrimal"/>
+        <active pattern="S_head"/>
+        <active pattern="S_vessels"/>
+        <active pattern="S_foreignTravel"/>
+        
+        <!-- DICOM -->
+        <active pattern="S_DICOM-acteImagerie"/>
+        <active pattern="S_DICOM-addendum"/>
+        <active pattern="S_DICOM_complications"/>
+        <active pattern="S_DICOM_Conclusion"/>
+        <active pattern="S_DICOM_DemandeExamen"/>
+        <active pattern="S_DICOM_ExamenComparatif"/>
+        <active pattern="S_DICOM_ExpositionsAuxRadiations"/>
+        <active pattern="S_DICOM_HistoriqueMedical"/>
+        <active pattern="S_DICOM_InformationClinique"/>
+        <active pattern="S_DICOM_MotifActe"/>
+        <active pattern="S_DICOM_CatalogueObjets"/>
+        <active pattern="S_DICOM_Resultat"/>
         
         <!-- OPH-BRE -->
         <active pattern="S_examenPhysiqueOculaire"/>
@@ -357,7 +479,33 @@
         <active pattern="E_updateInformationOrganizer_int"/>
         <active pattern="E_vitalSignsObservation_int.sch"/>
         <active pattern="E_vitalSignsOrganizer_int"/>
-        
+        <active pattern="E_acteSubstitution_int"/>
+        <active pattern="E_diagnosticDuCancer_int"/>
+        <active pattern="E_dateRetraite_int"/>
+        <active pattern="E_directiveAnticipee_int"/>
+        <active pattern="E_doseAntigene_int"/>
+        <active pattern="E_dureeOccupationPoste_int"/>
+        <active pattern="E_specimenReceived_int"/>
+        <active pattern="E_specimenIdentified_int"/>
+        <active pattern="E_fluideIntraveineux_int"/>
+        <active pattern="E_surveyPanel_int"/>
+        <active pattern="E_horairesDeTravail_int"/>
+        <active pattern="E_traitementDispense_int"/>
+        <active pattern="E_usualOccupationAndIndustryObservationEntry_int"/>
+        <active pattern="E_referencetoPrescriptionItemEntry_int"/>
+        <active pattern="E_referencetoPharmaceuticalAdviceItemEntry_int"/>
+        <active pattern="E_referencetoMedicationAdministrationItemEntry_int"/>
+        <active pattern="E_referencesExternes_int"/>
+        <active pattern="E_referenceItemDispensation_int"/>
+        <active pattern="E_painScoreObservation_int"/>
+        <active pattern="E_organismeAssuranceMaladie_int"/>
+        <active pattern="E_painScoreObservation_int"/>
+        <active pattern="E_organismeAssuranceMaladie_int"/>
+        <active pattern="E_painScoreObservation_int"/>
+        <active pattern="E_organismeAssuranceMaladie_int"/>
+        <active pattern="E_laboratoryObservation_int"/>
+        <active pattern="E_laboratoryIsolateOrganizer_int"/>
+
         <!-- OPH-BRE --> 
         <active pattern="E_mesuresDispositifsOculaires_int"/>        
         <active pattern="E_mesuresDispositifsOculairesObservation_int"/>           
@@ -365,6 +513,22 @@
         <active pattern="E_mesureDeRefractionObservation_int"/>         
         <active pattern="E_mesuresAcuiteVisuelle_int"/>        
         <active pattern="E_mesuresAcuiteVisuelleObservation_int"/>    
+        <active pattern="E_mesuresKeratometriquesOrganizer_int"/>
+        <active pattern="E_mesureKeratometriqueObservation_int"/>
+        
+        <!-- DICOM -->
+        <active pattern="E_DICOM_Observation_int"/>
+        <active pattern="E_DICOM_Quantite_int"/>
+        <active pattern="E_DICOM_SOPInstanceObservation_int"/>
+        <active pattern="E_DICOM_SerieImagerie_int"/>
+        <active pattern="E_DICOM_TechniqueImagerie_int"/>
+        <active pattern="E_DICOM_objectifDeReference_int"/>
+        <active pattern="E_DICOMAdministrationProduitDeSante_int"/>
+        <active pattern="E_DICOMAdministrationRadiopharmaceutique_int"/>
+        <active pattern="E_DICOMCadresAafficher_int"/>
+        <active pattern="E_DICOMCadresReferences_int"/>
+        <active pattern="E_DICOMExamenImagerie_int"/>
+        <active pattern="E_DICOMExpositionPatient_int"/>
         
     </phase>
 

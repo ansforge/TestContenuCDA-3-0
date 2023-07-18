@@ -72,6 +72,9 @@
     <include href="../include/sections/S_dispositions_ANS.sch"/>
     <include href="../include/sections/S_travailEtAccouchement_ANS.sch"/>
     <include href="../include/sections/S_principalMotif-non-code_ANS.sch"/>
+    <include href="../include/sections/S_codeABarres_ANS.sch"/>
+    <include href="../include/sections/S_conclusionCRGM_ANS.sch"/>
+    <include href="../include/sections/S_problemesActifsNonCode_ANS.sch"/>
     
     <!-- Entrées créées par l'ANS -->
     
@@ -87,7 +90,22 @@
     <include href="../include/entrees/E_organizerDocumentAttache_ANS.sch"/>
     <include href="../include/entrees/E_organizerRCP_ANS.sch"/>
     <include href="../include/entrees/E_organizerTraitementInitialAVC_ANS.sch"/>
-
+    <include href="../include/entrees/E_en-rapport-avec-la-prevention_ANS.sch"/>
+    <include href="../include/entrees/E_evenementIndesirablePendantHospitalisation_ANS.sch"/>
+    <include href="../include/entrees/E_evenementIndesirableSuiteAdministrationDerivesSang_ANS.sch"/>
+    <include href="../include/entrees/E_fonctionEtudiee_ANS.sch"/>
+    <include href="../include/entrees/E_horsNomenclature_ANS.sch"/>
+    <include href="../include/entrees/E_imageIllustrative_ANS.sch"/>
+    <include href="../include/entrees/E_voyage_ANS.sch"/>
+    <include href="../include/entrees/E_typeDocumentAttache_ANS.sch"/>
+    <include href="../include/entrees/E_transfusionProduitsSanguins_ANS.sch"/>
+    <include href="../include/entrees/E_syntheseMedicaleSejour_ANS.sch"/>
+    <include href="../include/entrees/E_rechercheMicroOrganismes_ANS.sch"/>
+    <include href="../include/entrees/E_protheseEtObjetPersonnel_ANS.sch"/>
+    <include href="../include/entrees/E_motifArretTraitement_ANS.sch"/>
+    <include href="../include/entrees/E_modaliteSortie_ANS.sch"/>
+    <include href="../include/entrees/E_modaliteEntree_ANS.sch"/>
+    <include href="../include/entrees/E_TNMyr_ANS.sch"/>
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
@@ -141,6 +159,9 @@
         <active pattern="S_dispositions_ANS"/>
         <active pattern="S_travailEtAccouchement_ANS"/>
         <active pattern="S_principalMotif-non-code_ANS"/>
+        <active pattern="S_codeAbarres_ANS"/>
+        <active pattern="S_conclusionGRGM_ANS"/>
+        <active pattern="S_problemesActifsNonCode_ANS"/>
  
         <!-- Activation des entrées  -->
         <active pattern="E_dispositifMedical-2_ANS"/>
@@ -155,6 +176,22 @@
         <active pattern="E_organizerDocumentAttache_ANS"/>
         <active pattern="E_organizerRCP_ANS"/>
         <active pattern="E_organizerTraitementInitialAVC_ANS"/>
+        <active pattern="E_enRapportAvecLaPrevention_ANS"/>
+        <active pattern="E_evenementIndesirablePendantHospitalisation_ANS"/>
+        <active pattern="E_evenementIndesirablePendantHospitalisation_ANS"/>
+        <active pattern="E_fonctionEtudiee_ANS"/>
+        <active pattern="E_horsNomenclature_ANS"/>
+        <active pattern="E_imageIllustrative_ANS"/>
+        <active pattern="E_voyage_ANS"/>
+        <active pattern="E_typeDocumentAttache_ANS"/>
+        <active pattern="E_transfusionProduitsSanguins_ANS"/>
+        <active pattern="E_syntheseMedicaleSejour_ANS"/>
+        <active pattern="E_rechercheMicroOrganismes_ANS"/>
+        <active pattern="E_protheseEtObjetPersonnel_ANS"/>
+        <active pattern="E_motifArretTraitement_ANS"/>
+        <active pattern="E_modaliteSortie_ANS"/>
+        <active pattern="E_modaliteEntree_ANS"/>
+        <active pattern="E_TNMyr_ANS"/>
 
     </phase>
 </schema>
