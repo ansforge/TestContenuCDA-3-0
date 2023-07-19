@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- 
     CI-SIS_StructurationMinimale.sch
     ......................................................................................................................................................
@@ -78,14 +77,14 @@
     <include href="../abstract/IVL_TS.sch"/>
     <include href="../abstract/dansJeuDeValeurs.sch"/>   
     
-    <include href="../abstract/abstractFunctionCode.sch"/> 
+<!--    <include href="../abstract/abstractFunctionCode.sch"/> 
     <include href="../abstract/abstractHealthcareFacilityCode.sch"/>
     <include href="../abstract/abstractInformantRelatedEntityCode.sch"/> 
     <include href="../abstract/abstractSpecialty.sch"/> 
     <include href="../abstract/abstractStandardIndustryClassCode.sch"/>
-    <include href="../abstract/typeCodeDansJeuDeValeurs.sch"/> 
-    <include href="../abstract/abstractEncompassingEncounterCode.sch"/>
-    
+    <include href="../abstract/abstractTypeCode.sch"/>
+    <include href="../abstract/abstractEncompassingEncounterCode.sch"/>-->
+    <!--<include href="../abstract/typeCodeDansJeuDeValeurs.sch"/> -->
     
     <include href="../abstract/abstractImmunization.sch"/>
     
@@ -220,37 +219,31 @@
         
         <!-- JDV de l'en-tête -->          
         <let name="jdv_authenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty-CISIS.xml'"/>
-        <let name="jdv_authorFunctionCode_1" value="'../../jeuxDeValeurs/TRE_R258-RelationPriseCharge.xml'"/>
-        <let name="jdv_authorFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
-        <let name="jdv_authorFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>
-        <let name="jdv_authorSpecialty_1" value="'../../jeuxDeValeurs/TRE_A02-ProfessionSavFaire-CISIS.xml'"/>
-        <let name="jdv_authorSpecialty_2" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
-        <let name="jdv_authorSpecialty_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>
-        <let name="jdv_authorSpecialty_4" value="'../../jeuxDeValeurs/TRE_R94-ProfessionSocial.xml'"/>
-        <let name="jdv_authorSpecialty_5" value="'../../jeuxDeValeurs/TRE_R95-UsagerTitre.xml'"/>
-        <let name="jdv_authorSpecialty_6" value="'../../jeuxDeValeurs/TRE_R96-AutreProfDomSanitaire.xml'"/>
+        <let name="jdv_authorFunctionCode" value="'../../jeuxDeValeurs/JDV_J47-FunctionCode-CISIS.xml'"/>
+<!--        <let name="jdv_authorFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
+        <let name="jdv_authorFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>-->
+        <let name="jdv_authorSpecialty" value="'../../jeuxDeValeurs/JDV_J01-XdsAuthorSpecialty-CISIS.xml'"/>
         <let name="jdv_componentOfResponsibleSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty-CISIS.xml'"/>
-        <let name="jdv_healthcareFacilityCode_1" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
-        <let name="jdv_healthcareFacilityCode_2" value="'../../jeuxDeValeurs/TRE_R02-SecteurActivite.xml'"/>
+        <let name="jdv_healthcareFacilityCode" value="'../../jeuxDeValeurs/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS.xml'"/>
         <let name="jdv_informantRelatedEntityCode" value="'../../jeuxDeValeurs/JDV_J11-RelationPatient-CISIS.xml'"/>
-        <let name="jdv_informantRelatedEntityCode_1" value="'../../jeuxDeValeurs/TRE_R216-HL7RoleCode.xml'"/>
-        <let name="jdv_informantRelatedEntityCode_2" value="'../../jeuxDeValeurs/TRE_R217-ProtectionJuridique.xml'"/>
         <let name="jdv_legalAuthenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty-CISIS.xml'"/>
-        <let name="jdv_participantFunctionCode_1" value="'../../jeuxDeValeurs/TRE_R258-RelationPriseCharge.xml'"/>
-        <let name="jdv_participantFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
-        <let name="jdv_participantFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>
-        <let name="jdv_participantAssociatedEntityCode_1" value="'../../jeuxDeValeurs/TRE_A02-ProfessionSavFaire-CISIS.xml'"/>
-        <let name="jdv_participantAssociatedEntityCode_2" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
+        <let name="jdv_participantFunctionCode" value="'../../jeuxDeValeurs/JDV_J47-FunctionCode-CISIS.xml'"/>
+<!--        <let name="jdv_participantFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
+        <let name="jdv_participantFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>-->
+        <let name="jdv_participantAssociatedEntityCode" value="'../../jeuxDeValeurs/JDV_J01-XdsAuthorSpecialty-CISIS.xml'"/>
+<!--        <let name="jdv_participantAssociatedEntityCode_2" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
         <let name="jdv_participantAssociatedEntityCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>
         <let name="jdv_participantAssociatedEntityCode_4" value="'../../jeuxDeValeurs/TRE_R94-ProfessionSocial.xml'"/>
         <let name="jdv_participantAssociatedEntityCode_5" value="'../../jeuxDeValeurs/TRE_R95-UsagerTitre.xml'"/>
-        <let name="jdv_participantAssociatedEntityCode_6" value="'../../jeuxDeValeurs/TRE_R96-AutreProfDomSanitaire.xml'"/>
-        <let name="jdv_standardIndustryClassCode_1" value="'../../jeuxDeValeurs/TRE_A00-ProducteurDocNonPS.xml'"/>
-        <let name="jdv_standardIndustryClassCode_2" value="'../../jeuxDeValeurs/TRE_A01-CadreExercice.xml'"/>
-        <let name="jdv_typeCode" value="'../../jeuxDeValeurs/JDV_J07-XdsTypeCode-CISIS.xml'"/> 
-        <let name="jdv_confidentialityCode" value="'../../jeuxDeValeurs/TRE_A08-HL7Confidentiality.xml'"/>
-        <let name="jdv_encompassingEncounterCode_1" value="'../../jeuxDeValeurs/TRE_R304-HL7v3ActCode.xml'"/>
-        <let name="jdv_encompassingEncounterCode_2" value="'../../jeuxDeValeurs/TRE_R305-TypeRencontre.xml'"/>
+        <let name="jdv_participantAssociatedEntityCode_6" value="'../../jeuxDeValeurs/TRE_R96-AutreProfDomSanitaire.xml'"/>-->
+        <let name="jdv_standardIndustryClassCode" value="'../../jeuxDeValeurs/JDV_J04-XdsPracticeSettingCode-CISIS.xml'"/>
+        <!--<let name="jdv_standardIndustryClassCode_2" value="'../../jeuxDeValeurs/TRE_A01-CadreExercice.xml'"/>-->
+        <!--<let name="jdv_typeCode_1" value="'../../jeuxDeValeurs/TRE_A04-Loinc.xml'"/>
+        <let name="jdv_typeCode_2" value="'../../jeuxDeValeurs/TRE_A05-TypeDocComplementaire.xml'"/>-->
+        <let name="jdv_typeCode" value="'../../jeuxDeValeurs/JDV_J07-XdsTypeCode-CISIS.xml'"/>  
+        <let name="jdv_confidentialityCode" value="'../../jeuxDeValeurs/JDV_HL7_Confidentiality-CISIS.xml'"/>
+        <let name="jdv_encompassingEncounterCode" value="'../../jeuxDeValeurs/JDV_J142-TypeRencontre-CISIS.xml'"/>
+        <!--<let name="jdv_encompassingEncounterCode_2" value="'../../jeuxDeValeurs/TRE_R305-TypeRencontre.xml'"/>-->
         
         <!-- JDV génériques -->
         <let name="jdv_actSubstanceAdministrationImmunizationCode" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode-CISIS.xml'"/>        
@@ -265,7 +258,7 @@
         <let name="jdv_substanceAdministration_ImmunizationRouteCodes" value="'../../jeuxDeValeurs/JDV_ImmunizationRouteCodes-CISIS.xml'"/>
 <!--        <let name="jdv_substanceAdministration_RouteOfAdministration" value="'../../jeuxDeValeurs/JDV_HL7_RouteOfAdministration-CISIS.xml'"/>-->
         <let name="jdv_vitalSignCode" value="'../../jeuxDeValeurs/JDV_SignesVitaux-CISIS.xml'"/>
-        <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/TRE_R303-HL7v3AdministrativeGender.xml'"/>
+        <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/JDV_J143-AdministrativeGender-CISIS.xml'"/>
         <let name="jdv_SocialHistoryCodes" value="'../../jeuxDeValeurs/JDV_SocialHistoryCodes-CISIS.xml'"/>
 <!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction-CISIS.xml'"/> -->
         <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee-CISIS.xml'"/>
