@@ -17,10 +17,9 @@
     Historique :
         11/12/2020 : SBM : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_standardIndustryClassCode" is-a="abstractStandardIndustryClassCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_standardIndustryClassCode" is-a="dansJeuDeValeurs">
     <p>Conformité du cadre d'exercice du PS</p>
-    <param name="path_jdv1" value="$jdv_standardIndustryClassCode_1"/>
-    <param name="path_jdv2" value="$jdv_standardIndustryClassCode_2"/>
+    <param name="path_jdv" value="$jdv_standardIndustryClassCode"/>
     <param name="vue_elt" value="'standardIndustryClassCode'"/>
     <param name="xpath_elt" value="cda:standardIndustryClassCode"/>
     <param name="nullFlavor" value="0"/>

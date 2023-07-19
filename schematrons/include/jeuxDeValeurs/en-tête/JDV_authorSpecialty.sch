@@ -21,14 +21,9 @@
     Historique :
         11/12/2020 : SBM : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_authorSpecialty" is-a="abstractSpecialty">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_authorSpecialty" is-a="dansJeuDeValeurs">
     <p>Conformité de la profession/spécialité d'un auteur</p>
-    <param name="path_jdv1" value="$jdv_authorSpecialty_1"/>
-    <param name="path_jdv2" value="$jdv_authorSpecialty_2"/>
-    <param name="path_jdv3" value="$jdv_authorSpecialty_3"/>
-    <param name="path_jdv4" value="$jdv_authorSpecialty_4"/>
-    <param name="path_jdv5" value="$jdv_authorSpecialty_5"/>
-    <param name="path_jdv6" value="$jdv_authorSpecialty_6"/>
+    <param name="path_jdv" value="$jdv_authorSpecialty"/>
     <param name="vue_elt" value="'author/assignedAuthor/code'"/>
     <param name="xpath_elt" value="cda:author/cda:assignedAuthor/cda:code"/>
     <param name="nullFlavor" value="0"/>

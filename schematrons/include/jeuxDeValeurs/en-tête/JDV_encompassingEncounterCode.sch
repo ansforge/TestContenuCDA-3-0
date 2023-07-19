@@ -18,10 +18,9 @@
     Historique :
         13/10/2021 : SBM : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_encompassingEncounterCode" is-a="abstractEncompassingEncounterCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_encompassingEncounterCode" is-a="dansJeuDeValeurs">
     <p>Conformité du componentOf/encompassingEncounter/code au CI-SIS</p>
-    <param name="path_jdv1" value="$jdv_encompassingEncounterCode_1"/>
-    <param name="path_jdv2" value="$jdv_encompassingEncounterCode_2"/>
+    <param name="path_jdv" value="$jdv_encompassingEncounterCode"/>
     <param name="vue_elt" value="'ClinicalDocument/componentOf/encompassingEncounter/code'"/>
     <param name="xpath_elt" value="cda:componentOf/cda:encompassingEncounter/cda:code"/>
     <param name="nullFlavor" value="1"/>

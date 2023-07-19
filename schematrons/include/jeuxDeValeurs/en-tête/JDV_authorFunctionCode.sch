@@ -19,11 +19,9 @@
     Historique :
         11/12/2020 : SBM : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_authorFunctionCode" is-a="abstractFunctionCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_authorFunctionCode" is-a="dansJeuDeValeurs">
     <p>Conformité du functionCode de l'auteur au CI-SIS</p>
-    <param name="path_jdv1" value="$jdv_authorFunctionCode_1"/>
-    <param name="path_jdv2" value="$jdv_authorFunctionCode_2"/>
-    <param name="path_jdv3" value="$jdv_authorFunctionCode_3"/>
+    <param name="path_jdv" value="$jdv_authorFunctionCode"/>
     <param name="vue_elt" value="'author/functionCode'"/>
     <param name="xpath_elt" value="cda:author/cda:functionCode"/>
     <param name="nullFlavor" value="1"/>

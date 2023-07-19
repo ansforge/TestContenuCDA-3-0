@@ -19,11 +19,9 @@
     Historique :
         28/10/2020 : ANS : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_participantFunctionCode" is-a="abstractFunctionCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_participantFunctionCode" is-a="dansJeuDeValeurs">
     <p>Conformité de la spécialité de l'auteur au CI-SIS</p>
-    <param name="path_jdv1" value="$jdv_participantFunctionCode_1"/>
-    <param name="path_jdv2" value="$jdv_participantFunctionCode_2"/>
-    <param name="path_jdv3" value="$jdv_participantFunctionCode_3"/>
+    <param name="path_jdv" value="$jdv_participantFunctionCode"/>
     <param name="vue_elt" value="'participant/functionCode'"/>
     <param name="xpath_elt" value="cda:participant/cda:functionCode"/>
     <param name="nullFlavor" value="1"/>

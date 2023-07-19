@@ -17,10 +17,9 @@
     Historique :
         14/12/2020 : SBM : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_informantRelatedEntityCode" is-a="abstractInformantRelatedEntityCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_informantRelatedEntityCode" is-a="dansJeuDeValeurs">
     <p>Conformité du functionCode de l'auteur au CI-SIS</p>
-    <param name="path_jdv1" value="$jdv_informantRelatedEntityCode_1"/>
-    <param name="path_jdv2" value="$jdv_informantRelatedEntityCode_2"/>
+    <param name="path_jdv" value="$jdv_informantRelatedEntityCode"/>
     <param name="vue_elt" value="'informant/relatedEntity/code'"/>
     <param name="xpath_elt" value="cda:informant/cda:relatedEntity/cda:code"/>
     <param name="nullFlavor" value="0"/>

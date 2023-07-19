@@ -14,10 +14,9 @@
     Historique :
         31/05/11 : FMY ASIP/PRAS : Création
 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_healthcareFacilityCode" is-a="abstractHealthcareFacilityCode">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_healthcareFacilityCode" is-a="dansJeuDeValeurs">
     <p>Conformité au CI-SIS du healthcareFacilityCode de la prise en charge</p>
-    <param name="path_jdv1" value="$jdv_healthcareFacilityCode_1"/>
-    <param name="path_jdv2" value="$jdv_healthcareFacilityCode_2"/>
+    <param name="path_jdv" value="$jdv_healthcareFacilityCode"/>
     <param name="vue_elt" value="'componentOf/encompassingEncounter/location/healtCareFacility/code'"/>
     <param name="xpath_elt" value="cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:code"/>
     <param name="nullFlavor" value="0"/>
