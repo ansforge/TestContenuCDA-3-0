@@ -609,7 +609,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.50" />
                   <id root="B9F74538-834B-441A-BEA8-707EF4644160" />
-                  <code code="59408-5" displayName="Saturation en oxygène" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <code code="20564-1" displayName="Saturation en O2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <text>
                     <reference value="#frequence-cardiaque" />
                   </text>
