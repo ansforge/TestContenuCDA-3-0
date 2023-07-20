@@ -27,16 +27,16 @@
     <include href="abstract/IVL_TS.sch"/> 
     
     <!-- JDV -->
-    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ModaliteImagerie-CISIS.sch"/>
+ <!--   <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ModaliteImagerie-CISIS.sch"/>-->
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ModaliteImagerieDocumentationOf-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ModaliteAcquisition-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LateraliteTechniqueImagerie-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_QuantiteExpositionRayonnements-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_contre-indications-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_StatutGrossesse-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ImagerieObjectifsReference-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueTechniqueImg-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueQuantite-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_RegionAnatomique-CISIS.sch"/>
-    
  
     
     <!-- Entete -->
@@ -67,16 +67,16 @@
         <active pattern="Entete_IMG-CR-IMG"/>
         
         <!-- JDV --> 
-        <active pattern="JDV_ModaliteImagerie-CISIS"/> 
+        <!--<active pattern="JDV_ModaliteImagerie-CISIS"/> -->
         <active pattern="JDV_ModaliteImagerieDocumentationOf-CISIS"/>
         <active pattern="JDV_ModaliteAcquisition-CISIS"/>
+        <active pattern="JDV_LateraliteTechniqueImagerie-CISIS"/>
         <active pattern="JDV_QuantiteExpositionRayonnements-CISIS"/>
         <active pattern="JDV_contre-indications-CISIS"/>
         <active pattern="JDV_StatutGrossesse-CISIS"/>
+        <active pattern="JDV_ImagerieObjectifsReference-CISIS"/>
         <active pattern="JDV_LocalisationAnatomiqueTechniqueImg-CISIS"/>
         <active pattern="JDV_LocalisationAnatomiqueQuantite-CISIS"/>
-        <active pattern="JDV_RegionAnatomique-CISIS"/>
-        
         
         <!-- Sections spécifiques au volet CI-SIS_IMG-CR-IMG -->
         <active pattern="S_EducationDuPatient_IMG-CR-IMG"/>
@@ -100,15 +100,16 @@
     </phase>
     
     <pattern id="principal">
-        <let name="JDV_ModaliteImagerie-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteImagerie-CISIS.xml'"/>
+        <!--<let name="JDV_ModaliteImagerie-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteImagerie-CISIS.xml'"/>-->
         <let name="JDV_ModaliteImagerieDocumentationOf-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteImagerie-CISIS.xml'"/>
         <let name="JDV_ModaliteAcquisition-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteAcquisition-CISIS.xml'"/>
+        <let name="JDV_LateraliteTechniqueImagerie-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteTechniqueImagerie-CISIS.xml'"/>
         <let name="JDV_QuantiteExpositionRayonnements-CISIS" value="'../jeuxDeValeurs/JDV_QuantiteExpositionRayonnements-CISIS.xml'"/>
         <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre-indications-CISIS.xml'"/>
         <let name="JDV_StatutGrossesse-CISIS" value="'../jeuxDeValeurs/JDV_StatutGrossesse-CISIS.xml'"/>
+        <let name="JDV_ImagerieObjectifsReference-CISIS" value="'../jeuxDeValeurs/JDV_ImagerieObjectifsReference-CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueTechniqueImg-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueQuantite-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
-        <let name="JDV_RegionAnatomique-CISIS" value="'../jeuxDeValeurs/JDV_RegionAnatomique-CISIS.xml'"/>
         
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">    
             <!-- présence des sections obligatoires --> 
