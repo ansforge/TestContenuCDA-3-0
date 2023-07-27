@@ -1057,7 +1057,7 @@
                         <link type="text/css" rel="stylesheet" href="{$externalCss}"/>
                     </xsl:if>
                     <xsl:comment> Javascript for Bar Code</xsl:comment>
-                    <script src="../FeuilleDeStyle-FO/JS/datamatrix.min.js" type="text/javascript"/>
+                    <script src="../FeuilleDeStyle/JS/datamatrix.min.js" type="text/javascript"/>
                     <script type="text/javascript">
                         if (document.getElementById('element') !== null) {
                             var div = document.getElementById('element');
