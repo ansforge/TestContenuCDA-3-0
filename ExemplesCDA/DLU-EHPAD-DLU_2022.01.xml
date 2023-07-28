@@ -928,8 +928,8 @@
 							<!-- FR-Directive-Anticipee (FR CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.54"/>
 							<id root="EB45376A-18AF-4D64-AE2D-592C04302205"/>
-							<code code="371538006" displayName="directives anticipées (document)"
-								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							<code code="42348-3" codeSystem="2.16.840.1.113883.6.1"
+								displayName="Directives anticipées" codeSystemName="LOINC"/>
 							<text><reference value="a definir"/></text>
 							<statusCode code="completed"/>
 							<effectiveTime>
