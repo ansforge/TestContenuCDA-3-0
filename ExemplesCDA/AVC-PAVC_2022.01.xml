@@ -3044,7 +3044,7 @@
                 <tr>
                   <td>Realisation effective d'activités</td>
                   <td>
-                    <content ID="realisation">Seul</content>
+                    <content ID="realisation">Vit seul</content>
                   </td>
                 </tr>
               </tbody>
@@ -3100,7 +3100,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <value xsi:type="CD" code="GEN-135" displayName="Seul" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="105529008" displayName="vit seul" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>
