@@ -1875,10 +1875,12 @@
 										<observation classCode="OBS" moodCode="EVN">											
 											<!-- Conformité FR-Certitude (CI-SIS) -->
 											<templateId root="1.2.250.1.213.1.1.3.171"/>
+											<id root="21872220-FBDF-4BCC-85B1-61D1BBB420A5" />
 											<code code="66455-7" displayName="Certitude"
 												codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 											<text><reference value="#problem-001-certitude"/></text>
 											<statusCode code="completed"/>
+											<effectiveTime nullFlavor="NA"/>
 											<value xsi:type="CE" code="confirmed" displayName="Confirmé"
 												codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
 										</observation>
@@ -1980,10 +1982,12 @@
 										<observation classCode="OBS" moodCode="EVN">											
 											<!-- Conformité FR-Certitude (CI-SIS) -->
 											<templateId root="1.2.250.1.213.1.1.3.171"/>
+											<id root="89D3B508-7598-47C7-AF8F-2F0E7DDDDD62" />
 											<code code="66455-7" displayName="Certitude"
 												codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 											<text><reference value="#problem-002-certitude"/></text>
 											<statusCode code="completed"/>
+											<effectiveTime nullFlavor="NA"/>
 											<value xsi:type="CE" code="unconfirmed" displayName="Non confirmé"
 												codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
 										</observation>
@@ -2652,8 +2656,10 @@
 										<observation classCode="OBS" moodCode="EVN" negationInd="false">       
 											<!-- Conformité FR-Criticite (FR CI-SIS) --> 
 											<templateId root="1.2.250.1.213.1.1.3.172" />
+          										<id root="5E8624BE-9266-48CF-8EC8-888670444275" />
 											<code code="82606-5" displayName="Criticité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
 											<statusCode code="completed" />
+											<effectiveTime nullFlavor="NA"/>
 											<!-- valeur du JDV_HL7_allergy-intolerance-criticality-CISIS (2.16.840.1.113883.4.642.3.129) -->
 											<value xsi:type="CE" code="low" displayName="Bas" 
 												codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="HL7:allergy-intolerance-criticality"/>
@@ -2665,8 +2671,10 @@
 										<observation classCode="OBS" moodCode="EVN" negationInd="false">   
 											<!-- Conformité FR-Certitude (FR CI-SIS) --> 
 											<templateId root="1.2.250.1.213.1.1.3.171" />
+                      									<id root="7457FF4D-1740-4B0D-AC84-5E9DDBF82BC7" />
 											<code code="66455-7" displayName="Certitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
 											<statusCode code="completed" />
+											<effectiveTime nullFlavor="NA"/>
 											<!-- valeur du JDV_HL7_condition-ver-status-CISIS (2.16.840.1.113883.4.642.3.166) -->
 											<value xsi:type="CE" code="confirmed" displayName="Confirmé" 
 												codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="HL7:condition-ver-status"/>
