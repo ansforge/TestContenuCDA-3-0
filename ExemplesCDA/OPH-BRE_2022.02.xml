@@ -226,7 +226,7 @@
   </legalAuthenticator>
   <!-- Participant : Prescripteur -->
   <participant typeCode="REF">
-    <functionCode code="MES" displayName="Membre de l'équipe de soins" codeSystem="1.2.250.1.213.1.1.4.2.280" />
+    <functionCode code="353" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Membre de l'équipe de soins"/>
     <time nullFlavor="NA" />
     <associatedEntity classCode="PROV">
       <!-- PS identifié par son N°RPPS -->
@@ -3409,7 +3409,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="8925B6AE-30D0-4F49-8BD7-71AE2211F6F7" />
                           <!-- valeur issue du JDV_MesureTypeVerreDelivre-CISIS (1.2.250.1.213.1.1.5.654) -->
-                          <code code="11778-8" displayName="Date De Délivrance" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-1181" displayName="Date de délivrance" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#dateDelivrance" />
                           </text>
@@ -5105,7 +5105,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="316B77A2-DC83-48EB-B477-308B8BCD6498" />
                           <!-- valeur issue du  JDV_MesureLentilleDelivree-CISIS (1.2.250.1.213.1.1.5.656)  -->
-                          <code code="11778-8" displayName="Date de délivrance" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-1181" displayName="Date de délivrance" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#dateDelivranceLentilles" />
                           </text>
