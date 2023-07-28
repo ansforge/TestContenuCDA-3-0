@@ -995,11 +995,13 @@
                     <observation classCode="OBS" moodCode="EVN">                      
                       <!-- Conformité FR-Criticite (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.172" />
+                      <id root="21872220-FBDF-4BCC-85B1-61D1BBB420A5" />
                       <code code="82606-5" displayName="Criticité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
                         <reference value="#criticite-001" />
                       </text>
                       <statusCode code="completed" />
+                      <effectiveTime nullFlavor="NA"/>
                       <!-- Valeur issue du JDV_HL7_allergy-intolerance-criticality-CISIS (2.16.840.1.113883.4.642.3.129) -->
                       <value xsi:type="CD" code="low" displayName="Bas" 
                              codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="HL7:allergy-intolerance-criticality" />
@@ -1010,6 +1012,7 @@
                     <observation classCode="OBS" moodCode="EVN">                      
                       <!-- Conformité FR-Certitude (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.171"/>
+                      <id root="3BFBE710-54E5-4693-BA41-400809AC6FC2" />
                       <code code="66455-7" displayName="Certitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />                      
                       <statusCode code="completed" />
                       <!-- Valeur issue du JDV_HL7_condition-ver-status-CISIS (2.16.840.1.113883.4.642.3.166) -->
