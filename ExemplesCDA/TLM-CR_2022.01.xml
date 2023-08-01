@@ -491,7 +491,7 @@
                 </assignedEntity>
             </responsibleParty>
             
-            <!-- Etablissement de santé au sein duquel la prise en charge est organisée - pas forcément présent si visioconférence  -->
+            <!-- Etablissement de santé au sein duquel la prise en charge est organisée -->
             <location>
                 <healthCareFacility>
                     <!-- Numéro FINESS -->
