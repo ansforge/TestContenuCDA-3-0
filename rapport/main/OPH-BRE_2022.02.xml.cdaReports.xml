@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="96b14631-48be-4345-ab69-6b06cbccfe5e">
-    <gvr:validationOverview validationDateTime="2025-03-07T17:00:28.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="ca1df58a-d15a-4a75-b6d3-5738241afdf9">
+    <gvr:validationOverview validationDateTime="2023-03-08T16:18:40.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="3106" numberOfErrors="0" numberOfWarnings="1"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="3129" numberOfErrors="0" numberOfWarnings="0"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,10 +19,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="3104" numberOfErrors="0" numberOfWarnings="1"/>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(CI-SISParticipant)/d22499e21-true-d22544e0: this element 'functionCode' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:functionCode[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/STRUCT-MIN-B2023-06-14/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.124-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor] | hl7:time | hl7:associatedEntity[@classCode] (rule-reference: d22499e21-true-d22544e0)</gvr:constraintDescription>
-            <gvr:locationInValidatedObject>/ClinicalDocument/participant/functionCode</gvr:locationInValidatedObject>
-        </gvr:constraint>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="3127" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
 </gvr:validationReport>
