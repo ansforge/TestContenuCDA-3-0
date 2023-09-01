@@ -18,23 +18,25 @@
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"]'> 
  
         <assert test='cda:code[
-            @code="ORG-076" or            
+            @code="75200-6" or            
             @code="11977-6" or
             @code="11996-6" or
             @code="11637-6" or
             @code="57062-2" or
             @code="MED-159" or
-            @code="11636-8" or
+            @code="MED-1184" or
             @code="O82.9" or
-            @code="MED-164" or
+            @code="O99" or
             @code="O14.9" or
             @code="ORG-086" or
             @code="O24.4" or
             @code="O13" or
             @code="O99" or
             @code="ORG-077" or
-            @code="29463-7" or
-            @code="8302-2"
+            @code="8348-5" or
+            @code="8302-2" or
+            @code="MED-1248" or
+            @code="405269005"
             ]'>            
             [E_pregnancyHistory_CSE-CS8] Erreur de conformité : 
             L'attribut 'code' doit être codé selon les valeurs prévues dans le volet. 
