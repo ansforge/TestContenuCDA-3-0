@@ -11,6 +11,7 @@
        02/09/2021 : Création
        27/11/2021 : Modification
        10/11/2022:  Migration des terminologies et JDV en SNOMED-CT
+       28/08/2023 : Migration des terminologies et JDV
    ......................................................................................................................................................    
 -->
 
@@ -70,11 +71,11 @@
     
     <pattern id="variables">
         
-        <let name="JDV_TechniqueBilan-CISIS" value="'../jeuxDeValeurs/JDV_BilanTechnique-CISIS.xml'"/>
-        <let name="JDV_ConduiteATenir_2-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_2-CISIS.xml'"/>
-        <let name="JDV_MotifDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_MotifDiagnostic-CISIS.xml'"/> 
+        <let name="JDV_TechniqueBilan-CISIS" value="'../jeuxDeValeurs/JDV_BilanTechnique_CISIS.xml'"/>
+        <let name="JDV_ConduiteATenir_2-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_2_CISIS.xml'"/>
+        <let name="JDV_MotifDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_MotifDiagnostic_CISIS.xml'"/> 
         <!-- [APE 27/11/2021] ajouté -->        
-        <let name="JDV_Classification_ACR-CISIS" value="'../jeuxDeValeurs/JDV_Classification_ACR-CISIS.xml'"/> 
+        <let name="JDV_Classification_ACR-CISIS" value="'../jeuxDeValeurs/JDV_Classification_ACR_CISIS.xml'"/> 
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

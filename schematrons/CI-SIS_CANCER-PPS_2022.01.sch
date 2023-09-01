@@ -9,6 +9,7 @@
     03/09/2020 : Création
     22/02/2021 : Renommage
     07/04/2022:  Migration des terminologies et JDV en SNOMED-CT
+    28/08/2023 : Migration des terminologies et JDV
     ......................................................................................................................................................    
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CANCER-PPS_2022.01"
@@ -65,13 +66,13 @@
         
         <pattern id="variables">
                 
-                <let name="JDV_GestionEffetsSecondaires-CISIS" value="'../jeuxDeValeurs/JDV_GestionEffetsSecondaires-CISIS.xml'"/>
-                <let name="JDV_MesuresAssociees-CISIS" value="'../jeuxDeValeurs/JDV_MesuresAssociees-CISIS.xml'"/>
-                <let name="JDV_MotifMiseAJour-CISIS" value="'../jeuxDeValeurs/JDV_MotifMiseAJour-CISIS.xml'"/>
-                <let name="JDV_SoinsOncoDeSupport-CISIS" value="'../jeuxDeValeurs/JDV_SoinsOncoDeSupport-CISIS.xml'"/>
-                <let name="JDV_TypeAccompagnementSocioPro-CISIS" value="'../jeuxDeValeurs/JDV_TypeAccompagnementSocioPro-CISIS.xml'"/>
-                <let name="JDV_TypeDeSuivi-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeSuivi-CISIS.xml'"/>
-                <let name="JDV_TypeTraitementPPS-CISIS" value="'../jeuxDeValeurs/JDV_TypeTraitementPPS-CISIS.xml'"/>
+                <let name="JDV_GestionEffetsSecondaires-CISIS" value="'../jeuxDeValeurs/JDV_GestionEffetsSecondaires_CISIS.xml'"/>
+                <let name="JDV_MesuresAssociees-CISIS" value="'../jeuxDeValeurs/JDV_MesuresAssociees_CISIS.xml'"/>
+                <let name="JDV_MotifMiseAJour-CISIS" value="'../jeuxDeValeurs/JDV_MotifMiseAJour_CISIS.xml'"/>
+                <let name="JDV_SoinsOncoDeSupport-CISIS" value="'../jeuxDeValeurs/JDV_SoinsOncoDeSupport_CISIS.xml'"/>
+                <let name="JDV_TypeAccompagnementSocioPro-CISIS" value="'../jeuxDeValeurs/JDV_TypeAccompagnementSocioPro_CISIS.xml'"/>
+                <let name="JDV_TypeDeSuivi-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeSuivi_CISIS.xml'"/>
+                <let name="JDV_TypeTraitementPPS-CISIS" value="'../jeuxDeValeurs/JDV_TypeTraitementPPS_CISIS.xml'"/>
                 
         </pattern>
 </schema>

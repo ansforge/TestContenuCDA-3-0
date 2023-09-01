@@ -11,6 +11,7 @@
         14/03/2018 : MAJ du pattern Variables
         22/02/2021 : Renommage schématron   
         03/05/2021 : Ajout des contrôles des sections obligatoires
+        28/08/2023 : Migration des terminologies et JDV
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_LDL-SES_2022.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
@@ -51,8 +52,8 @@
     
     <pattern id="variables">
  
-        <let name="JDV_ModaliteEntree_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteEntree-CISIS.xml'"/>
-        <let name="JDV_ModaliteSortie_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteSortie-CISIS.xml'"/>
+        <let name="JDV_ModaliteEntree_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteEntree_CISIS.xml'"/>
+        <let name="JDV_ModaliteSortie_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteSortie_CISIS.xml'"/>
         
         <!-- Vérifier que toutes les sections obligatoires du document sont présentes -->
         <rule context='*[cda:templateId/@root="1.2.250.1.213.1.1.1.29"]'>

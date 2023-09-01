@@ -95,31 +95,31 @@
         <pattern id="variables">
 
                 <let name="JDV_Conditionnement-CISIS"
-                        value="'../jeuxDeValeurs/JDV_Conditionnement-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_Conditionnement_CISIS.xml'"/>
                 <let name="JDV_ClasseTherapie-CISIS"
-                        value="'../jeuxDeValeurs/JDV_ClasseTherapie-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_ClasseTherapie_CISIS.xml'"/>
                 <let name="JDV_ImpactMutation-CISIS"
-                        value="'../jeuxDeValeurs/JDV_ImpactMutation-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_ImpactMutation_CISIS.xml'"/>
                 <let name="JDV_MethodePreparationEchantillon-CISIS"
-                        value="'../jeuxDeValeurs/JDV_MethodePreparationEchantillon-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_MethodePreparationEchantillon_CISIS.xml'"/>
                 <let name="JDV_NatureFraction-CISIS"
-                        value="'../jeuxDeValeurs/JDV_NatureFraction-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_NatureFraction_CISIS.xml'"/>
                 <let name="JDV_NatureMaterielEtudie-CISIS"
-                        value="'../jeuxDeValeurs/JDV_NatureMaterielEtudie-CISIS.xml'"/>
-                <let name="JDV_Organe-CISIS" value="'../jeuxDeValeurs/JDV_Organe-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_NatureMaterielEtudie_CISIS.xml'"/>
+                <let name="JDV_Organe-CISIS" value="'../jeuxDeValeurs/JDV_Organe_CISIS.xml'"/>
                 <let name="JDV_QualificationFraction-CISIS"
-                        value="'../jeuxDeValeurs/JDV_QualificationFraction-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_QualificationFraction_CISIS.xml'"/>
                 <let name="JDV_RaisonNonRealisation-CISIS"
-                        value="'../jeuxDeValeurs/JDV_RaisonNonRealisation-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_RaisonNonRealisation_CISIS.xml'"/>
                 <let name="JDV_TypeConclusion-CISIS"
-                        value="'../jeuxDeValeurs/JDV_TypeConclusion-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_TypeConclusion_CISIS.xml'"/>
                 <let name="JDV_TypeHistoEtatTumoral-CISIS"
-                        value="'../jeuxDeValeurs/JDV_TypeHisto_EtatTumoral-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_TypeHisto_EtatTumoral_CISIS.xml'"/>
                 <let name="JDV_TypePrelevOrigine-CISIS"
-                        value="'../jeuxDeValeurs/JDV_TypePrelevOrigine-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_TypePrelevOrigine_CISIS.xml'"/>
                 <let name="JDV_TypeResultat-CISIS"
-                        value="'../jeuxDeValeurs/JDV_TypeResultat-CISIS.xml'"/>
-                <let name="JDV_StatutDoc-CISIS" value="'../jeuxDeValeurs/JDV_StatutDoc-CISIS.xml'"/>
+                        value="'../jeuxDeValeurs/JDV_TypeResultat_CISIS.xml'"/>
+                <let name="JDV_StatutDoc-CISIS" value="'../jeuxDeValeurs/JDV_StatutDoc_CISIS.xml'"/>
 
 
                 <!-- Vérifier que toutes les sections obligatoires du document sont présentes -->

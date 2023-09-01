@@ -58,11 +58,11 @@
      
     <!-- Variables globales -->
     <pattern id="variables">
-        <let name="jdv_LesionTraumatiqueObstetricale_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_LesionTraumatiqueObstetricale-CISIS.xml'"/>
-        <let name="jdv_TypeInfectionNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeInfectionNN-CISIS.xml'"/>
-        <let name="jdv_ModeSortie_OBP-SCE" value="'../jeuxDeValeurs/JDV_ModeSortie-OBP-SCE-CISIS.xml'"/>
-        <let name="jdv_TypeAllaitementNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeAllaitementNN-CISIS.xml'"/>
-        <let name="jdv_StaticSCEprocedures_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_StaticSCEprocedures-CISIS.xml'"/>
+        <let name="jdv_LesionTraumatiqueObstetricale_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_LesionTraumatiqueObstetricale_CISIS.xml'"/>
+        <let name="jdv_TypeInfectionNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeInfectionNN_CISIS.xml'"/>
+        <let name="jdv_ModeSortie_OBP-SCE" value="'../jeuxDeValeurs/JDV_ModeSortie_OBP_SCE_CISIS.xml'"/>
+        <let name="jdv_TypeAllaitementNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeAllaitementNN_CISIS.xml'"/>
+        <let name="jdv_StaticSCEprocedures_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_StaticSCEprocedures_CISIS.xml'"/>
         
     </pattern>
 </schema>

@@ -10,6 +10,7 @@
     Historique :
        31/08/2021 : SBM : Création
        05/04/2022:  Migration des terminologies et JDV en SNOMED-CT
+       28/08/2023 : Migration des terminologies et JDV
    ......................................................................................................................................................    
 -->
 
@@ -99,17 +100,17 @@
 
         <pattern id="variables">
                 
-                <let name="JDV_AntecedentsPersonnels-CISIS" value="'../jeuxDeValeurs/JDV_AntecedentsPersonnels-CISIS.xml'"/>
-                <let name="JDV_BilanDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_BilanDiagnostic-CISIS.xml'"/>
-                <let name="JDV_ConduiteATenir_1-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_1-CISIS.xml'"/>
-                <let name="JDV_ConduiteATenir_3-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_3-CISIS.xml'"/>
-                <let name="JDV_DensiteMammaire-CISIS" value="'../jeuxDeValeurs/JDV_DensiteMammaire-CISIS.xml'"/>
-                <let name="JDV_ExamenClinique-CISIS" value="'../jeuxDeValeurs/JDV_ExamenClinique-CISIS.xml'"/>
-                <let name="JDV_MotifDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_MotifDiagnostic-CISIS.xml'"/>
-                <let name="JDV_MotifEchographie-CISIS" value="'../jeuxDeValeurs/JDV_MotifEchographie-CISIS.xml'"/>
-                <let name="JDV_TypeLecture-CISIS" value="'../jeuxDeValeurs/JDV_TypeLecture-CISIS.xml'"/>
-                <let name="JDV_Technique_imagerie-D2LM-CISIS" value="'../jeuxDeValeurs/JDV_Technique_imagerie-D2LM-CISIS.xml'"/>
-                <let name="JDV_Classification_ACR-CISIS_3" value="'../jeuxDeValeurs/JDV_Classification_ACR-CISIS.xml'"/>
+                <let name="JDV_AntecedentsPersonnels-CISIS" value="'../jeuxDeValeurs/JDV_AntecedentsPersonnels_CISIS.xml'"/>
+                <let name="JDV_BilanDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_BilanDiagnostic_CISIS.xml'"/>
+                <let name="JDV_ConduiteATenir_1-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_1_CISIS.xml'"/>
+                <let name="JDV_ConduiteATenir_3-CISIS" value="'../jeuxDeValeurs/JDV_ConduiteATenir_3_CISIS.xml'"/>
+                <let name="JDV_DensiteMammaire-CISIS" value="'../jeuxDeValeurs/JDV_DensiteMammaire_CISIS.xml'"/>
+                <let name="JDV_ExamenClinique-CISIS" value="'../jeuxDeValeurs/JDV_ExamenClinique_CISIS.xml'"/>
+                <let name="JDV_MotifDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_MotifDiagnostic_CISIS.xml'"/>
+                <let name="JDV_MotifEchographie-CISIS" value="'../jeuxDeValeurs/JDV_MotifEchographie_CISIS.xml'"/>
+                <let name="JDV_TypeLecture-CISIS" value="'../jeuxDeValeurs/JDV_TypeLecture_CISIS.xml'"/>
+                <let name="JDV_Technique_imagerie-D2LM-CISIS" value="'../jeuxDeValeurs/JDV_Technique_imagerie_D2LM_CISIS.xml'"/>
+                <let name="JDV_Classification_ACR-CISIS_3" value="'../jeuxDeValeurs/JDV_Classification_ACR_CISIS.xml'"/>
                 
         </pattern>
 </schema>

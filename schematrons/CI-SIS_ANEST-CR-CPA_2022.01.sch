@@ -11,6 +11,7 @@
       21/12/2020 : Création
       07/06/2021 : Correction du contrôle du documentationOf/serviceEvent/code
       05/04/2022 : Migration des terminologies et JDV : Ajout du JDV_HL7_ObservationIntoleranceType-CISIS.sch
+      28/08/2023 : Migration des terminologies et JDV
    ......................................................................................................................................................    
 -->
 
@@ -92,17 +93,17 @@
     </phase>
     
     <pattern id="JDVvariables">
-        <let name="jdv_ANEST-CR-CPA_AideAuDeplacement" value="'../jeuxDeValeurs/JDV_AideAuDeplacement-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_FacteursDeRisqueSociaux" value="'../jeuxDeValeurs/JDV_FacteursDeRisqueSociaux-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_FacteursDeRisqueProfessionnels" value="'../jeuxDeValeurs/JDV_FacteursDeRisqueProfessionnels-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_GIR" value="'../jeuxDeValeurs/JDV_GIR-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_NiveauDependance" value="'../jeuxDeValeurs/JDV_NiveauDependance-CISIS.xml'"/>
-        <let name="jdv_HL7_ObservationIntoleranceType-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationIntoleranceType-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_ScoreDuke" value="'../jeuxDeValeurs/JDV_ScoreDuke-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_ScoreMallampati" value="'../jeuxDeValeurs/JDV_ScoreMallampati-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_Sedentarite" value="'../jeuxDeValeurs/JDV_Sedentarite-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation-CISIS.xml'"/>
-        <let name="jdv_ANEST-CR-CPA_SupportNutritionnel" value="'../jeuxDeValeurs/JDV_SupportNutritionnel-CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_AideAuDeplacement" value="'../jeuxDeValeurs/JDV_AideAuDeplacement_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_FacteursDeRisqueSociaux" value="'../jeuxDeValeurs/JDV_FacteursDeRisqueSociaux_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_FacteursDeRisqueProfessionnels" value="'../jeuxDeValeurs/JDV_FacteursDeRisqueProfessionnels_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_GIR" value="'../jeuxDeValeurs/JDV_GIR_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_NiveauDependance" value="'../jeuxDeValeurs/JDV_NiveauDependance_CISIS.xml'"/>
+        <let name="jdv_HL7_ObservationIntoleranceType-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationIntoleranceType_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_ScoreDuke" value="'../jeuxDeValeurs/JDV_ScoreDuke_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_ScoreMallampati" value="'../jeuxDeValeurs/JDV_ScoreMallampati_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_Sedentarite" value="'../jeuxDeValeurs/JDV_Sedentarite_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation_CISIS.xml'"/>
+        <let name="jdv_ANEST-CR-CPA_SupportNutritionnel" value="'../jeuxDeValeurs/JDV_SupportNutritionnel_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">

@@ -9,6 +9,7 @@
        05/10/2017 : Création
        14/03/2018 : MAJ du pattern variables
        10/09/2021 : Modification du nom du schematron
+       28/08/2023 : Migration des terminologies et JDV
                             
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_AVC-SUNV_2.2_2022.01"
@@ -46,10 +47,10 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="jdv_AVC_etiologieInfarctus" value="'../jeuxDeValeurs/JDV_etiologieInfarctus-CISIS.xml'"/>
-        <let name="jdv_AVC_etiologieHemorragie" value="'../jeuxDeValeurs/JDV_etiologieHemorragie-CISIS.xml'"/>
-        <let name="jdv_AVC_raisonAbsenceEtiologie" value="'../jeuxDeValeurs/JDV_raisonAbsenceEtiologie-CISIS.xml'"/>
-        <let name="JDV_AntecedantsMedicaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedantsMedicaux-CISIS.xml'"/>
+        <let name="jdv_AVC_etiologieInfarctus" value="'../jeuxDeValeurs/JDV_etiologieInfarctus_CISIS.xml'"/>
+        <let name="jdv_AVC_etiologieHemorragie" value="'../jeuxDeValeurs/JDV_etiologieHemorragie_CISIS.xml'"/>
+        <let name="jdv_AVC_raisonAbsenceEtiologie" value="'../jeuxDeValeurs/JDV_raisonAbsenceEtiologie_CISIS.xml'"/>
+        <let name="JDV_AntecedantsMedicaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedantsMedicaux_CISIS.xml'"/>
         
     </pattern>
     

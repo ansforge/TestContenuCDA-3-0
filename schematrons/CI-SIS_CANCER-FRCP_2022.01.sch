@@ -7,6 +7,7 @@
     ......................................................................................................................................................    
     16/04/2021 : ANS : Création Schématron FRCP_2021.01
     06/04/2022:  Migration des terminologies et JDV en SNOMED-CT
+    28/08/2023 : Migration des terminologies et JDV
     ......................................................................................................................................................    
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -75,19 +76,19 @@
 
         <!-- JDV -->        
         
-        <let name="JDV_NatureDiscussion-CISIS" value="'../jeuxDeValeurs/JDV_NatureDiscussion-CISIS.xml'"/>
-        <let name="JDV_OMSEchPerf-CISIS" value="'../jeuxDeValeurs/JDV_OMSEchPerf-CISIS.xml'"/>
-        <let name="JDV_OMSInterpret-CISIS" value="'../jeuxDeValeurs/JDV_OMSInterpret-CISIS.xml'"/>
-        <let name="JDV_PhaseCancer-CISIS" value="'../jeuxDeValeurs/JDV_PhaseCancer-CISIS.xml'"/>
-        <let name="JDV_RCP-Appareil-CISIS" value="'../jeuxDeValeurs/JDV_RCP-Appareil-CISIS.xml'"/>
-        <let name="JDV_RCP-Organe-CISIS" value="'../jeuxDeValeurs/JDV_RCP-Organe-CISIS.xml'"/>
-        <let name="JDV_StatutCasPresente-CISIS" value="'../jeuxDeValeurs/JDV_StatutCasPresente-CISIS.xml'"/>
-        <let name="JDV_StatutDoc-CISIS" value="'../jeuxDeValeurs/JDV_StatutDoc-CISIS.xml'"/>
-        <let name="JDV_StatutQuorum-CISIS" value="'../jeuxDeValeurs/JDV_StatutQuorum-CISIS.xml'"/>
-        <let name="JDV_TraitementSoins-FRCP-CISIS" value="'../jeuxDeValeurs/JDV_TraitementSoins-FRCP-CISIS.xml'"/>
-        <let name="JDV_Tumeur-CISIS" value="'../jeuxDeValeurs/JDV_Tumeur-CISIS.xml'"/>
-        <let name="JDV_TypeTraitement-FRCP-CISIS" value="'../jeuxDeValeurs/JDV_TypeTraitement-FRCP-CISIS.xml'"/>
-        <let name="JDV_Morphologie-CISIS" value="'../jeuxDeValeurs/JDV_Morphologie-CISIS.xml'"/>
+        <let name="JDV_NatureDiscussion-CISIS" value="'../jeuxDeValeurs/JDV_NatureDiscussion_CISIS.xml'"/>
+        <let name="JDV_OMSEchPerf-CISIS" value="'../jeuxDeValeurs/JDV_OMSEchPerf_CISIS.xml'"/>
+        <let name="JDV_OMSInterpret-CISIS" value="'../jeuxDeValeurs/JDV_OMSInterpret_CISIS.xml'"/>
+        <let name="JDV_PhaseCancer-CISIS" value="'../jeuxDeValeurs/JDV_PhaseCancer_CISIS.xml'"/>
+        <let name="JDV_RCP-Appareil-CISIS" value="'../jeuxDeValeurs/JDV_RCP_Appareil_CISIS.xml'"/>
+        <let name="JDV_RCP-Organe-CISIS" value="'../jeuxDeValeurs/JDV_RCP_Organe_CISIS.xml'"/>
+        <let name="JDV_StatutCasPresente-CISIS" value="'../jeuxDeValeurs/JDV_StatutCasPresente_CISIS.xml'"/>
+        <let name="JDV_StatutDoc-CISIS" value="'../jeuxDeValeurs/JDV_StatutDoc_CISIS.xml'"/>
+        <let name="JDV_StatutQuorum-CISIS" value="'../jeuxDeValeurs/JDV_StatutQuorum_CISIS.xml'"/>
+        <let name="JDV_TraitementSoins-FRCP-CISIS" value="'../jeuxDeValeurs/JDV_TraitementSoins_FRCP_CISIS.xml'"/>
+        <let name="JDV_Tumeur-CISIS" value="'../jeuxDeValeurs/JDV_Tumeur_CISIS.xml'"/>
+        <let name="JDV_TypeTraitement-FRCP-CISIS" value="'../jeuxDeValeurs/JDV_TypeTraitement_FRCP_CISIS.xml'"/>
+        <let name="JDV_Morphologie-CISIS" value="'../jeuxDeValeurs/JDV_Morphologie_CISIS.xml'"/>
         
         <rule context='*[cda:templateId/@root="1.2.250.1.213.1.1.1.8"]'>
             

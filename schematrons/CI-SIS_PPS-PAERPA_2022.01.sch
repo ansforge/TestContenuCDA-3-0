@@ -41,7 +41,7 @@
     </phase>
     
     <pattern id="variables">
-        <let name="JDV_ProblemePPSPAERPA-CISIS" value="'../jeuxDeValeurs/JDV_ProblemePPSPAERPA-CISIS.xml'"/>        
+        <let name="JDV_ProblemePPSPAERPA-CISIS" value="'../jeuxDeValeurs/JDV_ProblemePPSPAERPA_CISIS.xml'"/>        
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

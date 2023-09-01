@@ -28,6 +28,8 @@
                      Ajout de schématron de JDV_SocialHistoryCodes-CISIS.sch
                      Modification de schématron de JDV_AntecedentsObstetricaux-CISIS.sch
                      
+      28/08/2023 : Migration des terminologies et JDV
+                     
                      
                      
     ......................................................................................................................................................           .
@@ -148,25 +150,25 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="JDV_Activite-CISIS" value="'../jeuxDeValeurs/JDV_Activite-CISIS.xml'"/>
-        <let name="JDV_AntecedentsObstetricaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedentsObstetricaux-CISIS.xml'"/>
-        <let name="JDV_DateCons-CISIS" value="'../jeuxDeValeurs/JDV_DateCons-CISIS.xml'"/>
-        <let name="JDV_EvenementsAccouchement-CISIS" value="'../jeuxDeValeurs/JDV_EvenementsAccouchement-CISIS.xml'"/>
-        <let name="JDV_NiveauEtude-CISIS" value="'../jeuxDeValeurs/JDV_NiveauEtude-CISIS.xml'"/> 
-        <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession-CISIS.xml'"/> 
-        <let name="JDV_TypePres-CISIS" value="'../jeuxDeValeurs/JDV_TypePres-CISIS.xml'"/>
-        <let name="JDV_CouvertureSociale-CISIS" value="'../jeuxDeValeurs/JDV_CouvertureSociale-CISIS.xml'"/>
-        <let name="JDV_RechAgHbS-CISIS" value="'../jeuxDeValeurs/JDV_RechAgHbS-CISIS.xml'"/>
-        <let name="JDV_ModeDebutTravail-CISIS" value="'../jeuxDeValeurs/JDV_ModeDebutTravail-CISIS.xml'"/>
-        <let name="JDV_TypeAnalgesie-CISIS" value="'../jeuxDeValeurs/JDV_TypeAnalgesie-CISIS.xml'"/>
-        <let name="JDV_MethodeAccouchement-CISIS" value="'../jeuxDeValeurs/JDV_MethodeAccouchement-CISIS.xml'"/>
-        <let name="JDV_CauseCesarienne-CISIS" value="'../jeuxDeValeurs/JDV_CauseCesarienne-CISIS.xml'"/>
-        <let name="JDV_TypeService-CISIS" value="'../jeuxDeValeurs/JDV_TypeService-CISIS.xml'"/>
-        <let name="JDV_VaccinCSE8-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE8-CISIS.xml'"/>
-        <let name="JDV_SocialHistoryCodes-CISIS" value="'../jeuxDeValeurs/JDV_SocialHistoryCodes-CISIS.xml'"/>
-        <let name="JDV_condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_condition-ver-status-CISIS.xml'"/>
-        <let name="JDV_Traite-NonTraite-CISIS" value="'../jeuxDeValeurs/JDV_Traite-NonTraite-CISIS.xml'"/>
-        <let name="JDV_MotifHospitalisationCSE-CISIS" value="'../jeuxDeValeurs/JDV_MotifHospitalisationCSE-CISIS.xml'"/>
+        <let name="JDV_Activite-CISIS" value="'../jeuxDeValeurs/JDV_Activite_CISIS.xml'"/>
+        <let name="JDV_AntecedentsObstetricaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedentsObstetricaux_CISIS.xml'"/>
+        <let name="JDV_DateCons-CISIS" value="'../jeuxDeValeurs/JDV_DateCons_CISIS.xml'"/>
+        <let name="JDV_EvenementsAccouchement-CISIS" value="'../jeuxDeValeurs/JDV_EvenementsAccouchement_CISIS.xml'"/>
+        <let name="JDV_NiveauEtude-CISIS" value="'../jeuxDeValeurs/JDV_NiveauEtude_CISIS.xml'"/> 
+        <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession_CISIS.xml'"/> 
+        <let name="JDV_TypePres-CISIS" value="'../jeuxDeValeurs/JDV_TypePres_CISIS.xml'"/>
+        <let name="JDV_CouvertureSociale-CISIS" value="'../jeuxDeValeurs/JDV_CouvertureSociale_CISIS.xml'"/>
+        <let name="JDV_RechAgHbS-CISIS" value="'../jeuxDeValeurs/JDV_RechAgHbS_CISIS.xml'"/>
+        <let name="JDV_ModeDebutTravail-CISIS" value="'../jeuxDeValeurs/JDV_ModeDebutTravail_CISIS.xml'"/>
+        <let name="JDV_TypeAnalgesie-CISIS" value="'../jeuxDeValeurs/JDV_TypeAnalgesie_CISIS.xml'"/>
+        <let name="JDV_MethodeAccouchement-CISIS" value="'../jeuxDeValeurs/JDV_MethodeAccouchement_CISIS.xml'"/>
+        <let name="JDV_CauseCesarienne-CISIS" value="'../jeuxDeValeurs/JDV_CauseCesarienne_CISIS.xml'"/>
+        <let name="JDV_TypeService-CISIS" value="'../jeuxDeValeurs/JDV_TypeService_CISIS.xml'"/>
+        <let name="JDV_VaccinCSE8-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE8_CISIS.xml'"/>
+        <let name="JDV_SocialHistoryCodes-CISIS" value="'../jeuxDeValeurs/JDV_SocialHistoryCodes_CISIS.xml'"/>
+        <let name="JDV_condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_condition_ver_status_CISIS.xml'"/>
+        <let name="JDV_Traite-NonTraite-CISIS" value="'../jeuxDeValeurs/JDV_Traite_NonTraite_CISIS.xml'"/>
+        <let name="JDV_MotifHospitalisationCSE-CISIS" value="'../jeuxDeValeurs/JDV_MotifHospitalisationCSE_CISIS.xml'"/>
         <rule context="cda:ClinicalDocument">
             <assert test="./cda:templateId[@root='1.2.250.1.213.1.1.1.5.1']"> 
                 [CI-SIS_CSE-CS8_2022.01] Erreur de conformité :

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Schématron du CS24 : CI-SIS_CSE-MDE_2022.01.sch
+    Schématron du CS24 : CI-SIS_CSE-MDE_2023.01.sch
     ANS
     Vérification de la conformité au Mesures de l'Enfant - MDE du CI-SIS.
     ......................................................................................................................................................
     Historique :
         21/12/2022 : NBE : Création
+        
+    28/08/2023 : Migration des terminologies et JDV
     ......................................................................................................................................................               
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE_MDE_2023.01" 

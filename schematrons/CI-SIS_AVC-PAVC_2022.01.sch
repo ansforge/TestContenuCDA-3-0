@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-    CI-SIS_AVC-PAVC-PAVC_2022.01_2022.01.sch
+    CI-SIS_AVC-PAVC-PAVC_2022.01.sch
     ANS
    
     ......................................................................................................................................................    
@@ -9,6 +9,7 @@
        05/10/17 : Création
        14/03/18 : MAJ du pattern variables
        10/09/2021 :  Modification du nom du schematron
+       28/08/2023 : Migration des terminologies et JDV
                             
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_AVC-PAVC_2022.01"
@@ -77,25 +78,25 @@
     </phase>
      
     <pattern id="variables">
-        <let name="jdv_AVC_Appareillage" value="'../jeuxDeValeurs/JDV_Taille-CISIS.xml'"/>
-        <let name="jdv_Taille-CISIS" value="'../jeuxDeValeurs/JDV_Taille-CISIS.xml'"/>
-        <let name="jdv_AVC_Activite" value="'../jeuxDeValeurs/JDV_Activite-CISIS.xml'"/> 
-        <let name="jdv_AVC_GIR" value="'../jeuxDeValeurs/JDV_GIR-CISIS.xml'"/> 
-        <let name="jdv_AVC_Juridique" value="'../jeuxDeValeurs/JDV_Juridique-CISIS.xml'"/> 
-        <let name="jdv_AVC_TraitementPreventif" value="'../jeuxDeValeurs/JDV_TraitementPreventif-CISIS.xml'"/> 
-        <let name="jdv_AVC_TraitementSuivi" value="'../jeuxDeValeurs/JDV_TraitementSuivi-CISIS.xml'"/> 
-        <let name="jdv_AVC_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation-CISIS.xml'"/>
-        <let name="jDV_DeficiencePhysique-CISIS" value="'../jeuxDeValeurs/JDV_DeficiencePhysique-CISIS.xml'"/>
-        <let name="jdv_EvaluationNeurocognitives-CISIS" value="'../jeuxDeValeurs/JDV_EvaluationNeurocognitives-CISIS.xml'"/>
-        <let name="jdv_RealisationActivites-CISIS" value="'../jeuxDeValeurs/JDV_RealisationActivites-CISIS.xml'"/>
-        <let name="jdv_AvisMedicalComplementaire-CISIS" value="'../jeuxDeValeurs/JDV_AvisMedicalComplementaire-CISIS.xml'"/>
-        <let name="jdv_RepriseProfessionnelle-CISIS" value="'../jeuxDeValeurs/JDV_RepriseProfessionnelle-CISIS.xml'"/>
-        <let name="jdv_MesuresProtectionConduiteAutomobile-CISIS" value="'../jeuxDeValeurs/JDV_MesuresProtectionConduiteAutomobile-CISIS.xml'"/>
-        <let name="jdv_LieudeVie-CISIS" value="'../jeuxDeValeurs/JDV_LieudeVie-CISIS.xml'"/>
-        <let name="jdv_TypeDossier-CISIS" value="'../jeuxDeValeurs/JDV_TypeDossier-CISIS.xml'"/>
-        <let name="jdv_DestinationTransfert-CISIS" value="'../jeuxDeValeurs/JDV_DestinationTransfert-CISIS.xml'"/>
-        <let name="jdv_Readaptation-CISIS" value="'../jeuxDeValeurs/JDV_Readaptation-CISIS.xml'"/>
-        <let name="jdv-TypePriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_TypePriseEnCharge-CISIS.xml'"/>
+        <let name="jdv_AVC_Appareillage" value="'../jeuxDeValeurs/JDV_Taille_CISIS.xml'"/>
+        <let name="jdv_Taille-CISIS" value="'../jeuxDeValeurs/JDV_Taille_CISIS.xml'"/>
+        <let name="jdv_AVC_Activite" value="'../jeuxDeValeurs/JDV_Activite_CISIS.xml'"/> 
+        <let name="jdv_AVC_GIR" value="'../jeuxDeValeurs/JDV_GIR_CISIS.xml'"/> 
+        <let name="jdv_AVC_Juridique" value="'../jeuxDeValeurs/JDV_Juridique_CISIS.xml'"/> 
+        <let name="jdv_AVC_TraitementPreventif" value="'../jeuxDeValeurs/JDV_TraitementPreventif_CISIS.xml'"/> 
+        <let name="jdv_AVC_TraitementSuivi" value="'../jeuxDeValeurs/JDV_TraitementSuivi_CISIS.xml'"/> 
+        <let name="jdv_AVC_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation_CISIS.xml'"/>
+        <let name="jDV_DeficiencePhysique-CISIS" value="'../jeuxDeValeurs/JDV_DeficiencePhysique_CISIS.xml'"/>
+        <let name="jdv_EvaluationNeurocognitives-CISIS" value="'../jeuxDeValeurs/JDV_EvaluationNeurocognitives_CISIS.xml'"/>
+        <let name="jdv_RealisationActivites-CISIS" value="'../jeuxDeValeurs/JDV_RealisationActivites_CISIS.xml'"/>
+        <let name="jdv_AvisMedicalComplementaire-CISIS" value="'../jeuxDeValeurs/JDV_AvisMedicalComplementaire_CISIS.xml'"/>
+        <let name="jdv_RepriseProfessionnelle-CISIS" value="'../jeuxDeValeurs/JDV_RepriseProfessionnelle_CISIS.xml'"/>
+        <let name="jdv_MesuresProtectionConduiteAutomobile-CISIS" value="'../jeuxDeValeurs/JDV_MesuresProtectionConduiteAutomobile_CISIS.xml'"/>
+        <let name="jdv_LieudeVie-CISIS" value="'../jeuxDeValeurs/JDV_LieudeVie_CISIS.xml'"/>
+        <let name="jdv_TypeDossier-CISIS" value="'../jeuxDeValeurs/JDV_TypeDossier_CISIS.xml'"/>
+        <let name="jdv_DestinationTransfert-CISIS" value="'../jeuxDeValeurs/JDV_DestinationTransfert_CISIS.xml'"/>
+        <let name="jdv_Readaptation-CISIS" value="'../jeuxDeValeurs/JDV_Readaptation_CISIS.xml'"/>
+        <let name="jdv-TypePriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_TypePriseEnCharge_CISIS.xml'"/>
         
        
    </pattern>      

@@ -16,7 +16,8 @@
     22/02/2021 : Renommage des schématrons JDV
     28/04/2022 : Nouvelle version 2022.01
     28/04/2022 : Migration des terminologies et JDV en SNOMED-CT
-    02/01/2023 : Nouvelle version 2023.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    02/01/2023 : Nouvelle version 2022.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    28/08/2023 : Migration des terminologies et JDV
 -->
 
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -61,7 +62,7 @@
     </phase>
     
     <pattern id="variables">
-        <let name="jdv_UFCV_EffetINR-CISIS" value="'../jeuxDeValeurs/JDV_UFCV_EffetINR-CISIS.xml'"/>
+        <let name="jdv_UFCV_EffetINR-CISIS" value="'../jeuxDeValeurs/JDV_UFCV_EffetINR_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

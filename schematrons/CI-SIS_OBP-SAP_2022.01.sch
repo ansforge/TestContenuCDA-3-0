@@ -96,21 +96,21 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="JDV_AnomalieConstitutionnelle_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_AnomalieConstitutionnelle-CISIS.xml'"/>        
-        <let name="JDV_AnomalieCroissance_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_AnomalieCroissance-CISIS.xml'"/>        
-        <let name="JDV_AntecedentsObstetricaux_OBP-SAP" value="'../jeuxDeValeurs/JDV_AntecedentsObstetricaux_OBP-CISIS.xml'"/>
-        <let name="JDV_DiabeteGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_DiabeteGrossesse-CISIS.xml'"/>
-        <let name="JDV_StatutNouveauNe_OBP-SAP" value="'../jeuxDeValeurs/JDV_EtatNaissance-CISIS.xml'"/>
-        <let name="JDV_EtatPerinee_OBP-SAP" value="'../jeuxDeValeurs/JDV_EtatPerinee-CISIS.xml'"/>
-        <let name="JDV_GroupeRhesus_OBP-SAP" value="'../jeuxDeValeurs/JDV_GroupeRhesus-CISIS.xml'"/>
-        <let name="JDV_HTAGravidique_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_HTAGravidique-CISIS.xml'"/>
-        <let name="JDV_InfectCervicoVaginale_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_InfectCervicoVaginale-CISIS.xml'"/>
-        <let name="JDV_InfectUrinaire_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_InfectUrinaire-CISIS.xml'"/>
-        <let name="JDV_IssueGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_IssueGrossesse-CISIS.xml'"/>
-        <let name="JDV_ObservationEnfant_OBP-SAP" value="'../jeuxDeValeurs/JDV_ObservationEnfant_OBP-CISIS.xml'"/>  
-        <let name="JDV_StaticSAPActiveProblem_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_StaticSAPActiveProblem-CISIS.xml'"/>
-        <let name="JDV_TranfertMutation_OBP-SAP" value="'../jeuxDeValeurs/JDV_TransfertMutation-CISIS.xml'"/>
-        <let name="JDV_TrimestreGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_TrimestreGrossesse-CISIS.xml'"/>      
+        <let name="JDV_AnomalieConstitutionnelle_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_AnomalieConstitutionnelle_CISIS.xml'"/>        
+        <let name="JDV_AnomalieCroissance_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_AnomalieCroissance_CISIS.xml'"/>        
+        <let name="JDV_AntecedentsObstetricaux_OBP-SAP" value="'../jeuxDeValeurs/JDV_AntecedentsObstetricaux_OBP_CISIS.xml'"/>
+        <let name="JDV_DiabeteGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_DiabeteGrossesse_CISIS.xml'"/>
+        <let name="JDV_StatutNouveauNe_OBP-SAP" value="'../jeuxDeValeurs/JDV_EtatNaissance_CISIS.xml'"/>
+        <let name="JDV_EtatPerinee_OBP-SAP" value="'../jeuxDeValeurs/JDV_EtatPerinee_CISIS.xml'"/>
+        <let name="JDV_GroupeRhesus_OBP-SAP" value="'../jeuxDeValeurs/JDV_GroupeRhesus_CISIS.xml'"/>
+        <let name="JDV_HTAGravidique_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_HTAGravidique_CISIS.xml'"/>
+        <let name="JDV_InfectCervicoVaginale_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_InfectCervicoVaginale_CISIS.xml'"/>
+        <let name="JDV_InfectUrinaire_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_InfectUrinaire_CISIS.xml'"/>
+        <let name="JDV_IssueGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_IssueGrossesse_CISIS.xml'"/>
+        <let name="JDV_ObservationEnfant_OBP-SAP" value="'../jeuxDeValeurs/JDV_ObservationEnfant_OBP_CISIS.xml'"/>  
+        <let name="JDV_StaticSAPActiveProblem_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_StaticSAPActiveProblem_CISIS.xml'"/>
+        <let name="JDV_TranfertMutation_OBP-SAP" value="'../jeuxDeValeurs/JDV_TransfertMutation_CISIS.xml'"/>
+        <let name="JDV_TrimestreGrossesse_OBP-SAP" value="'../jeuxDeValeurs/JDV_OBP_TrimestreGrossesse_CISIS.xml'"/>      
         
         
     </pattern>

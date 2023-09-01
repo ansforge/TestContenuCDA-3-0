@@ -67,7 +67,7 @@
 	<pattern id="variables">
 		
 		<!-- chemins relatifs des fichiers jeux de valeurs -->
-		<let name="JDV_HL7_ObservationInterpretation-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationInterpretation-CISIS.xml'"/>
+		<let name="JDV_HL7_ObservationInterpretation-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationInterpretation_CISIS.xml'"/>
 		
 		<!-- présence des sections obligatoires -->        
 		<rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

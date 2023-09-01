@@ -17,7 +17,8 @@
     07/02/2022 : Mise à jour des appels au schematrons spécifiques
     29/04/2022 : Nouvelle version 2022.01
     29/04/2022 : Migration des terminologies et JDV en SNOMED-CT
-    02/01/2023 : Nouvelle version 2023.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    02/01/2023 : Nouvelle version 2022.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    28/08/2023 : Migration des terminologies et JDV
 -->
 
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -64,10 +65,10 @@
     
     <pattern id="variables">
         
-        <let name="jdv_UFCV_MotImpl_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MotImpl-CISIS.xml'"/>
-        <let name="jdv_UFCV_MotImplEndoC_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MotImplEndoC-CISIS.xml'"/>
-        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl-CISIS.xml'"/>
-        <let name="jdv_UFCV_NYHA_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_NYHA-CISIS.xml'"/>
+        <let name="jdv_UFCV_MotImpl_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MotImpl_CISIS.xml'"/>
+        <let name="jdv_UFCV_MotImplEndoC_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MotImplEndoC_CISIS.xml'"/>
+        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl_CISIS.xml'"/>
+        <let name="jdv_UFCV_NYHA_CARD-F-PRC-TAP" value="'../jeuxDeValeurs/JDV_UFCV_NYHA_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

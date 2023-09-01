@@ -26,6 +26,7 @@
                      et jeuxDeValeurs/CSE-CS8/
                      Modification des noms des JDV.
         06/04/2022 : Modification des schématrons d'entrées afin de remplacer les codes en dur SNOMED 3.5 par les codes CIM-10
+        28/08/2023 : Migration des terminologies et JDV
     ......................................................................................................................................................                           
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS9_2022.01"
@@ -118,11 +119,11 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="JDV_Activite-CISIS" value="'../jeuxDeValeurs/JDV_Activite-CISIS.xml'"/>
-        <let name="JDV_CauseAccidentDom-CISIS" value="'../jeuxDeValeurs/JDV_CauseAccidentDom-CISIS.xml'"/>
-        <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession-CISIS.xml'"/>         
-        <let name="JDV_TypeGarde-CISIS" value="'../jeuxDeValeurs/JDV_TypeGarde-CISIS.xml'"/> 
-        <let name="JDV_VaccinCSE9-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE9-CISIS.xml'"/> 
+        <let name="JDV_Activite-CISIS" value="'../jeuxDeValeurs/JDV_Activite_CISIS.xml'"/>
+        <let name="JDV_CauseAccidentDom-CISIS" value="'../jeuxDeValeurs/JDV_CauseAccidentDom_CISIS.xml'"/>
+        <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession_CISIS.xml'"/>         
+        <let name="JDV_TypeGarde-CISIS" value="'../jeuxDeValeurs/JDV_TypeGarde_CISIS.xml'"/> 
+        <let name="JDV_VaccinCSE9-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE9_CISIS.xml'"/> 
         
         <rule context='cda:ClinicalDocument/cda:component/cda:structuredBody'>
             

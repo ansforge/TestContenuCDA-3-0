@@ -10,7 +10,8 @@
     Historique :
       15/09/2020 : Création
       16/12/2020 : Renommage JDV
-        05/04/2022 : Migration des terminologies et JDV : Ajout du JDV_RouteofAdministration-CISIS.sch
+      05/04/2022 : Migration des terminologies et JDV : Ajout du JDV_RouteofAdministration_CISIS.sch
+      28/08/2023 : Migration des terminologies et JDV
    ......................................................................................................................................................    
 -->
 
@@ -100,22 +101,22 @@
     </phase>
     
     <pattern id="JDVvariables">
-        <let name="JDV_TypeAnesthesie-CISIS" value="'../jeuxDeValeurs/JDV_TypeAnesthesie-CISIS.xml'"/>
-        <let name="JDV_Difficulte-CISIS" value="'../jeuxDeValeurs/JDV_Difficulte-CISIS.xml'"/>
-        <let name="JDV_ScoreCormack-CISIS" value="'../jeuxDeValeurs/JDV_ScoreCormack-CISIS.xml'"/>
-        <let name="JDV_AbordVeineuxCentral-CISIS" value="'../jeuxDeValeurs/JDV_AbordVeineuxCentral-CISIS.xml'"/>
-        <let name="JDV_AbordVeineuxPeripherique-CISIS" value="'../jeuxDeValeurs/JDV_AbordVeineuxPeripherique-CISIS.xml'"/>
-        <let name="JDV_TypeIntubation-CISIS" value="'../jeuxDeValeurs/JDV_TypeIntubation-CISIS.xml'"/>
-        <let name="JDV_NVPO-CISIS" value="'../jeuxDeValeurs/JDV_NVPO-CISIS.xml'"/>
-        <let name="JDV_ScoreASA-CISIS" value="'../jeuxDeValeurs/JDV_ScoreASA-CISIS.xml'"/>
-        <let name="JDV_EvaluationDouleur-CISIS" value="'../jeuxDeValeurs/JDV_EvaluationDouleur-CISIS.xml'"/>
-        <let name="JDV_DefaillanceMaterielle-CISIS" value="'../jeuxDeValeurs/JDV_DefaillanceMaterielle-CISIS.xml'"/>
-        <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite-CISIS.xml'"/>
-        <let name="JDV_ClassificationRingMessmer-CISIS" value="'../jeuxDeValeurs/JDV_ClassificationRingMessmer-CISIS.xml'"/>
-        <let name="JDV_AccesArtere-CISIS" value="'../jeuxDeValeurs/JDV_AccesArtere-CISIS.xml'"/>
-        <let name="JDV_HL7_ActPriority-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ActPriority-CISIS.xml'"/>
-        <let name="JDV_TypeProduitSanguinLabile-CISIS" value="'../jeuxDeValeurs/JDV_TypeProduitSanguinLabile-CISIS.xml'"/>
-        <let name="JDV_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/>
+        <let name="JDV_TypeAnesthesie-CISIS" value="'../jeuxDeValeurs/JDV_TypeAnesthesie_CISIS.xml'"/>
+        <let name="JDV_Difficulte-CISIS" value="'../jeuxDeValeurs/JDV_Difficulte_CISIS.xml'"/>
+        <let name="JDV_ScoreCormack-CISIS" value="'../jeuxDeValeurs/JDV_ScoreCormack_CISIS.xml'"/>
+        <let name="JDV_AbordVeineuxCentral-CISIS" value="'../jeuxDeValeurs/JDV_AbordVeineuxCentral_CISIS.xml'"/>
+        <let name="JDV_AbordVeineuxPeripherique-CISIS" value="'../jeuxDeValeurs/JDV_AbordVeineuxPeripherique_CISIS.xml'"/>
+        <let name="JDV_TypeIntubation-CISIS" value="'../jeuxDeValeurs/JDV_TypeIntubation_CISIS.xml'"/>
+        <let name="JDV_NVPO-CISIS" value="'../jeuxDeValeurs/JDV_NVPO_CISIS.xml'"/>
+        <let name="JDV_ScoreASA-CISIS" value="'../jeuxDeValeurs/JDV_ScoreASA_CISIS.xml'"/>
+        <let name="JDV_EvaluationDouleur-CISIS" value="'../jeuxDeValeurs/JDV_EvaluationDouleur_CISIS.xml'"/>
+        <let name="JDV_DefaillanceMaterielle-CISIS" value="'../jeuxDeValeurs/JDV_DefaillanceMaterielle_CISIS.xml'"/>
+        <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite_CISIS.xml'"/>
+        <let name="JDV_ClassificationRingMessmer-CISIS" value="'../jeuxDeValeurs/JDV_ClassificationRingMessmer_CISIS.xml'"/>
+        <let name="JDV_AccesArtere-CISIS" value="'../jeuxDeValeurs/JDV_AccesArtere_CISIS.xml'"/>
+        <let name="JDV_HL7_ActPriority-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ActPriority_CISIS.xml'"/>
+        <let name="JDV_TypeProduitSanguinLabile-CISIS" value="'../jeuxDeValeurs/JDV_TypeProduitSanguinLabile_CISIS.xml'"/>
+        <let name="JDV_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

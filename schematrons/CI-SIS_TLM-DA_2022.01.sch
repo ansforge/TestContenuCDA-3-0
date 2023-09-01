@@ -53,7 +53,7 @@
 
   <pattern id="variables">
     
-    <let name="jdv_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation-CISIS.xml'"/> 
+    <let name="jdv_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation_CISIS.xml'"/> 
 
     <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
       <!-- Présence obligatoire de la section Anamnèse et facteurs de risques (1.2.250.1.213.1.1.2.68) -->

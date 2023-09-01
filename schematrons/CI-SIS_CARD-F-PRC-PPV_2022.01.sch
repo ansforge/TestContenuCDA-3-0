@@ -3,7 +3,8 @@
     CI-SIS_CARD-F-PRC-PPV_2022.01.sch
     Vérification de la conformité sémantique au volet Patients à Risques de Cardiologie du CI-SIS.
      
-    06/01/2023 : Nouvelle version 2023.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    06/01/2023 : Nouvelle version 2022.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    28/08/2023 : Migration des terminologies et JDV
 -->
 
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -54,11 +55,11 @@
     </phase>
     
     <pattern id="variables">
-        <let name="jdv_UFCV_ProtValv-CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_ProtValv-CISIS.xml'"/>
-        <let name="jdv_UFCV_CodEntree-CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_CodEntree-CISIS.xml'"/>
-        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl-CISIS.xml'"/>
-        <let name="jdv_UFCV_TypVal_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_TypVal-CISIS.xml'"/>
-        <let name="jdv_UFCV_CompProt_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_CompProt-CISIS.xml'"/>
+        <let name="jdv_UFCV_ProtValv-CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_ProtValv_CISIS.xml'"/>
+        <let name="jdv_UFCV_CodEntree-CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_CodEntree_CISIS.xml'"/>
+        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl_CISIS.xml'"/>
+        <let name="jdv_UFCV_TypVal_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_TypVal_CISIS.xml'"/>
+        <let name="jdv_UFCV_CompProt_CARD-F-PRC-PPV" value="'../jeuxDeValeurs/JDV_UFCV_CompProt_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

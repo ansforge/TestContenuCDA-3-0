@@ -8,6 +8,7 @@
         14/03/2018 : Maj du pattern variables  
         05/11/2021 : version 2021.01
         21/04/2022 : Migration des terminologies et JDV en SNOMED-CT
+        28/08/2023 : Migration des terminologies et JDV
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
@@ -66,17 +67,17 @@
     </phase>
     
     <pattern id="variables">
-        <let name="jdv_Age" value="'../jeuxDeValeurs/JDV_Age-CISIS.xml'"/>
-        <let name="jdv_AppreciationDiagnosticEntree" value="'../jeuxDeValeurs/JDV_AppreciationDiagnosticCentre-CISIS.xml'"/>
-        <let name="jdv_CasSporadiqueFamilial" value="'../jeuxDeValeurs/JDV_CasSporadiqueFamilial-CISIS.xml'"/>
-        <let name="jdv_MalformationAntenatale" value="'../jeuxDeValeurs/JDV_MalformationAntenatale-CISIS.xml'"/>
-        <let name="jdv_ObjectifActivite" value="'../jeuxDeValeurs/JDV_ObjectifActivite-CISIS.xml'"/>
-        <let name="jdv_StatutActuelDiagnostic" value="'../jeuxDeValeurs/JDV_StatutActuelDiagnostic-CISIS.xml'"/>
-        <let name="jdv_PatientAdressePar" value="'../jeuxDeValeurs/JDV_PatientAdressePar-CISIS.xml'"/>
-        <let name="jdv_ContexteActivite" value="'../jeuxDeValeurs/JDV_ContexteActivite-CISIS.xml'"/>
-        <let name="jdv_TechniquesDiagnostic" value="'../jeuxDeValeurs/JDV_TechniquesDiagnostic-CISIS.xml'"/>
-        <let name="jdv_InvestigationsRealisees" value="'../jeuxDeValeurs/JDV_InvestigationsRealisees-CISIS.xml'"/>
-        <let name="jdv_ProfessionPersonnelActivite" value="'../jeuxDeValeurs/JDV_ProfessionPersonnelActivite-CISIS.xml'"/>
+        <let name="jdv_Age" value="'../jeuxDeValeurs/JDV_Age_CISIS.xml'"/>
+        <let name="jdv_AppreciationDiagnosticEntree" value="'../jeuxDeValeurs/JDV_AppreciationDiagnosticCentre_CISIS.xml'"/>
+        <let name="jdv_CasSporadiqueFamilial" value="'../jeuxDeValeurs/JDV_CasSporadiqueFamilial_CISIS.xml'"/>
+        <let name="jdv_MalformationAntenatale" value="'../jeuxDeValeurs/JDV_MalformationAntenatale_CISIS.xml'"/>
+        <let name="jdv_ObjectifActivite" value="'../jeuxDeValeurs/JDV_ObjectifActivite_CISIS.xml'"/>
+        <let name="jdv_StatutActuelDiagnostic" value="'../jeuxDeValeurs/JDV_StatutActuelDiagnostic_CISIS.xml'"/>
+        <let name="jdv_PatientAdressePar" value="'../jeuxDeValeurs/JDV_PatientAdressePar_CISIS.xml'"/>
+        <let name="jdv_ContexteActivite" value="'../jeuxDeValeurs/JDV_ContexteActivite_CISIS.xml'"/>
+        <let name="jdv_TechniquesDiagnostic" value="'../jeuxDeValeurs/JDV_TechniquesDiagnostic_CISIS.xml'"/>
+        <let name="jdv_InvestigationsRealisees" value="'../jeuxDeValeurs/JDV_InvestigationsRealisees_CISIS.xml'"/>
+        <let name="jdv_ProfessionPersonnelActivite" value="'../jeuxDeValeurs/JDV_ProfessionPersonnelActivite_CISIS.xml'"/>
         
         <rule context="cda:ClinicalDocument">
             

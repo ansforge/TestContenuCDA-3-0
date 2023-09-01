@@ -11,6 +11,7 @@
        14/03/2018 : MAJ du pattern variables
        06/01/2021 : Ajout du contrôle du JDV_ObservationEtatPatient
        19/02/2021 : Test de la présence des sections, du templateId du volet et du code
+       28/08/2023 : Migration des terminologies et JDV
    ......................................................................................................................................................
        -->
 
@@ -43,8 +44,8 @@
 	</phase>
 	
 	<pattern id="variables">
-		<let name="JDV_CheckListDLU_DLU" value = "'../jeuxDeValeurs/JDV_ChecklistDLU-CISIS.xml'"/>
-		<let name="JDV_ObservationEtatPatient" value = "'../jeuxDeValeurs/JDV_ObservationEtatPatient-CISIS.xml'"/>
+		<let name="JDV_CheckListDLU_DLU" value = "'../jeuxDeValeurs/JDV_ChecklistDLU_CISIS.xml'"/>
+		<let name="JDV_ObservationEtatPatient" value = "'../jeuxDeValeurs/JDV_ObservationEtatPatient_CISIS.xml'"/>
 		
 		<rule context="cda:ClinicalDocument">
 						

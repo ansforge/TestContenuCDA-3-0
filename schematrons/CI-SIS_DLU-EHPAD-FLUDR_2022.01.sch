@@ -8,7 +8,8 @@
    Historique :t
        13/12/2016 : Création
        14/03/2018 : MAJ du pattern variables
-       19/02/2021 : Test de la présence des sections, du templateId du volet et du code       
+       19/02/2021 : Test de la présence des sections, du templateId du volet et du code     
+       28/08/2023 : Migration des terminologies et JDV
    ...................................................................................................................................................... 
        -->
 
@@ -46,8 +47,8 @@
         </phase>
         
         <pattern id="variables">
-                <let name="JDV_CheckListDLU-FLUDR" value ="'../jeuxDeValeurs/JDV_ChecklistFLUDR-CISIS.xml'"/>
-                <let name="JDV_ProtheseObjetPersonnel-CISIS" value ="'../jeuxDeValeurs/JDV_ProtheseObjetPersonnel-CISIS.xml'"/>
+                <let name="JDV_CheckListDLU-FLUDR" value ="'../jeuxDeValeurs/JDV_ChecklistFLUDR_CISIS.xml'"/>
+                <let name="JDV_ProtheseObjetPersonnel-CISIS" value ="'../jeuxDeValeurs/JDV_ProtheseObjetPersonnel_CISIS.xml'"/>
                 <rule context="cda:ClinicalDocument">
                         <assert test="count(cda:component/cda:structuredBody/cda:component/cda:section/cda:templateId[@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7'])=1"> 
                                 [CI-SIS_DLU-EHPAD-FLUDR_2022.01] La section "Resultats d'évenements : Retour du patient à l'EHPAD" doit être présente une fois. Cardinalité [1..1].

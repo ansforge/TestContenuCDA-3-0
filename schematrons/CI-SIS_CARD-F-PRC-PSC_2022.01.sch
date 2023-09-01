@@ -3,7 +3,8 @@
     CI-SIS_CARD-F-PRC-PSC_2022.01.sch
     Vérification de la conformité sémantique au volet Patients à Risques de Cardiologie du CI-SIS.
      
-    04/01/2023 : Nouvelle version 2023.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    04/01/2023 : Nouvelle version 2022.01 : Création d'un schématron différent pour chaqu'un des volets CARD-F-PRC
+    28/08/2023 : Migration des terminologies et JDV
 -->
 
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -65,15 +66,15 @@
     
     <pattern id="variables">
         
-        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl-CISIS.xml'"/>
-        <let name="jdv_UFCV_TypeDM-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_TypeDMCard-CISIS.xml'"/>
-        <let name="jdv_UFCV_NYHA-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_NYHA-CISIS.xml'"/>
-        <let name="jdv_UFCV_SiteImp-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_SiteImp-CISIS.xml'"/>
-        <let name="jdv_UFCV_PolarSnd-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_PolarSnd-CISIS.xml'"/>
-        <let name="jdv_UFCV_Connx-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_Connx-CISIS.xml'"/>
-        <let name="jdv_UFCV_VoieAbord-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_VoieAbord-CISIS.xml'"/>
-        <let name="jdv_UFCV_Impl-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_Impl-CISIS.xml'"/>
-        <let name="jdv_UFCV_CodEntree-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_CodEntree-CISIS.xml'"/>
+        <let name="jdv_UFCV_MatImpl_CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl_CISIS.xml'"/>
+        <let name="jdv_UFCV_TypeDM-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_TypeDMCard_CISIS.xml'"/>
+        <let name="jdv_UFCV_NYHA-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_NYHA_CISIS.xml'"/>
+        <let name="jdv_UFCV_SiteImp-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_SiteImp_CISIS.xml'"/>
+        <let name="jdv_UFCV_PolarSnd-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_PolarSnd_CISIS.xml'"/>
+        <let name="jdv_UFCV_Connx-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_Connx_CISIS.xml'"/>
+        <let name="jdv_UFCV_VoieAbord-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_VoieAbord_CISIS.xml'"/>
+        <let name="jdv_UFCV_Impl-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_Impl_CISIS.xml'"/>
+        <let name="jdv_UFCV_CodEntree-CARD-F-PRC-PSC" value="'../jeuxDeValeurs/JDV_UFCV_CodEntree_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

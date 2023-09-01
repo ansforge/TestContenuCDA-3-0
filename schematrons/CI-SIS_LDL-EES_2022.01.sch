@@ -11,6 +11,7 @@
         22/02/2021 : Renommage schématron     
         03/05/2021 : Ajout des contrôles des sections obligatoires  
         11/04/2022 : Ajout du schématron du JDV JDV_RouteofAdministration-CISIS.sch
+        28/08/2023 : Migration des terminologies et JDV
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_LDL-EES_2022.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
@@ -44,7 +45,7 @@
     </phase>
     
     <pattern id="variables">
-        <let name="jdv_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/> 
+        <let name="jdv_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration_CISIS.xml'"/> 
         
         <!-- Vérifier que toutes les sections obligatoires du document sont présentes -->
         <rule context='*[cda:templateId/@root="1.2.250.1.213.1.1.1.21"]'>
