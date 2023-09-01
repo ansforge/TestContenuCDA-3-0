@@ -9,7 +9,7 @@
 <?oxygen SCHSchema="../schematrons/CI-SIS_CARD-F-PRC-DCI_2022.01.sch"?>
 <!-- 
       **********************************************************************************************************
-      Document : UFCV - Porteur d'un Défibrillateur Cardiaque (F-PRC-DCI_1.4)
+      Document : UFCV - Porteur d'un Défibrillateur Cardiaque (F-PRC-DCI_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -21,6 +21,7 @@
      	13/07/2021 : Correction de l'unité "mn" par "min"
      	28/04/2022 : Nouvelle version 2022.01
      	28/04/2022 : Migration des terminologies et JDV en SNOMED CT
+     	25/08/2023 : Migration des terminologies et JDVs après validation
       **********************************************************************************************************
    -->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:lab="urn:hl7-org:lab" 
@@ -1074,9 +1075,9 @@
                   <!-- ID du matériel implanté (numéro de série)-->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <!-- Valeur issue du JDV_UFCV_MatImpl-CISIS -->
+                    <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS -->
                     <!-- [ANS] Code à remplacer par EMDN -->
-                    <code code="D0001-1" displayName="Défibrillateur" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC">
+                    <code code="J0105" displayName="DÉFIBRILLATEURS IMPLANTABLES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1260,7 +1261,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- Valeur issue du JDV_UFCV_NYHA-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_NYHA_CISIS -->
                   <!-- [ANS] code à remplacer par LA (LOINC) ou SNOMED CT -->
                   <value xsi:type="CD" code="G-E404" displayName="Stade III (NYHA)" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
                 </observation>
@@ -1415,9 +1416,9 @@
                   <!-- ID du matériel implanté (numéro de série)-->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <!-- Valeur issue du JDV_UFCV_MatImpl-CISIS -->
-                    <!-- [ANS] Code à remplacer par EMDN -->
-                    <code code="D0001-3" displayName="Sonde Auriculaire" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC">
+                    <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS -->
+                    <code code="J019001010101"
+                      displayName="SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1483,7 +1484,7 @@
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NASK"/>
                   <!-- [ANS] Code à remplacer -->
-                  <!-- Valeur provenant du JDV_UFCV_Connx-CISIS -->
+                  <!-- Valeur provenant du JDV_UFCV_Connx_CISIS -->
                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
                 </observation>
               </entryRelationship>
@@ -1679,9 +1680,11 @@
                   <!-- ID du matériel implanté -->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <!-- Valeur issue du JDV_UFCV_MatImpl-CISIS  -->
+                    <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS  -->
                     <!-- [ANS] Code à remplacer par EMDN -->
-                    <code code="D0001-4" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sonde Ventricule Droit" >
+                    <code code="J01030101"
+                      displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE"
+                      codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" >
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1739,7 +1742,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="93380E6B-EA79-4215-9A4D-E63750A3A825" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Adaptateur"/>
                   <text>
@@ -1758,7 +1761,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="EC08279C-B47B-40D6-AE58-5EA7BFAF4694" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse"/>
                   <text>
                     <reference value="#def0053" />
@@ -1776,7 +1779,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="E5F39848-0E49-417D-9005-2967209B0A00" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation"/>
                   <text>
                     <reference value="#def0054" />
@@ -1794,7 +1797,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="0E87484F-D870-4BF3-A4EE-EE6C534F2298" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Courant"/>
                   <text>
                     <reference value="#def0055" />
@@ -1812,7 +1815,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C41E6767-67E1-49E2-B78D-30F7D84A698F" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Détection"/>
                   <text>
                     <reference value="#def0056" />
@@ -1830,7 +1833,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8E0775C6-F3A2-4E04-81FC-E42CBEF7DA5B" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
                   <text>
                     <reference value="#def0057" />
@@ -1865,7 +1868,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="E597DE6E-A86F-4BCE-9B30-BF19DD22833B" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0024" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Défibrillation efficace à:"/>
                   <text>
                     <reference value="#def0059" />
@@ -1883,7 +1886,7 @@
                  <!-- Conformité CI-SIS -->
                  <templateId root="1.2.250.1.213.1.1.3.48" />
                  <id root="966226D3-C914-47EF-A456-D9DBB77AE073" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance de choc"/>
                   <text>
                     <reference value="#def0060" />
@@ -1901,7 +1904,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C2F7BF40-F940-4E4C-B159-ED69F0516053" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Temps de Charge"/>
                   <text>
                     <reference value="#def0061" />
@@ -1919,7 +1922,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="79E97C0C-D133-413F-87AC-75E8806BB0DF" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil de Stimulation"/>
                   <text>
                     <reference value="#def0062" />
@@ -1937,7 +1940,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="527D82D7-69AB-4E4D-B5F5-2E869674FE71" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Recueil"/>
                   <text>
                     <reference value="#def0063" />
@@ -1955,7 +1958,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                  <id root="BC35BC60-4DE6-46CF-9B58-68944A1204CD" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
                   <text>
                     <reference value="#def0064" />
@@ -1973,7 +1976,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="962DF6DC-08C2-460D-B6F1-EFD0D5430F8E" />
-                  <!-- Valeur issue du JDV_UFCV_CodEntree-CISIS -->
+                  <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance de choc"/>
                   <text>
                     <reference value="#def0076" />
@@ -2002,9 +2005,9 @@
                   <!-- ID du matériel implanté -->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <!-- Valeur issue du JDV_UFCV_MatImpl-CISIS -->
-                    <!-- [ANS] Code à remplacer par EMDN -->
-                    <code code="D0001-5" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sonde Ventricule Gauche">
+                    <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS -->
+                    <code code="J01030102" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE"
+                      codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -2033,7 +2036,7 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime nullFlavor="NASK"/>
-                  <!-- Valeur issue JDV_UFCV_PolarSnd-CISIS -->
+                  <!-- Valeur issue JDV_UFCV_PolarSnd_CISIS -->
                   <!-- [ANS]Code à remplacer par EMDN -->
                     <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
                 </observation>
@@ -2052,7 +2055,7 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime nullFlavor="NASK"/>
-                  <!-- Valeur issue JDV_UFCV_Connx-CISIS -->
+                  <!-- Valeur issue JDV_UFCV_Connx_CISIS -->
                     <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
                 </observation>
               </entryRelationship>

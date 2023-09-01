@@ -9,7 +9,7 @@
 <?oxygen SCHSchema="../schematrons/CI-SIS_CANCER-FRCP_2022.01.sch"?>
 <!--
       **********************************************************************************************************
-      Document : Fiche de Réunion de concertation pluridisciplinaire (FRCP_2021.01)
+      Document : Fiche de Réunion de concertation pluridisciplinaire (FRCP_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -22,6 +22,7 @@
       11/06/2018 : Correction d'erreurs suite à la mise à jour des schématrons et du volet
       16/04/2021 : Nouvelle version FRCP_2021.01 
       14/04/2022:  Migration des terminologies et JDV en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
       **********************************************************************************************************
    -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
@@ -655,9 +656,9 @@
   <!-- Acte = Localisation de la tumeur -->
   <documentationOf>
     <serviceEvent classCode="ACT">
-      <!-- Topographie : JDV_Tumeur-CISIS -->
+      <!-- Topographie : JDV_Tumeur_CISIS -->
       <code code="C50.2" displayName="Quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O" />
-      <!-- si Topographie ne peut être codée avec le JDV_Tumeur-CISIS : texte libre dans <originalText>  
+      <!-- si Topographie ne peut être codée avec le JDV_Tumeur_CISIS : texte libre dans <originalText>  
          <code code="GEN-243" displayName="Topographie"
             codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
             <originalText>(texte libre)</originalText>
@@ -828,7 +829,7 @@
               </text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NAV"/>
-              <!-- Nature de la RCP : JDV_NatureDiscussion-CISIS (1.2.250.1.213.1.1.4.2.281.8) -->
+              <!-- Nature de la RCP : JDV_NatureDiscussion_CISIS (1.2.250.1.213.1.1.4.2.281.8) -->
               <value xsi:type="CD" code="ORG-132" displayName="RCP Transversale et de soins de support"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               
@@ -844,7 +845,7 @@
                   <text><reference value="#traitement-soins"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NAV"/>
-                  <!-- JDV_TraitementSoins-FRCP-CISIS (1.2.250.1.213.1.1.5.596) -->
+                  <!-- JDV_TraitementSoins_FRCP_CISIS (1.2.250.1.213.1.1.5.596) -->
                   <value xsi:type="CD" code="C15747" displayName="Soins de support" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                   <!-- Entrée FR-Simple-Observation [1..1] : RCP de Recours (O/N) -->
                   <entryRelationship typeCode="REFR">
@@ -1026,7 +1027,7 @@
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime nullFlavor="NA"/>
-                          <!-- Statut du cas présenté : issue du JDV_StatutCasPresente-CISIS (1.2.250.1.213.1.1.4.2.281.17) -->
+                          <!-- Statut du cas présenté : issue du JDV_StatutCasPresente_CISIS (1.2.250.1.213.1.1.4.2.281.17) -->
                           <value xsi:type="CD" code="ORG-128" displayName="Cas enregistré"
                             codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                         </observation>
@@ -1261,17 +1262,17 @@
                     <low value="20110101" />
                   </effectiveTime>
                   <!-- <effectiveTime><low nullFlavor="UNK"/></effectiveTime> : nullFlavor autorisé -->
-                  <!-- [1..1] Morphologie : JDV_Morphologie-CISIS -->
+                  <!-- [1..1] Morphologie : JDV_Morphologie_CISIS -->
                   <value xsi:type="CD" code="8000/3" displayName="Tumeur maligne, SAI" codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O">
                     <originalText>
                       <reference value="#morphologie-1" />
                     </originalText>
                   </value>
-                  <!-- si JDV_Morphologie-CISIS non applicable : précision dans la partie narrative -->
+                  <!-- si JDV_Morphologie_CISIS non applicable : précision dans la partie narrative -->
                   <!-- <value xsi:type="CD" nullFlavor="OTH">
                                     <originalText><reference value="#morphologie-1"/></originalText>
                                 </value> -->
-                  <!-- [0..1] Topographie : JDV_Tumeur-CISIS -->
+                  <!-- [0..1] Topographie : JDV_Tumeur_CISIS -->
                   <targetSiteCode code="C50.2" displayName="Tumeur maligne du quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#topographie-1" />
@@ -1286,7 +1287,7 @@
                       </value>
                     </qualifier>
                   </targetSiteCode>
-                  <!-- Si JDV_Tumeur-CISIS non applicable : précision dans la partie narrative -->
+                  <!-- Si JDV_Tumeur_CISIS non applicable : précision dans la partie narrative -->
                   <!-- <targetSiteCode nullFlavor="OTH">
                                     <originalText><reference value="#topographie-1"/></originalText>
                                 </targetSiteCode> 
@@ -1641,10 +1642,10 @@
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20190215"/>
-                  <!-- Valeur issue du JDV_OMSEchPerf-CISIS -->
+                  <!-- Valeur issue du JDV_OMSEchPerf_CISIS -->
                   <value xsi:type="CD" code="MED-240" displayName="Stade 0"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <!-- Valeur issue du JDV_OMSInterpret-CISIS -->
+                  <!-- Valeur issue du JDV_OMSInterpret_CISIS -->
                   <interpretationCode code="MED-241"
                     displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction."
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
@@ -1987,7 +1988,7 @@
               <!-- Conformité CISIS -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="75C517FE-D623-4B2E-AADF-22A906371428"/>
-              <!-- Type de traitement JDV_TypeTraitement-CISIS (1.2.250.1.213.1.1.4.2.281.9) -->
+              <!-- Type de traitement JDV_TypeTraitement_CISIS (1.2.250.1.213.1.1.4.2.281.9) -->
               <code code="MED-227" displayName="Surveillance active"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               <!-- Précision si type de traitement = 'Autre' -->
@@ -2030,7 +2031,7 @@
               <!-- Conformité CISIS -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="8804F37A-8D1B-46C1-B139-774C2AAC584B"/>
-              <!-- Type de traitement JDV_TypeTraitement-CISIS (1.2.250.1.213.1.1.4.2.281.9) -->
+              <!-- Type de traitement JDV_TypeTraitement_CISIS (1.2.250.1.213.1.1.4.2.281.9) -->
               <code code="GEN-092.03.01" displayName="Autre(s) traitement(s)"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               <!-- Précision si type de traitement = 'Autre' -->
@@ -3122,7 +3123,7 @@
               <!-- Conformité CISIS -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="194AE3B0-FA7D-49D6-8C90-86139E9AF5BE"/>
-              <!-- Code du traitement : JDV_TypeTraitement-FRCP-CISIS (1.2.250.1.213.1.1.5.595) -->
+              <!-- Code du traitement : JDV_TypeTraitement_FRCP_CISIS (1.2.250.1.213.1.1.5.595) -->
               <code code="C15313" displayName="Radiothérapie" 
                     codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT">
                 <originalText>
@@ -3151,7 +3152,7 @@
               <!-- Conformité CISIS -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="194AE3B0-FA7D-49D6-8C90-86139E9AF5BE"/>
-              <!-- Code du traitement : JDV_TypeTraitement-FRCP-CISIS (1.2.250.1.213.1.1.5.595) -->
+              <!-- Code du traitement : JDV_TypeTraitement_FRCP_CISIS (1.2.250.1.213.1.1.5.595) -->
               <code code="GEN-092.03.01" displayName="Autre(s) traitement(s)"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                 <originalText>
@@ -3180,7 +3181,7 @@
               <!-- Conformité CISIS -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="194AE3B0-FA7D-49D6-8C90-86139E9AF5BE"/>
-              <!-- Code du traitement : JDV_TypeTraitement-FRCP-CISIS (1.2.250.1.213.1.1.5.595) -->
+              <!-- Code du traitement : JDV_TypeTraitement_FRCP_CISIS (1.2.250.1.213.1.1.5.595) -->
               <code code="C15632" displayName="Chimiothérapie conventionnelle"
                 codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT">
                 <originalText>

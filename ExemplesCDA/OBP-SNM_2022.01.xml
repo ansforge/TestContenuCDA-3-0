@@ -385,9 +385,9 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="460A7111-986C-47E4-AEFD-2B5A1BBA44D8" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="73813-8" displayName="Caractéristiques du travail" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                    <!-- valeur issue du JDV_OBP_ModeDebutTravail-CISIS (1.2.250.1.213.1.1.4.2.289.22) -->
+                    <!-- valeur issue du JDV_OBP_ModeDebutTravail_CISIS (1.2.250.1.213.1.1.4.2.289.22) -->
                     <qualifier><value code="P1-86310" displayName="Césarienne " codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/></qualifier>
                   </code>
                   <text>
@@ -426,9 +426,9 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="236958009" displayName="induction du travail" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <!-- valeur issue du JDV_OBP_MotifDeclenchementTravail-CISIS (1.2.250.1.213.1.1.4.2.289.24) -->
+                    <!-- valeur issue du JDV_OBP_MotifDeclenchementTravail_CISIS (1.2.250.1.213.1.1.4.2.289.24) -->
                     <qualifier><value code="D8-12200" displayName="Grossesse prolongée" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/></qualifier>
                   </code>
                   <text>
@@ -450,9 +450,9 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="OBS_029" displayName="Analgésie avant la naissance" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" >
-                    <!-- valeur issue du JDV_OBP_TypeAnesthesieAvantNaissance-CISIS (1.2.250.1.213.1.1.4.2.289.28) -->
+                    <!-- valeur issue du JDV_OBP_TypeAnesthesieAvantNaissance_CISIS (1.2.250.1.213.1.1.4.2.289.28) -->
                     <qualifier><value code="P1-C0400" displayName="Anesthésie locale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/></qualifier>
                   </code>
                   <text>
@@ -474,9 +474,9 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="OBS_031" displayName="Analgésie après la naissance" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS">
-                    <!-- valeur issue du JDV_OBP_TypeAnesthesieApresNaissance-CISIS (1.2.250.1.213.1.1.4.2.289.27) -->
+                    <!-- valeur issue du JDV_OBP_TypeAnesthesieApresNaissance_CISIS (1.2.250.1.213.1.1.4.2.289.27) -->
                     <qualifier><value code="P1-C0400" displayName="Anesthésie locale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/></qualifier>
                   </code>
                   <text>
@@ -498,9 +498,9 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="OBS_033" displayName="Actes associés pratiqués lors du post partum" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS">
-                    <!-- valeur issue du JDV_OBP_TypeActePostPartum-CISIS (1.2.250.1.213.1.1.4.2.289.28) -->
+                    <!-- valeur issue du JDV_OBP_TypeActePostPartum_CISIS (1.2.250.1.213.1.1.4.2.289.28) -->
                     <qualifier><value code="OBS_210" displayName="révision utérine isolée" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS"/></qualifier>
                   </code>
                   <text>
@@ -522,7 +522,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-                  <!-- valeur issue du JDV_OBP_Acte-CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
+                  <!-- valeur issue du JDV_OBP_Acte_CISIS (1.2.250.1.213.1.1.4.2.289.49) -->
                   <code code="116859006" displayName="transfusion de produits sanguins" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                   <text>
                     <reference value="#transfusion" />
@@ -666,7 +666,7 @@
                   <effectiveTime>
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
-                  <!-- valeur issue du JDV_OBP_ComplicationsAnesthesie-CISIS (1.2.250.1.213.1.1.4.2.289.20) -->
+                  <!-- valeur issue du JDV_OBP_ComplicationsAnesthesie_CISIS (1.2.250.1.213.1.1.4.2.289.20) -->
                   <value xsi:type="CD" code="O74.3" 
                              displayName="Complications intéressant le système nerveux central dues à l'anesthésie au cours du travail et de l'accouchement" 
                              codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
@@ -693,7 +693,7 @@
                   <effectiveTime>
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
-                  <!-- valeur issue du JDV_OBP_ComplicationsAnesthesie-CISIS (1.2.250.1.213.1.1.4.2.289.20) -->
+                  <!-- valeur issue du JDV_OBP_ComplicationsAnesthesie_CISIS (1.2.250.1.213.1.1.4.2.289.20) -->
                   <value xsi:type="CD" code="O74.2" displayName="Complications cardiaques de l'anesthésie au cours du travail et de l'accouchement" 
                                        codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText><reference value="#complication-2"/></originalText>
@@ -743,7 +743,7 @@
                   <effectiveTime>
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
-                  <!-- valeur issue du JDV_EtatPerinee-CISIS (1.2.250.1.213.1.1.4.2.289.4) -->
+                  <!-- valeur issue du JDV_EtatPerinee_CISIS (1.2.250.1.213.1.1.4.2.289.4) -->
                   <value xsi:type="CD" code="OBS_107" displayName="Déchirure périnéale simple (1er et 2ème degré)" 
                                        codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS">
                     <originalText><reference value="#etat-perinee"/></originalText>
@@ -809,7 +809,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="UNK" />
-                  <!-- Valeur issue du JDV_ModeSortie-OBP-SNM-CISIS (1.2.250.1.213.1.1.5.698) -->
+                  <!-- Valeur issue du JDV_ModeSortie-OBP-SNM_CISIS (1.2.250.1.213.1.1.5.698) -->
                   <value xsi:type="CD" code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                 </observation>
               </entry>

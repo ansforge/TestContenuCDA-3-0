@@ -11,12 +11,13 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
   <!-- 
       **********************************************************************************************************
-      Document : Evaluation Pluri Professionnelle Post AVC (AVC-PAVC_2.2)
+      Document : Evaluation Pluri Professionnelle Post AVC (AVC-PAVC_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
       **********************************************************************************************************
       05/04/2022 : Migration des terminologies et JDV en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
       **********************************************************************************************************
    -->
   <realmCode code="FR" />
@@ -2559,7 +2560,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-101" displayName="Retour au domicile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="160849004" displayName="retour au domicile" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>

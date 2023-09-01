@@ -9,7 +9,7 @@
 <?oxygen SCHSchema="../schematrons/CI-SIS_DLU-EHPAD-FLUDT_2022.01.sch"?>
 <!-- 
       *************************************************************************
-      Document : Dossier de liaison d'urgence (DLU-FLUDT_2021.01)
+      Document : Dossier de liaison d'urgence (DLU-FLUDT_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -27,6 +27,7 @@
 	    - Remplacement de la section FR-Commentaire-Asip (1.2.250.1.213.1.1.2.47) par la section FR-Commentaire-non-code (1.2.250.1.213.1.1.2.73) qui ne contient pas d’entrée. 
 	    05/12/2022 : Nouvelle version 2022.01
       - Migration des terminologies et JDVs
+       28/08/2023 : MAJ des JDV
       **********************************************************************************************************
  -->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
@@ -42,7 +43,7 @@
   <templateId root="2.16.840.1.113883.2.8.2.1" />
   <!-- Conformité aux spécifications du CI-SIS -->
   <templateId root="1.2.250.1.213.1.1.1.1" />
-  <!-- Conformité au modèle DLU-FLUDT v2022.01 -->
+  <!-- Conformité au modèle DLU-FLUDT v2023.01 -->
   <templateId root="1.2.250.1.213.1.1.1.23" extension="2022.01" />
   <!-- Identifiant du document -->
   <id root="1.2.250.1.213.1.1.1.23.1"/>
@@ -949,7 +950,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="29D020AA-168F-4D98-A706-D6AD009EECE1" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#lunettes" />
@@ -970,7 +971,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="00845861-509F-432A-96B7-1898E3574609" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protDentHaut" />
@@ -991,7 +992,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="BC760D09-4F49-41F0-8529-3ED75F5CA9C5" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protDentBas" />
@@ -1012,7 +1013,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="2603E6C3-1ED7-4505-A2C9-AE97E53C8B1D" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protAudDroit" />
@@ -1033,7 +1034,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="3AEBD44A-0A9B-403B-8748-53BB788A740E" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protAudGauche" />
@@ -1054,7 +1055,7 @@
               <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="591BFAC8-4850-4324-B6D3-443A4AAE481D" />
-              <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="GEN-092.02.01" displayName="Autre prothèse et objet personnel" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
                 <reference value="#autreDispoST" />

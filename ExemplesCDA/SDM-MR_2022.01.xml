@@ -24,6 +24,7 @@
 		15/07/2021 : correction de l'unité en "wk" (au lieu de "semaines")
 		05/11/2021 : version 2021.01
 		24/10/2022 : version 2022.01
+		28/08/2023 : modification terminologies et JDV
 		**********************************************************************************************************
 	-->
 <!-- Attention : xsi:schemaLocation spécifique au SDM-MR : infrastructure/cda/CDA_SDTC.xsd au lieu de infrastructure/cda/CDA_extended.xsd -->
@@ -414,7 +415,7 @@
                       </text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="MSK"/>
-                      <!-- valeur issue du JDV_HL7_condition-ver-status-CISIS (2.16.840.1.113883.4.642.3.166) -->
+                      <!-- valeur issue du JDV_HL7_condition-ver-status_CISIS (2.16.840.1.113883.4.642.3.166) -->
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" >
                       </value>
                     </observation>
@@ -433,7 +434,7 @@
                         <reference value="#statut_clinique-1" />
                       </text>
                       <statusCode code="completed" />
-                      <!-- valeur issue du JDV_HealthStatusCodes-CISIS (1.2.250.1.213.1.1.4.2.283.1) -->
+                      <!-- valeur issue du JDV_HealthStatusCodes_CISIS (1.2.250.1.213.1.1.4.2.283.1) -->
                       <value xsi:type="CE" code="161901003" displayName="malade chronique"
                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </observation>
@@ -710,7 +711,7 @@
               <templateId root="1.2.250.1.213.1.1.3.58" />
               <!-- Identifiant de la prise en charge -->
               <id root="6917FE7A-2F04-458E-8224-D273C6B643E7"/>
-              <!-- Type de prise en charge : valeur issue du JDV_HL7_ActEncounterCode-CISIS (2.16.840.1.113883.1.11.13955) -->
+              <!-- Type de prise en charge : valeur issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) -->
               <code code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4"/>
               <text>
                 <reference value="#IdPEC" />
@@ -858,7 +859,7 @@
               <templateId root="1.2.250.1.213.1.1.3.58"/>
               <!-- Identifiant de l'activité -->
               <id root="C38D726B-6DE0-43A0-B309-96FF1D524888" />
-              <!-- Contexte de l'activité : valeur issue du JDV_ContexteActivite-CISIS (1.2.250.1.213.1.1.5.40) -->
+              <!-- Contexte de l'activité : valeur issue du JDV_ContexteActivite_CISIS (1.2.250.1.213.1.1.5.40) -->
               <code code="ORG-029" displayName="Avis sur dossier en consultation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
                 <reference value="#activite-01" />
@@ -935,7 +936,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />                  
-                  <!-- Objectif de l’activité MR : valeur issue du jeu de valeurs JDV_ObjectifActivite-CISIS (1.2.250.1.213.1.1.5.41) -->
+                  <!-- Objectif de l’activité MR : valeur issue du jeu de valeurs JDV_ObjectifActivite_CISIS (1.2.250.1.213.1.1.5.41) -->
                   <value xsi:type="CD" code="ORG-047" displayName="Suivi" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                 </observation>
               </entryRelationship>
@@ -1231,8 +1232,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
-                  <!-- Valeur issue du JDV_CasSporadiqueFamilial-CISIS (1.2.250.1.213.1.1.5.46) -->
-                  <value xsi:type="CD" code="G-A646" displayName="Sporadique" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <!-- Valeur issue du JDV_CasSporadiqueFamilial_CISIS (1.2.250.1.213.1.1.5.46) -->
+                  <value xsi:type="CD" code="75741005" displayName="sporadique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- [0..*] FR-Simple-Observation : Précision de(s) technique(s) génétique(s) utilisée(s) -->
@@ -1266,8 +1267,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
-                  <!-- Valeur issue du JDV_InvestigationsRealisees-CISIS (1.2.250.1.213.1.1.5.47) -->
-                  <value xsi:type="CD" code="G-A304" displayName="clinique" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <!-- Valeur issue du JDV_InvestigationsRealisees_CISIS (1.2.250.1.213.1.1.5.47) -->
+                  <value xsi:type="CD" code="58147004" displayName="clinique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- [0..1] FR-Simple-Observation : Précision du mode de confirmation  -->
@@ -1619,8 +1620,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20090812" />
-                  <!-- Valeur issue du JDV_MalformationAntenatale-CISIS -->
-                  <value xsi:type="CD" code="G-A224" displayName="unique" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <!-- Valeur issue du JDV_MalformationAntenatale_CISIS -->
+                  <value xsi:type="CD" code="50607009" displayName="unique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entry>
             </section>
@@ -1677,12 +1678,12 @@
                 <!-- Conformité FR-Sujet (CI-SIS) -->
                 <templateId root="1.2.250.1.213.1.1.3.60"/>
                 <relatedSubject classCode="PRS">
-                  <!-- Lien de parenté : valeur issue du JDV_HL7_PersonalRelationshipRoleType-CISIS (2.16.840.1.113883.1.11.19563) -->
+                  <!-- Lien de parenté : valeur issue du JDV_HL7_PersonalRelationshipRoleType_CISIS (2.16.840.1.113883.1.11.19563) -->
                   <code code="PCOUSN" displayName="Cousin" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
                   <subject classCode="PSN">
                     <!-- Identifiant du propositus -->
                     <sdtc:id root="1.2.3.4.5.6.7.8.9.10" extension="1234567890112345678902" />
-                    <!-- Sexe du propositus : valeur issue du JDV_HL7_AdministrativeGender-CISIS (2.16.840.1.113883.1.11.1) -->
+                    <!-- Sexe du propositus : valeur issue du JDV_HL7_AdministrativeGender_CISIS (2.16.840.1.113883.1.11.1) -->
                     <administrativeGenderCode code="M" displayName="Masculin" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7:AdministrativeGender" />
                   </subject>
                 </relatedSubject>

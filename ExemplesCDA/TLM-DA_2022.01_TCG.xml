@@ -994,7 +994,7 @@
                               <effectiveTime>
                                 <low value="20180221"/>
                               </effectiveTime>
-                              <!-- [ANS] à trouver le code CIM-11 provenant du JDV_AllergieReaction-CISIS (1.2.250.1.213.1.1.5.674)
+                              <!-- [ANS] à trouver le code CIM-11 provenant du JDV_AllergieReaction_CISIS (1.2.250.1.213.1.1.5.674)
                                (JDV à fournir par l'OMS) -->
                               <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96">
                                 <originalText>
@@ -1018,7 +1018,7 @@
                                 <reference value="#Severite_allerg"/>
                               </text>
                               <statusCode code="completed"/>
-                              <!-- JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
+                              <!-- JDV_SeveriteObservation_CISIS (1.2.250.1.213.1.1.5.675) -->
                               <value xsi:type="CD" code="6736007" displayName="modéré"
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             </observation>

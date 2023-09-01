@@ -33,6 +33,7 @@
       03/05/2021 : Mise à jour des card dans les commentaires
       09/02/2022 : Mise à jour de la codification d'un DM avec EMDN
       11/04/2022 : Migration des terminologies et JDVs en SNOMED CT et mise en conformité LDL-EES_2022.01
+      28/08/2023 : MAJ des JDV
       **************************************************************************************************************
    -->
 
@@ -526,8 +527,8 @@
                             <text><reference value="modaliteE"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime value="20181029"/>
-                            <value xsi:type="CE" code="ORG-069" displayName="Transfert" 
-                                codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                            <value xsi:type="CE" code="107724000" displayName="transfert du patient" 
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             <author>
                                 <time value="20191203133000+0100"/>
                                 <assignedAuthor classCode="ASSIGNED">

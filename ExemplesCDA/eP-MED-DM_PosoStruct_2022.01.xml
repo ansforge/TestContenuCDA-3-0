@@ -693,7 +693,7 @@
               <repeatNumber value="3"/>
               
               <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_RouteofAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
               <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
                 <originalText>
                   <reference value="#voie-001"/>
@@ -701,7 +701,7 @@
               </routeCode>
               
               <!-- [0..1] Région anatomique d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite-CISIS (1.2.250.1.213.1.1.5.686) -->
+              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite_CISIS (1.2.250.1.213.1.1.5.686) -->
               <!-- <approachSiteCode> </approachSiteCode> -->
               
               <!-- [0..1] Dose à administrer : uniquement si posologie structurée -->
@@ -992,7 +992,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
                   <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
-                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                         codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
                     <originalText>
@@ -1165,7 +1165,7 @@
               <repeatNumber value="0"/>
               
               <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_RouteofAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
               <routeCode code="20003000" displayName="Voie cutanée" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
                 <originalText>
                   <reference value="#med-002-voie"/>
@@ -1173,7 +1173,7 @@
               </routeCode>
               
               <!-- [0..1] Région anatomique d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite-CISIS (1.2.250.1.213.1.1.5.686) -->
+              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite_CISIS (1.2.250.1.213.1.1.5.686) -->
               <approachSiteCode nullFlavor="OTH">
                 <originalText><reference value="med-002-region"></reference></originalText>
               </approachSiteCode>
@@ -1267,7 +1267,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
                   <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
-                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                     codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
                     <originalText>

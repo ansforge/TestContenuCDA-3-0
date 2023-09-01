@@ -17,6 +17,8 @@
       Radiographie de genou gauche + TDM de genou gauche sans injection
       Date de création : 17/02/2022
       Version : 2022.01
+        - Migration des terminologies et JDVs
+       28/08/2023 : MAJ des JDV
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005
       **********************************************************************************************************
@@ -608,8 +610,8 @@
                                         <reference value="#contre-indication-01-commentaire"/> 
                                     </text>
                                     <statusCode code="completed"/>
-                                    <effectiveTime value="20220112171504+0500"/>
-                                    <!-- contre-indications : valeur issue du JDV_contre-indications-CISIS (1.2.250.1.213.1.1.5.659) -->
+                                    <effectiveTime value="20230112171504+0500"/>
+                                    <!-- contre-indications : valeur issue du JDV_contre-indications_CISIS (1.2.250.1.213.1.1.5.659) -->
                                     <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
                                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
                                         <originalText><reference value="#contre-indication-01"/></originalText>
@@ -631,8 +633,8 @@
                                         <reference value="#info-pec-01"/> 
                                     </text>
                                     <statusCode code="completed"/>
-                                    <effectiveTime value="20220112171504+0500"/>
-                                    <!-- contre-indications : valeur issue du JDV_infoPriseEnCharge-CISIS (1.2.250.1.213.1.1.5.685) -->
+                                    <effectiveTime value="20230112171504+0500"/>
+                                    <!-- contre-indications : valeur issue du JDV_infoPriseEnCharge_CISIS (1.2.250.1.213.1.1.5.685) -->
                                     <value xsi:type="CD" code="MED-1124" displayName="Patient nécessitant un accompagnement par un tiers"
                                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                                         <originalText><reference value="#info-pec-01"/></originalText>
@@ -775,7 +777,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suivi-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="CFE83290-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie-CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="CT" displayName="Scanner/TDM"
                                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                                 <originalText mediaType="text/xml">
@@ -793,7 +795,7 @@
                                 <originalText mediaType="text/xml">
                                     <reference value="#localisation-anatomique-01"/>
                                 </originalText> 
-                                <!-- [0..*] Précision topographique : valeur issue du JDV_ModificateurTopographique-CISIS (1.2.250.1.213.1.1.5.688) -->
+                                <!-- [0..*] Précision topographique : valeur issue du JDV_ModificateurTopographique_CISIS (1.2.250.1.213.1.1.5.688) -->
                                 <qualifier>
                                     <name code="106233006" displayName="modificateur topographique" 
                                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
@@ -832,7 +834,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suivi-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="CFE83290-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie-CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="MED-1126" displayName="Radiographie sans contraste"
                                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                                 <originalText mediaType="text/xml">
@@ -850,7 +852,7 @@
                                 <originalText mediaType="text/xml">
                                     <reference value="#localisation-anatomique-02"/>
                                 </originalText> 
-                                <!-- [0..*] Précision topographique : valeur issue du JDV_ModificateurTopographique-CISIS (1.2.250.1.213.1.1.5.688) -->
+                                <!-- [0..*] Précision topographique : valeur issue du JDV_ModificateurTopographique_CISIS (1.2.250.1.213.1.1.5.688) -->
                                 <qualifier>
                                     <name code="106233006" displayName="modificateur topographique" 
                                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>

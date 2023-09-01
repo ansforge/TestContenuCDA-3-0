@@ -280,7 +280,7 @@
       <time xsi:type="IVL_TS" nullFlavor="NA"/>
       <associatedEntity classCode="PROV">
          <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-         <code code="G15_10/SM54" displayName="Médecin - Médecine Générale (SM)" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="TRE_A02-ProfessionSavFaire-CISIS"/>
+         <code code="G15_10/SM54" displayName="Médecin - Médecine Générale (SM)" codeSystem="1.2.250.1.213.1.1.4.5"/>
          <addr>
             <houseNumber>3</houseNumber>
             <streetName>Rue Petit Pont</streetName>

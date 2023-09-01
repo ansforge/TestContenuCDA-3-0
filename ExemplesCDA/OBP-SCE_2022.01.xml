@@ -419,7 +419,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Valeur isseur du JDV_OBP_LesionTraumatiqueObstetricale-CISIS (1.2.250.1.213.1.1.4.2.289.38)  -->
+              <!-- Valeur isseur du JDV_OBP_LesionTraumatiqueObstetricale_CISIS (1.2.250.1.213.1.1.4.2.289.38)  -->
               <value xsi:type="CD" code="P15.8" displayName="Autres traumatismes obstétricaux précisés" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10">
                 <originalText>
                   <reference value="#trauma" />
@@ -475,7 +475,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Valeur isseur du JDV_OBP_TypeInfectionNN-CISIS (1.2.250.1.213.1.1.4.2.289.40)  -->
+              <!-- Valeur isseur du JDV_OBP_TypeInfectionNN_CISIS (1.2.250.1.213.1.1.4.2.289.40)  -->
               <value xsi:type="CD" code="P36.4" displayName="Infection du nouveau-né à Escherichia coli" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                 <originalText><reference value="#infect"></reference></originalText>
                 <qualifier><value code="Z22.9" displayName="Sujet porteur d'une maladie infectieuse, 
@@ -564,7 +564,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="UNK" />
-              <!-- Valeur isseur du JDV_ModeSortie-OBP-SCE-CISIS (1.2.250.1.213.1.1.5.701)  -->
+              <!-- Valeur isseur du JDV_ModeSortie_OBP_SCE_CISIS (1.2.250.1.213.1.1.5.701)  -->
               <value xsi:type="CD" code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
             </observation>
           </entry>
@@ -621,7 +621,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <!-- valeur issue du JDV_OBP_TypeAllaitementNN-CISIS (1.2.250.1.213.1.1.4.2.289.42) -->
+                  <!-- valeur issue du JDV_OBP_TypeAllaitementNN_CISIS (1.2.250.1.213.1.1.4.2.289.42) -->
                   <value xsi:type="CD" code="OBS_229" displayName="Allaitement maternel exclusif" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
                 </observation>
               </entry>
@@ -728,7 +728,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <code code="JQQP003" displayName="Autopsie médicale d'un fœtus ou d'un nouveau-né de moins de 4 jours de vie, avec examen de l'encéphale" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM" />
               <text>
                 <reference value="autopsie" />
@@ -749,7 +749,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="A93FE57D-3311-4B04-A5E0-3990C27AF27C" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_251" displayName="Dépistage hyperphénylalaninémie" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -771,7 +771,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="148CB309-2EA1-4746-9E1F-13B5AE1151AD" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_252" displayName="Dépistage hypothyroïdie" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -793,7 +793,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="06E9FE76-14F8-4A56-A2A2-9F8540621DD6" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_253" displayName="Dépistage hyperplasie congénitale des surrénales" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -815,7 +815,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="FE5810C9-2C5A-4980-9948-3A600947458D" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_254" displayName="Dépistage drépanocytose" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -837,7 +837,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="997CF7C5-8185-4A62-A2AC-AF9E58E1B79C" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_255" displayName="Dépistage mucoviscidose" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -859,7 +859,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="14FB55E1-74E8-4633-9506-4EA10EF147CC" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_256" displayName="Dépistage MCAD" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -881,7 +881,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="30F21569-EFBC-4BCC-8D49-BFFFFC54BD81" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <!-- [ANS] Code à trouver en SNOMED CT -->
               <code code="OBS_257" displayName="Test audition" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
               <text>
@@ -903,7 +903,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="788F8D98-CE3F-41DA-BAC6-B629177C4158" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <code code="J07BC01" displayName="Vaccin contre l'hépatite B" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
               <text>
                 <reference value="hepaB" />
@@ -924,7 +924,7 @@
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="E9D7A719-E22A-428B-8F88-4BC57C2BE396" />
-              <!-- code issu du JDV_OBP_StaticSCEprocedures-CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
+              <!-- code issu du JDV_OBP_StaticSCEprocedures_CISIS (1.2.250.1.213.1.1.4.2.289.47) -->
               <code code="J07AN" displayName="Vaccin antituberculeux" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
               <text>
                 <reference value="bcg" />

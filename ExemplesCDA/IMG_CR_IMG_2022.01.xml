@@ -20,6 +20,8 @@
       **********************************************************************************************************
       Historique :
       24/10/2022 : Création
+       - Migration des terminologies et JDVs
+       28/08/2023 : MAJ des JDV
       **********************************************************************************************************
    -->
   <!-- Référencement CDAr2 -->
@@ -42,7 +44,7 @@
   <id root="1.2.250.1.213.1.1.1.45.2"/>
   <!-- Type de document -->  
   <code code="18748-4" displayName="CR d’imagerie médicale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-    <!-- valeur issue du JDV_CodesDocumentImagerie-CISIS (1.2.250.1.213.1.1.5.687) -->
+    <!-- valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
     <translation code="24727-0" displayName="CT Head W contrast IV"
       codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <translation code="36235-0" displayName="CT Neck W contrast IV"
@@ -378,13 +380,13 @@
         <!-- [0..1] code CCAM de l'acte documenté  --> 
         <translation code="ACQH004"  displayName="Scanographie du crâne, de son contenu et du tronc, avec injection intraveineuse de produit de contraste" 
           codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
         <translation code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
           <qualifier>
             <name code="121139" displayName="Modalité d'imagerie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
           </qualifier>
         </translation>
-        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
+        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique_CISIS (1.2.250.1.213.1.1.5.695) --> 
         <translation code="774007" displayName="structure de la tête et/ou du cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -447,14 +449,14 @@
         <!-- [0..1] code CCAM de l'acte documenté  --> 
         <translation code="LCQH001"  displayName="Scanographie des tissus mous du cou, avec injection intraveineuse de produit de contraste" 
           codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
         <translation code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4"
           codeSystemName="DCM">
           <qualifier>
             <name code="121139" displayName="Modalité d'imagerie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
           </qualifier>
         </translation>
-        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
+        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique_CISIS (1.2.250.1.213.1.1.5.695) --> 
         <translation code="774007" displayName="structure de la tête et/ou du cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -517,13 +519,13 @@
         <!-- [0..1] code CCAM de l'acte documenté  --> 
         <translation code="ZBQH001"  displayName="Scanographie du thorax, avec injection intraveineuse de produit de contraste" 
           codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+        <!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
         <translation code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
           <qualifier>
             <name code="121139" displayName="Modalité d'imagerie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
           </qualifier>
         </translation>
-        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique-CISIS (1.2.250.1.213.1.1.5.695) --> 
+        <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique_CISIS (1.2.250.1.213.1.1.5.695) --> 
         <translation code="67734004" displayName="segment thoracique du tronc" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -839,8 +841,8 @@
                     <reference value="#contre-indication-01-commentaire"/> 
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20220112171504+0500"/>
-                  <!-- contre-indications : valeur issue du JDV_contre-indications-CISIS (1.2.250.1.213.1.1.5.659) -->
+                  <effectiveTime value="20230112171504+0500"/>
+                  <!-- contre-indications : valeur issue du JDV_contre-indications_CISIS (1.2.250.1.213.1.1.5.659) -->
                   <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#contre-indication-01"/></originalText>
@@ -923,7 +925,7 @@
               <!-- Conformité FR-DICOM-Technique-imagerie (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.153" />
               <id root="73B4C3B2-843F-11EC-A8A3-0242AC120002"/>
-              <!-- Valeur issue du JDV_CodesDocumentImagerie-CISIS (1.2.250.1.213.1.1.5.687) -->
+              <!-- Valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
               <code code="24727-0" displayName="CT Head W contrast IV" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <originalText mediaType="text/xml">
                   <reference value="#acte-01"/>
@@ -935,7 +937,7 @@
               </code>
               <text><reference value="#acte-01-description"></reference></text>
               <effectiveTime value="20210108111700"/>
-              <!--[1..*] valeur issue JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+              <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                 <originalText mediaType="text/xml">
                   <reference value="#acte-01-modalite"/>
@@ -978,7 +980,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-01-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -1137,7 +1139,7 @@
                   <code code="364320009" displayName="statut de grossesse" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140914171504+0500"/>
-                  <!-- Valeur issue du JDV_StatutGrossesse-CISIS (1.2.250.1.213.1.1.5.671) -->
+                  <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
                          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
                     <originalText>
@@ -1156,7 +1158,7 @@
                   <!-- Conformité FR-DICOM-Quantite (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.154" />
                   <id root="334A0490-843F-11EC-A8A3-0242AC120002"/>
-                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements-CISIS (1.2.250.1.213.1.1.5.620) -->
+                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
                   <text>
                     <reference value="#acte-01-mesure-1"/>
@@ -1181,7 +1183,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
@@ -1195,7 +1197,7 @@
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
-                        <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (1.2.250.1.213.1.1.5.690)  -->  
+                        <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (1.2.250.1.213.1.1.5.690)  -->  
                         <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-01-radiopharmaceutique"/>
@@ -1290,7 +1292,7 @@
                         <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                           <qualifier>
                             <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
-                            <!-- Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+                            <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                             <value code="CT" displayName="Tomodensitométrie"
                               codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                               <originalText mediaType="text/plain">
@@ -1308,7 +1310,7 @@
                             <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.157" />
                             <id root="F8FFFAB1-FFBF-436A-BEFF-9AB1CD1DE8FD"/>
-                            <!-- Valeur issue du JDV-SOPClass-CISIS (1.2.250.1.213.1.1.5.689) -->
+                            <!-- Valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                             <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                               codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                               <originalText><reference value="#ex-01-serie-01-SOPInstance-01-class"/></originalText>
@@ -1399,7 +1401,7 @@
               <!-- Conformité FR-DICOM-Technique-imagerie (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.153" />
               <id root="EDFA4594-8439-11EC-A8A3-0242AC120002"/>
-              <!-- Valeur issue du JDV_CodesDocumentImagerie-CISIS (1.2.250.1.213.1.1.5.687) -->
+              <!-- Valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
               <code code="36235-0"  displayName="CT Neck W contrast IV"   
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <originalText mediaType="text/xml">
@@ -1412,7 +1414,7 @@
               </code>
               <text><reference value="#acte-02-description"></reference></text>
               <effectiveTime value="20210108111700"/>              
-              <!--[1..*] valeur issue JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+              <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie"
                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                 <originalText mediaType="text/xml">
@@ -1456,7 +1458,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-02-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -1620,7 +1622,7 @@
                   <code code="364320009" displayName="statut de grossesse" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140914171504+0500"/>
-                  <!-- Valeur issue du JDV_StatutGrossesse-CISIS (1.2.250.1.213.1.1.5.671) -->
+                  <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
                     <originalText>
@@ -1639,7 +1641,7 @@
                   <!-- Conformité FR-DICOM-Quantite (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.154" />
                   <id root="CEE7D2B6-843E-11EC-A8A3-0242AC120002"/>
-                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements-CISIS (1.2.250.1.213.1.1.5.620) -->
+                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
                   <text>
@@ -1666,7 +1668,7 @@
                   <!-- Conformité FR-DICOM-Quantite (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.154" />
                   <id root="034DA300-843F-11EC-A8A3-0242AC120002"/>
-                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements-CISIS (1.2.250.1.213.1.1.5.620) -->
+                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113830" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
                   <text>
                     <reference value="#acte-02-mesure-2"/>
@@ -1691,7 +1693,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
@@ -1705,7 +1707,7 @@
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
-                        <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (APE : préciser l'OID du JDV)  --> 
+                        <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  --> 
                         <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-02-radiopharmaceutique"/>
@@ -1799,7 +1801,7 @@
                       <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                         <qualifier>
                           <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
-                          <!-- Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+                          <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                           <value code="CT" displayName="Tomodensitométrie"
                             codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                             <originalText mediaType="text/plain">
@@ -1817,7 +1819,7 @@
                           <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                           <templateId root="1.2.250.1.213.1.1.3.157" />
                           <id root="F8FFFAB1-FFBF-436A-BEFF-9AB1CD1DE8FD"/>
-                          <!-- Valeur issue du JDV-SOPClass-CISIS (1.2.250.1.213.1.1.5.689) -->
+                          <!-- Valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                           <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                             <originalText><reference value="#ex-02-serie-01-SOPInstance-01-class"/></originalText>
@@ -1909,7 +1911,7 @@
               <!-- Conformité FR-DICOM-Technique-imagerie (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.153" />
               <id root="64A18BA8-843F-11EC-A8A3-0242AC120002"/>
-              <!-- Valeur issue du JDV_CodesDocumentImagerie-CISIS (1.2.250.1.213.1.1.5.687) -->
+              <!-- Valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
               <code code="24979-7" 
                 displayName="CT Thoracic spine W contrast IV"   
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
@@ -1923,7 +1925,7 @@
               </code>
               <text><reference value="#acte-03-description"></reference></text>
               <effectiveTime value="20210108111700"/>              
-              <!--[1..*] valeur issue JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+              <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie"
                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                 <originalText mediaType="text/xml">
@@ -1967,7 +1969,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-03-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -2131,7 +2133,7 @@
                   <code code="364320009" displayName="statut de grossesse" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140914171504+0500"/>
-                  <!-- Valeur issue du JDV_StatutGrossesse-CISIS (1.2.250.1.213.1.1.5.671) -->
+                  <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
                     <originalText>
@@ -2150,7 +2152,7 @@
                   <!-- Conformité FR-DICOM-Quantite (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.154" />
                   <id root="18AFA388-843F-11EC-A8A3-0242AC120002"/>
-                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements-CISIS (1.2.250.1.213.1.1.5.620) -->
+                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
                   <text>
@@ -2177,7 +2179,7 @@
                   <!-- Conformité FR-DICOM-Quantite (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.154" />
                   <id root="256182C2-843F-11EC-A8A3-0242AC120002"/>
-                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements-CISIS (1.2.250.1.213.1.1.5.620) -->
+                  <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113830" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
                   <text>
@@ -2203,7 +2205,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
@@ -2217,7 +2219,7 @@
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
-                        <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (APE : préciser l'OID du JDV)  -->
+                        <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  -->
                         <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-03-radiopharmaceutique"/>
@@ -2312,7 +2314,7 @@
                       <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                         <qualifier>
                           <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
-                          <!-- Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
+                          <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                           <value code="CT" displayName="Tomodensitométrie"
                             codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                             <originalText mediaType="text/plain">
@@ -2330,7 +2332,7 @@
                           <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                           <templateId root="1.2.250.1.213.1.1.3.157" />
                           <id root="F8FFFAB1-FFBF-436A-BEFF-9AB1CD1DE8FD"/>
-                          <!-- Valeur issue du JDV-SOPClass-CISIS (1.2.250.1.213.1.1.5.689) -->
+                          <!-- Valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                           <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                             <originalText><reference value="#ex-03-serie-01-SOPInstance-01-class"/></originalText>

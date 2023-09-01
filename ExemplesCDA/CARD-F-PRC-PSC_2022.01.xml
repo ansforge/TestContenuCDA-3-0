@@ -987,7 +987,7 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- [ANS] à remplacer par EMDN -->
-                    <code code="D0001-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Stimulateur" >
+                    <code code="J0101" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES" >
                       <originalText><reference value="#psc0004"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1329,7 +1329,7 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- [ANS] à remplacer par EMDN -->
-                    <code code="D0001-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sonde Auriculaire" >
+                    <code code="J019001010101" displayName="SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#def0005"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1624,7 +1624,7 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- [ANS] à remplacer par EMDN -->
-                    <code code="D0001-4" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sonde Ventricule Droit" >
+                    <code code="J01030101" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#psc0041"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1919,7 +1919,7 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- [ANS] à remplacer par EMDN -->
-                    <code code="D0001-5" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sonde Ventricule Gauche">
+                    <code code="J01030102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE">
                       <originalText><reference value="#psc0059"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">

@@ -789,7 +789,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
                   <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
-                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                     codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
                     <originalText>
@@ -1048,7 +1048,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
                   <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
-                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                     codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
                     <originalText>

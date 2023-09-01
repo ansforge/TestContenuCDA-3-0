@@ -11,7 +11,7 @@
 
 <!-- 
       *************************************************************************
-      Document : Dossier de liaison d'urgence (DLU-FLUDR_2021.01)
+      Document : Dossier de liaison d'urgence (DLU-FLUDR_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -28,6 +28,7 @@
       -	Remplacement de la section FR-Elements-cliniques-rapportes (1.2.250.1.213.1.1.2.46) par la section FR-Documents-ajoutes (1.2.250.1.213.1.1.2.37).
       05/12/2022 : Nouvelle version 2022.01
       - Migration des terminologies et JDVs
+         28/08/2023 : Migration des terminologies et JDVs
       **********************************************************************************************************
 -->
 
@@ -728,7 +729,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="29D020AA-168F-4D98-A706-D6AD009EECE1"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code  code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" 
 								   codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#lunettes"/></text> 
@@ -748,7 +749,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="00845861-509F-432A-96B7-1898E3574609"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protDentHaut"/></text> 
 							<statusCode code="completed"/>
@@ -767,7 +768,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="BC760D09-4F49-41F0-8529-3ED75F5CA9C5"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protDentBas"/></text> 
 							<statusCode code="completed"/>
@@ -786,7 +787,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="2603E6C3-1ED7-4505-A2C9-AE97E53C8B1D"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protAudDroit"/></text> 
 							<statusCode code="completed"/>
@@ -805,7 +806,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="3AEBD44A-0A9B-403B-8748-53BB788A740E"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protAudGauche"/></text> 
 							<statusCode code="completed"/>
@@ -824,7 +825,7 @@
 							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="591BFAC8-4850-4324-B6D3-443A4AAE481D"/>
-							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+							<!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
 							<code code="GEN-092.02.01" displayName="Autre prothèse et objet personnel" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
 							<text><reference value="#autreDispoST"/></text> 
 							<statusCode code="completed"/>
@@ -858,7 +859,7 @@
 						</table>
 					</text>
 					
-					<!-- Pour chaque document du jeu de valeur JDV_ChecklistFLUDR-CISIS (1.2.250.1.213.1.1.5.72) -->
+					<!-- Pour chaque document du jeu de valeur JDV_ChecklistFLUDR_CISIS (1.2.250.1.213.1.1.5.72) -->
 					
 					<!-- [1..*] Entrée FR-Document-attache : Ordonnance de sortie -->
 					<entry>

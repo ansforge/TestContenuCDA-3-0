@@ -17,6 +17,7 @@
 		Historique :
       22/06/2021 : Création du document autoprésentable (avec feuille de style intégrée) 
       07/04/2022:  Migration des terminologies et JDV en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
 		**********************************************************************************************************    
 -->
 <!-- Un document autoprésentable utilise la feuille de style fournie dans le document -->
@@ -1902,8 +1903,8 @@
                   <c:code code="MED-568" displayName="Traitement"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="C15329" displayName="Chirurgie"
-                        codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
+                      <c:value code="387713003" displayName="intervention chirurgicale"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </c:qualifier>
                   </c:code>
                   <c:text>
@@ -2330,8 +2331,8 @@
                     displayName="Action de prévention et de gestion médicamenteuse des effets secondaires"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="MED-224" displayName="Facteur de croissance hématopoïétique"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <c:value code="C20427" displayName="facteur de croissance hématopoïétique"
+                        codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </c:qualifier>
                   </c:code>
                   <c:text>

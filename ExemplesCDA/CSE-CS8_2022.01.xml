@@ -28,10 +28,11 @@
       08/06/2020 : Correction suite à retours DGOS/DSI
       28/12/2020 : Ajout commentaires
       22/01/2021 : Mise en conformité v2021.01
-      23/02/2021 : Correction codes d'un vaccin : le code porte le code CIS et le JDV_VaccinCSE8-CISIS est utilisé pour le <translation>
+      23/02/2021 : Correction codes d'un vaccin : le code porte le code CIS et le JDV_VaccinCSE8_CISIS est utilisé pour le <translation>
       13/07/2021 : Correction de l'unité en "wk" (au lieu de "w")
       21/07/2021 : Ajout de l'unité unit="{score}" pour le résultat des scores APGAR
       04/10/2022 : Version 2022.01 : Migration des terminologies et JDVs
+      25/08/2023 : Migration des terminologies et JDVs après validation
       **********************************************************************************************************    -->
 
    <!-- ************************************************************
@@ -795,7 +796,7 @@
                            <!-- Conformité FR-Organisme-assurance-maladie (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.94"/>
                            <id root="582BB12C-7B63-11EB-9439-0242AC130011"/>
-                           <!-- Type de couverture sociale : valeur issue du JDV_CouvertureSociale-CISIS (1.2.250.1.213.1.1.5.125) -->
+                           <!-- Type de couverture sociale : valeur issue du JDV_CouvertureSociale_CISIS (1.2.250.1.213.1.1.5.125) -->
                            <code code="GEN-105" displayName="Protection universelle maladie (Puma)"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <statusCode code="completed"/>
@@ -966,7 +967,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130013"/>
-                     <code code="11996-6" displayName="Gestité" codeSystem="2.16.840.1.113883.6.1"
+                     <code code="11996-6" displayName="Gestité (nombre total de grossesses y compris actuelle)" codeSystem="2.16.840.1.113883.6.1"
                         codeSystemName="LOINC"/>
                      <text><reference value="#gestite"/></text>
                      <statusCode code="completed"/>
@@ -985,7 +986,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130014"/>
-                     <code code="11977-6" displayName="Parité" codeSystem="2.16.840.1.113883.6.1"
+                     <code code="11977-6" displayName="Parité (nombre total d'accouchements y compris actuel)" codeSystem="2.16.840.1.113883.6.1"
                         codeSystemName="LOINC"/>
                      <text><reference value="#parite"/></text>
                      <statusCode code="completed"/>
@@ -1004,7 +1005,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130015"/>
-                     <code code="11637-6" displayName="Nombre d'enfants nés avant 37 semaines"
+                     <code code="11637-6" displayName="Nombre d'enfants prématurés (nés avant 37 semaines)"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                      <text><reference value="#nbEnfants37"/></text>
                      <statusCode code="completed"/>
@@ -1023,7 +1024,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130016"/>
-                     <code code="MED-159" displayName="Nb d'enfants pesant moins de 2500g"
+                     <code code="MED-159" displayName="Nombre d'enfants pesant moins de 2500 g"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <text><reference value="#nbEnfantsinf2500"/></text>
                      <statusCode code="completed"/>
@@ -1042,7 +1043,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130017"/>
-                     <code code="57062-2" displayName="Nb d'enfants morts-nés"
+                     <code code="57062-2" displayName="Nombre d'enfants mort-nés"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                      <text><reference value="#mortsNes"/></text>
                      <statusCode code="completed"/>
@@ -1061,9 +1062,9 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130018"/>
-                     <code code="11636-8"
-                        displayName="Nombre d'enfants décédés avant 28 jours après la naissance"
-                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                     <code code="MED-1184"
+                        displayName="Nombre d'enfants nés vivants et décédés avant 28 jours"
+                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <text><reference value="#morts28"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
@@ -1101,9 +1102,9 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130020"/>
-                     <code code="ORG-076"
-                        displayName="Date de première consultation (déclaration de grossesse)"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                     <code code="75200-6"
+                        displayName="Date de la première consultation (déclaration de grossesse)"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText><reference value="#CS8_6"/></originalText>
                      </code>
                      <text><reference value="#CS8_6"/></text>
@@ -1124,8 +1125,8 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130021"/>
-                     <code code="MED-164" displayName="Pathologie en cours de grossesse"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                     <code code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité"
+                        codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                      <text><reference value="#pathoEnCours"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
@@ -1167,7 +1168,7 @@
                      <text><reference value="#HTA"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- JDV_Traite-NonTraite-CISIS(1.2.250.1.213.1.1.5.682) -->
+                     <!-- JDV_Traite_NonTraite_CISIS(1.2.250.1.213.1.1.5.682) -->
                      <value xsi:type="CD" code="MED-1156" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="non traité"/>
                   </observation>
                </entry>
@@ -1259,7 +1260,7 @@
                      <text><reference value="#HTAMotif"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE-CISIS(1.2.250.1.213.1.1.5.681)  -->
+                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE_CISIS(1.2.250.1.213.1.1.5.681)  -->
                      <value xsi:type="CD" code="O13" displayName="Hypertension gestationnelle [liée à la grossesse]"
                         codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   </observation>
@@ -1280,7 +1281,7 @@
                      <text><reference value="#HTAMotif"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE-CISIS(1.2.250.1.213.1.1.5.681)  -->
+                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE_CISIS(1.2.250.1.213.1.1.5.681)  -->
                      <value xsi:type="CD" code="O47.0" displayName="Faux travail avant 37 semaines révolues de gestation" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   </observation>
                </entry>
@@ -1300,7 +1301,7 @@
                      <text><reference value="#HTAMotif"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE-CISIS(1.2.250.1.213.1.1.5.681)  -->
+                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE_CISIS(1.2.250.1.213.1.1.5.681)  -->
                      <value xsi:type="CD" code="P05.0" displayName="Faible poids pour l'âge gestationnel"
                         codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   </observation>
@@ -1321,7 +1322,7 @@
                      <text><reference value="#HTAMotif"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE-CISIS(1.2.250.1.213.1.1.5.681)  -->
+                     <!-- Valeur provenant de JDV_MotifHospitalisationCSE_CISIS(1.2.250.1.213.1.1.5.681)  -->
                      <value xsi:type="CD" code="GEN-092.01.08" displayName="Autre motif d'hospitalisation"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <!-- Pas d'autres motif d'hospitalisation (value="false") donc pas d'entryrelationship FR-Commentaire-ER 
@@ -1350,7 +1351,7 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130032"/>
-                     <code code="29463-7" displayName="Poids"
+                     <code code="8348-5" displayName="Poids corporel avant grossesse"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                      <text>
                         <reference value="#poidsMere"/>
@@ -1623,8 +1624,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="582BB12C-7B63-11EB-9439-0242AC130043"/>
                            <!-- Code LOINC 11877-8 si l'information est obtenue par ultrason -->
-                           <code code="11876-0" displayName="Présentation fœtale (palpation)" codeSystem="2.16.840.1.113883.6.1"
-                              codeSystemName="LOINC"/>
+                           <code code="MED-1248" displayName="Présentation fœtale" codeSystem="1.2.250.1.213.1.1.4.322"
+                              codeSystemName="TA_ASIP"/>
                            <text><reference value="#presentation"/></text>
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
@@ -1648,8 +1649,8 @@
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
                            <!-- ANS à trouver le code remplaçant celui de SNOMED 3.5 -->
-                           <value xsi:type="CD" code="P1-86310" displayName="Césarienne"
-                              codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+                           <value xsi:type="CD" code="11466000" displayName="césarienne"
+                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         </observation>
                      </entry>
                      
@@ -1667,8 +1668,8 @@
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
                            <!-- ANS à trouver le code remplaçant celui de SNOMED 3.5 -->
-                           <value xsi:type="CD" code="P1-C0010" displayName="générale"
-                              codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+                           <value xsi:type="CD" code="50697003" displayName="anesthésie générale"
+                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         </observation>
                      </entry>
                      
@@ -2066,7 +2067,7 @@
                                        <text><reference value="#ponderationTrisomie"/></text>
                                        <statusCode code="completed"/>
                                        <effectiveTime nullFlavor="NA"/>
-                                       <!-- JDV_condition-ver-status-CISIS(2.16.840.1.113883.4.642.3.166) -->
+                                       <!-- JDV_condition_ver_status_CISIS(2.16.840.1.113883.4.642.3.166) -->
                                        <value xsi:type="CD" code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" displayName="Non confirmé"/>
                                     </observation>
                                  </entryRelationship>
@@ -2112,7 +2113,7 @@
                                        <text><reference value="#ponderationAutreAnomalie"/></text>
                                        <statusCode code="completed"/>
                                        <effectiveTime nullFlavor="NA"/>
-                                       <!-- JDV_condition-ver-status-CISIS(2.16.840.1.113883.4.642.3.166) -->
+                                       <!-- JDV_condition_ver_status_CISIS(2.16.840.1.113883.4.642.3.166) -->
                                        <value xsi:type="CD" code="confirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" displayName="Confirmé"/>
                                     </observation>
                                  </entryRelationship>
@@ -2290,7 +2291,7 @@
                                        <text><reference value="#ponderationHydrocephalie"/></text>
                                        <statusCode code="completed"/>
                                        <effectiveTime nullFlavor="NA"/>
-                                       <!-- JDV_condition-ver-status-CISIS(2.16.840.1.113883.4.642.3.166) -->
+                                       <!-- JDV_condition_ver_status_CISIS(2.16.840.1.113883.4.642.3.166) -->
                                        <value xsi:type="CD" code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" displayName="Non confirmé"/>
                                     </observation>
                                  </entryRelationship>
@@ -2532,7 +2533,7 @@
                                        <text><reference value="#ponderationMalformationRenale"/></text>
                                        <statusCode code="completed"/>
                                        <effectiveTime nullFlavor="NA"/>
-                                       <!-- JDV_condition-ver-status-CISIS(2.16.840.1.113883.4.642.3.166) -->
+                                       <!-- JDV_condition_ver_status_CISIS(2.16.840.1.113883.4.642.3.166) -->
                                        <value xsi:type="CD" code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" displayName="Non confirmé"/>
                                     </observation>
                                  </entryRelationship>
@@ -2611,7 +2612,7 @@
                                        <text><reference value="#ponderationMalformationCardiaque"/></text>
                                        <statusCode code="completed"/>
                                        <effectiveTime nullFlavor="NA"/>
-                                       <!-- JDV_condition-ver-status-CISIS(2.16.840.1.113883.4.642.3.166) -->
+                                       <!-- JDV_condition_ver_status_CISIS(2.16.840.1.113883.4.642.3.166) -->
                                        <value xsi:type="CD" code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" displayName="Non confirmé"/>
                                     </observation>
                                  </entryRelationship>
@@ -3034,8 +3035,8 @@
                                  <code code="SA43" displayName="Secteur non défini"
                                     codeSystem="1.2.250.1.71.4.2.4">
                                     <!-- Type de service de destination -->
-                                    <translation code="ORG-142" displayName="Unité de soin intensif en néonatalogie (USIN)"
-                                       codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></translation>
+                                    <translation code="405269005" displayName="unité de soins intensifs néonatals"
+                                       codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></translation>
                                  </code>
                                  <!-- Adresse de l'établissement de destination -->
                                  <addr use="WP">
@@ -3244,7 +3245,7 @@
                      <text><reference value="#vaccin-BCG"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3298,7 +3299,7 @@
                      <text><reference value="#vaccin-Hepatite-B"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3406,7 +3407,7 @@
                      <!-- Conformité FR-Acte (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.62"/>
                      <id root="84FCF646-9C71-47E8-A8B1-F271A1FDDB20"/>
-                     <!-- Acte : valeur issue du JDV_Acte-CSE-CISIS (1.2.250.1.213.1.1.5.707) -->
+                     <!-- Acte : valeur issue du JDV_Acte_CSE_CISIS (1.2.250.1.213.1.1.5.707) -->
                      <code code="ORG-085" displayName="Demande de surveillance médicale particulière"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <text mediaType="text/xml"><reference value="#cs8-plan-01"/></text>
@@ -3427,7 +3428,7 @@
                      <templateId root="1.2.250.1.213.1.1.3.58" />
                      <id root="EA461BC2-E7FA-4694-96CE-4B4561BBDD82"/>
                      <code code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4">
-                        <!-- rencontre : valeur issue du JDV_Rencontre-CSE-CISIS (1.2.250.1.213.1.1.5.708) -->
+                        <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>
                            <value code="ORG-084" displayName="Demande de consutation médicale spécialisée"
                            codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
@@ -3451,7 +3452,7 @@
                      <templateId root="1.2.250.1.213.1.1.3.58" />
                      <id root="958940F6-BA68-423C-A435-F8FB84497C8F"/>
                      <code code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4">
-                        <!-- rencontre : valeur issue du JDV_Rencontre-CSE-CISIS (1.2.250.1.213.1.1.5.708) -->
+                        <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>
                            <value code="ORG-083" displayName="Demande de rappel par le médecin de PMI"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>

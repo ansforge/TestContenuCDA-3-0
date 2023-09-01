@@ -1021,7 +1021,7 @@
               <!-- Conformité FR-Demande-d-examen-ou-de-suivi (CI-SIS) -->
               <templateId root='1.2.250.1.213.1.1.3.27'/>
               <id root="46CFA15C-C4F3-4B12-BDB8-B9FE281A2F46" />
-              <!-- valeur issue du JDV_ProblemePPSPAERPA-CISIS (1.2.250.1.213.1.1.5.37) -->
+              <!-- valeur issue du JDV_ProblemePPSPAERPA_CISIS (1.2.250.1.213.1.1.5.37) -->
               <code code="MED-057" displayName="Problème de mobilité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               <!-- Précision sur le problème identifié -->
               <text><reference value="#probleme-01"/></text>
@@ -1112,7 +1112,7 @@
               <!-- Conformité FR-Demande-d-examen-ou-de-suivi (CI-SIS) -->
               <templateId root='1.2.250.1.213.1.1.3.27'/>
               <id root="46CFA15C-C4F3-4B12-BDB8-B9FE281A2F46" />
-              <!-- valeur issue du JDV_ProblemePPSPAERPA-CISIS (1.2.250.1.213.1.1.5.37) -->
+              <!-- valeur issue du JDV_ProblemePPSPAERPA_CISIS (1.2.250.1.213.1.1.5.37) -->
               <code code="MED-058" displayName="Isolement" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               <!-- Précision sur le problème identifié -->
               <text><reference value="#probleme-02"/></text>

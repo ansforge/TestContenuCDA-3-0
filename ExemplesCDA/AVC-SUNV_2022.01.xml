@@ -11,12 +11,13 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
   <!-- 
       **********************************************************************************************************
-      Document : Sortie de l'UNV (AVC-SUNV_2.2)
+      Document : Sortie de l'UNV (AVC-SUNV_2022.01)
       Auteur : ANS / PML
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
       **********************************************************************************************************
       05/04/2022 : Migration des terminologies et JDV en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
       **********************************************************************************************************
    -->
   <realmCode code="FR" />
@@ -352,7 +353,7 @@
                     <low value="20180923" />
                     <high value="20181003" />
                   </effectiveTime>
-                  <!-- Valeur issue du JDV_AntecedantsMedicaux-CISIS -->
+                  <!-- Valeur issue du JDV_AntecedantsMedicaux_CISIS -->
                   <value xsi:type="CD" code="D3-89400" displayName="Infarctus cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
                     <originalText>
                       <reference value="#infarCereb" />

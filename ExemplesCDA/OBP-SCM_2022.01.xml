@@ -409,7 +409,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="UNK" />
-              <!-- Valeur isseur du JDV_ModeSortie-OBP-SCM-CISIS (1.2.250.1.213.1.1.5.700)  -->
+              <!-- Valeur isseur du JDV_ModeSortie-OBP-SCM_CISIS (1.2.250.1.213.1.1.5.700)  -->
               <value xsi:type="CD" code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
             </observation>
           </entry>          

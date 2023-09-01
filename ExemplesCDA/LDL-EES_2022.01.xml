@@ -474,7 +474,7 @@
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
                                 <period value="1" unit="d"/>
                             </effectiveTime>
-                            <!-- Voie d'administration : JDV_RouteofAdministration-CISIS (1.2.250.1.213.1.1.5.677) -->
+                            <!-- Voie d'administration : JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
                             <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                             <!-- Dose -->
                             <doseQuantity>
@@ -651,7 +651,7 @@
                                             <effectiveTime>
                                                 <low value='20180221'/>
                                             </effectiveTime>
-                                            <!-- [ANS] à trouver le code CIM-11 provenant du JDV_AllergieReaction-CISIS (1.2.250.1.213.1.1.5.674) -->
+                                            <!-- [ANS] à trouver le code CIM-11 provenant du JDV_AllergieReaction_CISIS (1.2.250.1.213.1.1.5.674) -->
                                             <value xsi:type='CD' code='126485001' displayName='urticaire'
                                                 codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'>
                                                 <originalText><reference value='#allergie-reaction-001'/></originalText>
@@ -672,7 +672,7 @@
                                                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
                                             <text><reference value='#allergie-severite-001'/></text>
                                             <statusCode code="completed"/>
-                                            <!-- JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
+                                            <!-- JDV_SeveriteObservation_CISIS (1.2.250.1.213.1.1.5.675) -->
                                             <value xsi:type="CD" code="6736007" displayName="modéré"
                                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                                         </observation>

@@ -420,7 +420,7 @@
                   <effectiveTime>
                     <low nullFlavor="NA" />
                   </effectiveTime>
-                  <!-- mode d’accouchement : valeur issue du JDV_OBP_ModeNaissance-CISIS (1.2.250.1.213.1.1.4.2.289.23) -->
+                  <!-- mode d’accouchement : valeur issue du JDV_OBP_ModeNaissance_CISIS (1.2.250.1.213.1.1.4.2.289.23) -->
                   <approachSiteCode code="OBS_221" displayName="intervention voie basse" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
                   <!-- [0..1] Entrée FR-References-externes : si Césarienne ou Intervention voie basse pour porter la référence du CR -->
                   <entryRelationship typeCode="REFR" inversionInd="false">
@@ -476,7 +476,7 @@
                       </text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
-                      <!-- mode d’accouchement : valeur issue du JDV_OBP_TypeInterventionVoieBasse-CISIS (1.2.250.1.213.1.1.4.2.289.29) -->
+                      <!-- mode d’accouchement : valeur issue du JDV_OBP_TypeInterventionVoieBasse_CISIS (1.2.250.1.213.1.1.4.2.289.29) -->
                       <value xsi:type="CD" code="P1-86EA0" displayName="ventouse" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
                     </observation>
                   </entryRelationship>
@@ -522,7 +522,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="29E37FE1-C7EC-4C1B-A3C0-C68E66DBE5F1" />
-                  <!-- Valeur issue du JDV_AntecedentsObstetricaux_OBP-CISIS -->
+                  <!-- Valeur issue du JDV_AntecedentsObstetricaux_OBP_CISIS -->
                   <code code="11884-4" displayName="Age gestationnel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <text>
                     <reference value="ageGest" />
@@ -546,7 +546,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <!-- Valeur issue du JDV_OBP_PresentationFoetale-CISIS (1.2.250.1.213.1.1.4.2.289.25) -->
+                  <!-- Valeur issue du JDV_OBP_PresentationFoetale_CISIS (1.2.250.1.213.1.1.4.2.289.25) -->
                   <value xsi:type="CD" code="F-87050" displayName="Sommet" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
                 </observation>
               </entry>
@@ -564,7 +564,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <!-- Valeur issue du JDV_OBP_QuantiteLA-CISIS (1.2.250.1.213.1.1.4.2.289.26) -->
+                  <!-- Valeur issue du JDV_OBP_QuantiteLA_CISIS (1.2.250.1.213.1.1.4.2.289.26) -->
                   <value xsi:type="CD" code="OBS_214" displayName="quantité de liquide amniotique normale" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
                 </observation>
               </entry>
@@ -582,7 +582,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
-                  <!-- Valeur issue du JDV_OBP_AspectLA-CISIS (1.2.250.1.213.1.1.4.2.289.18) -->
+                  <!-- Valeur issue du JDV_OBP_AspectLA_CISIS (1.2.250.1.213.1.1.4.2.289.18) -->
                   <value xsi:type="CD" code="G-A456" displayName="Clair" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
                 </observation>
               </entry>
@@ -632,7 +632,7 @@
                       </text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
-                      <!-- Valeur issue du JDV_OBP_CirconstancesDeces-CISIS (1.2.250.1.213.1.1.4.2.289.19) -->
+                      <!-- Valeur issue du JDV_OBP_CirconstancesDeces_CISIS (1.2.250.1.213.1.1.4.2.289.19) -->
                       <value xsi:type="CD" code="D8-72300" displayName="Décédé pendant travail" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
                     </observation>
                   </entryRelationship>
@@ -1229,9 +1229,9 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="UNK" />
-              <!-- Valeur issue du JDV_ModeSortie-OBP-SNE-CISIS (1.2.250.1.213.1.1.5.699) -->
+              <!-- Valeur issue du JDV_ModeSortie-OBP-SNE_CISIS (1.2.250.1.213.1.1.5.699) -->
               <value xsi:type="CD" code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <!-- valeur issue du JDV_Destination-OBP-SNE-CISIS (1.2.250.1.213.1.1.5.702) -->
+                <!-- valeur issue du JDV_Destination-OBP-SNE_CISIS (1.2.250.1.213.1.1.5.702) -->
                 <qualifier><value code="ORG-141" displayName="Unité Kangourou" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/></qualifier>
               </value>
             </observation>

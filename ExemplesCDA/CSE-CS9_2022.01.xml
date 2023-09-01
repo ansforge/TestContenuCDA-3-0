@@ -27,9 +27,10 @@
       08/06/2020 : Correction suite à retours DGOS/DSI
       28/12/2020 : Ajout commentaires
       22/01/2021 : Mise en conformité v2021.01
-      23/02/2021 : Correction codes d'un vaccin : le code porte le code CIS et le JDV_VaccinCSE8-CISIS est utilisé pour le <translation>
+      23/02/2021 : Correction codes d'un vaccin : le code porte le code CIS et le JDV_VaccinCSE8_CISIS est utilisé pour le <translation>
       13/07/2021 : Correction de l'unité en "wk" (au lieu de "w")
       06/04/2022 : Migration des terminologies et JDVs en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
       ********************************************************************************************************** -->
    
    <!-- ************************************************************
@@ -49,7 +50,7 @@
    <templateId root="1.2.250.1.213.1.1.1.5.2" extension="2022.01"/>
    <!-- Identifiant du document -->
    <id root="1.2.250.1.213.1.1.1.5.2.1"/>
-   <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode-CISIS) -->
+   <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode_CISIS) -->
    <code code="CERT_DECL" displayName="Certificat, déclaration" codeSystem="1.2.250.1.213.1.1.4.12"/>
    <!-- Titre du document -->
    <title>DEUXIEME CERTIFICAT DE SANTE (à établir obligatoirement au cours du 9ème mois)</title>
@@ -543,7 +544,7 @@
                      <text><reference value="#gard_enfant"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur issue du JDV_TypeGarde-CISIS (1.2.250.1.213.1.1.5.128) -->
+                     <!-- Valeur issue du JDV_TypeGarde_CISIS (1.2.250.1.213.1.1.5.128) -->
                      <value xsi:type="CD" code="PAT-050" displayName="Accueil collectif"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/> 
                      <!-- Rattachement de l'entrée à la mère -->
@@ -578,7 +579,7 @@
                      <text><reference value="#pro_mere"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur issue du JDV_Profession-CISIS (1.2.250.1.213.1.1.5.109) -->
+                     <!-- Valeur issue du JDV_Profession_CISIS (1.2.250.1.213.1.1.5.109) -->
                      <value xsi:type="CD" code="3" codeSystem="1.2.250.1.213.2.13" displayName="Cadre ou profession intellectuelle supérieure" codeSystemName="PCS-INSEE"/>
                      <!-- Rattachement de l'entrée à la mère -->
                      <subject typeCode="SBJ">
@@ -612,7 +613,7 @@
                      <text><reference value="#pro_pere"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur issue du JDV_Profession-CISIS (1.2.250.1.213.1.1.5.109) -->
+                     <!-- Valeur issue du JDV_Profession_CISIS (1.2.250.1.213.1.1.5.109) -->
                      <value xsi:type="CD" code="2" displayName="Artisan, commerçant ou chef d'entreprise"
                         codeSystem="1.2.250.1.213.2.13" codeSystemName="PCS-INSEE"/>
                      <!-- Rattachement de l'entrée au père -->
@@ -647,7 +648,7 @@
                      <text><reference value="#act_pro_mere"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur issue du JDV_Activité-CISIS (1.2.250.1.213.1.1.5.110) -->
+                     <!-- Valeur issue du JDV_Activité_CISIS (1.2.250.1.213.1.1.5.110) -->
                      <value xsi:type="CD" code="PAT-040" displayName="Activité salariée"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <!-- Rattachement de l'entrée à la mère -->
@@ -682,7 +683,7 @@
                      <text><reference value="#act_pro_pere"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <!-- Valeur issue du JDV_Activité-CISIS (1.2.250.1.213.1.1.5.110) -->
+                     <!-- Valeur issue du JDV_Activité_CISIS (1.2.250.1.213.1.1.5.110) -->
                      <value xsi:type="CD" code="PAT-040" displayName="Activité salariée"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <!-- Rattachement de l'entrée au père -->
@@ -956,8 +957,8 @@
                                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                                  <templateId root="1.2.250.1.213.1.1.3.48"/>
                                  <id root="2022BE76-7CC9-11EB-9439-0242AC130017"/>
-                                 <code code="T30" displayName="Brûlures"
-                                    codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"/>
+                                 <code code="NE2Z" displayName="Brûlures, sans précision"
+                                    codeSystem="2.16.840.1.113883.6.347" codeSystemName="CIM-11"/>
                                  <text><reference value="#brul"/></text>
                                  <statusCode code="completed"/>
                                  <effectiveTime>
@@ -977,8 +978,8 @@
                                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                                  <templateId root="1.2.250.1.213.1.1.3.48"/>
                                  <id root="2022BE76-7CC9-11EB-9439-0242AC130018"/>
-                                 <code code="T50" displayName="Intoxication"
-                                    codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"/>
+                                 <code code="NE61" displayName="Intoxication SAI"
+                                    codeSystem="2.16.840.1.113883.6.347" codeSystemName="CIM-11"/>
                                  <text><reference value="#intox"/></text>
                                  <statusCode code="completed"/>
                                  <effectiveTime>
@@ -998,8 +999,8 @@
                                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                                  <templateId root="1.2.250.1.213.1.1.3.48"/>
                                  <id root="2022BE76-7CC9-11EB-9439-0242AC130019"/>
-                                 <code code="W19" displayName="Chute / Traumatisme"
-                                    codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
+                                 <code code="NF0A.4" displayName="Choc traumatique, non classé ailleurs"
+                                    codeSystem="2.16.840.1.113883.6.347" codeSystemName="CIM-11"/>
                                  <text><reference value="#trauma"/></text>
                                  <statusCode code="completed"/>
                                  <effectiveTime>
@@ -2610,7 +2611,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130075"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="MED-190" displayName="Tient assis sans appui"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#tientAssis"/></text>
@@ -2628,7 +2629,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130076"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="MED-191" displayName="Réagit à son prénom"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#reagitPrenom"/></text>
@@ -2645,7 +2646,7 @@
                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130077"/>
                            <code code="MED-192" displayName="Répète une syllabe"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
@@ -2664,7 +2665,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130078"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="MED-193" displayName="Se déplace"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#dep"/></text>
@@ -2682,7 +2683,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130079"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="MED-194" displayName="Saisit un objet avec participation du pouce"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#objetPouce"/></text>
@@ -2700,7 +2701,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130080"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="GEN-082" displayName="Imite un geste simple (au revoir/bravo)"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#imiteSimple"/></text>
@@ -2718,7 +2719,7 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="2022BE76-7CC9-11EB-9439-0242AC130081"/>
-                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur-CS9-CISIS (1.2.250.1.213.1.1.5.711) -->
+                           <!-- Valeur issue du JDV_DeveloppementPsychomoteur_CS9_CISIS (1.2.250.1.213.1.1.5.711) -->
                            <code code="MED-195" displayName="Motricité symétrique des 4 membres"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                            <text><reference value="#mot4Memb"/></text>
@@ -2873,7 +2874,7 @@
                      <text><reference value="#vaccin-DPT-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -2927,7 +2928,7 @@
                      <text><reference value="#vaccin-DPT-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>                     
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -2981,7 +2982,7 @@
                      <text><reference value="#vaccin-Coq-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3035,7 +3036,7 @@
                      <text><reference value="#vaccin-Coq-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3089,7 +3090,7 @@
                      <text><reference value="#vaccin-InfB-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3143,7 +3144,7 @@
                      <text><reference value="#vaccin-InfB-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3197,7 +3198,7 @@
                      <text><reference value="#vaccin-HepB-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3251,7 +3252,7 @@
                      <text><reference value="#vaccin-HepB-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3305,7 +3306,7 @@
                      <text><reference value="#vaccin-Pneumo-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3359,7 +3360,7 @@
                      <text><reference value="#vaccin-Pneumo-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3413,7 +3414,7 @@
                      <text><reference value="#vaccin-Mening-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="2"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3467,7 +3468,7 @@
                      <text><reference value="#vaccin-BCG-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
                      <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
@@ -3542,10 +3543,10 @@
                         <low value="20210301"/>
                         <high value="20210331"/>
                      </effectiveTime>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode code="20035000" displayName="Voie intramusculaire"
                         codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/> 
-                     <!-- Site d'administration : valeur issue du JDV_ImmunizationApproachSiteCode-CISIS (1.2.250.1.213.1.1.5.621) -->
+                     <!-- Site d'administration : valeur issue du JDV_ImmunizationApproachSiteCode_CISIS (1.2.250.1.213.1.1.5.621) -->
                      <approachSiteCode code="16217701000119102" displayName="deltoïde gauche"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                      <!-- Dose administrée -->
@@ -3643,7 +3644,7 @@
                      <!-- Conformité FR-Acte (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.62"/>
                      <id root="2022BE76-7CC9-11EB-9439-0242AC130098"/>
-                     <!-- Acte : valeur issue du JDV_Acte-CSE-CISIS (1.2.250.1.213.1.1.5.707) -->
+                     <!-- Acte : valeur issue du JDV_Acte_CSE_CISIS (1.2.250.1.213.1.1.5.707) -->
                      <code code="ORG-085" displayName="Demande de surveillance médicale particulière"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                      <text mediaType="text/xml"><reference value="#cs9-plan-01"/></text>
@@ -3698,7 +3699,7 @@
                      <id root="2022BE76-7CC9-11EB-9439-0242AC130100"/>
                      <code code="AMB" displayName="Ambulatoire"
                         codeSystem="2.16.840.1.113883.5.4">
-                        <!-- rencontre : valeur issue du JDV_Rencontre-CSE-CISIS (1.2.250.1.213.1.1.5.708) -->
+                        <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>
                            <value code="ORG-084" displayName="Demande de consutation médicale spécialisée"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
@@ -3712,7 +3713,7 @@
                         <assignedEntity>
                            <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                            <code code="G15_10/SCH48" displayName="Médecin - Oto-rhino-laryngologie (SCH)"
-                              codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="TRE_A02-ProfessionSavFaire-CISIS"/>
+                              codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="TRE_A02-ProfessionSavFaire_CISIS"/>
                            <addr>
                               <houseNumber>44</houseNumber>
                               <streetName>Rue St-André des Arts</streetName>
@@ -3756,7 +3757,7 @@
                      <id root="2022BE76-7CC9-11EB-9439-0242AC130101"/>
                      <code code="AMB" displayName="Ambulatoire"
                         codeSystem="2.16.840.1.113883.5.4">
-                        <!-- rencontre : valeur issue du JDV_Rencontre-CSE-CISIS (1.2.250.1.213.1.1.5.708) -->
+                        <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>
                            <value code="ORG-083" displayName="Demande de rappel par le médecin de PMI"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>

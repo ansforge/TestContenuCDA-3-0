@@ -18,6 +18,7 @@
       **********************************************************************************************************	
       21/12/2020 : Création		
       21/07/2021 : Correction unités pour la consommation de tabac et d'alcool
+      25/08/2023 : Migration des terminologies et JDVs après validation
 	  **********************************************************************************************************
    -->
   <realmCode code="FR" />
@@ -1978,14 +1979,14 @@
                 <tr>
                   <td>
                     <content ID="risques-sociaux">Risques sociaux (codé à partir du
-                      JDV_FacteursDeRisqueSociaux-CISIS)</content>
+                      JDV_FacteursDeRisqueSociaux_CISIS)</content>
                   </td>
                   <td>Isolement</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="risques-professionnels">Risques professionnels (codé à partir du
-                      JDV_FacteursDeRisqueProfessionnels-CISIS)</content>
+                      JDV_FacteursDeRisqueProfessionnels_CISIS)</content>
                   </td>
                   <td>Silice</td>
                 </tr>
@@ -2010,7 +2011,7 @@
                 <tr>
                   <td>
                     <content ID="sedentarite">Sédentarité (codé à partir du
-                      JDV_Sedentarite-CISIS)</content>
+                      JDV_Sedentarite_CISIS)</content>
                   </td>
                   <td>Peu d'activité</td>
                 </tr>
@@ -2028,7 +2029,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="drogue">Drogues (codé à partir du JDV_NiveauDependance-CISIS)
+                    <content ID="drogue">Drogues (codé à partir du JDV_NiveauDependance_CISIS)
                     </content>
                   </td>
                   <td>Dépendance moyenne</td>
@@ -2060,7 +2061,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="C06B54F9-C6A9-4ABE-8414-A66969B67ACA" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="GEN-232" displayName="Risques sociaux" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2073,7 +2074,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_FacteursDeRisqueSociaux-CISIS (1.2.250.1.213.1.1.5.488) -->
+              <!-- JDV_FacteursDeRisqueSociaux_CISIS (1.2.250.1.213.1.1.5.488) -->
               <value xsi:type="CD" code="GEN-188" displayName="Isolement" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2089,7 +2090,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="A0FEE676-B9EA-4EBE-AE61-CCB610E3D14E" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="92944-8" displayName="Exposition à des produits toxiques" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <text>
                 <reference value="#risques-professionnels" />
@@ -2098,7 +2099,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_FacteursDeRisqueProfessionnels-CISIS (1.2.250.1.213.1.1.5.490) -->
+              <!-- JDV_FacteursDeRisqueProfessionnels_CISIS (1.2.250.1.213.1.1.5.490) -->
               <value xsi:type="CD" code="83581005" displayName="silice colloidale" codeSystem="2.16.840.1.113883.6.96" />
             </observation>
           </entry>
@@ -2114,7 +2115,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="6F551051-8985-41CF-97FA-A0804F8D3BE1" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="GEN-207" displayName="Facteurs de risques environnementaux" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2146,7 +2147,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="E339E1C9-C6DD-4D1C-A564-B74A1B68AC69" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="ORG-075" displayName="Activité professionnelle" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2178,7 +2179,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="D39B63A5-C116-4FE4-880A-565549008211" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="73985-4" displayName="Exercice physique"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <text>
                 <reference value="#activite-sportive" />
@@ -2202,7 +2203,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="CF4E510E-3E82-4D99-B597-C9F08E20484B" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="GEN-208" displayName="Sédentarité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2215,7 +2216,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_Sedentarite-CISIS (1.2.250.1.213.1.1.5.485) -->
+              <!-- JDV_Sedentarite_CISIS (1.2.250.1.213.1.1.5.485) -->
               <value xsi:type="CD" code="GEN-202" displayName="Peu d'activité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2231,7 +2232,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="00FD3FEF-41F0-4C8C-B538-6D8B90CE107E" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="74011-8" displayName="Consommation tabagique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <text>
                 <reference value="#tabac" />
@@ -2255,7 +2256,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="FA502B35-5355-46A9-8EB3-A4D2FD9B71C1" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="74013-4" displayName="Consommation d'alcool" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <text>
                 <reference value="#alcool" />
@@ -2279,8 +2280,8 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="1678CF79-B078-42C0-89B2-09ED049EC732" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
-              <code code="42831-8" displayName="Consommation de drogue"
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <code code="11343-1" displayName="Consommation de drogue non médicales"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <text>
                 <reference value="#drogue" />
@@ -2289,7 +2290,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_NiveauDependance-CISIS (1.2.250.1.213.1.1.5.483) -->
+              <!-- JDV_NiveauDependance_CISIS (1.2.250.1.213.1.1.5.483) -->
               <value xsi:type="CD" code="GEN-199" displayName="Dépendance moyenne" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2305,7 +2306,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="8D3E75AC-FD29-47BD-A590-5E2C409928B7" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="GEN-050" displayName="Voyage" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2338,7 +2339,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.52" />
               <id root="9928D69E-B256-4604-AB31-2BD9EA60BF72" />
-              <!-- JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
+              <!-- JDV_SocialHistoryCodes_CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
               <code code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="GEN-231" displayName="Fait(s) marquant(s)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2402,27 +2403,27 @@
                 <tr>
                   <td>
                     <content ID="aide-deplacement">Aide au déplacement (codé à partir du
-                      JDV_AideAuDeplacement-CISIS)</content>
+                      JDV_AideAuDeplacement_CISIS)</content>
                   </td>
                   <td>Fauteuil roulant</td>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="score-GIR">Score GIR (codé à partir du JDV_GIR-CISIS)</content>
+                    <content ID="score-GIR">Score GIR (codé à partir du JDV_GIR_CISIS)</content>
                   </td>
                   <td>GIR-1</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="score-Duke">Score Duke (codé à partir du
-                      JDV_ScoreDuke-CISIS)</content>
+                      JDV_ScoreDuke_CISIS)</content>
                   </td>
                   <td>Aptitude physique excellente (Score de Duke &gt; 10 MET)</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="support-nutritionnel">Support nutritionnel (codé à partir du
-                      JDV_SupportNutritionnel-CISIS)</content>
+                      JDV_SupportNutritionnel_CISIS)</content>
                   </td>
                   <td>Alimentation mixée</td>
                 </tr>
@@ -2548,7 +2549,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_AideAuDeplacement-CISIS (1.2.250.1.213.1.1.5.489) -->
+              <!-- JDV_AideAuDeplacement_CISIS (1.2.250.1.213.1.1.5.489) -->
               <value xsi:type="CD" code="GEN-195" displayName="Fauteuil roulant" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2576,7 +2577,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_GIR-CISIS (1.2.250.1.213.1.1.5.53) -->
+              <!-- JDV_GIR_CISIS (1.2.250.1.213.1.1.5.53) -->
               <value xsi:type="CD" code="MED-344" displayName="GIR-6" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2604,7 +2605,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_ScoreDuke-CISIS (1.2.250.1.213.1.1.5.493) -->
+              <!-- JDV_ScoreDuke_CISIS (1.2.250.1.213.1.1.5.493) -->
               <value xsi:type="CD" code="MED-589" displayName="Aptitude physique excellente (Score de Duke &gt; 10 MET)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2632,7 +2633,7 @@
               <effectiveTime>
                 <low value="20200323" />
               </effectiveTime>
-              <!-- JDV_SupportNutritionnel-CISIS (1.2.250.1.213.1.1.5.487) -->
+              <!-- JDV_SupportNutritionnel_CISIS (1.2.250.1.213.1.1.5.487) -->
               <value xsi:type="CD" code="MED-575" displayName="Alimentation mixée" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
@@ -2770,7 +2771,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.41" />
                   <id root="D21A81A6-EFE4-429A-A1C3-D1BBCC74619D" />
-                  <!-- Type d'allergie /hypersensibilité : valeur provenant de JDV_HL7_ObservationIntoleranceType-CISIS (2.16.840.1.113883.1.11.19700) -->
+                  <!-- Type d'allergie /hypersensibilité : valeur provenant de JDV_HL7_ObservationIntoleranceType_CISIS (2.16.840.1.113883.1.11.19700) -->
                   <code code="DALG" displayName="Allergie médicamenteuse" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
                   <text>
                     <reference value="#typeAllergie" />
@@ -2841,7 +2842,7 @@
                         <reference value="#severite" />
                       </text>
                       <statusCode code="completed" />
-                      <!-- JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
+                      <!-- JDV_SeveriteObservation_CISIS (1.2.250.1.213.1.1.5.675) -->
                       <value xsi:type="CD" code="6736007" displayName="modéré" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                     </observation>
                   </entryRelationship>
