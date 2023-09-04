@@ -46,7 +46,7 @@
 	<!-- Conformité aux spécifications du CI-SIS -->
 	<templateId root="1.2.250.1.213.1.1.1.1"/>
 	<!-- Conformité au modèle DLU-EHPAD-DLU 2022.01 -->
-	<templateId root="1.2.250.1.213.1.1.1.22" extension="2023.01"/>
+	<templateId root="1.2.250.1.213.1.1.1.22" extension="2022.01"/>
 	<!-- Identifiant du document -->
 	<id root="1.2.250.1.213.1.1.1.22.1"/>
 	<!-- Type de document -->
