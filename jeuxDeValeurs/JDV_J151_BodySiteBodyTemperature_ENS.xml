@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par souad, le 21/08/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
+    <ValueSet id="1.2.250.1.213.1.1.5.606" displayName="JDV_J151_BodySiteBodyTemperature_ENS"
+        version="test">
+        <ConceptList>
+            <Concept code="14544" codeSystem="2.16.840.1.113883.6.119" displayName="Rectum"/>
+            <Concept code="49184" codeSystem="2.16.840.1.113883.6.119" displayName="Bouche"/>
+            <Concept code="52780" codeSystem="2.16.840.1.113883.6.119" displayName="Oreille"/>
+            <Concept code="24864" codeSystem="2.16.840.1.113883.6.119" displayName="Aisselle"/>
+            <Concept code="46450" codeSystem="2.16.840.1.113883.6.119" displayName="Tempe"/>
+            <Concept code="63864" codeSystem="2.16.840.1.113883.6.119" displayName="Front"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

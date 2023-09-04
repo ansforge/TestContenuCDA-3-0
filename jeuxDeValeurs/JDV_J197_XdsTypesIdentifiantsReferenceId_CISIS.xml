@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par souad, le 21/08/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
+    <ValueSet id="1.2.250.1.213.1.1.5.692"
+        displayName="JDV_J197_XdsTypesIdentifiantsReferenceId_CISIS" version="test">
+        <ConceptList>
+            <Concept code="urn:ihe:iti:xds:2013:uniqueId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="uniqueId"/>
+            <Concept code="urn:ihe:iti:xds:2013:accession" codeSystem="1.2.250.1.213.1.1.4.347" displayName="accession"/>
+            <Concept code="urn:ihe:iti:xds:2013:referral" codeSystem="1.2.250.1.213.1.1.4.347" displayName="referral"/>
+            <Concept code="urn:ihe:iti:xds:2013:order" codeSystem="1.2.250.1.213.1.1.4.347" displayName="order"/>
+            <Concept code="urn:ihe:iti:xdw:2013:workflowInstanceId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="workflowInstanceId"/>
+            <Concept code="urn:ihe:iti:xds:2016:studyInstanceUID" codeSystem="1.2.250.1.213.1.1.4.347" displayName="studyInstanceUID"/>
+            <Concept code="urn:ihe:iti:xds:2015:encounterId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="encounterId"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

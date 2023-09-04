@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par souad, le 21/08/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
+    <ValueSet id="1.2.250.1.213.1.1.5.603" displayName="JDV_J148_ReferenceRangeAppliesTo_CISIS"
+        version="test">
+        <ConceptList>
+            <Concept code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Féminin"/>
+            <Concept code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Masculin"/>
+            <Concept code="77386006" codeSystem="2.16.840.1.113883.6.96" displayName="enceinte"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
