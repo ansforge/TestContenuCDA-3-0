@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par souad, le 21/08/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.289.22" displayName="JDV_OBP_ModeDebutTravail_CISIS" version="test"><ConceptList><Concept code="84457005" displayName="déclenchement spontané du travail" codeSystem="2.16.840.1.113883.6.96"/><Concept code="112070001" displayName="déclenchement provoqué du travail" codeSystem="2.16.840.1.113883.6.96"/><Concept code="11466000" displayName="césarienne" codeSystem="2.16.840.1.113883.6.96"/></ConceptList></ValueSet></RetrieveValueSetResponse>
