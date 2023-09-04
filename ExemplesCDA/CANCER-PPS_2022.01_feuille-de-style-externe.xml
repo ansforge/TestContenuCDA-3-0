@@ -2261,8 +2261,8 @@
                       </text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
-                      <value xsi:type="CD" code="GEN-092.01.01" displayName="Autre problème"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <value xsi:type="CD" code="20062000" displayName="Autre(s)"
+                        codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Simple-Observation : Effets secondaires notables du traitement (si notable) -->
