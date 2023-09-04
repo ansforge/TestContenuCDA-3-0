@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!--Créé par souad, le 21/08/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
-    <ValueSet id="1.2.250.1.213.1.1.5.528" displayName="JDV_J140_EncounterParticipationType_CISIS"
-        version="test">
-        <ConceptList>
-            <Concept code="ADM" codeSystem="2.16.840.1.113883.5.90" displayName="Responsable de l'admission"/>
-            <Concept code="ATND" codeSystem="2.16.840.1.113883.5.90" displayName="Superviseur / Responsable des soins"/>
-            <Concept code="CON" codeSystem="2.16.840.1.113883.5.90" displayName="Consultant"/>
-            <Concept code="DIS" codeSystem="2.16.840.1.113883.5.90" displayName="Responsable de la sortie"/>
-            <Concept code="REF" codeSystem="2.16.840.1.113883.5.90" displayName="Référent / Prescripteur"/>
-            <Concept code="RESP" codeSystem="2.16.840.1.113883.5.90" displayName="Responsable de l'acte"/>
-        </ConceptList>
-    </ValueSet>
-</RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CrÃ©Ã© par nmahraz, le 04/09/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.528" displayName="JDV_J140_EncounterParticipationType_CISIS" version="test"><ConceptList><Concept code="ADM" displayName="Responsable de l'admission" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/><Concept code="ATND" displayName="Superviseur / Responsable des soins" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/><Concept code="CON" displayName="Consultant" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/><Concept code="DIS" displayName="Responsable de la sortie" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/><Concept code="REF" displayName="RÃ©fÃ©rent / Prescripteur" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/><Concept code="RESP" displayName="Responsable de l'acte" codeSystem="2.16.840.1.113883.5.90" dateValid="20210101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
