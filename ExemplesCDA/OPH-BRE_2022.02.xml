@@ -2173,7 +2173,11 @@
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="BL" value="true" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -2195,7 +2199,11 @@
                           <!-- Date de fin d'adaptation -->
                           <value xsi:type="TS" value="20231216" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Date de fin de validité -->
@@ -2207,7 +2215,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="2EDC4ACB-FDCF-4D8A-A53A-4678C18E16B0" />
                           <!-- Valeur issue du JDV_MesureVerrePrescrit_CISIS (1.2.250.1.213.1.1.5.651)  -->
-                          <code code="91909-2" displayName="Date de fin de validité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="74712-1" displayName="Date de fin de validité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                           <text>
                             <reference value="#dateFinValidite" />
                           </text>
@@ -2216,7 +2224,11 @@
                           <!-- Date de fin de validité -->
                           <value xsi:type="TS" value="20231216" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -2400,7 +2412,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="905CD9F5-2C7E-4EB3-99F6-081FF7A5AF43" />
                           <!-- Valeur issue du JDV_MesureVerrePrescrit_CISIS (1.2.250.1.213.1.1.5.651)  -->
-                          <code code="96052-6" displayName="Addition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-886" displayName="Addition" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#additionOd1" />
                           </text>
@@ -2428,7 +2440,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="4CC0D6CD-0975-4232-A5BF-E03505989065" />
                           <!-- Valeur issue du JDV_MesureVerrePrescrit_CISIS (1.2.250.1.213.1.1.5.651)  -->
-                          <code code="96052-6" displayName="Addition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-886" displayName="Addition" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#additionOg1" />
                           </text>
@@ -2744,7 +2756,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Intolérance au verres (OD) (true / false) -->
@@ -2825,7 +2841,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Intolérance au verres (OG) (true / false) -->
@@ -3419,7 +3439,11 @@
                           <!-- Date de délivrance -->
                           <value xsi:type="TS" value="20210416093000" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [1..1] Entrée FR-Mesure-dispositif-oculaire : Montures -->
@@ -3499,7 +3523,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Marque (OD) (Texte libre) -->
@@ -3727,7 +3755,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Marque (OG) (Texte libre) -->
@@ -3939,7 +3971,11 @@
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="BL" value="true" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -3960,7 +3996,11 @@
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="BL" value="true" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -3982,7 +4022,11 @@
                           <!-- Date de fin d'adaptation -->
                           <value xsi:type="TS" value="20241216" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -4004,7 +4048,11 @@
                           <!-- Date de fin de validité -->
                           <value xsi:type="TS" value="20241216" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -4089,8 +4137,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Commentaire (OG) (Texte libre) -->
@@ -4114,8 +4165,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -5053,7 +5107,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -5078,7 +5136,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                     
@@ -5115,7 +5177,11 @@
                           <!-- Date de délivrance -->
                           <value xsi:type="TS" value="20210416" />
                           <methodCode nullFlavor="NA" />
-                          <targetSiteCode nullFlavor="NA" />
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -5128,7 +5194,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="F736528C-D40E-4A96-9171-A52D77A76995" />
                           <!-- valeur issue du  JDV_MesureLentilleDelivree_CISIS (1.2.250.1.213.1.1.5.656)  -->
-                          <code code="28866-2" displayName="Type de lentille" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-1180" displayName="Type de lentille" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#typeLentilleDelivreOd" />
                           </text>
@@ -5157,7 +5223,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.122" />
                           <id root="0C59CE0C-7864-4B46-A068-F3A58B8B66C9" />
                           <!-- valeur issue du JDV_MesureLentilleDelivree_CISIS (1.2.250.1.213.1.1.5.656)  -->
-                          <code code="28866-2" displayName="Type de lentille" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <code code="MED-1180" displayName="Type de lentille" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <text>
                             <reference value="#typeLentilleDelivreOg" />
                           </text>
@@ -5200,7 +5266,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       <!-- [0..1] Entrée FR-Mesure-dispositif-oculaire : Commentaire (OG) (Texte libre) -->
@@ -5224,8 +5294,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-                          
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                       
@@ -5909,8 +5982,8 @@
                           <templateId root="1.2.250.1.213.1.1.3.122"/>
                           <id root="D84DB5DF-B348-4024-9318-8D2DF8E0F8FC"/>
                           <!-- valeur issue du JDV_MesureLentilleDelivree_CISIS (1.2.250.1.213.1.1.5.656)  -->
-                          <code code="80418-7" displayName="Produit d'entretien"
-                            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                          <code code="MED-1183" displayName="Produit d'entretien"
+                            codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                           <text>
                             <reference value="#produitEntretienDelivre"/>
                           </text>
@@ -5922,8 +5995,11 @@
                             </originalText>
                           </value>
                           <methodCode nullFlavor="NA"/>
-
-                          <targetSiteCode nullFlavor="NA"/>
+                          <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <qualifier>
+                              <value nullFlavor="NA"/>
+                            </qualifier>
+                          </targetSiteCode>
                         </observation>
                       </component>
                     </organizer>
