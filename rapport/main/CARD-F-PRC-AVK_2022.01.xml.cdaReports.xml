@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="10dcec09-bcba-449a-a378-4be89f2a55d8">
-    <gvr:validationOverview validationDateTime="2025-07-08T13:37:27.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="794beb3a-8f7b-4f07-ab3e-caf69deff81e">
+    <gvr:validationOverview validationDateTime="2023-08-09T15:42:19.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -22,14 +22,17 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="7719" numberOfErrors="0" numberOfWarnings="3"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>(FR-Resultats-examens)/d110631e7-true-d110755e0: this element 'referenceRange' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d110631e7-true-d110755e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[2]/observation/referenceRange</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>(FR-Resultats-examens)/d110631e7-true-d110755e0: this element 'referenceRange' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d110631e7-true-d110755e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[3]/observation/referenceRange</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>(FR-Resultats-examens)/d110631e7-true-d110755e0: this element 'referenceRange' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d110631e7-true-d110755e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/referenceRange</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>

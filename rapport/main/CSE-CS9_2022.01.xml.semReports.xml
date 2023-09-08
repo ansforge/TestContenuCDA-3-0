@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="53c0ed1d-2377-4cd9-81be-fb05fa436d8c">
-    <gvr:validationOverview validationDateTime="2025-07-08T13:42:57.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="35281275-e2a3-42ce-9f8f-fbd424c9cf8f">
+    <gvr:validationOverview validationDateTime="2023-08-09T15:48:22.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -28,6 +28,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  DisplayName : Développement psychomoteur
          (Validation  sémantique)
 	 </gvr:constraintDescription>
+            <gvr:formalExpression>not (doc-available(concat($path_terminologie, $theCodeSystem,'.rdf')) and not(exists(doc(concat($path_terminologie, $theCodeSystem,'.rdf') )//skos:notation[text()= string($theCode)])))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[4]/section/component/section/code</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>

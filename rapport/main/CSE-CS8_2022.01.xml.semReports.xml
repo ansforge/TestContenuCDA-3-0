@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="0040d125-3f11-4e9c-b853-d000718b1648">
-    <gvr:validationOverview validationDateTime="2025-07-08T13:41:44.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="f2aaea6b-af5c-4bcf-8c00-a4bb0d16aab0">
+    <gvr:validationOverview validationDateTime="2023-08-09T15:47:04.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -28,6 +28,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  DisplayName : ANTENATAL TESTING AND SURVEILLANCE BATTERY
          (Validation  sémantique)
 	 </gvr:constraintDescription>
+            <gvr:formalExpression>not (doc-available(concat($path_terminologie, $theCodeSystem,'.rdf')) and not(exists(doc(concat($path_terminologie, $theCodeSystem,'.rdf') )//skos:notation[text()= string($theCode)])))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[4]/section/entry/organizer/code</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
