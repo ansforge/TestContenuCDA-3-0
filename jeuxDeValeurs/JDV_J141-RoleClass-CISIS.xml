@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20210326120000" dateValid="20210326120000" description="RoleClassAssociative CI-SIS" displayName="JDV_J141-RoleClass-CISIS.tabs" id="1.2.250.1.213.1.1.5.588" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS">
+        <ConceptList>
+            <Concept code="PROV" codeSystem="2.16.840.1.113883.5.110" displayName="Professionnel de santé"/>
+            <Concept code="AGNT" codeSystem="2.16.840.1.113883.5.110" displayName="Professionnel caractérisé par son rôle"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
