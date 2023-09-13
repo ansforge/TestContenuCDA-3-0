@@ -3129,7 +3129,7 @@
                 <originalText>
                   <reference value="#traitement-1-01"/>
                   <!-- numéro séquentiel du traitement -->
-                  <priorityNumber xmlns="urn:hl7-org:sdtc" value="1"/>
+                 <!-- <priorityNumber xmlns="urn:hl7-org:sdtc" value="1"/> -->
                 </originalText>
               </code>
               <text>
@@ -3139,7 +3139,10 @@
               <effectiveTime>
                 <low value="20190220"/>
                 <high value="20190820"/>
-              </effectiveTime>          
+              </effectiveTime>
+		    <priorityCode>
+                <originalText>1</originalText>
+              </priorityCode>
             </procedure>
           </entry>
           <!-- Entrée FR-Acte [0..*] : Proposition thérapeutique Alternative - 2 - Traitement 1 -->
@@ -3158,7 +3161,7 @@
                 <originalText>
                   <reference value="#traitement-2-01"/>
                   <!-- numéro séquentiel du traitement -->
-                  <priorityNumber xmlns="urn:hl7-org:sdtc" value="2"/>
+                <!--  <priorityNumber xmlns="urn:hl7-org:sdtc" value="2"/> -->
                 </originalText>
               </code>
               <text>
@@ -3169,6 +3172,9 @@
                 <low value="20190220"/>
                 <high value="20190820"/>
               </effectiveTime>
+		<priorityCode>
+                <originalText>2</originalText>
+              </priorityCode>
             </procedure>
           </entry>
           <!-- Entrée FR-Acte [0..*] : Proposition thérapeutique Alternative - 2 - Traitement 2 -->
@@ -3187,7 +3193,7 @@
                 <originalText>
                   <reference value="#traitement-2-02"/>
                   <!-- numéro séquentiel du traitement -->
-                  <priorityNumber xmlns="urn:hl7-org:sdtc" value="3"/>
+                   <!-- <priorityNumber xmlns="urn:hl7-org:sdtc" value="3"/> -->
                 </originalText>
               </code>
               <text>
@@ -3198,6 +3204,9 @@
                 <low value="20190220"/>
                 <high value="20190820"/>
               </effectiveTime>
+		<priorityCode>
+                <originalText>3</originalText>
+              </priorityCode>
             </procedure>
           </entry>
           <!-- Entrée FR-Commentaire-ER [0..1] : Commentaire sur la proposition de la RCP -->
