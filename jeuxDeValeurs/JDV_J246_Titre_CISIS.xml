@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par souad, le 13/09/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.719" displayName="JDV_J246_Titre_CISIS" version="test"><ConceptList><Concept code="DR" displayName="Docteur" codeSystem=""/><Concept code="MC" displayName="Médecin chef" codeSystem=""/><Concept code="MG" displayName="Médecin général" codeSystem=""/><Concept code="PC" displayName="Pharmacien chef" codeSystem=""/><Concept code="PG" displayName="Pharmacien général" codeSystem=""/><Concept code="PR" displayName="Professeur" codeSystem=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
