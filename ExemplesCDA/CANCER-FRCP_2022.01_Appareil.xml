@@ -582,11 +582,7 @@
       <!-- Code de l'acte = RCP -->
       <code code="ORG-113" displayName="RCP" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
         <!-- Acronyme RRC / Acronyme GestRCP / dénomination RCP -->
-        <translation>
-          <qualifier>
-            <name displayName="ONCO PAYS DE LA LOIRE / 3C CHU Angers / Sein" />
-          </qualifier>
-        </translation>
+        <originalText>ONCO PAYS DE LA LOIRE / 3C CHU Angers / Sein</originalText>
       </code>
       <!-- Date de début d'exécution de l'acte -->
       <effectiveTime>
