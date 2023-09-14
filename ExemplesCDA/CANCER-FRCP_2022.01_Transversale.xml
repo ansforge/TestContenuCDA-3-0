@@ -599,11 +599,12 @@
       <!-- Code de l'acte = RCP -->
       <code code="ORG-113" displayName="RCP" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
         <!-- Dénomination de la RCP -->
-        <translation>
+        <originalText>Soins de support</originalText>
+<!--        <translation>
           <qualifier>
             <name displayName="Soins de support" />
           </qualifier>
-        </translation>
+        </translation>-->
       </code>
       <!-- Date de début d'exécution de l'acte -->
       <effectiveTime>
