@@ -572,6 +572,8 @@
     </xd:doc>
     <xsl:variable name="nonXML" select="//hl7:ClinicalDocument/hl7:component/hl7:nonXMLBody"/>
 
+   <!-- <xsl:variable name="typeDoc" select="//hl7:ClinicalDocument/hl7:code[@code='11502-2']"/>-->
+
     <xd:doc>
         <xd:desc>
             <xd:p>String processing variable.</xd:p>
@@ -662,6 +664,9 @@
             <html xmlns="http://www.w3.org/1999/xhtml"
                 xml:lang="{substring($textLangLowerCase,1,2)}">
                 <head>
+                    <!--<script src="../FeuilleDeStyle/JS/jquery.highlight.js" type="text/javascript"/>
+                    <script src="../FeuilleDeStyle/JS/jquery.min.js" type="text/javascript"/>-->
+                    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"/>-->
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                     <title>
                         <xsl:call-template name="show-title"/>
@@ -1208,6 +1213,7 @@
                             if (window.attachEvent) window.attachEvent("onload", sfHover);</script>
                     </xsl:if>
                 </head>
+
                 <body>
                     <div id="documentheader">
                         <a id="_toc">&#160;</a>
@@ -1221,9 +1227,6 @@
                         <xsl:if test="string($useJavascript) = 'true'">
                             <xsl:if
                                 test="//hl7:content[@revised] or count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
-
-                                <!-- A revoir Xalan -->
-
                                 <div id="buttontable">
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tbody>
@@ -1318,6 +1321,9 @@
             <xsl:call-template name="section">
                 <xsl:with-param name="level" select="3"/>
             </xsl:call-template>
+           <!-- <xsl:if test="$typeDoc">
+                <xsl:call-template name="tableau-sectionsPremierNiveau"/>
+            </xsl:if>-->
         </xsl:for-each>
     </xsl:template>
 
@@ -1474,14 +1480,6 @@
                     </xsl:call-template>
                 &lt;![endif]</xsl:comment>
                     <xsl:comment>[if gt IE 9]&gt;</xsl:comment>
-                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
-                        <xsl:call-template name="getLocalizedString">
-                            <xsl:with-param name="pre" select="' '"/>
-                            <xsl:with-param name="key"
-                                select="'If the contents are not displayed here, it may be offered as a download.'"
-                            />
-                        </xsl:call-template>
-                    </xsl:if>
                     <xsl:choose>
                         <xsl:when
                             test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
@@ -1715,6 +1713,150 @@
             </fo:block>
         </xsl:if>
     </xsl:template>
+
+    <xd:doc>
+        <xd:desc/>
+    </xd:doc>
+   <!-- <xsl:template name="tableau-sectionsPremierNiveau">
+        <xsl:if test="not(contains($vendor, 'Saxonica'))">
+        <br/>
+        <table border="1">
+            <tr>
+                <td width="10%">
+                    <xsl:text>Section: </xsl:text>
+                    <xsl:value-of select="hl7:code/@code"/>
+                    <xsl:text> - </xsl:text>
+                    <xsl:value-of select="hl7:code/@displayName"/>
+                </td>
+                <td width="90%">
+                    <xsl:if test="hl7:component/hl7:section">
+                        <xsl:for-each select="hl7:component/hl7:section">
+                            <xsl:call-template name="tableau-sectionsDeuxiemeNiveau">
+                                <xsl:with-param name="sectionSecond" select="."/>
+                            </xsl:call-template>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="hl7:entry">
+                        <xsl:call-template name="tableau-entrees">
+                            <xsl:with-param name="entree" select="hl7:entry/*"/>
+                        </xsl:call-template>
+                    </xsl:if>
+                </td>
+            </tr>
+        </table>
+        </xsl:if>
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
+            <fo:block line-height="0.1cm">&#160;</fo:block>
+            <fo:block keep-together.within-page="always">
+                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
+                    <fo:table-column column-number="1" />
+                    <fo:table-column column-number="2" />
+                    <fo:table-body>
+                        <xsl:for-each
+                            select="hl7:informant/hl7:relatedEntity[@classCode = 'CAREGIVER']">
+                            <fo:table-row>
+                                <fo:table-cell xsl:use-attribute-sets="myBlock9">
+                                    <fo:block>
+                                        
+                                        
+                                    </fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </xsl:for-each>
+                    </fo:table-body>
+                </fo:table>
+            </fo:block>
+        </xsl:if>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="sectionSecond"/>
+    </xd:doc>
+    <xsl:template name="tableau-sectionsDeuxiemeNiveau">
+        <xsl:param name="sectionSecond"/>
+        <table border="1" width="40%">
+            <tr>
+                <td width="20%">
+                    <xsl:text>Section: </xsl:text>
+                    <xsl:value-of select="$sectionSecond/hl7:code/@code"/>
+                    <xsl:text> - </xsl:text>
+                    <xsl:value-of select="$sectionSecond/hl7:code/@displayName"/>
+                </td>
+                <td width="80%">
+                    <xsl:call-template name="tableau-entrees">
+                        <xsl:with-param name="entree" select="$sectionSecond/hl7:entry/*"/>
+                    </xsl:call-template>
+                </td>
+            </tr>
+        </table>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="entree"/>
+    </xd:doc>
+    <xsl:template name="tableau-entrees">
+        <xsl:param name="entree"/>
+        <table border="1" width="40%">
+            <tr>
+                <td width="20%">
+                    <xsl:text>Entrée: </xsl:text>
+                    <xsl:value-of select="$entree/hl7:code/@code"/>
+                    <xsl:text> - </xsl:text>
+                    <xsl:value-of select="$entree/hl7:code/@displayName"/>
+                </td>
+                <td width="80%">
+                    <xsl:for-each
+                        select="$entree/hl7:entryRelationship/*/hl7:code | $entree/hl7:entryRelationship/*/hl7:component/*/hl7:code">
+                        <xsl:call-template name="tableau-entryRelationship">
+                            <xsl:with-param name="relation" select="."/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </td>
+            </tr>
+        </table>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="relation"/>
+    </xd:doc>
+    <xsl:template name="tableau-entryRelationship">
+        <xsl:param name="relation"/>
+        <table border="1" width="40%" class="table_contours">
+            <tr>
+                <td width="80%">
+                    <xsl:text>Entrée : </xsl:text>
+                    <xsl:value-of select="$relation/@code"/>
+                    <xsl:text> - </xsl:text>
+                    <xsl:value-of select="$relation/@displayName"/>
+                </td>
+                <xsl:if test="$relation/../hl7:value">
+                    <td width="20%">
+                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
+                            <xsl:value-of select="$relation/../hl7:value/@value"/>
+                            <xsl:value-of select="$relation/../hl7:value/@unit"/>
+                        </xsl:if>
+                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'INT'">
+                            <xsl:value-of select="$relation/../hl7:value/@value"/>
+                        </xsl:if>
+                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'ST'">
+                            <xsl:value-of select="$relation/../hl7:value"/>
+                        </xsl:if>
+                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'TS'">
+                            <xsl:value-of select="$relation/../hl7:value/@value"/>
+                        </xsl:if>
+                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'CD'">
+                            <xsl:value-of select="$relation/../hl7:value/@code"/>
+                            <xsl:text> - </xsl:text>
+                            <xsl:value-of select="$relation/../hl7:value/@displayName"/>
+                        </xsl:if>
+                    </td>
+                </xsl:if>
+            </tr>
+        </table>
+    </xsl:template>-->
 
     <xd:doc>
         <xd:desc>
@@ -5799,7 +5941,7 @@
                                     <div id="element" value="{$matrix}" class="barcodeStyle"/>
                                     <br/>
                                     <div class="container">
-                                        <div class="centered-element"> INS non signé </div>
+                                        <div class="centered-element"> INS à scanner </div>
                                     </div>
                                 </xsl:if>
 
@@ -5809,7 +5951,7 @@
                                     <div id="element" value="{$matrix}" class="barcodeStyle"/>
 
                                     <div class="container">
-                                        <div class="centered-element"> INS non signé </div>
+                                        <div class="centered-element"> INS à scanner </div>
                                     </div>
                                 </xsl:if>
 
@@ -6339,7 +6481,7 @@
                                                   </fo:instream-foreign-object>
                                                   <fo:block line-height="0.01cm">&#160;</fo:block>
                                                   <fo:block text-align="center" font-size="4">
-                                                  <xsl:text>INS non signée</xsl:text>
+                                                  <xsl:text>INS à scanner</xsl:text>
                                                   </fo:block>
                                                 </fo:block>
                                             </xsl:if>
@@ -6367,7 +6509,7 @@
                                                   </fo:instream-foreign-object>
                                                   <fo:block line-height="0.01cm">&#160;</fo:block>
                                                   <fo:block text-align="center" font-size="4">
-                                                  <xsl:text>INS non signée</xsl:text>
+                                                  <xsl:text>INS à scanner</xsl:text>
                                                   </fo:block>
                                                 </fo:block>
                                             </xsl:if>

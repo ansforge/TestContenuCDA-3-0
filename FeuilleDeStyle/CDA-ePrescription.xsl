@@ -1497,14 +1497,6 @@
                     </xsl:call-template>
                 &lt;![endif]</xsl:comment>
                     <xsl:comment>[if gt IE 9]&gt;</xsl:comment>
-                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
-                    <xsl:call-template name="getLocalizedString">
-                        <xsl:with-param name="pre" select="' '"/>
-                        <xsl:with-param name="key"
-                            select="'If the contents are not displayed here, it may be offered as a download.'"
-                        />
-                    </xsl:call-template>
-                    </xsl:if>
                     <xsl:choose>
                         <xsl:when
                             test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
@@ -4637,7 +4629,7 @@
                 <tbody>
                     <!-- Patient row -->
                     <xsl:for-each select="hl7:recordTarget/hl7:patientRole">
-                        <!-- DataMatrix INS non signée -->
+                        <!-- DataMatrix INS à scanner -->
                         <xsl:variable name="row1">
                             <xsl:if
                                 test="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
@@ -4791,7 +4783,7 @@
                                     <div id="element" value="{$matrix}" class="barcodeStyle"/>
                                     <br/>
                                     <div class="container">
-                                        <div class="centered-element"> INS non signé </div>
+                                        <div class="centered-element"> INS à scanner </div>
                                     </div>
                                 </xsl:if>
 
@@ -4800,7 +4792,7 @@
                                         and string-length($datebirth) > 0 and not($country)">
                                     <div id="element" value="{$matrix}" class="barcodeStyle"/>
                                     <div class="container">
-                                        <div class="centered-element"> INS non signé </div>
+                                        <div class="centered-element"> INS à scanner </div>
                                     </div>
                                 </xsl:if>
 
@@ -5318,7 +5310,7 @@
                                                   </fo:instream-foreign-object>
                                                   <fo:block line-height="0.01cm">&#160;</fo:block>
                                                   <fo:block text-align="center" font-size="4">
-                                                  <xsl:text>INS non signée</xsl:text>
+                                                  <xsl:text>INS à scanner</xsl:text>
                                                   </fo:block>
                                                 </fo:block>
                                             </xsl:if>
@@ -5346,7 +5338,7 @@
                                                   </fo:instream-foreign-object>
                                                   <fo:block line-height="0.01cm">&#160;</fo:block>
                                                   <fo:block text-align="center" font-size="4">
-                                                  <xsl:text>INS non signée</xsl:text>
+                                                  <xsl:text>INS à scanner</xsl:text>
                                                   </fo:block>
                                                 </fo:block>
                                             </xsl:if>
