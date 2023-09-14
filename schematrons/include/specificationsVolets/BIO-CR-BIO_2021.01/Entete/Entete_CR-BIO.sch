@@ -138,9 +138,9 @@
         
     <!-- Contrôles des sections de niveau 1 autorisées -->
     <rule context="cda:structuredBody/cda:component/cda:section">
-        <assert test="(./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3.2.1']) or (./cda:templateId[@root='1.2.250.1.213.1.1.2.60']) or (./cda:templateId[@root='1.3.6.1.4.1.19376.1.4.1.2.16'])"> 
+        <assert test="(./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3.2.1']) or (./cda:templateId[@root='1.2.250.1.213.1.1.2.60']) or (./cda:templateId[@root='1.3.6.1.4.1.19376.1.4.1.2.16']) or (./cda:templateId[@root='1.2.250.1.213.1.1.2.243'])"> 
             [Entete_CR-BIO] Erreur de conformité : un CR-BIO ne peut comporter que les sections de niveau 1 suivantes : FR-CR-de-biologie (1.3.6.1.4.1.19376.1.3.3.2.1), 
-            FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention (1.2.250.1.213.1.1.2.60) et FR-Commentaire-non-code (1.3.6.1.4.1.19376.1.4.1.2.16)
+            FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention (1.2.250.1.213.1.1.2.60), FR-Commentaire-non-code (1.3.6.1.4.1.19376.1.4.1.2.16) et FR-Document-PDF-copie(1.2.250.1.213.1.1.2.243)
         </assert>
     </rule>
     
