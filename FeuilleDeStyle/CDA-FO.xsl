@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--
   Title : CDA-FO.xsl
   =======================================================================================================================================================
@@ -40,7 +41,10 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times"
     exclude-result-prefixes="xd hl7 xsi xhtml sdtc ps3-20 common date">
 
-    <xsl:output method="xml" version="1.0" indent="yes"/>
+
+    <xsl:output method="xml" omit-xml-declaration="yes"/>
+
+
     <xsl:strip-space elements="*"/>
 
     <!-- Extension FR : PDF -->
@@ -257,6 +261,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:variable name="vocMessages" select="document($vocFile)"/>
+
 
     <xd:doc>
         <xd:desc>
@@ -594,7 +599,7 @@
         </xsl:if>
         <!-- Extension FR : PDF -->
         <!-- Test si PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
                 <fo:layout-master-set>
                     <fo:simple-page-master master-name="only">
@@ -667,11 +672,15 @@
                         font-family: <xsl:value-of select="$font-family"/>;
                         font-size: <xsl:value-of select="$font-size-main"/>;
                     }
+                    
+                    .listNone{
+                        list-style: none;
+                    }
                     .barcodeStyle{
                         width: 100%;
                         height:100%;
-                        overflow:auto;
                     }
+                    
                     .container {
                          width: 250px;
                     }
@@ -685,6 +694,7 @@
                         color: #003366;
                         background-color: white;
                         font-size: <xsl:value-of select="$font-size-main"/>;
+                        width: 98%;
                     }
                     #documentheader,
                     #documentbody,
@@ -769,9 +779,12 @@
                     .header_table{
                         width: 100%;
                         border: 1pt solid #00008b;
-                        border-collapse: collapse;
                     }
-                    
+                    .td_label{
+                            font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                            font-weight: bold;
+                            background-color: <xsl:value-of select="$bgcolor-th"/>;
+                    } 
                    
                     /* <!-- Extension FR --> */
                     .first_table{
@@ -813,6 +826,28 @@
                     .td_label_width{
                         width: 20%;
                     }
+                    
+                    /* <!-- Extension FR --> */
+                     .td_other_label{
+                         font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                         font-weight: bold;
+                         background-color: white;
+                     }
+                     
+                     .td_label_footer {
+                         width: 20%;
+                         font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                         font-weight: bold;
+                         background-color: white;
+                     }
+                     
+                     .td_label_footer_body{
+                            width: 20%;
+                            font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                            font-weight: bold;
+                            background-color: <xsl:value-of select="$bgcolor-th"/>;
+                     }
+                     
                     .span_label{
                         font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
                         font-weight: bold;
@@ -882,12 +917,6 @@
                     }
                     td.bordered {
                          border-bottom: 1px solid #003366;
-                    }
-                    /* <!-- Extension FR --> */
-                    .td_other_label{
-                        font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
-                        font-weight: bold;
-                        background-color: white;
                     }
                 </style>
                     <xsl:comment> Stylecode CSS </xsl:comment>
@@ -1192,6 +1221,9 @@
                         <xsl:if test="string($useJavascript) = 'true'">
                             <xsl:if
                                 test="//hl7:content[@revised] or count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
+
+                                <!-- A revoir Xalan -->
+
                                 <div id="buttontable">
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tbody>
@@ -1203,6 +1235,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+
                             </xsl:if>
                         </xsl:if>
                         <!-- END TOC and Revision toggle -->
@@ -1232,7 +1265,7 @@
                 </body>
             </html>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:if test="$dohtmlheader = 'true'">
                 <fo:block xsl:use-attribute-sets="myBlock1">
                     <xsl:call-template name="show-title"/>
@@ -1397,16 +1430,18 @@
                                     </div>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <iframe name="{$renderID}" id="{$renderID}" width="100%"
-                                        height="600" title="{$renderAltText}">
-                                        <xsl:if
-                                            test="$renderElement/@mediaType != 'application/pdf' or $limit-pdf = 'yes'">
-                                            <xsl:attribute name="sandbox"/>
-                                        </xsl:if>
-                                        <xsl:attribute name="src">
-                                            <xsl:value-of select="$source"/>
-                                        </xsl:attribute>
-                                    </iframe>
+                                    <div id="iframeId">
+                                        <iframe name="{$renderID}" id="{$renderID}" width="100%"
+                                            height="600" title="{$renderAltText}">
+                                            <xsl:if
+                                                test="$renderElement/@mediaType != 'application/pdf' or $limit-pdf = 'yes'">
+                                                <xsl:attribute name="sandbox"/>
+                                            </xsl:if>
+                                            <xsl:attribute name="src">
+                                                <xsl:value-of select="$source"/>
+                                            </xsl:attribute>
+                                        </iframe>
+                                    </div>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:comment>&lt;![endif]</xsl:comment>
@@ -1439,12 +1474,14 @@
                     </xsl:call-template>
                 &lt;![endif]</xsl:comment>
                     <xsl:comment>[if gt IE 9]&gt;</xsl:comment>
-                    <xsl:call-template name="getLocalizedString">
-                        <xsl:with-param name="pre" select="' '"/>
-                        <xsl:with-param name="key"
-                            select="'If the contents are not displayed here, it may be offered as a download.'"
-                        />
-                    </xsl:call-template>
+                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="pre" select="' '"/>
+                            <xsl:with-param name="key"
+                                select="'If the contents are not displayed here, it may be offered as a download.'"
+                            />
+                        </xsl:call-template>
+                    </xsl:if>
                     <xsl:choose>
                         <xsl:when
                             test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
@@ -1456,18 +1493,25 @@
                             </div>
                         </xsl:when>
                         <xsl:otherwise>
-                            <iframe name="{$renderID}" id="{$renderID}" width="100%" height="600"
-                                title="{$renderAltText}">
-                                <xsl:if
-                                    test="$renderElement/@mediaType != 'application/pdf' or $limit-pdf = 'yes'">
-                                    <xsl:attribute name="sandbox"/>
-                                </xsl:if>
-                                <xsl:attribute name="src">
-                                    <xsl:value-of
-                                        select="concat('data:', $renderElement/@mediaType, ';base64,', $renderElement/text())"
-                                    />
-                                </xsl:attribute>
-                            </iframe>
+                            <div id="iframeId" style=" text-align: center;
+                                                        width: 100%;
+                                                        height: 600px;
+                                                        overflow-x: hidden;
+                                                        overflow-y: auto;
+                                                        ">
+                                <iframe name="{$renderID}" id="{$renderID}" width="100%"
+                                    height="600" title="{$renderAltText}">
+                                    <xsl:if
+                                        test="$renderElement/@mediaType != 'application/pdf' or $limit-pdf = 'yes'">
+                                        <xsl:attribute name="sandbox"/>
+                                    </xsl:if>
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of
+                                            select="translate(normalize-space(concat('data:', $renderElement/@mediaType, ';base64,', $renderElement/text())), ' ', '')"
+                                        />
+                                    </xsl:attribute>
+                                </iframe>
+                            </div>
                         </xsl:otherwise>
                     </xsl:choose>
                     <xsl:comment>&lt;![endif]</xsl:comment>
@@ -1487,7 +1531,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:choose>
                 <!-- Minimal mitigation for security risk based on malicious input -->
                 <!-- if there is a reference, use that in an iframe -->
@@ -1596,7 +1640,7 @@
         <xsl:param name="margin" select="0"/>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <div style="margin-left: {$margin}em;" class="section">
-                <div class="section-title">
+                <div>
                     <xsl:if test="string($useJavascript) = 'true'">
                         <div class="button expandCollapse" onclick="collapseSection(this)">
                             <xsl:attribute name="title">
@@ -1635,7 +1679,7 @@
                 </div>
             </div>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                 <fo:block xsl:use-attribute-sets="myBlock9">
                     <xsl:call-template name="section-title">
@@ -1719,7 +1763,7 @@
                 </xsl:choose>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:attribute name="id">
                     <xsl:choose>
@@ -1735,7 +1779,7 @@
                     <xsl:when
                         test="count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
                         <!-- Add link to go back to top if the document has more than one section, otherwise superfluous -->
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:basic-link internal-destination="#_toc">
                                 <xsl:apply-templates select="." mode="getTitleName"/>
                             </fo:basic-link>
@@ -1927,7 +1971,7 @@
                                         <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                             <br/>
                                         </xsl:if>
-                                        <xsl:if test="contains($vendor, 'Saxonica')">
+                                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                                             <fo:block line-height="0.1cm">&#160;</fo:block>
                                         </xsl:if>
                                         <xsl:call-template name="show-telecom-set">
@@ -1941,7 +1985,7 @@
                     </div>
                 </div>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
                     <fo:block font-weight="bold">
                         <xsl:call-template name="getLocalizedString">
@@ -2093,9 +2137,11 @@
                                     </td>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -2113,11 +2159,13 @@
                                     <td style="width: 50%;background-color: white;"
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="pre" select="''"/>
-                                            <xsl:with-param name="key" select="'Tel'"/>
-                                            <xsl:with-param name="post" select="''"/>
-                                        </xsl:call-template>
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="pre" select="''"/>
+                                                <xsl:with-param name="key" select="'Tel'"/>
+                                                <xsl:with-param name="post" select="''"/>
+                                            </xsl:call-template>
+                                        </span>
                                     </td>
                                     <xsl:variable name="telExist">
                                         <xsl:call-template name="show-telInfo">
@@ -2277,11 +2325,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test=".">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'emailSecure'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -2318,7 +2368,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block line-height="0.4cm">&#160;</fo:block>
                 <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                     <fo:block xsl:use-attribute-sets="myBlock10">
@@ -2645,9 +2695,11 @@
                                     </td>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="hl7:addr">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -2671,11 +2723,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="hl7:telecom">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Tel'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'Tel'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -2814,11 +2868,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test=".">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'emailSecure'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -2855,7 +2911,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block line-height="0.4cm">&#160;</fo:block>
                 <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                     <fo:block xsl:use-attribute-sets="myBlock10">
@@ -3186,9 +3242,11 @@
                                     </td>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -3213,11 +3271,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:telecom">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Tel'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'Tel'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -3358,11 +3418,13 @@
                                     <td style="width: 50%;background-color: white;"
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="pre" select="''"/>
-                                            <xsl:with-param name="key" select="'emailSecure'"/>
-                                            <xsl:with-param name="post" select="''"/>
-                                        </xsl:call-template>
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="pre" select="''"/>
+                                                <xsl:with-param name="key" select="'emailSecure'"/>
+                                                <xsl:with-param name="post" select="''"/>
+                                            </xsl:call-template>
+                                        </span>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
                                         <xsl:for-each
@@ -3398,7 +3460,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -3730,9 +3792,11 @@
                                     </td>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -3756,11 +3820,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:telecom">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Tel'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'Tel'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -3901,11 +3967,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'emailSecure'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -3942,7 +4010,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -4336,7 +4404,7 @@
                     </div>
                 </div>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
                     <fo:block font-weight="bold">
                         <xsl:call-template name="getLocalizedString">
@@ -4439,7 +4507,7 @@
                 <xsl:apply-templates select="hl7:text"/>
             </div>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:apply-templates select="hl7:text"/>
             </fo:block>
@@ -4458,7 +4526,7 @@
                 <xsl:apply-templates/>
             </p>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:apply-templates/>
             </fo:block>
@@ -4480,7 +4548,7 @@
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:basic-link external-destination="{@href}" target-presentation-context="_blank">
                 <xsl:apply-templates/>
             </fo:basic-link>
@@ -4499,7 +4567,7 @@
             <xsl:apply-templates/>
         </pre>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:apply-templates/>
             </fo:block>
@@ -4518,7 +4586,7 @@
                 <xsl:apply-templates/>
             </span>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:inline>
                 <xsl:apply-templates/>
             </fo:inline>
@@ -4536,7 +4604,7 @@
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block line-height="0.2cm">&#160; <xsl:apply-templates/>
             </fo:block>
         </xsl:if>
@@ -4548,7 +4616,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="hl7:list">
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:if test="hl7:caption">
                 <fo:list-block>
                     <fo:list-item>
@@ -4639,7 +4707,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:choose>
                 <xsl:when test="parent::hl7:table">
                     <caption>
@@ -4749,7 +4817,7 @@
     <xsl:template
         match="hl7:table/@* | hl7:thead/@* | hl7:tfoot/@* | hl7:tbody/@* | hl7:colgroup/@* | hl7:col/@* | hl7:tr/@* | hl7:th/@* | hl7:td/@*">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:copy>
                 <xsl:copy-of select="@*"/>
                 <xsl:apply-templates/>
@@ -4767,7 +4835,7 @@
     </xd:doc>
     <xsl:template match="hl7:table">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:table width="95%" margin="0.3em 0" xsl:use-attribute-sets="myBorder"
                 table-layout="auto">
                 <xsl:apply-templates/>
@@ -4787,7 +4855,7 @@
     </xd:doc>
     <xsl:template match="hl7:thead">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:table-header>
                 <xsl:apply-templates/>
             </fo:table-header>
@@ -4805,7 +4873,7 @@
     </xd:doc>
     <xsl:template match="hl7:tfoot">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:apply-templates/>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -4821,7 +4889,7 @@
     </xd:doc>
     <xsl:template match="hl7:tbody">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:table-body line-stacking-strategy="max-height">
                 <xsl:apply-templates/>
             </fo:table-body>
@@ -4839,7 +4907,7 @@
     </xd:doc>
     <xsl:template match="hl7:colgroup">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:apply-templates/>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -4855,7 +4923,7 @@
     </xd:doc>
     <xsl:template match="hl7:col">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:apply-templates/>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -4871,13 +4939,13 @@
     </xd:doc>
     <xsl:template match="hl7:tr">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:table-row border="solid 0.1mm white">
                 <xsl:apply-templates/>
             </fo:table-row>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
-            <tr>
+            <tr style="background-color: #f2f2f2;">
                 <xsl:copy-of select="@*"/>
                 <xsl:apply-templates/>
             </tr>
@@ -4889,12 +4957,21 @@
     </xd:doc>
     <xsl:template match="hl7:th">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:choose>
                 <xsl:when test="@colspan">
                     <xsl:variable name="nb_header" select="@colspan"/>
                     <fo:table-cell xsl:use-attribute-sets="myBlock13"
                         number-columns-spanned="{$nb_header}">
+                        <fo:block>
+                            <xsl:apply-templates/>
+                        </fo:block>
+                    </fo:table-cell>
+                </xsl:when>
+                <xsl:when test="@rowspan">
+                    <xsl:variable name="nb_header" select="@rowspan"/>
+                    <fo:table-cell xsl:use-attribute-sets="myBlock13"
+                        number-rows-spanned="{$nb_header}">
                         <fo:block>
                             <xsl:apply-templates/>
                         </fo:block>
@@ -4910,7 +4987,7 @@
             </xsl:choose>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
-            <th class="narr_th">
+            <th class="narr_th" style="background-color: LightGrey">
                 <xsl:copy-of select="@*"/>
                 <xsl:apply-templates/>
             </th>
@@ -4924,12 +5001,21 @@
     <xsl:template match="hl7:td">
         <!-- Extension FR : PDF -->
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:choose>
                 <xsl:when test="@colspan">
                     <xsl:variable name="nb_header" select="@colspan"/>
                     <fo:table-cell xsl:use-attribute-sets="myBlock14"
                         number-columns-spanned="{$nb_header}">
+                        <fo:block>
+                            <xsl:apply-templates/>
+                        </fo:block>
+                    </fo:table-cell>
+                </xsl:when>
+                <xsl:when test="@rowspan">
+                    <xsl:variable name="nb_header" select="@rowspan"/>
+                    <fo:table-cell xsl:use-attribute-sets="myBlock14"
+                        number-rows-spanned="{$nb_header}">
                         <fo:block>
                             <xsl:apply-templates/>
                         </fo:block>
@@ -4957,7 +5043,7 @@
     </xd:doc>
     <xsl:template match="hl7:table/hl7:caption">
         <!-- Extension FR : PDF -->
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block font-weight="bold">
                 <xsl:apply-templates/>
             </fo:block>
@@ -4996,7 +5082,7 @@
                         <xsl:if test="not(contains($vendor, 'Saxonica'))">
                             <br/>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:block line-height="0.1cm">&#160;</fo:block>
                         </xsl:if>
                         <img src="{$image-uri}" alt="{$altTitleText}" title="{$altTitleText}"/>
@@ -5074,7 +5160,7 @@
                 </xsl:for-each>
             </div>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:apply-templates select="hl7:caption"/>
                 <xsl:for-each select="$referencedObjects">
@@ -5103,7 +5189,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="hl7:sup">
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:inline vertical-align="sup" xsl:use-attribute-sets="myBlock3">
                 <xsl:apply-templates select="." mode="handleSectionTextAttributes"/>
                 <xsl:apply-templates/>
@@ -5123,7 +5209,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="hl7:sub">
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:inline vertical-align="sub" xsl:use-attribute-sets="myBlock3">
                 <xsl:apply-templates/>
             </fo:inline>
@@ -5429,7 +5515,7 @@
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block>
                 <xsl:apply-templates select="." mode="handleSectionTextAttributes"/>
                 <xsl:apply-templates/>
@@ -5482,7 +5568,7 @@
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <br/>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block line-height="0.1cm">&#160;</fo:block>
         </xsl:if>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -5647,7 +5733,7 @@
                             </xsl:if>
                         </xsl:variable>
                         <xsl:variable name="row"
-                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
+                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10 + 1"/>
                         <tr>
                             <td class="td_first">
                                 <span class="span_label">
@@ -5711,17 +5797,19 @@
                                         string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0
                                         and string-length($sex) > 0 and string-length($datebirth) > 0 and string-length($country) > 0">
                                     <div id="element" value="{$matrix}" class="barcodeStyle"/>
+                                    <br/>
                                     <div class="container">
-                                        <div class="centered-element"> INS non signée </div>
+                                        <div class="centered-element"> INS non signé </div>
                                     </div>
                                 </xsl:if>
 
                                 <xsl:if test="
                                         string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0 and string-length($sex) > 0
                                         and string-length($datebirth) > 0 and not($country)">
-                                    <div id="element" value="{$matrixOpt}" class="barcodeStyle"/>
+                                    <div id="element" value="{$matrix}" class="barcodeStyle"/>
+
                                     <div class="container">
-                                        <div class="centered-element"> INS non signée </div>
+                                        <div class="centered-element"> INS non signé </div>
                                     </div>
                                 </xsl:if>
 
@@ -6244,7 +6332,7 @@
                                                   </code>
                                                   <moduleSize>2</moduleSize>
                                                   <processTilde>true</processTilde>
-                                                  <encoding>AUTO</encoding>
+                                                  <encoding>C40</encoding>
                                                   <format>C24X24</format>
                                                   </datamatrix>
                                                   </j4lbarcode>
@@ -6272,7 +6360,7 @@
                                                   </code>
                                                   <moduleSize>2</moduleSize>
                                                   <processTilde>true</processTilde>
-                                                  <encoding>AUTO</encoding>
+                                                  <encoding>C40</encoding>
                                                   <format>C24X24</format>
                                                   </datamatrix>
                                                   </j4lbarcode>
@@ -7013,7 +7101,7 @@
                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                     <br/>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block line-height="0.1cm">&#160;</fo:block>
                 </xsl:if>
             </xsl:if>
@@ -7027,7 +7115,7 @@
                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                     <hr align="left" color="black" size="1"/>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block>
                         <fo:leader leader-pattern="rule" leader-length="100%" rule-thickness="0.1pt"
                             text-align="center" color="black"/>
@@ -7054,7 +7142,7 @@
                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                     <br/>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block line-height="0.1cm">&#160;</fo:block>
                 </xsl:if>
             </xsl:if>
@@ -7068,7 +7156,7 @@
                             </xsl:call-template>
                         </span>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:inline color="black">
                             <xsl:call-template name="getLocalizedString">
                                 <xsl:with-param name="key" select="'du'"/>
@@ -7088,7 +7176,7 @@
                             </xsl:call-template>
                         </span>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:inline color="black">
                             <xsl:text> </xsl:text>
                             <xsl:call-template name="getLocalizedString">
@@ -7117,7 +7205,7 @@
                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                     <br/>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block line-height="0.1cm">&#160;</fo:block>
                 </xsl:if>
             </xsl:if>
@@ -7155,7 +7243,7 @@
                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                         <br/>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:block line-height="0.1cm">&#160;</fo:block>
                     </xsl:if>
                 </xsl:if>
@@ -7163,7 +7251,7 @@
                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                         <hr align="left" color="black" size="1"/>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:block>
                             <fo:leader leader-pattern="rule" leader-length="100%"
                                 rule-thickness="0.1pt" text-align="left" color="black"/>
@@ -7209,7 +7297,7 @@
                             </xsl:call-template>
                         </span>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:inline color="black">
                             <xsl:call-template name="getLocalizedString">
                                 <xsl:with-param name="key" select="'du'"/>
@@ -7231,7 +7319,7 @@
                             </xsl:call-template>
                         </span>
                     </xsl:if>
-                    <xsl:if test="contains($vendor, 'Saxonica')">
+                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                         <fo:inline color="black">
                             <xsl:text> </xsl:text>
                             <xsl:call-template name="getLocalizedString">
@@ -7264,7 +7352,7 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block line-height="0.1cm">&#160;</fo:block>
             </xsl:if>
         </xsl:for-each>
@@ -7282,24 +7370,24 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
                 <br/>
-                <table width="100%" style="border-collapse: collapse;">
+                <table width="100%" style="border-collapse: collapse; border-spacing: 0px;">
                     <tbody>
                         <tr>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Encounter'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'typeCode-RESP'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'organizationPartOf'"/>
@@ -7310,7 +7398,7 @@
                         <xsl:if test="hl7:componentOf/hl7:encompassingEncounter">
                             <xsl:for-each select="hl7:componentOf/hl7:encompassingEncounter">
                                 <tr>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight:bold; color:black;">
                                             <xsl:if test="hl7:effectiveTime/hl7:low">
@@ -7366,7 +7454,7 @@
                                             </xsl:if>
                                         </span>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight: bold;">
                                             <xsl:if
@@ -7718,7 +7806,7 @@
                                             </xsl:if>
                                         </xsl:for-each>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight: bold;">
                                             <xsl:if
@@ -8049,7 +8137,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:componentOf/hl7:encompassingEncounter">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -8789,18 +8877,18 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
                 <br/>
-                <table width="100%" style="border-collapse: collapse;">
+                <table width="100%" style="border-collapse: collapse; border-spacing: 0px;">
                     <tbody>
                         <xsl:if test="hl7:documentationOf/hl7:serviceEvent[@classCode | hl7:code]">
                             <tr>
-                                <td class="td_other_label td_label_width">
+                                <td class="td_label_footer">
                                     <span style="font-weight:bold; color:black;">
                                         <xsl:call-template name="getLocalizedString">
                                             <xsl:with-param name="key" select="'documentationOf'"/>
                                         </xsl:call-template>
                                     </span>
                                 </td>
-                                <td class="td_other_label td_label_width">
+                                <td class="td_label_footer">
                                     <span style="font-weight:bold; color:black;">
                                         <xsl:call-template name="getLocalizedString">
                                             <xsl:with-param name="key"
@@ -8808,7 +8896,7 @@
                                         </xsl:call-template>
                                     </span>
                                 </td>
-                                <td class="td_other_label td_label_width">
+                                <td class="td_label_footer">
                                     <span style="font-weight:bold; color:black;">
                                         <xsl:call-template name="getLocalizedString">
                                             <xsl:with-param name="key" select="'organizationPartOf'"
@@ -8819,11 +8907,13 @@
                             </tr>
                             <xsl:for-each select="hl7:documentationOf">
                                 <tr>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <xsl:if test="hl7:serviceEvent/hl7:code/@displayName">
-                                            <xsl:value-of
-                                                select="hl7:serviceEvent/hl7:code/@displayName"/>
+                                            <span class="span_label">
+                                                <xsl:value-of
+                                                  select="hl7:serviceEvent/hl7:code/@displayName"/>
+                                            </span>
                                         </xsl:if>
                                         <span style="font-weight:normal;">
                                             <xsl:if test="hl7:serviceEvent/hl7:code/@code">
@@ -8896,7 +8986,7 @@
                                             </xsl:if>
                                         </span>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight: bold;">
                                             <xsl:if
@@ -9248,7 +9338,7 @@
                                             </xsl:if>
                                         </xsl:for-each>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight: bold;">
                                             <xsl:if
@@ -9579,7 +9669,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:documentationOf/hl7:serviceEvent[@classCode | hl7:code]">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -10403,10 +10493,11 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
                 <br/>
-                <table width="100%" style="border-collapse: collapse;">
+                <table width="100%"
+                    style="border-collapse: collapse; border-spacing: 0px; table-layout: fixed;">
                     <tbody>
                         <tr>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'typeCode-FLFS'"/>
@@ -10417,7 +10508,7 @@
                         <xsl:if test="hl7:inFulfillmentOf">
                             <xsl:for-each select="hl7:inFulfillmentOf">
                                 <tr>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <xsl:if test="hl7:order/hl7:id/@root">
                                             <span style="font-weight:bold; color:black;">
@@ -10459,7 +10550,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:inFulfillmentOf">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -10642,7 +10733,7 @@
                                         <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                             <br/>
                                         </xsl:if>
-                                        <xsl:if test="contains($vendor, 'Saxonica')">
+                                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                                             <fo:block line-height="0.1cm">&#160;</fo:block>
                                         </xsl:if>
                                     </xsl:for-each>
@@ -10731,24 +10822,24 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
                 <br/>
-                <table width="100%" style="border-collapse: collapse;">
+                <table width="100%" style="border-collapse: collapse; border-spacing: 0px;">
                     <tbody>
                         <tr>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Participants'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Prescriber'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_other_label td_label_width">
+                            <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'organizationPartOf'"/>
@@ -10759,7 +10850,7 @@
                         <xsl:if test="hl7:participant">
                             <xsl:for-each select="hl7:participant">
                                 <tr>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <xsl:if test="hl7:associatedEntity">
                                             <xsl:variable name="participtRole">
@@ -10797,7 +10888,7 @@
                                                 test="(hl7:time/hl7:low) and (hl7:time/hl7:high)">
                                                 <xsl:variable name="low" select="hl7:time/hl7:low"/>
                                                 <xsl:variable name="high" select="hl7:time/hl7:high"/>
-                                                <span style="color: black;">
+                                                <span style="font-weight:bold; color:black;">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key" select="'Start'"/>
                                                   </xsl:call-template>
@@ -10807,7 +10898,7 @@
                                                   <xsl:with-param name="in" select="$low"/>
                                                 </xsl:call-template>
                                                 <br/>
-                                                <span style="color: black;">
+                                                <span style="font-weight:bold; color:black;">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key" select="'End'"/>
                                                   </xsl:call-template>
@@ -10821,7 +10912,7 @@
                                             <xsl:if
                                                 test="not(hl7:time/hl7:high) and (hl7:time/hl7:low)">
                                                 <xsl:variable name="low" select="hl7:time/hl7:low"/>
-                                                <span style="color: black;">
+                                                <span style="font-weight:bold; color:black;">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key" select="'Start'"/>
                                                   </xsl:call-template>
@@ -10835,7 +10926,7 @@
                                             <xsl:if
                                                 test="(hl7:time/hl7:high) and not(hl7:time/hl7:low)">
                                                 <xsl:variable name="high" select="hl7:time/hl7:high"/>
-                                                <span style="color: black;">
+                                                <span style="font-weight:bold; color:black;">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key" select="'End'"/>
                                                   </xsl:call-template>
@@ -10848,7 +10939,7 @@
                                             </xsl:if>
                                         </span>
                                         <xsl:if test="hl7:functionCode/hl7:originalText">
-                                            <span style="color: black;font-weight: normal;">
+                                            <span style="font-weight:bold; color:black;">
                                                 <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key" select="'comment'"/>
                                                 </xsl:call-template>
@@ -10861,7 +10952,7 @@
                                             <br/>
                                         </xsl:if>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <span style="font-weight: bold;">
                                             <xsl:if
@@ -11150,7 +11241,7 @@
                                             </xsl:if>
                                         </xsl:for-each>
                                     </td>
-                                    <td class="td_label td_label_width"
+                                    <td class="td_label_footer_body"
                                         style="background-color: white;border-width:1px;border-style:solid;">
                                         <xsl:if
                                             test="hl7:associatedEntity/hl7:scopingOrganization/hl7:name">
@@ -11430,7 +11521,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:participant">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin">
@@ -12160,10 +12251,11 @@
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <br/>
             <br/>
-            <table width="100%" style="border-collapse: collapse;">
+            <table width="100%"
+                style="border-collapse: collapse; border-spacing: 0px; table-layout: fixed;">
                 <tbody>
                     <tr>
-                        <td class="td_other_label td_label_width">
+                        <td class="td_label_footer">
                             <span style="font-weight:bold; color:black;">
                                 <xsl:call-template name="getLocalizedString">
                                     <xsl:with-param name="pre" select="''"/>
@@ -12172,8 +12264,8 @@
                                 </xsl:call-template>
                             </span>
                         </td>
-                        <td class="td_other_label td_label_width"/>
-                        <td class="td_other_label td_label_width"/>
+                        <td class="td_label_footer"/>
+                        <td class="td_label_footer"/>
                     </tr>
                     <xsl:if test="
                             hl7:code or hl7:id or hl7:setId or hl7:versionNumber or hl7:relatedDocument/hl7:parentDocument/hl7:id/@root or hl7:effectiveTime or
@@ -12182,50 +12274,65 @@
                             <td class="td_label td_label_width"
                                 style="color: black;border-width:1px;border-style:solid;background-color: white;">
                                 <xsl:if test="hl7:code">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'type'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'type'"/>
+                                        </xsl:call-template>
+                                    </span>
                                     <br/>
                                 </xsl:if>
                                 <xsl:if test="hl7:id">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'identifiant'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'identifiant'"/>
+                                        </xsl:call-template>
+                                    </span>
                                     <br/>
                                 </xsl:if>
                                 <xsl:if test="hl7:setId">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'lotdeversions'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'lotdeversions'"/>
+                                        </xsl:call-template>
+                                    </span>
                                     <br/>
                                 </xsl:if>
                                 <xsl:if test="hl7:versionNumber">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'versionNumber'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'versionNumber'"/>
+                                        </xsl:call-template>
+                                    </span>
                                     <br/>
                                 </xsl:if>
                                 <xsl:if test="hl7:relatedDocument/hl7:parentDocument/hl7:id/@root">
                                     <xsl:if
                                         test="hl7:relatedDocument[@typeCode = 'RPLC']/hl7:parentDocument/hl7:id">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'relatedDocument'"/>
-                                        </xsl:call-template>
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="key"
+                                                  select="'relatedDocument'"/>
+                                            </xsl:call-template>
+                                        </span>
                                         <br/>
                                     </xsl:if>
                                     <xsl:if
                                         test="hl7:relatedDocument[@typeCode = 'XFRM']/hl7:parentDocument/hl7:id">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'Reference_Document'"
-                                            />
-                                        </xsl:call-template>
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="key"
+                                                  select="'Reference_Document'"/>
+                                            </xsl:call-template>
+                                        </span>
                                         <br/>
                                     </xsl:if>
                                 </xsl:if>
                                 <xsl:if test="hl7:effectiveTime">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'creationDate'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'creationDate'"/>
+                                        </xsl:call-template>
+                                    </span>
                                 </xsl:if>
                             </td>
                             <td style="background-color: white;border-width:1px;border-style:solid;">
@@ -12543,10 +12650,12 @@
                                 <td class="td_label td_label_width"
                                     style="color: black;border-width:1px;border-style:solid;;background-color: white;">
                                     <xsl:if
-                                        test="hl7:assignedAuthor/hl7:assignedPerson/hl7:name or hl7:author/hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'typeCode-AUT'"/>
-                                        </xsl:call-template>
+                                        test="hl7:assignedAuthor/hl7:assignedPerson/hl7:name or hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="key" select="'typeCode-AUT'"/>
+                                            </xsl:call-template>
+                                        </span>
                                     </xsl:if>
                                 </td>
                                 <td
@@ -13093,9 +13202,11 @@
                                 style="color: black;border-width:1px;border-style:solid;;background-color: white;">
                                 <xsl:if
                                     test="hl7:dataEnterer/hl7:assignedEntity/hl7:assignedPerson/hl7:name">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'typeCode-ENT'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'typeCode-ENT'"/>
+                                        </xsl:call-template>
+                                    </span>
                                 </xsl:if>
                             </td>
                             <td style="background-color: white;border-width:1px;border-style:solid;">
@@ -13424,9 +13535,11 @@
                                 <td class="td_label td_label_width"
                                     style="color: black;border-width:1px;border-style:solid;;background-color: white;">
                                     <xsl:if test="hl7:relatedEntity/hl7:relatedPerson/hl7:name">
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'typeCode-INF'"/>
-                                        </xsl:call-template>
+                                        <span class="span_label">
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="key" select="'typeCode-INF'"/>
+                                            </xsl:call-template>
+                                        </span>
                                     </xsl:if>
                                 </td>
                                 <td
@@ -13707,9 +13820,11 @@
                             <tr>
                                 <td class="td_label td_label_width"
                                     style="color: black;border-width:1px;border-style:solid;;background-color: white;">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'typeCode-INF'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'typeCode-INF'"/>
+                                        </xsl:call-template>
+                                    </span>
                                 </td>
                                 <td
                                     style="background-color: white;border-width:1px;border-style:solid;">
@@ -14212,9 +14327,11 @@
                             <tr>
                                 <td class="td_label td_label_width"
                                     style="color: black;border-width:1px;border-style:solid;;background-color: white;">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'typeCode-AUTHEN'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'typeCode-AUTHEN'"/>
+                                        </xsl:call-template>
+                                    </span>
                                 </td>
                                 <td
                                     style="background-color: white;border-width:1px;border-style:solid;">
@@ -14731,9 +14848,11 @@
                         <tr>
                             <td class="td_label td_label_width"
                                 style="color: black;border-width:1px;border-style:solid;background-color: white;">
-                                <xsl:call-template name="getLocalizedString">
-                                    <xsl:with-param name="key" select="'typeCode-LA'"/>
-                                </xsl:call-template>
+                                <span class="span_label">
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'typeCode-LA'"/>
+                                    </xsl:call-template>
+                                </span>
                             </td>
                             <td style="background-color: white;border-width:1px;border-style:solid;">
                                 <span style="font-weight: bold;">
@@ -15053,9 +15172,11 @@
                             <tr>
                                 <td class="td_label td_label_width"
                                     style="color: black;border-width:1px;border-style:solid;background-color: white;">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'typeCode-PRCP'"/>
-                                    </xsl:call-template>
+                                    <span class="span_label">
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'typeCode-PRCP'"/>
+                                        </xsl:call-template>
+                                    </span>
                                 </td>
                                 <td
                                     style="background-color: white;border-width:1px;border-style:solid;">
@@ -15565,7 +15686,7 @@
                 </tbody>
             </table>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block line-height="0.4cm">&#160;</fo:block>
             <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="auto">
                 <fo:block xsl:use-attribute-sets="myBlock10">
@@ -19583,9 +19704,11 @@
                                     </td>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -19609,11 +19732,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:telecom">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Tel'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'Tel'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -19755,11 +19880,13 @@
                                         class="span_label"/>
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test=".">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'emailSecure'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -19790,7 +19917,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -20111,13 +20238,15 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR']">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'family'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'family'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
-                                        <td style="width: 30%; background-color: white;"
+                                        <td style="width: 30%; background-color :white;"
                                             class="span_label">
                                             <xsl:call-template name="show-name-set">
                                                 <xsl:with-param name="in"
@@ -20132,12 +20261,13 @@
                                     </xsl:if>
                                     <xsl:if test="./hl7:addr">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'addr'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
-                                        <td style="width: 30%;" class="td_seconde_header_label"
-                                            rowspan="4">
+                                        <td style="width: 30%;" class="td_seconde_header_label">
                                             <xsl:call-template
                                                 name="show-contactInfo-patient-recordTarget">
                                                 <xsl:with-param name="contact" select="./hl7:addr"/>
@@ -20156,11 +20286,13 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'givenName'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'givenName'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%; background-color :white;"
                                             class="span_label">
@@ -20204,11 +20336,13 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'CL']">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'nameGiven'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'nameGiven'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%; background-color:white;">
                                             <xsl:if
@@ -20238,11 +20372,13 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'SP']">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'nameUse_L'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'nameUse_L'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%; background-color: white;">
                                             <xsl:call-template name="show-name-set">
@@ -20266,16 +20402,20 @@
                                             <xsl:choose>
                                                 <xsl:when
                                                   test="hl7:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | hl7:patient/*[local-name() = 'deceasedTime']">
+                                                  <span class="span_label">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key"
                                                   select="'birthTimeLongDeceased'"/>
                                                   </xsl:call-template>
+                                                  </span>
                                                 </xsl:when>
                                                 <xsl:when test="hl7:patient/hl7:birthTime">
+                                                  <span class="span_label">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="key"
                                                   select="'birthTimeLong'"/>
                                                   </xsl:call-template>
+                                                  </span>
                                                 </xsl:when>
                                             </xsl:choose>
                                         </td>
@@ -20299,11 +20439,13 @@
                                 <tr>
                                     <xsl:if test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'birthPlace'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'birthPlace'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                </xsl:call-template>
+                                            </span>
                                             <span class="span_label_min" style="display:inline;">
                                                 <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
@@ -20491,10 +20633,12 @@
                                 <tr>
                                     <xsl:if test="hl7:patient/hl7:administrativeGenderCode">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key"
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key"
                                                   select="'administrativeGenderCode'"/>
-                                            </xsl:call-template>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%; background-color: white;">
                                             <xsl:call-template name="show-code-set">
@@ -20576,9 +20720,11 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:raceCode | hl7:patient/hl7:ethnicGroupCode">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'Race'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'Race'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%;background-color: white;">
                                             <xsl:call-template name="show-code-set">
@@ -20595,9 +20741,11 @@
                                     <xsl:if
                                         test="hl7:patient/hl7:ethnicGroupCode | hl7:patient/sdtc:ethnicGroupCode">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'Ethnicity'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'Ethnicity'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%;background-color: white;">
                                             <xsl:call-template name="show-code-set">
@@ -20615,9 +20763,11 @@
                                     <xsl:if
                                         test="hl7:id[not(contains($skip-ids-var, concat(',', @root, ',')))]">
                                         <td class="td_header_label td_label_width">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'IPP'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'IPP'"/>
+                                                </xsl:call-template>
+                                            </span>
                                         </td>
                                         <td style="width: 30%;background-color: white;">
                                             <xsl:call-template name="show-id-set-ipp">
@@ -20635,9 +20785,12 @@
                                     <td class="td_header_label td_label_width">
                                         <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
                                             <xsl:variable name="email" select="."/>
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'emailSecure'"/>
-                                            </xsl:call-template>
+                                            <span class="span_label">
+                                                <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="key" select="'emailSecure'"
+                                                  />
+                                                </xsl:call-template>
+                                            </span>
                                         </xsl:if>
                                     </td>
                                     <td style="width: 30%;background-color: white;">
@@ -20667,7 +20820,7 @@
                 <br/>
             </xsl:if>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <xsl:if test="hl7:recordTarget/hl7:patientRole/hl7:patient">
                 <fo:block line-height="0.4cm">&#160;</fo:block>
                 <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -21111,7 +21264,6 @@
                                     </fo:table-row>
                                 </xsl:if>
 
-
                                 <xsl:if test="hl7:patient/hl7:administrativeGenderCode">
                                     <fo:table-row>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
@@ -21413,7 +21565,7 @@
                     </tbody>
                 </table>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:authorization">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
@@ -21620,7 +21772,7 @@
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <br/>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block line-height="0.1cm">&#160;</fo:block>
             </xsl:if>
         </xsl:if>
@@ -21986,7 +22138,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22035,7 +22187,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22058,7 +22210,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22141,7 +22293,7 @@
                     </xsl:if>
                 </span>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
                     <xsl:if test="$in[@assigningAuthorityName]">
                         <xsl:attribute name="title">
@@ -22320,7 +22472,7 @@
                     </xsl:if>
                 </span>
             </xsl:if>
-            <xsl:if test="contains($vendor, 'Saxonica')">
+            <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
                     <xsl:if test="$in[@assigningAuthorityName]">
                         <xsl:attribute name="title">
@@ -22409,7 +22561,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22433,7 +22585,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22510,7 +22662,7 @@
                 </xsl:when>
                 <!-- DTr1 -->
                 <xsl:when test="$in[@displayName]">
-                    <xsl:value-of select="$in/@code"/>
+                    <xsl:value-of select="$in/@displayName"/>
                 </xsl:when>
                 <!-- DTr2 -->
                 <xsl:when test="$in[hl7:displayName/@value]">
@@ -22557,7 +22709,7 @@
                                 </xsl:call-template>
                             </div>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                       <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:block margin-left="2em">
                                 <xsl:call-template name="getLocalizedString">
                                     <xsl:with-param name="key" select="local-name()"/>
@@ -22587,62 +22739,60 @@
     <xsl:template name="show-name-set">
         <xsl:param name="in"/>
         <xsl:param name="sep" select="', '"/>
-        <xsl:if test="$in">
-            <xsl:choose>
-                <!-- DTr1 -->
-                <xsl:when test="count($in) > 1">
-                    <xsl:for-each select="$in">
-                        <xsl:call-template name="show-name">
-                            <xsl:with-param name="in" select="."/>
-                        </xsl:call-template>
-                        <xsl:if test="position() != last() and position() != 1">
-                            <xsl:choose>
-                                <xsl:when test="$sep = 'br'">
-                                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
-                                        <br/>
-                                    </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
-                                        <fo:block line-height="0.1cm">&#160;</fo:block>
-                                    </xsl:if>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$sep"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:when>
-                <!-- DTr2 -->
-                <xsl:when test="$in[hl7:item]">
-                    <xsl:for-each select="$in/hl7:item">
-                        <xsl:call-template name="show-name">
-                            <xsl:with-param name="in" select="."/>
-                        </xsl:call-template>
-                        <xsl:if test="position() != last() and position() != 1">
-                            <xsl:choose>
-                                <xsl:when test="$sep = 'br'">
-                                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
-                                        <br/>
-                                    </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
-                                        <fo:block line-height="0.1cm">&#160;</fo:block>
-                                    </xsl:if>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$sep"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:when>
-                <!-- DTr1 or DTr2 -->
-                <xsl:otherwise>
+        <xsl:choose>
+            <!-- DTr1 -->
+            <xsl:when test="count($in) > 1">
+                <xsl:for-each select="$in">
                     <xsl:call-template name="show-name">
-                        <xsl:with-param name="in" select="$in"/>
+                        <xsl:with-param name="in" select="."/>
                     </xsl:call-template>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:if>
+                    <xsl:if test="position() != last() and position() != 1">
+                        <xsl:choose>
+                            <xsl:when test="$sep = 'br'">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <fo:block line-height="0.1cm">&#160;</fo:block>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$sep"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <!-- DTr2 -->
+            <xsl:when test="$in[hl7:item]">
+                <xsl:for-each select="$in/hl7:item">
+                    <xsl:call-template name="show-name">
+                        <xsl:with-param name="in" select="."/>
+                    </xsl:call-template>
+                    <xsl:if test="position() != last() and position() != 1">
+                        <xsl:choose>
+                            <xsl:when test="$sep = 'br'">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <fo:block line-height="0.1cm">&#160;</fo:block>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$sep"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <!-- DTr1 or DTr2 -->
+            <xsl:otherwise>
+                <xsl:call-template name="show-name">
+                    <xsl:with-param name="in" select="$in"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 
@@ -22654,7 +22804,8 @@
     </xd:doc>
     <xsl:template name="show-name">
         <xsl:param name="in"/>
-        <xsl:if test="$in">
+        <xsl:if test="$in or count($in) > 0">
+
             <xsl:if test="$in/@use">
                 <xsl:call-template name="tokenize">
                     <xsl:with-param name="prefix" select="'nameUse_'"/>
@@ -22725,6 +22876,9 @@
                         test="self::hl7:part[not(@type)][string-length(normalize-space(@value)) > 0]">
                         <xsl:value-of select="@value"/>
                     </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                    </xsl:otherwise>
                 </xsl:choose>
                 <xsl:if
                     test="self::hl7:given[string-length(normalize-space(.)) > 0] | self::hl7:family[string-length(normalize-space(.)) > 0] | self::hl7:part[@type = 'GIV' or @type = 'FAM'][string-length(normalize-space(@value)) > 0]">
@@ -22763,7 +22917,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22786,7 +22940,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22834,7 +22988,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22857,7 +23011,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22904,7 +23058,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22927,7 +23081,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22976,7 +23130,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -22999,7 +23153,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -23041,7 +23195,7 @@
                         <xsl:text>: </xsl:text>
                     </span>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:inline color="black">
                         <xsl:call-template name="tokenize">
                             <xsl:with-param name="prefix" select="'addressUse_'"/>
@@ -23118,7 +23272,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23183,7 +23337,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23389,7 +23543,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <xsl:text> </xsl:text>
                             </xsl:if>
                         </xsl:if>
@@ -23406,7 +23560,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23416,7 +23570,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23430,7 +23584,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23440,7 +23594,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23459,7 +23613,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23478,7 +23632,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23499,7 +23653,7 @@
                         </xsl:call-template>
                     </div>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block>
                         <xsl:call-template name="getLocalizedString">
                             <xsl:with-param name="key" select="'Period'"/>
@@ -23590,7 +23744,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23655,7 +23809,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23861,7 +24015,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <xsl:text> </xsl:text>
                             </xsl:if>
                         </xsl:if>
@@ -23878,7 +24032,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23888,7 +24042,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23902,7 +24056,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23912,7 +24066,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -23949,7 +24103,7 @@
                         </xsl:call-template>
                     </div>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block>
                         <xsl:call-template name="getLocalizedString">
                             <xsl:with-param name="key" select="'Period'"/>
@@ -24040,7 +24194,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24104,7 +24258,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24310,7 +24464,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <xsl:text> </xsl:text>
                             </xsl:if>
                         </xsl:if>
@@ -24327,7 +24481,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24337,7 +24491,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24351,7 +24505,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24361,7 +24515,7 @@
                                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                     <br/>
                                 </xsl:if>
-                                <xsl:if test="contains($vendor, 'Saxonica')">
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
                             </xsl:if>
@@ -24398,7 +24552,7 @@
                         </xsl:call-template>
                     </div>
                 </xsl:if>
-                <xsl:if test="contains($vendor, 'Saxonica')">
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
                     <fo:block>
                         <xsl:call-template name="getLocalizedString">
                             <xsl:with-param name="key" select="'Period'"/>
@@ -24737,7 +24891,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -24760,7 +24914,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -24797,7 +24951,7 @@
                         <xsl:if test="not(contains($vendor, 'Saxonica'))">
                             <br/>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:block line-height="0.1cm">&#160;</fo:block>
                         </xsl:if>
                     </xsl:if>
@@ -24856,7 +25010,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -24895,7 +25049,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -24933,7 +25087,7 @@
                         <xsl:if test="not(contains($vendor, 'Saxonica'))">
                             <br/>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:block line-height="0.1cm">&#160;</fo:block>
                         </xsl:if>
                     </xsl:if>
@@ -24969,7 +25123,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25008,7 +25162,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25048,7 +25202,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25087,7 +25241,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25125,7 +25279,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25164,7 +25318,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25203,7 +25357,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25242,7 +25396,7 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
@@ -25279,11 +25433,11 @@
                             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                 <br/>
                             </xsl:if>
-                            <xsl:if test="contains($vendor, 'Saxonica')">
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
                                 <fo:block line-height="0.1cm">&#160;</fo:block>
                             </xsl:if>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:block line-height="0.1cm">&#160;</fo:block>
                         </xsl:if>
                     </xsl:if>
@@ -25296,7 +25450,7 @@
                                 <br/>
                             </span>
                         </xsl:if>
-                        <xsl:if test="contains($vendor, 'Saxonica')">
+                        <xsl:if test="(contains($vendor, 'Saxonica'))">
                             <fo:inline text-decoration="underline" color="#3358FF">
                                 <xsl:value-of select="$value"/>
                             </fo:inline>
@@ -25409,7 +25563,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -25432,7 +25586,7 @@
                                     <xsl:if test="not(contains($vendor, 'Saxonica'))">
                                         <br/>
                                     </xsl:if>
-                                    <xsl:if test="contains($vendor, 'Saxonica')">
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
                                         <fo:block line-height="0.1cm">&#160;</fo:block>
                                     </xsl:if>
                                 </xsl:when>
@@ -26006,7 +26160,7 @@
                 </xsl:if>
             </span>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:inline font-weight="bold">
                 <xsl:if test="not($part = 'time')">
                     <xsl:choose>
@@ -26408,6 +26562,7 @@
         <xsl:param name="key"/>
         <xsl:param name="post" select="''"/>
 
+
         <xsl:for-each select="$vocMessages">
             <xsl:variable name="translation" select="key('util-i18nkey', $key)"/>
             <xsl:choose>
@@ -26540,7 +26695,7 @@
             <td style="width: 35%; background-color: white;">
                 <!-- produce table of contents -->
                 <ul id="{$tocid}">
-                    <li style="list-style: none;">
+                    <li class="listNone">
                         <div class="span_button">
                             <xsl:call-template name="getLocalizedString">
                                 <xsl:with-param name="key" select="'Table of Contents'"/>
@@ -26663,7 +26818,7 @@
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <br/>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block line-height="0.1cm">&#160;</fo:block>
         </xsl:if>
     </xsl:template>
