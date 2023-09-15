@@ -157,7 +157,7 @@
 		<xsl:attribute name="background-color">white</xsl:attribute>
 		<xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
 	</xsl:attribute-set>
-	
+
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock20">
 		<xsl:attribute name="font-size">6</xsl:attribute>
@@ -625,16 +625,19 @@
 				</xsl:if>
 				<xsl:for-each select="descendant::hl7:observationMedia">
 					<xsl:if test="hl7:value[@mediaType = 'application/pdf']">
-						<xsl:variable name="id" select="@ID"/>
-						<xsl:variable name="value"
-							select="translate(normalize-space(hl7:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
-						<fox:external-document content-type="pdf" id="{$id}">
-							<xsl:attribute name="src">
-								<xsl:value-of
-									select="concat('data:', 'application/pdf', ';base64,', $value)"
-								/>
-							</xsl:attribute>
-						</fox:external-document>
+						<xsl:if
+							test="not(preceding::hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+							<xsl:variable name="id" select="@ID"/>
+							<xsl:variable name="value"
+								select="translate(normalize-space(hl7:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
+							<fox:external-document content-type="pdf" id="{$id}">
+								<xsl:attribute name="src">
+									<xsl:value-of
+										select="concat('data:', 'application/pdf', ';base64,', $value)"
+									/>
+								</xsl:attribute>
+							</fox:external-document>
+						</xsl:if>
 					</xsl:if>
 				</xsl:for-each>
 			</fo:root>
@@ -886,7 +889,7 @@
                     .span_button {
                         display: table-cell;
                         cursor: pointer;
-                        border: 2pt inset #585858;
+                        border: 1pt solid #585858;
                         border-radius: 15px;
                         -moz-border-radius: 15px;
                         padding: 0.1cm 0.2cm;
@@ -1441,7 +1444,11 @@
 									</div>
 								</xsl:when>
 								<xsl:otherwise>
-									<div id="iframeId">
+									<xsl:variable name="frameID">
+										<xsl:value-of
+											select="concat('iframeId', '_', generate-id(.))"/>
+									</xsl:variable>
+									<div id="{$frameID}">
 										<iframe name="{$renderID}" id="{$renderID}" width="100%"
 											height="600" title="{$renderAltText}">
 											<xsl:if
@@ -1496,7 +1503,10 @@
 							</div>
 						</xsl:when>
 						<xsl:otherwise>
-							<div id="iframeId" style=" text-align: center;
+							<xsl:variable name="frameID">
+								<xsl:value-of select="concat('iframeId', '_', generate-id(.))"/>
+							</xsl:variable>
+							<div id="{$frameID}" style=" text-align: center;
                                                         width: 100%;
                                                         height: 600px;
                                                         overflow-x: hidden;
@@ -2053,14 +2063,16 @@
 					<xsl:when
 						test="count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
 						<!-- Add link to go back to top if the document has more than one section, otherwise superfluous -->
-						<xsl:if test="(contains($vendor, 'Saxonica'))">
+						<xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
 							<fo:basic-link internal-destination="#_toc">
 								<xsl:apply-templates select="." mode="getTitleName"/>
 							</fo:basic-link>
 						</xsl:if>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:apply-templates select="." mode="getTitleName"/>
+						<xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+							<xsl:apply-templates select="." mode="getTitleName"/>
+						</xsl:if>
 					</xsl:otherwise>
 				</xsl:choose>
 			</fo:block>

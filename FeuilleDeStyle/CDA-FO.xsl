@@ -572,7 +572,7 @@
     </xd:doc>
     <xsl:variable name="nonXML" select="//hl7:ClinicalDocument/hl7:component/hl7:nonXMLBody"/>
 
-   <!-- <xsl:variable name="typeDoc" select="//hl7:ClinicalDocument/hl7:code[@code='11502-2']"/>-->
+    <!-- <xsl:variable name="typeDoc" select="//hl7:ClinicalDocument/hl7:code[@code='11502-2']"/>-->
 
     <xd:doc>
         <xd:desc>
@@ -618,16 +618,19 @@
                 </xsl:if>
                 <xsl:for-each select="descendant::hl7:observationMedia">
                     <xsl:if test="hl7:value[@mediaType = 'application/pdf']">
-                        <xsl:variable name="id" select="@ID"/>
-                        <xsl:variable name="value"
-                            select="translate(normalize-space(hl7:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
-                        <fox:external-document content-type="pdf" id="{$id}">
-                            <xsl:attribute name="src">
-                                <xsl:value-of
-                                    select="concat('data:', 'application/pdf', ';base64,', $value)"
-                                />
-                            </xsl:attribute>
-                        </fox:external-document>
+                        <xsl:if
+                            test="not(preceding::hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+                            <xsl:variable name="id" select="@ID"/>
+                            <xsl:variable name="value"
+                                select="translate(normalize-space(hl7:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
+                            <fox:external-document content-type="pdf" id="{$id}">
+                                <xsl:attribute name="src">
+                                    <xsl:value-of
+                                        select="concat('data:', 'application/pdf', ';base64,', $value)"
+                                    />
+                                </xsl:attribute>
+                            </fox:external-document>
+                        </xsl:if>
                     </xsl:if>
                 </xsl:for-each>
             </fo:root>
@@ -664,9 +667,6 @@
             <html xmlns="http://www.w3.org/1999/xhtml"
                 xml:lang="{substring($textLangLowerCase,1,2)}">
                 <head>
-                    <!--<script src="../FeuilleDeStyle/JS/jquery.highlight.js" type="text/javascript"/>
-                    <script src="../FeuilleDeStyle/JS/jquery.min.js" type="text/javascript"/>-->
-                    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"/>-->
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                     <title>
                         <xsl:call-template name="show-title"/>
@@ -879,7 +879,7 @@
                     .span_button {
                         display: table-cell;
                         cursor: pointer;
-                        border: 2pt inset #585858;
+                        border: 1pt solid #585858;
                         border-radius: 15px;
                         -moz-border-radius: 15px;
                         padding: 0.1cm 0.2cm;
@@ -1321,7 +1321,7 @@
             <xsl:call-template name="section">
                 <xsl:with-param name="level" select="3"/>
             </xsl:call-template>
-           <!-- <xsl:if test="$typeDoc">
+            <!-- <xsl:if test="$typeDoc">
                 <xsl:call-template name="tableau-sectionsPremierNiveau"/>
             </xsl:if>-->
         </xsl:for-each>
@@ -1436,7 +1436,11 @@
                                     </div>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <div id="iframeId">
+                                    <xsl:variable name="frameID">
+                                        <xsl:value-of
+                                            select="concat('iframeId', '_', generate-id(.))"/>
+                                    </xsl:variable>
+                                    <div id="{$frameID}">
                                         <iframe name="{$renderID}" id="{$renderID}" width="100%"
                                             height="600" title="{$renderAltText}">
                                             <xsl:if
@@ -1491,7 +1495,10 @@
                             </div>
                         </xsl:when>
                         <xsl:otherwise>
-                            <div id="iframeId" style=" text-align: center;
+                            <xsl:variable name="frameID">
+                                <xsl:value-of select="concat('iframeId', '_', generate-id(.))"/>
+                            </xsl:variable>
+                            <div id="{$frameID}" style=" text-align: center;
                                                         width: 100%;
                                                         height: 600px;
                                                         overflow-x: hidden;
@@ -1717,7 +1724,7 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-   <!-- <xsl:template name="tableau-sectionsPremierNiveau">
+    <!-- <xsl:template name="tableau-sectionsPremierNiveau">
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
         <br/>
         <table border="1">
@@ -1921,14 +1928,16 @@
                     <xsl:when
                         test="count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
                         <!-- Add link to go back to top if the document has more than one section, otherwise superfluous -->
-                        <xsl:if test="(contains($vendor, 'Saxonica'))">
+                        <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
                             <fo:basic-link internal-destination="#_toc">
                                 <xsl:apply-templates select="." mode="getTitleName"/>
                             </fo:basic-link>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:apply-templates select="." mode="getTitleName"/>
+                        <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+                            <xsl:apply-templates select="." mode="getTitleName"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </fo:block>
