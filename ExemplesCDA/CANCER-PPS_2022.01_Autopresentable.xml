@@ -30,7 +30,7 @@
   xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
   xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
 
-  <data:Contenu>
+ <data:Contenu>
     <c:ClinicalDocument>
       <!-- 
   **************************************************************************************************************
