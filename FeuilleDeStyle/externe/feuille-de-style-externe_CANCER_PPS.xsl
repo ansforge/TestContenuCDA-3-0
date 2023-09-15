@@ -227,16 +227,19 @@
 				</xsl:if>
 				<xsl:for-each select="descendant::n1:observationMedia">
 					<xsl:if test="n1:value[@mediaType = 'application/pdf']">
-						<xsl:variable name="id" select="@ID"/>
-						<xsl:variable name="value"
-							select="translate(normalize-space(n1:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
-						<fox:external-document content-type="pdf" id="{$id}">
-							<xsl:attribute name="src">
-								<xsl:value-of
-									select="concat('data:', 'application/pdf', ';base64,', $value)"
-								/>
-							</xsl:attribute>
-						</fox:external-document>
+						<xsl:if
+							test="not(preceding::n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+							<xsl:variable name="id" select="@ID"/>
+							<xsl:variable name="value"
+								select="translate(normalize-space(n1:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
+							<fox:external-document content-type="pdf" id="{$id}">
+								<xsl:attribute name="src">
+									<xsl:value-of
+										select="concat('data:', 'application/pdf', ';base64,', $value)"
+									/>
+								</xsl:attribute>
+							</fox:external-document>
+						</xsl:if>
 					</xsl:if>
 				</xsl:for-each>
 			</fo:root>
@@ -2316,18 +2319,20 @@
 			</xsl:for-each>
 		</xsl:if>
 		<xsl:if test="(contains($vendor, 'Saxonica'))">
-			<fo:block margin-left="{$margin}em" font-weight="bold" font-size="8">
-				<xsl:value-of select="n1:title"/>
-			</fo:block>
-			<fo:block line-height="0.3cm">&#160;</fo:block>
-			<fo:block margin-left="{$margin}em" font-size="8">
-				<xsl:apply-templates select="n1:text"/>
-			</fo:block>
-			<xsl:for-each select="n1:component/n1:section">
-				<xsl:call-template name="nestedSection">
-					<xsl:with-param name="margin" select="2 * $margin"/>
-				</xsl:call-template>
-			</xsl:for-each>
+			<xsl:if test="not(n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+				<fo:block margin-left="{$margin}em" font-weight="bold" font-size="8">
+					<xsl:value-of select="n1:title"/>
+				</fo:block>
+				<fo:block line-height="0.3cm">&#160;</fo:block>
+				<fo:block margin-left="{$margin}em" font-size="8">
+					<xsl:apply-templates select="n1:text"/>
+				</fo:block>
+				<xsl:for-each select="n1:component/n1:section">
+					<xsl:call-template name="nestedSection">
+						<xsl:with-param name="margin" select="2 * $margin"/>
+					</xsl:call-template>
+				</xsl:for-each>
+			</xsl:if>
 		</xsl:if>
 	</xsl:template>
 

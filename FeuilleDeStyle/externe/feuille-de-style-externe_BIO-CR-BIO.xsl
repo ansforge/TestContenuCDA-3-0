@@ -170,16 +170,19 @@
 				</xsl:if>
 				<xsl:for-each select="descendant::n1:observationMedia">
 					<xsl:if test="n1:value[@mediaType = 'application/pdf']">
-						<xsl:variable name="id" select="@ID"/>
-						<xsl:variable name="value"
-							select="translate(normalize-space(n1:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
-						<fox:external-document content-type="pdf" id="{$id}">
-							<xsl:attribute name="src">
-								<xsl:value-of
-									select="concat('data:', 'application/pdf', ';base64,', $value)"
-								/>
-							</xsl:attribute>
-						</fox:external-document>
+						<xsl:if
+							test="not(preceding::n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+							<xsl:variable name="id" select="@ID"/>
+							<xsl:variable name="value"
+								select="translate(normalize-space(n1:value[@mediaType = 'application/pdf']/text()), ' ', '')"/>
+							<fox:external-document content-type="pdf" id="{$id}">
+								<xsl:attribute name="src">
+									<xsl:value-of
+										select="concat('data:', 'application/pdf', ';base64,', $value)"
+									/>
+								</xsl:attribute>
+							</fox:external-document>
+						</xsl:if>
 					</xsl:if>
 				</xsl:for-each>
 			</fo:root>
@@ -1487,10 +1490,12 @@
 			</h3>
 		</xsl:if>
 		<xsl:if test="(contains($vendor, 'Saxonica'))">
-			<fo:block font-size="9" font-weight="bold">
-				<xsl:value-of select="$title"/>
-			</fo:block>
-			<fo:block line-height="0.5cm">&#160;</fo:block>
+			<xsl:if test="not(n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+				<fo:block font-size="9" font-weight="bold">
+					<xsl:value-of select="$title"/>
+				</fo:block>
+				<fo:block line-height="0.5cm">&#160;</fo:block>
+			</xsl:if>
 		</xsl:if>
 	</xsl:template>
 
@@ -1582,8 +1587,11 @@
 				</xsl:element>
 			</xsl:when>
 			<xsl:otherwise>
+				<xsl:variable name="frameID">
+					<xsl:value-of select="concat('iframeId', '_', generate-id(.))"/>
+				</xsl:variable>
 				<!-- Navigaeur non pris en charge -->
-				<div id="iframeId">
+				<div id="{$frameID}">
 					<iframe name="{$renderID}" id="{$renderID}" width="100%" height="600"
 						title="{$renderAltText}">
 						<xsl:if
@@ -2552,9 +2560,12 @@
 								</xsl:element>
 							</xsl:if>
 							<xsl:if test="(contains($vendor, 'Saxonica'))">
-								<fo:block xsl:use-attribute-sets="myBlock5">
-									<xsl:text> Voir PDF en bas de page</xsl:text>
-								</fo:block>
+								<xsl:if
+									test="not(preceding::n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+									<fo:block xsl:use-attribute-sets="myBlock5">
+										<xsl:text> Voir PDF en bas de page</xsl:text>
+									</fo:block>
+								</xsl:if>
 							</xsl:if>
 						</xsl:when>
 						<xsl:when test="$vendor = 'Transformiix' and $node-set">
@@ -2602,10 +2613,13 @@
 									/>
 								</xsl:if>
 							</xsl:variable>
+							<xsl:variable name="frameID">
+								<xsl:value-of select="concat('iframeId', '_', generate-id(.))"/>
+							</xsl:variable>
 							<xsl:variable name="source"
 								select="string($renderElement/n1:reference/@value)"/>
 							<xsl:if test="not(contains($vendor, 'Saxonica'))">
-								<div id="iframeId">
+								<div id="{$frameID}">
 									<iframe name="{$renderID}" id="{$renderID}" width="100%"
 										height="600" title="{$renderAltText}">
 										<xsl:if
@@ -2621,9 +2635,12 @@
 								</div>
 							</xsl:if>
 							<xsl:if test="(contains($vendor, 'Saxonica'))">
-								<fo:block xsl:use-attribute-sets="myBlock5">
-									<xsl:text> Voir PDF en bas de page</xsl:text>
-								</fo:block>
+								<xsl:if
+									test="not(preceding::n1:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
+									<fo:block xsl:use-attribute-sets="myBlock5">
+										<xsl:text> Voir PDF en bas de page</xsl:text>
+									</fo:block>
+								</xsl:if>
 							</xsl:if>
 						</xsl:otherwise>
 					</xsl:choose>
