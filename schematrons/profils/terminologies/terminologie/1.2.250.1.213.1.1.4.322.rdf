@@ -413,6 +413,7 @@
 <rdf:Description><skos:notation>GEN-308</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>GEN-309</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>GEN-310</skos:notation></rdf:Description>
+<rdf:Description><skos:notation>GEN-311</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>image/bm</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>image/gif</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>image/jpeg</skos:notation></rdf:Description>
@@ -1595,6 +1596,8 @@
 <rdf:Description><skos:notation>MED-1266</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>MED-1267</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>MED-1268</skos:notation></rdf:Description>
+<rdf:Description><skos:notation>MED-1269</skos:notation></rdf:Description>
+<rdf:Description><skos:notation>MED-1271</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>ORG-001</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>ORG-002</skos:notation></rdf:Description>
 <rdf:Description><skos:notation>ORG-003</skos:notation></rdf:Description>
