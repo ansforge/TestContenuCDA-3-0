@@ -534,6 +534,10 @@ RoseTree XML to Schema: $Id: VocabXMLtoXSD.xsl,v 1.6 2005/05/24 00:14:18 lmckenz
          <xs:enumeration value="ACD"/>
          <xs:enumeration value="ACM"/>
          <xs:enumeration value="ACV"/>
+         <xs:enumeration value="C"/>
+         <xs:enumeration value="CD"/>
+         <xs:enumeration value="CM"/>
+         <xs:enumeration value="CV"/>
          <xs:enumeration value="HS"/>
          <xs:enumeration value="IC"/>
          <xs:enumeration value="ICD"/>
@@ -543,6 +547,7 @@ RoseTree XML to Schema: $Id: VocabXMLtoXSD.xsl,v 1.6 2005/05/24 00:14:18 lmckenz
          <xs:enumeration value="PCD"/>
          <xs:enumeration value="PCM"/>
          <xs:enumeration value="PCV"/>
+         <xs:enumeration value="WAKE"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="URLScheme">
