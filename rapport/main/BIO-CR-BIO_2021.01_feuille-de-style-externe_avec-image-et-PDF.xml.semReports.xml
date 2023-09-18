@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="1efb031e-789d-4965-bdab-b25a70a279a4">
-    <gvr:validationOverview validationDateTime="2024-02-09T13:24:40.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="72f9ce36-e4ee-4f9a-8b51-1b063271c8a6">
+    <gvr:validationOverview validationDateTime="2024-06-09T11:25:07.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="89" numberOfErrors="1" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="85" numberOfErrors="1" numberOfWarnings="0"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="87" numberOfErrors="1" numberOfWarnings="0"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="83" numberOfErrors="1" numberOfWarnings="0"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>
 	  CodeSystem : "2.16.840.1.113883.6.1" 
