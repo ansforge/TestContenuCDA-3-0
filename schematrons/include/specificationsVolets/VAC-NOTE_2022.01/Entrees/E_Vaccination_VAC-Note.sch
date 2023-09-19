@@ -46,9 +46,9 @@
             [E_Vaccination_VAC-Note] Erreur de conformité :
             Dans une note de vaccination, le nom de l’auteur "author/assignedAuthor/assignedPerson/name" est obligatoire
         </assert>
-        <assert test="cda:entryRelationship/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.82']/cda:statusCode/@code='completed'">
+        <assert test="cda:statusCode/@code='completed'">
             [E_Vaccination_VAC-Note] Erreur de conformité :
-            Dans une note de vaccination, l’élément "statutCode" doit être "completed" puisque la vaccination a été effectuée
+            Dans une note de vaccination, l’élément "statusCode" doit être "completed" puisque la vaccination a été effectuée
         </assert>
         
         
