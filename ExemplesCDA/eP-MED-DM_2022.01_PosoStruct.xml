@@ -591,15 +591,15 @@
                 </tr>                
                 <tr>
                   <td colspan="4">Précondition</td>                  
-                  <td colspan="10"><content ID="med-001-precondition">-</content></td>
+                  <td colspan="9"><content ID="med-001-precondition">-</content></td>
                 </tr>
                 <tr>
                   <td colspan="4">Instruction au patient</td>                  
-                  <td colspan="10"><content ID="med-001-instrPatient">A prendre au cours d'un repas</content></td>
+                  <td colspan="9"><content ID="med-001-instrPatient">A prendre au cours d'un repas</content></td>
                 </tr>
                 <tr>
                   <td colspan="4">Instruction au dispensateur</td>                  
-                  <td colspan="10"><content ID="med-001-instrDisp">-</content></td>
+                  <td colspan="9"><content ID="med-001-instrDisp">-</content></td>
                 </tr>
                              
               </tbody>
@@ -644,15 +644,15 @@
                 </tr>
                 <tr>
                   <td colspan="4">Précondition</td>                  
-                  <td colspan="10"><content ID="med-002-precondition">-</content></td>
+                  <td colspan="9"><content ID="med-002-precondition">-</content></td>
                 </tr>
                 <tr>
                   <td colspan="4">Instruction au patient</td>                  
-                  <td colspan="10"><content ID="med-002-instrPatient">Diminuer la posologie progressivement une fois la poussée traitée. Par exemple en appliquant la préparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d’arrêter.</content></td>
+                  <td colspan="9"><content ID="med-002-instrPatient">Diminuer la posologie progressivement une fois la poussée traitée. Par exemple en appliquant la préparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d’arrêter.</content></td>
                 </tr>
                 <tr>
                   <td colspan="4">Instruction au dispensateur</td>                  
-                  <td colspan="10"><content ID="med-002-instrDisp">-</content></td>
+                  <td colspan="9"><content ID="med-002-instrDisp">-</content></td>
                 </tr>                           
               </tbody>
             </table>
