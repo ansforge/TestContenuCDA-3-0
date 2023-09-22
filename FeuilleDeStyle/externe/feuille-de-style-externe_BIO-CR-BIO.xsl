@@ -82,7 +82,7 @@
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock3">
-		<xsl:attribute name="font-size">6</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">normal</xsl:attribute>
 		<xsl:attribute name="background-color">#DCF0FF</xsl:attribute>
 		<xsl:attribute name="color">black</xsl:attribute>
@@ -91,7 +91,7 @@
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock5">
-		<xsl:attribute name="font-size">6</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
 		<xsl:attribute name="font-style">italic</xsl:attribute>
 		<xsl:attribute name="margin-left">10px</xsl:attribute>
@@ -100,7 +100,7 @@
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock6">
-		<xsl:attribute name="font-size">6</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
 		<xsl:attribute name="background-color">white</xsl:attribute>
 		<xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -109,7 +109,7 @@
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock7">
-		<xsl:attribute name="font-size">6</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">normal</xsl:attribute>
 		<xsl:attribute name="background-color">white</xsl:attribute>
 		<xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -118,20 +118,25 @@
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock13">
-		<xsl:attribute name="font-size">7</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
 	</xsl:attribute-set>
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock14">
-		<xsl:attribute name="font-size">7</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">normal</xsl:attribute>
 	</xsl:attribute-set>
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myBlock15">
-		<xsl:attribute name="font-size">7</xsl:attribute>
+		<xsl:attribute name="font-size">8</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
+	</xsl:attribute-set>
+	
+	<xsl:attribute-set name="myBorder1">
+		<xsl:attribute name="border">0</xsl:attribute>
+		<xsl:attribute name="width">100%</xsl:attribute>
 	</xsl:attribute-set>
 
 	<!-- Extension FR : PDF -->
@@ -156,13 +161,48 @@
 		<xsl:if test="(contains($vendor, 'Saxonica'))">
 			<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
 				<fo:layout-master-set>
-					<fo:simple-page-master master-name="only">
+					<fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
+						margin-right="0.2in" master-name="first">
 						<fo:region-body region-name="xsl-region-body"/>
+						<fo:region-after extent="3mm" region-name="xsl-region-after"/>
 					</fo:simple-page-master>
+					<fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
+						margin-right="0.2in" master-name="rest">
+						<fo:region-body margin-top="50pt" region-name="xsl-region-body"/>
+						<fo:region-before extent="10mm" region-name="xsl-region-before"/>
+						<fo:region-after extent="3mm" region-name="xsl-region-after"/>
+					</fo:simple-page-master>
+					<fo:page-sequence-master master-name="only">
+						<fo:repeatable-page-master-alternatives>
+							<fo:conditional-page-master-reference master-reference="first"
+								page-position="first"/>
+							<fo:conditional-page-master-reference master-reference="rest"
+								page-position="any"/>
+						</fo:repeatable-page-master-alternatives>
+					</fo:page-sequence-master>
 				</fo:layout-master-set>
 				<fo:page-sequence master-reference="only">
+					<fo:static-content flow-name="xsl-region-before">
+						<fo:block text-align="start" font-size="6">
+							<xsl:call-template name="show-title-header"/>
+						</fo:block>
+						<fo:block>
+							<fo:leader leader-pattern="rule" leader-length="100%"
+								rule-thickness="0.1pt"/>
+						</fo:block>
+					</fo:static-content>
+					<fo:static-content flow-name="xsl-region-after">
+						<fo:block>
+							<fo:leader leader-pattern="rule" leader-length="100%"
+								rule-thickness="0.1pt"/>
+						</fo:block>
+						<fo:block text-align="end" font-size="6">
+							<fo:page-number/> / <fo:page-number-citation ref-id="citation"/>
+						</fo:block>
+					</fo:static-content>
 					<fo:flow flow-name="xsl-region-body">
-						<xsl:apply-templates select="n1:ClinicalDocument"/>
+						<xsl:apply-templates select="//n1:ClinicalDocument"/>
+						<fo:block id="citation"/>
 					</fo:flow>
 				</fo:page-sequence>
 				<xsl:if test="$nonXML">
@@ -188,6 +228,77 @@
 			</fo:root>
 		</xsl:if>
 	</xsl:template>
+	
+	<xd:doc>
+		<xd:desc/>
+	</xd:doc>
+	<xsl:template name="show-title-header">
+		<xsl:variable name="documentEffectiveTime">
+			<xsl:call-template name="show-timestamp">
+				<xsl:with-param name="in" select="//n1:ClinicalDocument/n1:effectiveTime"/>
+			</xsl:call-template>
+		</xsl:variable>
+		<fo:block>
+			<fo:table xsl:use-attribute-sets="myBorder1" margin-left="0.1">
+				<fo:table-column column-number="1" column-width="80%"/>
+				<fo:table-column column-number="2" column-width="20%"/>
+				<fo:table-body>
+					<fo:table-row>
+						<fo:table-cell>
+							<fo:block>
+								<xsl:choose>
+									<!-- CDAr2 DTr1 -->
+									<xsl:when
+										test="string-length(//n1:ClinicalDocument/n1:title) &gt; 0">
+										<xsl:value-of select="//n1:ClinicalDocument/n1:title"/>
+										
+									</xsl:when>
+									<!-- CDAr3 DTr2 -->
+									<xsl:when
+										test="string-length(//n1:ClinicalDocument/n1:title/@value) &gt; 0">
+										<xsl:value-of
+											select="//n1:ClinicalDocument/n1:title/@value"/>
+									</xsl:when>
+									<!-- CDAr2 DTr1 -->
+									<xsl:when test="//n1:ClinicalDocument/n1:code/@displayName">
+										<xsl:value-of
+											select="//n1:ClinicalDocument/n1:code/@displayName"/>
+									</xsl:when>
+									<!-- CDAr3 DTr2 -->
+									<xsl:when
+										test="//n1:ClinicalDocument/n1:code/n1:displayName/@value">
+										<xsl:value-of
+											select="//n1:ClinicalDocument/n1:code/n1:displayName/@value"
+										/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:call-template name="getLocalizedString">
+											<xsl:with-param name="key" select="'Clinical Document'"
+											/>
+										</xsl:call-template>
+									</xsl:otherwise>
+								</xsl:choose>
+							</fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+							<fo:block/>
+						</fo:table-cell>
+					</fo:table-row>
+					<fo:table-row>
+						<fo:table-cell>
+							<fo:block>
+								<xsl:value-of select="normalize-space($documentEffectiveTime)"/>
+							</fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+							<fo:block/>
+						</fo:table-cell>
+					</fo:table-row>
+				</fo:table-body>
+			</fo:table>
+		</fo:block>
+	</xsl:template>
+	
 
 	<!-- Extension FR : PDF -->
 	<!-- Encoded nonXMLBody PDF -->
