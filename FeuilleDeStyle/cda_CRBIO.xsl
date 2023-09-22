@@ -1595,47 +1595,12 @@
                 IE 10 and 11 stopped supporting HTML conditionals so unable to check. Microsoft Edge, Safari, Chrome, Firefox is fine.
                 So we're good on all major browsers except IE 10 and 11. 
             -->
-				<xsl:when test="$renderElement[@representation = 'B64']">
-					<xsl:choose>
-						<xsl:when
-							test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
-							<fo:block font-style="italic">
-								<xsl:call-template name="getLocalizedString">
-									<xsl:with-param name="key"
-										select="'iframe-warning-sandboxed-pdf'"/>
-								</xsl:call-template>
-							</fo:block>
-						</xsl:when>
-						<xsl:otherwise>
-							<fo:block font-weight="bold">
-								<fo:basic-link internal-destination="{$renderID}">
-									<xsl:call-template name="getLocalizedString">
-										<xsl:with-param name="key"
-											select="'iframe-warning-display-pdf'"/>
-									</xsl:call-template>
-									<xsl:text> </xsl:text>
-									<fo:inline>
-										<xsl:value-of select="$renderID"/>
-									</fo:inline>
-								</fo:basic-link>
-							</fo:block>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:comment>&lt;![endif]</xsl:comment>
-				</xsl:when>
 				<!-- This is plain text -->
 				<xsl:when test="$renderElement[not(@mediaType) or @mediaType = 'text/plain']">
 					<fo:block>
 						<xsl:value-of select="$renderElement/text()"/>
 					</fo:block>
 				</xsl:when>
-				<xsl:otherwise>
-					<fo:block>
-						<xsl:call-template name="getLocalizedString">
-							<xsl:with-param name="key" select="'Cannot display the text'"/>
-						</xsl:call-template>
-					</fo:block>
-				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:if>
 	</xsl:template>
@@ -1738,7 +1703,21 @@
 			<table border="1">
 				<tr>
 					<td width="10%">
-						<xsl:text>Section: </xsl:text>
+						<xsl:text>Section </xsl:text>
+						<br/>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.2'">
+							<xsl:text>FR-CR-BIO-Sous-Chapitre</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.4.1.2.16'">
+							<xsl:text>FR-Commentaire-non-code</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.1'">
+							<xsl:text>FR-CR-BIO-Chapitre</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.2.250.1.213.1.1.2.60'">
+							<xsl:text>FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention</xsl:text>
+						</xsl:if>
+						<xsl:text>: </xsl:text>
 						<xsl:value-of select="hl7:code/@code"/>
 						<xsl:text> - </xsl:text>
 						<xsl:value-of select="hl7:code/@displayName"/>
@@ -1754,6 +1733,8 @@
 						<xsl:if test="hl7:entry">
 							<xsl:call-template name="tableau-entrees">
 								<xsl:with-param name="entree" select="hl7:entry/*"/>
+								<xsl:with-param name="templateId" select="hl7:entry/hl7:templateId"
+								/>
 							</xsl:call-template>
 						</xsl:if>
 					</td>
@@ -1771,7 +1752,24 @@
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">
 								<fo:block line-height="0.1cm">&#160;</fo:block>
 								<fo:block>
-									<xsl:text>Section: </xsl:text>
+									<xsl:text>Section </xsl:text>
+									<fo:block line-height="0.1cm">&#160;</fo:block>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.2'">
+										<xsl:text>FR-CR-BIO-Sous-Chapitre</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.4.1.2.16'">
+										<xsl:text>FR-Commentaire-non-code</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.1'">
+										<xsl:text>FR-CR-BIO-Chapitre</xsl:text>
+									</xsl:if>
+									<xsl:if test="hl7:templateId/@root = '1.2.250.1.213.1.1.2.60'">
+										<xsl:text>FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention</xsl:text>
+									</xsl:if>
+									<xsl:text>: </xsl:text>
 									<xsl:value-of select="hl7:code/@code"/>
 									<xsl:text> - </xsl:text>
 									<xsl:value-of select="hl7:code/@displayName"/>
@@ -1790,6 +1788,8 @@
 									<xsl:if test="hl7:entry">
 										<xsl:call-template name="tableau-entrees">
 											<xsl:with-param name="entree" select="hl7:entry/*"/>
+											<xsl:with-param name="templateId"
+												select="hl7:entry/hl7:templateId"/>
 										</xsl:call-template>
 									</xsl:if>
 								</fo:block>
@@ -1812,7 +1812,21 @@
 			<table border="1" width="40%">
 				<tr>
 					<td width="20%">
-						<xsl:text>Section: </xsl:text>
+						<xsl:text>Section </xsl:text>
+						<br/>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.2'">
+							<xsl:text>FR-CR-BIO-Sous-Chapitre</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.4.1.2.16'">
+							<xsl:text>FR-Commentaire-non-code</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.1'">
+							<xsl:text>FR-CR-BIO-Chapitre</xsl:text>
+						</xsl:if>
+						<xsl:if test="hl7:templateId/@root = '1.2.250.1.213.1.1.2.60'">
+							<xsl:text>FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention</xsl:text>
+						</xsl:if>
+						<xsl:text>: </xsl:text>
 						<xsl:value-of select="$sectionSecond/hl7:code/@code"/>
 						<xsl:text> - </xsl:text>
 						<xsl:value-of select="$sectionSecond/hl7:code/@displayName"/>
@@ -1820,6 +1834,8 @@
 					<td width="80%">
 						<xsl:call-template name="tableau-entrees">
 							<xsl:with-param name="entree" select="$sectionSecond/hl7:entry/*"/>
+							<xsl:with-param name="templateId"
+								select="$sectionSecond/hl7:entry/hl7:templateId"/>
 						</xsl:call-template>
 					</td>
 				</tr>
@@ -1834,7 +1850,24 @@
 						<fo:table-row xsl:use-attribute-sets="myBorder">
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">
 								<fo:block>
-									<xsl:text>Section: </xsl:text>
+									<xsl:text>Section </xsl:text>
+									<fo:block line-height="0.1cm">&#160;</fo:block>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.2'">
+										<xsl:text>FR-CR-BIO-Sous-Chapitre</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.4.1.2.16'">
+										<xsl:text>FR-Commentaire-non-code</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.3.2.1'">
+										<xsl:text>FR-CR-BIO-Chapitre</xsl:text>
+									</xsl:if>
+									<xsl:if test="hl7:templateId/@root = '1.2.250.1.213.1.1.2.60'">
+										<xsl:text>FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention</xsl:text>
+									</xsl:if>
+									<xsl:text>: </xsl:text>
 									<xsl:value-of select="$sectionSecond/hl7:code/@code"/>
 									<xsl:text> - </xsl:text>
 									<xsl:value-of select="$sectionSecond/hl7:code/@displayName"/>
@@ -1845,6 +1878,8 @@
 									<xsl:call-template name="tableau-entrees">
 										<xsl:with-param name="entree"
 											select="$sectionSecond/hl7:entry/*"/>
+										<xsl:with-param name="templateId"
+											select="$sectionSecond/hl7:entry/hl7:templateId"/>
 									</xsl:call-template>
 								</fo:block>
 							</fo:table-cell>
@@ -1858,23 +1893,60 @@
 	<xd:doc>
 		<xd:desc/>
 		<xd:param name="entree"/>
+		<xd:param name="templateId"/>
 	</xd:doc>
 	<xsl:template name="tableau-entrees">
 		<xsl:param name="entree"/>
+		<xsl:param name="templateId"/>
 		<xsl:if test="not(contains($vendor, 'Saxonica'))">
 			<table border="1" width="40%">
 				<tr>
 					<td width="20%">
-						<xsl:text>Entrée: </xsl:text>
+						<xsl:text>Entrée </xsl:text>
+						<br/>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.4'">
+							<xsl:text>FR-Batterie-examens-de-biologie-medicale</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.2'">
+							<xsl:text>FR-Commentaire-ER</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.2.250.1.213.1.1.3.18'">
+							<xsl:text>FR-Document-attache</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '2.16.840.1.113883.10.12.304'">
+							<xsl:text>FR-Image-illustrative</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.5'">
+							<xsl:text>FR-Isolat-microbiologique</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.2'">
+							<xsl:text>FR-Prelevement</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.6'">
+							<xsl:text>FR-Resultat-examens-de-biologie-element-clinique-pertinent</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1'">
+							<xsl:text>FR-Resultats-examens-de-biologie-medicale</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+							<xsl:text>FR-Simple-Observation</xsl:text>
+						</xsl:if>
+						<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+							<xsl:text>FR-Type-document-attache</xsl:text>
+						</xsl:if>
+						<xsl:text>: </xsl:text>
 						<xsl:value-of select="$entree/hl7:code/@code"/>
 						<xsl:text> - </xsl:text>
 						<xsl:value-of select="$entree/hl7:code/@displayName"/>
 					</td>
 					<td width="80%">
 						<xsl:for-each
-							select="$entree/hl7:entryRelationship/*/hl7:code | $entree/hl7:entryRelationship/*/hl7:component/*/hl7:code">
+							select="$entree/hl7:entryRelationship/*">
+							<xsl:variable name="template" select="hl7:templateId"/>
+							<xsl:variable name="relation" select="hl7:code"/>
 							<xsl:call-template name="tableau-entryRelationship">
-								<xsl:with-param name="relation" select="."/>
+								<xsl:with-param name="template" select="$template"/>
+								<xsl:with-param name="relation" select="$relation"/>
 							</xsl:call-template>
 						</xsl:for-each>
 					</td>
@@ -1890,7 +1962,42 @@
 						<fo:table-row xsl:use-attribute-sets="myBorder">
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">
 								<fo:block>
-									<xsl:text>Entrée: </xsl:text>
+									<xsl:text>Entrée </xsl:text>
+									<fo:block line-height="0.1cm">&#160;</fo:block>
+									<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.4'">
+										<xsl:text>FR-Batterie-examens-de-biologie-medicale</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.2'">
+										<xsl:text>FR-Commentaire-ER</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '1.2.250.1.213.1.1.3.18'">
+										<xsl:text>FR-Document-attache</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '2.16.840.1.113883.10.12.304'">
+										<xsl:text>FR-Image-illustrative</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.5'">
+										<xsl:text>FR-Isolat-microbiologique</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.2'">
+										<xsl:text>FR-Prelevement</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1.6'">
+										<xsl:text>FR-Resultat-examens-de-biologie-element-clinique-pertinent</xsl:text>
+									</xsl:if>
+									<xsl:if test="$templateId/@root = '1.3.6.1.4.1.19376.1.3.1'">
+										<xsl:text>FR-Resultats-examens-de-biologie-medicale</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+										<xsl:text>FR-Simple-Observation</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="$templateId/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+										<xsl:text>FR-Type-document-attache</xsl:text>
+									</xsl:if>
+									<xsl:text>: </xsl:text>
 									<xsl:value-of select="$entree/hl7:code/@code"/>
 									<xsl:text> - </xsl:text>
 									<xsl:value-of select="$entree/hl7:code/@displayName"/>
@@ -1899,9 +2006,12 @@
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">
 								<fo:block>
 									<xsl:for-each
-										select="$entree/hl7:entryRelationship/*/hl7:code | $entree/hl7:entryRelationship/*/hl7:component/*/hl7:code">
+										select="$entree/hl7:entryRelationship/* | $entree/hl7:entryRelationship/*/hl7:component/*">
+										<xsl:variable name="template" select="hl7:templateId"/>
+										<xsl:variable name="relation" select="hl7:code"/>
 										<xsl:call-template name="tableau-entryRelationship">
-											<xsl:with-param name="relation" select="."/>
+											<xsl:with-param name="template" select="$template"/>
+											<xsl:with-param name="relation" select="$relation"/>
 										</xsl:call-template>
 									</xsl:for-each>
 								</fo:block>
@@ -1912,21 +2022,74 @@
 			</fo:block>
 		</xsl:if>
 	</xsl:template>
+	
+	<template name="path">
+		<for-each select="parent::*">
+			<call-template name="path"/>
+		</for-each>
+		<value-of select="name()"/>
+		<text>/</text>
+	</template>
 
 	<xd:doc>
 		<xd:desc/>
 		<xd:param name="relation"/>
+		<xd:param name="template"/>
 	</xd:doc>
 	<xsl:template name="tableau-entryRelationship">
+		<xsl:param name="template"/>
 		<xsl:param name="relation"/>
 		<xsl:if test="not(contains($vendor, 'Saxonica'))">
 			<table border="1" width="40%" class="table_contours">
 				<tr>
 					<td width="80%">
-						<xsl:text>Entrée : </xsl:text>
-						<xsl:value-of select="$relation/@code"/>
-						<xsl:text> - </xsl:text>
-						<xsl:value-of select="$relation/@displayName"/>
+						<xsl:text>Entrée </xsl:text>
+						<br/>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.4'">
+							<xsl:text>FR-Batterie-examens-de-biologie-medicale</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.2'">
+							<xsl:text>FR-Commentaire-ER</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.2.250.1.213.1.1.3.18'">
+							<xsl:text>FR-Document-attache</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '2.16.840.1.113883.10.12.304'">
+							<xsl:text>FR-Image-illustrative</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.5'">
+							<xsl:text>FR-Isolat-microbiologique</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.2'">
+							<xsl:text>FR-Prelevement</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.6'">
+							<xsl:text>FR-Resultat-examens-de-biologie-element-clinique-pertinent</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1'">
+							<xsl:text>FR-Resultats-examens-de-biologie-medicale</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+							<xsl:text>FR-Simple-Observation</xsl:text>
+						</xsl:if>
+						<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+							<xsl:text>FR-Type-document-attache</xsl:text>
+						</xsl:if>
+						<xsl:if test="$relation">
+							<xsl:text>: </xsl:text>
+							<xsl:value-of select="$relation/@code"/>
+							<xsl:text> - </xsl:text>
+							<xsl:value-of select="$relation/@displayName"/>
+						</xsl:if>
+						<xsl:for-each
+							select="hl7:component/*">
+							<xsl:variable name="templatee" select="hl7:templateId"/>
+							<xsl:variable name="relationn" select="hl7:code"/>
+							<xsl:call-template name="tableau-entryRelationship">
+								<xsl:with-param name="template" select="$templatee"/>
+								<xsl:with-param name="relation" select="$relationn"/>
+							</xsl:call-template>
+						</xsl:for-each>
 					</td>
 					<xsl:if test="$relation/../hl7:value">
 						<td width="20%">
@@ -1962,10 +2125,54 @@
 						<fo:table-row xsl:use-attribute-sets="myBorder">
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">
 								<fo:block>
-									<xsl:text>Entrée : </xsl:text>
-									<xsl:value-of select="$relation/@code"/>
-									<xsl:text> - </xsl:text>
-									<xsl:value-of select="$relation/@displayName"/>
+									<xsl:text>Entrée </xsl:text>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.4'">
+										<xsl:text>FR-Batterie-examens-de-biologie-medicale</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.2'">
+										<xsl:text>FR-Commentaire-ER</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.2.250.1.213.1.1.3.18'">
+										<xsl:text>FR-Document-attache</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '2.16.840.1.113883.10.12.304'">
+										<xsl:text>FR-Image-illustrative</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.5'">
+										<xsl:text>FR-Isolat-microbiologique</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.2'">
+										<xsl:text>FR-Prelevement</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1.6'">
+										<xsl:text>FR-Resultat-examens-de-biologie-element-clinique-pertinent</xsl:text>
+									</xsl:if>
+									<xsl:if test="$template/@root = '1.3.6.1.4.1.19376.1.3.1'">
+										<xsl:text>FR-Resultats-examens-de-biologie-medicale</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+										<xsl:text>FR-Simple-Observation</xsl:text>
+									</xsl:if>
+									<xsl:if
+										test="$template/@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'">
+										<xsl:text>FR-Type-document-attache</xsl:text>
+									</xsl:if>
+									<xsl:if test="$relation">
+										<xsl:text>: </xsl:text>
+										<xsl:value-of select="$relation/@code"/>
+										<xsl:text> - </xsl:text>
+										<xsl:value-of select="$relation/@displayName"/>
+									</xsl:if>
+									<xsl:for-each
+										select="hl7:component/*">
+										<xsl:variable name="templatee" select="hl7:templateId"/>
+										<xsl:variable name="relationn" select="hl7:code"/>
+										<xsl:call-template name="tableau-entryRelationship">
+											<xsl:with-param name="template" select="$templatee"/>
+											<xsl:with-param name="relation" select="$relationn"/>
+										</xsl:call-template>
+									</xsl:for-each>
 								</fo:block>
 							</fo:table-cell>
 							<fo:table-cell xsl:use-attribute-sets="myBlock20">

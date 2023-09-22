@@ -55,7 +55,7 @@
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBorder">
         <xsl:attribute name="border">solid 0.1mm black</xsl:attribute>
-        <xsl:attribute name="width">100%</xsl:attribute>
+        <xsl:attribute name="width">98%</xsl:attribute>
     </xsl:attribute-set>
 
     <!-- Extension FR : PDF -->
@@ -1587,47 +1587,12 @@
                 IE 10 and 11 stopped supporting HTML conditionals so unable to check. Microsoft Edge, Safari, Chrome, Firefox is fine.
                 So we're good on all major browsers except IE 10 and 11. 
             -->
-                <xsl:when test="$renderElement[@representation = 'B64']">
-                    <xsl:choose>
-                        <xsl:when
-                            test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
-                            <fo:block font-style="italic">
-                                <xsl:call-template name="getLocalizedString">
-                                    <xsl:with-param name="key"
-                                        select="'iframe-warning-sandboxed-pdf'"/>
-                                </xsl:call-template>
-                            </fo:block>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <fo:block font-weight="bold">
-                                <fo:basic-link internal-destination="{$renderID}">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key"
-                                            select="'iframe-warning-display-pdf'"/>
-                                    </xsl:call-template>
-                                    <xsl:text> </xsl:text>
-                                    <fo:inline>
-                                        <xsl:value-of select="$renderID"/>
-                                    </fo:inline>
-                                </fo:basic-link>
-                            </fo:block>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:comment>&lt;![endif]</xsl:comment>
-                </xsl:when>
                 <!-- This is plain text -->
                 <xsl:when test="$renderElement[not(@mediaType) or @mediaType = 'text/plain']">
                     <fo:block>
                         <xsl:value-of select="$renderElement/text()"/>
                     </fo:block>
                 </xsl:when>
-                <xsl:otherwise>
-                    <fo:block>
-                        <xsl:call-template name="getLocalizedString">
-                            <xsl:with-param name="key" select="'Cannot display the text'"/>
-                        </xsl:call-template>
-                    </fo:block>
-                </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
     </xsl:template>
@@ -2530,7 +2495,7 @@
                         </xsl:call-template>
                     </fo:block>
                     <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                        <fo:table-column column-number="1" column-width="45%"/>
+                        <fo:table-column column-number="1" column-width="47%"/>
                         <fo:table-column column-number="2" column-width="25%"/>
                         <fo:table-column column-number="3" column-width="25%"/>
                         <fo:table-body>
@@ -4987,8 +4952,8 @@
     <xsl:template match="hl7:table">
         <!-- Extension FR : PDF -->
         <xsl:if test="(contains($vendor, 'Saxonica'))">
-            <fo:table width="95%" margin="0.3em 0" xsl:use-attribute-sets="myBorder"
-                table-layout="auto">
+            <fo:table margin="0.3em 0" xsl:use-attribute-sets="myBorder"
+                inline-progression-dimension="auto" table-layout="auto">
                 <xsl:apply-templates/>
             </fo:table>
             <fo:block line-height="0.2cm">&#160;</fo:block>
@@ -20983,7 +20948,7 @@
                         </xsl:call-template>
                     </fo:block>
                     <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                        <fo:table-column column-number="1" column-width="20%"/>
+                        <fo:table-column column-number="1" column-width="25%"/>
                         <fo:table-column column-number="2" column-width="25%"/>
                         <fo:table-column column-number="3" column-width="20%"/>
                         <fo:table-column column-number="4" column-width="30%"/>

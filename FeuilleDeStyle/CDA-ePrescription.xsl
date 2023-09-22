@@ -1607,47 +1607,12 @@
                 IE 10 and 11 stopped supporting HTML conditionals so unable to check. Microsoft Edge, Safari, Chrome, Firefox is fine.
                 So we're good on all major browsers except IE 10 and 11. 
             -->
-                <xsl:when test="$renderElement[@representation = 'B64']">
-                    <xsl:choose>
-                        <xsl:when
-                            test="$renderElement/@mediaType = 'application/pdf' and $limit-pdf = 'yes'">
-                            <fo:block font-style="italic">
-                                <xsl:call-template name="getLocalizedString">
-                                    <xsl:with-param name="key"
-                                        select="'iframe-warning-sandboxed-pdf'"/>
-                                </xsl:call-template>
-                            </fo:block>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <fo:block font-weight="bold">
-                                <fo:basic-link internal-destination="{$renderID}">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key"
-                                            select="'iframe-warning-display-pdf'"/>
-                                    </xsl:call-template>
-                                    <xsl:text> </xsl:text>
-                                    <fo:inline>
-                                        <xsl:value-of select="$renderID"/>
-                                    </fo:inline>
-                                </fo:basic-link>
-                            </fo:block>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:comment>&lt;![endif]</xsl:comment>
-                </xsl:when>
                 <!-- This is plain text -->
                 <xsl:when test="$renderElement[not(@mediaType) or @mediaType = 'text/plain']">
                     <fo:block>
                         <xsl:value-of select="$renderElement/text()"/>
                     </fo:block>
                 </xsl:when>
-                <xsl:otherwise>
-                    <fo:block>
-                        <xsl:call-template name="getLocalizedString">
-                            <xsl:with-param name="key" select="'Cannot display the text'"/>
-                        </xsl:call-template>
-                    </fo:block>
-                </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
     </xsl:template>
