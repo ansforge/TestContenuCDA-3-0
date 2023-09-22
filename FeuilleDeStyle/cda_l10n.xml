@@ -481,6 +481,13 @@
         <value lang="nl-nl">Voor- en achternaam gebruikt</value>
         <value lang="fr-fr">Nom et prénom utilisés</value>
     </translation>
+    <translation key="nameGivenName">
+        <comment>Label: given</comment>
+        <value lang="en-us">Last name / First Name :</value>
+        <value lang="de-ch">Nachname / Vorname :</value>
+        <value lang="nl-nl">Achternaam / voornaam :</value>
+        <value lang="fr-fr">Nom / Prénom :</value>
+    </translation>
     <translation key="givenName">
         <comment>Label: given</comment>
         <value lang="en-us">Birth name</value>
@@ -3355,13 +3362,13 @@
         <comment>Label: ParticipationType verifier</comment>
         <value lang="en-us">verifier</value>
         <value lang="nl-nl">toezichthouder</value>
-        <value lang="fr-fr">Vérificateur </value>
+        <value lang="fr-fr">Vérificateur</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-AUTHEN">
         <comment>Label: ParticipationType authenticator</comment>
         <value lang="en-us">authenticator</value>
         <value lang="nl-nl">onderetkenaar</value>
-        <value lang="fr-fr">Valideur des résultats </value>
+        <value lang="fr-fr">Valideur des résultats</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-LA">
         <comment>Label: ParticipationType legal authenticator</comment>

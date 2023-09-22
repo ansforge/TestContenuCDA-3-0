@@ -55,13 +55,19 @@
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBorder">
         <xsl:attribute name="border">solid 0.1mm black</xsl:attribute>
-        <xsl:attribute name="width">98%</xsl:attribute>
+        <xsl:attribute name="width">100%</xsl:attribute>
+    </xsl:attribute-set>
+    
+    <!-- Extension FR : PDF -->
+    <xsl:attribute-set name="myBorder1">
+        <xsl:attribute name="border">0</xsl:attribute>
+        <xsl:attribute name="width">100%</xsl:attribute>
     </xsl:attribute-set>
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock1">
         <xsl:attribute name="font-family">Verdana, Tahoma, sans-serif</xsl:attribute>
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="margin-top">10px</xsl:attribute>
         <xsl:attribute name="text-align">center</xsl:attribute>
@@ -70,7 +76,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock2">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">#DCF0FF</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -79,7 +85,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock3">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="background-color">#DCF0FF</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -88,7 +94,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock4">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">#DCF0FF</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -96,7 +102,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock5">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="background-color">#DCF0FF</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -104,14 +110,14 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock15">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
     </xsl:attribute-set>
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock6">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -120,7 +126,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock7">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -129,7 +135,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock8">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">LightGrey</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -137,14 +143,14 @@
     </xsl:attribute-set>
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock9">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
     </xsl:attribute-set>
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock10">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">black</xsl:attribute>
@@ -152,7 +158,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock11">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -160,7 +166,7 @@
 
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBlock12">
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
@@ -171,7 +177,7 @@
         <xsl:attribute name="text-align">center</xsl:attribute>
         <xsl:attribute name="border">solid 0.1mm white</xsl:attribute>
         <xsl:attribute name="background-color">LightGrey</xsl:attribute>
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
     </xsl:attribute-set>
@@ -180,7 +186,7 @@
     <xsl:attribute-set name="myBlock14">
         <xsl:attribute name="border">solid 0.1mm white</xsl:attribute>
         <xsl:attribute name="background-color">gainsboro</xsl:attribute>
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
     </xsl:attribute-set>
@@ -189,7 +195,7 @@
     <xsl:attribute-set name="myBlock15">
         <xsl:attribute name="border">solid 0.1mm white</xsl:attribute>
         <xsl:attribute name="background-color">white</xsl:attribute>
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
     </xsl:attribute-set>
@@ -199,7 +205,7 @@
         <xsl:attribute name="font-style">italic</xsl:attribute>
         <xsl:attribute name="text-decoration">underline</xsl:attribute>
         <xsl:attribute name="font-family">Verdana, Tahoma, sans-serif</xsl:attribute>
-        <xsl:attribute name="font-size">6</xsl:attribute>
+        <xsl:attribute name="font-size">8</xsl:attribute>
         <xsl:attribute name="color">rgb(0,51,102)</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
     </xsl:attribute-set>
@@ -604,13 +610,48 @@
         <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
                 <fo:layout-master-set>
-                    <fo:simple-page-master master-name="only">
+                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
+                        margin-right="0.2in" master-name="first">
                         <fo:region-body region-name="xsl-region-body"/>
+                        <fo:region-after extent="3mm" region-name="xsl-region-after"/>
                     </fo:simple-page-master>
+                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
+                        margin-right="0.2in" master-name="rest">
+                        <fo:region-body margin-top="50pt" region-name="xsl-region-body"/>
+                        <fo:region-before extent="10mm" region-name="xsl-region-before"/>
+                        <fo:region-after extent="3mm" region-name="xsl-region-after"/>
+                    </fo:simple-page-master>
+                    <fo:page-sequence-master master-name="only">
+                        <fo:repeatable-page-master-alternatives>
+                            <fo:conditional-page-master-reference master-reference="first"
+                                page-position="first"/>
+                            <fo:conditional-page-master-reference master-reference="rest"
+                                page-position="any"/>
+                        </fo:repeatable-page-master-alternatives>
+                    </fo:page-sequence-master>
                 </fo:layout-master-set>
                 <fo:page-sequence master-reference="only">
+                    <fo:static-content flow-name="xsl-region-before">
+                        <fo:block text-align="start" font-size="6">
+                            <xsl:call-template name="show-title-header"/>
+                        </fo:block>
+                        <fo:block>
+                            <fo:leader leader-pattern="rule" leader-length="100%"
+                                rule-thickness="0.1pt"/>
+                        </fo:block>
+                    </fo:static-content>
+                    <fo:static-content flow-name="xsl-region-after">
+                        <fo:block>
+                            <fo:leader leader-pattern="rule" leader-length="100%"
+                                rule-thickness="0.1pt"/>
+                        </fo:block>
+                        <fo:block text-align="end" font-size="6">
+                            <fo:page-number/> / <fo:page-number-citation ref-id="citation"/>
+                        </fo:block>
+                    </fo:static-content>
                     <fo:flow flow-name="xsl-region-body">
                         <xsl:apply-templates select="//hl7:ClinicalDocument"/>
+                        <fo:block id="citation"/>
                     </fo:flow>
                 </fo:page-sequence>
                 <xsl:if test="$nonXML">
@@ -1650,7 +1691,7 @@
             </div>
         </xsl:if>
         <xsl:if test="(contains($vendor, 'Saxonica'))">
-            <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
+            <fo:block xsl:use-attribute-sets="myMargin">
                 <fo:block xsl:use-attribute-sets="myBlock9">
                     <xsl:call-template name="section-title">
                         <xsl:with-param name="level" select="$level"/>
@@ -2495,9 +2536,9 @@
                         </xsl:call-template>
                     </fo:block>
                     <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                        <fo:table-column column-number="1" column-width="47%"/>
+                        <fo:table-column column-number="1" column-width="40%"/>
                         <fo:table-column column-number="2" column-width="25%"/>
-                        <fo:table-column column-number="3" column-width="25%"/>
+                        <fo:table-column column-number="3" column-width="35%"/>
                         <fo:table-body>
                             <xsl:for-each
                                 select="hl7:informant/hl7:relatedEntity[@classCode = 'CAREGIVER']">
@@ -3040,7 +3081,7 @@
                     <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
                         <fo:table-column column-number="1" column-width="45%"/>
                         <fo:table-column column-number="2" column-width="20%"/>
-                        <fo:table-column column-number="3" column-width="30%"/>
+                        <fo:table-column column-number="3" column-width="35%"/>
                         <fo:table-body>
                             <xsl:variable name="number"
                                 select="count(hl7:informant/hl7:relatedEntity[@classCode = 'PAT'])"/>
@@ -3589,8 +3630,8 @@
                         </fo:block>
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
                             <fo:table-column column-number="1" column-width="45%"/>
-                            <fo:table-column column-number="2" column-width="25%"/>
-                            <fo:table-column column-number="3" column-width="25%"/>
+                            <fo:table-column column-number="2" column-width="20%"/>
+                            <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
                                 <xsl:variable name="number"
                                     select="count(hl7:informant/hl7:relatedEntity[@classCode = 'NOK'])"/>
@@ -4140,7 +4181,7 @@
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
                             <fo:table-column column-number="1" column-width="45%"/>
                             <fo:table-column column-number="2" column-width="20%"/>
-                            <fo:table-column column-number="3" column-width="30%"/>
+                            <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
                                 <xsl:variable name="number"
                                     select="count(hl7:informant/hl7:relatedEntity[@classCode = 'ECON'])"/>
@@ -5749,6 +5790,227 @@
         </xsl:if>
     </xsl:template>
 
+
+    <xd:doc>
+        <xd:desc/>
+    </xd:doc>
+    <xsl:template name="show-title-header">
+        <xsl:variable name="documentEffectiveTime">
+            <xsl:call-template name="show-timestamp">
+                <xsl:with-param name="in" select="//hl7:ClinicalDocument/hl7:effectiveTime"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <fo:block>
+            <fo:table xsl:use-attribute-sets="myBorder1" margin-left="0.1">
+                <fo:table-column column-number="1" column-width="80%"/>
+                <fo:table-column column-number="2" column-width="20%"/>
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:choose>
+                                    <!-- CDAr2 DTr1 -->
+                                    <xsl:when
+                                        test="string-length(//hl7:ClinicalDocument/hl7:title) &gt; 0">
+                                        <xsl:value-of select="//hl7:ClinicalDocument/hl7:title"/>
+
+                                    </xsl:when>
+                                    <!-- CDAr3 DTr2 -->
+                                    <xsl:when
+                                        test="string-length(//hl7:ClinicalDocument/hl7:title/@value) &gt; 0">
+                                        <xsl:value-of
+                                            select="//hl7:ClinicalDocument/hl7:title/@value"/>
+                                    </xsl:when>
+                                    <!-- CDAr2 DTr1 -->
+                                    <xsl:when test="//hl7:ClinicalDocument/hl7:code/@displayName">
+                                        <xsl:value-of
+                                            select="//hl7:ClinicalDocument/hl7:code/@displayName"/>
+                                    </xsl:when>
+                                    <!-- CDAr3 DTr2 -->
+                                    <xsl:when
+                                        test="//hl7:ClinicalDocument/hl7:code/hl7:displayName/@value">
+                                        <xsl:value-of
+                                            select="//hl7:ClinicalDocument/hl7:code/hl7:displayName/@value"
+                                        />
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'Clinical Document'"
+                                            />
+                                        </xsl:call-template>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:call-template name="getLocalizedString">
+                                    <xsl:with-param name="pre" select="''"/>
+                                    <xsl:with-param name="key" select="'nameGivenName'"/>
+                                    <xsl:with-param name="post" select="''"/>
+                                </xsl:call-template>
+                                <xsl:text> </xsl:text>
+                                <xsl:for-each
+                                    select="//hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole">
+                                    <xsl:if
+                                        test="hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR']">
+                                        <fo:inline font-weight="bold">
+                                            <xsl:call-template name="show-name-set">
+                                                <xsl:with-param name="in"
+                                                  select="hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR']"
+                                                />
+                                            </xsl:call-template>
+                                        </fo:inline>
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:variable name="count"
+                                            select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
+                                        <xsl:for-each
+                                            select="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
+                                            <xsl:choose>
+                                                <xsl:when test="@qualifier = &apos;BR&apos;">
+                                                  <fo:inline font-weight="normal">
+                                                  <xsl:value-of select="."/>
+                                                  </fo:inline>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                  <fo:inline font-weight="normal">
+                                                  <xsl:value-of select="."/>
+                                                  </fo:inline>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:if test="$count > 1">
+                                                <fo:inline font-weight="normal">
+                                                  <xsl:if
+                                                  test="(position() != last()) and (position() > 1)">
+                                                  <xsl:text>, </xsl:text>
+                                                  </xsl:if>
+                                                  <xsl:if test="position() = 1">
+                                                  <xsl:text> </xsl:text>
+                                                  </xsl:if>
+                                                </fo:inline>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:value-of select="normalize-space($documentEffectiveTime)"/>
+                            </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:call-template name="getLocalizedString">
+                                    <xsl:with-param name="pre" select="''"/>
+                                    <xsl:with-param name="key" select="'administrativeGenderCode'"/>
+                                    <xsl:with-param name="post" select="''"/>
+                                </xsl:call-template>
+                                <xsl:text>: </xsl:text>
+                                <xsl:for-each
+                                    select="//hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole">
+                                    <xsl:if test="hl7:patient/hl7:administrativeGenderCode">
+                                        <xsl:call-template name="show-code-set">
+                                            <xsl:with-param name="in"
+                                                select="hl7:patient/hl7:administrativeGenderCode"/>
+                                        </xsl:call-template>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block/>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:call-template name="getLocalizedString">
+                                    <xsl:with-param name="pre" select="''"/>
+                                    <xsl:with-param name="key" select="'birthTimeLong'"/>
+                                    <xsl:with-param name="post" select="''"/>
+                                </xsl:call-template>
+                                <xsl:text>: </xsl:text>
+                                <xsl:for-each
+                                    select="//hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole">
+                                    <xsl:if test="
+                                            hl7:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | hl7:patient/*[local-name() = 'deceasedTime'] or
+                                            hl7:patient/hl7:birthTime or hl7:patient">
+                                        <xsl:call-template
+                                            name="show-birthDeathTime-multipleBirthDate">
+                                            <xsl:with-param name="in" select="hl7:patient"/>
+                                            <xsl:with-param name="clinicalDocumentEffectiveTime"
+                                                select="ancestor-or-self::hl7:ClinicalDocument/hl7:effectiveTime/@value"
+                                            />
+                                        </xsl:call-template>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block/>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                            <fo:block>
+                                <xsl:call-template name="getLocalizedString">
+                                    <xsl:with-param name="pre" select="''"/>
+                                    <xsl:with-param name="key" select="'MatriculeINS'"/>
+                                    <xsl:with-param name="post" select="''"/>
+                                </xsl:call-template>
+                                <xsl:text> : </xsl:text>
+                                <xsl:for-each
+                                    select="//hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole">
+                                    <xsl:if
+                                        test="hl7:id/@root = '1.2.250.1.213.1.4.8' or hl7:id/@root = '1.2.250.1.213.1.4.9' or hl7:id/@root = '1.2.250.1.213.1.4.10' or hl7:id/@root = '1.2.250.1.213.1.4.11'">
+                                        <xsl:for-each select="hl7:id">
+                                            <xsl:choose>
+                                                <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[NIR]</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[NIA]</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[TEST]</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[DEMO]</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+        </fo:block>
+    </xsl:template>
+
     <xd:doc>
         <xd:desc>
             <xd:p>Show patients, guardians, consents, encounters, serviceEvents, orders and
@@ -6277,7 +6539,7 @@
             <xsl:if test="hl7:recordTarget/hl7:patientRole">
                 <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                     <fo:table xsl:use-attribute-sets="myBorder">
-                        <fo:table-column column-number="1" column-width="30%"/>
+                        <fo:table-column column-number="1" column-width="35%"/>
                         <fo:table-column column-number="2" column-width="50%"/>
                         <fo:table-column column-number="3" column-width="15%"/>
                         <fo:table-body>
@@ -6762,8 +7024,8 @@
             <fo:block line-height="0.6cm">&#160;</fo:block>
             <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                 <fo:table xsl:use-attribute-sets="myBorder">
-                    <fo:table-column column-number="1" column-width="32%"/>
-                    <fo:table-column column-number="2" column-width="63%"/>
+                    <fo:table-column column-number="1" column-width="35%"/>
+                    <fo:table-column column-number="2" column-width="65%"/>
                     <fo:table-body>
                         <xsl:if
                             test="hl7:componentOf/hl7:encompassingEncounter/hl7:responsibleParty/hl7:assignedEntity/hl7:representedOrganization/hl7:name">
@@ -8257,8 +8519,8 @@
                 <xsl:if test="hl7:componentOf/hl7:encompassingEncounter">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
-                        <fo:table width="100%" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                        <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -8296,7 +8558,7 @@
                             </fo:table-body>
                         </fo:table>
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -9789,8 +10051,8 @@
                 <xsl:if test="hl7:documentationOf/hl7:serviceEvent[@classCode | hl7:code]">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
                     <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
-                        <fo:table width="100%" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                        <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -9829,7 +10091,7 @@
                             </fo:table-body>
                         </fo:table>
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -10678,7 +10940,7 @@
                             </xsl:call-template>
                         </fo:block>
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="95%"/>
+                            <fo:table-column column-number="1" column-width="100%"/>
                             <fo:table-body>
                                 <xsl:for-each select="hl7:inFulfillmentOf">
                                     <fo:table-row>
@@ -11640,9 +11902,9 @@
             <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:participant">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
-                    <fo:block xsl:use-attribute-sets="myMargin">
-                        <fo:table width="100%" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                    <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
+                        <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -11679,7 +11941,7 @@
                             </fo:table-body>
                         </fo:table>
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                            <fo:table-column column-number="1" column-width="25%"/>
+                            <fo:table-column column-number="1" column-width="30%"/>
                             <fo:table-column column-number="2" column-width="35%"/>
                             <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
@@ -15804,7 +16066,7 @@
         </xsl:if>
         <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:block line-height="0.4cm">&#160;</fo:block>
-            <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="auto">
+            <fo:block xsl:use-attribute-sets="myMargin" keep-together.within-page="always">
                 <fo:block xsl:use-attribute-sets="myBlock10">
                     <xsl:call-template name="getLocalizedString">
                         <xsl:with-param name="pre" select="''"/>
@@ -15812,8 +16074,8 @@
                         <xsl:with-param name="post" select="''"/>
                     </xsl:call-template>
                 </fo:block>
-                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                    <fo:table-column column-number="1" column-width="25%"/>
+                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1"> 
+                    <fo:table-column column-number="1" column-width="30%"/>
                     <fo:table-column column-number="2" column-width="35%"/>
                     <fo:table-column column-number="3" column-width="35%"/>
                     <fo:table-body>
@@ -20047,7 +20309,7 @@
                         <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
                             <fo:table-column column-number="1" column-width="45%"/>
                             <fo:table-column column-number="2" column-width="20%"/>
-                            <fo:table-column column-number="3" column-width="30%"/>
+                            <fo:table-column column-number="3" column-width="35%"/>
                             <fo:table-body>
                                 <xsl:for-each
                                     select="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian">
@@ -21590,6 +21852,7 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+
 
 
     <xd:doc>
