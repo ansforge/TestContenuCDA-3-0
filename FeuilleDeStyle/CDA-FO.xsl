@@ -57,7 +57,7 @@
         <xsl:attribute name="border">solid 0.1mm black</xsl:attribute>
         <xsl:attribute name="width">100%</xsl:attribute>
     </xsl:attribute-set>
-    
+
     <!-- Extension FR : PDF -->
     <xsl:attribute-set name="myBorder1">
         <xsl:attribute name="border">0</xsl:attribute>
@@ -610,13 +610,13 @@
         <xsl:if test="(contains($vendor, 'Saxonica'))">
             <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
                 <fo:layout-master-set>
-                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
-                        margin-right="0.2in" master-name="first">
+                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in"
+                        margin-bottom="0.2in" margin-right="0.2in" master-name="first">
                         <fo:region-body region-name="xsl-region-body"/>
                         <fo:region-after extent="3mm" region-name="xsl-region-after"/>
                     </fo:simple-page-master>
-                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in" margin-bottom="0.2in"
-                        margin-right="0.2in" master-name="rest">
+                    <fo:simple-page-master margin-top="0.2in" margin-left="0.2in"
+                        margin-bottom="0.2in" margin-right="0.2in" master-name="rest">
                         <fo:region-body margin-top="50pt" region-name="xsl-region-body"/>
                         <fo:region-before extent="10mm" region-name="xsl-region-before"/>
                         <fo:region-after extent="3mm" region-name="xsl-region-after"/>
@@ -16074,7 +16074,7 @@
                         <xsl:with-param name="post" select="''"/>
                     </xsl:call-template>
                 </fo:block>
-                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1"> 
+                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
                     <fo:table-column column-number="1" column-width="30%"/>
                     <fo:table-column column-number="2" column-width="35%"/>
                     <fo:table-column column-number="3" column-width="35%"/>
@@ -22619,34 +22619,35 @@
     </xd:doc>
     <xsl:template name="show-id-ipp-var">
         <xsl:param name="in"/>
+        <xsl:if test="$in[@assigningAuthorityName]">
+            <xsl:copy>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="$in/@assigningAuthorityName"/>
+                </xsl:attribute>
+            </xsl:copy>
+        </xsl:if>
+        <xsl:variable name="extension">
+            <xsl:if test="$in[@extension][@root]">
+                <xsl:choose>
+                    <xsl:when test="$in[contains($mask-ids-var, concat(',', @root, ','))]">
+                        <xsl:copy>
+                            <xsl:attribute name="title">
+                                <xsl:call-template name="show-nullFlavor">
+                                    <xsl:with-param name="in" select="'MSK'"/>
+                                </xsl:call-template>
+                            </xsl:attribute>
+                        </xsl:copy>
+                        <xsl:text>xxx-xxx-xxx</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$in/@extension"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:if>
+        </xsl:variable>
         <xsl:if test="not(contains($in/@root, '1.2.250.1.213.1.4.8'))">
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <span>
-                    <xsl:if test="$in[@assigningAuthorityName]">
-                        <xsl:attribute name="title">
-                            <xsl:value-of select="$in/@assigningAuthorityName"/>
-                        </xsl:attribute>
-                    </xsl:if>
-                    <xsl:variable name="extension">
-                        <xsl:if test="$in[@extension][@root]">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="$in[contains($mask-ids-var, concat(',', @root, ','))]">
-                                    <span>
-                                        <xsl:attribute name="title">
-                                            <xsl:call-template name="show-nullFlavor">
-                                                <xsl:with-param name="in" select="'MSK'"/>
-                                            </xsl:call-template>
-                                        </xsl:attribute>
-                                        <xsl:text>xxx-xxx-xxx</xsl:text>
-                                    </span>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$in/@extension"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:if>
-                    </xsl:variable>
                     <xsl:choose>
                         <xsl:when test="$in[@extension][@root]">
                             <xsl:copy-of select="$extension"/>
@@ -22673,56 +22674,29 @@
                 </span>
             </xsl:if>
             <xsl:if test="(contains($vendor, 'Saxonica'))">
-                <fo:block>
-                    <xsl:if test="$in[@assigningAuthorityName]">
-                        <xsl:attribute name="title">
-                            <xsl:value-of select="$in/@assigningAuthorityName"/>
-                        </xsl:attribute>
-                    </xsl:if>
-                    <xsl:variable name="extension">
-                        <xsl:if test="$in[@extension][@root]">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="$in[contains($mask-ids-var, concat(',', @root, ','))]">
-                                    <span>
-                                        <xsl:attribute name="title">
-                                            <xsl:call-template name="show-nullFlavor">
-                                                <xsl:with-param name="in" select="'MSK'"/>
-                                            </xsl:call-template>
-                                        </xsl:attribute>
-                                        <xsl:text>xxx-xxx-xxx</xsl:text>
-                                    </span>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$in/@extension"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:if>
-                    </xsl:variable>
-                    <xsl:choose>
-                        <xsl:when test="$in[@extension][@root]">
-                            <xsl:copy-of select="$extension"/>
-                            <xsl:call-template name="getLocalizedString">
-                                <xsl:with-param name="pre" select="' ['"/>
-                                <xsl:with-param name="key" select="$in/@root"/>
-                                <xsl:with-param name="post" select="']'"/>
-                            </xsl:call-template>
-                        </xsl:when>
-                        <xsl:when test="$in[@root]">
-                            <xsl:value-of select="$in/@root"/>
-                        </xsl:when>
-                        <xsl:when test="$in[@extension]">
-                            <xsl:copy-of select="$extension"/>
-                        </xsl:when>
-                    </xsl:choose>
-                    <xsl:if test="$in[@nullFlavor]">
-                        <xsl:text>[</xsl:text>
-                        <xsl:call-template name="show-nullFlavor">
-                            <xsl:with-param name="in" select="$in/@nullFlavor"/>
+                <xsl:choose>
+                    <xsl:when test="$in[@extension][@root]">
+                        <xsl:copy-of select="$extension"/>
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="pre" select="' ['"/>
+                            <xsl:with-param name="key" select="$in/@root"/>
+                            <xsl:with-param name="post" select="']'"/>
                         </xsl:call-template>
-                        <xsl:text>]</xsl:text>
-                    </xsl:if>
-                </fo:block>
+                    </xsl:when>
+                    <xsl:when test="$in[@root]">
+                        <xsl:value-of select="$in/@root"/>
+                    </xsl:when>
+                    <xsl:when test="$in[@extension]">
+                        <xsl:copy-of select="$extension"/>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:if test="$in[@nullFlavor]">
+                    <xsl:text>[</xsl:text>
+                    <xsl:call-template name="show-nullFlavor">
+                        <xsl:with-param name="in" select="$in/@nullFlavor"/>
+                    </xsl:call-template>
+                    <xsl:text>]</xsl:text>
+                </xsl:if>
             </xsl:if>
         </xsl:if>
     </xsl:template>
