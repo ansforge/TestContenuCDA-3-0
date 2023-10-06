@@ -998,15 +998,15 @@
     </translation>
     <translation key="sectionAuthor">
         <comment>Label: Section Author</comment>
-        <value lang="en-us">Section Author</value>
-        <value lang="nl-nl">Auteur sectie</value>
-        <value lang="fr-fr">Section Auteur</value>
+        <value lang="en-us">Author</value>
+        <value lang="nl-nl">Auteur</value>
+        <value lang="fr-fr">Auteur</value>
     </translation>
     <translation key="sectionSubject">
         <comment>Label: Section Subject</comment>
-        <value lang="en-us">Section Subject</value>
-        <value lang="nl-nl">Subject sectie</value>
-        <value lang="fr-fr">Section Sujet</value>
+        <value lang="en-us">Subject</value>
+        <value lang="nl-nl">Subject</value>
+        <value lang="fr-fr">Sujet</value>
     </translation>
     <translation key="sectionInformant">
         <comment>Label: Section Informant</comment>

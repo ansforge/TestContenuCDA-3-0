@@ -2022,135 +2022,132 @@
         <xsl:if test="hl7:author">
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <div>
-                    <b>
-                        <xsl:call-template name="getLocalizedString">
-                            <xsl:with-param name="key" select="'sectionAuthor'"/>
-                            <xsl:with-param name="post" select="': '"/>
-                        </xsl:call-template>
-                    </b>
-                    <div>
-                        <ul>
-                            <xsl:for-each select="hl7:author">
-                                <li>
-                                    <xsl:choose>
-                                        <xsl:when test="hl7:assignedAuthor/hl7:assignedPerson">
-                                            <xsl:call-template name="show-name-set">
-                                                <xsl:with-param name="in"
-                                                  select="hl7:assignedAuthor/hl7:assignedPerson/hl7:name"
+                    <ul>
+                        <xsl:for-each select="hl7:author">
+                            <li>
+                                <b>
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'sectionAuthor'"/>
+                                        <xsl:with-param name="post" select="': '"/>
+                                    </xsl:call-template>
+                                </b>
+                                <xsl:choose>
+                                    <xsl:when test="hl7:assignedAuthor/hl7:assignedPerson">
+                                        <xsl:call-template name="show-name-set">
+                                            <xsl:with-param name="in"
+                                                select="hl7:assignedAuthor/hl7:assignedPerson/hl7:name"
+                                            />
+                                        </xsl:call-template>
+                                        <xsl:if
+                                            test="hl7:assignedAuthor/hl7:assignedPerson/hl7:desc">
+                                            <div>
+                                                <xsl:value-of
+                                                  select="hl7:assignedAuthor/hl7:assignedPerson/hl7:desc"
+                                                />
+                                            </div>
+                                        </xsl:if>
+                                        <xsl:if
+                                            test="hl7:assignedAuthor/hl7:assignedPerson/hl7:birthTime">
+                                            <xsl:text> </xsl:text>
+                                            <xsl:call-template name="getLocalizedString">
+                                                <xsl:with-param name="key" select="'birthTimeLong'"
                                                 />
                                             </xsl:call-template>
-                                            <xsl:if
-                                                test="hl7:assignedAuthor/hl7:assignedPerson/hl7:desc">
-                                                <div>
-                                                  <xsl:value-of
-                                                  select="hl7:assignedAuthor/hl7:assignedPerson/hl7:desc"
-                                                  />
-                                                </div>
-                                            </xsl:if>
-                                            <xsl:if
-                                                test="hl7:assignedAuthor/hl7:assignedPerson/hl7:birthTime">
-                                                <xsl:text> </xsl:text>
-                                                <xsl:call-template name="getLocalizedString">
-                                                  <xsl:with-param name="key"
-                                                  select="'birthTimeLong'"/>
-                                                </xsl:call-template>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:call-template name="show-timestamp">
-                                                  <xsl:with-param name="in"
-                                                  select="hl7:assignedAuthor/hl7:assignedPerson/hl7:birthTime"
-                                                  />
-                                                </xsl:call-template>
-                                            </xsl:if>
-                                        </xsl:when>
-                                        <xsl:when
-                                            test="hl7:assignedAuthor/hl7:assignedAuthoringDevice">
-                                            <xsl:value-of
-                                                select="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName"
-                                            />
-                                        </xsl:when>
-                                        <xsl:when
-                                            test="hl7:assignedAuthor/hl7:assignedDevice/hl7:softwareName">
-                                            <xsl:value-of
-                                                select="hl7:assignedAuthor/hl7:assignedDevice/hl7:softwareName/@value"
-                                            />
-                                        </xsl:when>
-                                        <xsl:when test="hl7:assignedAuthor/hl7:id">
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'id'"/>
-                                                <xsl:with-param name="post" select="': '"/>
-                                            </xsl:call-template>
-                                            <xsl:call-template name="show-id-set">
+                                            <xsl:text> </xsl:text>
+                                            <xsl:call-template name="show-timestamp">
                                                 <xsl:with-param name="in"
-                                                  select="hl7:assignedAuthor/hl7:id"/>
+                                                  select="hl7:assignedAuthor/hl7:assignedPerson/hl7:birthTime"
+                                                />
                                             </xsl:call-template>
-                                        </xsl:when>
-                                    </xsl:choose>
-                                    <xsl:if test="hl7:assignedAuthor/hl7:code">
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <xsl:when test="hl7:assignedAuthor/hl7:assignedAuthoringDevice">
+                                        <xsl:value-of
+                                            select="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName"
+                                        />
+                                    </xsl:when>
+                                    <xsl:when
+                                        test="hl7:assignedAuthor/hl7:assignedDevice/hl7:softwareName">
+                                        <xsl:value-of
+                                            select="hl7:assignedAuthor/hl7:assignedDevice/hl7:softwareName/@value"
+                                        />
+                                    </xsl:when>
+                                    <xsl:when test="hl7:assignedAuthor/hl7:id">
                                         <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="pre" select="' - '"/>
-                                            <xsl:with-param name="key" select="'code'"/>
+                                            <xsl:with-param name="key" select="'id'"/>
                                             <xsl:with-param name="post" select="': '"/>
                                         </xsl:call-template>
-                                        <xsl:call-template name="show-code-set">
+                                        <xsl:call-template name="show-id-set">
                                             <xsl:with-param name="in"
-                                                select="hl7:assignedAuthor/hl7:code"/>
+                                                select="hl7:assignedAuthor/hl7:id"/>
                                         </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:choose>
-                                        <xsl:when
-                                            test="hl7:assignedAuthor/hl7:representedOrganization/hl7:name">
-                                            <xsl:text>, </xsl:text>
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'organization'"/>
-                                                <xsl:with-param name="post" select="': '"/>
-                                            </xsl:call-template>
-                                            <xsl:call-template name="show-name-set">
-                                                <xsl:with-param name="in"
-                                                  select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"
-                                                />
-                                            </xsl:call-template>
-                                        </xsl:when>
-                                        <xsl:when
-                                            test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id">
-                                            <xsl:text>, </xsl:text>
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="key" select="'organization'"/>
-                                                <xsl:with-param name="post" select="': '"/>
-                                            </xsl:call-template>
-                                            <xsl:call-template name="show-id-set">
-                                                <xsl:with-param name="in"
-                                                  select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id"
-                                                />
-                                            </xsl:call-template>
-                                        </xsl:when>
-                                    </xsl:choose>
-                                    <xsl:if test="hl7:assignedAuthor/hl7:telecom">
-                                        <xsl:if test="not(contains($vendor, 'Saxonica'))">
-                                            <br/>
-                                        </xsl:if>
-                                        <xsl:if test="(contains($vendor, 'Saxonica'))">
-                                            <fo:block line-height="0.1cm">&#160;</fo:block>
-                                        </xsl:if>
-                                        <xsl:call-template name="show-telecom-set">
+                                    </xsl:when>
+                                </xsl:choose>
+                                <xsl:if test="hl7:assignedAuthor/hl7:code">
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="pre" select="' - '"/>
+                                        <xsl:with-param name="key" select="'code'"/>
+                                        <xsl:with-param name="post" select="': '"/>
+                                    </xsl:call-template>
+                                    <xsl:call-template name="show-code-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:assignedAuthor/hl7:code"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:choose>
+                                    <xsl:when
+                                        test="hl7:assignedAuthor/hl7:representedOrganization/hl7:name">
+                                        <xsl:text>, </xsl:text>
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'organization'"/>
+                                            <xsl:with-param name="post" select="': '"/>
+                                        </xsl:call-template>
+                                        <xsl:call-template name="show-name-set">
                                             <xsl:with-param name="in"
-                                                select="hl7:assignedAuthor/hl7:telecom"/>
+                                                select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"
+                                            />
                                         </xsl:call-template>
+                                    </xsl:when>
+                                    <xsl:when
+                                        test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id">
+                                        <xsl:text>, </xsl:text>
+                                        <xsl:call-template name="getLocalizedString">
+                                            <xsl:with-param name="key" select="'organization'"/>
+                                            <xsl:with-param name="post" select="': '"/>
+                                        </xsl:call-template>
+                                        <xsl:call-template name="show-id-set">
+                                            <xsl:with-param name="in"
+                                                select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id"
+                                            />
+                                        </xsl:call-template>
+                                    </xsl:when>
+                                </xsl:choose>
+                                <xsl:if test="hl7:assignedAuthor/hl7:telecom">
+                                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                        <br/>
                                     </xsl:if>
-                                </li>
-                            </xsl:for-each>
-                        </ul>
-                    </div>
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                        <fo:block line-height="0.1cm">&#160;</fo:block>
+                                    </xsl:if>
+                                    <xsl:call-template name="show-telecom-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:assignedAuthor/hl7:telecom"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                            </li>
+                        </xsl:for-each>
+                    </ul>
                 </div>
             </xsl:if>
             <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
-                    <fo:block font-weight="bold">
+                    <fo:inline font-weight="bold">
                         <xsl:call-template name="getLocalizedString">
                             <xsl:with-param name="key" select="'sectionAuthor'"/>
                             <xsl:with-param name="post" select="': '"/>
                         </xsl:call-template>
-                    </fo:block>
-                    <fo:block>
+                    </fo:inline>
+                    <fo:inline font-weight="normal">
                         <xsl:for-each select="hl7:author">
                             <xsl:choose>
                                 <xsl:when test="hl7:assignedAuthor/hl7:assignedPerson">
@@ -2246,7 +2243,7 @@
                                 </xsl:call-template>
                             </xsl:if>
                         </xsl:for-each>
-                    </fo:block>
+                    </fo:inline>
                 </fo:block>
             </xsl:if>
         </xsl:if>
@@ -4467,122 +4464,112 @@
         <xsl:if test="hl7:subject">
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <div>
-                    <b>
-                        <xsl:call-template name="getLocalizedString">
-                            <xsl:with-param name="key" select="'sectionSubject'"/>
-                            <xsl:with-param name="post" select="': '"/>
-                        </xsl:call-template>
-                    </b>
-                    <div>
-                        <ul>
-                            <xsl:for-each select="hl7:subject">
-                                <li>
-                                    <xsl:if test="hl7:relatedSubject/hl7:subject/hl7:name">
-                                        <xsl:call-template name="show-name-set">
+                    <ul>
+                        <xsl:for-each select="hl7:subject">
+                            <li>
+                                <b>
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'sectionSubject'"/>
+                                        <xsl:with-param name="post" select="' : '"/>
+                                    </xsl:call-template>
+                                </b>
+                                <xsl:if test="hl7:relatedSubject/hl7:subject/hl7:name">
+                                    <xsl:call-template name="show-name-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:subject/hl7:name"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if test="hl7:relatedSubject/hl7:code">
+                                    <xsl:call-template name="getLocalizedString"> </xsl:call-template>
+                                    <xsl:call-template name="show-code-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:code"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if
+                                    test="hl7:relatedSubject/hl7:subject[*[local-name() = 'birthTime'] | *[local-name() = 'deceasedInd'] | *[local-name() = 'birthdeceasedTime'] | *[local-name() = 'multipleBirthInd'] | *[local-name() = 'multipleBirthOrderNumber']]">
+                                    <xsl:text>, </xsl:text>
+                                    <xsl:call-template name="show-birthDeathTime-multipleBirth">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:subject"/>
+                                        <xsl:with-param name="clinicalDocumentEffectiveTime"
+                                            select="ancestor-or-self::hl7:ClinicalDocument/hl7:effectiveTime/@value"
+                                        />
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if
+                                    test="hl7:relatedSubject/hl7:subject/hl7:administrativeGenderCode">
+                                    <xsl:text>, </xsl:text>
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key"
+                                            select="'administrativeGenderCode'"/>
+                                        <xsl:with-param name="post" select="': '"/>
+                                    </xsl:call-template>
+                                    <xsl:call-template name="show-code-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:subject/hl7:administrativeGenderCode"
+                                        />
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if test="
+                                        hl7:relatedSubject/hl7:subject/hl7:raceCode |
+                                        hl7:relatedSubject/hl7:subject/sdtc:raceCode">
+                                    <xsl:text>, </xsl:text>
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'Race'"/>
+                                        <xsl:with-param name="post" select="': '"/>
+                                    </xsl:call-template>
+                                    <xsl:call-template name="show-code-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:subject/hl7:raceCode | hl7:relatedSubject/hl7:subject/sdtc:raceCode"
+                                        />
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if test="
+                                        hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode |
+                                        hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode">
+                                    <xsl:text>, </xsl:text>
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'Ethnicity'"/>
+                                        <xsl:with-param name="post" select="': '"/>
+                                    </xsl:call-template>
+                                    <xsl:call-template name="show-code-set">
+                                        <xsl:with-param name="in"
+                                            select="hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode | hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode"
+                                        />
+                                    </xsl:call-template>
+                                </xsl:if>
+                                <xsl:if test="hl7:relatedSubject/hl7:telecom">
+                                    <div>
+                                        <xsl:call-template name="show-telecom-set">
                                             <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:subject/hl7:name"/>
+                                                select="hl7:relatedSubject/hl7:telecom"/>
                                         </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if test="hl7:relatedSubject/hl7:code">
-                                        <xsl:text> - </xsl:text>
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'code'"/>
-                                            <xsl:with-param name="post" select="': '"/>
-                                        </xsl:call-template>
-                                        <xsl:call-template name="show-code-set">
-                                            <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:code"/>
-                                        </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="hl7:relatedSubject/hl7:subject[*[local-name() = 'birthTime'] | *[local-name() = 'deceasedInd'] | *[local-name() = 'birthdeceasedTime'] | *[local-name() = 'multipleBirthInd'] | *[local-name() = 'multipleBirthOrderNumber']]">
-                                        <xsl:text>, </xsl:text>
-                                        <xsl:call-template name="show-birthDeathTime-multipleBirth">
-                                            <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:subject"/>
-                                            <xsl:with-param name="clinicalDocumentEffectiveTime"
-                                                select="ancestor-or-self::hl7:ClinicalDocument/hl7:effectiveTime/@value"
-                                            />
-                                        </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="hl7:relatedSubject/hl7:subject/hl7:administrativeGenderCode">
-                                        <xsl:text>, </xsl:text>
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key"
-                                                select="'administrativeGenderCode'"/>
-                                            <xsl:with-param name="post" select="': '"/>
-                                        </xsl:call-template>
-                                        <xsl:call-template name="show-code-set">
-                                            <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:subject/hl7:administrativeGenderCode"
-                                            />
-                                        </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if test="
-                                            hl7:relatedSubject/hl7:subject/hl7:raceCode |
-                                            hl7:relatedSubject/hl7:subject/sdtc:raceCode">
-                                        <xsl:text>, </xsl:text>
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'Race'"/>
-                                            <xsl:with-param name="post" select="': '"/>
-                                        </xsl:call-template>
-                                        <xsl:call-template name="show-code-set">
-                                            <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:subject/hl7:raceCode | hl7:relatedSubject/hl7:subject/sdtc:raceCode"
-                                            />
-                                        </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if test="
-                                            hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode |
-                                            hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode">
-                                        <xsl:text>, </xsl:text>
-                                        <xsl:call-template name="getLocalizedString">
-                                            <xsl:with-param name="key" select="'Ethnicity'"/>
-                                            <xsl:with-param name="post" select="': '"/>
-                                        </xsl:call-template>
-                                        <xsl:call-template name="show-code-set">
-                                            <xsl:with-param name="in"
-                                                select="hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode | hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode"
-                                            />
-                                        </xsl:call-template>
-                                    </xsl:if>
-                                    <xsl:if test="hl7:relatedSubject/hl7:telecom">
-                                        <div>
-                                            <xsl:call-template name="show-telecom-set">
-                                                <xsl:with-param name="in"
-                                                  select="hl7:relatedSubject/hl7:telecom"/>
-                                            </xsl:call-template>
-                                        </div>
-                                    </xsl:if>
-                                </li>
-                            </xsl:for-each>
-                        </ul>
-                    </div>
+                                    </div>
+                                </xsl:if>
+                            </li>
+                        </xsl:for-each>
+                    </ul>
                 </div>
             </xsl:if>
             <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <fo:block>
-                    <fo:block font-weight="bold">
+                    <fo:inline font-weight="bold">
                         <xsl:call-template name="getLocalizedString">
                             <xsl:with-param name="key" select="'sectionSubject'"/>
                             <xsl:with-param name="post" select="': '"/>
                         </xsl:call-template>
-                    </fo:block>
-                    <fo:block>
+                    </fo:inline>
+                    <fo:inline font-weight="normal">
                         <xsl:for-each select="hl7:subject">
                             <xsl:if test="hl7:relatedSubject/hl7:subject/hl7:name">
                                 <xsl:call-template name="show-name-set">
                                     <xsl:with-param name="in"
                                         select="hl7:relatedSubject/hl7:subject/hl7:name"/>
                                 </xsl:call-template>
+                                <xsl:text> - </xsl:text>
                             </xsl:if>
                             <xsl:if test="hl7:relatedSubject/hl7:code">
-                                <xsl:text> - </xsl:text>
-                                <xsl:call-template name="getLocalizedString">
-                                    <xsl:with-param name="key" select="'code'"/>
-                                    <xsl:with-param name="post" select="': '"/>
-                                </xsl:call-template>
                                 <xsl:call-template name="show-code-set">
                                     <xsl:with-param name="in" select="hl7:relatedSubject/hl7:code"/>
                                 </xsl:call-template>
@@ -4646,7 +4633,7 @@
                                 </xsl:call-template>
                             </xsl:if>
                         </xsl:for-each>
-                    </fo:block>
+                    </fo:inline>
                 </fo:block>
             </xsl:if>
         </xsl:if>
