@@ -1503,43 +1503,8 @@
           <id root="C4544707-DA56-4AD5-8672-37E2B0A3AAC3" />
           <code code="47420-5" displayName="Évaluation du statut fonctionnel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Évaluation du statut fonctionnel</title>
-          <text>
-            <table border="0">
-              <thead>
-                <tr>
-                  <th colspan="3">Échelle de performance OMS</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>15/02/2019</td>
-                  <td>
-                    <content ID="performance-OMS">Grade 0</content>
-                  </td>
-                  <td>Capable d'une activité identique à celle précédant la maladie sans aucune
-                    restriction.</td>
-                </tr>
-              </tbody>
-            </table>
-            <br />
-            <table border="0">
-              <thead>
-                <tr>
-                  <th colspan="3">Dépistage de la fragilité gériatrique (Age &gt; ou = à 75
-                    ans)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>15/02/2019</td>
-                  <td>Score 2</td>
-                  <td>
-                    <content ID="depistage-fragilite">Nom de l'outil de dépistage</content>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </text>
+          <text/>
+          
           <!-- Sous-section FR-Evaluation-de-la-douleur [1..1] : non porteur d'information dans la FRCP -->
           <component>
             <section>
@@ -1580,7 +1545,25 @@
               <templateId root="1.2.250.1.213.1.1.2.115" />
               <id root="C949ED42-E76D-4F42-A3F0-9AF56B14836E" />
               <code code="46006-3" displayName="Problèmes physiques fonctionnels et structurels" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text />
+              <text >
+                  <table border="0">
+                    <thead>
+                      <tr>
+                        <th colspan="3">Échelle de performance OMS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>15/02/2019</td>
+                        <td>
+                          <content ID="performance-OMS">Grade 0</content>
+                        </td>
+                        <td>Capable d'une activité identique à celle précédant la maladie sans aucune
+                          restriction.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </text>
               <entry>
                 <!-- Entrée FR-Evaluation [0..*] : Échelle de performance OMS -->
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
@@ -1616,7 +1599,25 @@
               <templateId root="1.2.250.1.213.1.1.2.114" />
               <id root="83CC113C-7D76-41B7-A9CF-3E3F5809D7F8" />
               <code code="48542-5" displayName="Évaluation de la dépression gériatrique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text />
+              <text>
+                <table border="0">
+                  <thead>
+                    <tr>
+                      <th colspan="3">Dépistage de la fragilité gériatrique (Age &gt; ou = à 75
+                        ans)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15/02/2019</td>
+                      <td>Score 2</td>
+                      <td>
+                        <content ID="depistage-fragilite">Nom de l'outil de dépistage</content>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
               <!-- Entrée FR-Score-Depression-Geriatrique [1..*] : Dépistage de la fragilité gériatrique -->
               <entry>
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">

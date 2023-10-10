@@ -796,14 +796,6 @@
                       PDGFRA, PIK3R1, PTEN, STK11T</content>
                   </td>
                 </tr>
-                <tr>
-                  <td>Motif de l'analyse demandée</td>
-                  <td>
-                    <content ID="motifExamen" styleCode="Bold">Recherche de mutations somatiques dans
-                      le cadre de la prise en charge thérapeutique d'un patient atteint d'un
-                      adénocarcinome pulmonaire</content>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </text>
@@ -895,7 +887,20 @@
               <templateId root="1.2.250.1.213.1.1.2.127" />
               <id root="744852E2-0AEE-47A2-8C3E-4D407E1C3489" />
               <code code="42349-1" displayName="Raison de la recommandation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text />
+              <title>Motif de l'analyse demandée</title>
+              <text >
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <content ID="motifExamen" styleCode="Bold">Recherche de mutations somatiques dans
+                          le cadre de la prise en charge thérapeutique d'un patient atteint d'un
+                          adénocarcinome pulmonaire</content>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
             </section>
           </component>
         </section>

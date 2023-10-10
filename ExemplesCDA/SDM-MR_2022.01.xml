@@ -995,6 +995,11 @@
           <!-- Partie narrative de la section -->
           <text>
             <table border="0">
+              <thead>
+                <tr>
+                  <th align="center" colspan="2">Diagnostic</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td>Identifiant du diagnostic</td>
@@ -1388,46 +1393,8 @@
           <id root="6554933B-73F7-4704-962F-5505684E8EC9" />
           <code code="57075-4" displayName="Informations sur l'accouchement et le nouveau-né" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Informations anté et néonatale</title>
-          <text>
-            <table border="0">
-              <tbody>
-                <tr>
-                  <td ID="assistance_procreation">Assistance médicale à la
-										procréation</td>
-                  <td>Oui</td>
-                </tr>
-                <tr>
-                  <td ID="poids">Poids</td>
-                  <td colspan="2">2500 g</td>
-                </tr>
-                <tr>
-                  <td ID="taille">Taille</td>
-                  <td colspan="2">40 cm</td>
-                </tr>
-                <tr>
-                  <td ID="perimetre_cranien">Périmètre cranien</td>
-                  <td colspan="2">17 cm</td>
-                </tr>
-                <tr>
-                  <td>Naissance à terme</td>
-                  <td colspan="2">Non</td>
-                </tr>
-                <tr>
-                  <td>Nombre de semaines avant terme</td>
-                  <td colspan="2">2</td>
-                </tr>
-                <tr>
-                  <td>Présence de malformations anténatales</td>
-                  <td colspan="2">Oui</td>
-                </tr>
-                <tr>
-                  <td ID="presence_malformations_antenatales">Type de
-										malformation</td>
-                  <td colspan="2">unique</td>
-                </tr>
-              </tbody>
-            </table>
-          </text>
+          <text/>
+          
           <!-- [0..1] Sous-section FR-Actes-et-interventions : Assistance médicale de la procréation -->
           <component>
             <section>
@@ -1438,7 +1405,22 @@
               <id root="B2BD9B52-3D08-436E-8E32-6EB1B0978E5D" />
               <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" displayName="Actes" codeSystemName="LOINC" />
               <title>Actes et interventions</title>
-              <text />
+              <text >
+                <table>
+                  <thead>
+                    <tr>
+                      <th align="center" colspan="2">Actes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    <td ID="assistance_procreation">Assistance médicale à la
+                      procréation</td>
+                    <td>Oui</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
               <!-- [1..1] Entrée FR-Acte : Assistance médicale à la procréation -->
               <entry>
                 <procedure classCode="PROC" moodCode="EVN">
@@ -1490,7 +1472,29 @@
                   <id root="0D5E6476-E8FC-4475-A6C7-56ACFC2EF60C" />
                   <code code="8716-3" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <title>Signes vitaux</title>
-                  <text />
+                  <text >
+                    <table>
+                      <thead>
+                        <tr>
+                          <th align="center" colspan="2">Signes vitaux</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td ID="poids">Poids</td>
+                          <td colspan="2">2500 g</td>
+                        </tr>
+                        <tr>
+                          <td ID="taille">Taille</td>
+                          <td colspan="2">40 cm</td>
+                        </tr>
+                        <tr>
+                          <td ID="perimetre_cranien">Périmètre cranien</td>
+                          <td colspan="2">17 cm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </text>
                   <!-- [1..1] Entrée Signes vitaux -->
                   <entry>
                     <organizer classCode="CLUSTER" moodCode="EVN">
@@ -1587,7 +1591,34 @@
               <id root="5F2649BE-0BED-4AD2-897A-2A4324BEA2FE" />
               <code code="42545-4" displayName="Evènements observés" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <title>Evènements observés</title>
-              <text />
+              <text>
+                <table>
+                  <thead>
+                    <tr>
+                      <th align="center" colspan="2">Résultats d'évènements</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Naissance à terme</td>
+                      <td colspan="2">Non</td>
+                    </tr>
+                    <tr>
+                      <td>Nombre de semaines avant terme</td>
+                      <td colspan="2">2</td>
+                    </tr>
+                    <tr>
+                      <td>Présence de malformations anténatales</td>
+                      <td colspan="2">Oui</td>
+                    </tr>
+                    <tr>
+                      <td ID="presence_malformations_antenatales">Type de
+                        malformation</td>
+                      <td colspan="2">unique</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
               <!-- [0..1] Entrée FR-Simple-Observation : Nombre de semaines de grossesse si le patient n'est pas né à terme -->
               <entry>
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
@@ -1645,6 +1676,11 @@
           <title>Antécédents familiaux</title>
           <text>
             <table border="0">
+              <thead>
+                <tr>
+                  <th align="center" colspan="2">Historique des pathologies familiales</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td>Identifiant du propositus</td>
@@ -1724,6 +1760,11 @@
           <title>Dossier</title>
           <text>
             <table border="0">
+              <thead>
+                <tr>
+                  <th align="center" colspan="2">Dossier</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td ID="idDossier">Identifiant du dossier</td>
