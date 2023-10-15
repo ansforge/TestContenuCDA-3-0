@@ -1495,9 +1495,9 @@
 					<!-- Conformité FR-Document-PDF-copie (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.243"/>
 					<id root="770B0DC2-A6B8-468E-8432-632B18D35F68"/>
-					<code code="GEN-311" displayName="Copie PDF du document"
-						codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-					<title>Copie PDF du document</title>
+					<code code="55108-5" displayName="Copie du document"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                       <title>Copie du document</title>
 					<text>
 						<table border="0">							
 							<tbody>
