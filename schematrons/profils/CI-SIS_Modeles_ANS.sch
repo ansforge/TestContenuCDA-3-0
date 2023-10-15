@@ -75,6 +75,7 @@
     <include href="../include/sections/S_codeABarres_ANS.sch"/>
     <include href="../include/sections/S_conclusionCRGM_ANS.sch"/>
     <include href="../include/sections/S_problemesActifsNonCode_ANS.sch"/>
+    <include href="../include/sections/S_documentPDFCopie_ANS.sch"/>
     
     <!-- Entrées créées par l'ANS -->
     
@@ -162,6 +163,7 @@
         <active pattern="S_codeAbarres_ANS"/>
         <active pattern="S_conclusionGRGM_ANS"/>
         <active pattern="S_problemesActifsNonCode_ANS"/>
+        <active pattern="S_documentPDFCopie_ANS"></active>
  
         <!-- Activation des entrées  -->
         <active pattern="E_dispositifMedical-2_ANS"/>
