@@ -29,13 +29,13 @@
         </assert>
         
         <!-- Vérifier le code de la section -->
-        <assert test='cda:code[@code = "GEN-311"]'>
-            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : Le code de cette section doit être 'GEN-311'
+        <assert test='cda:code[@code ="55108-5"]'>
+            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : Le code de cette section doit être '55108-5'
         </assert>
 
-        <assert test='cda:code[@codeSystem = "1.2.250.1.213.1.1.4.322"]'> 
-            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : Le code de la section doit être un code TA_ASIP  
-            (1.2.250.1.213.1.1.4.322). 
+        <assert test='cda:code[@codeSystem = "2.16.840.1.113883.6.1"]'> 
+            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : Le code de la section doit être un code 'LOINC'  
+            (2.16.840.1.113883.6.1). 
         </assert> 
         
         <assert test='//cda:templateId[@root = "1.2.250.1.213.1.1.3.18"]'> 
