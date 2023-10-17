@@ -5291,7 +5291,7 @@
 			<xsl:element name="a">
 				<xsl:attribute name="target">_blank</xsl:attribute>
 				<xsl:attribute name="href">
-					<xsl:value-of select="."/>
+					<xsl:value-of select="@href"/>
 				</xsl:attribute>
 				<xsl:value-of select="."/>
 			</xsl:element>
