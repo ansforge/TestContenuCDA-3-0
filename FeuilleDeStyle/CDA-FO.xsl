@@ -4685,7 +4685,6 @@
     </xd:doc>
     <xsl:template match="hl7:linkHtml">
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
-            <br/>
             <xsl:element name="a">
                 <xsl:attribute name="target">_blank</xsl:attribute>
                 <xsl:attribute name="href">
@@ -4695,7 +4694,6 @@
             </xsl:element>
         </xsl:if>
         <xsl:if test="(contains($vendor, 'Saxonica'))">
-            <fo:block line-height="0.1cm">&#160;</fo:block>
             <fo:basic-link show-destination="new">
                 <xsl:attribute name="external-destination">
                     <xsl:value-of select="@href"/>
