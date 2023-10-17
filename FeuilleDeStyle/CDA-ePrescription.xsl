@@ -3624,15 +3624,19 @@
     <xsl:template match="hl7:linkHtml">
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <xsl:element name="a">
-                <xsl:apply-templates select="." mode="handleSectionTextAttributes">
-                    <xsl:with-param name="class">linkHtml</xsl:with-param>
-                </xsl:apply-templates>
-                <xsl:apply-templates/>
+                <xsl:attribute name="target">_blank</xsl:attribute>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="."/>
+                </xsl:attribute>
+                <xsl:value-of select="."/>
             </xsl:element>
         </xsl:if>
-        <xsl:if test="contains($vendor, 'Saxonica')">
-            <fo:basic-link external-destination="{@href}" target-presentation-context="_blank">
-                <xsl:apply-templates/>
+        <xsl:if test="(contains($vendor, 'Saxonica'))">
+            <fo:basic-link show-destination="new">
+                <xsl:attribute name="external-destination">
+                    <xsl:value-of select="@href"/>
+                </xsl:attribute>
+                <xsl:value-of select="@href"/>
             </fo:basic-link>
             <fo:block line-height="0.1cm">&#160;</fo:block>
         </xsl:if>
@@ -15182,7 +15186,6 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
-
 
     <xd:doc>
         <xd:desc>
