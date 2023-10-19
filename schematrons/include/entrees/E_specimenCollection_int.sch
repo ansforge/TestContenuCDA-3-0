@@ -10,7 +10,6 @@
     02/07/2018 : NMA : Suppression du test sur le code de l'entrée
     12/07/2018 : NMA : Suppression du test sur la présence du code de la playingEntity
     30/01/2020 : NMA : Suppression du test sur le nombre de templateId
-    18/10/2023 : MAJ du schematron : MAJ du test sur la présence du participant
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_specimenCollection_int">
@@ -20,7 +19,7 @@
         
         <let name="count_targetSiteCode" value="count(cda:targetSiteCode)"/>
         <let name="count_performer" value="count(cda:performer)"/>
-        <let name="count_participant" value="count(cda:participant[@typeCode='PRD'])"/>
+        <let name="count_participant" value="count(cda:participant)"/>
         <let name="count_participant_id" value="count(cda:participant/cda:participantRole/cda:id)"/>
         <let name="count_entryRelationShip_act" value="count(cda:entryRelationship/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1.3'])"/>
         
@@ -36,12 +35,15 @@
         <assert test="$count_performer &lt;=1">
             [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément perfermer ne peut être présent q'une seule fois au maximum (cardinalité [0..1])
         </assert>
-        <assert test="$count_participant &gt;=1">
-            [E_specimenCollection_int.sch] Erreur de conformité : L'élément particpant est présent, une ou plusieurs fois (cardinalité [1..*])
+        <assert test="$count_participant =1">
+            [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément particpant doit être présent, et une seule fois (cardinalité [1..1])
         </assert>
         <assert test="$count_participant_id=1">
-            [E_specimenCollection_int.sch] Erreur de conformité : L'élément id de participantRole doit être présent, masi qu'une seule fois (cardinalité [1..1])
+            [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément id de participantRole doit être présent, masi qu'une seule fois (cardinalité [1..1])
         </assert>
+        <!--<assert test="cda:participant/cda:participantRole/cda:playingEntity/cda:code">
+            [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément participantRole/playingEntity/code doit être présent
+        </assert>-->
         <assert test="$count_entryRelationShip_act &lt;=1">
             [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'entryRelationShip act de templateId '1.3.6.1.4.1.19376.1.3.1.3' ne peut être présente qu'une seule fois au maximum (cardinalité [0..1])
         </assert>
