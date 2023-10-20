@@ -42,7 +42,8 @@
      	21/07/2021 : Correction de l'unité pour la consommation de tabac par "{pack}/a" (au lieu de "PA") et de l'unité pour {tbl} par {tablet}
      	02/12/2022 : Remplacement code SNOMED 3.5 "G-1009" (Diagnostic) par code SNOMED CT "282291009" (interprétation diagnostique)
      	             Remplacement terminologie voie d'administration pour les traitements par EDQM Standards terms.  
-     	14/09/2023 : Nouvelle version 2023.01 : Ajout de la Section FR-Document-PDF-copie [1..1]
+     	14/09/2023 : Nouvelle version 2023.01 : Ajout de la Section FR-Document-PDF-copie [0..1]
+        17/10/2023 : Modification du code de la Section FR-Document-PDF-copie
       **********************************************************************************************************
    -->	
 
@@ -1489,7 +1490,7 @@
 				</section>
 			</component>
 		
-			<!-- [1..1] Section FR-Document-PDF-copie -->
+			<!-- [0..1] Section FR-Document-PDF-copie -->
 			<component>
 				<section>
 					<!-- Conformité FR-Document-PDF-copie (CI-SIS) -->
@@ -1532,7 +1533,7 @@
 									<text><reference value="#doc1"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime nullFlavor="NA"/>
-									<value xsi:type="CD" code="GEN-311" displayName="Copie PDF du document" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+									<value xsi:type="CD" code="55108-5" displayName="Copie du document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 								</observation>
 							</component>
 							<!-- [1..1] Entrée ObservationMedia -->
