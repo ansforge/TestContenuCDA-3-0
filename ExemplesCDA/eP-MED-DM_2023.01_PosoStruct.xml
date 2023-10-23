@@ -1,0 +1,1803 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
+<?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
+<?oxygen SCHSchema="../schematrons/CI-SIS_EP-MED-DM_2023.01.sch"?>
+<!-- 
+    **********************************************************************************************************
+    Document : ePrescription de médicaments et/ou de dispositifs médicaux (eP-MED-DM_2023.01)
+    Auteur : ANS 
+    **********************************************************************************************************
+    format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
+    **********************************************************************************************************
+    Historique :
+    - 02/12/2022 : Création exemple avec posologie structurée
+    - 15/09/2023 : Nouvelle version 2023.01 : Ajout de la Section FR-Document-PDF-copie [0..1]
+    - 17/10/2023 : Modification du code de la Section FR-Document-PDF-copie
+    
+    **********************************************************************************************************
+-->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd"
+  xmlns="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm:medication">
+  <!-- 
+    ********************************************************
+    *              En-tête du document                     *
+    ********************************************************
+    -->
+  <!-- Périmètre d'utilisation -->
+  <realmCode code="FR"/>
+  <!-- Référence au standard CDA R2 -->
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <!-- Conformité spécifications HL7 France -->
+  <templateId root="2.16.840.1.113883.2.8.2.1"/>
+  <!-- Conformité spécifications au CI-SIS -->
+  <templateId root="1.2.250.1.213.1.1.1.1"/>
+  <!-- Conformité au Volet IHE Pharm suppl. PRE -->
+  <templateId root="1.3.6.1.4.1.19376.1.9.1.1.1"/>
+  <!-- Conformité au volet IHE PCC -->
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+  <!-- Conformité au modèle de document eP-MED-DM_2023.01 -->
+  <templateId root="1.2.250.1.213.1.1.1.39" extension="2023.01"/>  
+  <!-- Identifiant du document CDA -->
+  <id root="1.2.250.1.213.1.1.1.39.1.1"/>
+  <!-- Type de document -->
+  <code code="57833-6" displayName="Prescription de produits de santé" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <!-- Titre du document -->
+  <title>Prescription de médicaments et/ou de dispositifs médicaux </title>
+  <!-- Date de création du document = Date de rédaction de la prescription -->
+  <effectiveTime value="20211201093000+0100"/>
+  <!-- Niveau de confidentialité du document -->
+  <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+  <!-- Langue du document -->
+  <languageCode code="fr-FR"/>
+  <!-- Identifiant commun à toutes les versions successives du document -->
+  <setId root="1.2.250.1.213.1.1.1.39.1"/>
+  <!-- Numéro de la version du présent document (entier positif) -->
+  <versionNumber value="1"/>
+
+  <!-- Patient -->
+  <recordTarget>
+    <patientRole>
+      <!-- INS-NIR de production : 1.2.250.1.213.1.4.8 -->
+      <id extension="277076322082910" root="1.2.250.1.213.1.4.8"/>
+      <!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
+      <id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
+      <!-- Adresse du patient -->
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <!-- Coordonnées télécom du patient -->
+      <telecom value="tel:0144534551" use="H"/>
+      <telecom value="tel:0647151010" use="MC"/>
+      <telecom value="mailto:277076322082910@patient.mssante.fr"/>
+      <!-- Identité du patient -->
+      <patient classCode="PSN">
+        <name>
+          <!-- Nom et prénom(s) de naissance -->
+          <family qualifier="BR">NESSI</family>            
+          <given>Ruth Isabelle</given>
+          <!-- Nom et prénom utilisés -->
+          <family qualifier="CL">DECOURCY</family>
+          <given qualifier="CL">Ruth</given>   
+        </name>
+        <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19770714"/>
+        <!-- Représentant du patient -->
+        <guardian>
+          <addr use="H">
+            <houseNumber>28</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <telecom value="tel:0147150000" use="H"/>
+          <guardianPerson>
+            <name>
+              <prefix>MME</prefix>
+              <family>NESSI</family>
+              <given>Jeanne</given>
+            </name>
+          </guardianPerson>
+        </guardian>
+        <!-- Lieu de naissance du patient -->
+        <birthplace>
+          <place>
+            <addr>
+              <county>63220</county>
+              <city>MAZOIRES</city>
+            </addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Auteur du document -->
+  <author contextControlCode="OP" typeCode="AUT">
+    <!-- [1..1] Horodatage de la validation par l'auteur -->
+    <time value="20211201093000+0100"/>
+    <!-- [1..1] Identification de l'auteur -->
+    <assignedAuthor classCode="ASSIGNED">
+      <!-- [1..1] Identifiant de l'auteur (Id RPPS du PS obligatoire pour les PS) -->
+      <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+      <!-- [1..1] Profession / spécialité du PS (obligatoire pour les PS) -->
+      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
+        codeSystem="1.2.250.1.213.1.1.4.5"/>
+      <!-- [0..*] Adresse du PS -->
+      <addr>
+        <houseNumber>25</houseNumber>
+        <streetName>Rue Berthollet</streetName>
+        <postalCode>75005</postalCode>
+        <city>PARIS</city>
+      </addr>
+      <!-- [0..*] Télécom du PS -->
+      <telecom value="tel:0158432300" use="WP"/>
+      <!-- [0..1] Identité du PS -->
+      <assignedPerson>
+        <name>
+          <prefix>M</prefix>
+          <given>Romain</given>
+          <family>PIOU</family>
+          <suffix>DR</suffix>
+        </name>
+      </assignedPerson>
+      <!-- [1..1] Organisation de rattachement du PS -->
+      <representedOrganization>
+        <!-- [1..1] Identifiant de l'organisation de rattachement du PS (FINESS) -->
+        <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <!-- [1..1] Nom de l'organisation de rattachement du PS -->
+        <name>Cabinet du DR Pierre JOLI</name>        
+        <!-- [0..*] Télécom du PS -->
+        <telecom value="tel:0158432300" use="WP"/>
+        <!-- [0..*] Adresse du PS -->
+        <addr>
+          <houseNumber>25</houseNumber>
+          <streetName>Rue Berthollet</streetName>
+          <postalCode>75005</postalCode>
+          <city>PARIS</city>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+
+  <!-- Personne à prévenir en cas d'urgence -->
+  <informant>
+    <relatedEntity classCode="ECON">
+      <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
+      <addr nullFlavor="NAV"/>
+      <telecom value="tel:0647150100" use="MC"/>
+      <relatedPerson>
+        <name>
+          <family>NESSI</family>
+          <given>Sophie</given>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+
+  <!-- Personne de confiance -->
+  <informant>
+    <relatedEntity classCode="NOK">
+      <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
+      <addr nullFlavor="NAV"/>
+      <telecom value="tel:0647150100" use="MC"/>
+      <relatedPerson>
+        <name>
+          <family>NESSI</family>
+          <given>Sophie</given>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+
+  <!-- Organisation chargée de la conservation du document -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <!-- Identifiant de l'organisation -->
+        <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <!-- Nom de l'organisation -->
+        <name>Cabinet du DR Pierre JOLI</name>
+        <!-- Coordonnées télécom de l'organisation -->
+        <telecom value="tel:0158432300" use="WP"/>
+        <!-- Adresse de l'organisation -->
+        <addr>
+          <houseNumber>25</houseNumber>
+          <streetName>Rue Berthollet</streetName>
+          <postalCode>75005</postalCode>
+          <city>PARIS</city>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- Responsable du document -->
+  <legalAuthenticator>
+    <!-- Date et heure de la prise de responsabilité -->
+    <time value="20211201093000+0100"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <!-- PS identifié par son N°RPPS -->
+      <id root="1.2.250.1.71.4.2.1" extension="807505123456"/>
+      <!-- [1..1] Profession / spécialité du PS (obligatoire pour les PS) -->
+      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
+        codeSystem="1.2.250.1.213.1.1.4.5"/>
+      <!-- Adresse du PS-->
+      <addr>
+        <houseNumber>25</houseNumber>
+        <streetName>Rue Berthollet</streetName>
+        <postalCode>75005</postalCode>
+        <city>PARIS</city>
+      </addr>
+      <!-- Coordonnées télécom du PS-->
+      <telecom value="tel:0158432300" use="WP"/>
+      <!-- Identité du PS -->
+      <assignedPerson>
+        <name>
+          <prefix>M</prefix>
+          <given>Romain</given>
+          <family>PIOU</family>
+          <suffix>DR</suffix>
+        </name>
+      </assignedPerson>
+      <!-- Etablissement de rattachement du PS -->
+      <representedOrganization>
+        <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <name>Cabinet du DR Pierre JOLI</name>
+        <addr>
+          <houseNumber>25</houseNumber>
+          <streetName>Rue Berthollet</streetName>
+          <postalCode>75005</postalCode>
+          <city>PARIS</city>
+        </addr>
+        <standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire"
+          codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+
+  <!-- Participant : PS remplacé (obligatoire si prescription faite par un PS remplaçant) -->
+  <participant typeCode="CON">
+    <functionCode code="CORRE" displayName="Correspondant" codeSystem="1.2.250.1.213.1.1.4.2.280"/>
+    <time nullFlavor="UNK"/>      
+    <associatedEntity classCode="PROV">
+      <!-- [1..1] PS identifié par son N°RPPS -->
+      <id root="1.2.250.1.71.4.2.1" extension="807505123456"/>
+      <!-- [1..1] Profession / spécialité du PS (obligatoire pour les PS) -->
+      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
+        codeSystem="1.2.250.1.213.1.1.4.5"/>
+      <!-- [0..*] Adresse du PS -->
+      <addr>
+        <houseNumber>25</houseNumber>
+        <streetName>Rue Berthollet</streetName>
+        <postalCode>75005</postalCode>
+        <city>PARIS</city>
+      </addr>
+      <!-- [0..*] Télécom du PS -->
+      <telecom value="tel:0158432300" use="WP"/>
+      <!-- [0..1] Identité du PS -->
+      <associatedPerson>
+        <name>
+          <prefix>M</prefix>          
+          <given>Pierre</given>
+          <family>JOLI</family>
+          <suffix>DR</suffix>
+        </name>
+      </associatedPerson>
+      <!-- [1..1] Organisation de rattachement du PS -->
+      <scopingOrganization>
+        <!-- [1..1] Identifiant de l'organisation de rattachement du PS (FINESS) -->
+        <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <!-- [1..1] Nom de l'organisation de rattachement du PS -->
+        <name>Cabinet du DR Pierre JOLI</name>        
+        <!-- [0..*] Télécom du PS -->
+        <telecom value="tel:0158432300" use="WP"/>
+        <!-- [0..*] Adresse du PS -->
+        <addr>
+          <houseNumber>25</houseNumber>
+          <streetName>Rue Berthollet</streetName>
+          <postalCode>75005</postalCode>
+          <city>PARIS</city>
+        </addr>
+      </scopingOrganization>
+    </associatedEntity>    
+  </participant>
+
+  <!-- Participant : Exécutant et/ou Date d'exécution souhaitée -->
+  <participant typeCode="PRF">
+    <!-- Date d'exécution souhaitée -->
+    <time xsi:type="IVL_TS">
+      <high value="20211202"/>
+    </time>
+    <!-- Exécutant (obligatoire si prescription de TSO sur ordonnance sécurisée, nullFlavor possible dans les autres cas) -->
+    <associatedEntity classCode="PROV">
+      <!-- [1..1] PS identifié par son N°RPPS -->
+      <id root="1.2.250.1.71.4.2.1" extension="807505123456"/>
+      <!-- [1..1] Profession / spécialité du PS (obligatoire pour les PS) -->
+      <code code="G15_21/A" displayName="Pharmacien titulaire d'officine" codeSystem="1.2.250.1.213.1.1.4.5"/>
+      <!-- [0..*] Adresse du PS-->
+      <addr>
+        <houseNumber>12</houseNumber>
+        <streetName>Rue des produits de santé</streetName>
+        <postalCode>75005</postalCode>
+        <city>PARIS</city>
+      </addr>
+      <!-- [0..*] Coordonnées télécom du PS-->
+      <telecom value="tel:0158410697" use="WP"/>
+      <!-- [0..1] Identité du PS -->
+      <associatedPerson>
+        <name>
+          <prefix>M</prefix>
+          <given>Lucien</given>
+          <family>SAMPAIX</family>
+          <suffix>DR</suffix>
+        </name>
+      </associatedPerson>
+      <!-- [0..1] Etablissement -->
+      <scopingOrganization>
+        <!-- [0..1] Identifiant de l'organisation -->
+        <id root="1.2.250.1.71.4.2.2" extension="1750512302"/>
+        <!-- [0..1] Nom de l'organisation -->
+        <name>Pharmacie SAMPAIX</name>
+        <!-- [0..*] Coordonnées télécom de l'organisation -->
+        <telecom value="tel:0158410697" use="WP"/>
+        <!-- [0..*] Adresse de l'organisation -->
+        <addr>
+          <houseNumber>12</houseNumber>
+          <streetName>Rue des produits de santé</streetName>
+          <postalCode>75005</postalCode>
+          <city>PARIS</city>
+        </addr>
+      </scopingOrganization>
+    </associatedEntity>    
+  </participant>
+
+  <!-- [1..1] Acte documenté : prescription -->
+  <documentationOf>
+    <serviceEvent classCode="ACT">
+      <!-- Identifiant de la prescription EPU : root="1.2.250.1.215.500.1.1" + extension calculé selon la règle fournie dans les spécifications de la Cnam -->
+      <id root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
+      <code code="57833-6" displayName="Prescription de produits de santé" 
+        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"></code>
+      <!-- Période de validité de la prescription -->
+      <effectiveTime>
+        <low value="20211201091000+0100"/>        
+        <high value="20230730091000+0100"/>
+        <!--  <high nullFlavor="UNK"/> -->
+      </effectiveTime>      
+      <!-- La personne ayant exécuté l'acte -->
+      <performer typeCode="PRF">
+        <assignedEntity>
+          <!-- PS identifié par son N°RPPS -->
+          <id root="1.2.250.1.71.4.2.1" extension="807505123456"/>
+          <!-- [1..1] Profession / spécialité du PS (obligatoire pour les PS) -->
+          <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
+            codeSystem="1.2.250.1.213.1.1.4.5"/>
+          <!-- Adresse du PS -->
+          <addr>
+            <houseNumber>25</houseNumber>
+            <streetName>Rue Berthollet</streetName>
+            <postalCode>75005</postalCode>
+            <city>PARIS</city>
+          </addr>
+          <!-- Coordonnées Télécom du PS -->
+          <telecom value="tel:0158432300" use="WP"/>
+          <!-- Identité du PS -->
+          <assignedPerson>
+            <name>
+              <prefix>M</prefix>
+              <given>Romain</given>
+              <family>PIOU</family>
+              <suffix>DR</suffix>
+            </name>
+          </assignedPerson>
+          <!-- Organisme représenté -->
+          <representedOrganization>
+            <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+            <name>Cabinet du DR Pierre JOLI</name>
+            <!-- [0..*] Télécom du PS -->
+            <telecom value="tel:0158432300" use="WP"/>
+            <!-- [0..*] Adresse du PS -->
+            <addr>
+              <houseNumber>25</houseNumber>
+              <streetName>Rue Berthollet</streetName>
+              <postalCode>75005</postalCode>
+              <city>PARIS</city>
+            </addr>
+            <!-- Cadre d'exercice du PS -->
+            <standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire"
+              codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- [0..1] Prescription bizone -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1096" displayName="Prescription bizone" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- [0..1] Prescription médicaments d'exception -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1097" displayName="Prescription médicaments d'exception" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf> 
+
+  <!-- [0..1] Ordonnance sécurisée -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1098" displayName="Ordonnance sécurisée" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf> 
+  
+  <!-- [0..1] Prescription grand appareillage -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1132" displayName="Prescription grand appareillage" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf> 
+ 
+  <!-- [0..1] Exécution à domicile --> 
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1094" displayName="Exécution à domicile" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf>
+  
+  <!-- [0..1] Prescription en urgence -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1095" displayName="Exécution en urgence" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- [0..1] Affection militaire -->
+  <documentationOf>
+    <serviceEvent classCode="INFO">
+      <code code="MED-1159" displayName="Affection militaire" 
+        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
+    </serviceEvent>
+  </documentationOf> 
+  
+  <!-- Contexte de la prise en charge -->
+  <componentOf>
+    <encompassingEncounter>
+      <code code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4"/>
+      <effectiveTime>
+        <high value="20211201093000+0100"/>
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+          <code code="SA07" displayName="Cabinet individuel" codeSystem="1.2.250.1.71.4.2.4"/>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!--*********************************-->
+  <!--   Corps structuré du document   -->
+  <!--*********************************-->
+  <component>
+    <structuredBody>
+      
+      <!-- [1..1] Section FR-Code-a-barres -->
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <!-- Conformité FR-Code-a-barres (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.223"/>
+          <id root="F28128CA-1D38-11EC-9621-0242AC130002"/>
+          <code code="57723-9" displayName="Numéro de code à barres unique"
+            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Code 2D de la prescription</title>
+          <text>
+            <renderMultiMedia referencedObject="Code2dPDF"/>
+          </text>
+          <entry>
+            <observationMedia classCode="OBS" moodCode="EVN" ID="Code2dPDF">
+              <!-- Conformité CDAObservationMedia (CCD) -->
+              <templateId root="2.16.840.1.113883.10.12.304"/>
+              <!-- Conformité FR-Image-illustrative (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.103"/>
+              <value mediaType="image/jpeg" representation="B64">iVBORw0KGgoAAAANSUhEUgAAAPUAAADZCAMAAAG4BraMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI6UExURQAAAOzs7CwsLFNTU6CgoO3t7cfHxwcHB1RUVO7u7i4uLsjIyFVVVQAAAKKiou/v7y8vL8nJyVZWVqOjozAwMMrKyldXV/Hx8TExMcvLywsLC1hYWKWlpfLy8jIyMn9/f8zMzAwMDFlZWaampvPz8zMzM83NzQ0NDVpaWjQ0NM7OzltbW6ioqPX19TU1Nc/Pz6mpqfb29jY2NtDQ0BAQEPf39zc3N9HR0REREaurqzg4OIWFhdLS0hISEl9fX6ysrPn5+Tk5OdPT062trTo6OoeHh9TU1GFhYa6urjs7O4iIiNXV1RUVFfz8/Dw8PNbW1hYWFgAAALCwsP39/QAAAD09PWRkZLGxsf7+/j4+PouLi9jY2BgYGLKysv///z8/P9nZ2QAAABkZGWZmZrOzs0BAQI2NjRoaGrS0tNvb2xsbG2hoaLW1tUJCQo+Pj9zc3BwcHGlpaba2tkNDQ5CQkN3d3R0dHWpqare3twAAAERERN7e3h4eHri4uEVFRZKSkh8fH7m5uUZGRuDg4G1tbbq6ukdHR+Hh4SEhIW5ubru7u0hISOLi4iIiIm9vb7y8vElJSZaWluPj4yMjI3BwcL29vQAAAEpKSpeXl+Tk5HFxcb6+vktLSyUlJb+/v0xMTObm5gAAAMDAwAAAAE1NTefn5ycnJ3R0dMHBwQEBAU5OTpubm+jo6CgoKMLCwk9PT5ycnOnp6cPDw1BQUJ2dnerq6ioqKsTExJ6enuvr6ysrK3h4eMXFxVJSUg9nUzYAAACidFJOUwD///////////////+4/////////////////////////////////////////////////////////////////////////////////////////3b//yL///////////////9Y//////////////////////////////+W/////////////////////////////////////9z/////////////PJ60fsMAAAAJcEhZcwAAFxEAABcRAcom8z8AABfLSURBVHhe7Z2PgyTFVcdHOZGIk2SVU+QMRu5AQmQBjYTEH6fHSSQgOLmJdozb3hBWQ8SQH65kOE1y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</value>
+            </observationMedia>
+          </entry>
+        </section>
+      </component>
+
+      <!-- [0..1] Section FR-Prescription-medicaments : Prescriptions de médicaments -->
+      <component>
+        <section>
+          <!-- Conformité Prescription Section (IHE PHARM PRE) -->
+          <templateId root="1.3.6.1.4.1.19376.1.9.1.2.1"/>
+          <!-- Conformité FR-Prescription-medicaments (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.171"/>
+          <id root="4A402640-1CF6-4153-B5BA-D56B623004C8"/>
+          <code code="57828-6" displayName="Prescriptions" codeSystem="2.16.840.1.113883.6.1"
+            codeSystemName="LOINC"/>
+          <title>Prescription de médicaments</title>
+          <!-- Bloc narratif de la section (Prescription sous forme textuelle) -->
+          <text>
+            <!-- Médicament 1 -->
+            <table border="0">
+              <thead>
+                <tr>
+                  <th>Durée du traitement</th>
+                  <th>Médicament</th>
+                  <th>Fréquence d'administration</th>
+                  <th>Dose prescrite</th>
+                  <th>Rythme d'administration</th>
+                  <th>Voie d'administration</th>
+                  <th>Substitution</th>
+                  <th>Nombre de renouvel.</th>
+                  <th>En rapport ALD</th>
+                  <th>En rapport AT/MP</th>
+                  <th>En rapport Prévention</th>
+                  <th>Non remboursable</th>
+                  <th>Hors AMM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>du 01/12/2021 au 06/12/2021</td>
+                  <td>
+                    <content ID="med-001">PARACETAMOL MYLAN 500 mg, comprimé</content>
+                  </td>
+                  <td>
+                    <content ID="med-001-frequence-1">3 fois/j à partir du 01/12/2021 pendant 2 jours</content>
+                    <br/>
+                    <br/>
+                    <content ID="med-001-frequence-2">2 fois/j à partir du 03/12/2021 pendant 4 jours</content>
+                  </td>
+                  <td>
+                    <content ID="med-001-doseMin-1">1 cp</content> à <content ID="med-001-doseMax-1">2 cp</content><br/><br/><br/>
+                    <content ID="med-001-doseMin-2">1 cp</content> à <content ID="med-001-doseMax-2">2 cp</content>
+                  </td>
+                  <td>
+                    <content ID="med-001-rateMin-1">1500 mg/j</content> à <content ID="med-001-rateMax-1">3000 mg/j</content>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <content ID="med-001-rateMin-2">1000 mg/j</content> à <content ID="med-001-rateMax-2">2000 mg/j</content>
+                  </td>  
+                  <td><content ID="med-001-voie">Voie orale</content></td>  
+                  <td><content ID="med-001-substitution">Non (Marge thérapeutique étroite)</content></td>                                
+                  <td>3</td>
+                  <td><content ID="med-001-ALD">Non</content></td>
+                  <td><content ID="med-001-ATMP">Non</content></td>
+                  <td><content ID="med-001-prev">Non</content></td>
+                  <td><content ID="med-001-non-remb">Non</content></td>
+                  <td><content ID="med-001-horsamm">Non</content></td>
+                </tr>                
+                <tr>
+                  <td colspan="4">Précondition</td>                  
+                  <td colspan="9"><content ID="med-001-precondition">-</content></td>
+                </tr>
+                <tr>
+                  <td colspan="4">Instruction au patient</td>                  
+                  <td colspan="9"><content ID="med-001-instrPatient">A prendre au cours d'un repas</content></td>
+                </tr>
+                <tr>
+                  <td colspan="4">Instruction au dispensateur</td>                  
+                  <td colspan="9"><content ID="med-001-instrDisp">-</content></td>
+                </tr>
+                             
+              </tbody>
+            </table>
+            <br/>
+            <!-- Médicament 2 : préparation magistrale -->
+            <table border="0">
+              <thead>
+                <tr>
+                  <th>Durée du traitement</th>
+                  <th>Médicament</th>
+                  <th>Fréquence d'administration</th>
+                  <th>Dose prescrite</th>
+                  <th>Rythme d'administration</th>
+                  <th>Voie d'administration</th>
+                  <th>Substitution</th>
+                  <th>Nombre de renouvel.</th>
+                  <th>En rapport ALD</th>
+                  <th>En rapport AT/MP</th>
+                  <th>En rapport Prévention</th>
+                  <th>Non remboursable</th>
+                  <th>Hors AMM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>du 01/12/2021 au 06/12/2021</td>
+                  <td>
+                    <content ID="med-002">Préparation magistrale :<br/>- 30g de diprosone<br/>- 70g de Cérat Frais de Galien</content>
+                  </td>
+                  <td><content ID="med-002-frequence-1">2 applications/j</content></td>
+                  <td>-</td>
+                  <td>-</td>  
+                  <td><content ID="med-002-voie">Voie cutanée </content>(<content ID="med-002-region">visage</content>)</td>  
+                  <td><content ID="med-002-substitution">Non (Marge thérapeutique étroite)</content></td>                                
+                  <td>0</td>
+                  <td><content ID="med-002-ALD">Non</content></td>
+                  <td><content ID="med-002-ATMP">Non</content></td>
+                  <td><content ID="med-002-prev">Non</content></td>
+                  <td><content ID="med-002-non-remb">Non</content></td>
+                  <td><content ID="med-002-horsamm">Non</content></td>
+                </tr>
+                <tr>
+                  <td colspan="4">Précondition</td>                  
+                  <td colspan="9"><content ID="med-002-precondition">-</content></td>
+                </tr>
+                <tr>
+                  <td colspan="4">Instruction au patient</td>                  
+                  <td colspan="9"><content ID="med-002-instrPatient">Diminuer la posologie progressivement une fois la poussée traitée. Par exemple en appliquant la préparation une fois par jour pendant 5 jours, puis 1 jour sur 2 pendant 5 jours environ avant d’arrêter.</content></td>
+                </tr>
+                <tr>
+                  <td colspan="4">Instruction au dispensateur</td>                  
+                  <td colspan="9"><content ID="med-002-instrDisp">-</content></td>
+                </tr>                           
+              </tbody>
+            </table>
+          </text>
+          <!-- [1..*] Entrée FR-Traitement-prescrit : paracétamol -->
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="INT">              
+              <!-- Conformité Medication activity (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <!-- Conformité Medications Entry (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <!-- Conformité Prescription Item (IHE PHARM PRE) -->
+              <templateId root="1.3.6.1.4.1.19376.1.9.1.3.2"/>          
+              <!-- Conformité FR-Traitement-prescrit (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.83"/>
+              <!-- [0..1] Conformité Posologie structurée : uniquement si posologie structurée -->
+              <templateId root="1.3.6.1.4.1.19376.1.9.1.3.6"/>
+              <!-- [0..1] Conformité Mode d'administration : Doses progressives (avec FR-Traitement-prescrit-subordonnee) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8"/>
+              <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
+              <code code="DRUG" displayName="Médicament" 
+                    codeSystem="2.16.840.1.113883.5.4"  codeSystemName="HL7:ActCode"/>
+              <text>
+                <reference value="#med-001"/>
+              </text>
+              <statusCode code="completed"/>
+              <!-- [0..1] Durée du traitement -->
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20211201"/>
+                <high value="20211206"/>
+              </effectiveTime>
+              
+              <!-- [0..1] Fréquence d'administration : uniquement si posologie structurée -->
+              <!-- non renseigné ici car doses progressives décrites dans des <substanceAdministration> subordonnés -->
+              <!-- <effectiveTime xsi:type="PIVL_TS" operator="A"> -->
+              
+              <!-- Nombre de renouvellement(s) possible(s) -->
+              <repeatNumber value="3"/>
+              
+              <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
+              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
+                <originalText>
+                  <reference value="#voie-001"/>
+                </originalText>
+              </routeCode>
+              
+              <!-- [0..1] Région anatomique d'administration : uniquement si posologie structurée -->
+              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite_CISIS (1.2.250.1.213.1.1.5.686) -->
+              <!-- <approachSiteCode> </approachSiteCode> -->
+              
+              <!-- [0..1] Dose à administrer : uniquement si posologie structurée -->
+              <!-- non renseigné ici car doses progressives décrites dans des <substanceAdministration> subordonnés -->
+              <!-- <doseQuantity>  </doseQuantity> -->
+              
+              <!-- [0..1] Rythme d'administration : uniquement si posologie structurée -->
+              <!-- <rateQuantity>  </rateQuantity> -->
+              
+              <!-- [0..*] Dose maximale d'administration : uniquement si posologie structurée -->
+              <maxDoseQuantity>
+                <numerator value="4"/>
+                <denominator value="1" unit="d"/>
+              </maxDoseQuantity>
+              
+              <!-- [1..1] Entrée FR-Produit-de-sante -->
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <!-- Conformité Product (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <!-- Conformité Product Entry (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.43"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
+                    <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                    <!-- Code CIS du médicament -->
+                    <code code="63107752" displayName="PARACETAMOL MYLAN 500 mg, comprimé"
+                      codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
+                      <originalText><reference value="#med-001"/></originalText>
+                      <!-- Code MV Médicabase du médicament -->
+                      <translation code="MV00002306" displayName="Paracétamol 500 mg comprimé" 
+                        codeSystem="1.2.250.1.213.2.59" codeSystemName="MV"></translation>                      
+                      <!-- Code CIP du médicament -->
+                      <translation code="3400933516390" 
+                        displayName="PARACETAMOL MYLAN 500 mg, comprimé, plaquette(s) thermoformée(s) PVC-aluminium de 16 comprimé(s)"
+                        codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"></translation>
+                    </code>
+                    <!-- Nom de la marque -->
+                    <name>PARACETAMOL MYLAN 500 mg, comprimé</name>
+                    <!-- Forme galénique : EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) : Pharmaceutical Dose Forms -->
+                    <pharm:formCode code="10219000" displayName="Comprimé" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>                    
+                    <!-- [0..1] Équivalent générique -->
+                    <pharm:asSpecializedKind classCode="GRIC">
+                      <pharm:generalizedMedicineClass classCode="MMAT">
+                        <pharm:code code="N02BE01" displayName="paracetamol" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                        <pharm:name>paracetamol</pharm:name>
+                      </pharm:generalizedMedicineClass>
+                    </pharm:asSpecializedKind>
+                    <!-- [0..*] Substances actives -->
+                    <pharm:ingredient classCode="ACTI">
+                      <pharm:quantity>
+                        <pharm:numerator xsi:type="pharm:PQ" value="500" unit="mg"/>
+                        <pharm:denominator xsi:type="pharm:PQ" value="1"/>
+                      </pharm:quantity>                    
+                      <pharm:ingredient classCode="MMAT" determinerCode="KIND">
+                        <pharm:code code="N02BE01" displayName="paracetamol" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                        <pharm:name>paracetamol</pharm:name>
+                      </pharm:ingredient>
+                    </pharm:ingredient>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>              
+
+              <!-- [0..*] Entrée FR-Traitement-prescrit-subordonnee (pour indiquer les changements de fréquence et/ou de dose) -->
+              <!-- si doses progressives (tapered dose), fractionnées (split dose) et conditionnelles (conditional dose)-->
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="1"/>
+                <substanceAdministration classCode="SBADM" moodCode="INT">
+                  <!-- Conformité FR-Traitement-prescrit-subordonnee (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.83.1"/>
+                  <id root="C93DE620-3722-11EC-8D3D-0242AC130003"/>
+                  <text>
+                    <reference value="#med-001-ModeAdminProg-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <!-- Fréquence d'administration : toutes les 8h (3 fois/j) à partir du 01/12/2021 pendant 2 jours -->
+                  <effectiveTime xsi:type="SXPR_TS">
+                    <comp xsi:type="IVL_TS" operator="A">
+                      <low value="20211201"/>
+                      <width value="2" unit="d"/>
+                    </comp>
+                    <comp xsi:type="PIVL_TS" operator="A">
+                      <period value="8" unit="h">
+                        <translation>
+                          <originalText>
+                            <reference value="#med-001-frequence-1"/>
+                          </originalText>
+                        </translation>
+                      </period>
+                    </comp>
+                  </effectiveTime>
+                  <!-- Dose à administrer : 1 cp -->
+                  <doseQuantity>
+                    <low value="1" unit="{tablet}">
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-doseMin-1"/>
+                        </originalText>
+                      </translation>
+                    </low>
+                    <high value="1" unit="{tablet}">
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-doseMax-1"/>
+                        </originalText>
+                      </translation>
+                    </high>
+                  </doseQuantity>
+                  <!-- [0..1] Rythme d'administration : uniquement si posologie structurée -->
+                  <rateQuantity>
+                    <low value="1500" unit='mg/d'>
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-rateMin-1"/>
+                        </originalText>
+                      </translation>
+                    </low>
+                    <high value="3000" unit='mg/d'>
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-rateMax-1"/>
+                        </originalText>
+                      </translation>
+                    </high>
+                  </rateQuantity>
+                  
+                  <!-- Produit de santé à nullFlavor="NA" -->
+                  <consumable>
+                    <manufacturedProduct classCode="MANU">
+                      <!-- Conformité Product (CCD) -->
+                      <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                      <!-- Conformité Product Entry (IHE PCC) -->
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                      <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                      <templateId root="1.2.250.1.213.1.1.3.43"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
+                        <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                        <!-- Code du médicament -->
+                        <code nullFlavor="NA"/>
+                        <!-- Nom de la marque -->
+                        <name nullFlavor="NA"/>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>                  
+                </substanceAdministration>
+              </entryRelationship>
+              
+              <!-- [0..*] Entrée FR-Traitement-prescrit-subordonnee (pour indiquer les changements de fréquence et/ou de dose) -->
+              <!-- si doses progressives (tapered dose), fractionnées (split dose) et conditionnelles (conditional dose)-->
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="2"/>
+                <substanceAdministration classCode="SBADM" moodCode="INT">
+                  <!-- Conformité FR-Traitement-prescrit-subordonnee (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.83.1"/>    
+                  <id root="3FDCAA46-3723-11EC-8D3D-0242AC130003"/>
+                  <text>
+                    <reference value="#med-001-ModeAdminProg-2"/>
+                  </text>
+                  <statusCode code="completed"/>              
+                  <!-- Fréquence d'administration : toutes les 12h (2 fois/j) à partir du 03/12/2021 pendant 4 jours -->
+                  <effectiveTime xsi:type="SXPR_TS">
+                    <comp xsi:type="IVL_TS" operator="A">
+                      <low value="20211203"/>
+                      <width value="4" unit="d"/>
+                    </comp>
+                    <comp xsi:type="PIVL_TS" operator="A">
+                      <period value="12" unit="h">
+                        <translation>
+                          <originalText>
+                            <reference value="#med-001-frequence-2"/>
+                          </originalText>
+                        </translation>
+                      </period>
+                    </comp>
+                  </effectiveTime>
+                  <!-- Dose à administrer : 1 comprimé -->
+                  <doseQuantity>
+                    <low value="1" unit="{tablet}">
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-doseMin-2"/>
+                        </originalText>
+                      </translation>
+                    </low>
+                    <high value="1" unit="{tablet}">
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-doseMax-2"/>
+                        </originalText>
+                      </translation>
+                    </high>
+                  </doseQuantity>
+                  <!-- [0..1] Rythme d'administration : uniquement si posologie structurée -->
+                  <rateQuantity>
+                    <low value="1000" unit='mg/d'>
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-rateMin-2"/>
+                        </originalText>
+                      </translation>
+                    </low>
+                    <high value="2000" unit='mg/d'>
+                      <translation>
+                        <originalText>
+                          <reference value="#med-001-rateMax-2"/>
+                        </originalText>
+                      </translation>
+                    </high>
+                  </rateQuantity>
+                  <!-- Produit de santé à nullFlavor="NA" -->
+                  <consumable>
+                    <manufacturedProduct classCode="MANU">
+                      <!-- Conformité Product (CCD) -->
+                      <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                      <!-- Conformité Product Entry (IHE PCC) -->
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                      <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                      <templateId root="1.2.250.1.213.1.1.3.43"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
+                        <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                        <!-- Code du médicament -->
+                        <code nullFlavor="NA"/>
+                        <!-- Nom de la marque -->
+                        <name nullFlavor="NA"/>                        
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>                  
+                </substanceAdministration>
+              </entryRelationship>
+
+              <!-- [0..1] Entrée FR-Instructions-au-patient -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité Patient instructions (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <!-- Conformité Patient Medication Instruction (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                  <!-- Conformité FR-Instructions-au-patient (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.33"/>
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
+                    codeSystemName="IHEActCode"/>
+                  <text>
+                    <reference value="#med-001-instrPatient"/>
+                  </text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Instructions-au-dispensateur -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité Fulfillment instructions (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <!-- Conformité Medication fulfillment instruction (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                  <!-- Conformité FR-Instructions-au-dispensateur (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.34"/>
+                  <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
+                    codeSystemName="IHEActCode"/>
+                  <text>
+                    <reference value="#med-001-instrDisp"/>
+                  </text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Quantite-de-produit -->
+              <entryRelationship typeCode="COMP">
+                <supply classCode="SPLY" moodCode="RQO">
+                  <!-- Conformité Amount of units of the consumable (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.9.1.3.8"/>
+                  <!-- Conformité FR-Quantite-de-produit (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.86"/>
+                  <independentInd value="false"/>
+                  <!-- Unité issue de EDQM Packaging (30009000 "Boite")-->
+                  <quantity value="2" unit="30009000"/>
+                </supply>
+              </entryRelationship>
+              
+              <!-- [1..1] Entrée FR-Autorisation-Substitution -->
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="DEF">
+                  <!-- Conformité Substitution-Permission (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
+                  <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.87"/>
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
+                  <code code="N" displayName="Aucune substitution permise" 
+                        codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
+                    <originalText>
+                      <!-- Motif de non substitution obligatoire si substitution non autorisée -->
+                      <reference value="med-001-substitution"/>
+                    </originalText>
+                  </code>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-ALD -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-ALD (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.13"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
+                  <code code="MED-574" displayName="En rapport avec une ALD"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-001-ALD"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas liée à une ALD -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-accident-travail -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-accident-travail (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.14"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
+                  <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-001-ATMP"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas liée à un AT ou une MP -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-la-prevention -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.34"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-001-prev"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas en rapport avec la prévention -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Non-remboursable -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Non-remboursable (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.15"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
+                  <code code="GEN-181" displayName="Non remboursable"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-001-non-remb"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : le médicament est non remboursable -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Hors-AMM -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Hors-AMM (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.12"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130017"/>
+                  <code code="GEN-179" displayName="Hors Autorisation de Mise sur le Marché (AMM)"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-001-horsamm"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : le médicament est Hors AMM -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+             <!-- Précondition -->
+              <precondition>
+                <criterion>
+                  <text>
+                    <reference value="#precond-001"/>
+                  </text>
+                </criterion>
+              </precondition>
+              
+            </substanceAdministration>
+          </entry>
+          
+          <!-- [1..*] Entrée FR-Traitement-prescrit : préparation magistrale -->
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="INT">              
+              <!-- Conformité Medication activity (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <!-- Conformité Medications Entry (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <!-- Conformité Prescription Item (IHE PHARM PRE) -->
+              <templateId root="1.3.6.1.4.1.19376.1.9.1.3.2"/>          
+              <!-- Conformité FR-Traitement-prescrit (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.83"/>
+              <!-- [0..1] Conformité Posologie structurée : uniquement si posologie structurée -->
+              <templateId root="1.3.6.1.4.1.19376.1.9.1.3.6"/>
+              <!-- [0..1] Conformité Mode d'administration : normal (sans FR-Traitement-prescrit-subordonnee) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+              <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
+              <code code="DRUG" codeSystem="2.16.840.1.113883.5.4" displayName="Médicament"
+                codeSystemName="HL7:ActCode"/>
+              <text><reference value="#med-002"/></text>
+              <statusCode code="completed"/>
+              <!-- [0..1] Durée du traitement -->
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20211201"/>
+                <high value="20211206"/>
+              </effectiveTime>
+              
+              <!-- [0..1] Fréquence d'administration : uniquement si posologie structurée -->
+              <effectiveTime xsi:type="PIVL_TS" operator="A">
+                <period value="1" unit="d"><translation>
+                  <originalText>
+                    <reference value="#med-002-frequence-1"/>
+                  </originalText>
+                </translation></period>
+              </effectiveTime>
+              
+              <!-- Nombre de renouvellement(s) possible(s) -->
+              <repeatNumber value="0"/>
+              
+              <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
+              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <routeCode code="20003000" displayName="Voie cutanée" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
+                <originalText>
+                  <reference value="#med-002-voie"/>
+                </originalText>
+              </routeCode>
+              
+              <!-- [0..1] Région anatomique d'administration : uniquement si posologie structurée -->
+              <!-- valeur issue du JDV_HumanSubstanceAdministrationSite_CISIS (1.2.250.1.213.1.1.5.686) -->
+              <approachSiteCode nullFlavor="OTH">
+                <originalText><reference value="med-002-region"></reference></originalText>
+              </approachSiteCode>
+              
+              <!-- [0..1] Dose à administrer : uniquement si posologie structurée -->
+              <!-- <doseQuantity> </doseQuantity> -->
+              
+              <!-- [0..1] Rythme d'administration : uniquement si posologie structurée -->
+              <!-- <rateQuantity>  </rateQuantity> -->
+              
+              <!-- [0..*] Dose maximale d'administration : uniquement si posologie structurée -->
+              <!-- <maxDoseQuantity> </maxDoseQuantity> -->
+              
+              <!-- [1..1] Entrée FR-Produit-de-sante -->
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <!-- Conformité Product (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <!-- Conformité Product Entry (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.43"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                    <!-- Code CIS du médicament -->
+                    <code nullFlavor="NA">
+                      <originalText><reference value="#med-002"/></originalText>
+                    </code>
+                    <!-- Nom de la marque -->
+                    <name nullFlavor="NA"/>
+                    <!-- Forme galénique : EDQM Standard Terms (0.4.0.127.0.16.1.1.2.1) : Pharmaceutical Dose Forms -->
+                    <pharm:formCode code="50015000" displayName="pommade pour application cutanée et nasale" 
+                      codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>                    
+                  </manufacturedMaterial>                  
+                </manufacturedProduct>
+              </consumable>
+              
+              <!-- [0..1] Entrée FR-Instructions-au-patient -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité Patient instructions (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <!-- Conformité Patient Medication Instruction (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                  <!-- Conformité FR-Instructions-au-patient (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.33"/>
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
+                    codeSystemName="IHEActCode"/>
+                  <text>
+                    <reference value="#med-002-instrPatient"/>
+                  </text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Instructions-au-dispensateur -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité Fulfillment instructions (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <!-- Conformité Medication fulfillment instruction (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                  <!-- Conformité FR-Instructions-au-dispensateur (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.34"/>
+                  <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
+                    codeSystemName="IHEActCode"/>
+                  <text>
+                    <reference value="#med-002-instrDisp"/>
+                  </text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Quantite-de-produit -->
+              <entryRelationship typeCode="COMP">
+                <supply classCode="SPLY" moodCode="RQO">
+                  <!-- Conformité Amount of units of the consumable (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.9.1.3.8"/>
+                  <!-- Conformité FR-Quantite-de-produit (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.86"/>
+                  <independentInd value="false"/>
+                  <!-- unité issue de EDQM (30067000 "Tube") -->
+                  <quantity value="1" unit="30067000"/>
+                </supply>
+              </entryRelationship>
+              
+              <!-- [1..1] Entrée FR-Autorisation-Substitution -->
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="DEF">
+                  <!-- Conformité Substitution-Permission (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
+                  <!-- Conformité FR-Autorisation-Substitution (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.87"/>
+                  <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
+                  <code code="N" displayName="Aucune substitution permise" 
+                    codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
+                    <originalText>
+                      <!-- Motif de non substitution obligatoire si substitution non autorisée -->
+                      <reference value="med-002-substitution"/>
+                    </originalText>
+                  </code>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-ALD -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-ALD (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.13"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
+                  <code code="MED-574" displayName="En rapport avec une ALD"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-002-ALD"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas liée à une ALD -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+
+              <!-- [0..1] Entrée FR-En-rapport-avec-accident-travail -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-accident-travail (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.14"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
+                  <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-002-ATMP"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas liée à un AT ou une MP -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-la-prevention -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.34"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-002-prev"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du médicament n'est pas en rapport avec la prévention -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Non-remboursable -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Non-remboursable (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.15"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
+                  <code code="GEN-181" displayName="Non remboursable"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-002-non-remb"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : le médicament est non remboursable -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Hors-AMM -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Hors-AMM (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.12"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130017"/>
+                  <code code="GEN-179" displayName="Hors Autorisation de Mise sur le Marché (AMM)"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#med-002-horsamm"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : le médicament est Hors AMM -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- Précondition -->
+              <precondition>
+                <criterion>
+                  <text>
+                    <reference value="#precond-002"/>
+                  </text>
+                </criterion>
+              </precondition>
+              
+            </substanceAdministration>
+          </entry>
+          
+        </section>
+      </component>
+
+      <!-- [0..1] Section FR-Prescription-dispositifs-medicaux : Prescription de dispositifs médicaux -->
+      <component>
+        <section>
+          <templateId root="1.2.250.1.213.1.1.2.222"/>
+          <id root="5D743612-F997-4BCA-B990-B06A33B27B19"/>
+          <code code="46264-8" displayName="Dispositifs médicaux" codeSystem="2.16.840.1.113883.6.1"
+            codeSystemName="LOINC"/>
+          <title>Prescription de dispositifs médicaux</title>
+          <text>
+            <table border="0">
+              <thead>
+                <tr>
+                  <th>Dispositif médical</th>
+                  <th>Durée de location LPP</th>
+                  <th>Nombre de conditionnements</th>
+                  <th>Nombre de renouvellements</th>
+                  <th>En rapport ALD</th>
+                  <th>En rapport AT/MP</th>
+                  <th>En rapport Prévention</th>
+                  <th>Non remboursable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dispositif 1 -->
+                <tr>
+                  <td ID="DM-001">Lit médical, lit + 135 kg, forfait de livraison du lit et accessoires [LPP 1215702] </td>
+                  <td>60 jours</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td><content ID="DM-001-ALD">Non</content></td>
+                  <td><content ID="DM-001-ATMP">Non</content></td>
+                  <td><content ID="DM-001-prev">Non</content></td>
+                  <td><content ID="DM-001-non-remb">Non</content></td>
+                </tr>
+              </tbody>
+            </table>            
+          </text>
+          <!-- [1..*] Entrée FR-Dispositif-medical  -->
+          <entry>
+            <supply classCode="SPLY" moodCode="INT">
+              <!-- Conformité Supply Activity (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.34"/>
+              <!-- Conformité FR-Dispositif-medical (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.20"/>
+              <!-- Identifiant de la fourniture du DM -->
+              <id nullFlavor="UNK"/>
+              <!-- Référence vers la partie narrative de la section DM -->
+              <text><reference value="#DM001"/></text>
+              <!-- Date d'utilisation du DM -->
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20211201"/>
+                <high value="20230131"/>
+              </effectiveTime>
+              <!-- Nombre de renouvellement(s) possible(s) -->
+              <repeatNumber value="0"/>              
+              <!-- Nombre de conditionnements -->
+              <quantity value="1"/>
+              <!-- Durée de la location en jours -->
+              <expectedUseTime>
+                <width value="60" unit="d"/>
+              </expectedUseTime>
+              <!-- Description du dispositif médical -->
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <!-- Type de DM -->
+                  <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                    <!-- Code EMDN du DM -->
+                    <code code="V0806" displayName="LITS MÉDICAUX" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
+                      <!-- Autre Code du DM -->                      
+                      <translation code="1215702"
+                        displayName="lit médical, lit + 135 kg, forfait de livraison du lit et accessoires"
+                        codeSystem="1.2.250.1.215.200.2.1" codeSystemName="LPP">
+                        <originalText>
+                          <reference value="#DM-001-LPP"> </reference>
+                        </originalText>
+                      </translation>
+                    </code>
+                  </playingDevice>
+                </participantRole>
+              </participant>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-ALD -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-ALD (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.13"/>
+                  <id root="7FA00C4C-3721-11EC-8D3D-0242AC130003"/>
+                  <code code="MED-574" displayName="En rapport avec une ALD"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#DM-001-ALD"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du DM n'est pas liée à une ALD -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-accident-travail -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-accident-travail (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.14"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
+                  <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#DM-001-ATMP"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du DM n'est pas liée à un AT ou une MP -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-En-rapport-avec-la-prevention -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.34"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#DM-001-prev"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : la prescription du DM n'est pas en rapport avec la prévention -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+              <!-- [0..1] Entrée FR-Non-remboursable -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Non-remboursable (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.15"/>
+                  <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
+                  <code code="GEN-181" displayName="Non remboursable"
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <text>
+                    <reference value="#DM-001-non-remb"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201093000+0100"/>
+                  <!-- false : le DM est non remboursable -->
+                  <value xsi:type="BL" value="false"/>
+                </observation>
+              </entryRelationship>
+              
+            </supply>
+          </entry>
+        </section>
+      </component>
+
+      <!-- [0..1] Section FR-Signes-vitaux -->
+      <component>
+        <section>
+          <!-- Conformité Vital Signs Section (CCD) -->
+          <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <!-- Conformité Vital Signs Section (IHE PCC) -->
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+          <!-- Conformité Coded Vital Signs Section (IHE PCC) -->
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+          <!-- Conformité FR-Signes-vitaux (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.75"/>
+          <id root="362B214A-8414-4547-8B56-EABDCAB587AA"/>
+          <code code="8716-3" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1"
+            codeSystemName="LOINC"/>
+          <title>Signes vitaux</title>
+          <text>
+            <table border="0">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Signe vital</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01/12/2021</td>
+                  <td>Poids</td>
+                  <td>
+                    <content ID="poids">55 kg</content>
+                  </td>
+                </tr>
+                <tr>
+                  <td>01/12/2021</td>
+                  <td>Taille</td>
+                  <td>
+                    <content ID="taille">1,70 m</content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <!-- [1..1] Entrée FR-Signes-vitaux -->
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <!-- Conformité Result organizer (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <!-- Conformité Vital signs organizer (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <!-- Conformité Vital Signs Organizer (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+              <!-- Conformité FR-Signes-vitaux (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.49"/>
+              <id root="0B9FE5D6-8A5E-46D6-87BF-D9E19F73B956"/>
+              <code code="85353-1" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1"
+                codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20211201"/>
+              <!-- [1..*] Entrée FR-Signe-vital-observe : Poids(kg) -->
+              <component typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Result observation (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                  <!-- Conformité FR-Signe-vital-observé (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.50"/>
+                  <id root="C4815527-3DBA-4907-B3B1-EC6F9F8D1224"/>
+                  <code code="29463-7" displayName="Poids (mesuré)" 
+                    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#poids"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201"/>
+                  <value xsi:type="PQ" value="55" unit="kg"/>
+                </observation>
+              </component>
+              <!-- [1..*] Entrée FR-Signe-vital-observe : Taille(cm) -->
+              <component typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Result observation (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                  <!-- Conformité FR-Signe-vital-observé (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.50"/>
+                  <id root="80E7B7B1-353A-4870-B8F4-F1176A23F1DB"/>
+                  <code code="8302-2" displayName="Taille"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#taille"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20211201"/>
+                  <value xsi:type="PQ" value="170" unit="cm"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      
+      <!-- [0..1] Section FR-Historique-des-grossesses -->
+      <component>
+        <section>
+          <!-- Conformité Pregnancy History Section (IHE PCC) -->
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"/>
+          <!-- Conformité FR-Historique-des-grossesses (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.77"/>
+          <id root="573B13F5-2C78-47E0-BE1F-55C02B6F40B2"/>
+          <code code="10162-6" displayName="Historique des grossesses"
+            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Historique des grossesses</title>
+          <text>
+            <table border="0">
+              <thead>
+                <tr>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <content ID="grossesse-001">Enceinte</content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <!-- [1..*] Entrée FR-Observation-sur-la-grossesse : Patiente enceinte -->
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- Conformité Simple Observation (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <!-- Conformité Pregnancy Observation (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+              <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.53"/>
+              <id root="889E8A7C-ABE9-426B-873C-BDF23B505006"/>
+              <code code="11449-6" displayName="Statut de grossesse"
+                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <text>
+                <reference value="#grossesse-001"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20211201"/>
+              <value xsi:type="CE" code="77386006" displayName="grossesse en cours" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- [0..1] Section FR-Document-PDF-copie -->
+      <component>
+        <section>
+          <!-- Conformité FR-Document-PDF-copie (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.243"/>
+          <id root="770B0DC2-A6B8-468E-8432-632B18D35F68"/>
+          <code code="55108-5" displayName="Copie du document"
+            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Copie du document</title>
+          <text>
+            <table border="0">							
+              <tbody>
+                <tr>
+                  <td><renderMultiMedia referencedObject="doc-1"/></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          
+          <!-- [1..1] Entrée FR-Document-attache : Copie PDF du document -->
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <!-- Conformité FR-Document-attache (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.18"/>
+              <id root="88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"/>
+              <code code="55107-7" displayName="Document attaché"
+                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <statusCode code="completed"/>
+              <!-- [1..1] Entrée FR-Type-document-attache -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.18"/>
+                  <id root="0D1629B3-CC69-4632-81F3-2301FD4C318B"/>
+                  <code code="69764-9" displayName="Type de document"
+                    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text><reference value="#doc1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="NA"/>
+                  <value xsi:type="CD" code="55108-5" displayName="Copie du document"
+                    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                </observation>
+              </component>
+              <!-- [1..1] Entrée ObservationMedia -->
+              <component>
+                <observationMedia classCode="OBS" moodCode="EVN" ID="doc-1">
+                  <value mediaType="application/pdf" representation="B64">
+                    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agozIDAgb2JqCjI0NzIKZW5kb2JqCjQgMCBvYmoKWy9JQ0NCYXNlZCAyIDAgUl0KZW5kb2JqCjUgMCBvYmoKPDwKICAvVHlwZSAvTWV0YWRhdGEKICAvU3VidHlwZSAvWE1MCiAgL0xlbmd0aCA2IDAgUgo+PgpzdHJlYW0KPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz48eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHJkZjphYm91dD0iIj4KICAgICAgICAgPGRjOmZvcm1hdD5hcHBsaWNhdGlvbi9wZGY8L2RjOmZvcm1hdD4KICAgICAgICAgPGRjOmxhbmd1YWdlPngtdW5rbm93bjwvZGM6bGFuZ3VhZ2U+CiAgICAgICAgIDxkYzpkYXRlPjIwMjMtMDktMTVUMTE6NDY6MjgrMDI6MDA8L2RjOmRhdGU+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHhtbG5zOnBkZj0iaHR0cDovL25zLmFkb2JlLmNvbS9wZGYvMS4zLyIgcmRmOmFib3V0PSIiPgogICAgICAgICA8cGRmOlByb2R1Y2VyPkFwYWNoZSBGT1AgVmVyc2lvbiAyLjg8L3BkZjpQcm9kdWNlcj4KICAgICAgICAgPHBkZjpQREZWZXJzaW9uPjEuNDwvcGRmOlBERlZlcnNpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgcmRmOmFib3V0PSIiPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFwYWNoZSBGT1AgVmVyc2lvbiAyLjg8L3htcDpDcmVhdG9yVG9vbD4KICAgICAg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ZG9iagoxNSAwIG9iago8PAogIC9UeXBlIC9Gb250CiAgL1N1YnR5cGUgL1R5cGUxCiAgL0Jhc2VGb250IC9IZWx2ZXRpY2EKICAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwo+PgplbmRvYmoKMTYgMCBvYmoKPDwKICAvVHlwZSAvRm9udAogIC9TdWJ0eXBlIC9UeXBlMQogIC9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQKICAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwo+PgplbmRvYmoKMTcgMCBvYmoKPDwKICAvVHlwZSAvRm9udAogIC9TdWJ0eXBlIC9UeXBlMQogIC9CYXNlRm9udCAvVGltZXMtUm9tYW4KICAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwo+PgplbmRvYmoKMTEgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzCi9Db3VudCAyCi9LaWRzIFs5IDAgUiAxNCAwIFIgXSA+PgplbmRvYmoKMTggMCBvYmoKPDwKICAvVHlwZSAvQ2F0YWxvZwogIC9QYWdlcyAxMSAwIFIKICAvTGFuZyAoeC11bmtub3duKQogIC9NZXRhZGF0YSA1IDAgUgogIC9QYWdlTGFiZWxzIDE5IDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKICAvRm9udCA8PAogIC9GMSAxNSAwIFIKICAvRjMgMTYgMCBSCiAgL0Y1IDE3IDAgUgo+PgogIC9Qcm9jU2V0IFsvUERGIC9JbWFnZUIgL0ltYWdlQyAvVGV4dF0KICAvQ29sb3JTcGFjZSA8PCAvRGVmYXVsdFJHQiA0IDAgUiA+Pgo+PgplbmRvYmoKMTkgMCBvYmoKPDwgL051bXMgWzAgPDwgL1MgL0QgPj5dID4+CmVuZG9iagp4cmVmCjAgMjAKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE1IDAwMDAwIG4gCjAwMDAwMDAxNDUgMDAwMDAgbiAKMDAwMDAwMjcwMiAwMDAwMCBuIAowMDAwMDAyNzIyIDAwMDAwIG4gCjAwMDAwMDI3NTUgMDAwMDAgbiAKMDAwMDAwMzgyMyAwMDAwMCBuIAowMDAwMDAzODQyIDAwMDAwIG4gCjAwMDAwMjMwOTkgMDAwMDAgbiAKMDAwMDAyMzEyMCAwMDAwMCBuIAowMDAwMDMwMjEwIDAwMDAwIG4gCjAwMDAwMzAwMzAgMDAwMDAgbiAKMDAwMDAyMzMyNCAwMDAwMCBuIAowMDAwMDI5NDc4IDAwMDAwIG4gCjAwMDAwMjk0OTkgMDAwMDAgbiAKMDAwMDAyOTcwNSAwMDAwMCBuIAowMDAwMDI5ODExIDAwMDAwIG4gCjAwMDAwMjk5MjIgMDAwMDAgbiAKMDAwMDAzMDA5NiAwMDAwMCBuIAowMDAwMDMwMzYzIDAwMDAwIG4gCnRyYWlsZXIKPDwKICAvUm9vdCAxOCAwIFIKICAvSW5mbyAxIDAgUgogIC9JRCBbPEIyOUI0MTFENURFNDVFMkZCQkMxNzkwNTkxQkM2MkVFPiA8QjI5QjQxMUQ1REU0NUUyRkJCQzE3OTA1OTFCQzYyRUU+XQogIC9TaXplIDIwCj4+CnN0YXJ0eHJlZgozMDQwNwolJUVPRgo=
+                  </value>
+                </observationMedia>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+
+    </structuredBody>
+  </component>
+</ClinicalDocument>
