@@ -24,8 +24,8 @@
             [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : La section doit contenir un élément 'text'
         </assert>
         <!-- Vérifier le titre de la section -->
-        <assert test="cda:title">
-            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : La section doit contenir un élément 'title'
+        <assert test='cda:title = "Copie du document"'>
+            [S_documentPDFCopie_ANS.sch] Erreur de conformité CI-SIS : L'élément 'title' est obligatoire et doit être fixé à 'Copie du document' 
         </assert>
         
         <!-- Vérifier le code de la section -->
