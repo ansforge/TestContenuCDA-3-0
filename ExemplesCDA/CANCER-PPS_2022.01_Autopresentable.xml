@@ -17,6 +17,7 @@
 		Historique :
       22/06/2021 : Création du document autoprésentable (avec feuille de style intégrée) 
       07/04/2022:  Migration des terminologies et JDV en SNOMED CT
+      25/08/2023 : Migration des terminologies et JDVs après validation
 		**********************************************************************************************************    
 -->
 <!-- Un document autoprésentable utilise la feuille de style fournie dans le document -->
@@ -69,8 +70,8 @@
       <!-- Patient -->
       <c:recordTarget>
         <c:patientRole>
-          <!-- INS-NIR de production : 1.2.250.1.213.1.4.8 -->
-          <c:id extension="276059205062865" root="1.2.250.1.213.1.4.8"/>
+          <!-- INS-NIR de test : 1.2.250.1.213.1.4.10 -->
+          <c:id extension="279035121518989" root="1.2.250.1.213.1.4.10"/>
           <!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
           <c:id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
           <!-- Adresse du patient -->
@@ -85,17 +86,17 @@
           <!-- Coordonnées télécom du patient -->
           <c:telecom value="tel:0144534551" use="H"/>
           <c:telecom value="tel:0647151010" use="MC"/>
-          <c:telecom value="mailto:276059205062865@patient.mssante.fr"/>
+          <c:telecom value="mailto:279035121518989@patient.mssante.fr"/>
           <!-- Identité du patient -->
           <c:patient classCode="PSN">
             <c:name>
-              <c:prefix>MME</c:prefix>
+                <c:prefix>MME</c:prefix>
                 <!-- Nom et prénom(s) de naissance -->
-                <c:family qualifier="BR">NESSI</c:family>            
-                <c:given>Ruth Isabelle</c:given>
+                <c:family qualifier="BR">PAT-TROIS</c:family>            
+                <c:given>DOMINIQUE</c:given>
                 <!-- Nom et prénom utilisés -->
-                <c:family qualifier="CL">DECOURCY</c:family>
-                <c:given qualifier="CL">Ruth</c:given>        
+                <c:family qualifier="CL">PAT-TROIS</c:family>
+                <c:given qualifier="CL">DOMINIQUE</c:given>        
               </c:name>
             <c:administrativeGenderCode code="F" displayName="Féminin"
               codeSystem="2.16.840.1.113883.5.1"/>
@@ -3928,6 +3929,7 @@
       </c:component>
     </c:ClinicalDocument>
   </data:Contenu>
+
   <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
   <!--         Feuille de style XSLT de l'INCa pour PPS EN CANCEROLOGIE           -->
   <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
@@ -10224,6 +10226,5 @@
       </xsl:choose>
     </xsl:for-each>
   </xsl:template>
-
 
 </xsl:stylesheet>

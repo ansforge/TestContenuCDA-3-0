@@ -55,68 +55,67 @@
 			<!-- numéro de la version courante (entier positif): la première version -->
 			<versionNumber value="1"/>
 			<!-- Patient -->
-			<recordTarget>
-				<patientRole>
-					<!-- INS-NIR de production : 1.2.250.1.213.1.4.8 -->
-					<id extension="277076322082910" root="1.2.250.1.213.1.4.8"/>
-					<!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
-					<id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
-					<!-- Adresse -->
-					<addr use="H">
-						<houseNumber>28</houseNumber>
-						<streetName>Avenue de Breteuil</streetName>
-						<unitID>Escalier A</unitID>
-						<postalCode>75007</postalCode>
-						<city>Paris</city>
-						<country>FRANCE</country>
-					</addr>
-					<!-- Télécom -->
-					<telecom value="tel:0144534551" use="H"/>
-					<telecom value="tel:0647151010" use="MC"/>
-					<telecom value="mailto:277076322082910@patient.mssante.fr"/>
-					<!-- Identité du patient -->
-					<patient classCode="PSN">
-						<name>
-							<!-- Nom et prénom(s) de naissance -->
-							<family qualifier="BR">NESSI</family>            
-							<given>Ruth Isabelle</given>
-							<!-- Nom et prénom utilisés -->
-							<family qualifier="CL">DECOURCY</family>
-							<given qualifier="CL">Ruth</given>        
-						</name>
-						<administrativeGenderCode code="F" displayName="Féminin"
-							codeSystem="2.16.840.1.113883.5.1"/>
-						<birthTime value="19770714"/>
-						<!-- Représentant du patient -->
-						<guardian>
-							<addr use="H">
-								<houseNumber>28</houseNumber>
-								<streetName>Avenue de Breteuil</streetName>
-								<postalCode>75007</postalCode>
-								<city>PARIS</city>
-								<country>FRANCE</country>
+		<recordTarget>
+			<patientRole>
+				<!-- INS-NIR de test : 1.2.250.1.213.1.4.10 -->
+				<id extension="279035121518989" root="1.2.250.1.213.1.4.10"/>
+				<!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
+				<id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
+				<!-- Adresse du patient -->
+				<addr>
+					<houseNumber>28</houseNumber>
+					<streetName>Av de Breteuil</streetName>
+					<unitID>Escalier A</unitID>
+					<postalCode>75007</postalCode>
+					<city>PARIS</city>
+					<country>FRANCE</country>
+				</addr>
+				<!-- Coordonnées télécom du patient -->
+				<telecom value="tel:0144534551" use="H"/>
+				<telecom value="tel:0647151010" use="MC"/>
+				<telecom value="mailto:279035121518989@patient.mssante.fr"/>
+				<!-- Identité du patient -->
+				<patient classCode="PSN">
+					<name>
+						<given qualifier="BR">DOMINIQUE</given>
+						<given>DOMINIQUE</given>
+						<family qualifier="BR">PAT-TROIS</family>
+						<family qualifier="SP">PAT-TROIS</family>
+						<family qualifier="CL">PAT-TROIS</family>
+					</name>
+					<administrativeGenderCode code="F" displayName="Féminin"
+						codeSystem="2.16.840.1.113883.5.1"/>
+					<birthTime value="19790328"/>
+					<!-- Représentant du patient -->
+					<guardian>
+						<addr use="H">
+							<houseNumber>28</houseNumber>
+							<streetName>Av de Breteuil</streetName>
+							<postalCode>75007</postalCode>
+							<city>PARIS</city>
+							<country>FRANCE</country>
+						</addr>
+						<telecom value="tel:0147150000" use="H"/>
+						<guardianPerson>
+							<name>
+								<prefix>MME</prefix>
+								<family>NESSI</family>
+								<given>Jeanne</given>
+							</name>
+						</guardianPerson>
+					</guardian>
+					<!-- Lieu de naissance du patient -->
+					<birthplace>
+						<place>
+							<addr>
+								<county>63220</county>
+								<city>MAZOIRES</city>
 							</addr>
-							<telecom value="tel:0147150000" use="H"/>
-							<guardianPerson>
-								<name>
-									<prefix>MME</prefix>
-									<family>NESSI</family>
-									<given>Jeanne</given>
-								</name>
-							</guardianPerson>
-						</guardian>
-						<!-- Lieu de naissance du patient -->
-						<birthplace>
-							<place>
-								<addr>
-									<county>63220</county>
-									<city>MAZOIRES</city>
-								</addr>
-							</place>
-						</birthplace>
-					</patient>
-				</patientRole>
-			</recordTarget>
+						</place>
+					</birthplace>
+				</patient>
+			</patientRole>
+		</recordTarget>
 
 			<!-- Auteur -->
 			<author>
