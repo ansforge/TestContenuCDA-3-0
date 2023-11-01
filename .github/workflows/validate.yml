@@ -33,7 +33,7 @@ jobs:
         run: |
           cd validateCDA
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
-          java -Xms2g -Xmx4g -cp ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
+          java -Xms2g -Xmx8g -cp ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
 
       - name: Get branch names
         id: branch-name
