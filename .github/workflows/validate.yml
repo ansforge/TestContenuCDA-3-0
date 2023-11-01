@@ -11,7 +11,7 @@ on:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
   publish:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get soft to validate
         uses: actions/checkout@main
@@ -33,7 +33,7 @@ jobs:
         run: |
           cd validateCDA
           mkdir D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report/
-          java -Xms2g -Xmx4g -cp ./librairie/* ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
+          java -Xms2g -Xmx4g -cp "./librairie/*" ./validate.java -i ../testContenuCDA/ExemplesCDA/ -o D:/a/TestContenuCDA-3-0/TestContenuCDA-3-0/report 
 
       - name: Get branch names
         id: branch-name
