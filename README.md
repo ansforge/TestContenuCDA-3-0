@@ -9,5 +9,5 @@ Le répertoire testContenuCDA contient :
 
 # Viewer CDA
 
-Un visualiseur de documents CDA est fourni par l'ANS, il est publié comme Release sous le nom ANS_Viewer-CDA_2023.01
-Un document Lisez-Moi y est associé pour expliquer le fonctionnement du Viewer
+- Un visualiseur de documents CDA est fourni par l'ANS, il est publié comme Release sous le nom ANS_Viewer-CDA_2023.01
+- Un document Lisez-Moi y est associé pour expliquer le fonctionnement du Viewer
