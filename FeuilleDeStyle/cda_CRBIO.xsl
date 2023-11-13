@@ -867,49 +867,49 @@
 										<xsl:choose>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-NIR]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-NIA]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-NIR de test]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-NIR de démonstration]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
 											</xsl:when>
 											<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
 												<xsl:call-template name="show-identifiant">
-													<xsl:with-param name="id" select="."/>
+												<xsl:with-param name="id" select="."/>
 												</xsl:call-template>
 												<xsl:text>&#160;</xsl:text>
 												<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
@@ -2374,22 +2374,251 @@
 					<xsl:if test="$relation/../hl7:value">
 						<td width="20%">
 							<xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
-								<xsl:value-of select="$relation/../hl7:value/@value"/>
-								<xsl:value-of select="$relation/../hl7:value/@unit"/>
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_PQ'">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="$relation/../hl7:value/@xsi:type = 'ED'">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@unit"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@unit"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
 							</xsl:if>
 							<xsl:if test="$relation/../hl7:value/@xsi:type = 'INT'">
-								<xsl:value-of select="$relation/../hl7:value/@value"/>
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="$relation/../hl7:value/@xsi:type = 'BL'">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
 							</xsl:if>
 							<xsl:if test="$relation/../hl7:value/@xsi:type = 'ST'">
-								<xsl:value-of select="$relation/../hl7:value"/>
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
 							</xsl:if>
 							<xsl:if test="$relation/../hl7:value/@xsi:type = 'TS'">
-								<xsl:value-of select="$relation/../hl7:value/@value"/>
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_TS'">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="$relation/../hl7:value/@xsi:type = 'REAL'">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
 							</xsl:if>
 							<xsl:if test="$relation/../hl7:value/@xsi:type = 'CD'">
-								<xsl:value-of select="$relation/../hl7:value/@code"/>
-								<xsl:text> - </xsl:text>
-								<xsl:value-of select="$relation/../hl7:value/@displayName"/>
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@code"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/@displayName"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
 							</xsl:if>
 						</td>
 					</xsl:if>
@@ -6519,15 +6748,14 @@
 								</span>
 							</td>
 							<td rowspan="{$row}" class="td_seconde">
-								<xsl:variable name="ins"
-									select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-									translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-									select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+								<xsl:variable name="ins" select="
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+										translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
 								<xsl:variable name="countP"
 									select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
 								<xsl:variable name="name">
@@ -6780,53 +7008,53 @@
 										<xsl:for-each select="hl7:id">
 											<xsl:choose>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-NIR]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-NIA]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIA]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-NIR de test]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de test]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-NIR de démonstration]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de démonstration]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
 												</xsl:when>
 												<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-													<xsl:call-template name="show-identifiant">
-														<xsl:with-param name="id" select="."/>
-													</xsl:call-template>
-													<xsl:text>&#160;</xsl:text>
-													<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
 												</xsl:when>
 											</xsl:choose>
 											<br/>
@@ -7077,14 +7305,14 @@
 										select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
 									<fo:table-cell number-rows-spanned="{$row}">
 										<fo:block>
-											<xsl:variable name="ins"
-												select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-												translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+											<xsl:variable name="ins" select="
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+													translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
 											<xsl:variable name="countP"
 												select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
 											<xsl:variable name="name">
@@ -7362,58 +7590,58 @@
 										<fo:table-cell xsl:use-attribute-sets="myBlock7">
 											<fo:block>
 												<xsl:for-each select="hl7:id">
-													<xsl:choose>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIA]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de démonstration]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-														</xsl:when>
-													</xsl:choose>
-													<fo:block line-height="0.1cm">&#160;</fo:block>
+												<xsl:choose>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIA]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de démonstration]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+												</xsl:when>
+												</xsl:choose>
+												<fo:block line-height="0.1cm">&#160;</fo:block>
 												</xsl:for-each>
 											</fo:block>
 										</fo:table-cell>
@@ -21487,58 +21715,58 @@
 										<td style="width: 30%; background-color: white;">
 											<span class="span_value">
 												<xsl:for-each select="hl7:id">
-													<xsl:choose>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIA]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de démonstration]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-														</xsl:when>
-													</xsl:choose>
-													<br/>
+												<xsl:choose>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIA]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de démonstration]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+												</xsl:when>
+												</xsl:choose>
+												<br/>
 												</xsl:for-each>
 											</span>
 										</td>
@@ -22147,58 +22375,58 @@
 										<fo:table-cell xsl:use-attribute-sets="myBlock11">
 											<fo:block>
 												<xsl:for-each select="hl7:id">
-													<xsl:choose>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIA]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-NIR de démonstration]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-														</xsl:when>
-														<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-															<xsl:call-template name="show-identifiant">
-																<xsl:with-param name="id" select="."/>
-															</xsl:call-template>
-															<xsl:text>&#160;</xsl:text>
-															<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-														</xsl:when>
-													</xsl:choose>
-													<fo:block line-height="0.1cm">&#160;</fo:block>
+												<xsl:choose>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIA]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-NIR de démonstration]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+												</xsl:when>
+												<xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+												<xsl:call-template name="show-identifiant">
+												<xsl:with-param name="id" select="."/>
+												</xsl:call-template>
+												<xsl:text>&#160;</xsl:text>
+												<xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+												</xsl:when>
+												</xsl:choose>
+												<fo:block line-height="0.1cm">&#160;</fo:block>
 												</xsl:for-each>
 											</fo:block>
 										</fo:table-cell>
@@ -23118,9 +23346,10 @@
 				</xsl:choose>
 			</xsl:if>
 		</xsl:variable>
-		<xsl:if test="not(contains($in/@root, '1.2.250.1.213.1.4.8')) and not(contains($in/@root, '1.2.250.1.213.1.4.9')) and not(contains($in/@root, '1.2.250.1.213.1.4.10')) 
-			and not(contains($in/@root, '1.2.250.1.213.1.4.11')) and not(contains($in/@root, '1.2.250.1.213.1.4.2')) and not(contains($in/@root, '1.2.250.1.213.1.4.6')) and 
-			not(contains($in/@root, '1.2.250.1.213.1.4.7'))">
+		<xsl:if test="
+				not(contains($in/@root, '1.2.250.1.213.1.4.8')) and not(contains($in/@root, '1.2.250.1.213.1.4.9')) and not(contains($in/@root, '1.2.250.1.213.1.4.10'))
+				and not(contains($in/@root, '1.2.250.1.213.1.4.11')) and not(contains($in/@root, '1.2.250.1.213.1.4.2')) and not(contains($in/@root, '1.2.250.1.213.1.4.6')) and
+				not(contains($in/@root, '1.2.250.1.213.1.4.7'))">
 			<xsl:if test="not(contains($vendor, 'Saxonica'))">
 				<span>
 					<xsl:choose>
@@ -27654,7 +27883,7 @@
 			<fo:block line-height="0.1cm">&#160;</fo:block>
 		</xsl:if>
 	</xsl:template>
-	
+
 	<xd:doc>
 		<xd:desc>
 			<xd:p>Show root</xd:p>
