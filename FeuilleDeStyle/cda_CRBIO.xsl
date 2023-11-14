@@ -2370,7 +2370,7 @@
 					</td>
 					<xsl:if
 						test="$relation/../hl7:value or $relation/../hl7:interpretationCode or $relation/../hl7:referenceRange/hl7:observationRange">
-						<td width="12%">
+						<td width="17%">
 							<xsl:if test="$relation/../hl7:value">
 								<xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
 									<xsl:if test="$relation/../hl7:value/@value">
@@ -2740,7 +2740,7 @@
 								</xsl:if>
 							</xsl:if>
 						</td>
-						<td width="12%">
+						<td width="17%">
 							<xsl:if test="$relation/../hl7:interpretationCode">
 								<xsl:value-of select="$relation/../hl7:interpretationCode/@code"/>
 								<xsl:text> - </xsl:text>
@@ -2748,7 +2748,7 @@
 									select="$relation/../hl7:interpretationCode/@displayName"/>
 							</xsl:if>
 						</td>
-						<td width="12%">
+						<td width="17%">
 							<xsl:if test="$relation/../hl7:referenceRange/hl7:observationRange">
 								<xsl:if
 									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_REAL'">
