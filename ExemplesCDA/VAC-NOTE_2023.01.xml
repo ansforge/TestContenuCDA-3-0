@@ -300,14 +300,7 @@
           <id root="DF6B5534-B28E-499B-968E-2CCAC9B98924" />
           <code code="11369-6" displayName="Historique des vaccinations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Note de vaccination</title>
-          <text>           
-            <list>
-              <item>
-                <content styleCode="BoldItalics">Vaccination contre la diphtérie, le
-                           tétanos, la poliomyélite, la coqueluche (pertussis), l'Haemophilus
-                           influenzae b</content>
-              </item>
-            </list>
+          <text>      
             <table border="0">
               <thead>
                 <tr>
