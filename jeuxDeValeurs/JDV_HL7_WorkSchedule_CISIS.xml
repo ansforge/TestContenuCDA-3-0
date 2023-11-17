@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.1.11.20561" displayName="JDV_HL7_WorkSchedule_CISIS" version="test"><ConceptList><Concept code="DS" displayName="Journée (par exemple : entre 6h et 18h)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="EMS" displayName="Matin (entre 2h et 14h)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="ES" displayName="Après-midi (entre 14h et minuit)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="NS" displayName="Nuit (entre 21h et 8h)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="RSWN" displayName="Variable (journées, soirées, avec parfois des nuits)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="RSWON" displayName="Variable (journées, soirées, sans nuits ni soirées)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="SS" displayName="Journée avec coupure de 2 à 4 heures." codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="VLS" displayName="Horaires de longue durée (17h ou plus)" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/><Concept code="VS" displayName="Irrégulier avec information à court terme" codeSystem="2.16.840.1.113883.5.1063" dateValid="20190101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HL7_WorkSchedule_CISIS" id="2.16.840.1.113883.1.11.20561" version="test">
+        <ConceptList>
+            <Concept code="DS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Journée (par exemple : entre 6h et 18h)"/>
+            <Concept code="EMS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Matin (entre 2h et 14h)"/>
+            <Concept code="ES" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Après-midi (entre 14h et minuit)"/>
+            <Concept code="NS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Nuit (entre 21h et 8h)"/>
+            <Concept code="RSWN" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Variable (journées, soirées, avec parfois des nuits)"/>
+            <Concept code="RSWON" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Variable (journées, soirées, sans nuits ni soirées)"/>
+            <Concept code="SS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Journée avec coupure de 2 à 4 heures."/>
+            <Concept code="VLS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Horaires de longue durée (17h ou plus)"/>
+            <Concept code="VS" codeSystem="2.16.840.1.113883.5.1063" dateFin="" dateValid="20190101000000" displayName="Irrégulier avec information à court terme"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

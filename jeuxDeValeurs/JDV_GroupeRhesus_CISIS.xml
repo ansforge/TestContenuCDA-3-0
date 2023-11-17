@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.755" displayName="JDV_GroupeRhesus_CISIS" version="test"><ConceptList><Concept code="278147001" displayName="groupe sanguin O positif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278148006" displayName="groupe sanguin O négatif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278149003" displayName="groupe sanguin A positif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278152006" displayName="groupe sanguin A négatif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278150003" displayName="groupe sanguin B positif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278153001" displayName="groupe sanguin B négatif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278151004" displayName="groupe sanguin AB positif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/><Concept code="278154007" displayName="groupe sanguin AB négatif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230131000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_GroupeRhesus_CISIS" id="1.2.250.1.213.1.1.4.2.289.45" version="test">
+        <ConceptList>
+            <Concept code="OBS_261" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="O Positif"/>
+            <Concept code="OBS_262" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="O Négatif"/>
+            <Concept code="OBS_263" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="A Positif"/>
+            <Concept code="OBS_264" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="A Négatif"/>
+            <Concept code="OBS_265" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="B Positif"/>
+            <Concept code="OBS_266" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="B Négatif"/>
+            <Concept code="OBS_267" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="AB Positif"/>
+            <Concept code="OBS_268" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230131000000" dateValid="20100101000000" displayName="AB Négatif"/>
+            <Concept code="278147001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin O positif"/>
+            <Concept code="278148006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin O négatif"/>
+            <Concept code="278149003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin A positif"/>
+            <Concept code="278152006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin A négatif"/>
+            <Concept code="278150003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin B positif"/>
+            <Concept code="278153001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin B négatif"/>
+            <Concept code="278151004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin AB positif"/>
+            <Concept code="278154007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="groupe sanguin AB négatif"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.604" displayName="JDV_J149_BodySiteBP_ENS" version="test"><ConceptList><Concept code="24890" displayName="Bras" codeSystem="2.16.840.1.113883.6.119" dateValid="20210603000000" dateFin="20230401000000"/><Concept code="53120007" displayName="membre supérieur" codeSystem="2.16.840.1.113883.6.96" dateValid="20230401000000" dateFin=""/><Concept code="24922" displayName="Poignet" codeSystem="2.16.840.1.113883.6.119" dateValid="20210603000000" dateFin="20230401000000"/><Concept code="8205005" displayName="poignet" codeSystem="2.16.840.1.113883.6.96" dateValid="20230401000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_J149_BodySiteBP_ENS" id="1.2.250.1.213.1.1.5.604" version="test">
+        <ConceptList>
+            <Concept code="24890" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Bras"/>
+            <Concept code="53120007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="membre supérieur"/>
+            <Concept code="24922" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Poignet"/>
+            <Concept code="8205005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="poignet"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

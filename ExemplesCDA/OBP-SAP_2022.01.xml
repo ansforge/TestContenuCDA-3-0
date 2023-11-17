@@ -1948,7 +1948,7 @@
                   <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.53"/>
                   <id root="8B6DADE2-F2B5-42D6-B502-D04C81E339F3" />
-                  <code code="MED-164" displayName="Pathologie en cours de grossesse" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <code code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   <text><reference value="antecedent-obs-01-patho-1"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -2075,7 +2075,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.53"/>
                       <id root="56D4CF5E-B4AF-42D0-8CA6-1CCD923527B9" />
                       <!-- valeur issue du JDV_ObservationEnfant_OPB_CISIS (1.2.250.1.213.1.1.4.2.289.3) -->
-                      <code code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <code code="107724000" displayName="transfert du patient" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                       <text><reference value="#enfant-1-transfert-mutation"/></text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />

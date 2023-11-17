@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.756" displayName="JDV_StaticSEMprocedures_CISIS" version="test"><ConceptList><Concept code="JQQP003" displayName="Autopsie médicale d'un fœtus ou d'un nouveau-né de moins de 4 jours de vie, avec examen de l'encéphale" codeSystem="1.2.250.1.213.2.5" dateValid="20100101000000" dateFin=""/><Concept code="398171003" displayName="examen auditif" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin="20230828000000"/><Concept code="GEN-092.04.01" displayName="Autre dépistage" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin="20230828000000"/><Concept code="68322007" displayName="administration d'un antibiotique" codeSystem="2.16.840.1.113883.6.96" dateValid="20221114000000" dateFin="20230828000000"/><Concept code="J07BC01" displayName="Vaccin contre l'hépatite B" codeSystem="2.16.840.1.113883.6.73" dateValid="20100101000000" dateFin="20230828000000"/><Concept code="J07AN" displayName="Vaccin antituberculeux" codeSystem="2.16.840.1.113883.6.73" dateValid="20100101000000" dateFin="20230828000000"/><Concept code="275977009" displayName="test néonatal de 14 maladies congénitales" codeSystem="2.16.840.1.113883.6.96" dateValid="20230802000000" dateFin=""/><Concept code="GEN-092.04.13" displayName="Autre acte" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230328000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_StaticSEMprocedures_CISIS" id="1.2.250.1.213.1.1.5.756" version="test">
+        <ConceptList>
+            <Concept code="398171003" codeSystem="2.16.840.1.113883.6.96" dateFin="20230828000000" dateValid="20230803000000" displayName="examen auditif"/>
+            <Concept code="GEN-092.04.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230828000000" dateValid="20230202000000" displayName="Autre dépistage"/>
+            <Concept code="68322007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230828000000" dateValid="20221114000000" displayName="administration d'un antibiotique"/>
+            <Concept code="J07BC01" codeSystem="2.16.840.1.113883.6.73" dateFin="20230828000000" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
+            <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="20230828000000" dateValid="20100101000000" displayName="Vaccin antituberculeux"/>
+            <Concept code="JQQP003" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Autopsie médicale d'un fœtus ou d'un nouveau-né de moins de 4 jours de vie, avec examen de l'encéphale"/>
+            <Concept code="275977009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230802000000" displayName="test néonatal de 14 maladies congénitales"/>
+            <Concept code="GEN-092.04.13" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230328000000" displayName="Autre acte"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

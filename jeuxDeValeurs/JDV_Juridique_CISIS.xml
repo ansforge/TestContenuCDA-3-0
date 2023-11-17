@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.56" displayName="JDV_Juridique_CISIS" version="test"><ConceptList><Concept code="GEN-121" displayName="A envisager" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-122" displayName="A envisager de lever" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-123" displayName="Existante à maintenir" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Juridique_CISIS" id="1.2.250.1.213.1.1.5.56" version="test">
+        <ConceptList>
+            <Concept code="GEN-121" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="A envisager"/>
+            <Concept code="GEN-122" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="A envisager de lever"/>
+            <Concept code="GEN-123" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Existante à maintenir"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

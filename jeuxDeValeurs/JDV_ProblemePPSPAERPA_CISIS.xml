@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.37" displayName="JDV_ProblemePPSPAERPA_CISIS" version="test"><ConceptList><Concept code="MED-056" displayName="Problèmes liés aux médicaments" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-057" displayName="Problème de mobilité" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-058" displayName="Isolement" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-059" displayName="Précarité" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-060" displayName="Incapacité dans les activités de base de la vie quotidienne" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-061" displayName="Troubles nutritionnels / difficulté à avoir une alimentation adaptée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-062" displayName="Difficulté à prendre soin de soi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-063" displayName="Troubles de l'humeur" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-011" displayName="Organisation du suivi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.01.01" displayName="Autre problème" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ProblemePPSPAERPA_CISIS" id="1.2.250.1.213.1.1.5.37" version="test">
+        <ConceptList>
+            <Concept code="MED-056" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Problèmes liés aux médicaments"/>
+            <Concept code="MED-057" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Problème de mobilité"/>
+            <Concept code="MED-058" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Isolement"/>
+            <Concept code="MED-059" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Précarité"/>
+            <Concept code="MED-060" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Incapacité dans les activités de base de la vie quotidienne"/>
+            <Concept code="MED-061" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles nutritionnels / difficulté à avoir une alimentation adaptée"/>
+            <Concept code="MED-062" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Difficulté à prendre soin de soi"/>
+            <Concept code="MED-063" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles de l'humeur"/>
+            <Concept code="ORG-011" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Organisation du suivi"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.01.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre problème"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

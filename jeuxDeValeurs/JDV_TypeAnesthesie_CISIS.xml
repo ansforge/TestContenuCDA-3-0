@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.492" displayName="JDV_TypeAnesthesie_CISIS" version="test"><ConceptList><Concept code="MED-581" displayName="Anesthésie générale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin="20230803000000"/><Concept code="50697003" displayName="anesthésie générale" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="MED-582" displayName="Anesthésie locorégionale péridurale ou épidurale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-583" displayName="Anesthésie locorégionale subarachnoïdienne (rachianesthésie)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-584" displayName="Anesthésie locorégionale plexique ou tronculaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-585" displayName="Anesthésie locorégionale intraveineuse" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-586" displayName="Sédation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-587" displayName="Hypnose" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-588" displayName="Surveillance simple" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeAnesthesie_CISIS" id="1.2.250.1.213.1.1.5.492" version="test">
+        <ConceptList>
+            <Concept code="MED-581" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20200331000000" displayName="Anesthésie générale"/>
+            <Concept code="50697003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="anesthésie générale"/>
+            <Concept code="MED-582" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale péridurale ou épidurale"/>
+            <Concept code="MED-583" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale subarachnoïdienne (rachianesthésie)"/>
+            <Concept code="MED-584" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale plexique ou tronculaire"/>
+            <Concept code="MED-585" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale intraveineuse"/>
+            <Concept code="MED-586" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Sédation"/>
+            <Concept code="MED-587" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Hypnose"/>
+            <Concept code="MED-588" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Surveillance simple"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

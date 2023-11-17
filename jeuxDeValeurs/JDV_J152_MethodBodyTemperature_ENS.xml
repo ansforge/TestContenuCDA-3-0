@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.607" displayName="JDV_J152_MethodBodyTemperature_ENS" version="test"><ConceptList><Concept code="K50BC10" displayName="THERMOMETRE ELECTRONIQUE" codeSystem="1.2.250.1.213.2.65" dateValid="20210603000000" dateFin=""/><Concept code="K50BC03" displayName="THERMOMETRE INFRAROUGE" codeSystem="1.2.250.1.213.2.65" dateValid="20210603000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_J152_MethodBodyTemperature_ENS" id="1.2.250.1.213.1.1.5.607" version="test">
+        <ConceptList>
+            <Concept code="K50BC10" codeSystem="1.2.250.1.213.2.65" dateFin="20230911000000" dateValid="20210603000000" displayName="THERMOMETRE ELECTRONIQUE"/>
+            <Concept code="K50BC03" codeSystem="1.2.250.1.213.2.65" dateFin="20230911000000" dateValid="20210603000000" displayName="THERMOMETRE INFRAROUGE"/>
+            <Concept code="V03010102" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="THERMOMÈTRES NUMÉRIQUES"/>
+            <Concept code="V0301010202" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="THERMOMÈTRES NUMÉRIQUES - MESURE SANS CONTACT"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

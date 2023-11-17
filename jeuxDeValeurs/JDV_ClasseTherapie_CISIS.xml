@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.143" displayName="JDV_ClasseTherapie_CISIS" version="test"><ConceptList><Concept code="L01XC" displayName="Anticorps monoclonaux" codeSystem="2.16.840.1.113883.6.73" dateValid="20100101000000" dateFin="20230221000000"/><Concept code="L01XE" displayName="Inhibiteurs de la protéine kinase" codeSystem="2.16.840.1.113883.6.73" dateValid="20100101000000" dateFin="20230221000000"/><Concept code="L01XX" displayName="Autres agents antinéoplasiques" codeSystem="2.16.840.1.113883.6.73" dateValid="20100101000000" dateFin=""/><Concept code="L01E" displayName="inhibiteurs de protéines kinases" codeSystem="2.16.840.1.113883.6.73" dateValid="20230221000000" dateFin=""/><Concept code="L01EE" displayName="inhibiteurs de protéine kinase activée par un mitogène (MEK)" codeSystem="2.16.840.1.113883.6.73" dateValid="20230221000000" dateFin=""/><Concept code="L01EX" displayName="autres inhibiteurs de protéines kinases" codeSystem="2.16.840.1.113883.6.73" dateValid="20230221000000" dateFin=""/><Concept code="L01F" displayName="anticorps monoclonaux et conjugués anticorps-médicaments" codeSystem="2.16.840.1.113883.6.73" dateValid="20230221000000" dateFin=""/><Concept code="L01FX" displayName="autres anticorps monoclonaux et conjugués anticorps-médicaments" codeSystem="2.16.840.1.113883.6.73" dateValid="20230221000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ClasseTherapie_CISIS" id="1.2.250.1.213.1.1.5.143" version="test">
+        <ConceptList>
+            <Concept code="L01XC" codeSystem="2.16.840.1.113883.6.73" dateFin="20230221000000" dateValid="20100101000000" displayName="Anticorps monoclonaux"/>
+            <Concept code="L01XE" codeSystem="2.16.840.1.113883.6.73" dateFin="20230221000000" dateValid="20100101000000" displayName="Inhibiteurs de la protéine kinase"/>
+            <Concept code="L01XX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Autres agents antinéoplasiques"/>
+            <Concept code="L01E" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230221000000" displayName="inhibiteurs de protéines kinases"/>
+            <Concept code="L01EE" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230221000000" displayName="inhibiteurs de protéine kinase activée par un mitogène (MEK)"/>
+            <Concept code="L01EX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230221000000" displayName="autres inhibiteurs de protéines kinases"/>
+            <Concept code="L01F" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230221000000" displayName="anticorps monoclonaux et conjugués anticorps-médicaments"/>
+            <Concept code="L01FX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230221000000" displayName="autres anticorps monoclonaux et conjugués anticorps-médicaments"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.41" displayName="JDV_ObjectifActivite_CISIS" version="test"><ConceptList><Concept code="ORG-164" displayName="Education thérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-097" displayName="Diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-098" displayName="Conseil génétique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-099" displayName="Diagnostic prénatal" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-100" displayName="Diagnostic préimplantatoire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-046" displayName="Mise en place de la prise en charge" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-047" displayName="Suivi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-048" displayName="Prise en charge en urgence" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-049" displayName="Protocole de recherche" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-031" displayName="Acte médical" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-123" displayName="Consultation de transition enfant/adulte" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ObjectifActivite_CISIS" id="1.2.250.1.213.1.1.5.41" version="test">
+        <ConceptList>
+            <Concept code="ORG-164" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Education thérapeutique"/>
+            <Concept code="MED-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Diagnostic"/>
+            <Concept code="MED-098" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Conseil génétique"/>
+            <Concept code="MED-099" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Diagnostic prénatal"/>
+            <Concept code="MED-100" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Diagnostic préimplantatoire"/>
+            <Concept code="ORG-046" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Mise en place de la prise en charge"/>
+            <Concept code="ORG-047" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Suivi"/>
+            <Concept code="ORG-048" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prise en charge en urgence"/>
+            <Concept code="ORG-049" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Protocole de recherche"/>
+            <Concept code="ORG-031" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Acte médical"/>
+            <Concept code="ORG-123" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Consultation de transition enfant/adulte "/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

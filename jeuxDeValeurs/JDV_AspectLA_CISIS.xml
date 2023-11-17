@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.740" displayName="JDV_AspectLA_CISIS" version="test"><ConceptList><Concept code="408781009" displayName="liquide amniotique de couleur jaune paille" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="168092006" displayName="coloration méconiale du liquide amniotique" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="289294000" displayName="liquide amniotique avec méconium épais" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="249134008" displayName="liquide amniotique sanglant" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092.01.05" displayName="Autre aspect du liquide amniotique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AspectLA_CISIS" id="1.2.250.1.213.1.1.5.740" version="test">
+        <ConceptList>
+            <Concept code="408781009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="liquide amniotique de couleur jaune paille"/>
+            <Concept code="168092006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="coloration méconiale du liquide amniotique"/>
+            <Concept code="289294000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="liquide amniotique avec méconium épais"/>
+            <Concept code="249134008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="liquide amniotique sanglant"/>
+            <Concept code="GEN-092.01.05" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre aspect du liquide amniotique"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

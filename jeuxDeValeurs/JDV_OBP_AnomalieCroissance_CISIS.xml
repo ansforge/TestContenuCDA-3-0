@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.289.15" displayName="JDV_OBP_AnomalieCroissance_CISIS" version="test"><ConceptList><Concept code="D8-70110" displayName="Retard de croissance" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221025000000"/><Concept code="D8-70310" displayName="Macrosomie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221025000000"/><Concept code="P05.9" displayName="Croissance lente du fœtus, sans précision" codeSystem="2.16.840.1.113883.6.3" dateValid="20230612000000" dateFin=""/><Concept code="OBS_123" displayName="Pas d'anomalie de croissance intra-utérine" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="MED-1261" displayName="Pas d'anomalie de croissance intra-utérine" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_OBP_AnomalieCroissance_CISIS" id="1.2.250.1.213.1.1.4.2.289.15" version="test">
+        <ConceptList>
+            <Concept code="D8-70110" codeSystem="1.2.250.1.213.2.12" dateFin="20221025000000" dateValid="20100101000000" displayName="Retard de croissance"/>
+            <Concept code="D8-70310" codeSystem="1.2.250.1.213.2.12" dateFin="20221025000000" dateValid="20100101000000" displayName="Macrosomie"/>
+            <Concept code="P05.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230612000000" displayName="Croissance lente du fœtus, sans précision"/>
+            <Concept code="OBS_123" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Pas d'anomalie de croissance intra-utérine"/>
+            <Concept code="MED-1261" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Pas d'anomalie de croissance intra-utérine"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

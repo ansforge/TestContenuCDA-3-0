@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.126" displayName="JDV_Lien_Assure_Beneficiaire_CISIS" version="test"><ConceptList><Concept code="FAMDEP" displayName="Couverture familiale" codeSystem="2.16.840.1.113883.5.111" dateValid="20100101000000" dateFin=""/><Concept code="STUD" displayName="Couverture étudiante" codeSystem="2.16.840.1.113883.5.111" dateValid="20100101000000" dateFin=""/><Concept code="SELF" displayName="Couverture personnelle" codeSystem="2.16.840.1.113883.5.111" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Lien_Assure_Beneficiaire_CISIS" id="1.2.250.1.213.1.1.5.126" version="test">
+        <ConceptList>
+            <Concept code="FAMDEP" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Couverture familiale"/>
+            <Concept code="STUD" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Couverture étudiante"/>
+            <Concept code="SELF" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Couverture personnelle"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

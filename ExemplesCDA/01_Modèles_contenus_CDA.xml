@@ -5459,7 +5459,7 @@
 							<templateId root="1.2.250.1.213.1.1.3.54"/>
 							<id root="4FD525FD-8712-40F9-BF31-EF9A25069C25" />
 							<!-- valeur issue du JDV_TypeDirectiveAnticipee-CISIS (1.2.250.1.213.1.1.5.136) -->
-							<code code="MED-293" displayName="Intervention chirurgicale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+							<code code="387713003" displayName="intervention chirurgicale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text><reference value="#intervention-chirurgicale"/></text>
 							<statusCode code="completed" />
 							<effectiveTime>

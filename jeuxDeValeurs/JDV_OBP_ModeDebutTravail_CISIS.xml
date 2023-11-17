@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.289.22" displayName="JDV_OBP_ModeDebutTravail_CISIS" version="test"><ConceptList><Concept code="F-84580" displayName="Début de travail spontané" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="F-84610" displayName="Début de travail provoqué" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="P1-86310" displayName="Césarienne" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="84457005" displayName="déclenchement spontané du travail" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="112070001" displayName="déclenchement provoqué du travail" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="11466000" displayName="césarienne" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_OBP_ModeDebutTravail_CISIS" id="1.2.250.1.213.1.1.4.2.289.22" version="test">
+        <ConceptList>
+            <Concept code="F-84580" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Début de travail spontané"/>
+            <Concept code="F-84610" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Début de travail provoqué"/>
+            <Concept code="P1-86310" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Césarienne "/>
+            <Concept code="84457005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="déclenchement spontané du travail"/>
+            <Concept code="112070001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="déclenchement provoqué du travail"/>
+            <Concept code="11466000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="césarienne"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

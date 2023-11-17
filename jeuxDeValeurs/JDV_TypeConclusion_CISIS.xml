@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.152" displayName="JDV_TypeConclusion_CISIS" version="test"><ConceptList><Concept code="MED-541" displayName="Analyse non réalisée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-542" displayName="Résultats avec une mutation observée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-543" displayName="Résultats sans mutation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-544" displayName="Résultats non interprétables" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-545" displayName="Suspicion d'une amplification ou d'une délétion" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeConclusion_CISIS" id="1.2.250.1.213.1.1.5.152" version="test">
+        <ConceptList>
+            <Concept code="MED-541" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Analyse non réalisée"/>
+            <Concept code="MED-542" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Résultats avec une mutation observée"/>
+            <Concept code="MED-543" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Résultats sans mutation"/>
+            <Concept code="MED-544" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Résultats non interprétables"/>
+            <Concept code="MED-545" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Suspicion d'une amplification ou d'une délétion"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

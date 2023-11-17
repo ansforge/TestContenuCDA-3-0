@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.735" displayName="JDV_ModeAccouchement_CISIS" version="test"><ConceptList><Concept code="MED-1253" displayName="Césarienne pendant travail" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="MED-1254" displayName="Césarienne avant travail" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="302383004" displayName="accouchement par forceps" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="MED-217" displayName="Accouchement par voie basse non instrumentale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ModeAccouchement_CISIS" id="1.2.250.1.213.1.1.4.2.289.5" version="test">
+        <ConceptList>
+            <Concept code="OBS_109" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Césarienne pendant travail"/>
+            <Concept code="MED-1253" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne pendant travail"/>
+            <Concept code="OBS_110" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Césarienne avant travail"/>
+            <Concept code="MED-1254" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne avant travail "/>
+            <Concept code="P1-86E50" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Extraction voie basse instrumentale"/>
+            <Concept code="302383004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement par forceps"/>
+            <Concept code="MED-217" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Accouchement par voie basse non instrumentale"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

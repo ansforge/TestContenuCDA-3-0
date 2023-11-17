@@ -1,3 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.163" displayName="JDV_AntecedantsMedicaux_CISIS" version="test"><ConceptList><Concept code="D3-89400" displayName="Infarctus cérébral" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="D3-89500" displayName="AIT" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="G93.2" displayName="Hypertension intracrânienne bénigne" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="D3-89550" displayName="AVC" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="D3-89110" displayName="HSA" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="D3-15000" displayName="IDM" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="D3-12710" displayName="SCA" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="I74.3" displayName="Embolie et thrombose des artères des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="MED-532" displayName="Angor Stable" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="D3-31520" displayName="Fibrillation atriale" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="MED-533" displayName="Comorbidité" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="D9-20200" displayName="Démence avérée" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="M-80003" displayName="Cancer évolutif" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AntecedantsMedicaux_CISIS" id="1.2.250.1.213.1.1.5.163" version="test">
+        <ConceptList>
+            <Concept code="D3-89400" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Infarctus cérébral"/>
+            <Concept code="I63.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Infarctus cérébral, sans précision"/>
+            <Concept code="D3-89500" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="AIT"/>
+            <Concept code="G45.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Accident ischémique cérébral transitoire, sans précision"/>
+            <Concept code="G93.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Hypertension intracrânienne bénigne"/>
+            <Concept code="D3-89550" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="AVC"/>
+            <Concept code="I64" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus"/>
+            <Concept code="D3-89110" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="HSA"/>
+            <Concept code="I60.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Hémorragie sous-arachnoïdienne, sans précision"/>
+            <Concept code="D3-15000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="IDM"/>
+            <Concept code="I21.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Infarctus du myocarde sans précision, prise en charge non précisée"/>
+            <Concept code="D3-12710" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="SCA"/>
+            <Concept code="I20.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Angine de poitrine instable"/>
+            <Concept code="I74.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Embolie et thrombose des artères des membres inférieurs"/>
+            <Concept code="MED-532" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Angor Stable"/>
+            <Concept code="I20.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Angine de poitrine, sans précision"/>
+            <Concept code="D3-31520" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Fibrillation atriale"/>
+            <Concept code="I48" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Fibrillation et flutter auriculaires"/>
+            <Concept code="MED-533" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Comorbidité"/>
+            <Concept code="D9-20200" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Démence avérée"/>
+            <Concept code="F03" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Démence, sans précision"/>
+            <Concept code="M-80003" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Cancer évolutif"/>
+            <Concept code="C80" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Tumeur maligne de siège non précisé"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

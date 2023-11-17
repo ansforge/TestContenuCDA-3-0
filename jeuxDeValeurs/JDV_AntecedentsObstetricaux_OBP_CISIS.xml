@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.732" displayName="JDV_AntecedentsObstetricaux_OBP_CISIS" version="test"><ConceptList><Concept code="11884-4" displayName="Age gestationnel du fœtus (estimation clinique)" codeSystem="2.16.840.1.113883.6.1" dateValid="20100101000000" dateFin=""/><Concept code="O72" displayName="Hémorragie post-partum" codeSystem="2.16.840.1.113883.6.3" dateValid="20230511000000" dateFin=""/><Concept code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="63893-2" displayName="Issue de la grossesse" codeSystem="2.16.840.1.113883.6.1" dateValid="20230201000000" dateFin=""/><Concept code="MED-1247" displayName="Etat du périnée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="11638-4" displayName="Nombre d'enfants vivants" codeSystem="2.16.840.1.113883.6.1" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AntecedentsObstetricaux_OBP_CISIS" id="1.2.250.1.213.1.1.4.2.289.2" version="test">
+        <ConceptList>
+            <Concept code="11884-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Age gestationnel du fœtus (estimation clinique)"/>
+            <Concept code="D8-34000" codeSystem="1.2.250.1.213.2.12" dateFin="20230511000000" dateValid="20100101000000" displayName="Hémorragie post-partum"/>
+            <Concept code="O72" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230511000000" displayName="Hémorragie post-partum"/>
+            <Concept code="MED-164" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Pathologie en cours de grossesse"/>
+            <Concept code="O99" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité"/>
+            <Concept code="OBS_001" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230201000000" dateValid="20100101000000" displayName="Issue de la grossesse"/>
+            <Concept code="63893-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230201000000" displayName="Issue de la grossesse"/>
+            <Concept code="OBS_003" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Etat du périnée"/>
+            <Concept code="MED-1247" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Etat du périnée"/>
+            <Concept code="OBS_041" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230201000000" dateValid="20100101000000" displayName="Numéro de la grossesse antérieure"/>
+            <Concept code="63962-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20230427000000" dateValid="20230201000000" displayName="Numéro de grossesse"/>
+            <Concept code="11638-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Nombre d'enfants vivants"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.181" displayName="JDV_NIHSSLoccInt_CISIS" version="test"><ConceptList><Concept code="MED-402" displayName="Exécute les deux ordres correctement." codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20220420000000"/><Concept code="MED-403" displayName="Exécute un seul ordre sur les deux." codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20220420000000"/><Concept code="MED-404" displayName="N'exécute aucun des deux ordres." codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20220420000000"/><Concept code="LA18443-4" displayName="Exécute les deux ordres correctement." codeSystem="2.16.840.1.113883.6.1" dateValid="20220420000000" dateFin=""/><Concept code="LA18444-2" displayName="Exécute un seul ordre sur les deux." codeSystem="2.16.840.1.113883.6.1" dateValid="20220420000000" dateFin=""/><Concept code="LA18445-9" displayName="N'exécute aucun des deux ordres." codeSystem="2.16.840.1.113883.6.1" dateValid="20220420000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_NIHSSLoccInt_CISIS" id="1.2.250.1.213.1.1.5.181" version="test">
+        <ConceptList>
+            <Concept code="MED-402" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Exécute les deux ordres correctement."/>
+            <Concept code="MED-403" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Exécute un seul ordre sur les deux."/>
+            <Concept code="MED-404" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="N'exécute aucun des deux ordres."/>
+            <Concept code="LA18443-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Exécute les deux ordres correctement."/>
+            <Concept code="LA18444-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Exécute un seul ordre sur les deux."/>
+            <Concept code="LA18445-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="N'exécute aucun des deux ordres."/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.653" displayName="JDV_MesureVerreDelivre_CISIS" version="test"><ConceptList><Concept code="MED-1077" displayName="Puissance de la sphère – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="MED-1078" displayName="Puissance du cylindre – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="MED-1082" displayName="Axe en degrés – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="96052-6" displayName="Addition" codeSystem="2.16.840.1.113883.6.1" dateValid="20210924000000" dateFin="20230330000000"/><Concept code="MED-886" displayName="Addition" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230330000000" dateFin=""/><Concept code="MED-1079" displayName="Prisme – puissance – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="MED-1080" displayName="Prisme - orientation base – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="MED-1081" displayName="Prisme - axe en degrés – verre délivré" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="95324-0" displayName="Type de prisme" codeSystem="2.16.840.1.113883.6.1" dateValid="20210924000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_MesureVerreDelivre_CISIS" id="1.2.250.1.213.1.1.5.653" version="test">
+        <ConceptList>
+            <Concept code="MED-1077" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère – verre délivré"/>
+            <Concept code="MED-1078" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre – verre délivré"/>
+            <Concept code="MED-1082" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Axe en degrés – verre délivré"/>
+            <Concept code="96052-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210924000000" displayName="Addition"/>
+            <Concept code="MED-886" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Addition"/>
+            <Concept code="MED-1079" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme – puissance – verre délivré"/>
+            <Concept code="MED-1080" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - orientation base – verre délivré"/>
+            <Concept code="MED-1081" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - axe en degrés – verre délivré"/>
+            <Concept code="95324-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Type de prisme"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

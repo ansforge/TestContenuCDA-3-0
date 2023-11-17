@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.73" displayName="JDV_ModaliteEntree_CISIS" version="test"><ConceptList><Concept code="ORG-067" displayName="Urgence" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-068" displayName="Programmée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20220804000000" dateFin="20230803000000"/><Concept code="107724000" displayName="transfert du patient" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.06.07" displayName="Autre modalité d'entrée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ModaliteEntree_CISIS" id="1.2.250.1.213.1.1.5.73" version="test">
+        <ConceptList>
+            <Concept code="ORG-067" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Urgence"/>
+            <Concept code="ORG-068" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Programmée"/>
+            <Concept code="ORG-069" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Transfert ou mutation"/>
+            <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.06.07" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre modalité d'entrée"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

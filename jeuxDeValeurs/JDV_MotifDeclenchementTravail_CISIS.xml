@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.745" displayName="JDV_MotifDeclenchementTravail_CISIS" version="test"><ConceptList><Concept code="O48" displayName="Grossesse prolongée" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O42.9" displayName="Rupture prématurée des membranes, sans précision" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="P95" displayName="Mort fœtale" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O04" displayName="Avortement médical" codeSystem="2.16.840.1.113883.6.3" dateValid="20230201000000" dateFin=""/><Concept code="MED-1242" displayName="Sans indication médicale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="MED-219" displayName="Cause Maternelle" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-210" displayName="Cause Fœtale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-092.01.06" displayName="Autre motif de déclenchement" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_MotifDeclenchementTravail_CISIS" id="1.2.250.1.213.1.1.5.745" version="test">
+        <ConceptList>
+            <Concept code="O48" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Grossesse prolongée"/>
+            <Concept code="O42.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Rupture prématurée des membranes, sans précision"/>
+            <Concept code="P95" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Mort fœtale"/>
+            <Concept code="O04" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230201000000" displayName="Avortement médical"/>
+            <Concept code="MED-1242" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Sans indication médicale"/>
+            <Concept code="MED-219" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause Maternelle"/>
+            <Concept code="MED-210" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause Fœtale "/>
+            <Concept code="GEN-092.01.06" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif de déclenchement"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

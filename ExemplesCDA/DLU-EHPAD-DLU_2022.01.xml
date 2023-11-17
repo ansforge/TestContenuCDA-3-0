@@ -1081,8 +1081,8 @@
 							<templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="0D1629B3-CC69-4632-81F3-2301FD4C318B"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="DLU_001" displayName="Peut Alerter"
-								codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+							<code code="288575003" displayName="capable de communiquer"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr1"/>
 							</text>

@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.524" displayName="JDV_TypeIntubation_CISIS" version="test"><ConceptList><Concept code="MED-655" displayName="Intubation orotrachéale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200929000000" dateFin=""/><Concept code="MED-656" displayName="Intubation nasotrachéale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200929000000" dateFin=""/><Concept code="MED-657" displayName="Abord trachéal direct" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200929000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeIntubation_CISIS" id="1.2.250.1.213.1.1.5.524" version="test">
+        <ConceptList>
+            <Concept code="MED-655" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200929000000" displayName="Intubation orotrachéale"/>
+            <Concept code="MED-656" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200929000000" displayName="Intubation nasotrachéale"/>
+            <Concept code="MED-657" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200929000000" displayName="Abord trachéal direct"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

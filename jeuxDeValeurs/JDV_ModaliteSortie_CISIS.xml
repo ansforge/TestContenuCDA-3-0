@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.74" displayName="JDV_ModaliteSortie_CISIS" version="test"><ConceptList><Concept code="ORG-071" displayName="SSR" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-072" displayName="HAD" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-073" displayName="Autre établissement de santé" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.06.01" displayName="Autre établissement de santé" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/><Concept code="ORG-100" displayName="EHPAD" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-101" displayName="Retour au domicile" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="160849004" displayName="retour au domicile" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.06.03" displayName="Autre destination" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ModaliteSortie_CISIS" id="1.2.250.1.213.1.1.5.74" version="test">
+        <ConceptList>
+            <Concept code="ORG-101" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Retour au domicile"/>
+            <Concept code="160849004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="retour au domicile"/>
+            <Concept code="ORG-071" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="SSR"/>
+            <Concept code="109" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Etablissement de santé privé autorisé en soins de suite et de réadaptation (SSR)"/>
+            <Concept code="ORG-072" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="HAD"/>
+            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à domicile (HAD)"/>
+            <Concept code="ORG-100" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="EHPAD"/>
+            <Concept code="500" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="EHPAD"/>
+            <Concept code="ORG-073" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre établissement de santé"/>
+            <Concept code="GEN-092.06.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre établissement de santé"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.06.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre destination"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

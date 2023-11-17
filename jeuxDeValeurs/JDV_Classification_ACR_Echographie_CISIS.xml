@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.657" displayName="JDV_Classification_ACR_Echographie_CISIS" version="test"><ConceptList><Concept code="MED-1099" displayName="ACR 1" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211127000000" dateFin=""/><Concept code="MED-1100" displayName="ACR 2" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211127000000" dateFin=""/><Concept code="MED-1101" displayName="ACR 3" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211127000000" dateFin=""/><Concept code="MED-1102" displayName="ACR 4" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211127000000" dateFin=""/><Concept code="MED-1103" displayName="ACR 5" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211127000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Classification_ACR_Echographie_CISIS" id="1.2.250.1.213.1.1.5.657" version="test">
+        <ConceptList>
+            <Concept code="MED-1099" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211127000000" displayName="ACR 1"/>
+            <Concept code="MED-1100" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211127000000" displayName="ACR 2"/>
+            <Concept code="MED-1101" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211127000000" displayName="ACR 3"/>
+            <Concept code="MED-1102" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211127000000" displayName="ACR 4"/>
+            <Concept code="MED-1103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211127000000" displayName="ACR 5"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.631" displayName="JDV_Evaluation_TILs_Melanome_CISIS" version="test"><ConceptList><Concept code="GEN-274" displayName="Non identifié" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210511000000" dateFin=""/><Concept code="MED-933" displayName="Présents brisk (très nombreux et diffus)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210511000000" dateFin=""/><Concept code="MED-934" displayName="Présents non brisk (focal)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210511000000" dateFin=""/><Concept code="MED-659" displayName="Non évaluable" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210511000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Evaluation_TILs_Melanome_CISIS" id="1.2.250.1.213.1.1.5.631" version="test">
+        <ConceptList>
+            <Concept code="GEN-274" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Non identifié"/>
+            <Concept code="MED-933" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Présents brisk (très nombreux et diffus)"/>
+            <Concept code="MED-934" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Présents non brisk (focal)"/>
+            <Concept code="MED-659" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Non évaluable"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

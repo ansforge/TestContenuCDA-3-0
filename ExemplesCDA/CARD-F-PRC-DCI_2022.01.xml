@@ -67,7 +67,7 @@
       <!-- INS-NIR de test : 1.2.250.1.213.1.4.10 -->
       <id extension="279035121518989" root="1.2.250.1.213.1.4.10"/>
       <!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
-      <id extension="1234567890121" root="1.2.3.4.567.8.9.10" />
+      <id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
       <!-- Adresse du patient -->
       <addr>
         <houseNumber>28</houseNumber>
@@ -78,8 +78,8 @@
         <country>FRANCE</country>
       </addr>
       <!-- Coordonnées télécom du patient -->
-      <telecom value="tel:0144534551" use="H" />
-      <telecom value="tel:0647151010" use="MC" />
+      <telecom value="tel:0144534551" use="H"/>
+      <telecom value="tel:0647151010" use="MC"/>
       <telecom value="mailto:279035121518989@patient.mssante.fr"/>
       <!-- Identité du patient -->
       <patient classCode="PSN">
@@ -91,7 +91,7 @@
           <family qualifier="CL">PAT-TROIS</family>
           <given qualifier="CL">DOMINIQUE</given>        
         </name>
-        <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1" />
+        <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
         <birthTime value="19790328"/>
         <!-- Représentant du patient -->
         <guardian>
@@ -102,7 +102,7 @@
             <city>PARIS</city>
             <country>FRANCE</country>
           </addr>
-          <telecom value="tel:0147150000" use="H" />
+          <telecom value="tel:0147150000" use="H"/>
           <guardianPerson>
             <name>
               <prefix>MME</prefix>
@@ -1076,7 +1076,6 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS -->
-                    <!-- [ANS] Code à remplacer par EMDN -->
                     <code code="J0105" displayName="DÉFIBRILLATEURS IMPLANTABLES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
@@ -1100,7 +1099,7 @@
                     <templateId root="1.2.250.1.213.1.1.3.48" />
                     <!-- Problem observation template -->
                     <id root="675136D6-6B82-4F79-9772-383EFA30831F" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation"/>
+                  <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation"/>
                       <text>
                         <reference value="#def0007" />
                       </text>
@@ -1127,7 +1126,7 @@
                     <templateId root="1.2.250.1.213.1.1.3.48" />
                     <!-- Problem observation template -->
                     <id root="675136D6-6B82-4F79-9772-383EFA30831F" />
-                    <code code="L0001" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Tension de la pile à ERI"/>
+                    <code code="L0001" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Tension de la pile à ERI"/>
                       <text>
                         <reference value="#def0012" />
                       </text>
@@ -1145,7 +1144,7 @@
                    <templateId root="1.2.250.1.213.1.1.3.48" />
                    <!-- Problem observation template -->
                    <id root="42A91250-0335-40B5-9DBE-25C4338BBECF" />
-                   <code code="L0003" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IRE"/>
+                   <code code="L0003" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IRE"/>
                      <text>
                        <reference value="#def0015" />
                      </text>
@@ -1162,7 +1161,7 @@
                   <!-- CI-SIS Observation Dispositifs Médicaux -->
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="737FCF00-FF99-4273-9308-A752F773E879" />
-                  <code code="L0004" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Type Défibrillateur">
+                  <code code="99686-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Type de stimulateur cardiaque">
                     <originalText mediaType="text/xml">
                       <reference value="#def0016" />
                     </originalText>
@@ -1172,9 +1171,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- [ANS] code à remplacer par EMDN -->
-                  <value xsi:type="CD" code="D0013-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Triple Chambre">
-                  </value>
+                  <value xsi:type="CD" code="J010104" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE"/>
+                  
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Asservissement -->
@@ -1185,7 +1183,7 @@
                   <!-- CI-SIS Observation Dispositifs Médicaux -->
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="067E3984-7C16-4491-B96C-ECA91105BF9A" />
-                  <code code="L0006" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Asservissement">
+                  <code code="L0006" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Asservissement">
                     <originalText mediaType="text/xml">
                       <reference value="#def0017" />
                     </originalText>
@@ -1195,8 +1193,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- [ANS] code à remplacer par EMDN -->
-                  <value xsi:type="CD" code="D0013-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Triple Chambre" />
+                  <value xsi:type="CD" code="J010104" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE"/>
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Télésuivi -->
@@ -1207,7 +1204,7 @@
                   <!-- CI-SIS Observation Dispositifs Médicaux -->
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="BB9EAA32-AA81-4F4C-829F-BAF9D7E9892B" />
-                  <code code="L0007" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Télésuivi">
+                  <code code="L0007" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Télésuivi">
                     <originalText mediaType="text/xml">
                       <reference value="#def0018" />
                     </originalText>
@@ -1229,7 +1226,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="CABEA55A-2C80-4BED-82B4-C88699268451" />
                   <!-- [ANS] code à remplacer -->
-                  <code code="L0008" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Télésuivi Activé">
+                  <code code="L0008" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Télésuivi Activé">
                     <originalText mediaType="text/xml">
                       <reference value="#def0019" />
                     </originalText>
@@ -1251,7 +1248,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="3F075A18-3973-4E69-80A9-F7E282146937" />
                   <!-- [ANS] code à remplacer  -->
-                  <code code="L0009" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Stade NYHA">
+                  <code code="L0009" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Stade NYHA">
                     <originalText mediaType="text/xml">
                       <reference value="#def0020" />
                     </originalText>
@@ -1275,7 +1272,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="022BDB78-2E3D-443D-9A04-5ECD1A242B86" />
                   <!-- [ANS] code à remplacer -->
-                  <code code="L0010" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="FEVG">
+                  <code code="L0010" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="FEVG">
                     <originalText mediaType="text/xml">
                       <reference value="#def0021" />
                     </originalText>
@@ -1297,7 +1294,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="9AEBF56B-28D8-40C6-B73A-FCD2879C2CF5" />
                   <!-- [ANS] code à remplacer par SNOMED CT  -->
-                  <code code="L0012" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Date dernier controle">
+                  <code code="L0012" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Date dernier controle">
                     <originalText mediaType="text/xml">
                       <reference value="#def0022" />
                     </originalText>
@@ -1319,7 +1316,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="01775B7C-E5FB-4A5B-B222-768EB8A1967C" />
                   <!-- [ANS] Code à remplacer  -->
-                  <code code="L0013" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Mode Programmé">
+                  <code code="L0013" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Mode Programmé">
                     <originalText mediaType="text/xml">
                       <reference value="#def0023" />
                     </originalText>
@@ -1340,7 +1337,7 @@
                   <!-- CI-SIS Observation Dispositifs Médicaux -->
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="C3FF41E1-8ADE-4281-9E2F-7115A2909AB8" />
-                  <code code="L0014" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Tension">
+                  <code code="L0014" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Tension">
                     <originalText mediaType="text/xml">
                       <reference value="#def0024" />
                     </originalText>
@@ -1362,7 +1359,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="A0EF02B5-6E37-41D3-811B-A08481F47BC4" />
                   <!-- [ANS] Code à remplacer -->
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance">
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
                     <originalText mediaType="text/xml">
                       <reference value="#def0025" />
                     </originalText>
@@ -1384,7 +1381,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="E38CBFA3-2521-42AC-AF7B-8A087368DED1" />
                   <!-- [ANS] Code à remplacer -->
-                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Temps de Charge">
+                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Temps de Charge">
                     <originalText mediaType="text/xml">
                       <reference value="#def0026" />
                     </originalText>
@@ -1440,7 +1437,7 @@
                     <!-- Conformité CI-SIS -->
                     <templateId root="1.2.250.1.213.1.1.3.48" />
                     <id root="23CEC3B2-A62E-4FFD-9C2A-C80C672AAFCC" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation"/>
+                  <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation"/>
                     <text>
                       <reference value="#def0032" />
                     </text>
@@ -1458,14 +1455,13 @@
                     <templateId root="1.2.250.1.213.1.1.3.48" />
                     <id root="2A8352AE-FE40-4898-880B-7DD8CCE0E2BA" />
                   <!-- [ANS] Code à remplacer -->
-                    <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Polarité"/>
+                    <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité"/>
                     <text>
                       <reference value="#def0027" />
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime nullFlavor="NASK"/>
-                  <!-- [ANS] Code à remplacer par code EMDN -->
-                    <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
+                  <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Connexions (Sonde A) -->
@@ -1477,7 +1473,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="DEFA2A03-3842-42DE-96A0-4C282F9CB3C4" />
                   <!-- [ANS] Code à remplacer par code EMDN -->
-                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Connexions"/>
+                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexions"/>
                   <text>
                     <reference value="#def0029" />
                   </text>
@@ -1485,7 +1481,7 @@
                   <effectiveTime nullFlavor="NASK"/>
                   <!-- [ANS] Code à remplacer -->
                   <!-- Valeur provenant du JDV_UFCV_Connx_CISIS -->
-                  <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
+                  <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IS-1" />
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Adapteur (Sonde A) -->
@@ -1497,7 +1493,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="4E23CF76-3469-407E-B50F-DA7FCC391709" />
                   <!-- [ANS] Code à remplacer par code EMDN -->
-                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Adaptateur"/>
+                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adaptateur"/>
                   <text>
                     <reference value="#def0030" />
                   </text>
@@ -1514,7 +1510,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="1E9FFA75-20D0-48CA-ADDE-B921D5935295" />
-                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse"/>
+                  <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord"/>
                   <text>
                     <reference value="#def0031" />
                   </text>
@@ -1531,7 +1527,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="BA91FBF1-8A62-4B62-93CF-B89315A46E94" />
-                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Courant"/>
+                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant"/>
                   <text>
                     <reference value="#def0033" />
                   </text>
@@ -1548,7 +1544,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="801A4781-D846-4E6D-B2ED-B900F24C5447" />
-                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Détection"/>
+                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection"/>
                   <text>
                     <reference value="#def0034" />
                   </text>
@@ -1565,7 +1561,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="59506BB2-626F-4561-BCE8-1D2D7E562442" />
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0035" />
                   </text>
@@ -1583,7 +1579,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="EE3D253F-70CF-47FB-864E-16584D211F36" />
                   <!-- [ANS] Code à remplacer -->
-                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil à ms"/>
+                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms"/>
                   <text>
                     <reference value="#def0036" />
                   </text>
@@ -1601,7 +1597,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="6715845E-97B2-429D-ADF0-C0BE0C01BB87" />
                   <!-- [ANS] Code à remplacer -->
-                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Temps de Charge"/>
+                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Temps de Charge"/>
                   <text>
                     <reference value="#def0039" />
                   </text>
@@ -1618,7 +1614,7 @@
                  <!-- Conformité CI-SIS -->
                  <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="1492872E-DE7F-4971-9EE0-7C4D50AD46ED" />
-                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil de stimulation"/>
+                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de stimulation"/>
                   <text>
                     <reference value="#def0040" />
                   </text>
@@ -1635,7 +1631,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="A75B175F-77A1-4BD0-ADBC-69DBD03097DA" />
-                  <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Recueil"/>
+                  <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Recueil"/>
                   <text>
                     <reference value="#def0041" />
                   </text>
@@ -1652,7 +1648,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="6C7F963B-91DF-438B-A8E6-E9D77C7CD6FB" />
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0042" />
                   </text>
@@ -1681,7 +1677,6 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS  -->
-                    <!-- [ANS] Code à remplacer par EMDN -->
                     <code code="J01030101"
                       displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" >
@@ -1706,14 +1701,13 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="524A1AEC-B1DD-49B4-8DBE-39AC281BDB36" />
-                  <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Polarité"/>
+                  <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité"/>
                   <text>
                     <reference value="#def0049" />
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NASK"/>
-                  <!-- [ANS] Code à remplacer par EMDN -->
-                   <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
+                  <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
                 </observation>
               </entryRelationship>
 			        <!-- Entrée Simple Observation : Connexions (Sonde VD) -->
@@ -1725,13 +1719,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="1605E861-B840-466C-BA3B-C9E4155D652C" />
                   <!-- [ANS] Code à remplacer par EMDN -->
-                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Connexions"/>
+                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexions"/>
                   <text>
                     <reference value="#def0051" />
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NASK"/>
-                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
+                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IS-1" />
                 </observation>
               </entryRelationship>
 			        <!-- Entrée Simple Observation : Adapteur (Sonde VD) -->
@@ -1744,7 +1738,7 @@
                   <id root="93380E6B-EA79-4215-9A4D-E63750A3A825" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
                   <!-- [ANS] Code à remplacer par EMDN -->
-                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Adaptateur"/>
+                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adaptateur"/>
                   <text>
                     <reference value="#def0052" />
                   </text>
@@ -1762,7 +1756,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="EC08279C-B47B-40D6-AE58-5EA7BFAF4694" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse"/>
+                  <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord"/>
                   <text>
                     <reference value="#def0053" />
                   </text>
@@ -1780,7 +1774,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="E5F39848-0E49-417D-9005-2967209B0A00" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation"/>
+                  <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation"/>
                   <text>
                     <reference value="#def0054" />
                   </text>
@@ -1798,7 +1792,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="0E87484F-D870-4BF3-A4EE-EE6C534F2298" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Courant"/>
+                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant"/>
                   <text>
                     <reference value="#def0055" />
                   </text>
@@ -1816,7 +1810,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C41E6767-67E1-49E2-B78D-30F7D84A698F" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Détection"/>
+                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection"/>
                   <text>
                     <reference value="#def0056" />
                   </text>
@@ -1834,7 +1828,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8E0775C6-F3A2-4E04-81FC-E42CBEF7DA5B" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0057" />
                   </text>
@@ -1851,7 +1845,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="EFA1D8F4-2A2D-4107-A579-5A696E6CE38A" />
-                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil à ms"/>
+                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms"/>
                   <text>
                     <reference value="#def0058" />
                   </text>
@@ -1869,7 +1863,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="E597DE6E-A86F-4BCE-9B30-BF19DD22833B" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0024" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Défibrillation efficace à:"/>
+                  <code code="L0024" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Défibrillation efficace à:"/>
                   <text>
                     <reference value="#def0059" />
                   </text>
@@ -1887,7 +1881,7 @@
                  <templateId root="1.2.250.1.213.1.1.3.48" />
                  <id root="966226D3-C914-47EF-A456-D9DBB77AE073" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance de choc"/>
+                  <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance de choc"/>
                   <text>
                     <reference value="#def0060" />
                   </text>
@@ -1905,7 +1899,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C2F7BF40-F940-4E4C-B159-ED69F0516053" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Temps de Charge"/>
+                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Temps de Charge"/>
                   <text>
                     <reference value="#def0061" />
                   </text>
@@ -1923,7 +1917,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="79E97C0C-D133-413F-87AC-75E8806BB0DF" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil de Stimulation"/>
+                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de Stimulation"/>
                   <text>
                     <reference value="#def0062" />
                   </text>
@@ -1941,7 +1935,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="527D82D7-69AB-4E4D-B5F5-2E869674FE71" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Recueil"/>
+                  <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Recueil"/>
                   <text>
                     <reference value="#def0063" />
                   </text>
@@ -1959,7 +1953,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                  <id root="BC35BC60-4DE6-46CF-9B58-68944A1204CD" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0064" />
                   </text>
@@ -1977,7 +1971,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="962DF6DC-08C2-460D-B6F1-EFD0D5430F8E" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance de choc"/>
+                  <code code="L0025" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance de choc"/>
                   <text>
                     <reference value="#def0076" />
                   </text>
@@ -2030,15 +2024,14 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="24ADC0E0-37C8-4845-B9B6-27FC953D2AFD" />
-                  <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Polarité"/>
+                  <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité"/>
                     <text>
                       <reference value="#def00070" />
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime nullFlavor="NASK"/>
                   <!-- Valeur issue JDV_UFCV_PolarSnd_CISIS -->
-                  <!-- [ANS]Code à remplacer par EMDN -->
-                    <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
+                  <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Connexions (Sonde VG) -->
@@ -2049,14 +2042,14 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="24ADC0E0-37C8-4845-B9B6-27FC953D2AFD" />
-                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Connexions"/>
+                  <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexions"/>
                     <text>
                       <reference value="#def00072" />
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime nullFlavor="NASK"/>
                   <!-- Valeur issue JDV_UFCV_Connx_CISIS -->
-                    <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
+                    <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IS-1" />
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Adapteur (Sonde VG) -->
@@ -2068,7 +2061,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="24ADC0E0-37C8-4845-B9B6-27FC953D2AFD" />
                   <!-- [ANS]Code à remplacer par EMDN -->
-                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Adapteur"/>
+                  <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adapteur"/>
                     <text>
                       <reference value="#def00073" />
                     </text>
@@ -2085,7 +2078,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="24ADC0E0-37C8-4845-B9B6-27FC953D2AFD" />
-                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse"/>
+                  <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord"/>
                     <text>
                       <reference value="#def00074" />
                     </text>
@@ -2102,7 +2095,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="24ADC0E0-37C8-4845-B9B6-27FC953D2AFD" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation"/>
+                  <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation"/>
                   <text>
                     <reference value="#def00075" />
                   </text>
@@ -2119,7 +2112,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C82C4C7E-CDFE-4AC8-9128-A9675A9AE162" />
-                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Courant"/>
+                  <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant"/>
                   <text>
                     <reference value="#def0077" />
                   </text>
@@ -2137,7 +2130,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="3B20BDB4-5167-4861-859C-155A2E747B7E" />
                   <!-- [ANS]Code à remplacer par EMDN -->
-                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Détection"/>
+                  <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection"/>
                   <text>
                     <reference value="#def0078" />
                   </text>
@@ -2154,7 +2147,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="0AA2AED7-3CEC-4DD0-A222-4AA8A79FE67C" />
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0079" />
                   </text>
@@ -2171,7 +2164,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="9F1E2A44-E01E-4BE9-BD77-96AF7B7C2D01" />
-                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil à ms"/>
+                  <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms"/>
                   <text>
                     <reference value="#def0080" />
                   </text>
@@ -2188,7 +2181,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="D5C66DE5-0A99-4D3A-ADD7-0F74B4F5834B" />
-                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Temps de Charge"/>
+                  <code code="L0016" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Temps de Charge"/>
                   <text>
                     <reference value="#def0083" />
                   </text>
@@ -2205,7 +2198,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F7B9C7BB-A4C4-43D4-85EE-7CE1C9103378" />
-                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Seuil de stimulation"/>
+                  <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de stimulation"/>
                   <text>
                     <reference value="#def0084" />
                   </text>
@@ -2222,7 +2215,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="A1D200BA-8EEC-4EF4-B72A-CA551BF692D6" />
-                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance"/>
+                  <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance"/>
                   <text>
                     <reference value="#def0086" />
                   </text>

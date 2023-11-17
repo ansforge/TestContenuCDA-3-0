@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.231" displayName="JDV_TypePriseEnCharge_CISIS" version="test"><ConceptList><Concept code="ORG-165" displayName="Séjour de répit" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-166" displayName="Maison d'accueil spécialisé (MAS) / Foyer d'accueil médicalisé (FAM)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-167" displayName="Hospitalisation complète" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-072" displayName="Hospitalisation à domicile (HAD)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-044" displayName="Hôpital de jour (HDJ)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-168" displayName="Services de soins infirmiers à domicile (SSIAD)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.06.02" displayName="Autre structure de soins" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypePriseEnCharge_CISIS" id="1.2.250.1.213.1.1.5.231" version="test">
+        <ConceptList>
+            <Concept code="ORG-165" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Séjour de répit"/>
+            <Concept code="ORG-166" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Maison d'accueil spécialisé (MAS) / Foyer d'accueil médicalisé (FAM)"/>
+            <Concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Maison d'accueil spécialisée (MAS)"/>
+            <Concept code="ORG-167" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Hospitalisation complète"/>
+            <Concept code="28" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation complète (HC)"/>
+            <Concept code="ORG-072" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="HAD"/>
+            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à domicile (HAD)"/>
+            <Concept code="ORG-044" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Hôpital de jour (HDJ)"/>
+            <Concept code="29" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation de jour (HJ)"/>
+            <Concept code="ORG-168" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Services de soins infirmiers à domicile (SSIAD)"/>
+            <Concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Service de soins infirmiers à domicile (SSIAD)"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.06.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20230202000000" displayName="Autre structure de soins"/>
+            <Concept code="GEN-092.06.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Autre établissement de santé"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

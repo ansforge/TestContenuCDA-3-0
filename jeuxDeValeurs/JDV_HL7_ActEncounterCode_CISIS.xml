@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.1.11.13955" displayName="JDV_HL7_ActEncounterCode_CISIS" version="test"><ConceptList><Concept code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="EMER" displayName="Urgence" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="FLD" displayName="Sur le terrain (hors structure de soins et domicile du patient)" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="HH" displayName="A domicile" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="OBSENC" displayName="Observation" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="PRENC" displayName="Pré-admission" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="SS" displayName="Hospitalisation de jour" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/><Concept code="VR" displayName="Téléconsultation" codeSystem="2.16.840.1.113883.5.4" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HL7_ActEncounterCode_CISIS" id="2.16.840.1.113883.1.11.13955" version="test">
+        <ConceptList>
+            <Concept code="AMB" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Ambulatoire"/>
+            <Concept code="EMER" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Urgence"/>
+            <Concept code="FLD" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Sur le terrain (hors structure de soins et domicile du patient)"/>
+            <Concept code="HH" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="A domicile"/>
+            <Concept code="IMP" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hospitalisation"/>
+            <Concept code="OBSENC" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Observation"/>
+            <Concept code="PRENC" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Pré-admission"/>
+            <Concept code="SS" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hospitalisation de jour"/>
+            <Concept code="VR" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Téléconsultation"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

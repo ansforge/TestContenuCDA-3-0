@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.289.49" displayName="JDV_OBP_Acte_CISIS" version="test"><ConceptList><Concept code="73813-8" displayName="Caractéristiques du travail" codeSystem="2.16.840.1.113883.6.1" dateValid="20100101000000" dateFin=""/><Concept code="236958009" displayName="induction du travail" codeSystem="2.16.840.1.113883.6.96" dateValid="20221114000000" dateFin=""/><Concept code="OBS_029" displayName="Anesthésie avant la naissance" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="OBS_031" displayName="Anesthésie après la naissance" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="OBS_033" displayName="Actes associés pratiqués en post-partum" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="MED-1249" displayName="Anesthésie avant la naissance" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="MED-1250" displayName="Anesthésie après la naissance" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="MED-1251" displayName="Actes associés pratiqués en post-partum" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="116859006" displayName="Transfusion de produits sanguins" codeSystem="2.16.840.1.113883.6.96" dateValid="20221114000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_OBP_Acte_CISIS" id="1.2.250.1.213.1.1.4.2.289.49" version="test">
+        <ConceptList>
+            <Concept code="73813-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Caractéristiques du travail"/>
+            <Concept code="236958009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="induction du travail"/>
+            <Concept code="OBS_029" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Anesthésie avant la naissance "/>
+            <Concept code="OBS_031" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Anesthésie après la naissance "/>
+            <Concept code="OBS_033" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Actes associés pratiqués en post-partum"/>
+            <Concept code="MED-1249" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Anesthésie avant la naissance "/>
+            <Concept code="MED-1250" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Anesthésie après la naissance "/>
+            <Concept code="MED-1251" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Actes associés pratiqués en post-partum"/>
+            <Concept code="116859006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Transfusion de produits sanguins"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

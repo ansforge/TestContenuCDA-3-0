@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.661" displayName="JDV_AbsentOrUnknownAllergy_CISIS" version="test"><ConceptList><Concept code="no-allergy-info" displayName="Pas d’information sur les allergies/hypersensibilités" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/><Concept code="no-known-allergies" displayName="Pas d'allergie/hypersensibilité connue" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/><Concept code="no-known-medication-allergies" displayName="Pas d'allergie médicamenteuse connue" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/><Concept code="no-known-environmental-allergies" displayName="Pas d'allergie environnementale connue" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/><Concept code="no-known-food-allergies" displayName="Pas d'allergie alimentaire connue" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AbsentOrUnknownAllergy_CISIS" id="1.2.250.1.213.1.1.5.661" version="test">
+        <ConceptList>
+            <Concept code="no-allergy-info" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d’information sur les allergies/hypersensibilités"/>
+            <Concept code="no-known-allergies" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d'allergie/hypersensibilité connue"/>
+            <Concept code="no-known-medication-allergies" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d'allergie médicamenteuse connue"/>
+            <Concept code="no-known-environmental-allergies" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d'allergie environnementale connue"/>
+            <Concept code="no-known-food-allergies" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d'allergie alimentaire connue"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

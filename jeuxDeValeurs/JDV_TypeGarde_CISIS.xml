@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.128" displayName="JDV_TypeGarde_CISIS" version="test"><ConceptList><Concept code="PAT-049" displayName="Garde par la mère / le père" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="PAT-050" displayName="Accueil collectif" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="PAT-051" displayName="Assistance maternelle" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="PAT-052" displayName="A domicile par un tiers" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.06.06" displayName="Autre type de garde" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeGarde_CISIS" id="1.2.250.1.213.1.1.5.128" version="test">
+        <ConceptList>
+            <Concept code="PAT-049" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231025000000" dateValid="20100101000000" displayName="Garde par la mère / le père"/>
+            <Concept code="PAT-050" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Accueil collectif"/>
+            <Concept code="PAT-051" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Assistance maternelle"/>
+            <Concept code="PAT-052" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231025000000" dateValid="20100101000000" displayName="A domicile par un tiers"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.06.06" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231025000000" dateValid="20230202000000" displayName="Autre type de garde"/>
+            <Concept code="GEN-117" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230201000000" displayName="Domicile"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

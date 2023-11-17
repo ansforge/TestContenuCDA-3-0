@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.503" displayName="JDV_MediaType_ObservationMedia_CISIS" version="test"><ConceptList><Concept code="application/dicom" displayName="DICOM" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="application/msword" displayName="MSWORD" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="application/pdf" displayName="PDF" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="audio/basic" displayName="Basic Audio" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="audio/k32adpcm" displayName="K32ADPCM Audio" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="audio/mpeg" displayName="MPEG audio layer 3 MP3 Audio" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="image/gif" displayName="GIF Image" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="image/jpeg" displayName="JPEG Image" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="image/png" displayName="PNG Image" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="image/tiff" displayName="TIFF Image" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="text/html" displayName="HTML Text" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="text/plain" displayName="Plain Text" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="text/rtf" displayName="RTF Text" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/><Concept code="text/xml" displayName="XML Text" codeSystem="2.16.840.1.113883.5.79" dateValid="20200626000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_MediaType_ObservationMedia_CISIS" id="1.2.250.1.213.1.1.5.503" version="test">
+        <ConceptList>
+            <Concept code="application/dicom" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="DICOM"/>
+            <Concept code="application/msword" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="MSWORD"/>
+            <Concept code="application/pdf" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="PDF"/>
+            <Concept code="audio/basic" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="Basic Audio"/>
+            <Concept code="audio/k32adpcm" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="K32ADPCM Audio"/>
+            <Concept code="audio/mpeg" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="MPEG audio layer 3 MP3 Audio"/>
+            <Concept code="image/gif" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="GIF Image"/>
+            <Concept code="image/jpeg" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="JPEG Image"/>
+            <Concept code="image/png" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="PNG Image"/>
+            <Concept code="image/tiff" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="TIFF Image"/>
+            <Concept code="text/html" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="HTML Text"/>
+            <Concept code="text/plain" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="Plain Text"/>
+            <Concept code="text/rtf" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="RTF Text"/>
+            <Concept code="text/xml" codeSystem="2.16.840.1.113883.5.79" dateFin="" dateValid="20200626000000" displayName="XML Text"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

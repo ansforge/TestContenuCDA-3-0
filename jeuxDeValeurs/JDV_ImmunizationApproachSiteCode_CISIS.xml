@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.621" displayName="JDV_ImmunizationApproachSiteCode_CISIS" version="test"><ConceptList><Concept code="BU" displayName="Fesse" codeSystem="2.16.840.1.113883.5.1052" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="LD" displayName="Deltoïde gauche" codeSystem="2.16.840.1.113883.5.1052" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="LT" displayName="Cuisse gauche" codeSystem="2.16.840.1.113883.5.1052" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="RD" displayName="Deltoïde droit" codeSystem="2.16.840.1.113883.5.1052" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="RT" displayName="Cuisse droite" codeSystem="2.16.840.1.113883.5.1052" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="46862004" displayName="fesse" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin=""/><Concept code="16217701000119102" displayName="deltoïde gauche" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin=""/><Concept code="61396006" displayName="cuisse gauche" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin=""/><Concept code="16217661000119109" displayName="deltoïde droit" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin=""/><Concept code="11207009" displayName="cuisse droite" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ImmunizationApproachSiteCode_CISIS" id="1.2.250.1.213.1.1.5.621" version="test">
+        <ConceptList>
+            <Concept code="BU" codeSystem="2.16.840.1.113883.5.1052" dateFin="20221216000000" dateValid="20100101000000" displayName="Fesse"/>
+            <Concept code="LD" codeSystem="2.16.840.1.113883.5.1052" dateFin="20221216000000" dateValid="20100101000000" displayName="Deltoïde gauche"/>
+            <Concept code="LT" codeSystem="2.16.840.1.113883.5.1052" dateFin="20221216000000" dateValid="20100101000000" displayName="Cuisse gauche"/>
+            <Concept code="RD" codeSystem="2.16.840.1.113883.5.1052" dateFin="20221216000000" dateValid="20100101000000" displayName="Deltoïde droit"/>
+            <Concept code="RT" codeSystem="2.16.840.1.113883.5.1052" dateFin="20221216000000" dateValid="20100101000000" displayName="Cuisse droite"/>
+            <Concept code="46862004" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221207000000" displayName="fesse"/>
+            <Concept code="64262003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="avant-bras droit"/>
+            <Concept code="66480008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="avant-bras gauche"/>
+            <Concept code="16217661000119109" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="deltoïde droit"/>
+            <Concept code="16217701000119102" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="deltoïde gauche"/>
+            <Concept code="91774008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="épaule droite"/>
+            <Concept code="91775009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="épaule gauche"/>
+            <Concept code="11207009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="cuisse droite"/>
+            <Concept code="61396006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="cuisse gauche"/>
+            <Concept code="723980000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fesse droite"/>
+            <Concept code="723979003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fesse gauche"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

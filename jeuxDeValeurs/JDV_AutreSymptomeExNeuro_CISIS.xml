@@ -1,3 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.174" displayName="JDV_AutreSymptomeExNeuro_CISIS" version="test"><ConceptList><Concept code="AVC-126" displayName="Latéropulsion" codeSystem="1.2.250.1.213.1.1.4.321" dateValid="20100101000000" dateFin="20171231000000"/><Concept code="MED-380" displayName="Déficit moteur de la main" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20180101000000" dateFin=""/><Concept code="MED-484" displayName="Latéropulsion" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20180101000000" dateFin=""/><Concept code="DA-41070" displayName="Affection du douxième nerf crânien" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="DA-48034" displayName="Syndrome de Claude Bernard-Horner" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="DA-74510" displayName="Diplopie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="DA-74940" displayName="Cécité d'un oeil" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="DA-78500" displayName="Nystagmus" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="DF-D1670" displayName="Négligence" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-51702" displayName="Déglutition anormale" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A5560" displayName="Trouble de la conscience" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A5562" displayName="Confusion" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A6000" displayName="Aphasie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A6660" displayName="Dysarthrie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-F2020" displayName="Mydriase" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-F2030" displayName="Myosis" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="G98" displayName="Autres affections du système nerveux, non classées ailleurs" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="J39.2" displayName="Paralysie du pharynx" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="K13.7" displayName="Paralysie du voile du palais" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AutreSymptomeExNeuro_CISIS" id="1.2.250.1.213.1.1.5.174" version="test">
+        <ConceptList>
+            <Concept code="AVC-126" codeSystem="1.2.250.1.213.1.1.4.321" dateFin="20171231000000" dateValid="20100101000000" displayName="Latéropulsion"/>
+            <Concept code="MED-380" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20180101000000" displayName="Déficit moteur de la main"/>
+            <Concept code="MED-484" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20180101000000" displayName="Latéropulsion"/>
+            <Concept code="DA-41070" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Affection du douxième nerf crânien"/>
+            <Concept code="G52.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Affections du nerf grand hypoglosse"/>
+            <Concept code="DA-48034" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Syndrome de Claude Bernard-Horner"/>
+            <Concept code="G90.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Syndrome de Claude Bernard-Horner"/>
+            <Concept code="DA-74510" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Diplopie"/>
+            <Concept code="H53.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Diplopie"/>
+            <Concept code="DA-74940" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Cécité d'un oeil"/>
+            <Concept code="H54.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Cécité monoculaire"/>
+            <Concept code="DA-78500" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Nystagmus"/>
+            <Concept code="H55" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Nystagmus et autres anomalies des mouvements oculaires"/>
+            <Concept code="DF-D1670" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Négligence"/>
+            <Concept code="Y06.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Délaissement et abandon par une personne non précisée"/>
+            <Concept code="F-51702" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Déglutition anormale"/>
+            <Concept code="R13" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Dysphagie"/>
+            <Concept code="F-A5560" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Trouble de la conscience"/>
+            <Concept code="R41.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Symptômes et signes relatifs aux fonctions cognitives et à la conscience, autres et non précisés"/>
+            <Concept code="F-A5562" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Confusion"/>
+            <Concept code="R41.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Désorientation, sans précision"/>
+            <Concept code="F-A6000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Aphasie"/>
+            <Concept code="R47.02" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Aphasie, autre et sans précision"/>
+            <Concept code="F-A6660" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Dysarthrie"/>
+            <Concept code="R47.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Dysarthrie et anarthrie"/>
+            <Concept code="F-F2020" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Mydriase"/>
+            <Concept code="H57.04" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Mydriase"/>
+            <Concept code="F-F2030" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Myosis"/>
+            <Concept code="H57.03" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Myosis"/>
+            <Concept code="G98" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres affections du système nerveux, non classées ailleurs"/>
+            <Concept code="J39.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Paralysie du pharynx"/>
+            <Concept code="K13.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Paralysie du voile du palais"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

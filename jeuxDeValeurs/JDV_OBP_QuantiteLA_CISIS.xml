@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.289.26" displayName="JDV_OBP_QuantiteLA_CISIS" version="test"><ConceptList><Concept code="D8-22100" displayName="Hydramnios" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="D8-22110" displayName="Oligoamnios" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="OBS_214" displayName="Quantité de liquide amniotique normale" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="OBS_215" displayName="Anamnios" codeSystem="1.2.250.1.213.1.1.4.2.289" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="O40" displayName="Hydramnios" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O41.0" displayName="Oligoamnios" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="278092006" displayName="volume de liquide amniotique dans l'intervalle de référence" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="289297007" displayName="liquide amniotique absent" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_OBP_QuantiteLA_CISIS" id="1.2.250.1.213.1.1.4.2.289.26" version="test">
+        <ConceptList>
+            <Concept code="D8-22100" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Hydramnios"/>
+            <Concept code="D8-22110" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Oligoamnios"/>
+            <Concept code="OBS_214" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Quantité de liquide amniotique normale"/>
+            <Concept code="OBS_215" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Anamnios"/>
+            <Concept code="O40" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Hydramnios"/>
+            <Concept code="O41.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Oligoamnios"/>
+            <Concept code="278092006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="volume de liquide amniotique dans l'intervalle de référence"/>
+            <Concept code="289297007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="liquide amniotique absent"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

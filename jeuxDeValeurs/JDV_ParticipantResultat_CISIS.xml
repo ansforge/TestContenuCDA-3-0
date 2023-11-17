@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.137" displayName="JDV_ParticipantResultat_CISIS" version="test"><ConceptList><Concept code="DEV" displayName="Dispositif automatique impliqué dans la production des résultats (ex : un analyseur)" codeSystem="2.16.840.1.113883.5.90" dateValid="20100101000000" dateFin=""/><Concept code="AUTHEN" displayName="Valideur des résultats (ex : un biologiste ou un système expert)" codeSystem="2.16.840.1.113883.5.90" dateValid="20100101000000" dateFin=""/><Concept code="RESP" displayName="Responsable de cet examen" codeSystem="2.16.840.1.113883.5.90" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ParticipantResultat_CISIS" id="1.2.250.1.213.1.1.5.137" version="test">
+        <ConceptList>
+            <Concept code="DEV" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Dispositif automatique impliqué dans la production des résultats (ex : un analyseur)"/>
+            <Concept code="AUTHEN" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Valideur des résultats (ex : un biologiste ou un système expert)"/>
+            <Concept code="RESP" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Responsable de cet examen"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

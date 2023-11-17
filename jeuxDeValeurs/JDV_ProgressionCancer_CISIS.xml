@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.486" displayName="JDV_ProgressionCancer_CISIS" version="test"><ConceptList><Concept code="MED-246" displayName="Progression locale du cancer" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-247" displayName="Progression régionale du cancer" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-248" displayName="Progression à distance du cancer" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ProgressionCancer_CISIS" id="1.2.250.1.213.1.1.5.486" version="test">
+        <ConceptList>
+            <Concept code="MED-246" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Progression locale du cancer"/>
+            <Concept code="MED-247" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Progression régionale du cancer"/>
+            <Concept code="MED-248" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Progression à distance du cancer"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

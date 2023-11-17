@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.217" displayName="JDV_Complication_CISIS" version="test"><ConceptList><Concept code="MED-503" displayName="Aggravation neurologique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="DA-30000" displayName="Crise convulsive" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="MED-504" displayName="Troubles de la déglution justifiant une gastrostomie" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-518" displayName="Complication pulmonaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-519" displayName="Complication thromboembolique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-520" displayName="Complication urinaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-521" displayName="Complication digestive" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-522" displayName="Complication neuropsychiatrique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="D3-16001" displayName="Insuffisance cardiaque aiguë" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="MED-510" displayName="Autre infection" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="B99" displayName="Maladies infectieuses, autres et non précisées" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.01.01" displayName="Autre problème" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Complication_CISIS" id="1.2.250.1.213.1.1.5.217" version="test">
+        <ConceptList>
+            <Concept code="MED-503" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aggravation neurologique"/>
+            <Concept code="DA-30000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Crise convulsive"/>
+            <Concept code="R56.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Convulsions, autres et non précisées"/>
+            <Concept code="MED-504" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles de la déglution justifiant une gastrostomie"/>
+            <Concept code="MED-518" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication pulmonaire"/>
+            <Concept code="MED-519" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication thromboembolique"/>
+            <Concept code="MED-520" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication urinaire"/>
+            <Concept code="MED-521" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication digestive"/>
+            <Concept code="MED-522" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication neuropsychiatrique"/>
+            <Concept code="D3-16001" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Insuffisance cardiaque aiguë"/>
+            <Concept code="I50.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Insuffisance cardiaque, sans précision"/>
+            <Concept code="MED-510" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre infection"/>
+            <Concept code="B99" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladies infectieuses, autres et non précisées"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.01.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre problème"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

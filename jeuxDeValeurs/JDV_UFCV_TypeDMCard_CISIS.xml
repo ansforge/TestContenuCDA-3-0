@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.11" displayName="JDV_UFCV_TypeDMCard_CISIS" version="test"><ConceptList><Concept code="D0013-1" displayName="Simple Chambre" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="D0013-2" displayName="Double Chambre" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="D0013-3" displayName="Triple Chambre" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="J010101" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES SIMPLE CHAMBRE" codeSystem="1.2.250.1.213.2.68" dateValid="20230427000000" dateFin=""/><Concept code="J010103" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES DOUBLE CHAMBRE" codeSystem="1.2.250.1.213.2.68" dateValid="20230427000000" dateFin=""/><Concept code="J010104" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE" codeSystem="1.2.250.1.213.2.68" dateValid="20230427000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_UFCV_TypeDMCard_CISIS" id="1.2.250.1.213.1.1.4.2.11" version="test">
+        <ConceptList>
+            <Concept code="D0013-1" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Simple Chambre"/>
+            <Concept code="D0013-2" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Double Chambre"/>
+            <Concept code="D0013-3" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Triple Chambre"/>
+            <Concept code="J010101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES SIMPLE CHAMBRE"/>
+            <Concept code="J010103" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES DOUBLE CHAMBRE"/>
+            <Concept code="J010104" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

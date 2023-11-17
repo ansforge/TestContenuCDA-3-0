@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.159" displayName="JDV_AutresSymptomesAVC_CISIS" version="test"><ConceptList><Concept code="Y06.9" displayName="Délaissement et abandon par une personne non précisée" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="F-11306" displayName="Drop attack" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="G44" displayName="Autres syndromes d'algies céphaliques" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/><Concept code="F-A5560" displayName="Trouble de la conscience" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A5562" displayName="Confusion" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A6000" displayName="Aphasie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-A6660" displayName="Dysarthrie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-F6006" displayName="Vertige rotatoire" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="F-F7030" displayName="Mutisme" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin=""/><Concept code="G90.9" displayName="Affection du système nerveux autonome, sans précision" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AutresSymptomesAVC_CISIS" id="1.2.250.1.213.1.1.5.159" version="test">
+        <ConceptList>
+            <Concept code="Y06.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Délaissement et abandon par une personne non précisée"/>
+            <Concept code="F-11306" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Drop attack"/>
+            <Concept code="61683000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="drop attack"/>
+            <Concept code="G44" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres syndromes d'algies céphaliques"/>
+            <Concept code="F-A5560" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Trouble de la conscience"/>
+            <Concept code="R41.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Symptômes et signes relatifs aux fonctions cognitives et à la conscience, autres et non précisés"/>
+            <Concept code="F-A5562" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Confusion"/>
+            <Concept code="R41.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Désorientation, sans précision"/>
+            <Concept code="F-A6000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Aphasie"/>
+            <Concept code="R47.02" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Aphasie, autre et sans précision"/>
+            <Concept code="F-A6660" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Dysarthrie"/>
+            <Concept code="R47.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Dysarthrie et anarthrie"/>
+            <Concept code="F-F6006" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Vertige rotatoire"/>
+            <Concept code="399090003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="vertige subjectif"/>
+            <Concept code="F-F7030" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Mutisme"/>
+            <Concept code="88052002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="mutisme"/>
+            <Concept code="G90.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Affection du système nerveux autonome, sans précision"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

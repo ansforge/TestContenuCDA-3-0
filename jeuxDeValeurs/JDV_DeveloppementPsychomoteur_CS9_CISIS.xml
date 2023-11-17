@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.711" displayName="JDV_DeveloppementPsychomoteur_CS9_CISIS" version="test"><ConceptList><Concept code="GEN-082" displayName="Imite un geste simple (au revoir/bravo)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-190" displayName="Tient assis sans appui" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-191" displayName="Réagit à son prénom" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-192" displayName="Répète une syllabe" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-193" displayName="Se déplace" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-194" displayName="Saisit un objet avec participation du pouce" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="MED-195" displayName="Motricité symétrique des 4 membres" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_DeveloppementPsychomoteur_CS9_CISIS" id="1.2.250.1.213.1.1.5.711" version="test">
+        <ConceptList>
+            <Concept code="GEN-082" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Imite un geste simple (au revoir/bravo)"/>
+            <Concept code="MED-190" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Tient assis sans appui"/>
+            <Concept code="MED-191" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Réagit à son prénom"/>
+            <Concept code="MED-192" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Répète une syllabe"/>
+            <Concept code="MED-193" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Se déplace"/>
+            <Concept code="MED-194" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Saisit un objet avec participation du pouce"/>
+            <Concept code="MED-195" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Motricité symétrique des 4 membres"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.664" displayName="JDV_AbsentOrUnknownMedication_CISIS" version="test"><ConceptList><Concept code="no-medication-info" displayName="Pas d'information sur les traitements médicamenteux" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/><Concept code="no-known-medications" displayName="Pas de traitement médicamenteux connu" codeSystem="2.16.840.1.113883.5.1150.1" dateValid="20211222000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AbsentOrUnknownMedication_CISIS" id="1.2.250.1.213.1.1.5.664" version="test">
+        <ConceptList>
+            <Concept code="no-medication-info" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas d'information sur les traitements médicamenteux"/>
+            <Concept code="no-known-medications" codeSystem="2.16.840.1.113883.5.1150.1" dateFin="" dateValid="20211222000000" displayName="Pas de traitement médicamenteux connu"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

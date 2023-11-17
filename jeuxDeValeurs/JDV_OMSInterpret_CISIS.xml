@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.281.2" displayName="JDV_OMSInterpret_CISIS" version="test"><ConceptList><Concept code="MED-241" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction." codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-260" displayName="Activité physique diminuée mais ambulatoire et capable de mener un travail" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-261" displayName="Ambulatoire et capable de prendre soin de soi-même, incapable de travailler. Alité moins de 50 % de son temps" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-262" displayName="Capable seulement de quelques soins. Alité ou en chaise plus de 50 % du temps" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-263" displayName="Incapable de prendre soins de soi-même. Alité ou en chaise en permanence" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_OMSInterpret_CISIS" id="1.2.250.1.213.1.1.4.2.281.2" version="test">
+        <ConceptList>
+            <Concept code="MED-241" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction."/>
+            <Concept code="MED-260" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Activité physique diminuée mais ambulatoire et capable de mener un travail"/>
+            <Concept code="MED-261" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Ambulatoire et capable de prendre soin de soi-même, incapable de travailler. Alité moins de 50 % de son temps"/>
+            <Concept code="MED-262" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Capable seulement de quelques soins. Alité ou en chaise plus de 50 % du temps"/>
+            <Concept code="MED-263" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Incapable de prendre soins de soi-même. Alité ou en chaise en permanence"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

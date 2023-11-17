@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.77" displayName="JDV_JoursSemaine_CISIS" version="test"><ConceptList><Concept code="GEN-024" displayName="Lundi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-025" displayName="Mardi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-026" displayName="Mercredi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-027" displayName="Jeudi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-028" displayName="Vendredi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-029" displayName="Samedi" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-030" displayName="Dimanche" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="307145004" displayName="lundi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307147007" displayName="mardi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307148002" displayName="mercredi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307149005" displayName="jeudi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307150005" displayName="vendredi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307151009" displayName="samedi" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="307146003" displayName="dimanche" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_JoursSemaine_CISIS" id="1.2.250.1.213.1.1.5.77" version="test">
+        <ConceptList>
+            <Concept code="GEN-024" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Lundi "/>
+            <Concept code="GEN-025" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Mardi "/>
+            <Concept code="GEN-026" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Mercredi"/>
+            <Concept code="GEN-027" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Jeudi"/>
+            <Concept code="GEN-028" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Vendredi"/>
+            <Concept code="GEN-029" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Samedi"/>
+            <Concept code="GEN-030" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Dimanche"/>
+            <Concept code="307145004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="lundi "/>
+            <Concept code="307147007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="mardi "/>
+            <Concept code="307148002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="mercredi"/>
+            <Concept code="307149005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="jeudi"/>
+            <Concept code="307150005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="vendredi"/>
+            <Concept code="307151009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="samedi"/>
+            <Concept code="307146003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="dimanche"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

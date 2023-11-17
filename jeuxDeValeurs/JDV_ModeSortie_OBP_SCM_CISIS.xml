@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.700" displayName="JDV_ModeSortie_OBP_SCM_CISIS" version="test"><ConceptList><Concept code="419620001" displayName="mort" codeSystem="2.16.840.1.113883.6.96" dateValid="20221114000000" dateFin=""/><Concept code="ORG-101" displayName="Retour au domicile" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="160849004" displayName="retour au domicile" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20220804000000" dateFin="20230803000000"/><Concept code="107724000" displayName="transfert du patient" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20220804000000" dateFin="20230202000000"/><Concept code="GEN-092.06.09" displayName="Autre mode de sortie" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ModeSortie_OBP_SCM_CISIS" id="1.2.250.1.213.1.1.5.700" version="test">
+        <ConceptList>
+            <Concept code="419620001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="mort"/>
+            <Concept code="ORG-101" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Retour au domicile"/>
+            <Concept code="160849004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="retour au domicile"/>
+            <Concept code="ORG-069" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Transfert ou mutation"/>
+            <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220804000000" displayName="Autre"/>
+            <Concept code="GEN-092.06.09" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre mode de sortie"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

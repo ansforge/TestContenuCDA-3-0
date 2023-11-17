@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.515" displayName="JDV_ProtheseObjetPersonnel_CISIS" version="test"><ConceptList><Concept code="A-04242" displayName="Lunettes" codeSystem="1.2.250.1.213.2.12" dateValid="20210106000000" dateFin="20221205000000"/><Concept code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" codeSystem="1.2.250.1.213.2.68" dateValid="20221205000000" dateFin=""/><Concept code="A-04200" displayName="Prothèses dentaires" codeSystem="1.2.250.1.213.2.12" dateValid="20210106000000" dateFin="20221205000000"/><Concept code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" dateValid="20221205000000" dateFin=""/><Concept code="A-04236" displayName="Prothèses auditives" codeSystem="1.2.250.1.213.2.12" dateValid="20210106000000" dateFin="20221205000000"/><Concept code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" dateValid="20221205000000" dateFin=""/><Concept code="A-00100" displayName="Autre dispositif ou objet personnel" codeSystem="1.2.250.1.213.2.12" dateValid="20210106000000" dateFin="20221205000000"/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221205000000" dateFin="20230202000000"/><Concept code="GEN-092.02.01" displayName="Autre prothèse et objet personnel" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ProtheseObjetPersonnel_CISIS" id="1.2.250.1.213.1.1.5.515" version="test">
+        <ConceptList>
+            <Concept code="A-04242" codeSystem="1.2.250.1.213.2.12" dateFin="20221205000000" dateValid="20210106000000" displayName="Lunettes"/>
+            <Concept code="Q021003" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)"/>
+            <Concept code="A-04200" codeSystem="1.2.250.1.213.2.12" dateFin="20221205000000" dateValid="20210106000000" displayName="Prothèses dentaires"/>
+            <Concept code="P0102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="PROTHÈSES DENTAIRES"/>
+            <Concept code="A-04236" codeSystem="1.2.250.1.213.2.12" dateFin="20221205000000" dateValid="20210106000000" displayName="Prothèses auditives"/>
+            <Concept code="Y2145" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"/>
+            <Concept code="A-00100" codeSystem="1.2.250.1.213.2.12" dateFin="20221205000000" dateValid="20210106000000" displayName="Autre dispositif ou objet personnel"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20221205000000" displayName="Autre"/>
+            <Concept code="GEN-092.02.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre prothèse et objet personnel"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.709" displayName="JDV_SignesVitaux_CS9_CISIS" version="test"><ConceptList><Concept code="29463-7" displayName="Poids" codeSystem="2.16.840.1.113883.6.1" dateValid="20221003000000" dateFin=""/><Concept code="8302-2" displayName="Taille" codeSystem="2.16.840.1.113883.6.1" dateValid="20221003000000" dateFin=""/><Concept code="8287-5" displayName="Périmètre crânien" codeSystem="2.16.840.1.113883.6.1" dateValid="20221003000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_SignesVitaux_CS9_CISIS" id="1.2.250.1.213.1.1.5.709" version="test">
+        <ConceptList>
+            <Concept code="29463-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221003000000" displayName="Poids"/>
+            <Concept code="8302-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221003000000" displayName="Taille"/>
+            <Concept code="8287-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221003000000" displayName="Périmètre crânien"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -61,7 +61,7 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="jdv_ModeSortie_OBP-SCM" value="'../jeuxDeValeurs/JDV_ModeSortie-OBP-SCM-CISIS.xml'"/>
+        <let name="jdv_ModeSortie_OBP-SCM" value="'../jeuxDeValeurs/JDV_ModeSortie_OBP_SCM_CISIS.xml'"/>
         
     </pattern>
 </schema>

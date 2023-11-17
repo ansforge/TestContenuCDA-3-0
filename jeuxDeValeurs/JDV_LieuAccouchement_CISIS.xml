@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.743" displayName="JDV_LieuAccouchement_CISIS" version="test"><ConceptList><Concept code="GEN-310" displayName="Maternité" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="GEN-117" displayName="Domicile" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230201000000" dateFin=""/><Concept code="GEN-092.06.04" displayName="Autre lieu d'accouchement" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_LieuAccouchement_CISIS" id="1.2.250.1.213.1.1.5.743" version="test">
+        <ConceptList>
+            <Concept code="GEN-310" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Maternité"/>
+            <Concept code="GEN-117" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230201000000" displayName="Domicile"/>
+            <Concept code="GEN-092.06.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre lieu d'accouchement"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

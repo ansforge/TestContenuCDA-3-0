@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.44" displayName="JDV_AppreciationDiagnosticCentre_CISIS" version="test"><ConceptList><Concept code="MED-426" displayName="absent" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-032" displayName="non approprié" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-033" displayName="approprié" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AppreciationDiagnosticCentre_CISIS" id="1.2.250.1.213.1.1.5.44" version="test">
+        <ConceptList>
+            <Concept code="MED-426" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="absent"/>
+            <Concept code="GEN-032" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="non approprié"/>
+            <Concept code="71978007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="inadéquat"/>
+            <Concept code="GEN-033" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="approprié"/>
+            <Concept code="88323005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="adéquat"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

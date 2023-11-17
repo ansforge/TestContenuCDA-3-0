@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.164" displayName="JDV_CddFA_CISIS" version="test"><ConceptList><Concept code="MED-351" displayName="Découverte à l’admission" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="G-A464" displayName="Connu" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="G-A468" displayName="Paroxystique" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="G-A541" displayName="Permanent" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="36692007" displayName="connu" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="26593000" displayName="paroxystique" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="6934004" displayName="permanent" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_CddFA_CISIS" id="1.2.250.1.213.1.1.5.164" version="test">
+        <ConceptList>
+            <Concept code="MED-351" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Découverte à l’admission"/>
+            <Concept code="G-A464" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Connu"/>
+            <Concept code="G-A468" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Paroxystique"/>
+            <Concept code="G-A541" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Permanent"/>
+            <Concept code="36692007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="connu"/>
+            <Concept code="26593000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="paroxystique"/>
+            <Concept code="6934004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="permanent"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

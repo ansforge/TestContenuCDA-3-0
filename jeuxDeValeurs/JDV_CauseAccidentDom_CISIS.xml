@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.121" displayName="JDV_CauseAccidentDom_CISIS" version="test"><ConceptList><Concept code="W19" displayName="Chute / Traumatisme" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin="20230612000000"/><Concept code="NF0A.4" displayName="Choc traumatique, non classé ailleurs" codeSystem="2.16.840.1.113883.6.347" dateValid="20230612000000" dateFin=""/><Concept code="T30" displayName="Brûlure" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin="20230612000000"/><Concept code="NE2Z" displayName="Brûlures, sans précision" codeSystem="2.16.840.1.113883.6.347" dateValid="20230612000000" dateFin=""/><Concept code="T50" displayName="Intoxication" codeSystem="2.16.840.1.113883.6.3" dateValid="20100101000000" dateFin="20230612000000"/><Concept code="NE61" displayName="Intoxication SAI" codeSystem="2.16.840.1.113883.6.347" dateValid="20230612000000" dateFin=""/><Concept code="MED-206" displayName="Autre(s) accident(s) domestique(s)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.01.13" displayName="Autre(s) accident(s) domestique(s)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_CauseAccidentDom_CISIS" id="1.2.250.1.213.1.1.5.121" version="test">
+        <ConceptList>
+            <Concept code="W19" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Chute / Traumatisme"/>
+            <Concept code="NF0A.4" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Choc traumatique, non classé ailleurs"/>
+            <Concept code="T30" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Brûlure"/>
+            <Concept code="NE2Z" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Brûlures, sans précision"/>
+            <Concept code="T50" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Intoxication"/>
+            <Concept code="NE61" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Intoxication SAI"/>
+            <Concept code="MED-206" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre(s) accident(s) domestique(s)"/>
+            <Concept code="GEN-092.01.13" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre(s) accident(s) domestique(s)"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

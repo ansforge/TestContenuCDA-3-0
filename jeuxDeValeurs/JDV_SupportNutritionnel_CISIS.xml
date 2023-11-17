@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.487" displayName="JDV_SupportNutritionnel_CISIS" version="test"><ConceptList><Concept code="MED-575" displayName="Alimentation mixée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-576" displayName="Alimentation entérale par sonde" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/><Concept code="MED-577" displayName="Alimentation parentérale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20200331000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_SupportNutritionnel_CISIS" id="1.2.250.1.213.1.1.5.487" version="test">
+        <ConceptList>
+            <Concept code="MED-575" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Alimentation mixée"/>
+            <Concept code="MED-576" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Alimentation entérale par sonde"/>
+            <Concept code="MED-577" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Alimentation parentérale"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.103" displayName="JDV_AntecedentsCSE9_CISIS" version="test"><ConceptList><Concept code="MED-183" displayName="Prématurité inf. à 33 sem" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-211" displayName="Otites à répétition" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-182" displayName="Affections bronchopulmonaires à répétition" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-184" displayName="Affections bronchopulmonaires à répétition dont plus de trois sifflantes" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-186" displayName="Accident(s) domestique(s) avant le 9ème mois" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-091" displayName="Hospitalisation(s) en période néonatale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-093" displayName="Hospitalisation(s) après la période néonatale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_AntecedentsCSE9_CISIS" id="1.2.250.1.213.1.1.5.103" version="test">
+        <ConceptList>
+            <Concept code="MED-183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prématurité inf. à 33 sem"/>
+            <Concept code="MED-211" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Otites à répétition"/>
+            <Concept code="MED-182" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Affections bronchopulmonaires à répétition"/>
+            <Concept code="MED-184" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Affections bronchopulmonaires à répétition dont plus de trois sifflantes"/>
+            <Concept code="MED-186" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Accident(s) domestique(s) avant le 9ème mois"/>
+            <Concept code="ORG-091" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Hospitalisation(s) en période néonatale"/>
+            <Concept code="ORG-093" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Hospitalisation(s) après la période néonatale"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

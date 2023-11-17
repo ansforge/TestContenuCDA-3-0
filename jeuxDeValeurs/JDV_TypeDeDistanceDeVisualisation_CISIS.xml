@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.644" displayName="JDV_TypeDeDistanceDeVisualisation_CISIS" version="test"><ConceptList><Concept code="MED-1051" displayName="Acuité visuelle de près" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210622000000" dateFin=""/><Concept code="MED-1052" displayName="Acuité visuelle à distance" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210622000000" dateFin=""/><Concept code="MED-1053" displayName="Acuité visuelle intermédiaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210622000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeDeDistanceDeVisualisation_CISIS" id="1.2.250.1.213.1.1.5.644" version="test">
+        <ConceptList>
+            <Concept code="MED-1051" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle de près"/>
+            <Concept code="MED-1052" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle à distance"/>
+            <Concept code="MED-1053" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle intermédiaire"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

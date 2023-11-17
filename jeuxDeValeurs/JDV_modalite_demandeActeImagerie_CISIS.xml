@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.660" displayName="JDV_modalite_demandeActeImagerie_CISIS" version="test"><ConceptList><Concept code="MED-1126" displayName="Radiographie sans contraste" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211216000000" dateFin=""/><Concept code="MED-1127" displayName="Radiographie avec contraste" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211216000000" dateFin=""/><Concept code="MG" displayName="Mammographie" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/><Concept code="MED-1128" displayName="Échographie sans contraste" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211216000000" dateFin=""/><Concept code="MED-1129" displayName="Échographie avec contraste" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20211216000000" dateFin=""/><Concept code="CT" displayName="Scanner/TDM" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/><Concept code="MR" displayName="IRM" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/><Concept code="C63334" displayName="Radiologie interventionnelle" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20211216000000" dateFin=""/><Concept code="OT" displayName="Autre technique d'imagerie" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/><Concept code="NM" displayName="Scintigraphie" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/><Concept code="PT" displayName="TEP : Tomographie par émission de positons" codeSystem="1.2.840.10008.2.16.4" dateValid="20211216000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_modalite_demandeActeImagerie_CISIS" id="1.2.250.1.213.1.1.5.660" version="test">
+        <ConceptList>
+            <Concept code="MED-1126" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Radiographie sans contraste"/>
+            <Concept code="MED-1127" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Radiographie avec contraste"/>
+            <Concept code="MG" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Mammographie"/>
+            <Concept code="MED-1128" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Échographie sans contraste"/>
+            <Concept code="MED-1129" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Échographie avec contraste"/>
+            <Concept code="CT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Scanner/TDM"/>
+            <Concept code="MR" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="IRM"/>
+            <Concept code="C63334" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20211216000000" displayName="Radiologie interventionnelle"/>
+            <Concept code="OT " codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Autre technique d'imagerie"/>
+            <Concept code="NM" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Scintigraphie"/>
+            <Concept code="PT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="TEP : Tomographie par émission de positons"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

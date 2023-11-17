@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.652" displayName="JDV_MesureTypeVerrePrescrit_CISIS" version="test"><ConceptList><Concept code="C80261" displayName="Monture" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210924000000" dateFin=""/><Concept code="28792-0" displayName="Ecart interpupillaire" codeSystem="2.16.840.1.113883.6.1" dateValid="20210924000000" dateFin=""/><Concept code="64885-7" displayName="Types de verres" codeSystem="2.16.840.1.113883.6.1" dateValid="20210924000000" dateFin=""/><Concept code="GEN-292" displayName="Commentaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/><Concept code="MED-888" displayName="Intolérance aux verres progressifs" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210924000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_MesureTypeVerrePrescrit_CISIS" id="1.2.250.1.213.1.1.5.652" version="test">
+        <ConceptList>
+            <Concept code="C80261" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="Monture"/>
+            <Concept code="28792-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Ecart interpupillaire"/>
+            <Concept code="64885-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Types de verres"/>
+            <Concept code="GEN-292" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Commentaire"/>
+            <Concept code="MED-888" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Intolérance aux verres progressifs"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

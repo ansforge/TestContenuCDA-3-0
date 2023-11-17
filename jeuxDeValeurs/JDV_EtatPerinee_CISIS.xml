@@ -1,3 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.734" displayName="JDV_EtatPerinee_CISIS" version="test"><ConceptList><Concept code="289854007" displayName="périnée intact" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="O70.0" displayName="Déchirure obstétricale du périnée, du premier degré" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O70.1" displayName="Déchirure obstétricale du périnée, du deuxième degré" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O70.2" displayName="Déchirure obstétricale du périnée, du troisième degré" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="O70.3" displayName="Déchirure obstétricale du périnée, du quatrième degré" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="860603002" displayName="plaie d'épisiotomie" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_EtatPerinee_CISIS" id="1.2.250.1.213.1.1.4.2.289.4" version="test">
+        <ConceptList>
+            <Concept code="OBS_106" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Périnée intact"/>
+            <Concept code="289854007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="périnée intact"/>
+            <Concept code="OBS_107" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Déchirure périnéale simple (1er et 2ème degré)"/>
+            <Concept code="O70.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Déchirure obstétricale du périnée, du premier degré"/>
+            <Concept code="O70.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Déchirure obstétricale du périnée, du deuxième degré"/>
+            <Concept code="OBS_108" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Déchirure sphinctérienne (périnée complet et compliqué = 3ème et 4ème degré)"/>
+            <Concept code="O70.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Déchirure obstétricale du périnée, du troisième degré"/>
+            <Concept code="O70.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Déchirure obstétricale du périnée, du quatrième degré"/>
+            <Concept code="P1-86130" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Episiotomie"/>
+            <Concept code="860603002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="plaie d'épisiotomie"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

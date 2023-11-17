@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.213" displayName="JDV_CerveletLoc_CISIS" version="test"><ConceptList><Concept code="MED-493" displayName="Hémisphérique médial (noyaux)" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-494" displayName="Hémisphérique latéral" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="T-A6210" displayName="Vermis" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221216000000"/><Concept code="279105006" displayName="vermis cérébelleux entier" codeSystem="2.16.840.1.113883.6.96" dateValid="20221207000000" dateFin="20230707000000"/><Concept code="58501004" displayName="vermis cérebelleux" codeSystem="2.16.840.1.113883.6.96" dateValid="20230707000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_CerveletLoc_CISIS" id="1.2.250.1.213.1.1.5.213" version="test">
+        <ConceptList>
+            <Concept code="MED-493" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphérique médial (noyaux)"/>
+            <Concept code="MED-494" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphérique latéral"/>
+            <Concept code="T-A6210" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vermis"/>
+            <Concept code="279105006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="vermis cérébelleux entier"/>
+            <Concept code="58501004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="vermis cérebelleux"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

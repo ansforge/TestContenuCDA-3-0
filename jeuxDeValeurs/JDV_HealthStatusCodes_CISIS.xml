@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.283.1" displayName="JDV_HealthStatusCodes_CISIS" version="test"><ConceptList><Concept code="CDA_003" displayName="Bien portant" codeSystem="1.2.250.1.213.1.1.4.2.286" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="CDA_004" displayName="Malade chronique" codeSystem="1.2.250.1.213.1.1.4.2.286" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="CDA_005" displayName="Sévèrement malade" codeSystem="1.2.250.1.213.1.1.4.2.286" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="CDA_006" displayName="Sévèrement invalidé" codeSystem="1.2.250.1.213.1.1.4.2.286" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="DF-D0000" displayName="Décédé" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="F-00140" displayName="Invalide" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="F-01255" displayName="Asymptomatique" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20221130000000"/><Concept code="G-A005" displayName="En rémission" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20220404000000"/><Concept code="81323004" displayName="fonction corporelle générale : normale" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="161901003" displayName="malade chronique" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="271593001" displayName="moribond" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="161045001" displayName="incapacité : sévère" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="419099009" displayName="décédé" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="21134002" displayName="incapacité" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/><Concept code="162467007" displayName="asymptomatique" codeSystem="2.16.840.1.113883.6.96" dateValid="20221130000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HealthStatusCodes_CISIS" id="1.2.250.1.213.1.1.4.2.283.1" version="test">
+        <ConceptList>
+            <Concept code="CDA_003" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20221130000000" dateValid="20100101000000" displayName="Bien portant"/>
+            <Concept code="CDA_004" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20221130000000" dateValid="20100101000000" displayName="Malade chronique"/>
+            <Concept code="CDA_005" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20221130000000" dateValid="20100101000000" displayName="Sévèrement malade"/>
+            <Concept code="CDA_006" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20221130000000" dateValid="20100101000000" displayName="Sévèrement invalidé"/>
+            <Concept code="DF-D0000" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Décédé"/>
+            <Concept code="F-00140" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Invalide"/>
+            <Concept code="F-01255" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Asymptomatique"/>
+            <Concept code="G-A005" codeSystem="1.2.250.1.213.2.12" dateFin="20220404000000" dateValid="20100101000000" displayName="En rémission"/>
+            <Concept code="81323004" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221130000000" displayName="fonction corporelle générale : normale"/>
+            <Concept code="102499006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="en forme"/>
+            <Concept code="161901003" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221130000000" displayName="malade chronique"/>
+            <Concept code="27624003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="maladie chronique"/>
+            <Concept code="271593001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="moribond"/>
+            <Concept code="161045001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="incapacité : sévère"/>
+            <Concept code="419099009" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221130000000" displayName="décédé"/>
+            <Concept code="419620001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="mort"/>
+            <Concept code="21134002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="incapacité"/>
+            <Concept code="162467007" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221130000000" displayName="asymptomatique"/>
+            <Concept code="84387000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="asymptomatique"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

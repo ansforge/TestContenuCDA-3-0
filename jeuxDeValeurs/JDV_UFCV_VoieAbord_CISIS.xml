@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.8" displayName="JDV_UFCV_VoieAbord_CISIS" version="test"><ConceptList><Concept code="D0008-1" displayName="Céphalique" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20210412000000"/><Concept code="D0008-2" displayName="Sous-Clavière" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20210412000000"/><Concept code="D0008-3" displayName="Epicardique" codeSystem="1.2.250.1.213.1.1.4.2" dateValid="20100101000000" dateFin="20210412000000"/><Concept code="66787007" displayName="céphalique" codeSystem="2.16.840.1.113883.6.96" dateValid="20221208000000" dateFin="20230707000000"/><Concept code="260597006" displayName="par la veine céphalique" codeSystem="2.16.840.1.113883.6.96" dateValid="20230707000000" dateFin=""/><Concept code="303578004" displayName="sous-clavière" codeSystem="2.16.840.1.113883.6.96" dateValid="20221208000000" dateFin="20230707000000"/><Concept code="260598001" displayName="par la veine subclavière" codeSystem="2.16.840.1.113883.6.96" dateValid="20230707000000" dateFin=""/><Concept code="261073003" displayName="épicardique" codeSystem="2.16.840.1.113883.6.96" dateValid="20221208000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_UFCV_VoieAbord_CISIS" id="1.2.250.1.213.1.1.4.2.8" version="test">
+        <ConceptList>
+            <Concept code="D0008-1" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20210412000000" dateValid="20100101000000" displayName="Céphalique"/>
+            <Concept code="D0008-2" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20210412000000" dateValid="20100101000000" displayName="Sous-Clavière"/>
+            <Concept code="D0008-3" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20210412000000" dateValid="20100101000000" displayName="Epicardique"/>
+            <Concept code="66787007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="céphalique"/>
+            <Concept code="260597006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="par la veine céphalique"/>
+            <Concept code="303578004" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="sous-clavière"/>
+            <Concept code="260598001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="par la veine subclavière"/>
+            <Concept code="261073003" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221208000000" displayName="épicardique"/>
+            <Concept code="1290464007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="voie d'abord épicardique"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

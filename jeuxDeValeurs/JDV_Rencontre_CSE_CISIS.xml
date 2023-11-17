@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.708" displayName="JDV_Rencontre_CSE_CISIS" version="test"><ConceptList><Concept code="ORG-083" displayName="Demande de rappel par le médecin de PMI" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/><Concept code="ORG-084" displayName="Demande de consultation médicale spécialisée" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20221003000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Rencontre_CSE_CISIS" id="1.2.250.1.213.1.1.5.708" version="test">
+        <ConceptList>
+            <Concept code="ORG-083" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231018000000" dateValid="20221003000000" displayName="Demande de rappel par le médecin de PMI"/>
+            <Concept code="ORG-083" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231025000000" dateValid="20231018000000" displayName="Lien avec le médecin de PMI après accord des parents"/>
+            <Concept code="ORG-083" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231018000000" displayName="Lien avec le médecin de PMI après accord des parents"/>
+            <Concept code="ORG-084" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231025000000" dateValid="20221003000000" displayName="Demande de consultation médicale spécialisée"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

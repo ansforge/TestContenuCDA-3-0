@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.40 " displayName="JDV_ContexteActivite_CISIS" version="test"><ConceptList><Concept code="GEN-031" displayName="Autre contexte" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.05.04" displayName="Autre contexte" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/><Concept code="MED-095" displayName="Avis d'expertise sur un dossier" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="MED-096" displayName="Téléconsultation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-044" displayName="Hôpital de jour" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-045" displayName="Hospitalisation traditionnelle" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="P2-00130" displayName="Consultation" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="ORG-187" displayName="Consultation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="ORG-028" displayName="Consultation pluridisciplinaire" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-029" displayName="Avis sur dossier en consultation" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-030" displayName="Avis en salle" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="ORG-113" displayName="RCP" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/><Concept code="GEN-031" displayName="Autre contexte" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ContexteActivite_CISIS" id="1.2.250.1.213.1.1.5.40 " version="test">
+        <ConceptList>
+            <Concept code="GEN-031" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre contexte"/>
+            <Concept code="GEN-092.05.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre contexte"/>
+            <Concept code="MED-095" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis d'expertise sur un dossier"/>
+            <Concept code="MED-096" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Téléconsultation"/>
+            <Concept code="ORG-044" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Hôpital de jour"/>
+            <Concept code="29" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation de jour (HJ)"/>
+            <Concept code="ORG-045" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hospitalisation traditionnelle"/>
+            <Concept code="P2-00130" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Consultation"/>
+            <Concept code="ORG-187" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20230803000000" displayName="Consultation"/>
+            <Concept code="11429006" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Consultation"/>
+            <Concept code="ORG-028" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Consultation pluridisciplinaire"/>
+            <Concept code="ORG-029" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis sur dossier en consultation"/>
+            <Concept code="ORG-030" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis en salle"/>
+            <Concept code="ORG-113" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="RCP"/>
+            <Concept code="39" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Réunion de Concertation Pluridisciplinaire (RCP)"/>
+            <Concept code="GEN-031" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre contexte"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.733" displayName="JDV_ObservationEnfant_CISIS" version="test"><ConceptList><Concept code="8339-4" displayName="Poids à la naissance" codeSystem="2.16.840.1.113883.6.1" dateValid="20100101000000" dateFin=""/><Concept code="92276-5" displayName="Statut du nouveau né" codeSystem="2.16.840.1.113883.6.1" dateValid="20221024000000" dateFin=""/><Concept code="107724000" displayName="transfert du patient" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="57071-3" displayName="Méthode d'accouchement" codeSystem="2.16.840.1.113883.6.1" dateValid="20221024000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ObservationEnfant_CISIS" id="1.2.250.1.213.1.1.5.733" version="test">
+        <ConceptList>
+            <Concept code="8339-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Poids à la naissance"/>
+            <Concept code="92276-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221024000000" displayName="Statut du nouveau né"/>
+            <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
+            <Concept code="57071-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221024000000" displayName="Méthode d'accouchement"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

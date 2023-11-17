@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.1.11.10267" displayName="JDV_HL7_ParticipationFunction_CISIS" version="test"><ConceptList><Concept code="ADMPHYS" displayName="Responsable de l'admission" codeSystem="2.16.840.1.113883.5.88" dateValid="20100101000000" dateFin=""/><Concept code="ATTPHYS" displayName="Référent - Responsable du patient dans la structure de soins" codeSystem="2.16.840.1.113883.5.88" dateValid="20100101000000" dateFin=""/><Concept code="DISPHYS" displayName="Responsable de la sortie" codeSystem="2.16.840.1.113883.5.88" dateValid="20100101000000" dateFin=""/><Concept code="PCP" displayName="Médecin traitant" codeSystem="2.16.840.1.113883.5.88" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HL7_ParticipationFunction_CISIS" id="2.16.840.1.113883.1.11.10267" version="test">
+        <ConceptList>
+            <Concept code="ADMPHYS" codeSystem="2.16.840.1.113883.5.88" dateFin="" dateValid="20100101000000" displayName="Responsable de l'admission"/>
+            <Concept code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" dateFin="" dateValid="20100101000000" displayName="Référent - Responsable du patient dans la structure de soins"/>
+            <Concept code="DISPHYS" codeSystem="2.16.840.1.113883.5.88" dateFin="" dateValid="20100101000000" displayName="Responsable de la sortie"/>
+            <Concept code="PCP" codeSystem="2.16.840.1.113883.5.88" dateFin="" dateValid="20100101000000" displayName="Médecin traitant"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

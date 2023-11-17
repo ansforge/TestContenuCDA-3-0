@@ -47,8 +47,8 @@
     <rule
         context='*[cda:templateId/@root="1.2.250.1.213.1.1.2.1"]/cda:entry/cda:supply'>
         <assert
-            test='cda:participant/cda:participantRole/cda:playingDevice/cda:code[@code="D0001-12"]'>
-            [E_DM-TAP] Erreur de Conformité CI-SIS: Le code de DM doit obligatoirement avoir le code "D0001-12".
+            test='cda:participant/cda:participantRole/cda:playingDevice/cda:code[@code="P0704"]'>
+            [E_DM-TAP] Erreur de Conformité CI-SIS: Le code de DM doit obligatoirement avoir le code "P0704".
         </assert>
        
         <!-- Localisation -->

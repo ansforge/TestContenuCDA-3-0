@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.117" displayName="JDV_TypePres_CISIS" version="test"><ConceptList><Concept code="F-87050" displayName="Sommet" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="70028003" displayName="présentation du sommet" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="F-87280" displayName="Siège" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="6096002" displayName="présentation en siège du fœtus" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="D8-20280" displayName="Autre présentation foetale" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.01.21" displayName="Autre présentation foetale" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypePres_CISIS" id="1.2.250.1.213.1.1.5.117" version="test">
+        <ConceptList>
+            <Concept code="F-87050" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Sommet"/>
+            <Concept code="70028003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="présentation du sommet"/>
+            <Concept code="F-87280" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Siège"/>
+            <Concept code="6096002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="présentation en siège du fœtus"/>
+            <Concept code="D8-20280" codeSystem="1.2.250.1.213.2.12" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre présentation foetale"/>
+            <Concept code="GEN-092.01.21" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre présentation foetale"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

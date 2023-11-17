@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.477" displayName="JDV_GestionEffetsSecondaires_CISIS" version="test"><ConceptList><Concept code="MED-224" displayName="Facteur de croissance hématopoïétique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230428000000"/><Concept code="C20427" displayName="facteur de croissance hématopoïétique" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20230428000000" dateFin=""/><Concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230202000000"/><Concept code="GEN-092.04.12" displayName="Autre gestion des effets secondaires" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_GestionEffetsSecondaires_CISIS" id="1.2.250.1.213.1.1.5.477" version="test">
+        <ConceptList>
+            <Concept code="MED-224" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="Facteur de croissance hématopoïétique"/>
+            <Concept code="C20427" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20230428000000" displayName="facteur de croissance hématopoïétique"/>
+            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="GEN-092.04.12" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre gestion des effets secondaires"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.750" displayName="JDV_TypeInterventionVoieBasse_CISIS" version="test"><ConceptList><Concept code="MED-1255" displayName="Spatules" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092.04.21" displayName="Autre manœuvre siège" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/><Concept code="237008007" displayName="manœuvres pour accoucher une dystocie des épaules" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="GEN-092.04.22" displayName="Autre manœuvre voie basse" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20230202000000" dateFin=""/><Concept code="416055001" displayName="grande extraction du siège" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="359940006" displayName="petite extraction du siège" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="302383004" displayName="accouchement par forceps" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="302382009" displayName="extraction par le siège avec version podalique interne" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="61586001" displayName="accouchement par extraction par ventouse" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeInterventionVoieBasse_CISIS" id="1.2.250.1.213.1.1.5.750" version="test">
+        <ConceptList>
+            <Concept code="MED-1255" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Spatules"/>
+            <Concept code="GEN-092.04.21" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre manœuvre siège"/>
+            <Concept code="237008007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="manœuvres pour accoucher une dystocie des épaules"/>
+            <Concept code="GEN-092.04.22" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre manœuvre voie basse"/>
+            <Concept code="416055001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="grande extraction du siège"/>
+            <Concept code="359940006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="petite extraction du siège"/>
+            <Concept code="302383004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement par forceps"/>
+            <Concept code="302382009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="extraction par le siège avec version podalique interne"/>
+            <Concept code="61586001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement par extraction par ventouse"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

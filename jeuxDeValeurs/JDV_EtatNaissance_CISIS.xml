@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.736" displayName="JDV_EtatNaissance_CISIS" version="test"><ConceptList><Concept code="P95" displayName="Mort fœtale" codeSystem="2.16.840.1.113883.6.3" dateValid="20230803000000" dateFin=""/><Concept code="281050002" displayName="naissance vivante" codeSystem="2.16.840.1.113883.6.96" dateValid="20230201000000" dateFin=""/><Concept code="391181005" displayName="mort néonatale précoce" codeSystem="2.16.840.1.113883.6.96" dateValid="20230201000000" dateFin=""/><Concept code="240297000" displayName="mort infantile" codeSystem="2.16.840.1.113883.6.96" dateValid="20230201000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_EtatNaissance_CISIS" id="1.2.250.1.213.1.1.4.2.289.6" version="test">
+        <ConceptList>
+            <Concept code="F-88450" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Mort-né"/>
+            <Concept code="P95" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230803000000" displayName="Mort fœtale"/>
+            <Concept code="OBS_111" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230201000000" dateValid="20100101000000" displayName="Vivant"/>
+            <Concept code="281050002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230201000000" displayName="naissance vivante"/>
+            <Concept code="OBS_112" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230201000000" dateValid="20100101000000" displayName="Né vivant décédé &lt; 28 jours"/>
+            <Concept code="391181005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230201000000" displayName="mort néonatale précoce"/>
+            <Concept code="OBS_113" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230201000000" dateValid="20100101000000" displayName="Né vivant décédé &gt;= 28 jours"/>
+            <Concept code="240297000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230201000000" displayName="mort infantile"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

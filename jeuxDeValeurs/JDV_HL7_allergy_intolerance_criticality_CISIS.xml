@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.4.642.3.129" displayName="JDV_HL7_allergy_intolerance_criticality_CISIS" version="test"><ConceptList><Concept code="low" displayName="Bas" codeSystem="2.16.840.1.113883.4.642.4.130" dateValid="20220101000000" dateFin=""/><Concept code="high" displayName="Elevé" codeSystem="2.16.840.1.113883.4.642.4.130" dateValid="20220101000000" dateFin=""/><Concept code="unable-to-assess" displayName="Impossible à évaluer" codeSystem="2.16.840.1.113883.4.642.4.130" dateValid="20220101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HL7_allergy_intolerance_criticality_CISIS" id="2.16.840.1.113883.4.642.3.129" version="test">
+        <ConceptList>
+            <Concept code="low" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Bas"/>
+            <Concept code="high" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Elevé"/>
+            <Concept code="unable-to-assess" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Impossible à évaluer"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.596" displayName="JDV_TraitementSoins_FRCP_CISIS" version="test"><ConceptList><Concept code="C3580" displayName="métastases osseuses" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="C3303" displayName="douleur" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="C15292" displayName="Soins palliatifs" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin="20230725000000"/><Concept code="C15252" displayName="soins palliatifs" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20230725000000" dateFin=""/><Concept code="C63334" displayName="Radiologie interventionnelle" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="C15747" displayName="soins de support" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="ORG-129" displayName="Oncogénétique" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210414000000" dateFin=""/><Concept code="ORG-130" displayName="Oncogériatrie" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20210414000000" dateFin=""/><Concept code="C16832" displayName="oncologie médicale" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="C71326" displayName="préservation de la fertilité" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/><Concept code="C7201" displayName="tumeur rare" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210414000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TraitementSoins_FRCP_CISIS" id="1.2.250.1.213.1.1.5.596" version="test">
+        <ConceptList>
+            <Concept code="C3580" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="métastases osseuses"/>
+            <Concept code="C3303" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="douleur"/>
+            <Concept code="C15292" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230725000000" dateValid="20210414000000" displayName="Soins palliatifs"/>
+            <Concept code="C15252" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20230725000000" displayName="soins palliatifs"/>
+            <Concept code="C63334" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="Radiologie interventionnelle"/>
+            <Concept code="C15747" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="soins de support"/>
+            <Concept code="ORG-129" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210414000000" displayName="Oncogénétique"/>
+            <Concept code="ORG-130" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210414000000" displayName="Oncogériatrie"/>
+            <Concept code="C16832" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="oncologie médicale"/>
+            <Concept code="C71326" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="préservation de la fertilité"/>
+            <Concept code="C7201" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="tumeur rare"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

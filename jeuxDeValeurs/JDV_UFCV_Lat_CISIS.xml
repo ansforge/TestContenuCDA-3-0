@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.4.2.4" displayName="JDV_UFCV_Lat_CISIS" version="test"><ConceptList><Concept code="G-A100" displayName="Droit" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20210412000000"/><Concept code="G-A101" displayName="Gauche" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20210412000000"/><Concept code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210412000000" dateFin="20230606000000"/><Concept code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" dateValid="20210412000000" dateFin="20230606000000"/><Concept code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96" dateValid="20230606000000" dateFin=""/><Concept code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" dateValid="20230606000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_UFCV_Lat_CISIS" id="1.2.250.1.213.1.1.4.2.4" version="test">
+        <ConceptList>
+            <Concept code="G-A100" codeSystem="1.2.250.1.213.2.12" dateFin="20210412000000" dateValid="20100101000000" displayName="Droit"/>
+            <Concept code="G-A101" codeSystem="1.2.250.1.213.2.12" dateFin="20210412000000" dateValid="20100101000000" displayName="Gauche"/>
+            <Concept code="C25228" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230606000000" dateValid="20210412000000" displayName="Droit"/>
+            <Concept code="C25229" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230606000000" dateValid="20210412000000" displayName="Gauche"/>
+            <Concept code="24028007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230606000000" displayName="droit"/>
+            <Concept code="7771000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230606000000" displayName="gauche"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

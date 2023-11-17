@@ -1250,7 +1250,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0031" displayName="Valve" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <code code="L0031" displayName="Valve" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#DM-valve"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -1267,12 +1267,12 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0032" displayName="Composant" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <code code="L0032" displayName="Composant" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#DM-composant"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <!-- valeur issue du JDV_UFCV_CompProt_CISIS (1.2.250.1.213.1.1.4.2.10 -->
-                  <value xsi:type="CD" code="D0012-1" displayName="Homogreffe" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <value xsi:type="CD" code="D0012-1" displayName="Homogreffe" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                 </observation>
               </entryRelationship>
               <!-- Diamètre -->
@@ -1284,7 +1284,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0033" displayName="Diamètre" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <code code="L0033" displayName="Diamètre" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#DM-diametre"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -1300,7 +1300,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0034" displayName="Gradient" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <code code="L0034" displayName="Gradient" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#DM-gradient"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -1316,7 +1316,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A" />
                   <!-- Valeur issue du JDV_UFCV_CodEntree_CISIS -->
-                  <code code="L0035" displayName="Niveau anticoagulation souhaité" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC"/>
+                  <code code="L0035" displayName="Niveau anticoagulation souhaité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#DM-niveau-anticoagulation"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />

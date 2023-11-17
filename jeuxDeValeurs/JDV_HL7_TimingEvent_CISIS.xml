@@ -1,3 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.1.11.10706 " displayName="JDV_HL7_TimingEvent_CISIS" version="test"><ConceptList><Concept code="AC" displayName="Avant le repas" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ACD" displayName="Avant le déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ACM" displayName="Avant le petit-déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ACV" displayName="Avant le dîner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="C" displayName="Pendant les repas" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="CD" displayName="Pendant le déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="CM" displayName="Pendant le petit-déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="CV" displayName="Pendant le dîner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="HS" displayName="Au coucher" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="IC" displayName="Entre les repas" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ICD" displayName="Entre le déjeuner et le dîner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ICM" displayName="Entre le petit-déjeûner et le déjeûner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="ICV" displayName="Entre le diner et le coucher" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="PC" displayName="Après le repas" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="PCD" displayName="Après le déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="PCM" displayName="Après le petit-déjeuner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="PCV" displayName="Après le dîner" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/><Concept code="WAKE" displayName="Au réveil" codeSystem="2.16.840.1.113883.5.139" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_HL7_TimingEvent_CISIS" id="2.16.840.1.113883.1.11.10706 " version="test">
+        <ConceptList>
+            <Concept code="AC" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le repas"/>
+            <Concept code="ACD" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le déjeuner"/>
+            <Concept code="ACM" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le petit-déjeuner"/>
+            <Concept code="ACV" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le dîner"/>
+            <Concept code="C" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Pendant les repas"/>
+            <Concept code="CD" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Pendant le déjeuner"/>
+            <Concept code="CM" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Pendant le petit-déjeuner"/>
+            <Concept code="CV" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Pendant le dîner"/>
+            <Concept code="HS" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Au coucher"/>
+            <Concept code="IC" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Entre les repas"/>
+            <Concept code="ICD" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Entre le déjeuner et le dîner"/>
+            <Concept code="ICM" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Entre le petit-déjeûner et le déjeûner"/>
+            <Concept code="ICV" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Entre le diner et le coucher"/>
+            <Concept code="PC" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Après le repas"/>
+            <Concept code="PCD" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Après le déjeuner"/>
+            <Concept code="PCM" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Après le petit-déjeuner"/>
+            <Concept code="PCV" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Après le dîner"/>
+            <Concept code="WAKE" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Au réveil"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

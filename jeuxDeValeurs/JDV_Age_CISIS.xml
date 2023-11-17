@@ -1,3 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.43" displayName="JDV_Age_CISIS" version="test"><ConceptList><Concept code="GEN-019" displayName="à la naissance" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-020" displayName="à l'âge de" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="GEN-021" displayName="non déterminé" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="MED-080" displayName="anténatal" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="MED-430" displayName="postmortem" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin="20230427000000"/><Concept code="255407002" displayName="néonatal" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="767023003" displayName="période de la vie entre la naissance et la mort" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="373068000" displayName="indéterminé(e)" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="303112003" displayName="période fœtale" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/><Concept code="303113008" displayName="période postmortem" codeSystem="2.16.840.1.113883.6.96" dateValid="20230427000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Age_CISIS" id="1.2.250.1.213.1.1.5.43" version="test">
+        <ConceptList>
+            <Concept code="GEN-019" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="à la naissance"/>
+            <Concept code="GEN-020" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="à l'âge de"/>
+            <Concept code="GEN-021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="non déterminé"/>
+            <Concept code="MED-080" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="anténatal"/>
+            <Concept code="MED-430" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="postmortem"/>
+            <Concept code="255407002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="néonatal"/>
+            <Concept code="767023003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période de la vie entre la naissance et la mort"/>
+            <Concept code="373068000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="indéterminé(e)"/>
+            <Concept code="303112003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période fœtale"/>
+            <Concept code="303113008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période postmortem"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.504" displayName="JDV_ScoreBradenComponent_CISIS" version="test"><ConceptList><Concept code="38222-6" displayName="Perception sensorielle" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/><Concept code="38229-1" displayName="Exposition à l'humidité" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/><Concept code="38224-2" displayName="Mobilité" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/><Concept code="38223-4" displayName="Activité" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/><Concept code="38225-9" displayName="Nutrition" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/><Concept code="38226-7" displayName="Friction et cisaillement" codeSystem="2.16.840.1.113883.6.1" dateValid="20200706000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ScoreBradenComponent_CISIS" id="1.2.250.1.213.1.1.5.504" version="test">
+        <ConceptList>
+            <Concept code="38222-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Perception sensorielle"/>
+            <Concept code="38229-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Exposition à l'humidité"/>
+            <Concept code="38224-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Mobilité"/>
+            <Concept code="38223-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Activité"/>
+            <Concept code="38225-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Nutrition"/>
+            <Concept code="38226-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200706000000" displayName="Friction et cisaillement"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

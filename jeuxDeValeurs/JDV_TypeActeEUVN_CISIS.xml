@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Créé par nmahraz, le 04/09/2023-->
-<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.228" displayName="JDV_TypeActeEUVN_CISIS" version="test"><ConceptList><Concept code="P1-30330" displayName="Endartériectomie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="P1-30800" displayName="Angioplastie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="P1-91300" displayName="Crâniectomie" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="P1-91221" displayName="Evacuation hématome intracérébral" codeSystem="1.2.250.1.213.2.12" dateValid="20100101000000" dateFin="20230803000000"/><Concept code="392031002" displayName="endartériectomie" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="2119009" displayName="réparation d'un vaisseau sanguin" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="36910002" displayName="craniectomie" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="10458001" displayName="évacuation d'un hématome intracérébral" codeSystem="2.16.840.1.113883.6.96" dateValid="20230803000000" dateFin=""/><Concept code="MED-512" displayName="Pose Valve / Dérivation externe" codeSystem="1.2.250.1.213.1.1.4.322" dateValid="20100101000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TypeActeEUVN_CISIS" id="1.2.250.1.213.1.1.5.228" version="test">
+        <ConceptList>
+            <Concept code="P1-30330" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Endartériectomie"/>
+            <Concept code="P1-30800" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Angioplastie"/>
+            <Concept code="P1-91300" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Crâniectomie"/>
+            <Concept code="P1-91221" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Evacuation hématome intracérébral"/>
+            <Concept code="392031002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="endartériectomie"/>
+            <Concept code="2119009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="réparation d'un vaisseau sanguin"/>
+            <Concept code="36910002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="craniectomie"/>
+            <Concept code="10458001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="évacuation d'un hématome intracérébral"/>
+            <Concept code="MED-512" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pose Valve / Dérivation externe"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

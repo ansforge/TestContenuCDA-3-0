@@ -2118,7 +2118,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="ORG-169" displayName="MPR" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="G15_10/SM29" displayName="Médecin - Médecine physique et réadaptation (SM)" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="TRE_A02-ProfessionSavFaire-CISIS" />
             </observation>
           </entry>
           <!-- Besoin d'un avis medical complémentaire / Cardiologue (besoin présent) v-->
@@ -2138,7 +2138,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="G15_10/C07" displayName="Cardiologue" codeSystem="1.2.250.1.213.1.1.4.5" />
+              <value xsi:type="CD" code="G15_10/SM04" displayName="Médecin - Cardiologie et maladies vasculaires (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
             </observation>
           </entry>
           <!-- Besoin d'un avis medical complémentaire / Neurologue (besoin présent) v-->
@@ -2158,7 +2158,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="G15_10/C43" displayName="Neurologue" codeSystem="1.2.250.1.213.1.1.4.5" />
+              <value xsi:type="CD" code="G15_10/SM32" displayName="Médecin - Neurologie (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
             </observation>
           </entry>
           <!-- Besoin d'un avis medical complémentaire / Gériatre (besoin absent) v-->
@@ -2178,7 +2178,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="G15_10/DSM213" displayName="Gériatre" codeSystem="1.2.250.1.213.1.1.4.5" />
+              <value xsi:type="CD" code="G15_10/SM18" displayName="Médecin - Gériatrie (SM)re" codeSystem="1.2.250.1.213.1.1.4.5" />
             </observation>
           </entry>
           <!-- Besoin d'un avis medical complémentaire / Autre (besoin présent) v-->
@@ -2933,7 +2933,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-166" displayName="Maison d'accueil spécialisé (MAS) / Foyer d'accueil médicalisé (FAM)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="255" displayName="Maison d'accueil spécialisée (MAS)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Maison d'accueil spécialisé (MAS) / Hospitalisation complète -->
@@ -2953,7 +2953,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-167" displayName="Hospitalisation complète" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="28" displayName="Hospitalisation complète (HC)" codeSystem="1.2.250.1.213.3.3.13" codeSystemName="TRE_R213-ModePriseEnCharge" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Maison d'accueil spécialisé (MAS) / Hospitalisation à domicile (HAD) -->
@@ -2973,7 +2973,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-072" displayName="Hospitalisation à domicile (HAD)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="127" displayName="Hospitalisation à domicile (HAD)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Maison d'accueil spécialisé (MAS) / Hôpital de jour (HDJ) -->
@@ -2993,7 +2993,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-044" displayName="Hôpital de jour (HDJ)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="29" displayName="Hospitalisation de jour (HJ)" codeSystem="1.2.250.1.213.3.3.13" codeSystemName="TRE_R213-ModePriseEnCharge" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Services de soins infirmiers à domicile (SSIAD) -->
@@ -3013,7 +3013,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="ORG-168" displayName="Services de soins infirmiers à domicile (SSIAD)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="354" displayName="Service de soins infirmiers à domicile (SSIAD)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
         </section>
