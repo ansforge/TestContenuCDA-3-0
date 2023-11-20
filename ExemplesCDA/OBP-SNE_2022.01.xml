@@ -505,7 +505,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F50090E5-B029-41D0-B00A-380A45E3E3D8" />
-                  <code code="MED-162" displayName="Rang de naissance" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                  <code code="73771-8" displayName="Rang de naissance" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <text>
                     <reference value="rang" />
                   </text>
@@ -1230,7 +1230,7 @@
               <statusCode code="completed" />
               <effectiveTime nullFlavor="UNK" />
               <!-- Valeur issue du JDV_ModeSortie-OBP-SNE_CISIS (1.2.250.1.213.1.1.5.699) -->
-              <value xsi:type="CD" code="ORG-069" displayName="Transfert ou mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+              <value xsi:type="CD" code="107724000" displayName="Transfert du patient" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <!-- valeur issue du JDV_Destination-OBP-SNE_CISIS (1.2.250.1.213.1.1.5.702) -->
                 <qualifier><value code="ORG-141" displayName="Unité Kangourou" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/></qualifier>
               </value>

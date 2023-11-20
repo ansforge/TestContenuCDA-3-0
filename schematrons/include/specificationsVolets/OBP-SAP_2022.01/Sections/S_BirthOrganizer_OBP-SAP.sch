@@ -26,8 +26,8 @@
         <assert test="cda:component/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.5']/cda:code[@code='92276-5']">
             [S_BirthOrganizer_OBP-SAP] : L'entrée FR-Naissance doit contenir une entrée FR-Observation-sur-la-grossesse "Statut du nouveau né" (92276-5)
         </assert>
-        <assert test="cda:component/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.5']/cda:code[@code='ORG-069']">
-            [S_BirthOrganizer_OBP-SAP] : L'entrée FR-Naissance doit contenir une entrée FR-Observation-sur-la-grossesse "Transfert ou mutation" (ORG-069)
+        <assert test="cda:component/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.5']/cda:code[@code='107724000']">
+            [S_BirthOrganizer_OBP-SAP] : L'entrée FR-Naissance doit contenir une entrée FR-Observation-sur-la-grossesse "Transfert du patient" (107724000)
         </assert>       
         
     </rule>
