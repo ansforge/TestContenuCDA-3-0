@@ -50,6 +50,13 @@
         <value lang="de-ch">Gesetz</value>
         <value lang="fr-fr">Acte(s)</value>
     </translation>
+    <translation key="donneeStructure">
+        <comment>Label: Actes</comment>
+        <value lang="en-us">Structured data</value>
+        <value lang="nl-nl">Gestructureerde gegevens</value>
+        <value lang="de-ch">Strukturierte Daten</value>
+        <value lang="fr-fr">Données structurées</value>
+    </translation>
     <translation key="du">
         <comment>Label: Actes</comment>
         <value lang="en-us">of </value>
