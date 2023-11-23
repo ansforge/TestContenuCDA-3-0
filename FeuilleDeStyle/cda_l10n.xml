@@ -1015,6 +1015,12 @@
         <value lang="nl-nl">Subject</value>
         <value lang="fr-fr">Sujet</value>
     </translation>
+    <translation key="sectionsubject">
+        <comment>Label: Section Subject</comment>
+        <value lang="en-us">Concerned person</value>
+        <value lang="nl-nl">Bezorgd persoon</value>
+        <value lang="fr-fr">Personne concernée</value>
+    </translation>
     <translation key="sectionInformant">
         <comment>Label: Section Informant</comment>
         <value lang="en-us">Section Informant</value>
