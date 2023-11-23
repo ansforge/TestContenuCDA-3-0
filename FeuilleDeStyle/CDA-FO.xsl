@@ -3920,6 +3920,7 @@
                         </xsl:call-template>
                     </span>
                 </xsl:if>
+                <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
                 <table class="header_table">
                     <tbody>
                         <xsl:variable name="number"
@@ -4160,7 +4161,8 @@
                         </xsl:for-each>
                     </tbody>
                 </table>
-            </xsl:if>
+                </xsl:if>
+                </xsl:if>
             <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
@@ -4470,6 +4472,7 @@
                         </xsl:call-template>
                     </span>
                 </xsl:if>
+                <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
                 <table class="header_table">
                     <tbody>
                         <xsl:variable name="number"
@@ -4710,7 +4713,8 @@
                         </xsl:for-each>
                     </tbody>
                 </table>
-            </xsl:if>
+                </xsl:if>
+                </xsl:if>
             <xsl:if test="(contains($vendor, 'Saxonica'))">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
