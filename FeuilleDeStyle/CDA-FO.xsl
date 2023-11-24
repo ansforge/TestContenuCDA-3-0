@@ -21465,9 +21465,9 @@
                                     </xsl:if>
                                 </tr>
                             </xsl:if>
-                            <xsl:if test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr">
+                            <xsl:if test="hl7:patient/hl7:birthplace/hl7:place">
                                 <tr>
-                                    <xsl:if test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr">
+                                    <xsl:if test="hl7:patient/hl7:birthplace/hl7:place">
                                         <td class="td_header_label td_label_width">
                                             <span class="span_label">
                                                 <xsl:call-template name="getLocalizedString">
@@ -21479,8 +21479,10 @@
                                         </td>
                                         <td style="width: 30%;background-color: white;">
                                             <span class="span_value">
+                                                <xsl:value-of select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
+                                                <br/>
                                                 <xsl:call-template
-                                                    name="show-contactInfo-patient-recordTarget">
+                                                    name="show-contactInfo-patient-recordTarget-not-county">
                                                     <xsl:with-param name="contact"
                                                         select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"/>
                                                 </xsl:call-template>                                               
@@ -22083,12 +22085,12 @@
                                         </fo:table-cell>
                                     </fo:table-row>
                                 </xsl:if>
-                                <xsl:if test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr">
+                                <xsl:if test="hl7:patient/hl7:birthplace/hl7:place">
                                     <fo:table-row>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                             <fo:block>
                                                 <xsl:if
-                                                  test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr">
+                                                  test="hl7:patient/hl7:birthplace/hl7:place">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
                                                   <xsl:with-param name="key" select="'birthPlace'"/>
@@ -22099,8 +22101,10 @@
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
+                                                <xsl:value-of select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
+                                                <fo:block line-height="0.1cm">&#160;</fo:block>                                                
                                                 <xsl:call-template
-                                                    name="show-contactInfo-patient-recordTarget">
+                                                    name="show-contactInfo-patient-recordTarget-not-county">
                                                     <xsl:with-param name="contact"
                                                         select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"/>
                                                 </xsl:call-template>          
@@ -22832,6 +22836,21 @@
     <xsl:template name="show-contactInfo-patient-recordTarget">
         <xsl:param name="contact"/>
         <xsl:call-template name="show-address-set">
+            <xsl:with-param name="in" select="$contact"/>
+            <xsl:with-param name="sep" select="'br'"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Handle contactInfo. Address and telecom</xd:p>
+        </xd:desc>
+        <xd:param name="contact">Element containing addr and or telecom element</xd:param>
+    </xd:doc>
+    <xsl:template name="show-contactInfo-patient-recordTarget-not-county">
+        <xsl:param name="contact"/>
+        <xsl:call-template name="show-address-set-not-county">
             <xsl:with-param name="in" select="$contact"/>
             <xsl:with-param name="sep" select="'br'"/>
         </xsl:call-template>
@@ -23967,6 +23986,76 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Show elements with datatype AD separated with the value in 'sep'. Calls <xd:ref
+                name="show-address" type="template">show-address</xd:ref></xd:p>
+        </xd:desc>
+        <xd:param name="in">Set of 0 to * elements</xd:param>
+        <xd:param name="sep">Separator between output of different elements. Default ', ' and
+            special is 'br' which generates an HTML br tag</xd:param>
+    </xd:doc>
+    <xsl:template name="show-address-set-not-county">
+        <xsl:param name="in"/>
+        <xsl:param name="sep" select="', '"/>
+        <xsl:if test="$in">
+            <xsl:choose>
+                <!-- DTr1 -->
+                <xsl:when test="count($in) > 1">
+                    <xsl:for-each select="$in">
+                        <xsl:call-template name="show-address-not-county">
+                            <xsl:with-param name="in" select="."/>
+                        </xsl:call-template>
+                        <xsl:if test="position() != last()">
+                            <xsl:choose>
+                                <xsl:when test="$sep = 'br'">
+                                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                        <br/>
+                                    </xsl:if>
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                        <fo:block line-height="0.1cm">&#160;</fo:block>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$sep"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:when>
+                <!-- DTr2 -->
+                <xsl:when test="$in[hl7:item]">
+                    <xsl:for-each select="$in/hl7:item">
+                        <xsl:call-template name="show-address-not-county">
+                            <xsl:with-param name="in" select="."/>
+                        </xsl:call-template>
+                        <xsl:if test="position() != last() and position() != 1">
+                            <xsl:choose>
+                                <xsl:when test="$sep = 'br'">
+                                    <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                        <br/>
+                                    </xsl:if>
+                                    <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                        <fo:block line-height="0.1cm">&#160;</fo:block>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$sep"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:when>
+                <!-- DTr1 or DTr2 -->
+                <xsl:otherwise>
+                    <xsl:call-template name="show-address-not-county">
+                        <xsl:with-param name="in" select="$in"/>
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
 
 
     <xd:doc>
@@ -24609,6 +24698,499 @@
                     </xsl:when>
                     <!-- DTr1 -->
                     <xsl:when test="string-length(text()) > 0">
+                        <xsl:value-of select="."/>
+                        <xsl:if
+                            test="(string-length(following-sibling::hl7:*[1]) > 0 or following-sibling::hl7:*/@code)">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:if test="string(number(following-sibling::hl7:*[1])) != 'NaN'">
+                            <xsl:if
+                                test="number(following-sibling::hl7:*[1]) = following-sibling::hl7:*[1]">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 -->
+                    <xsl:when test="string-length(@value) > 0">
+                        <xsl:value-of select="@value"/>
+                        <xsl:if
+                            test="(string-length(following-sibling::hl7:*[1]/@value) > 0 or following-sibling::hl7:*/@code)">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:if test="string(number(following-sibling::hl7:*[1]/@value)) != 'NaN'">
+                            <xsl:if
+                                test="number(following-sibling::hl7:*[1]/@value) = following-sibling::hl7:*[1]/@value">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise> </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+            <xsl:for-each select="$in/hl7:useablePeriod">
+                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                    <div>
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="key" select="'Period'"/>
+                        </xsl:call-template>
+                        <xsl:text> </xsl:text>
+                        <xsl:call-template name="show-ivlts">
+                            <xsl:with-param name="in" select="."/>
+                        </xsl:call-template>
+                    </div>
+                </xsl:if>
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                    <fo:block>
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="key" select="'Period'"/>
+                        </xsl:call-template>
+                        <xsl:text> </xsl:text>
+                        <xsl:call-template name="show-ivlts">
+                            <xsl:with-param name="in" select="."/>
+                        </xsl:call-template>
+                    </fo:block>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Show element with datatype AD</xd:p>
+        </xd:desc>
+        <xd:param name="in">One element, possibly out of a set</xd:param>
+    </xd:doc>
+    <xsl:template name="show-address-not-county">
+        <xsl:param name="in"/>
+        <xsl:if test="$in">
+            <xsl:if test="$in/@use">
+                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                    <span style="color: black;">
+                        <xsl:call-template name="tokenize">
+                            <xsl:with-param name="prefix" select="'addressUse_'"/>
+                            <xsl:with-param name="string" select="$in/@use"/>
+                            <xsl:with-param name="delimiters" select="' '"/>
+                        </xsl:call-template>
+                        <xsl:text>: </xsl:text>
+                    </span>
+                </xsl:if>
+                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                    <fo:inline color="black">
+                        <xsl:call-template name="tokenize">
+                            <xsl:with-param name="prefix" select="'addressUse_'"/>
+                            <xsl:with-param name="string" select="$in/@use"/>
+                            <xsl:with-param name="delimiters" select="' '"/>
+                        </xsl:call-template>
+                        <xsl:text>: </xsl:text>
+                    </fo:inline>
+                </xsl:if>
+            </xsl:if>
+            <xsl:if test="$in[@use][@nullFlavor]">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:call-template name="show-nullFlavor">
+                <xsl:with-param name="in" select="$in/@nullFlavor"/>
+            </xsl:call-template>
+            <xsl:for-each select="$in/text() | $in/*">
+                <xsl:choose>
+                    <xsl:when test="self::hl7:useablePeriod"/>
+                    <!-- DTr1 only if not streetAddressLine -->
+                    <xsl:when test="self::hl7:streetName">
+                        <xsl:if test="not(../hl7:streetAddressLine)">
+                            <xsl:variable name="additionalLocator" select="
+                                    following-sibling::hl7:*[1][local-name() = 'additionalLocator'] |
+                                    following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber' or local-name() = 'buildingNumberSuffix']/following-sibling::hl7:*[1][local-name() = 'additionalLocator'] |
+                                    following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix']/following-sibling::hl7:*[1][local-name() = 'additionalLocator']"/>
+                            <xsl:variable name="houseNumber" select="
+                                    following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric'] |
+                                    following-sibling::hl7:*[1][local-name() = 'houseNumber']"/>
+                            <xsl:variable name="buildingNumberSuffix" select="
+                                    following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix'] |
+                                    following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix']"/>
+                            <xsl:value-of select="."/>
+                            <xsl:choose>
+                                <xsl:when test="string-length($houseNumber) > 0">
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:value-of select="$houseNumber"/>
+                                    <xsl:if test="string-length($buildingNumberSuffix) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$buildingNumberSuffix"/>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:when test="string-length($buildingNumberSuffix) > 0">
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:value-of select="$buildingNumberSuffix"/>
+                                </xsl:when>
+                            </xsl:choose>
+                            <xsl:if test="string-length($additionalLocator) > 0">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of select="$additionalLocator"/>
+                                <xsl:variable name="houseNumber2" select="
+                                        $additionalLocator/following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric'] |
+                                        $additionalLocator/following-sibling::hl7:*[1][local-name() = 'houseNumber']"/>
+                                <xsl:variable name="buildingNumberSuffix2" select="
+                                        $additionalLocator/following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix'] |
+                                        $additionalLocator/following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix']"/>
+                                <xsl:choose>
+                                    <xsl:when test="string-length($houseNumber2) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$houseNumber2"/>
+                                        <xsl:if test="string-length($buildingNumberSuffix2) > 0">
+                                            <xsl:text>&#160;</xsl:text>
+                                            <xsl:value-of select="$buildingNumberSuffix2"/>
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <xsl:when test="string-length($buildingNumberSuffix2) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$buildingNumberSuffix2"/>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:if>
+                            <xsl:if
+                                test="following-sibling::*[not(local-name() = 'houseNumber' or local-name() = 'houseNumberNumeric' or local-name() = 'buildingNumberSuffix' or local-name() = 'additionalLocator')][string-length(.) > 0 or @code]">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 only if not streetAddressLine -->
+                    <xsl:when test="self::hl7:part[@type = 'STR']">
+                        <xsl:if test="not(../hl7:part[@type = 'SAL'])">
+                            <xsl:variable name="additionalLocator" select="
+                                    following-sibling::hl7:part[1][@type = 'ADL'] |
+                                    following-sibling::hl7:part[1][@type = 'BNN' or @type = 'BNR' or @type = 'BNS']/following-sibling::hl7:part[1][@type = 'ADL'] |
+                                    following-sibling::hl7:part[1][@type = 'BNN' or @type = 'BNR' or @type = 'BNS']/following-sibling::hl7:part[1][@type = 'BNS']/following-sibling::hl7:part[1][@type = 'ADL']"/>
+                            <xsl:variable name="houseNumber" select="
+                                    following-sibling::hl7:part[1][@type = 'BNN'] |
+                                    following-sibling::hl7:part[1][@type = 'BNR']"/>
+                            <xsl:variable name="buildingNumberSuffix" select="
+                                    following-sibling::hl7:part[1][@type = 'BNS'] |
+                                    following-sibling::hl7:part[1][@type = 'BNN' or @type = 'BNR']/following-sibling::hl7:part[1][@type = 'BNS']"/>
+                            <xsl:value-of select="."/>
+                            <xsl:choose>
+                                <xsl:when test="string-length($houseNumber) > 0">
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:value-of select="$houseNumber"/>
+                                    <xsl:if test="string-length($buildingNumberSuffix) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$buildingNumberSuffix"/>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:when test="string-length($buildingNumberSuffix) > 0">
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:value-of select="$buildingNumberSuffix"/>
+                                </xsl:when>
+                            </xsl:choose>
+                            <xsl:if test="string-length($additionalLocator) > 0">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of select="$additionalLocator"/>
+
+                                <xsl:variable name="houseNumber2" select="
+                                        $additionalLocator/following-sibling::hl7:part[1][@type = 'BNN'] |
+                                        $additionalLocator/following-sibling::hl7:part[1][@type = 'BNR']"/>
+                                <xsl:variable name="buildingNumberSuffix2" select="
+                                        $additionalLocator/following-sibling::hl7:part[1][@type = 'BNS'] |
+                                        $additionalLocator/following-sibling::hl7:part[1][@type = 'BNN' or @type = 'BNR']/following-sibling::hl7:part[1][@type = 'BNS']"/>
+
+                                <xsl:choose>
+                                    <xsl:when test="string-length($houseNumber2) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$houseNumber2"/>
+                                        <xsl:if test="string-length($buildingNumberSuffix2) > 0">
+                                            <xsl:text>&#160;</xsl:text>
+                                            <xsl:value-of select="$buildingNumberSuffix2"/>
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <xsl:when test="string-length($buildingNumberSuffix2) > 0">
+                                        <xsl:text>&#160;</xsl:text>
+                                        <xsl:value-of select="$buildingNumberSuffix2"/>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:if>
+                            <xsl:if
+                                test="following-sibling::*[not(@type = 'BNR' or local-name() = 'houseNumberNumeric' or @type = 'BNS' or @type = 'ADL')][string-length(.) > 0 or @code]">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 only if not streetAddressLine -->
+                    <xsl:when
+                        test="self::hl7:houseNumber or self::hl7:houseNumberNumeric or self::hl7:buildingNumberSuffix">
+                        <xsl:if test="not(../hl7:streetAddressLine)">
+                            <xsl:if
+                                test="not(preceding-sibling::hl7:*[1][local-name() = 'streetName' or local-name() = 'additionalLocator'])">
+                                <xsl:if
+                                    test="not(self::hl7:buildingNumberSuffix and preceding-sibling::hl7:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber'])">
+                                    <xsl:value-of select="."/>
+                                    <xsl:if
+                                        test="following-sibling::hl7:*[1][string-length(.) > 0 or @code]">
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 only if not streetAddressLine -->
+                    <xsl:when test="self::hl7:part[@type = 'BNN' or @type = 'BNR' or @type = 'BNS']">
+                        <xsl:if test="not(../hl7:part[@type = 'SAL'])">
+                            <xsl:if
+                                test="not(preceding-sibling::hl7:*[1][hl7:part[@type = 'STR' or @type = 'ADL']])">
+                                <xsl:if
+                                    test="not(self::hl7:part[@type = 'BNS'] and preceding-sibling::hl7:*[1][@type = 'BNN' or @type = 'BNR'])">
+                                    <xsl:value-of select="@value"/>
+                                    <xsl:if
+                                        test="following-sibling::hl7:part[1][string-length(@value) > 0 or @code]">
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 -->
+                    <xsl:when test="self::hl7:additionalLocator">
+                        <xsl:if
+                            test="not(preceding-sibling::hl7:*[1][local-name() = 'houseNumber' or local-name() = 'houseNumberNumeric' or local-name() = 'buildingNumberSuffix'])">
+                            <xsl:value-of select="."/>
+                            <xsl:if
+                                test="following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][local-name() = 'houseNumberNumeric']"
+                                />
+                            </xsl:if>
+                            <xsl:if test="following-sibling::hl7:*[1][local-name() = 'houseNumber']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][local-name() = 'houseNumber']"
+                                />
+                            </xsl:if>
+                            <xsl:if
+                                test="following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][local-name() = 'buildingNumberSuffix']"
+                                />
+                            </xsl:if>
+                            <xsl:if
+                                test="following-sibling::hl7:*[1][string-length(.) > 0 or @code]">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 -->
+                    <xsl:when test="self::hl7:part[@type = 'ADL']">
+                        <xsl:if
+                            test="not(preceding-sibling::hl7:*[1][@type = 'BNN' or @type = 'BNR' or @type = 'BNS'])">
+                            <xsl:value-of select="@value"/>
+                            <xsl:if test="following-sibling::hl7:*[1][@type = 'BNN']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][@type = 'BNN']/@value"/>
+                            </xsl:if>
+                            <xsl:if test="following-sibling::hl7:*[1][@type = 'BNR']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][@type = 'BNR']/@value"/>
+                            </xsl:if>
+                            <xsl:if test="following-sibling::hl7:*[1][@type = 'BNS']">
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:value-of
+                                    select="following-sibling::hl7:*[1][@type = 'BNS']/@value"/>
+                            </xsl:if>
+                            <xsl:if
+                                test="following-sibling::hl7:part[1][string-length(@value) > 0 or @code]">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 -->
+                    <xsl:when test="self::hl7:postBox">
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="key" select="'Postbox'"/>
+                            <xsl:with-param name="post" select="' '"/>
+                        </xsl:call-template>
+                        <xsl:value-of select="."/>
+                        <xsl:if test="following-sibling::hl7:*[1][string-length(.) > 0 or @code]">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 -->
+                    <xsl:when test="self::hl7:part[@type = 'POB']">
+                        <xsl:call-template name="getLocalizedString">
+                            <xsl:with-param name="key" select="'Postbox'"/>
+                            <xsl:with-param name="post" select="' '"/>
+                        </xsl:call-template>
+                        <xsl:value-of select="@value"/>
+                        <xsl:if
+                            test="following-sibling::hl7:part[1][string-length(@value) > 0 or @code]">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 ZIP CITY, STATE or CITY, STATE ZIP depending on addr part contents -->
+                    <xsl:when test="self::hl7:city">
+                        <xsl:if
+                            test="preceding-sibling::hl7:postalCode[1][string-length(.) > 0 or @code]">
+                            <xsl:choose>
+                                <xsl:when
+                                    test="preceding-sibling::hl7:postalCode[1][string-length(.) > 0]">
+                                    <xsl:value-of
+                                        select="preceding-sibling::hl7:postalCode[1][string-length(.) > 0]"
+                                    />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of
+                                        select="preceding-sibling::hl7:postalCode[1][@code]/@code"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:value-of select="."/>
+                        <xsl:if test="../hl7:state[string-length(.) > 0]">
+                            <xsl:text>, </xsl:text>
+                            <xsl:value-of select="../hl7:state"/>
+                        </xsl:if>
+                        <xsl:if
+                            test="following-sibling::hl7:postalCode[1][string-length(.) > 0 or @code]">
+                            <xsl:text> </xsl:text>
+                            <xsl:choose>
+                                <xsl:when
+                                    test="following-sibling::hl7:postalCode[1][string-length(.) > 0]">
+                                    <xsl:value-of
+                                        select="following-sibling::hl7:postalCode[1][string-length(.) > 0]"
+                                    />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of
+                                        select="following-sibling::hl7:postalCode[1][@code]/@code"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:if>
+                        <xsl:if test="following-sibling::hl7:*[1][string-length(.) > 0 or @code]">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 ZIP CITY, STATE or CITY, STATE ZIP depending on addr part contents -->
+                    <xsl:when test="self::hl7:part[@type = 'CTY']">
+                        <xsl:if
+                            test="preceding-sibling::hl7:part[@type = 'ZIP'][1][string-length(@value) > 0 or @code]">
+                            <xsl:choose>
+                                <xsl:when
+                                    test="preceding-sibling::hl7:postalCode[1][string-length(@value) > 0]">
+                                    <xsl:value-of
+                                        select="preceding-sibling::hl7:postalCode[1][string-length(@value) > 0]/@value"
+                                    />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of
+                                        select="preceding-sibling::hl7:postalCode[1][@code]/@code"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:value-of select="@value"/>
+                        <xsl:if test="../hl7:part[@type = 'STA'][string-length(@value) > 0]">
+                            <xsl:text>, </xsl:text>
+                            <xsl:value-of select="../hl7:part[@type = 'STA']/@value"/>
+                        </xsl:if>
+                        <xsl:if
+                            test="following-sibling::hl7:part[@type = 'ZIP'][1][string-length(@value) > 0 or @code]">
+                            <xsl:choose>
+                                <xsl:when
+                                    test="following-sibling::hl7:postalCode[1][string-length(@value) > 0]">
+                                    <xsl:value-of
+                                        select="following-sibling::hl7:postalCode[1][string-length(@value) > 0]/@value"
+                                    />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of
+                                        select="following-sibling::hl7:postalCode[1][@code]/@code"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:if
+                            test="following-sibling::hl7:part[1][string-length(@value) > 0 or @code]">
+                            <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                <br/>
+                            </xsl:if>
+                            <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 -->
+                    <xsl:when test="self::hl7:postalCode and ../hl7:city"/>
+                    <!-- DTr2 -->
+                    <xsl:when test="self::hl7:part[@type = 'ZIP'] and ../hl7:part[@type = 'CTY']"/>
+                    <!-- DTr1 -->
+                    <xsl:when test="self::hl7:state">
+                        <xsl:if test="not(../hl7:city)">
+                            <xsl:if
+                                test="(string-length(preceding-sibling::hl7:*[1]) > 0 or preceding-sibling::*/@code)">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                            <xsl:value-of select="."/>
+                            <xsl:if
+                                test="(string-length(following-sibling::hl7:*[1]) > 0 or following-sibling::*/@code)">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr2 -->
+                    <xsl:when test="self::hl7:part[@type = 'STA']">
+                        <xsl:if test="not(../hl7:part[@type = 'CTY'])">
+                            <xsl:if
+                                test="(string-length(preceding-sibling::hl7:*[1]/@value) > 0 or preceding-sibling::hl7:*/@code)">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                            <xsl:value-of select="@value"/>
+                            <xsl:if
+                                test="(string-length(following-sibling::hl7:*[1]/@value) > 0 or following-sibling::hl7:*/@code)">
+                                <xsl:if test="not(contains($vendor, 'Saxonica'))">
+                                    <br/>
+                                </xsl:if>
+                                <xsl:if test="(contains($vendor, 'Saxonica'))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                    <!-- DTr1 -->
+                    <xsl:when test="string-length(text()) > 0 and not(../hl7:county)">
                         <xsl:value-of select="."/>
                         <xsl:if
                             test="(string-length(following-sibling::hl7:*[1]) > 0 or following-sibling::hl7:*/@code)">
