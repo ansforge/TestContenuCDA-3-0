@@ -146,7 +146,7 @@
             <Concept code="HERNI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Hernie"/>
             <Concept code="HEV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain Hemovac"/>
             <Concept code="HIC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter de Hickman"/>
-            <Concept code="HYDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Hydrocèle "/>
+            <Concept code="HYDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Hydrocèle"/>
             <Concept code="IBITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Morsure d'insecte"/>
             <Concept code="ICYST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Kyste d'inclusion"/>
             <Concept code="IDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout) Indwelling"/>
@@ -335,7 +335,7 @@
             <Concept code="WB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sang total"/>
             <Concept code="WBC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Leucocytes"/>
             <Concept code="WEN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Loupe"/>
-            <Concept code="WICK" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Mèche "/>
+            <Concept code="WICK" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Mèche"/>
             <Concept code="WND" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Plaie"/>
             <Concept code="WNDA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Abcès d'une plaie"/>
             <Concept code="WNDD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Drainage d'une plaie"/>

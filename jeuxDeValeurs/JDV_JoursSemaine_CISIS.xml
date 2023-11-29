@@ -9,8 +9,8 @@
             <Concept code="GEN-028" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Vendredi"/>
             <Concept code="GEN-029" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Samedi"/>
             <Concept code="GEN-030" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="Dimanche"/>
-            <Concept code="307145004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="lundi "/>
-            <Concept code="307147007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="mardi "/>
+            <Concept code="307145004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="lundi"/>
+            <Concept code="307147007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="mardi"/>
             <Concept code="307148002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="mercredi"/>
             <Concept code="307149005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="jeudi"/>
             <Concept code="307150005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="vendredi"/>

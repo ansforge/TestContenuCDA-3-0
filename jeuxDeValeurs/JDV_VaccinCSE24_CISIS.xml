@@ -23,7 +23,7 @@
             <Concept code="J07BL" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre la fièvre jaune"/>
             <Concept code="J07AH07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre le méningocoque C"/>
             <Concept code="J07BH" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre le rotavirus schéma complet"/>
-            <Concept code="J07AH09" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre le méningocoque B "/>
+            <Concept code="J07AH09" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre le méningocoque B"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

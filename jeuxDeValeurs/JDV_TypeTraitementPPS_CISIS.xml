@@ -18,7 +18,7 @@
             <Concept code="C16546" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230725000000" dateValid="20210419000000" displayName="Endoscopie interventionnelle"/>
             <Concept code="C157891" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20230725000000" displayName="endoscopie interventionnelle"/>
             <Concept code="MED-232" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Irathérapie"/>
-            <Concept code="MED-126" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Allogreffe / Autogreffe "/>
+            <Concept code="MED-126" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Allogreffe / Autogreffe"/>
             <Concept code="MED-124" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20210419000000" displayName="Autre(s) traitement(s)"/>
             <Concept code="GEN-092.03.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre(s) traitement(s)"/>
         </ConceptList>

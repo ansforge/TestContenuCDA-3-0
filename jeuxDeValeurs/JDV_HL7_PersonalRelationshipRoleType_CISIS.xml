@@ -41,7 +41,7 @@
             <Concept code="GRNDSON" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Petit-fils"/>
             <Concept code="HBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-frère"/>
             <Concept code="HSIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-frère ou demi-sœur"/>
-            <Concept code="HSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-sœur "/>
+            <Concept code="HSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-sœur"/>
             <Concept code="HUSB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mari"/>
             <Concept code="ITWIN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau ou jumelle monozygote"/>
             <Concept code="ITWINBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau monozygote"/>
@@ -88,7 +88,7 @@
             <Concept code="SIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère ou sœur"/>
             <Concept code="SIBINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-frère ou belle-sœur"/>
             <Concept code="SIGOTHR" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Conjoint ou conjointe"/>
-            <Concept code="SIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Sœur "/>
+            <Concept code="SIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Sœur"/>
             <Concept code="SISINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Belle-sœur"/>
             <Concept code="SON" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils biologique"/>
             <Concept code="SONADOPT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils adoptif"/>

@@ -2,8 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Taille_CISIS" id="1.2.250.1.213.1.1.5.50" version="test">
         <ConceptList>
-            <Concept code="GEN-152" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Petit "/>
-            <Concept code="GEN-153" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Grand"/>
+            <Concept code="GEN-152" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Grand"/>
+            <Concept code="GEN-153" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Petit"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

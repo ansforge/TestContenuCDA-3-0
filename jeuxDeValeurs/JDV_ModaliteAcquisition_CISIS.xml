@@ -7,7 +7,7 @@
             <Concept code="BI" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Imagerie biomagnétique"/>
             <Concept code="BMD" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Ostéodensitométrie"/>
             <Concept code="CR" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Radiographie assistée par ordinateur"/>
-            <Concept code="CT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Tomodensitométrie "/>
+            <Concept code="CT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Tomodensitométrie"/>
             <Concept code="DG" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Diaphanographie"/>
             <Concept code="DMS" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Dermoscopie"/>
             <Concept code="DX" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Radiographie numérique"/>

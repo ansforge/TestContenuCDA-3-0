@@ -13,7 +13,7 @@
             <Concept code="OBS_205" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Sans indication médicale"/>
             <Concept code="MED-1242" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Sans indication médicale"/>
             <Concept code="MED-219" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause Maternelle"/>
-            <Concept code="MED-210" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause Fœtale "/>
+            <Concept code="MED-210" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause Fœtale"/>
             <Concept code="OBS_206" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre motif de déclenchement"/>
             <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.01.06" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif de déclenchement"/>

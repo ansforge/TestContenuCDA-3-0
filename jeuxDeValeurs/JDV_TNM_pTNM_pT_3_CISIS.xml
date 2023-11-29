@@ -8,8 +8,8 @@
             <Concept code="MED-793" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement de la séreuse"/>
             <Concept code="MED-821" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement microscopique au-delà  la séreuse"/>
             <Concept code="MED-822" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement macroscopique au-delà  la séreusela séreuse ou envahissement d'un autre &#13;&#10;organe"/>
-            <Concept code="MED-823" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale n'occupant pas plus de 2 sites dans un organe "/>
-            <Concept code="MED-824" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale occupant plus de 2 sites et pas plus de 5 sites "/>
+            <Concept code="MED-823" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale n'occupant pas plus de 2 sites dans un organe"/>
+            <Concept code="MED-824" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale occupant plus de 2 sites et pas plus de 5 sites"/>
             <Concept code="MED-825" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale occupant  plus de 5 sites"/>
         </ConceptList>
     </ValueSet>

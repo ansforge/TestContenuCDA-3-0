@@ -125,36 +125,36 @@
             <Concept code="439007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230829000000" dateValid="20221114000000" displayName="Therapeutic radioisotope"/>
             <Concept code="V09A" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="système nerveux central"/>
             <Concept code="V09AA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
-            <Concept code="V09AA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="examétazime-technétium (99mTc) "/>
-            <Concept code="V09AA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="bicisate-technétium (99mTc) "/>
-            <Concept code="V09AB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'iode (123I) "/>
+            <Concept code="V09AA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="examétazime-technétium (99mTc)"/>
+            <Concept code="V09AA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="bicisate-technétium (99mTc)"/>
+            <Concept code="V09AB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'iode (123I)"/>
             <Concept code="V09AB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iofétamine (123I)"/>
             <Concept code="V09AB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iolopride (123I)"/>
             <Concept code="V09AB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="ioflupane (123I)"/>
             <Concept code="V09AX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique pour le système nerveux central"/>
-            <Concept code="V09AX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pentétate d'indium (111I) "/>
-            <Concept code="V09AX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="bêta 2-carbométhoxy-3 bêta-(4 iodophényl)-tropane (124I) "/>
+            <Concept code="V09AX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pentétate d'indium (111I)"/>
+            <Concept code="V09AX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="bêta 2-carbométhoxy-3 bêta-(4 iodophényl)-tropane (124I)"/>
             <Concept code="V09AX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="flutémétamol (18F)"/>
             <Concept code="V09AX05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="florbétapir (18F)"/>
             <Concept code="V09AX06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="florbétabène (18F)"/>
             <Concept code="V09B" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="squelette"/>
             <Concept code="V09BA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
-            <Concept code="V09BA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="oxidronate-technétium (99mTc) "/>
-            <Concept code="V09BA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="médronate-technétium (99mTc) "/>
-            <Concept code="V09BA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pyrophosphate-technétium (99mTc) "/>
-            <Concept code="V09BA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="butédronate-technétium (99mTc) "/>
+            <Concept code="V09BA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="oxidronate-technétium (99mTc)"/>
+            <Concept code="V09BA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="médronate-technétium (99mTc)"/>
+            <Concept code="V09BA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pyrophosphate-technétium (99mTc)"/>
+            <Concept code="V09BA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="butédronate-technétium (99mTc)"/>
             <Concept code="V09C" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="système rénal"/>
             <Concept code="V09CA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
             <Concept code="V09CA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pentétate-technétium (99mTc)"/>
-            <Concept code="V09CA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="succimère-technétium (99mTc) "/>
-            <Concept code="V09CA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="mertiatide-technétium (99mTc) "/>
-            <Concept code="V09CA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="glucoheptonate-technétium (99mTc) "/>
+            <Concept code="V09CA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="succimère-technétium (99mTc)"/>
+            <Concept code="V09CA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="mertiatide-technétium (99mTc)"/>
+            <Concept code="V09CA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="glucoheptonate-technétium (99mTc)"/>
             <Concept code="V09CA05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="gluconate-technétium (99mTc)"/>
             <Concept code="V09CA06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="éthylènedicystéine-technétium (99mTc)"/>
             <Concept code="V09CX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique pour le système rénal"/>
-            <Concept code="V09CX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodohippurate (123I) de sodium "/>
-            <Concept code="V09CX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodohippurate (131I) de sodium "/>
-            <Concept code="V09CX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iotalamate (125I) de sodium "/>
+            <Concept code="V09CX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodohippurate (123I) de sodium"/>
+            <Concept code="V09CX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodohippurate (131I) de sodium"/>
+            <Concept code="V09CX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iotalamate (125I) de sodium"/>
             <Concept code="V09CX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="édétate de chrome (51Cr)"/>
             <Concept code="V09D" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="système hépatique et système réticulo-endothélial"/>
             <Concept code="V09DA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
@@ -164,18 +164,18 @@
             <Concept code="V09DA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="mébrofénine-technétium (99mTc)"/>
             <Concept code="V09DA05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="galtifénine-technétium (99mTc)"/>
             <Concept code="V09DB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="particules et colloïdes de technétium (99mTc)"/>
-            <Concept code="V09DB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="nanocolloïdes-technétium (99mTc) "/>
-            <Concept code="V09DB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="microcolloïdes-technétium (99mTc) "/>
-            <Concept code="V09DB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="millimicrosphères-technétium (99mTc) "/>
+            <Concept code="V09DB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="nanocolloïdes-technétium (99mTc)"/>
+            <Concept code="V09DB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="microcolloïdes-technétium (99mTc)"/>
+            <Concept code="V09DB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="millimicrosphères-technétium (99mTc)"/>
             <Concept code="V09DB04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="étain colloïdal-technétium (99mTc)"/>
             <Concept code="V09DB05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="colloïdes soufrés-technétium (99mTc)"/>
             <Concept code="V09DB06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sulfure de rhénium colloïdal-technétium (99mTc)"/>
             <Concept code="V09DB07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="phytate-technétium (99mTc)"/>
             <Concept code="V09DX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique pour le système hépatique et le système réticulo-endothélial"/>
-            <Concept code="V09DX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="acide tauroselcholique (75Se) "/>
+            <Concept code="V09DX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="acide tauroselcholique (75Se)"/>
             <Concept code="V09E" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="système respiratoire"/>
             <Concept code="V09EA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="technétium (99mTc) pour inhalation"/>
-            <Concept code="V09EA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pentétate-technétium (99mTc) "/>
+            <Concept code="V09EA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="pentétate-technétium (99mTc)"/>
             <Concept code="V09EA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="Technegas-technétium (99mTc)"/>
             <Concept code="V09EA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="nanocolloïdes-technétium (99mTc)"/>
             <Concept code="V09EB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="technétium (99mTc) particules pour injection"/>
@@ -193,7 +193,7 @@
             <Concept code="V09FX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodure (124I) de sodium"/>
             <Concept code="V09G" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="Système cardiovasculaire"/>
             <Concept code="V09GA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
-            <Concept code="V09GA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sestamibi-technétium (99mTc) "/>
+            <Concept code="V09GA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sestamibi-technétium (99mTc)"/>
             <Concept code="V09GA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="tétrofosmine-technétium (99mTc)"/>
             <Concept code="V09GA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="téboroxime-technétium (99mTc)"/>
             <Concept code="V09GA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="albumine humaine-technétium (99mTc)"/>
@@ -202,7 +202,7 @@
             <Concept code="V09GA07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="apcitide-technétium (99mTc)"/>
             <Concept code="V09GB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'iode (125I)"/>
             <Concept code="V09GB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fibrinogène (125I)"/>
-            <Concept code="V09GB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="albumine humaine iodée (125I) "/>
+            <Concept code="V09GB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="albumine humaine iodée (125I)"/>
             <Concept code="V09GX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique pour le système cardiovasculaire"/>
             <Concept code="V09GX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="chlorure de thallium (201Tl)"/>
             <Concept code="V09GX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="imciromab (111In)"/>
@@ -212,14 +212,14 @@
             <Concept code="V09H" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="détection d'une inflammation et d'une infection"/>
             <Concept code="V09HA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
             <Concept code="V09HA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="immunoglobuline humaine-technétium (99mTc)"/>
-            <Concept code="V09HA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cellules marquées à l'examétazime-technétium (99mTc) "/>
+            <Concept code="V09HA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cellules marquées à l'examétazime-technétium (99mTc)"/>
             <Concept code="V09HA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="anticorps antigranulocytes-technétium (99mTc)"/>
             <Concept code="V09HA04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sulésomab--technétium (99mTc)"/>
             <Concept code="V09HB" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'indium (111In)"/>
             <Concept code="V09HB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cellules marquées à l'oxinate d'indium (111In)"/>
             <Concept code="V09HB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cellules marquées au tropolonate d'indium (111In)"/>
             <Concept code="V09HX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique pour la détection d'une inflammation et d'une infection"/>
-            <Concept code="V09HX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="citrate de gallium (67Ga) "/>
+            <Concept code="V09HX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="citrate de gallium (67Ga)"/>
             <Concept code="V09I" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="détection d'une tumeur"/>
             <Concept code="V09IA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base de technétium (99mTc)"/>
             <Concept code="V09IA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="anticorps anti-antigène carcinoembryonnaire-technétium (99mTc)"/>
@@ -240,26 +240,26 @@
             <Concept code="V09IX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iobenguane (123I)"/>
             <Concept code="V09IX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iobenguane (131I)"/>
             <Concept code="V09IX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="anticorps monoclonal CC49 (125I)"/>
-            <Concept code="V09IX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fludésoxyglucose (18F) "/>
-            <Concept code="V09IX05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluorodopa (18F) "/>
-            <Concept code="V09IX06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluorure (18F) de sodium "/>
+            <Concept code="V09IX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fludésoxyglucose (18F)"/>
+            <Concept code="V09IX05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluorodopa (18F)"/>
+            <Concept code="V09IX06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluorure (18F) de sodium"/>
             <Concept code="V09IX07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluorocholine (18F)"/>
             <Concept code="V09IX08" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluoroéthylcholine (18F)"/>
-            <Concept code="V09IX09" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="gallium édotréotide (68Ga) "/>
-            <Concept code="V09IX10" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluoroéthyl-L-tyrosine (18F) "/>
+            <Concept code="V09IX09" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="gallium édotréotide (68Ga)"/>
+            <Concept code="V09IX10" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluoroéthyl-L-tyrosine (18F)"/>
             <Concept code="V09IX11" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluoroestradiol (18F)"/>
-            <Concept code="V09IX12" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluciclovine (18F) "/>
-            <Concept code="V09IX13" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="méthionine (11C) "/>
+            <Concept code="V09IX12" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="fluciclovine (18F)"/>
+            <Concept code="V09IX13" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="méthionine (11C)"/>
             <Concept code="V09IX14" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="gallium (68Ga) gozétotide"/>
             <Concept code="V09X" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage diagnostique"/>
             <Concept code="V09XA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'iode (131I)"/>
-            <Concept code="V09XA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="noriodocholestérol (131I) "/>
-            <Concept code="V09XA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodocholestérol (131I) "/>
-            <Concept code="V09XA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="albumine humaine iodée (131I) "/>
+            <Concept code="V09XA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="noriodocholestérol (131I)"/>
+            <Concept code="V09XA02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="iodocholestérol (131I)"/>
+            <Concept code="V09XA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="albumine humaine iodée (131I)"/>
             <Concept code="V09XX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="divers produits radiopharmaceutiques à usage diagnostique"/>
             <Concept code="V09XX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cyanocobalamine (57Co)"/>
             <Concept code="V09XX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cyanocobalamine (58Co)"/>
-            <Concept code="V09XX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="norcholestérol (75Se) "/>
+            <Concept code="V09XX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="norcholestérol (75Se)"/>
             <Concept code="V09XX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="citrate ferrique (59Fe)"/>
             <Concept code="V10A" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="produits anti-inflammatoires"/>
             <Concept code="V10AA" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="composés à base d'yttrium (90Y)"/>
@@ -268,14 +268,14 @@
             <Concept code="V10AA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="silicate d'yttrium (90Y) colloïdal"/>
             <Concept code="V10AX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques anti-inflammatoires"/>
             <Concept code="V10AX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="phosphore (32P) phosphate chromique colloïdal"/>
-            <Concept code="V10AX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="samarium (153S) hydroxyapatite colloïdal  "/>
-            <Concept code="V10AX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="dysprosium (165Dy) colloïdal "/>
-            <Concept code="V10AX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="citrate d'erbium (169Er) colloïdal "/>
-            <Concept code="V10AX05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sulfure de rhénium (186Re) colloïdal "/>
-            <Concept code="V10AX06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="or (198Au) colloïdal "/>
+            <Concept code="V10AX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="samarium (153S) hydroxyapatite colloïdal"/>
+            <Concept code="V10AX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="dysprosium (165Dy) colloïdal"/>
+            <Concept code="V10AX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="citrate d'erbium (169Er) colloïdal"/>
+            <Concept code="V10AX05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="sulfure de rhénium (186Re) colloïdal"/>
+            <Concept code="V10AX06" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="or (198Au) colloïdal"/>
             <Concept code="V10B" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="palliation de la douleur (agents à tropisme osseux)"/>
             <Concept code="V10BX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="divers produits radiopharmaceutiques pour la palliation de la douleur"/>
-            <Concept code="V10BX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="chlorure de strontium (89Sr) "/>
+            <Concept code="V10BX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="chlorure de strontium (89Sr)"/>
             <Concept code="V10BX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="samarium (153Sm) lexidronam"/>
             <Concept code="V10BX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="étidronate de rhénium (186R)"/>
             <Concept code="V10X" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="autres produits radiopharmaceutiques à usage thérapeutique"/>
@@ -285,9 +285,9 @@
             <Concept code="V10XA03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="omburtamab (131I)"/>
             <Concept code="V10XA53" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="tositumomab/tositumomab (131I)"/>
             <Concept code="V10XX" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="divers produits radiopharmaceutiques à usage thérapeutique"/>
-            <Concept code="V10XX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="phosphate (32P) de sodium "/>
-            <Concept code="V10XX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="ibritumomab tiuxétan (90Y) "/>
-            <Concept code="V10XX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="dichlorure de radium (223Ra) "/>
+            <Concept code="V10XX01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="phosphate (32P) de sodium"/>
+            <Concept code="V10XX02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="ibritumomab tiuxétan (90Y)"/>
+            <Concept code="V10XX03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="dichlorure de radium (223Ra)"/>
             <Concept code="V10XX04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="lutécium (177Lu) oxodotréotide"/>
             <Concept code="V09AX07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="flortaucipir (18F)"/>
             <Concept code="V09IX15" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20230824000000" displayName="cuivre (64Cu) dotatate"/>

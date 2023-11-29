@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_TimingEvent_CISIS" id="2.16.840.1.113883.1.11.10706 " version="test">
+    <ValueSet displayName="JDV_HL7_TimingEvent_CISIS" id="2.16.840.1.113883.1.11.10706" version="test">
         <ConceptList>
             <Concept code="AC" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le repas"/>
             <Concept code="ACD" codeSystem="2.16.840.1.113883.5.139" dateFin="" dateValid="20100101000000" displayName="Avant le déjeuner"/>

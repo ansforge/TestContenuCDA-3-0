@@ -5,12 +5,12 @@
             <Concept code="MED-162" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20230621000000" displayName="Rang de naissance"/>
             <Concept code="73771-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Rang de naissance"/>
             <Concept code="11884-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230621000000" displayName="Age gestationnel du fœtus (estimation clinique)"/>
-            <Concept code="MED-1223" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230621000000" displayName="Présentation Fœtale"/>
+            <Concept code="MED-1223" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230621000000" displayName="Présentation fœtale"/>
             <Concept code="3156-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230621000000" displayName="Volume de liquique amniotique"/>
             <Concept code="38386-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230621000000" displayName="Couleur du liquide amniotique"/>
             <Concept code="56829-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230621000000" displayName="Durée d’ouverture de l’œuf"/>
             <Concept code="73757-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230621000000" displayName="Enfant vivant"/>
-            <Concept code="92022-3 " codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20232808000000" displayName="Cause initiale du décès fetus"/>
+            <Concept code="92022-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20232808000000" displayName="Cause initiale du décès fœtus"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

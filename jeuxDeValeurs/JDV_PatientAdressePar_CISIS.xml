@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_PatientAdressePar_CISIS" id="1.2.250.1.213.1.1.5.38  " version="test">
+    <ValueSet displayName="JDV_PatientAdressePar_CISIS" id="1.2.250.1.213.1.1.5.38" version="test">
         <ConceptList>
             <Concept code="G15_10/C23" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Gynéco/obstétricien"/>
             <Concept code="G15_10/C72" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Généticien"/>

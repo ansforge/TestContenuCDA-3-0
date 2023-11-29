@@ -2,7 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TypeAccompagnementSocioPro_CISIS" id="1.2.250.1.213.1.1.5.81" version="test">
         <ConceptList>
-            <Concept code="PAT-024" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aide à domicile "/>
+            <Concept code="PAT-024" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aide à domicile"/>
             <Concept code="PAT-025" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20190927000000" dateValid="20100101000000" displayName="Scolarité et ses adaptations"/>
             <Concept code="PAT-026" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Sortie de l’arrêt de travail (invalidité, retraite, médecine du travail)"/>
             <Concept code="PAT-027" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Reprise du poste ou réinsertion professionnelle"/>

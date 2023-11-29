@@ -107,7 +107,7 @@
             <Concept code="OP" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="PAUPIERE"/>
             <Concept code="OR" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="OREILLE (EXTERNE, MOYENNE, INTERNE, MASTOIDE)"/>
             <Concept code="OT" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TEGUMENTS"/>
-            <Concept code="OU " codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="UVEE"/>
+            <Concept code="OU" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="UVEE"/>
             <Concept code="PZ" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="PRODUITS DE CONCEPTION"/>
             <Concept code="PC" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CORDON OMBILICAL"/>
             <Concept code="PF" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="FOETUS - EMBRYON"/>

@@ -5,7 +5,7 @@
             <Concept code="MG" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210727000000" displayName="Mammographie"/>
             <Concept code="US" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210727000000" displayName="Échographie"/>
             <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20210727000000" displayName="Autre"/>
-            <Concept code="OT " codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20230202000000" displayName="Autre technique d'imagerie"/>
+            <Concept code="OT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20230202000000" displayName="Autre technique d'imagerie"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

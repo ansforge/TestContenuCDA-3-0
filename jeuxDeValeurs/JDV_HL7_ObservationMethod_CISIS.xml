@@ -68,7 +68,7 @@
             <Concept code="74" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA avec péroxydase-anti-péroxydase"/>
             <Concept code="75" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20 Strep"/>
             <Concept code="76" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20A"/>
-            <Concept code="77" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20C AUX "/>
+            <Concept code="77" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20C AUX"/>
             <Concept code="78" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20E"/>
             <Concept code="79" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20NE"/>
             <Concept code="80" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 50 CH"/>

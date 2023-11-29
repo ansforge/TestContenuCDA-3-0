@@ -12,7 +12,7 @@
             <Concept code="ORG-048" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prise en charge en urgence"/>
             <Concept code="ORG-049" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Protocole de recherche"/>
             <Concept code="ORG-031" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Acte médical"/>
-            <Concept code="ORG-123" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Consultation de transition enfant/adulte "/>
+            <Concept code="ORG-123" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Consultation de transition enfant/adulte"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

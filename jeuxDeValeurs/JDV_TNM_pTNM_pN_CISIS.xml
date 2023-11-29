@@ -2,7 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TNM_pTNM_pN_CISIS" id="1.2.250.1.213.1.1.5.525" version="test">
         <ConceptList>
-            <Concept code="MED-795" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Ganglions  lymphatiques régionaux non évaluables "/>
+            <Concept code="MED-795" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Ganglions  lymphatiques régionaux non évaluables"/>
             <Concept code="MED-796" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Pas de métastase ganglionnaire lymphatique régionale"/>
             <Concept code="MED-797" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Métastase dans 1 ganglion lymphatique régional"/>
             <Concept code="MED-798" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Métastases dans 2 ou 3 ganglions lymphatiques régionaux"/>

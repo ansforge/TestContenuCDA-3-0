@@ -2,12 +2,12 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Bio_instruction_patient_CISIS" id="1.2.250.1.213.1.1.5.691" version="test">
         <ConceptList>
-            <Concept code="MED-1160" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="A jeûn "/>
+            <Concept code="MED-1160" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="A jeûn"/>
             <Concept code="MED-1161" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="Prendre RDV au laboratoire"/>
             <Concept code="MED-1162" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="Il est préférable de faire cet examen dans le même laboratoire."/>
             <Concept code="MED-1163" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="De préférence à jeûn ou à distance d'un repas"/>
             <Concept code="MED-1164" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="Totalité des urines recueillies sur 24 heures. La collecte doit être complète."/>
-            <Concept code="MED-1165" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="Prélèvement à réaliser au laboratoire. Le prélèvement chez la femme doit être effectué en début de phase folliculaire. "/>
+            <Concept code="MED-1165" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220627000000" displayName="Prélèvement à réaliser au laboratoire. Le prélèvement chez la femme doit être effectué en début de phase folliculaire."/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

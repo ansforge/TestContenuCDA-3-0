@@ -7,7 +7,7 @@
             <Concept code="OBS_220" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Voie basse spontanée"/>
             <Concept code="OBS_221" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20230803000000" dateValid="20100101000000" displayName="Intervention voie basse"/>
             <Concept code="MED-1253" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne pendant travail"/>
-            <Concept code="MED-1254" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne avant travail "/>
+            <Concept code="MED-1254" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne avant travail"/>
             <Concept code="48782003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement normal"/>
             <Concept code="700000006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement par voie basse"/>
         </ConceptList>

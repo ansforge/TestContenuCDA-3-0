@@ -3,7 +3,7 @@
     <ValueSet displayName="JDV_HL7_ParticipationType_CISIS" id="2.16.840.1.113883.1.11.10901" version="test">
         <ConceptList>
             <Concept code="ADM" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Responsable de l'admission"/>
-            <Concept code="ALY" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Cible d'une observation (substance ou composant le plus spécifique) "/>
+            <Concept code="ALY" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Cible d'une observation (substance ou composant le plus spécifique)"/>
             <Concept code="ATND" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Superviseur"/>
             <Concept code="AUT" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Auteur"/>
             <Concept code="AUTHEN" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Valideur des résultats (ex : un biologiste ou un système expert)"/>

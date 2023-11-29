@@ -12,7 +12,7 @@
             <Concept code="65891-4" codeSystem="2.16.840.1.113883.6.1" dateFin="20220916000000" dateValid="20220916000000" displayName="Axe en degrés - réfraction œil droit"/>
             <Concept code="65895-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220916000000" displayName="Axe en degrés - réfraction œil gauche"/>
             <Concept code="MED-1065" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Valeur de la kératométrie dans l'axe le plus plat"/>
-            <Concept code="MED-1066" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Valeur de la kératométrie dans l'axe le plus cambré "/>
+            <Concept code="MED-1066" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Valeur de la kératométrie dans l'axe le plus cambré"/>
             <Concept code="95300-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210507000000" displayName="Axe du K"/>
         </ConceptList>
     </ValueSet>

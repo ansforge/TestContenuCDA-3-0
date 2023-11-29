@@ -505,7 +505,7 @@
             <Concept code="C85.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome non hodgkinien, sans précision"/>
             <Concept code="C86" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres types précisés de lymphomes à cellules T/NK"/>
             <Concept code="C86.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome extranodal à cellules T/NK, type nasal"/>
-            <Concept code="C86.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome hépatosplénique à cellules T "/>
+            <Concept code="C86.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome hépatosplénique à cellules T"/>
             <Concept code="C86.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome (intestinal) à cellules T, type entéropathique"/>
             <Concept code="C86.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome à cellules T simulant une panniculite"/>
             <Concept code="C86.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome à cellules NK blastiques"/>

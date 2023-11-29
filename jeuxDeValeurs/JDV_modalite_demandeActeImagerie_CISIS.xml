@@ -10,7 +10,7 @@
             <Concept code="CT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Scanner/TDM"/>
             <Concept code="MR" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="IRM"/>
             <Concept code="C63334" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20211216000000" displayName="Radiologie interventionnelle"/>
-            <Concept code="OT " codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Autre technique d'imagerie"/>
+            <Concept code="OT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Autre technique d'imagerie"/>
             <Concept code="NM" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="Scintigraphie"/>
             <Concept code="PT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20211216000000" displayName="TEP : Tomographie par émission de positons"/>
         </ConceptList>

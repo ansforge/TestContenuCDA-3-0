@@ -4,9 +4,9 @@
         <ConceptList>
             <Concept code="MED-479" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Athérome extracrânien"/>
             <Concept code="MED-480" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Athérome intracrânien"/>
-            <Concept code="MED-481" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Embolie cardiaque "/>
+            <Concept code="MED-481" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Embolie cardiaque"/>
             <Concept code="MED-473" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Maladie petites artères"/>
-            <Concept code="MED-482" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Dissection des TSA "/>
+            <Concept code="MED-482" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Dissection des TSA"/>
             <Concept code="MED-476" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Etiologie multiple"/>
             <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.01.09" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre étiologie de l'infarctus"/>
