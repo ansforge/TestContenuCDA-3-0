@@ -580,7 +580,7 @@
   <documentationOf>
     <serviceEvent classCode="ACT">
       <!-- Code de l'acte = RCP -->
-      <code code="ORG-113" displayName="RCP" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+      <code code="39" displayName="Réunion de Concertation Pluridisciplinaire (RCP)" codeSystem="1.2.250.1.213.3.3.13" codeSystemName="TRE_R213-ModePriseEnCharge">
         <!-- Acronyme RRC / Acronyme GestRCP / dénomination RCP -->
         <originalText>ONCO PAYS DE LA LOIRE / 3C CHU Angers / Sein</originalText>
       </code>

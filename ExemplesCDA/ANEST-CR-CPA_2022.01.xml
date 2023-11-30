@@ -2075,7 +2075,7 @@
                 <low value="20200323" />
               </effectiveTime>
               <!-- JDV_FacteursDeRisqueSociaux_CISIS (1.2.250.1.213.1.1.5.488) -->
-              <value xsi:type="CD" code="GEN-188" displayName="Isolement" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="422650009" displayName="isolement social" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Habitus-Mode-de-vie : Risques professionnels - Exposition à des produits toxiques -->
@@ -2217,7 +2217,7 @@
                 <low value="20200323" />
               </effectiveTime>
               <!-- JDV_Sedentarite_CISIS (1.2.250.1.213.1.1.5.485) -->
-              <value xsi:type="CD" code="GEN-202" displayName="Peu d'activité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="228446001" displayName="fait peu d'exercice" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Habitus-Mode-de-vie : Tabac -->
@@ -2550,7 +2550,7 @@
                 <low value="20200323" />
               </effectiveTime>
               <!-- JDV_AideAuDeplacement_CISIS (1.2.250.1.213.1.1.5.489) -->
-              <value xsi:type="CD" code="GEN-195" displayName="Fauteuil roulant" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="301578005" displayName="se déplace en fauteuil roulant" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             </observation>
           </entry>
           <!-- Entrée FR-Evaluation : Score GIR (codé à partir d'un JDV) -->
