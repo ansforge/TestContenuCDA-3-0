@@ -52,7 +52,7 @@
         27/10/20 : APE : Ajout du schématron JDV_administrativeGenderCode.sch
         27/10/20 : APE : Suppression du schématron abstrait "dansTypeCode.sch" et du schématron "JDV_participationType.sch" qui ne servent à rien puisque le typeCode est contrôlé par le schéma CDA.
         27/10/20 : APE : Suppression du schématron abstrait "personName20110627.sch" qui n'est pas utilisé
-        27/10/20 : APE : Regroupement des valeurs des JDV JDV_J01-XdsAuthorSpecialty_CISIS et JDV_J48-ProfessionNonPS_CISIS dans le JDV_AuthorSpecialty_CISIS pour le contrôle du code profession/spécialité de l'auteur
+        27/10/20 : APE : Regroupement des valeurs des JDV JDV_J01-XdsAuthorSpecialty-CISIS et JDV_J48-ProfessionNonPS-CISIS dans le JDV_AuthorSpecialty-CISIS pour le contrôle du code profession/spécialité de l'auteur
         28/10/20 : APE : Déplacement des schématrons de JDV de l'en-tête dans le nouveau répertoire include\jeuxDeValeurs\en-tête
         28/10/20 : APE : Renommage du schématron documentCode.sch en JDV_typeCode.sch et déplacé dans le nouveau répertoire include\jeuxDeValeurs\en-tête
         28/10/20 : APE : Renommage du schématron HumanSubstanceAdministrationSite.sch en JDV_substanceAdministration_approachSiteCode.sch
@@ -130,7 +130,7 @@
     <include href="../include/jeuxDeValeurs/JDV_healthStatusCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_approachSiteCode.sch"/> 
     <include href="../include/jeuxDeValeurs/JDV_problemCodes.sch"/>
-    <include href="../include/jeuxDeValeurs/JDV_HL7_allergyintolerance-clinical.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_conditionClinical.sch"/>
     <!--<include href="../include/jeuxDeValeurs/JDV_actSubstanceAdministrationImmunizationCode.sch"/>-->
     <include href="../include/jeuxDeValeurs/JDV_observationIntoleranceType.sch"/>
@@ -194,7 +194,7 @@
         <!-- schématrons des JDV génériques -->
         <!--<active pattern="JDV_actSubstanceAdministrationImmunizationCode"/>-->
         <!--<active pattern="JDV_clinicalStatusCodes"/>-->
-        <active pattern="JDV_HL7_allergyintolerance-clinical"/>
+        <active pattern="JDV_HL7_allergyintolerance_clinical"/>
         <active pattern="JDV_HL7_conditionclinical"/>
         <active pattern="JDV_healthStatusCodes"/>        
         <active pattern="JDV_observationIntoleranceType"/>  
@@ -218,15 +218,15 @@
     <pattern id="variablesSM">
         
         <!-- JDV de l'en-tête -->          
-        <let name="jdv_authenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty_CISIS.xml'"/>
+        <let name="jdv_authenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_J01_XdsAuthorSpecialty_CISIS.xml'"/>
         <let name="jdv_authorFunctionCode" value="'../../jeuxDeValeurs/JDV_J47_FunctionCode_CISIS.xml'"/>
 <!--        <let name="jdv_authorFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
         <let name="jdv_authorFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>-->
         <let name="jdv_authorSpecialty" value="'../../jeuxDeValeurs/JDV_J01_XdsAuthorSpecialty_CISIS.xml'"/>
-        <let name="jdv_componentOfResponsibleSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty_CISIS.xml'"/>
+        <let name="jdv_componentOfResponsibleSpecialty" value="'../../jeuxDeValeurs/JDV_J01_XdsAuthorSpecialty_CISIS.xml'"/>
         <let name="jdv_healthcareFacilityCode" value="'../../jeuxDeValeurs/JDV_J02_XdsHealthcareFacilityTypeCode_CISIS.xml'"/>
         <let name="jdv_informantRelatedEntityCode" value="'../../jeuxDeValeurs/JDV_J11_RelationPatient_CISIS.xml'"/>
-        <let name="jdv_legalAuthenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_AuthorSpecialty_CISIS.xml'"/>
+        <let name="jdv_legalAuthenticatorSpecialty" value="'../../jeuxDeValeurs/JDV_J01_XdsAuthorSpecialty_CISIS.xml'"/>
         <let name="jdv_participantFunctionCode" value="'../../jeuxDeValeurs/JDV_J47_FunctionCode_CISIS.xml'"/>
 <!--        <let name="jdv_participantFunctionCode_2" value="'../../jeuxDeValeurs/TRE_R259-HL7ParticipationFunction.xml'"/>
         <let name="jdv_participantFunctionCode_3" value="'../../jeuxDeValeurs/TRE_R85-RolePriseCharge.xml'"/>-->
@@ -251,16 +251,16 @@
         <let name="jdv_healthStatusCodes" value="'../../jeuxDeValeurs/JDV_HealthStatusCodes_CISIS.xml'"/>        
         <let name="jdv_observationIntoleranceType" value="'../../jeuxDeValeurs/JDV_HL7_ObservationIntoleranceType_CISIS.xml'"/>
         <let name="jdv_problemCodes" value="'../../jeuxDeValeurs/JDV_ProblemCodes_CISIS.xml'"/>
-        <let name="jdv_HL7_allergyintolerance-clinical" value="'../../jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical_CISIS.xml'"/>
+        <let name="jdv_HL7_allergyintolerance_clinical" value="'../../jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical_CISIS.xml'"/>
         <let name="jdv_HL7_conditionclinical" value="'../../jeuxDeValeurs/JDV_HL7_ConditionClinical_CISIS.xml'"/>
-        <!--<let name="jdv_substanceAdministration_approachSiteCode" value="'../../jeuxDeValeurs/JDV_HL7_HumanSubstanceAdministrationSite_CISIS.xml'"/>-->
+        <!--<let name="jdv_substanceAdministration_approachSiteCode" value="'../../jeuxDeValeurs/JDV_HL7_HumanSubstanceAdministrationSite-CISIS.xml'"/>-->
         <let name="jdv_substanceAdministration_approachSiteCode" value="'../../jeuxDeValeurs/JDV_ImmunizationApproachSiteCode_CISIS.xml'"/>
         <let name="jdv_substanceAdministration_ImmunizationRouteCodes" value="'../../jeuxDeValeurs/JDV_ImmunizationRouteCodes_CISIS.xml'"/>
-<!--        <let name="jdv_substanceAdministration_RouteOfAdministration" value="'../../jeuxDeValeurs/JDV_HL7_RouteOfAdministration_CISIS.xml'"/>-->
+<!--        <let name="jdv_substanceAdministration_RouteOfAdministration" value="'../../jeuxDeValeurs/JDV_HL7_RouteOfAdministration-CISIS.xml'"/>-->
         <let name="jdv_vitalSignCode" value="'../../jeuxDeValeurs/JDV_SignesVitaux_CISIS.xml'"/>
         <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/JDV_J143_AdministrativeGender_CISIS.xml'"/>
         <let name="jdv_SocialHistoryCodes" value="'../../jeuxDeValeurs/JDV_SocialHistoryCodes_CISIS.xml'"/>
-<!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction_CISIS.xml'"/> -->
+<!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction-CISIS.xml'"/> -->
         <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee_CISIS.xml'"/>
         
         
