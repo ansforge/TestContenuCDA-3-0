@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_Importance_clinique_CISIS" id="1.2.250.1.213.1.1.5.153" version="test">
+        <ConceptList>
+            <Concept code="GEN-169" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20190401000000" displayName="Très important"/>
+            <Concept code="GEN-170" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20190401000000" displayName="Important"/>
+            <Concept code="GEN-171" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20190401000000" displayName="Peu important"/>
+            <Concept code="GEN-172" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20190401000000" displayName="Pas important"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
