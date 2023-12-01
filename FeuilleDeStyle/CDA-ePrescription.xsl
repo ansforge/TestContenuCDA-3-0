@@ -12826,16 +12826,36 @@
         <xsl:param name="classCode"/>
         <xsl:param name="code"/>
         <xsl:param name="funcionCode"/>
-        <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
-            <xsl:call-template name="getLocalizedString">
-                <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
-            </xsl:call-template>
+        <xsl:if test="$typeCode != 'REF'">
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key"
+                        select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:if>
-        <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0">
-            <xsl:call-template name="getLocalizedString">
-                <xsl:with-param name="key"
-                    select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
-            </xsl:call-template>
+        <xsl:if test="$typeCode = 'REF'">
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode = 353">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key"
+                        select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode != 353">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
 
