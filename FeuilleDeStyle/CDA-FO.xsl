@@ -11864,9 +11864,7 @@
                             </td>
                             <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'Prescriber'"/>
-                                    </xsl:call-template>
+                                   
                                 </span>
                             </td>
                             <td class="td_label_footer">
@@ -12572,11 +12570,7 @@
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                         <fo:block>
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Prescriber'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                           
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">

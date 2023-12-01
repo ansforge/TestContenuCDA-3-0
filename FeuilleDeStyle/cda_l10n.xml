@@ -3059,9 +3059,9 @@
     </translation>
     <translation key="2.16.840.1.113883.5.90-REF">
         <comment>Label: ParticipationType referrer</comment>
-        <value lang="en-us">referrer</value>
-        <value lang="nl-nl">verwijzer</value>
-        <value lang="fr-fr">Référent/Prescripteur</value>
+        <value lang="en-us">Prescriber</value>
+        <value lang="nl-nl">Voorschrijver</value>
+        <value lang="fr-fr">Prescripteur</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-REF-353">
         <comment>Label: ParticipationType referrer</comment>
