@@ -11864,9 +11864,7 @@
                             </td>
                             <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
-                                    <xsl:call-template name="getLocalizedString">
-                                        <xsl:with-param name="key" select="'Prescriber'"/>
-                                    </xsl:call-template>
+                                   
                                 </span>
                             </td>
                             <td class="td_label_footer">
@@ -12572,11 +12570,7 @@
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                         <fo:block>
-                                            <xsl:call-template name="getLocalizedString">
-                                                <xsl:with-param name="pre" select="''"/>
-                                                <xsl:with-param name="key" select="'Prescriber'"/>
-                                                <xsl:with-param name="post" select="''"/>
-                                            </xsl:call-template>
+                                           
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">
@@ -23130,16 +23124,36 @@
         <xsl:param name="classCode"/>
         <xsl:param name="code"/>
         <xsl:param name="funcionCode"/>
-        <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
-            <xsl:call-template name="getLocalizedString">
-                <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
-            </xsl:call-template>
+        <xsl:if test="$typeCode != 'REF'">
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key"
+                        select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:if>
-        <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0">
-            <xsl:call-template name="getLocalizedString">
-                <xsl:with-param name="key"
-                    select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
-            </xsl:call-template>
+        <xsl:if test="$typeCode = 'REF'">
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode = 353">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key"
+                        select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode != 353">
+                <xsl:call-template name="getLocalizedString">
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
 
