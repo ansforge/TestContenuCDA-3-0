@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J197_XdsTypesIdentifiantsReferenceId_CISIS" id="1.2.250.1.213.1.1.5.692" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20220624120000" dateValid="20220624120000" description="Types d'identifiants utilisés dans la métadonnée XDS referenceIdList de la fiche du document dans le cadre du CISIS" displayName="JDV_J197_XdsTypesIdentifiantsReferenceId_CISIS.tabs" id="1.2.250.1.213.1.1.5.692" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS">
         <ConceptList>
-            <Concept code="à compléter" codeSystem="" dateFin="20230911000000" dateValid="20100101000000" displayName=""/>
+            <Concept code="urn:ihe:iti:xds:2013:uniqueId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="uniqueId"/>
+            <Concept code="urn:ihe:iti:xds:2013:accession" codeSystem="1.2.250.1.213.1.1.4.347" displayName="accession"/>
+            <Concept code="urn:ihe:iti:xds:2013:referral" codeSystem="1.2.250.1.213.1.1.4.347" displayName="referral"/>
+            <Concept code="urn:ihe:iti:xds:2013:order" codeSystem="1.2.250.1.213.1.1.4.347" displayName="order"/>
+            <Concept code="urn:ihe:iti:xdw:2013:workflowInstanceId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="workflowInstanceId"/>
+            <Concept code="urn:ihe:iti:xds:2016:studyInstanceUID" codeSystem="1.2.250.1.213.1.1.4.347" displayName="studyInstanceUID"/>
+            <Concept code="urn:ihe:iti:xds:2015:encounterId" codeSystem="1.2.250.1.213.1.1.4.347" displayName="encounterId"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

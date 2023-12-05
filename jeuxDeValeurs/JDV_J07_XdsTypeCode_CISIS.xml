@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230526120000" dateValid="20130123000000" description="XDS typeCode CI-SIS" displayName="JDV_J07_XdsTypeCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.471" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J07_XdsTypeCode_CISIS">
+    <ValueSet dateFin="" dateMaj="20231030120000" dateValid="20130123000000" description="XDS typeCode CI-SIS" displayName="JDV_J07_XdsTypeCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.471" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS">
         <ConceptList>
             <Concept code="ATTEST-ASS-COMPL" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Attestation assurance complémentaire"/>
             <Concept code="ATTEST-RESID" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Attestation de résidence"/>
@@ -34,6 +34,7 @@
             <Concept code="PRESC-ORTHOPHO" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Prescription d'actes d'orthophonie"/>
             <Concept code="PRESC-ORTHOPTIE" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Prescription d'actes d'orthoptie"/>
             <Concept code="FEUILLE-DE-STYLE" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Feuille de style"/>
+            <Concept code="FICHE-CONTACTS" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Fiche contacts"/>
             <Concept code="11369-6" codeSystem="2.16.840.1.113883.6.1" displayName="Historique des vaccinations"/>
             <Concept code="11488-4" codeSystem="2.16.840.1.113883.6.1" displayName="CR ou fiche de consultation ou de visite"/>
             <Concept code="11490-0" codeSystem="2.16.840.1.113883.6.1" displayName="Lettre de liaison à la sortie d'un établissement de soins"/>
@@ -47,6 +48,7 @@
             <Concept code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Plan personnalisé de soins"/>
             <Concept code="18748-4" codeSystem="2.16.840.1.113883.6.1" displayName="CR d'imagerie médicale"/>
             <Concept code="18761-7" codeSystem="2.16.840.1.113883.6.1" displayName="Note de transfert (dont lettre de liaison à l'entrée en établissement de soins)"/>
+            <Concept code="28653-4" codeSystem="2.16.840.1.113883.6.1" displayName="Document du secteur social / médico-social"/>
             <Concept code="29274-8" codeSystem="2.16.840.1.113883.6.1" displayName="Mesures de signes vitaux"/>
             <Concept code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Synthèse d'épisode de soins"/>
             <Concept code="34749-2" codeSystem="2.16.840.1.113883.6.1" displayName="CR de consultation pré-anesthésique"/>

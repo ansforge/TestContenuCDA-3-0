@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J145_MethodBodyWeight_ENS" id="1.2.250.1.213.1.1.5.600" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230630120000" dateValid="20210430120000" description="JDV pour la méthode de mesure du poids" displayName="JDV_J145_MethodBodyWeight_ENS.tabs" id="1.2.250.1.213.1.1.5.600" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS">
         <ConceptList>
-            <Concept code="K50BI02" codeSystem="1.2.250.1.213.2.65" dateFin="20230606000000" dateValid="20210603000000" displayName="MESURE POIDS"/>
-            <Concept code="V030210" codeSystem="1.2.250.1.213.2.68" dateFin="20230911000000" dateValid="20230606000000" displayName="PÈSE-PERSONNES (SAUF CEUX DE NÉONATALOGIE)"/>
+            <Concept code="V030210" codeSystem="1.2.250.1.213.2.68" displayName="PÈSE-PERSONNES (SAUF CEUX DE NÉONATALOGIE)"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

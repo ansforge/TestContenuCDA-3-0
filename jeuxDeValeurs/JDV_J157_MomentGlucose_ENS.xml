@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J157_MomentGlucose_ENS" id="1.2.250.1.213.1.1.5.612" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour caractériser le moment de la mesure de glucose" displayName="JDV_J157_MomentGlucose_ENS.tabs" id="1.2.250.1.213.1.1.5.612" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS">
         <ConceptList>
-            <Concept code="53049-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20230911000000" dateValid="20210603000000" displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"/>
-            <Concept code="16915-1" codeSystem="2.16.840.1.113883.6.1" dateFin="20230911000000" dateValid="20210603000000" displayName="Glucose post prandial"/>
-            <Concept code="LA11865-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20230911000000" dateValid="20210603000000" displayName="Après exercice"/>
-            <Concept code="A05" codeSystem="2.16.840.1.113883.6.139" dateFin="20230911000000" dateValid="20210603000000" displayName="Lors d'un malaise"/>
-            <Concept code="LA46-8" codeSystem="2.16.840.1.113883.6.1" dateFin="20230911000000" dateValid="20210603000000" displayName="Autre"/>
-            <Concept code="88365-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20230911000000" dateValid="20220413000000" displayName="Glucose avant repas"/>
+            <Concept code="16915-1" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose post prandial"/>
+            <Concept code="53049-3" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose à jeun"/>
+            <Concept code="88365-2" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose avant repas"/>
+            <Concept code="LA11865-5" codeSystem="2.16.840.1.113883.6.1" displayName="Après exercice"/>
+            <Concept code="LA46-8" codeSystem="2.16.840.1.113883.6.1" displayName="Autre"/>
+            <Concept code="A05" codeSystem="2.16.840.1.113883.6.139" displayName="Lors d'un malaise"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J156_MethodGlucoseInterstitiel_ENS" id="1.2.250.1.213.1.1.5.611" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de mesure du glucose interstitiel" displayName="JDV_J156_MethodGlucoseInterstitiel_ENS.tabs" id="1.2.250.1.213.1.1.5.611" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS">
         <ConceptList>
-            <Concept code="C159776" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230911000000" dateValid="20210603000000" displayName="système de surveillance continue du glucose"/>
-            <Concept code="J0601" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="CAPTEURS IMPLANTABLES DE SURVEILLANCE CONTINUE DU GLUCOSE"/>
+            <Concept code="C159776" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="système de surveillance continue du glucose"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

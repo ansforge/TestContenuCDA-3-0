@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_IssueGrossesse_CISIS" id="1.2.250.1.213.1.1.4.2.289.1" version="test">
+    <ValueSet displayName="JDV_IssueGrossesse_CISIS" id="1.2.250.1.213.1.1.5.731" version="test">
         <ConceptList>
-            <Concept code="OBS_101" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20220804000000" dateValid="20100101000000" displayName="Accouchement"/>
             <Concept code="236973005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Accouchement"/>
-            <Concept code="D8-00110" codeSystem="1.2.250.1.213.2.12" dateFin="20220804000000" dateValid="20100101000000" displayName="Môle"/>
             <Concept code="O01" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Môle hydatiforme"/>
-            <Concept code="D8-02000" codeSystem="1.2.250.1.213.2.12" dateFin="20220804000000" dateValid="20100101000000" displayName="GEU"/>
             <Concept code="O00" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Grossesse extra-utérine"/>
-            <Concept code="D8-04100" codeSystem="1.2.250.1.213.2.12" dateFin="20220804000000" dateValid="20100101000000" displayName="Avortement spontané"/>
             <Concept code="O03" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Avortement spontané"/>
-            <Concept code="D8-04201" codeSystem="1.2.250.1.213.2.12" dateFin="20220804000000" dateValid="20100101000000" displayName="IVG"/>
             <Concept code="O04.-0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Interruption médicale volontaire de grossesse [IVG dans le cadre légal]"/>
-            <Concept code="OBS_103" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20220804000000" dateValid="20100101000000" displayName="IMG &lt; 22"/>
-            <Concept code="OBS_104" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20220804000000" dateValid="20100101000000" displayName="IMG &gt;= 22"/>
             <Concept code="O04" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Avortement médical"/>
-            <Concept code="OBS_127" codeSystem="1.2.250.1.213.1.1.4.2.289" dateFin="20220804000000" dateValid="20100101000000" displayName="Grossesse actuelle"/>
             <Concept code="P95" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220804000000" displayName="Mort fœtale (de cause non précisée)"/>
         </ConceptList>
     </ValueSet>

@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J147_MethodHeartrate_ENS" id="1.2.250.1.213.1.1.5.602" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de mesure de fréquence cardiaque" displayName="JDV_J147_MethodHeartrate_ENS.tabs" id="1.2.250.1.213.1.1.5.602" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS">
         <ConceptList>
-            <Concept code="K50BF" codeSystem="1.2.250.1.213.2.65" dateFin="20230911000000" dateValid="20210603000000" displayName="MESURE OXYMETRIE"/>
-            <Concept code="Z1203020408" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="OXYMÈTRES DE POULS"/>
-            <Concept code="C56AB03" codeSystem="1.2.250.1.213.2.65" dateFin="20230911000000" dateValid="20210603000000" displayName="TENSIOMETRE"/>
-            <Concept code="Z12030205" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="TENSIOMÈTRES NON INVASIFS"/>
-            <Concept code="C153216" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230911000000" dateValid="20210603000000" displayName="objet connecté"/>
-            <Concept code="Y210905" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="INTERFACES DE CAPTEURS EXTERNES"/>
-            <Concept code="C49676" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230725000000" dateValid="20210603000000" displayName="Estimation sans matériel (prise du pouls)"/>
-            <Concept code="MED-1244" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230911000000" dateValid="20230725000000" displayName="Estimation sans matériel (prise du pouls)"/>
-            <Concept code="8499008" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20231114000000" displayName="pouls"/>
-            <Concept code="MED-873" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230911000000" dateValid="20210603000000" displayName="Cardiofréquencemètre"/>
-            <Concept code="C0205" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="DISPOSITIFS DE DIAGNOSTIC CARDIAQUE"/>
+            <Concept code="K50BF" codeSystem="1.2.250.1.213.2.65" displayName="MESURE OXYMETRIE"/>
+            <Concept code="C56AB03" codeSystem="1.2.250.1.213.2.65" displayName="TENSIOMETRE"/>
+            <Concept code="C153216" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="objet connecté"/>
+            <Concept code="MED-873" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Cardiofréquencemètre"/>
+            <Concept code="MED-1244" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Estimation sans matériel (prise du pouls)"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J231_XdsTypesIdentifiantsReferenceId_DMP" id="1.2.250.1.213.1.1.5.693" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20221216120000" dateValid="20221216120000" description="Types d'identifiants utilisés dans la métadonnée XDS referenceIdList de la fiche du document dans le cadre du DMP" displayName="JDV_J231_XdsTypesIdentifiantsReferenceId_DMP.tabs" id="1.2.250.1.213.1.1.5.693" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J231-XdsTypesIdentifiantsReferenceId-DMP">
         <ConceptList>
-            <Concept code="à compléter" codeSystem="" dateFin="20230911000000" dateValid="20100101000000" displayName=""/>
+            <Concept code="urn:ihe:iti:xds:2013:accession" codeSystem="1.2.250.1.213.1.1.4.347" displayName="accession"/>
+            <Concept code="urn:ihe:iti:xds:2013:order" codeSystem="1.2.250.1.213.1.1.4.347" displayName="order"/>
+            <Concept code="urn:ihe:iti:xds:2016:studyInstanceUID" codeSystem="1.2.250.1.213.1.1.4.347" displayName="studyInstanceUID"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

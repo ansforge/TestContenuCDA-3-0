@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230526120000" dateValid="20141008000000" description="XDS healthcareFacilityTypeCode CI-SIS" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.466" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J02_XdsHealthcareFacilityTypeCode_CISIS">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20141008000000" description="XDS healthcareFacilityTypeCode CI-SIS" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.466" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS">
         <ConceptList>
             <Concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Expression personnelle du patient"/>
+            <Concept code="SNR" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Service numérique référencé"/>
             <Concept code="SA01" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement public de santé"/>
             <Concept code="SA02" codeSystem="1.2.250.1.71.4.2.4" displayName="Hôpital militaire du Service de santé des armées"/>
             <Concept code="SA03" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement privé PSPH"/>

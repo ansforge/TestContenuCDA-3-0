@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J155_MethodGlucoseSanguin_ENS" id="1.2.250.1.213.1.1.5.610" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de mesure du glucose sanguin" displayName="JDV_J155_MethodGlucoseSanguin_ENS.tabs" id="1.2.250.1.213.1.1.5.610" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS">
         <ConceptList>
-            <Concept code="1101720" codeSystem="1.2.250.1.215.200.2.1" dateFin="20230911000000" dateValid="20210603000000" displayName="Lecteur de glycémie"/>
-            <Concept code="C17610" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230911000000" dateValid="20210603000000" displayName="prélèvement de sang"/>
-            <Concept code="Z1204011501" codeSystem="1.2.250.1.213.2.68" dateFin="20231114000000" dateValid="20231114000000" displayName="SYSTÈMES DE SURVEILLANCE NON INVASIVE DE LA GLYCÉMIE"/>
-            <Concept code="82078001" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20231114000000" displayName="prélèvement d'un échantillon sanguin pour le laboratoire"/>
+            <Concept code="C17610" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="prélèvement de sang"/>
+            <Concept code="C159776" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="système de surveillance continue du glucose"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

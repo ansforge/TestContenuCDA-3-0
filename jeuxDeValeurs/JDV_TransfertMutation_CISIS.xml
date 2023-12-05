@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TransfertMutation_CISIS" id="1.2.250.1.213.1.1.4.2.289.7" version="test">
+    <ValueSet displayName="JDV_TransfertMutation_CISIS" id="1.2.250.1.213.1.1.5.737" version="test">
         <ConceptList>
-            <Concept code="G-4029" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Secondaire"/>
             <Concept code="2603003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="secondaire"/>
-            <Concept code="G-A377" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Immédiat"/>
             <Concept code="88694003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="immédiat"/>
             <Concept code="GEN-301" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pas de transfert ni mutation"/>
         </ConceptList>

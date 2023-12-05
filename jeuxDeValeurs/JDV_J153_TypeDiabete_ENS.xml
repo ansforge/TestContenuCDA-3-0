@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J153_TypeDiabete_ENS" id="1.2.250.1.213.1.1.5.608" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230630120000" dateValid="20210430120000" description="JDV pour caractériser le type de diabète dans l'extension DiabetisType" displayName="JDV_J153_TypeDiabete_ENS.tabs" id="1.2.250.1.213.1.1.5.608" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS">
         <ConceptList>
-            <Concept code="E10" codeSystem="2.16.840.1.113883.6.3" dateFin="20230911000000" dateValid="20210603000000" displayName="Diabète sucré de type 1"/>
-            <Concept code="E11.x0" codeSystem="1.2.250.1.213.2.67" dateFin="20230911000000" dateValid="20210603000000" displayName="Diabète type 2 insulinotraité"/>
-            <Concept code="E11.x8" codeSystem="1.2.250.1.213.2.67" dateFin="20230911000000" dateValid="20210603000000" displayName="Diabète type 2 non insulinotraité"/>
-            <Concept code="O24.4" codeSystem="2.16.840.1.113883.6.3" dateFin="20230911000000" dateValid="20210603000000" displayName="Diabète sucré survenant au cours de la grossesse"/>
-            <Concept code="MED-874" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230911000000" dateValid="20210603000000" displayName="Non diabétique"/>
-            <Concept code="E14" codeSystem="2.16.840.1.113883.6.3" dateFin="20230911000000" dateValid="20210603000000" displayName="Diabète sucré, sans précision"/>
+            <Concept code="E11.x0" codeSystem="1.2.250.1.213.2.67" displayName="Diabète type 2 insulinotraité"/>
+            <Concept code="E11.x8" codeSystem="1.2.250.1.213.2.67" displayName="Diabète type 2 non insulinotraité"/>
+            <Concept code="E10" codeSystem="2.16.840.1.113883.6.3" displayName="Diabète sucré de type 1"/>
+            <Concept code="O24.4" codeSystem="2.16.840.1.113883.6.3" displayName="Diabète sucré survenant au cours de la grossesse"/>
+            <Concept code="E14" codeSystem="2.16.840.1.113883.6.3" displayName="Diabète sucré, sans précision"/>
+            <Concept code="MED-874" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Non diabétique"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

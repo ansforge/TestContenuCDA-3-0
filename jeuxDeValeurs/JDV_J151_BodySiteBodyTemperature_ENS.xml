@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J151_BodySiteBodyTemperature_ENS" id="1.2.250.1.213.1.1.5.606" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV de localisation de la mesure de la température" displayName="JDV_J151_BodySiteBodyTemperature_ENS.tabs" id="1.2.250.1.213.1.1.5.606" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS">
         <ConceptList>
-            <Concept code="14544" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Rectum"/>
-            <Concept code="49184" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Bouche"/>
-            <Concept code="52780" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Oreille"/>
-            <Concept code="24864" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Aisselle"/>
-            <Concept code="46450" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Tempe"/>
-            <Concept code="63864" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Front"/>
-            <Concept code="34402009" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="rectum"/>
-            <Concept code="123851003" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="bouche"/>
-            <Concept code="117590005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="oreille"/>
-            <Concept code="91470000" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="région axillaire"/>
-            <Concept code="450721000" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="région temporale"/>
-            <Concept code="52795006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="front"/>
+            <Concept code="34402009" codeSystem="2.16.840.1.113883.6.96" displayName="rectum"/>
+            <Concept code="52795006" codeSystem="2.16.840.1.113883.6.96" displayName="front"/>
+            <Concept code="91470000" codeSystem="2.16.840.1.113883.6.96" displayName="région axillaire"/>
+            <Concept code="117590005" codeSystem="2.16.840.1.113883.6.96" displayName="oreille"/>
+            <Concept code="123851003" codeSystem="2.16.840.1.113883.6.96" displayName="bouche"/>
+            <Concept code="450721000" codeSystem="2.16.840.1.113883.6.96" displayName="région temporale"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

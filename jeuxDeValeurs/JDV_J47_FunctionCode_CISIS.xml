@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230331120000" dateValid="20180330120000" description="Jeux de valeurs des Rôles fonctionnels HL7 et CI-SIS" displayName="JDV_J47_FunctionCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.124" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J47_FunctionCode_CISIS">
+    <ValueSet dateFin="" dateMaj="20230331120000" dateValid="20180330120000" description="Jeux de valeurs des Rôles fonctionnels HL7 et CI-SIS" displayName="JDV_J47_FunctionCode_CISIS.tabs" id="1.2.250.1.213.1.1.5.124" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS">
         <ConceptList>
             <Concept code="CORRE" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Correspondant"/>
             <Concept code="PRELV" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Préleveur"/>

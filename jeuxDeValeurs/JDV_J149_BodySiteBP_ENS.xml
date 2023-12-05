@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_J149_BodySiteBP_ENS" id="1.2.250.1.213.1.1.5.604" version="test">
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la localisation de la mesure de la pression artérielle" displayName="JDV_J149_BodySiteBP_ENS.tabs" id="1.2.250.1.213.1.1.5.604" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS">
         <ConceptList>
-            <Concept code="24890" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Bras"/>
-            <Concept code="53120007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="membre supérieur"/>
-            <Concept code="24922" codeSystem="2.16.840.1.113883.6.119" dateFin="20230401000000" dateValid="20210603000000" displayName="Poignet"/>
-            <Concept code="8205005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230911000000" dateValid="20230401000000" displayName="poignet"/>
+            <Concept code="8205005" codeSystem="2.16.840.1.113883.6.96" displayName="poignet"/>
+            <Concept code="53120007" codeSystem="2.16.840.1.113883.6.96" displayName="membre supérieur"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

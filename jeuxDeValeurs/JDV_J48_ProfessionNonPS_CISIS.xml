@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20220624120000" dateValid="20180330120000" description="Jeux de Valeurs des professions/spécialités des Non Ps" displayName="JDV_J48_ProfessionNonPS_CISIS.tabs" id="1.2.250.1.213.1.1.5.123" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J48_ProfessionNonPS_CISIS">
+    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20180330120000" description="Jeux de Valeurs des professions/spécialités des Non Ps" displayName="JDV_J48_ProfessionNonPS_CISIS.tabs" id="1.2.250.1.213.1.1.5.123" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J48-ProfessionNonPS-CISIS">
         <ConceptList>
             <Concept code="71" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Ostéopathe"/>
             <Concept code="72" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Psychothérapeute"/>
@@ -46,6 +46,8 @@
             <Concept code="327" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Educateur technique spécialisé"/>
             <Concept code="328" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Accompagnant éducatif et social"/>
             <Concept code="329" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en génétique"/>
+            <Concept code="331" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Secrétaire médicale"/>
+            <Concept code="332" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant médical"/>
             <Concept code="350" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide à domicile"/>
             <Concept code="351" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant(e) maternel(le)"/>
         </ConceptList>
