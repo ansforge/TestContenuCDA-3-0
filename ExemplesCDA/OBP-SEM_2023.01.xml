@@ -21,6 +21,7 @@
       22/09/2021 : correction du codeSystem SNOMED 3.5
       15/04/2022:  Migration des terminologies et JDV en SNOMED CT
       29/11/2023 : Nouvelle version 2023.01
+      05/12/2023 : Ajout de l'identifiant de l’entité ayant effectué le transfert dans l'entrée FR-Transfert-du-patient
       **********************************************************************************************************
    -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
@@ -1157,6 +1158,8 @@
                 <!-- Identifiant de l’établissement de destination -->
                 <templateId root="1.2.250.1.71.4.2.2" extension="1120456789"/>              
                 <participantRole classCode="SDLOC">
+		<!-- Identifiant de l’entité ayant effectué le transfert -->
+                  <id root="B0305026-22FA-4619-9CFC-D88DF93B7658" />
                   <!-- valeur issue du JDV_J02_XdsHealthcareFacilityTypeCode_CISIS (1.2.250.1.213.1.1.5.3) -->
                   <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
                   <addr>
