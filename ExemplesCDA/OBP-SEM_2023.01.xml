@@ -1159,7 +1159,7 @@
                 <templateId root="1.2.250.1.71.4.2.2" extension="1120456789"/>              
                 <participantRole classCode="SDLOC">
 		<!-- Identifiant de l’entité ayant effectué le transfert -->
-                  <id root="B0305026-22FA-4619-9CFC-D88DF93B7658" />
+                  <id nullFlavor="NAV"/>
                   <!-- valeur issue du JDV_J02_XdsHealthcareFacilityTypeCode_CISIS (1.2.250.1.213.1.1.5.3) -->
                   <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
                   <addr>
