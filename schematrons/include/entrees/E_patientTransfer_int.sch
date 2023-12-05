@@ -9,6 +9,7 @@
     24/10/2013 : CRI : Création
     27/06/2017 : LBE : Ajout de contraintes(compte de template, attributs, participant, etc...), et de conventions de nommage
     30/01/2020 : NMA : Suppression du test sur le nombre de templateId
+    05/12/2023 : Ajout du test sur l'identifiant de l’entité ayant effectué le transfert (si le transfert a déjà été effectué)
     
 -->
 
@@ -16,13 +17,19 @@
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_patientTransfer_int">
     <title>IHE PCC v3.0 Patient Transfer - errors validation phase</title>
-    <rule context="*[cda:templateId/@root=&quot;1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1&quot;]">
+    <rule context="cda:entry[cda:act/cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1']">
         
-        <assert test="@classCode='ACT' and (@moodCode='INT' or @moodCode='EVN')">
+        <assert test="cda:act[@classCode='ACT' and (@moodCode='INT' or @moodCode='EVN')]">
             [E_patientTransfer_int] Erreur de conformité PCC : L'élément patientTransfer est un act, l'élément act doit contenir un attribut @classCode fixé à la valeur act et un attribut @moodCode prenant la valeur 'INT' ou 'EVN'
-        </assert>   
+        </assert>
         
-        <assert test="not(cda:text) or (cda:text and cda:text/cda:reference/@value)">
+        <assert test="(cda:act[@moodCode='EVN'] and (not(cda:act/cda:participant) or cda:act/cda:participant/cda:participantRole/cda:id)) or (cda:act[@moodCode='INT'] and (not(cda:act/cda:participant) or cda:act/cda:participant/cda:participantRole))">
+            [E_patientTransfer_int] Erreur de conformité PCC :
+            L'identifiant de l'entité ayant effectué le transfert (participant/participantRole/id) est obligatoire si le transfert a déjà été effectué (@moodCode='EVN'). 
+            Si le transfert est à faire : @moodCode='INT' et l'identifiant de l'entité ayant effectué le transfert n'est pas obligatoire.
+        </assert>
+        
+        <assert test="not(cda:act/cda:text) or (cda:act/cda:text and cda:act/cda:text/cda:reference/@value)">
             [E_patientTransfer_int] Erreur de conformité PCC : Si dans l'élément patientTransfer un élément text est présent, celui-ci doit contenir un élément 'reference' avec un attribut @value
         </assert>
         <!-- On ne vérfie pas les codes avec la SNOMED CT (pour l'instant) -->
@@ -31,14 +38,14 @@
             [E_patientTransfer_int] Erreur de conformité PCC : Le code utilisé pour un transfert est 'OBS_005' (TA_OBS)
         </assert> -->
         
-        <assert test="cda:statusCode[@code = &quot;completed&quot; or @code=&quot;normal&quot;]"> 
+        <assert test="cda:act/cda:statusCode[@code = &quot;completed&quot; or @code=&quot;normal&quot;]"> 
             [E_patientTransfer_int] Erreur de conformité PCC : Le statut du transfert est obligatoire. l'attribut @code prend la valeur
             @code='completed' si le transfert à eu lieu (moodCode='EVN') ou @code='normal' lorsque le
             tranfert est projeté (moodCode='INT')
         </assert>
         
-        <assert test="not(cda:statusCode[@code = 'completed']) or 
-            (cda:statusCode[@code = 'completed'] and (cda:effectiveTime/cda:low and cda:effectiveTime/cda:high))"> 
+        <assert test="not(cda:act/cda:statusCode[@code = 'completed']) or 
+            (cda:act/cda:statusCode[@code = 'completed'] and (cda:act/cda:effectiveTime/cda:low and cda:act/cda:effectiveTime/cda:high))"> 
             [E_patientTransfer_int] Erreur de conformité PCC : effectiveTime est obligatoire lorsque le transfert a eu lieu. 
             Le sous-élément 'low' indique l'heure de départ et le sous-élément 'high' indique celle d'arrivée.
         </assert>
@@ -66,7 +73,6 @@
         <assert test="not(cda:participantRole/cda:playingEntity) or ( cda:participantRole/cda:playingEntity and cda:participantRole/cda:playingEntity/cda:name)">
             [E_patientTransfer_int] Erreur de conformité PCC : Si l'élément participantRole contient un élément playingEntity, celui-ci doit contenir un élément 'name'
         </assert>
-        
     </rule>
     
 </pattern>
