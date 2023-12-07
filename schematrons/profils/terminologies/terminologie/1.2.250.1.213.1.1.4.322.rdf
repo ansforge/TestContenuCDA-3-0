@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:core="http://open-services.net/ns/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:icd="http://id.who.int/icd/schema/" xmlns:j.0="http://topbraid.org/swa#" xmlns:j.1="http://teamwork.topbraidlive.org/ontologyprojects#" xmlns:metadata="http://topbraid.org/metadata#" xmlns:ns="https://data.esante.gouv.fr/profile/ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#" xmlns:terms="http://purl.org/dc/terms/" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:adms="http://www.w3.org/ns/adms#" xmlns:core="http://open-services.net/ns/core#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:icd="http://id.who.int/icd/schema/" xmlns:j.0="http://topbraid.org/swa#"
+    xmlns:j.1="http://teamwork.topbraidlive.org/ontologyprojects#"
+    xmlns:metadata="http://topbraid.org/metadata#"
+    xmlns:ns="https://data.esante.gouv.fr/profile/ns#" xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#"
+    xmlns:terms="http://purl.org/dc/terms/" xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <rdf:Description>
         <skos:notation>D0001-6</skos:notation>
     </rdf:Description>
@@ -4772,6 +4782,12 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-1275</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>MED-1276</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>MED-1277</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>ORG-001</skos:notation>
