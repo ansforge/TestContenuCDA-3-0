@@ -4,7 +4,7 @@
         <ConceptList>
             <Concept code="F-D0720" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Thrombolyse"/>
             <Concept code="P1-30322" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Thrombectomie"/>
-            <Concept code="233428003 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
+            <Concept code="233428003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
             <Concept code="397028007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombectomie d'une veine"/>
         </ConceptList>
     </ValueSet>

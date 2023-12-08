@@ -11,7 +11,7 @@
             <Concept code="MED-501" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Date de consentement au protocole"/>
             <Concept code="MED-502" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Nom du protocole"/>
             <Concept code="F-D0720" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Thrombolyse IV"/>
-            <Concept code="233428003 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
+            <Concept code="233428003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
             <Concept code="P1-30322" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Thrombectomie ou thrombolyse IA"/>
             <Concept code="43810009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombectomie"/>
         </ConceptList>

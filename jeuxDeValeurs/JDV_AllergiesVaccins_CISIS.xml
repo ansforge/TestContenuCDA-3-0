@@ -10,7 +10,7 @@
             <Concept code="J01GB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Gentamicine"/>
             <Concept code="J01XB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Polymyxine B"/>
             <Concept code="MED-136" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221222000000" dateValid="20100101000000" displayName="Gélatine"/>
-            <Concept code="373531009 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="gélatine"/>
+            <Concept code="373531009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="gélatine"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

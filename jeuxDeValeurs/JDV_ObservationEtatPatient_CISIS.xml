@@ -5,9 +5,9 @@
             <Concept code="DLU_001" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20210106000000" displayName="Peut Alerter"/>
             <Concept code="288575003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="capable de communiquer"/>
             <Concept code="F-91200" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Orienté"/>
-            <Concept code="247663003 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="bien orienté"/>
+            <Concept code="247663003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="bien orienté"/>
             <Concept code="F-91210" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Désorienté"/>
-            <Concept code="62476001 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="désorienté(e)"/>
+            <Concept code="62476001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="désorienté(e)"/>
             <Concept code="F-92540" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Agité"/>
             <Concept code="24199005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sensation d'agitation"/>
             <Concept code="F91.3" codeSystem="2.16.840.1.113883.6.3" dateFin="20231114000000" dateValid="20210106000000" displayName="Trouble oppositionnel avec provocation"/>
