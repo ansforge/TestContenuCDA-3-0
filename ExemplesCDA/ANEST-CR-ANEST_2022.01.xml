@@ -19,6 +19,7 @@
     13/07/2021 : Correction unité "ml" par "mL"
     29/04/2022 : Migration des terminologies et JDVs en SNOMED CT
     25/08/2023 : Migration des terminologies et JDVs après validation
+    08/12/2023 : Mise à jour des JDVs
 	**********************************************************************************************************
 -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -2473,7 +2474,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <!-- Valeur provenant du JDV_HealthStatusCodes_CISIS (1.2.250.1.213.1.1.4.2.283.1) -->
-                      <value xsi:type="CE" code="419099009" displayName="Décédé"
+                      <value xsi:type="CE" code="419620001" displayName="mort"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </observation>
                   </entryRelationship>

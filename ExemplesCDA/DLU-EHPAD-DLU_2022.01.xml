@@ -28,6 +28,7 @@
       05/12/2022 : Nouvelle version 2022.01
       - Modification des terminologies et JDVs
         28/08/2023 : Modification des terminologies et JDVs
+        08/12/2023 : Mise à jour de JDV
       **********************************************************************************************************
 -->
 
@@ -1101,8 +1102,8 @@
 							<templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="CCF80A78-0212-43EF-89E5-F37F3B30C3AF"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-91200" displayName="Orienté"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="247663003" displayName="bien orienté"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr2"/>
 							</text>
@@ -1121,8 +1122,8 @@
 							<templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="1483FA34-3810-4C2D-A611-9BE5E4D1A703"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-91210" displayName="Désorienté"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="62476001" displayName="désorienté(e)"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr3"/>
 							</text>
@@ -1141,8 +1142,8 @@
 							<templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="8449D1AF-C44B-4598-AC0B-CE0DF77575A5"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-92540" displayName="Agité" codeSystem="1.2.250.1.213.2.12"
-								codeSystemName="SNOMED 3.5"/>
+							<code code="24199005" displayName="sensation d'agitation" codeSystem="2.16.840.1.113883.6.96"
+								codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr4"/>
 							</text>
@@ -1161,8 +1162,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="3CC2A9BF-EE87-492F-87DD-E7CBC71E94ED"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F91.3" displayName="Opposant"
-								codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"/>
+							<code code="248043008" displayName="comportement non-conciliant"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr5"/>
 							</text>
@@ -1181,8 +1182,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="4511AA1C-FD6E-463E-8F33-2A3865A81799"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-94034" displayName="Risque suicidaire"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="425104003" displayName="comportement suicidaire"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr6"/>
 							</text>
@@ -1201,8 +1202,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="B4F9F29B-EE99-4B56-A7EF-B939DC190989"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="DA-74910" displayName="Handicap visuel"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="397540003" displayName="malvoyance"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr7"/>
 							</text>
@@ -1221,8 +1222,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="E6A2FD17-BF64-412B-A978-255A50167827"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="DA-95000" displayName="Handicap auditif"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="15188001" displayName="perte auditive"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr8"/>
 							</text>
@@ -1241,8 +1242,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="114FFEDC-6968-499D-95A5-F6E8408F8354"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-94800" displayName="Handicap de langage"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="62305002" displayName="trouble du langage"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr9"/>
 							</text>
@@ -1261,8 +1262,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="DBF786AA-EB03-460F-8EEA-7D7708D9D2D8"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="A-A1800" displayName="Chute" codeSystem="1.2.250.1.213.2.12"
-								codeSystemName="SNOMED 3.5"/>
+							<code code="161898004" displayName="chutes" codeSystem="2.16.840.1.113883.6.96"
+								codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr10"/>
 							</text>
@@ -1281,8 +1282,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="301D8AC8-4CE5-45BE-A2A5-C087EB0FFAAC"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-18000" displayName="Déambulation"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="50239007" displayName="errance"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr11"/>
 							</text>
@@ -1301,8 +1302,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="F7FD31CF-A595-4531-B693-9D048B5F1270"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="F-95250" displayName="Fugue" codeSystem="1.2.250.1.213.2.12"
-								codeSystemName="SNOMED 3.5"/>
+							<code code="248046000" displayName="fugue" codeSystem="2.16.840.1.113883.6.96"
+								codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr12"/>
 							</text>
@@ -1321,8 +1322,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="3546908F-75C7-4996-92DD-9133E3D626AF"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="PA-10130" displayName="Contention"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="386423001" displayName="contention physique"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr13"/>
 							</text>
@@ -1341,8 +1342,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="226AA75D-B25A-406C-9E8C-F37ADE42DB40"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="M-36784" displayName="Risque d'escarre"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="285304000" displayName="à risque d'escarre"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr14"/>
 							</text>
@@ -1361,8 +1362,8 @@
                            <templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="79C1467D-BC99-454E-BA8E-DD3CC0EADE57"/>
 							<!-- valeur issue du JDV_ObservationEtatPatient_CISIS (1.2.250.1.213.1.1.5.514) -->
-							<code code="M-39280" displayName="Risque de fausses routes"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+							<code code="249492002" displayName="fausse route alimentaire"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<text>
 								<reference value="#evr15"/>
 							</text>
