@@ -270,7 +270,10 @@
         <!-- présence des templateId obligatoires -->        
         <rule context="cda:ClinicalDocument">            
             <assert test="not(cda:templateId[@root='1.3.6.1.4.1.19376.1.2.20']) or (count(cda:templateId)=3 and  cda:templateId[@root='2.16.840.1.113883.2.8.2.1'] and cda:templateId[@root='1.2.250.1.213.1.1.1.1'])"> 
-                [CI-SIS_StructurationMinimale] Erreur de conformité : Dans un document CDA niveau 1, le templateId 1.3.6.1.4.1.19376.1.2.20 remplace le templateId du volet et seuls les trois templateId "1.3.6.1.4.1.19376.1.2.20", "2.16.840.1.113883.2.8.2.1" et "1.2.250.1.213.1.1.1.1" sont admis
+                [CI-SIS_StructurationMinimale] Erreur de conformité : Dans un document CDA non structuré, le templateId 1.3.6.1.4.1.19376.1.2.20 remplace le templateId du volet et seuls les trois templateId "1.3.6.1.4.1.19376.1.2.20", "2.16.840.1.113883.2.8.2.1" et "1.2.250.1.213.1.1.1.1" sont admis
+            </assert>
+            <assert test="not(cda:component/cda:nonXMLBody) or cda:templateId/@root='1.3.6.1.4.1.19376.1.2.20'">
+                [CI-SIS_StructurationMinimale] Erreur de conformité au CI-SIS : Dans un document CDA non structuré, le templateId "1.3.6.1.4.1.19376.1.2.20" est obligatoire
             </assert>
         </rule>
         
