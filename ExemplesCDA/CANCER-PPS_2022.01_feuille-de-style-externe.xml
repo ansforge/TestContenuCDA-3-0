@@ -2591,8 +2591,8 @@
                   <code code="MED-571" displayName="Suivi" codeSystem="1.2.250.1.213.1.1.4.322"
                     codeSystemName="TA_ASIP">
                     <qualifier>
-                      <value code="ORG-187" displayName="Consultation"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <value code="11429006" displayName="consultation"
+                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </code>
                   <text>
