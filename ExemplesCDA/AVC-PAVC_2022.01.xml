@@ -889,7 +889,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <value xsi:type="CD" code="F-A0840" displayName="Paralysie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <value xsi:type="CD" code="44695005" displayName="paralysie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#paralysie">
                   </reference>
@@ -961,7 +961,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <value xsi:type="CD" code="F-A2005" displayName="Anesthésies" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <value xsi:type="CD" code="33653009" displayName="absence de sensation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#anesthesie">
                   </reference>
@@ -988,7 +988,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <value xsi:type="CD" code="F-A6000" displayName="Aphasie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <value xsi:type="CD" code="R47.02" displayName="Aphasie, autre et sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                 <originalText>
                   <reference value="#aphasie">
                   </reference>
@@ -3101,7 +3101,7 @@
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
-              <value xsi:type="CD" code="105529008" displayName="vit seul" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <value xsi:type="CD" code="GEN-135" displayName="Seul" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
         </section>
