@@ -435,7 +435,7 @@
                       </text>
                       <statusCode code="completed" />
                       <!-- valeur issue du JDV_HealthStatusCodes_CISIS (1.2.250.1.213.1.1.4.2.283.1) -->
-                      <value xsi:type="CE" code="161901003" displayName="malade chronique"
+                      <value xsi:type="CE" code="27624003" displayName="maladie chronique"
                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </observation>
                   </entryRelationship>

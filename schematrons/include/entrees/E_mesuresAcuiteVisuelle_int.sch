@@ -30,9 +30,9 @@
         </assert>
         
         <assert
-            test="cda:code[@code = '70939-4' and @codeSystem = '2.16.840.1.113883.6.1']">
+            test="cda:code[@code = '28631-0' and @codeSystem = '2.16.840.1.113883.6.1']">
             [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "code" 
-            avec les attributs @code="70939-4" et @codeSystem="2.16.840.1.113883.6.1".
+            avec les attributs @code="28631-0" et @codeSystem="2.16.840.1.113883.6.1".
         </assert>
         
         <assert test="cda:statusCode[@code = 'completed']">
