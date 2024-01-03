@@ -41,7 +41,7 @@
 			<let name="theUnit" value="@unit"/>
 			<let name="theUnitTransform" value="replace(@unit, '\{.[a-z]*.\}', '')"/>
 			
-			 <assert role="error"  test="not(($theUnitTransform != '') and not(exists(doc(concat($path_terminologie, 'ucum.xml') )//code[text()= string($theUnitTransform) ])))">
+			<assert role="error"  test="not(($theUnitTransform != '') and not(exists(doc(concat($path_terminologie, '2.16.840.1.113883.6.8.xml') )//code[text()= string($theUnitTransform) ])))">
 			  Code  : "<value-of select="$theUnit"/>" (Avant transformation : "<value-of select="$theUnitTransform"/>")
 			  Ce code n'est pas dans UCUM
 			 </assert>
