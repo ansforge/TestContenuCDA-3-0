@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    CI-SIS_OBP-SAP_2023.01.sch
+    CI-SIS_OBP-SAP_2024.01.sch
     ANS   
     ......................................................................................................................................................    
     Historique :
@@ -15,11 +15,12 @@
         25/10/2022 : Version 2022.01
         11/05/2023 : Version 2023.01
         21/08/2023 : MAJ : Ajout des NVs contrôles des JDVs
+        03/01/2024 : Version 2024.01
 -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SAP_2023.01"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SAP_2024.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SAP_2023.01.sch">
-    <title>Vérification de la conformité au modèle OBP-SAP_2023.01</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SAP_2024.01.sch">
+    <title>Vérification de la conformité au modèle OBP-SAP_2024.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -30,36 +31,36 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!--Entete-->    
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Entete/Entete_OBP-SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Entete/Entete_OBP-SAP.sch"/>
     
     <!-- Sections -->    
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Sections/S_activeProblem_OBP-SAP.sch"/>
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Sections/S_birthOrganizer_OBP-SAP.sch"/>
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Sections/S_pregnancyHistoryOrganizer_OBP-SAP.sch"/>
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Sections/S_codedSocialHistory_OBP-SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Sections/S_activeProblem_OBP-SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Sections/S_birthOrganizer_OBP-SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Sections/S_pregnancyHistoryOrganizer_OBP-SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Sections/S_codedSocialHistory_OBP-SAP.sch"/>
     
     <!-- Entrees --> 
     
-    <include href="include/specificationsVolets/OBP-SAP_2023.01/Entrees/E_codedSocialHistory_SAP.sch"/>
+    <include href="include/specificationsVolets/OBP-SAP_2024.01/Entrees/E_codedSocialHistory_SAP.sch"/>
     
     
     <!-- JDV -->    
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_AntecedentsObstetricaux_OBP-SAP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_StatutNouveauNe_OBP-SAP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_EtatPerinee_OBP-SAP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_GroupeRhesus_OBP-SAP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_IssueGrossesse_OBP-SAP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_ObservationEnfant_OBP-SAP.sch"/>    
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_TranfertMutation_OBP-SAP.sch"/>    
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_ModeAccouchemen_OBP-SAP.sch"/>  
-    <include href="include/jeuxDeValeurs/OBP-SAP_2023.01/JDV_TypeRencontre_OBP-SAP.sch"/> 
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_AntecedentsObstetricaux_OBP-SAP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_StatutNouveauNe_OBP-SAP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_EtatPerinee_OBP-SAP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_GroupeRhesus_OBP-SAP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_IssueGrossesse_OBP-SAP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_ObservationEnfant_OBP-SAP.sch"/>    
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_TranfertMutation_OBP-SAP.sch"/>    
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_ModeAccouchemen_OBP-SAP.sch"/>  
+    <include href="include/jeuxDeValeurs/OBP-SAP_2024.01/JDV_TypeRencontre_OBP-SAP.sch"/> 
     
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     
-    <phase id="CI-SIS_OBP-SAP_2023.01">
+    <phase id="CI-SIS_OBP-SAP_2024.01">
         <active pattern="variables"/>
         <p>Vérification complète de la conformité au CI-SIS</p>
         

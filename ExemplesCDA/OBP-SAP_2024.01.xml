@@ -6,10 +6,10 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_OBP-SAP_2023.01.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_OBP-SAP_2024.01.sch"?>
 <!-- 
       **********************************************************************************************************
-      Document : Synthèse antepartum (OBP-SAP_2023.01)
+      Document : Synthèse antepartum (OBP-SAP_2024.01)
       Auteur : ANS
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -22,6 +22,7 @@
       13/09/2021 : Remplacement version schématron 2021.01
       24/10/2022:  Version 2022.01
       30/11/2023:  Version 2023.01
+      03/01/2024 : Version 2024.01
       **********************************************************************************************************
    -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
@@ -37,8 +38,8 @@
   <templateId root="2.16.840.1.113883.2.8.2.1" />
   <!-- Conformité spécifications au CI-SIS -->
   <templateId root="1.2.250.1.213.1.1.1.1" />
-  <!-- Conformité au Volet Synthèse antepartum (OBP-SAP_2023.01)-->
-  <templateId root="1.2.250.1.213.1.1.1.12.1" extension="2023.01"/>
+  <!-- Conformité au Volet Synthèse antepartum (OBP-SAP_2024.01)-->
+  <templateId root="1.2.250.1.213.1.1.1.12.1" extension="2024.01"/>
   <!-- Identifiant du document -->
   <id root="1.2.250.1.213.1.1.1.12.1.1" />
   <!-- Type de document -->
@@ -2318,6 +2319,8 @@
                         <reference value="#traitement-01" />
                       </originalText>
                     </code>
+                    <!-- Nom de la marque -->
+                    <name>SOLUPRED 20 mg, comprimé effervescent</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -2371,6 +2374,8 @@
                         <reference value="#traitement-02" />
                       </originalText>
                     </code>
+                    <!-- Nom de la marque -->
+                    <name>PLAVIX 75mg, comprimé pelliculé</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>

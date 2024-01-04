@@ -6,10 +6,10 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_OBP-SEM_2023.01.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_OBP-SEM_2024.01.sch"?>
 <!-- 
       **********************************************************************************************************
-      Document :  Synthèse Suites de Couches Enfant (OBP-SCE_2023.01)
+      Document :  Synthèse Suites de Couches Enfant (OBP-SCE_2024.01)
       Auteur : ANS
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
@@ -22,6 +22,7 @@
       15/04/2022:  Migration des terminologies et JDV en SNOMED CT
       29/11/2023 : Nouvelle version 2023.01
       05/12/2023 : Ajout de l'identifiant de l’entité ayant effectué le transfert dans l'entrée FR-Transfert-du-patient
+      03/01/2024 : Version 2024.01
       **********************************************************************************************************
    -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd" xmlns="urn:hl7-org:v3">
@@ -37,8 +38,8 @@
   <templateId root="2.16.840.1.113883.2.8.2.1" />
   <!-- Conformité spécifications au CI-SIS de l'ASIP Santé -->
   <templateId root="1.2.250.1.213.1.1.1.1" />
-  <!-- Conformité au Volet Synthèse Suites de Couches Enfant (OBP-SCE_2023.01)-->
-  <templateId root="1.2.250.1.213.1.1.1.12.5" extension="2023.01"/>
+  <!-- Conformité au Volet Synthèse Suites de Couches Enfant (OBP-SCE_2024.01)-->
+  <templateId root="1.2.250.1.213.1.1.1.12.5" extension="2024.01"/>
   <!-- Identifiant du document -->
   <id root="1.2.250.1.213.1.1.1.12.5.1"/>
   <!-- Type de document -->
@@ -746,6 +747,8 @@
                         codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                       </translation>
                     </code>
+                    <!-- Nom de Spécialité -->
+                    <name>Vaccin contre l'hépatite B</name>
                     <lotNumberText nullFlavor="NA"/>
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -798,6 +801,8 @@
                       <translation code="J07AN" displayName="Vaccin antituberculeux"
                         codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                     </code>
+                    <!-- Nom de Spécialité -->
+                    <name>VACCIN BCG SSI, poudre et solvant pour suspension injectable</name>
                     <lotNumberText nullFlavor="NA"/>
                   </manufacturedMaterial>
                 </manufacturedProduct>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    CI-SIS_OBP-SNE_2023.01.sch    
+    CI-SIS_OBP-SNE_2024.01.sch    
     ......................................................................................................................................................    
     Auteur : ANS
     ......................................................................................................................................................    
@@ -14,11 +14,12 @@
         20/04/2022 : Modification pour version 2022.01
         13/06/2023 : Nouvelle version 2023.01
         22/08/2023 : Ajout du schématron JDV_ModeSortie_OBP-SNE.sch 
+        03/01/2024 : Version 2024.01
 -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SNE_2023.01"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SNE_2024.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SNE_2023.01.sch">
-    <title>Vérification de la conformité au modèle OBP-SNE_2023.01</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SNE_2024.01.sch">
+    <title>Vérification de la conformité au modèle OBP-SNE_2024.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -29,22 +30,22 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/OBP-SNE_2023.01/Entete/Entete_OBP-SNE.sch"/>
+    <include href="include/specificationsVolets/OBP-SNE_2024.01/Entete/Entete_OBP-SNE.sch"/>
     
     <!-- Sections -->   
-    <include href="include/specificationsVolets/OBP-SNE_2023.01/Sections/S_codedDetailedPhysicalExamination_OBP-SNE.sch"/>
+    <include href="include/specificationsVolets/OBP-SNE_2024.01/Sections/S_codedDetailedPhysicalExamination_OBP-SNE.sch"/>
     
     <!-- JDV -->   
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_ModeNaissance_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_TypeInterventionVoieBasse_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_PresentationFoetale_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_QuantiteLA_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_AspectLA_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_CirconstancesDeces_OBP-SNE.sch"/>
-    <!--<include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_GesteReanimationNN_OBP-SNE.sch"/>-->
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_approachSiteCode_OBP-SNE.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_OBP_Result-Evenement.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2023.01/JDV_ModeSortie_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_ModeNaissance_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_TypeInterventionVoieBasse_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_PresentationFoetale_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_QuantiteLA_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_AspectLA_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_CirconstancesDeces_OBP-SNE.sch"/>
+    <!--<include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_GesteReanimationNN_OBP-SNE.sch"/>-->
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_approachSiteCode_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_OBP_Result-Evenement.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2024.01/JDV_ModeSortie_OBP-SNE.sch"/>
     
     
     
@@ -53,7 +54,7 @@
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     
-    <phase id="CI-SIS_OBP-SNE_2023.01">
+    <phase id="CI-SIS_OBP-SNE_2024.01">
         <active pattern="variables"/>
         <p>Vérification complète de la conformité au CI-SIS</p>
         

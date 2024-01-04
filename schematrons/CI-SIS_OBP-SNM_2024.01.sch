@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    CI-SIS_OBP-SNM_2023.01.sch
+    CI-SIS_OBP-SNM_2024.01.sch
     ANS   
     ......................................................................................................................................................    
     Historique :
         13/06/2023 : Création nouvelle version 2023.01
         17/08/2023 : Ajout du schématron du JDV_ModeSortie-OBP-SNM.sch 
+        03/01/2024 : Version 2024.01
               
 -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SNM_2023.01"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_OBP-SNM_2024.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SNM_2023.01.sch">
-    <title>Vérification de la conformité au modèle OBP-SNM_2023.01</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_OBP-SNM_2024.01.sch">
+    <title>Vérification de la conformité au modèle OBP-SNM_2024.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -22,27 +23,27 @@
     <include href="abstract/IVL_TS.sch"/>     
     
     <!--Entete-->    
-    <include href="include/specificationsVolets/OBP-SNM_2023.01/Entete/Entete_OBP-SNM.sch"/>
+    <include href="include/specificationsVolets/OBP-SNM_2024.01/Entete/Entete_OBP-SNM.sch"/>
     
     <!-- Sections -->          
 
     <!-- JDV -->    
      
     <!-- <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_EtatPerinee_OBP-SNM.sch"/> -->   
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_MotifDeclenchementTravail_OBP-SNM.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_Acte_OBP-SNM.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_ModeDebutTravail_OBP-SNM.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_TypeActePostPartum_OBP-SNM.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_TypeAnesthesieApresNaissance_OBP-SNM.sch"/>    
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_TypeAnesthesieAvantNaissance_OBP-SNM.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNM_2023.01/JDV_ModeSortie-OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_MotifDeclenchementTravail_OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_Acte_OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_ModeDebutTravail_OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_TypeActePostPartum_OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_TypeAnesthesieApresNaissance_OBP-SNM.sch"/>    
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_TypeAnesthesieAvantNaissance_OBP-SNM.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNM_2024.01/JDV_ModeSortie-OBP-SNM.sch"/>
     
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     
-    <phase id="CI-SIS_OBP-SNM_2023.01">
+    <phase id="CI-SIS_OBP-SNM_2024.01">
         <active pattern="variables"/>
         <p>Vérification de la conformité au CI-SIS</p>
         
