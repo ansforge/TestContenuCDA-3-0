@@ -22,10 +22,10 @@
             FR-Liste-des-mesures-keratometriques doit contenir l'élément "templateId" avec l'attribut
             @root fixé à "1.3.6.1.4.1.19376.1.12.1.3.4". </assert>
         
-        <assert test="cda:code[@code ='429481000124101' and @codeSystem ='2.16.840.1.113883.6.96']">
+        <assert test="cda:code[@code ='252828005' and @codeSystem ='2.16.840.1.113883.6.96']">
             [E_mesuresKeratometriquesOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
             FR-Liste-des-mesures-keratometriques doit contenir l'élément "code" avec les attributs
-            @code="429481000124101" et @codeSystem="2.16.840.1.113883.6.96".</assert>
+            @code="252828005" et @codeSystem="2.16.840.1.113883.6.96".</assert>
         
         <assert test="cda:statusCode[@code ='completed']"> 
             [E_mesuresKeratometriquesOrganizer_int]
