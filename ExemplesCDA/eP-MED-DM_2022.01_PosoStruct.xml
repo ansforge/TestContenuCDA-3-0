@@ -753,8 +753,8 @@
                     <!-- [0..*] Substances actives -->
                     <pharm:ingredient classCode="ACTI">
                       <pharm:quantity>
-                        <pharm:numerator xsi:type="pharm:PQ" value="500" unit="mg"/>
-                        <pharm:denominator xsi:type="pharm:PQ" value="1"/>
+                        <numerator xsi:type="PQ" value="500" unit="mg"/>
+                        <denominator xsi:type="PQ" value="1"/>
                       </pharm:quantity>                    
                       <pharm:ingredient classCode="MMAT" determinerCode="KIND">
                         <pharm:code code="N02BE01" displayName="paracetamol" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
