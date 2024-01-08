@@ -177,7 +177,7 @@
    <xs:complexType name="COCT_MT230100UV.Ingredient">
       <xs:sequence>
          <xs:group ref="hl7v3:InfrastructureRootElements"/>
-         <xs:element name="quantity" type="RTO_QTY_QTY" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="quantity" type="hl7v3:RTO" minOccurs="0" maxOccurs="1"/>
          <xs:element name="ingredient" type="COCT_MT230100UV.Substance" nillable="true"
                      minOccurs="0"
                      maxOccurs="1"/>
