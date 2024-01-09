@@ -583,8 +583,8 @@
                         </tr>
                         <tr>
                           <td>Prisme - Orientation base</td>
-                          <td ID="prismeOrientationBaseOd">Nasale</td>
-                          <td ID="prismeOrientationBaseOg">Nasale</td>
+                          <td ID="prismeOrientationBaseOd">interne</td>
+                          <td ID="prismeOrientationBaseOg">interne</td>
                         </tr>
                         <tr>
                           <td>Prisme - Axe (deg)</td>
@@ -1701,8 +1701,8 @@
                         </tr>
                         <tr>
                           <td>Prisme - Orientation base</td>
-                          <td ID="prismeOrientationBaseOd1">Nasale</td>
-                          <td ID="prismeOrientationBaseOg1">Nasale</td>
+                          <td ID="prismeOrientationBaseOd1">Interne</td>
+                          <td ID="prismeOrientationBaseOg1">Interne</td>
                         </tr>
                         <tr>
                           <td>Prisme - Axe (deg)</td>
@@ -1940,8 +1940,8 @@
                         </tr>
                         <tr>
                           <td>Prisme - Orientation base</td>
-                          <td ID="prismeOrientationBaseOd2">Nasale</td>
-                          <td ID="prismeOrientationBaseOg2">Nasale</td>
+                          <td ID="prismeOrientationBaseOd2">Interne</td>
+                          <td ID="prismeOrientationBaseOg2">Interne</td>
                         </tr>
                         <tr>
                           <td>Prisme - Axe (deg)</td>
