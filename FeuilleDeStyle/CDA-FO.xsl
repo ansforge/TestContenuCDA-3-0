@@ -43,8 +43,6 @@
 
 
     <xsl:output method="xml" omit-xml-declaration="yes"/>
-
-
     <xsl:strip-space elements="*"/>
 
     <!-- Extension FR : PDF -->
@@ -20750,7 +20748,7 @@
                                     <xsl:with-param name="contact" select="."/>
                                 </xsl:call-template>
                             </xsl:variable>
-                            <xsl:if test="./hl7:telecom and string-length($telExist) > 0">
+                            <xsl:if test="./hl7:telecom">
                                 <tr>
                                     <td style="width: 50%;background-color: white;"
                                         class="span_label"/>
