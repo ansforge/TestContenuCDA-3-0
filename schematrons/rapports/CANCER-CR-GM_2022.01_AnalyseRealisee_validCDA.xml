@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd-validation result="ERROR" errorCount="1">
+<xsd-validation-error errorNumber="1" errorType="validation" lineNumber="63" columnNumber="65">sch-props-correct.2: A schema cannot contain two global components with the same name; this schema contains two occurrences of 'urn:hl7-org:v3,POCD_MT000040.InfrastructureRoot.typeId'.</xsd-validation-error>
+</xsd-validation>
