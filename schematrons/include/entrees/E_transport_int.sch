@@ -21,11 +21,21 @@
            [E_transport_int.sch] Erreur de conformité PCC : L'élément transport doit avoir au moins un élément id
        </assert>
         
+        <assert test="cda:code">
+            [E_transport_int.sch] Erreur de conformité PCC : L'élément transport doit contenir un élément code
+        </assert>
+        
+        <assert test="not(cda:text) or (cda:text/cda:reference)">
+            [E_transport_int.sch] Erreur de conformité PCC : Si l'élément text est présent, il doit avoir un élément reference.
+        </assert>
+        
         <assert test="cda:effectiveTime">
             [E_transport_int.sch] Erreur de conformité PCC : L'élément transport doit contenir un élément effectiveTime
         </assert>
-        <assert test="cda:effectiveTime/cda:low[@value] or cda:effectiveTime/cda:high[@value]">
+        
+        <assert test="(cda:effectiveTime/cda:low[@value] or cda:effectiveTime/cda:high[@value]) or (cda:effectiveTime/cda:high[@nullFlavor='UNK'])">
             [E_transport_int.sch] Erreur de conformité PCC : L'élément effectiveTime doit contenir un élément low et/ou un élément high avec l'attribut @value
+            ou bien Si l’heure d’arrivée n’est pas connue (dans le cas notamment d’un transport projeté), effectiveTime/high prend une valeur @nullflavor="UNK".
         </assert>
         
         

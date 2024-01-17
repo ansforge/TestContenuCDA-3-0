@@ -5,6 +5,7 @@
     
     Historique : 
    04/07/2023 : ANS :  Création
+   11/01/2024 : MAJ du schematron
     
 -->
 
@@ -35,15 +36,24 @@
             - @code="38227‑5" (cardinalité [1..1])
             - @codeSystem="2.16.840.1.113883.6.1" (cardinalité [1..1])
         </assert>           
-        
-        <assert test="cda:statusCode/@code='completed'">
-            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, le statusCode doit présent et fixé à la valeur @code='completed'
-        </assert>
         <assert test="cda:text">
-            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, un élément text doit être présent 
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, un élément text doit être présent. 
         </assert>
+        <assert test="cda:text/cda:reference">
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, l'élément "text/reference" doit être présent. 
+        </assert>
+        <assert test="cda:statusCode/@code='completed'">
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, le statusCode doit être présent et fixé à la valeur @code='completed'.
+        </assert>
+        <assert test="cda:effectiveTime">
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, l'effectiveTime doit être présent.
+        </assert>
+        
         <assert test="cda:value">
-            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, un élément value doit être présent 
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, un élément value doit être présent. 
+        </assert>
+        <assert test="count(cda:entryRelationship[@typeCode='COMP']/observation[cda:templateId/@root='1.2.250.1.213.1.1.3.111'])=6">
+            [E_scoreBraden_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden, l'entrée "FR-Score-Braden-Composant" doit être présente six fois [6..6].
         </assert>
     </rule>
     

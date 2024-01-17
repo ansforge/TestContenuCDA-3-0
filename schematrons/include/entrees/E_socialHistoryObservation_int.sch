@@ -29,11 +29,6 @@
           [E_socialHistoryObservation_int.sch] Erreur de conformité PCC : Dans l'élément "Social History Observation", il doit y avoir au minimum trois templateId
        </assert>
        
-       <!-- 
-       <assert test='not(cda:value) or cda:value[@xsi:type = "PQ" or @xsi:type="CD" or @xsi:type="ANY"]'>
-      [socialHistoryObservation] (Warning) Le type de données des observationdevraient être PQ, CD ou ANY.
-   </assert>
- -->
        <assert test='not(cda:repeatNumber)'>
           [E_socialHistoryObservation_int] Erreur de conformité PCC : L'élément &lt;repeatNumber&gt; devrait être omis.
        </assert>

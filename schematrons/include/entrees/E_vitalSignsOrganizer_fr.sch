@@ -18,10 +18,8 @@
         <assert test="$count_id=1">
             [E_vitalSignsOrganizer_fr] : Erreur de conformité CI-SIS : L'élément id ne peut être présent qu'une seule (cardinalité [1..1])
         </assert>
-        <assert test="cda:code[(@code='F-03400' and @codeSystem='1.2.250.1.213.2.12') or (@code='85353-1' and @codeSystem='2.16.840.1.113883.6.1')]">
-           [E_vitalSignsOrganizer_fr] : Erreur de conformité CI-SIS : L'élément code doit avoir les attributs suivants : 
-           •	code='F-03400' et codeSystem=1.2.250.1.213.2.12 (SNOMED 3.5) ou
-           •	code='85353-1' et codeSystem=2.16.840.1.113883.6.1 (LOINC)
+        <assert test="cda:code[@code='85353-1' and @codeSystem='2.16.840.1.113883.6.1']">
+           [E_vitalSignsOrganizer_fr] : Erreur de conformité CI-SIS : L'élément code doit avoir les attributs suivants : code='85353-1' et codeSystem=2.16.840.1.113883.6.1 (LOINC)
            
        </assert>
     </rule>

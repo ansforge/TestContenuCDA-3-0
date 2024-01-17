@@ -38,11 +38,14 @@
             [E_surveyObservation_int] Erreur de Conformité PCC : L'entrée "Survey Observation" doit avoir une templateId fixé à la valeur @root='2.16.840.1.113883.10.20.1.31' pour respecter la conformité CCD
         </assert>
         
-      
+        <assert test="cda:code"> 
+            [E_surveyObservation_int] Erreur de Conformité PCC :
+            Dans une entrée "Survey Observation", un 'élément "code" est obligatoire (cardinalité [1..1]).
+        </assert>
         
         <assert test="cda:value"> 
             [E_surveyObservation_int] Erreur de Conformité PCC :
-            Dans une entrée "Survey Observation", un 'élément "value" est obligatoire (cardinalité [1..*]).
+            Dans une entrée "Survey Observation", un 'élément "value" est obligatoire (cardinalité [1..1]).
         </assert>
         
         <report test="cda:methodCode">

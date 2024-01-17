@@ -47,51 +47,10 @@
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : l'élément 'effectiveTime' doit être présent.
         </assert>
         
-        <!-- 30/11/2020 : APE : Suppression du contrôle des valeurs car vérifié par schématron JDV générique JDV_vitalSignCode.sch 
-        <assert test='cda:code[
-            @code ="2708-6" or
-            @code ="8280-0" or
-            @code ="8287-5" or
-            @code ="8302-2" or
-            @code ="8306-3" or
-            @code ="8310-5" or
-            @code ="8462-4" or
-            @code ="8480-6" or
-            @code ="8867-4" or
-            @code ="9272-6" or
-            @code ="9274-2" or
-            @code ="9279-1" or
-            @code ="29463-7" or
-            @code ="39156-5"
-            ]'>
-            [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : Le code de l'entrée 'Signe vital observé' doit être :
-            2708-6	pour Saturation en Oxygène
-            8280-0	pour Périmètre abdominal (à l'ombilic)           
-            8287-5	pour Périmètre crânien
-            8302-2	pour Taille
-            8306-3	pour Taille (couché)
-            8310-5	pour Température corporelle
-            8462-4	pour Pression artérielle diastolique
-            8480-6	pour Pression artérielle systolique
-            8867-4	pour Fréquence cardiaque
-            9272-6	pour APGAR à 1mn
-            9274-2	pour APGAR à 5mn 
-            9279-1	pour Fréquence respiratoire
-            29463-7 pour Poids (Mesuré)
-            39156-5	pour Index de masse corporelle (IMC)
-        </assert>
-        -->
-        
 <!--        <!-\- Type PQ des données Vital Signs -\->
         <assert test='cda:value[@xsi:type="PQ"]'>
             [VitalSignsObservationValues] Erreur de conformité PCC : La mesure d'un signe vital utilise le type de données PQ.
         </assert>-->
-        
-        <!-- Poids (Mesuré) -->
-        <assert test='not(cda:code[@code="29463-7"]) or (cda:code[@code="29463-7"] and cda:value[@unit="kg" or @unit="g"])'>
-            [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure du poids (29463-7) 
-            est un nombre indénombrable s'exprimant en grammes (g) ou en kilogrammes (kg).
-        </assert>
         
         <!-- Fréquence respiratoire -->
         <assert test='not(cda:code[@code="9279-1"]) or (cda:code[@code="9279-1"] and cda:value[@unit="/min"])'>

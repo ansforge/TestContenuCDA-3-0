@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  E_scoreBradenComposant_fr.sch
     
-      Vérification de la conformité de l'entrée FR-Score-Braden-Composant (1.2.250.1.213.1.1.3.111) créée par l'ANS
+      Vérification de la conformité de l'entrée FR-Score-Braden-Composant (1.2.250.1.213.1.1.3.111)
     
     Historique : 
    04/07/2023 : ANS :  Création
+   11/01/2024 : MAJ du schematron
     
 -->
 
@@ -35,10 +36,16 @@
         </assert>            
         
         <assert test="cda:statusCode/@code='completed'">
-            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, le statusCode doit présent et fixé à la valeur @code='completed'
+            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, "le statusCode" doit présent et fixé à la valeur @code='completed'
         </assert>
         <assert test="cda:text">
-            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, un élément text doit être présent 
+            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, un élément "text" doit être présent 
+        </assert>
+        <assert test="cda:text/cda:reference">
+            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, l'élément "text/reference" doit être présent. 
+        </assert>
+        <assert test="cda:effectiveTime">
+            [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, un élément "effectiveTime" doit être présent 
         </assert>
         <assert test="cda:value">
             [E_scoreBradenComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Braden-Composant, un élément value doit être présent 

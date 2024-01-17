@@ -28,6 +28,10 @@
           [E_socialHistoryObservation_fr]: Erreur de conformité au CI-SIS : L'élément code est obligatoirement présent une seule fois
        </assert>
        
+       <assert test="count(cda:text[cda:reference/@value])=1">
+          [E_socialHistoryObservation_fr]: Erreur de conformité au CI-SIS : L'élément text/reference est obligatoirement présent une seule fois
+       </assert>
+       
        <assert test="count(cda:statusCode)=1">
           [E_socialHistoryObservation_fr]: Erreur de conformité au CI-SIS : L'élément statusCode est obligatoirement présent une seule fois
        </assert>
@@ -37,7 +41,7 @@
        </assert>
        
        <assert test="cda:value">
-          [E_socialHistoryObservation_fr]: Erreur de conformité au CI-SIS : L'élément value est obligatoirement présent au moins une fois
+          [E_socialHistoryObservation_fr]: Erreur de conformité au CI-SIS : L'élément value est obligatoirement présent [1..1].
        </assert>
        
     </rule>

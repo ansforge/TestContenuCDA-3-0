@@ -25,14 +25,14 @@
         <let name="count_specimen" value="count(cda:specimen)"/>
         <let name="count_performer" value="count(cda:performer)"/>
         <let name="count_participant" value="count(cda:participant)"/>
-        <let name="count_entryRelationShip_act" value="count(cda:entryRelationship/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1.3'])"/>
+        <let name="count_entryRelationShip_dateReception" value="count(cda:entryRelationship/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1.3'])"/>
                 
         <assert test="self::cda:procedure[@classCode='PROC'] and self::cda:procedure[@moodCode='EVN']">
             [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'élément "procedure" de l'entrée "Specimen Procedure Step" doit avoir les attributs @classCode et @moodCode fixés respectivement aux valeurs suivante 'PROC' et 'EVN'
         </assert>
         
-        <assert test='count(cda:code)=1'>
-            [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'entrée "Specimen Procedure Step" doit contenir un élément "code" permettant de la coder(cardinalité [1..1]).
+        <assert test='count(cda:code)&lt;=1'>
+            [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'entrée "Specimen Procedure Step" peut contenir un élément "code" permettant de la coder(cardinalité [0..1]).
         </assert>
        
         <assert test="$count_text &lt;=1">
@@ -63,6 +63,10 @@
             [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'élément "specimen" ne peut être présent qu'une seule fois (cardinalité [0..1])
         </assert>
         
+        <assert test="$count_specimen=0 or ($count_specimen=1 and cda:specimen[@typeCode='SPC']/cda:specimenRole[@classCode='SPEC'])">
+            [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : Si l'élément "specimen" est présent, il doit avoir l'attribut @typeCode='SPC' et l'élément specimenRole dont l'attribut est @classCode='SPEC'.
+        </assert>
+        
         <assert test="$count_performer &lt;=1">
             [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'élément "performer" ne peut être présent qu'une seule fois (cardinalité [0..1])
         </assert>
@@ -71,7 +75,11 @@
             [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'élément "participant" doit être présent au minimum une fois (cardinalité [1..*])
         </assert>
         
-        <assert test="$count_entryRelationShip_act &lt;=1">
+        <assert test="cda:participant[@typeCode='PRD' and @contextControlCode='OP']">
+            [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'élément "participant" doit avoir les attributs @typeCode='PRD' et @contextControlCode='OP'.
+        </assert>
+        
+        <assert test="$count_entryRelationShip_dateReception &lt;=1">
             [E_specimenProcedureStep_int.sch] Erreur de conformité APSR : L'entryRelationship act de templateId '1.3.6.1.4.1.19376.1.3.1.3' (pour décrire le spécimen reçu) ne peut être présente qu'une seule fois au maximum (cardinalité [0..1])
         </assert>
     </rule>

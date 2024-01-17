@@ -19,9 +19,11 @@
           [E_transport_fr.sch] Erreur de conformité CI-SIS : L'élément transport ne doit avoir qu'un seul id (cardinalité [1..1])
       </assert>  
        
-      <assert test="cda:effectiveTime/cda:low[@value] and cda:effectiveTime/cda:high[@value]">
-          [E_transport_fr.sch] Erreur de conformité CI-SIS : L'élément transport doit avoir un élément effectiveTime/low avec un attribut @value et un élément effectiveTime/high avec un attribut @value
-      </assert> 
+        
+        <assert test="cda:effectiveTime/cda:low[@value] or cda:effectiveTime/cda:high[@value] or cda:effectiveTime/cda:high[@nullFlavor='UNK']">
+            [E_transport_fr.sch] Erreur de conformité PCC : L'élément effectiveTime doit contenir un élément low et/ou un élément high avec l'attribut @value
+            ou bien Si l’heure d’arrivée n’est pas connue (dans le cas notamment d’un transport projeté), effectiveTime/high prend une valeur @nullflavor="UNK".
+        </assert>
     
     </rule>
 </pattern>

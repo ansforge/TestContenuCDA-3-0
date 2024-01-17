@@ -22,7 +22,6 @@
        <let name="count_id" value="count(cda:id)"/>
        <let name="count_quantity" value="count(cda:quantity)"/>
         <let name="count_effectiveTime" value="count(cda:effectiveTime)"/>
-        <let name="count_entryRelationShip" value="count(cda:entryRelationship[@typeCode='SUBJ']/cda:act)"/>
        
        
        <assert test="$count_id=1">

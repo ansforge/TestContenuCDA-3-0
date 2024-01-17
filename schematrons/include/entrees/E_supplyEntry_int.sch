@@ -17,6 +17,16 @@
         <let name="count_templateId" value="count(cda:templateId)"/>
         <let name="count_id" value="count(cda:id)"/>
         
+        <assert test='cda:templateId[@root="2.16.840.1.113883.10.20.1.34"]'>
+            [E_supplyEntry_int.sch] Erreur de Conformité PCC : 
+            Dans une entrée 'Prescription', l'OID du template Supply activity (CCD) (2.16.840.1.113883.10.20.1.34) est obligatoire.
+        </assert>
+        
+        <assert test='cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"]'>
+            [E_supplyEntry_int.sch] Erreur de Conformité PCC : 
+            Dans une entrée 'Prescription', l'OID du template(IHE PCC) (1.3.6.1.4.1.19376.1.5.3.1.4.7.3) est obligatoire.
+        </assert>
+        
         <assert test="not(../../cda:entryRelationship) or ../../cda:entryRelationship[@typeCode = 'REFR']">
             [E_supplyEntry_int.sch] Errreur de conformité PCC : Dans l'entrée 'Prescription', l'entryRelationShip doit contenir l'attribut 
             @typeCode fixé à 'REFR'

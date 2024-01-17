@@ -21,7 +21,7 @@
         <let name="count_performer" value="count(cda:performer)"/>
         <let name="count_participant" value="count(cda:participant)"/>
         <let name="count_participant_id" value="count(cda:participant/cda:participantRole/cda:id)"/>
-        <let name="count_entryRelationShip_act" value="count(cda:entryRelationship/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1.3'])"/>
+        <let name="count_entryRelationShip_act" value="count(cda:entryRelationship[@typeCode='COMP']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1.3'])"/>
         
         <assert test="@classCode='PROC' and @moodCode='EVN'">
             [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément procedure de specimen collection doit contenir les attributs @classCode et @moodCode fixés respectivement aux valeurs 'PROC' and 'EVN'
@@ -41,9 +41,6 @@
         <assert test="$count_participant_id=1">
             [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément id de participantRole doit être présent, masi qu'une seule fois (cardinalité [1..1])
         </assert>
-        <!--<assert test="cda:participant/cda:participantRole/cda:playingEntity/cda:code">
-            [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'élément participantRole/playingEntity/code doit être présent
-        </assert>-->
         <assert test="$count_entryRelationShip_act &lt;=1">
             [E_specimenCollection_int.sch] Erreur de conformité PaLM : L'entryRelationShip act de templateId '1.3.6.1.4.1.19376.1.3.1.3' ne peut être présente qu'une seule fois au maximum (cardinalité [0..1])
         </assert>

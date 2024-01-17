@@ -18,8 +18,14 @@
         <assert test="$count_id=1">
             [E_surveyObservation_fr] Erreur de conformité CI-SIS : L'élément Survey Observation doit contenir un seul id (cardinalité [1..1])
         </assert>
+        <assert test="cda:text/cda:reference">
+            [E_surveyObservation_fr] Erreur de conformité CI-SIS : L'élément Survey Observation doit avoir un élément text/reference.
+        </assert>
         <assert test="cda:statusCode[@code='completed']">
             [E_surveyObservation_fr] Erreur de conformité CI-SIS : L'élément Survey Observation doit avoir un statusCode dont la valeur est fixée à @code='completed'
+        </assert>
+        <assert test="cda:effectiveTime">
+            [E_surveyObservation_fr] Erreur de conformité CI-SIS : L'élément Survey Observation doit avoir un élément effectiveTime.
         </assert>
         
     </rule>

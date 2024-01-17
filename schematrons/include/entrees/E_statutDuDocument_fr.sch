@@ -7,6 +7,7 @@
     
     Historique :
     27/05/2021 : SBM : Création
+    09/01/2024 : Ajout du test sur l'élément "text" 
     
 -->
 
@@ -30,6 +31,12 @@
         <assert test='cda:code/@code="GEN-065"'>
             [E_statutDuDocument_fr] Erreur de Conformité CI-SIS:
             L'élément 'code' doit être obligatoirement 'GEN-065'.</assert>
+        
+        <assert test="cda:text">
+            [E_statutDuDocument_fr] Erreur de Conformité CI-SIS: L'élément "text" doit être présent.</assert>
+        
+        <assert test="cda:text/cda:reference">
+            [E_statutDuDocument_fr] Erreur de Conformité CI-SIS: L'élément "reference" doit être présent.</assert>
         
         <assert test="cda:effectiveTime"> 
             [E_statutDuDocument_fr] Erreur de conformité CI-SIS : L'élément "effectiveTime" doit être présent.

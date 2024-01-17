@@ -5,6 +5,7 @@
     
     Historique : 
    04/07/2023 : ANS :  Création
+   11/01/2024 : MAJ du schematron
     
 -->
 
@@ -36,12 +37,21 @@
             - @codeSystem="2.16.840.1.113883.6.1" (cardinalité [1..1])
         </assert>            
         
-        <assert test="cda:statusCode/@code='completed'">
-            [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, le statusCode doit présent et fixé à la valeur @code='completed'
-        </assert>
         <assert test="cda:text">
             [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, un élément text doit être présent 
         </assert>
+        <assert test="cda:text/cda:reference">
+            [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, un élément "text/reference" doit être présent 
+        </assert>
+        
+        <assert test="cda:statusCode/@code='completed'">
+            [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, le statusCode doit présent et fixé à la valeur @code='completed'
+        </assert>
+        
+        <assert test="cda:effectiveTime">
+            [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, l'effectiveTime doit être présent.
+        </assert>
+        
         <assert test="cda:value">
             [E_scoreDepressionGeriatique_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-Depression-Geriatrique, un élément value doit être présent 
         </assert>

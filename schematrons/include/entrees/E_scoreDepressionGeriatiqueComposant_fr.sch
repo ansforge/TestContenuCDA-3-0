@@ -5,6 +5,7 @@
     
     Historique : 
    04/07/2023 : ANS :  Création
+   11/01/2024 : MAJ du schematron
     
 -->
 
@@ -35,10 +36,16 @@
         </assert>            
         
         <assert test="cda:statusCode/@code='completed'">
-            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, le statusCode doit présent et fixé à la valeur @code='completed'
+            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, "le statusCode" doit présent et fixé à la valeur @code='completed'
         </assert>
         <assert test="cda:text">
-            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, un élément text doit être présent 
+            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, un élément "text" doit être présent 
+        </assert>
+        <assert test="cda:text/cda:reference">
+            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, un élément "text/reference" doit être présent 
+        </assert>
+        <assert test="cda:effectiveTime">
+            [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, l'élément "effectiveTime" doit être présent.
         </assert>
         <assert test="cda:value">
             [E_scoreDepressionGeriatiqueComposant_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Score-depression-geriatrique-composant, un élément value doit être présent 
