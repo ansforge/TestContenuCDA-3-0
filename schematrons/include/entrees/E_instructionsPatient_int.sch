@@ -21,7 +21,7 @@
             
             <let name="count_ER_InstructPatient" value="count(//self::cda:entryRelationship[cda:act[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3']]])"/>
             
-            <assert test="cda:templateId[@root='2.16.840.1.113883.10.20.1.49']">
+            <assert test="cda:templateId[@root='2.16.840.1.113883.10.20.1.49'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3']">
                 [1] [E_instructionsPatient_fr.sch] Erreur de conformité IHE PCC : 
                 L'entrée FR-Instructions-au-patient doit avoir deux 'templateId' :
                 - Un premier 'templateId' @root="1.3.6.1.4.1.19376.1.5.3.1.4.3"

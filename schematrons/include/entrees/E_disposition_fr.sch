@@ -37,6 +37,11 @@
             Une entrée 'FR_Disposition' doit comporter le code 11302-7.
         </assert>
         
+        <assert test="count(cda:entryRelationship[@typeCode='COMP']/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.10.4.1'])&lt;=1">
+            [E_disposition_fr] Erreur de Conformité CI-SIS :
+            Une entrée 'FR_Disposition' peut comporter une entryRelationship de type act avec l'attribut @typeCode='COMP' et le templateId '1.3.6.1.4.1.19376.1.5.3.1.1.10.4.1'.
+        </assert>
+        
     </rule>
     
 </pattern>

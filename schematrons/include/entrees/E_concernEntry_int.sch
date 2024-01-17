@@ -51,9 +51,9 @@
                 Une valeur nullFlavor est acceptée. Autrement, son composant "low" est obligatoire.</assert>
             
             <assert test='(cda:effectiveTime[@nullFlavor]) or ((cda:statusCode[@code="completed" or @code="aborted"] and cda:effectiveTime/cda:high) or
-                (cda:statusCode[@code="active" or @code="suspended"] and not(cda:effectiveTime/cda:high)))'>
-                [E_concernEntry_int] Dans une entrée "Etat clinique" (Concern Entry), l'élément "effectiveTime" indique le début et la fin de l'élément décrit.
-                Une valeur nullFlavor est acceptée. Autrement, son composant "high" est obligatoire si le statutCode est "completed" ou "aborted" et absent si le statutCode est "active" ou "suspended".
+                (not(cda:statusCode[@code="completed" or @code="aborted"]) and not(cda:effectiveTime/cda:high)))'>
+                [E_concernEntry_int] Dans une entrée allergiesAndIntoleranceConcern, l'élément "effectiveTime" indique le début et la fin de l'élément décrit.
+                Une valeur nullFlavor est acceptée. Autrement, son composant "high" est obligatoire si le statutCode est "completed" ou "aborted" et absent absent dans les autres cas.
             </assert>
             
             <assert test='(cda:entryRelationship[@typeCode="SUBJ"] and cda:entryRelationship/*/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.5" or @root="1.3.6.1.4.1.19376.1.5.3.1.4.6"]) or  

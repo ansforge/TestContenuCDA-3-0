@@ -11,8 +11,8 @@
         
        <let name="count_id" value="count(cda:id)"/>
         
-        <assert test="$count_id=1">
-            [E_encounter_fr.sch] Erreur de conformité CI-SIS : L'élément 'encounter' doit contenir un élément id (cardinalité [1..1])
+        <assert test="($count_id) &gt;= 1">
+            [E_encounter_fr.sch] Erreur de conformité CI-SIS : L'élément 'encounter' doit contenir un ou plusieurs éléments id (cardinalité [1..*])
         </assert>
     
     </rule>

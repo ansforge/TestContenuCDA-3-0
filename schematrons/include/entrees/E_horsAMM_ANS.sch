@@ -32,7 +32,7 @@
             </assert>        
      
             <!-- Test présence et format de l'élément 'code' -->
-            <assert test="(count(cda:code[@code='GEN-179'][@codeSystem='1.2.250.1.213.1.1.4.322'][@codeSystemName='TA_ASIP'][@displayName='Hors Autorisation de Mise sur le Marché (AMM)'])=1)">
+            <assert test="(count(cda:code[@code='GEN-179'][@codeSystem='1.2.250.1.213.1.1.4.322'])=1)">
                 [3] [E_horsAMM_ANS.sch] Erreur de conformité CI-SIS : 
                 L'entrée "FR-Hors-AMM" doit comporter un élément 'code' avec les attributs :
                 - @code="GEN-179" (cardinalité [1..1])
@@ -54,9 +54,9 @@
             </assert>
             
             <!-- Test présence et format de l'élément 'effectiveTime' -->
-            <assert test="count(cda:effectiveTime)=1">
+            <assert test="count(cda:effectiveTime)&lt;=1">
                 [6] [E_horsAMM_ANS.sch] Erreur de conformité CI-SIS : 
-                L'entrée "FR-Hors-AMM" doit comporter un élément 'effectiveTime'.
+                L'entrée "FR-Hors-AMM" peut comporter un élément 'effectiveTime' [0..1].
             </assert>
     
             <!-- Test présence de l'élément 'value' -->

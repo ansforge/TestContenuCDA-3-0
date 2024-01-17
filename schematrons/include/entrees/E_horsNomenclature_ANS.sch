@@ -41,6 +41,12 @@
             L'entrée "FR-Hors-nomenclature" doit comporter un élément 'text/reference'. 
         </assert>
         
+        <!-- Test présence et format de l'élément 'effectiveTime' -->
+        <assert test="count(cda:effectiveTime)&lt;=1">
+            [6] [E_horsNomenclature_ANS.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Hors-nomenclature" peut comporter un élément 'effectiveTime' [0..1].
+        </assert>
+        
         <!-- Test de la présence de l'élément 'statusCode' -->
         <assert test="(count(cda:statusCode[@code='completed'])=1)">
            [E_horsNomenclature_ANS.sch] Erreur de conformité CI-SIS :  

@@ -67,9 +67,9 @@
             [E_familyHistoryOrganizer_int] Erreur PCC : L'élément "playingEntity" est présent et identifie la relation.
             Il prendra la valeur &lt;playingEntity classCode='PSN'&gt;.
         </assert>
-        <assert test='.//cda:component[@typeCode="COMP"]/cda:observation/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"]'>
+        <assert test='count(.//cda:component[@typeCode="COMP"]/cda:observation/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"]) &gt;=1'>
             [E_familyHistoryOrganizer_int] Erreur PCC : L'organizer Family History contient un ou plusieurs éléments component avec un typeCode fixé à "COMP". 
-            Ces éléments se conforment au template "Family History Observation".
+            Ces éléments se conforment au template "Family History Observation" : "1.3.6.1.4.1.19376.1.5.3.1.4.13.3".
         </assert>     
 
         

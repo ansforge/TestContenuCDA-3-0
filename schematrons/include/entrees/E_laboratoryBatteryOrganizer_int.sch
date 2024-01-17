@@ -24,8 +24,8 @@
             [E_laboratoryBatteryOrganizer_int.sch] Erreur de conformité PaLM : L'élément laboratory battery organizer ne peut pas contenir plus d'un seul id (cardinalité [0..1])
         </assert>
         
-        <assert test="cda:statusCode[@code='completed' or @code='aborted']">
-            [E_laboratoryBatteryOrganizer_int.sch] Erreur de conformité PaLM : L'élément laboratory battery organizer doit contenir un statusCode avec l'attribut @code quqi prend les valeurs 'completed' ou 'aborted'
+        <assert test="cda:statusCode[@code='completed' or @code='aborted' or @code='active' or @code='obsolete']">
+            [E_laboratoryBatteryOrganizer_int.sch] Erreur de conformité PaLM : L'élément laboratory battery organizer doit contenir un statusCode avec l'attribut @code quqi prend les valeurs 'completed' ou 'aborted' ou 'active' ou 'obsolete'.
         </assert>
     </rule>
     <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.3.1']/cda:act/cda:subject">

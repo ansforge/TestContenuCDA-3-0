@@ -19,16 +19,15 @@
             [E_doseAntigene_fr] Erreur de conformité CI-SIS : Dans l'entrée FR-Dose-antigene(1.2.250.1.213.1.1.3.46), 
             les attributs de l'élément CDA 'substanceAdministration' sont classCode='SBADM' et moodCode='EVN' et negationInd='false'</assert>
         
-        <assert test='count(cda:id)&gt;=1'>
-            [E_doseAntigene_fr] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une ou plusieurs fois [1..*].
+        <assert test='count(cda:id)=1'>
+            [E_doseAntigene_fr] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une fois [1..1].
         </assert>
         
         <!-- Test des templateId pour l'entrée "FR-Dose-antigene" -->
-        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.3.46'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.12.1']">
+        <assert test="count(cda:templateId[@root='1.2.250.1.213.1.1.3.46'])&lt;=1">
             [1] [E_doseAntigene_fr.sch] Erreur de conformité CI-SIS : 
-            L'entrée "FR-Dose-antigene" doit comporter les 'templateId' suivants:
-            - Un premier 'templateId' dont l'attribut @root="1.2.250.1.213.1.1.3.46"
-            - Un deuxième 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.12.1" 
+            L'entrée "FR-Dose-antigene" peut comporter le 'templateId' suivant:
+            - Un 'templateId' dont l'attribut @root="1.2.250.1.213.1.1.3.46" qui peut être présent [0..1].
         </assert>
         
         <assert test="cda:doseQuantity"> 

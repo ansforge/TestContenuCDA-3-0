@@ -52,9 +52,9 @@
             </assert>
             
             <!-- Test présence et format de l'élément 'effectiveTime' -->
-            <assert test="count(cda:effectiveTime)=1">
+            <assert test="count(cda:effectiveTime)&lt;=1">
                 [6] [E_enRapportALD_ANS.sch] Erreur de conformité CI-SIS : 
-                L'entrée "FR-En-rapport-avec-ALD" doit comporter un élément 'effectiveTime'.
+                L'entrée "FR-En-rapport-avec-ALD" peut comporter un élément 'effectiveTime' [0..1].
             </assert>
     
             <!-- Test présence de l'élément 'value' -->

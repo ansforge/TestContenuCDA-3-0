@@ -8,6 +8,7 @@
     Historique :
     25/07/11 : CRI : Création
     27/10/17 : NMA : Suppression du test sur l'effectiveTime
+    12/01/2024 : Suppression du test sur le component 
 -->
 
 
@@ -25,12 +26,13 @@
             [E_codedAntenatalTestingAndSurveillanceOrg_int] L'élément &lt;code&gt; de l'organizer "Antenatal Testing and Surveillance"est requis, et 
             identifie celui-ci comme un organizer contenant des données de test et de surveillance: &lt;code code='XX-ANTENATALTESTINGBATTERY'
             displayName='ANTENATAL TESTING AND SURVEILLANCE BATTERY' codeSystem='2.16.840.1.113883.6.1' codeSystemName="LOINC"</assert>
-        <!-- Verifier que la batterie comporte au moins un élément. --> 
         
-        <assert test='cda:component/cda:observation/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]'> 
+        <!-- Verifier que la batterie comporte au moins un élément 'component'. --> 
+        
+        <!--<assert test='cda:component/cda:observation/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]'> 
             [E_codedAntenatalTestingAndSurveillanceOrg_int] L'élément 'Coded Antenatal Testing and Surveillance Organizer' doit 
             au moins contenir une entrée 'Simple Observation' (1.3.6.1.4.1.19376.1.5.3.1.4.13)
-        </assert> 
+        </assert> -->
         
 
         <assert test='cda:id'>

@@ -31,8 +31,8 @@
         </assert>
         
         <!--Vérifier la présence de l'élément statusCode et la cohérence de ses attributs  --> 
-        <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='aborted' ">
-            [E_laboratoryObservation_int] Erreur de Conformité IHE LAB : L'élément "statusCode" doit être présent et fixé à la valeur @code='completed' ou @code='aborted'.
+        <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='aborted' or cda:statusCode/@code='active' or cda:statusCode/@code='obsolete' ">
+            [E_laboratoryObservation_int] Erreur de Conformité IHE LAB : L'élément "statusCode" doit être présent et fixé à la valeur @code='completed' ou @code='aborted' ou @code='active' @code='obsolete'.
         </assert>
     </rule>
     

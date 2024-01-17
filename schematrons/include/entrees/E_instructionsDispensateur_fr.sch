@@ -12,7 +12,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_instructionsDispensateur_fr">
     <title>CI-SIS Entrée "FR-Instructions-au-dispensateur"</title> 
   
-    <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']">
+    <rule context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.34']">
      
         <!-- Test des templateId pour l'entrée "FR-Instructions-au-dispensateur" -->
         <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1'] and cda:templateId[@root='2.16.840.1.113883.10.20.1.43']">

@@ -13,7 +13,7 @@
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.1.13.3.2"]'>
         
         <assert
-            test="self::cda:substanceAdministration[@classCode='SBADM']">
+            test="self::cda:substanceAdministration[@classCode='SBADM' and (@moodCode='EVN' or @moodCode='INT')]">
             [E_fluideIntraveineux_int.sch] Erreur de conformité CI-SIS : Dans l'entrée IHEIntravenousFluids, les attributs @classCode, @moodCode de l'élément observation sont fixés resectivement aux valeurs 'SBADM', 'EVN' ou 'INT' </assert>
         
         <assert test='count(cda:id)=1'>
@@ -27,12 +27,15 @@
             - 1.3.6.1.4.1.19376.1.5.3.1.4.7
             - 1.3.6.1.4.1.19376.1.5.3.1.4.7.1
         </assert>
-        
         <!-- Test présence et format de l'élément 'code' -->
         <assert test="count(cda:code)=1">
             [E_fluideIntraveineux_int.sch] Erreur de conformité CI-SIS : 
             L'entrée "IHEIntravenousFluids" doit comporter un élément 'code'
         </assert> 
+        <assert test="count(cda:text/cda:reference[@value])=1">
+            [E_fluideIntraveineux_int.sch] Erreur de Conformité CI-SIS :
+            Une entrée 'IHEIntravenousFluids' doit comporter un seul élément 'text' avec une 'reference'.
+        </assert>
         <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='active'">
             [E_fluideIntraveineux_int.sch] Erreur de conformité CI-SIS : Dans l'entrée IHEIntravenousFluids, le statusCode doit présent et fixé à la valeur @code='completed' ou  @code='active'
         </assert>

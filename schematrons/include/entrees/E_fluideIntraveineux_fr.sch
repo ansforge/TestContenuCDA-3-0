@@ -33,6 +33,10 @@
             [E_fluideIntraveineux_fr.sch] Erreur de conformité CI-SIS : 
             L'entrée "FR-Fluide-intraveineux" doit comporter un élément 'code'
         </assert> 
+        <assert test="count(cda:text/cda:reference[@value])=1">
+            [E_fluideIntraveineux_fr.sch] Erreur de Conformité CI-SIS :
+            Une entrée 'FR-Fluide-intraveineux' doit comporter un seul élément 'text' avec une 'reference'.
+        </assert>
         <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='active'">
             [E_fluideIntraveineux_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fluide-intraveineux, le statusCode doit présent et fixé à la valeur @code='completed' ou  @code='active'
         </assert>
@@ -44,6 +48,14 @@
         </assert>
         <assert test="count(cda:consumable)=1">
             [E_fluideIntraveineux_fr.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fluide-intraveineux, il doit y avoir un élément consumable (cardinalité [1..1])
+        </assert>
+        <assert test="count(cda:entryRelationship[@typeCode='REFR']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3'])&lt;2">
+            [E_fluideIntraveineux_fr.sch] Erreur de conformité CI-SIS : 
+            Dans une entrée 'FR-Fluide-intraveineux', il ne peut y avoir qu'un seul élément 'entryRelationship' (typeCode 'REFR') décrivant le lien avec la prescription (entrée de type 'supply' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.7.3").
+        </assert>
+        <assert test="count(cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2'])&lt;2">
+            [E_fluideIntraveineux_fr.sch] Erreur de conformité CI-SIS : L'élément entryRelationship représentant le commentaire ne peut être présent qu'une fois
+            Dans une entrée 'FR-Fluide-intraveineux', il ne peut y avoir qu'un seul élément 'entryRelationship' (typeCode 'SUBJ') portant un commentaire (entrée de type 'act' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.2").            
         </assert>
     </rule>
     

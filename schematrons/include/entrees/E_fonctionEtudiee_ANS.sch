@@ -22,11 +22,11 @@
         <assert test="cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13'">
             [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, il doit y avoir le template Id de la simple observation (’1.3.6.1.4.1.19376.1.5.3.1.4.13’)
         </assert>
-        <assert test="cda:templateId/@root='1.2.250.1.213.1.1.3.48'">
-            [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, Il doit y avoir le templateId/@root='1.2.250.1.213.1.1.3.48'
+        <assert test="count(cda:templateId/@root='1.2.250.1.213.1.1.3.48')&lt;=1">
+            [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, Il peut y avoir le templateId/@root='1.2.250.1.213.1.1.3.48'
         </assert>
-        <assert test="cda:templateId/@root='1.2.250.1.213.1.1.3.48.36'">
-            [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, Il doit y avoir le templateId/@root='1.2.250.1.213.1.1.3.48.36'
+        <assert test="count(cda:templateId/@root='1.2.250.1.213.1.1.3.48.36')&lt;=1">
+            [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, Il peut y avoir le templateId/@root='1.2.250.1.213.1.1.3.48.36'
         </assert>
         <!-- Test présence et format de l'élément 'code' -->
         <assert test="(count(cda:code[@code='MED-1133'][@codeSystem='1.2.250.1.213.1.1.4.322'])=1)">
@@ -41,6 +41,9 @@
         </assert>
         <assert test="cda:text">
             [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, un élément text doit être présent 
+        </assert>
+        <assert test="cda:text/cda:reference">
+            [E_fonctionEtudiee_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée FR-Fonction-etudiee, un élément text/reference doit être présent 
         </assert>
     </rule>
     

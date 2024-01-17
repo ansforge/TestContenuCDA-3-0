@@ -6,6 +6,7 @@
      ......................................................................................................................................................
      Historique :
         - 03/07/2023 : Création
+        10/01/2024 : MAJ du schematron 
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_historiqueDesProfessions_fr">
@@ -24,24 +25,45 @@
             Dans l'entrée "FR-Historique-des-professions", l'élément id doit etre présent une ou plusiers fois [1..*].
         </assert>
         <!-- Test de la conformité du <code> -->
-        <assert test="cda:code">
+        <assert test="count(cda:code)=1 and cda:code/@code='11341-5'">
             [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
-            Dans l'entrée "FR-Historique-des-professions", l'élément code est obligatoire [1..1].
+            Dans l'entrée "FR-Historique-des-professions", l'élément "code" est obligatoire [1..1], avec les attributs :
+            - @code="11341-5" (cardinalité [1..1])
+            - @codeSystem="2.16.840.1.113883.6.1" (cardinalité [1..1])
         </assert>
         <!-- Test de la conformité du <statusCode> -->
-        <assert test="cda:statusCode">
+        <assert test="cda:statusCode[@code = 'completed' or @code ='active']">
             [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
-            Dans l'entrée "FR-Historique-des-professions", l'élément statusCode est obligatoire [1..1].
+            Dans l'entrée "FR-Historique-des-professions", l'élément "statusCode" est obligatoire [1..1] avec l'attribut @code =
+            "completed" pour les professions passées.
+            "active" pour les professions en cours.
+            
         </assert>
         <!-- Test de la conformité du <effectiveTime> -->
         <assert test="cda:effectiveTime">
             [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
-            Dans l'entrée "FR-Historique-des-professions", l'élément code est obligatoire [1..1].
+            Dans l'entrée "FR-Historique-des-professions", l'élément "effectiveTime" est obligatoire [1..1].
+        </assert>
+        <assert test="cda:effectiveTime/cda:low">
+            [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
+            Dans l'entrée "FR-Historique-des-professions", le sous élément "low" est obligatoire [1..1].
         </assert>
         <!-- Test de la conformité du <value> -->
         <assert test="cda:value">
             [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
-            Dans l'entrée "FR-Historique-des-professions", l'élément code est obligatoire [1..1].
+            Dans l'entrée "FR-Historique-des-professions", l'élément "value" est obligatoire [1..1].
+        </assert>
+        
+        <!-- Test de la conformité du <participant> -->
+        <assert test="cda:participant">
+            [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
+            Dans l'entrée "FR-Historique-des-professions", l'élément "participant" est obligatoire [1..1].
+        </assert>
+        
+        <assert test="cda:participant/cda:participantRole">
+            [E_historiqueDesProfessions_fr.sch] Erreur de conformité CI-SIS : 
+            Dans l'entrée "FR-Historique-des-professions", l'élément "participant/participantRole est obligatoire.
+            @codeSystemName='IHERoleCode'
         </assert>
     </rule>
     

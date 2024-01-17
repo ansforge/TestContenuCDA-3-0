@@ -2,14 +2,14 @@
 
 <!--                 
     E_DICOMAdministrationProduitDeSante_int
-   Teste la conformité de l'entrée FR-DICOM-Administration-produit-de-sante aux spécifications DICOM
+   Teste la conformité de l'entrée Procedural Medication aux spécifications DICOM
    
    10/07/2023 : Création
    
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_DICOMAdministrationProduitDeSante_int">
-    <title>Vérification de la conformité de l'entrée FR-DICOM-Administration-produit-de-sante aux spécifications DICOM</title>
+    <title>Vérification de la conformité de l'entrée Procedural Medication aux spécifications DICOM</title>
     <rule context="*[cda:templateId/@root = '1.2.840.10008.9.13']">
         
         <assert test="self::cda:substanceAdministration[@classCode ='SBADM' and (@moodCode = 'EVN' or @moodCode='INT')] ">
@@ -20,29 +20,35 @@
         </assert>
         
         <assert test="cda:templateId[@root = '1.2.840.10008.9.13']">
-            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée FR-DICOM-Administration-produit-de-sante
+            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication
             doit contenir l'élément "templateId" avec l'attribut @root fixé à
             "1.2.840.10008.9.13". 
         </assert>
         
-        <assert test="cda:templateId[@root = '1.2.250.1.213.1.1.3.151']">
-            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée FR-DICOM-Administration-produit-de-sante
-            doit contenir l'élément "templateId" avec l'attribut @root fixé à
-            "1.2.250.1.213.1.1.3.151". 
-        </assert>
-        
-        <assert test="count(cda:id)&lt;=1"> 
-           [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée FR-DICOM-Administration-produit-de-sante doit contenur un élement "id". 
+        <assert test="count(cda:id)=1"> 
+           [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication doit contenur un élement "id". 
         </assert>
         
         <assert test="cda:statusCode[@code = 'completed']"> 
             [E_DICOMAdministrationProduitDeSante_int]
-            Erreur de conformité DICOM: L'entrée FR-DICOM-Administration-produit-de-sante doit contenir l'élément "statusCode" avec
+            Erreur de conformité DICOM: L'entrée Procedural Medication doit contenir l'élément "statusCode" avec
             l'attribut @code fixé à 'completed'.
         </assert>
         
-        <assert test="count(cda:consumable)&lt;=1"> 
-            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée FR-DICOM-Administration-produit-de-sante doit contenir un élément "consumable".
+        <assert test="count(cda:routeCode)&lt;=1"> 
+            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication peut contenir un élément "routeCode".
+        </assert>
+        
+        <assert test="count(cda:doseQuantity)&lt;=1"> 
+            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication peut contenir un élément "doseQuantity".
+        </assert>
+        
+        <assert test="count(cda:rateQuantity)&lt;=1"> 
+            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication peut contenir un élément "rateQuantity".
+        </assert>
+        
+        <assert test="count(cda:consumable)=1"> 
+            [E_DICOMAdministrationProduitDeSante_int] Erreur de conformité DICOM : L'entrée Procedural Medication doit contenir un élément "consumable".
         </assert>
         
         <assert test="cda:consumable/cda:manufacturedProduct"> 

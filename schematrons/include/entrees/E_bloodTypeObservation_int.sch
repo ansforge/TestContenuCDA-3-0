@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--                 
-    E_vitalSignsOrganizer_int
+    E_bloodTypeObservation_int
    Teste la conformité de l'entrée Vital Signs Organizer en fonctionn de la conformité IHE-PCC
    
    20/06/2017 : LBE :Création
    30/01/2020 : NMA : Mise à jour du test sur le nombre de templateId
+   12/12/2023 : ANS Mise à jour
    
 -->
 

@@ -48,6 +48,12 @@
         <assert test='count(cda:participant)=1'>
             [E_dateRetraite_fr] : Erreur de conformité CI-SIS : L'élément participant doit être présent une fois [1..1].
         </assert>
+        <assert test='not(cda:participant/cda:participantRole/cda:playingEntity) or (cda:participant/cda:participantRole/cda:playingEntity[@classCode="PLC" and @determineCode="INST)"])'>
+            [E_dateRetraite_int] : Erreur de conformité CI-SIS : Les attributs de l'élément "playingEntity" prennent les valeurs suivantes 
+            •	@classCode="PLC"
+            •	@determinerCode="INST"
+            
+        </assert>
     </rule>
     
 </pattern>

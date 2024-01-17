@@ -45,7 +45,9 @@
         <assert test='cda:code[@code and @codeSystem]'>
             [E_immunizations_int.sch] Erreur de Conformité PCC : 
             Dans une entrée 'Immunization', l'élément 'code' (type de vaccination) est obligatoire. Les attributs 'code' et 'codeSystem' sont obligatoires. 
-            Le type de vaccination permet de préciser s'il s'agit d'un primo-vaccination ou d'un rappel. Si l'information n'est pas connue, utiliser le code='IMMUNIZ' (vaccination sans autre précision).             
+            Le type de vaccination permet de préciser s'il s'agit d'un primo-vaccination ou d'un rappel. 
+            Si l'information n'est pas connue, utiliser le code='no-immunization-info' et des nullFlavor="NA" dans les éléments obligatoires de l’entrée.             
+            Si pas de vaccinations, utiliser le code='no-known-immunizations' et des nullFlavor="NA" dans les éléments obligatoires de l’entrée.             
         </assert>
         
         <assert test='cda:statusCode[@code="completed"]'>
@@ -62,7 +64,7 @@
         <assert test='cda:consumable//cda:manufacturedProduct//cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"]'>
             [E_immunizations_int.sch] Erreur de Conformité PCC :  
             Dans une entrée 'Immunization', l'élément 'consumable' est obligatoire.
-            Il doit comporter une entrée 'manufacturedProduc' conforme au template 'Product Entry template' (1.3.6.1.4.1.19376.1.5.3.1.4.7.2).
+            Il doit comporter une entrée 'manufacturedProduct' conforme au template 'Product Entry template' (1.3.6.1.4.1.19376.1.5.3.1.4.7.2).
         </assert>
     </rule>
       

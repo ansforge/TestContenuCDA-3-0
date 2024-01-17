@@ -31,8 +31,8 @@
             [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée Dispositif médical, il doit y avoir un seul (et un seul) 'effectiveTime'. Si la date n’est pas connue, utiliser la valeur nullFlavor="UNK".
         </assert>
         
-        <assert test="cda:participant">
-            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée Dispositif médical, au moins un élément 'participant' est obligatoire.
+        <assert test="cda:participant[@typeCode='DEV']">
+            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée Dispositif médical, au moins un élément 'participant' est obligatoire avec un attribut @typeCode="DEV".
         </assert>
         
         <assert test="count(cda:participant/cda:participantRole[@classCode='MANU'])=1">
@@ -44,6 +44,25 @@
             [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Dans l'entrée Dispositif médical, il doit y avoir un seul (et un seul) élément 'participant/participantRole/playingDevice' avec les attributs @classCode et @determinerCode respectivement fixés aux valeurs 'DEV' et 'INSTANCE'.
         </assert>
         
+        <assert test="not(cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.13']) or cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']/cda:code[@code='MED-574']">
+            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Si l'entrée 'FR-En-rapport-avec-ALD' est présente, l'attribut @typeCode doit avoir la valeur suivante 'COMP'.
+            L'élément code de l'entrée 'FR-En-rapport-avec-ALD' est obligatoire [1..1] et doit avoir comme attribut @code='MED-574'.
+        </assert>
+        
+        <assert test="not(cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.14']) or cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.14']/cda:code[@code='GEN-180']">
+            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Si l'entrée 'FR-En-rapport-avec-accident-travail' est présente, l'attribut @typeCode doit avoir la valeur suivante 'COMP'.
+            L'élément code de l'entrée 'FR-En-rapport-avec-accident-travail' est obligatoire [1..1] et doit avoir comme attribut @code='GEN-180'.
+        </assert>
+        
+        <assert test="not(cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.34']) or cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.34']/cda:code[@code='GEN-295']">
+            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Si l'entrée 'FR-En-rapport-avec-la-prevention' est présente, l'attribut @typeCode doit avoir la valeur suivante 'COMP'.
+            L'élément code de l'entrée 'FR-En-rapport-avec-la-prevention' est obligatoire [1..1] et doit avoir comme attribut @code='GEN-295'.
+        </assert>
+        
+        <assert test="not(cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.215']) or cda:entryRelationship[@typeCode='COMP']/cda:observation[cda:templateId/@root='1.2.250.1.213.1.1.3.48.215']/cda:code[@code='GEN-181']">
+            [E_dispositifMedical-2_ANS.sch] Erreur de conformité CI-SIS : Si l'entrée 'FR-En-rapport-avec-la-prevention' est présente, l'attribut @typeCode doit avoir la valeur suivante 'COMP'.
+            L'élément code de l'entrée 'FR-Non-remboursable' est obligatoire [1..1] et doit avoir comme attribut @code='GEN-181'.
+        </assert>
     </rule> 
 
 </pattern>

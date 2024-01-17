@@ -28,8 +28,8 @@
             [E_laboratoryReportDataProcessing.sch] Erreur de conformité PaLM : L'élément statusCode doit être présent et possèder l'attribut @code prenant l'une des valeurs suivantes : completed, active ou aborted
         </assert>
         
-        <assert test="cda:act/cda:entryRelationship[@typeCode='COMP']">
-            [E_laboratoryReportDataProcessing.sch] Erreur de conformité PaLM : l'entrée Laboratory Report Data processing doit contenir au moins une entryRelationship dont l'attribut @typeCode est fixé à 'COMP'.
+        <assert test="not(cda:act/cda:effectiveTime) or (cda:act/cda:effectiveTime and cda:act/cda:effectiveTime/cda:low and cda:act/cda:effectiveTime/cda:high)">
+            [E_laboratoryReportDataProcessing.sch] Erreur de conformité PaLM : Si l'élément effectiveTime présent, il doit obligatoirement possèder l'élément low et high.
         </assert>
         
     </rule>

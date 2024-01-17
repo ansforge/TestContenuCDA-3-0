@@ -32,9 +32,6 @@
             [E_familyHistoryObservation_int] : L'élément code doit être présent.
         </assert>
         
-<!--        <assert test='cda:value[@xsi:type="CD"]'>
-            [E_familyHistoryObservation_int] : L'élément value doit être de type xsi:type="CD".
-        </assert>-->
     </rule>
     
     

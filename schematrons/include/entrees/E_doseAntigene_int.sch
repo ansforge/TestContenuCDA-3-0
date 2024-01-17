@@ -19,15 +19,16 @@
             [E_doseAntigene_int] Erreur de conformité CI-SIS : Dans l'entrée IHE Antigen Dose entry(1.3.6.1.4.1.19376.1.5.3.1.4.12.1), 
             les attributs de l'élément CDA 'substanceAdministration' sont classCode='SBADM' et moodCode='EVN'</assert>
         
-        <assert test='count(cda:id)&gt;=1'>
-            [E_doseAntigene_int] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une ou plusieurs fois [1..*].
+        <assert test='count(cda:id)=1'>
+            [E_doseAntigene_int] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une fois [1..1].
         </assert>
         
         <!-- Test des templateId pour l'entrée "IHE Antigen Dose entry" -->
-        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.12.1']">
+        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.12.1'] and cda:templateId[@root='2.16.840.1.113883.10.20.1.24']">
             [1] [E_doseAntigene_int.sch] Erreur de conformité CI-SIS : 
-            L'entrée "IHE Antigen Dose entry" doit comporter le 'templateId' suivant:
+            L'entrée "IHE Antigen Dose entry" doit comporter les 'templateIds' suivants:
             - Un 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.12.1"
+            - Un 'templateId' dont l'attribut @root="2.16.840.1.113883.10.20.1.24"
         </assert>
         
         <assert test='cda:consumable'>

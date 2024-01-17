@@ -19,7 +19,7 @@
             <let name="count_reference" value="count(//cda:entryRelationship/cda:act[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']]/cda:text/cda:reference)"/>
             <let name="count_statusCode" value="count(//cda:entryRelationship/cda:act[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']]/cda:statusCode[@code='completed'])"/> 
             
-            <let name="count_ER_InstructDispensateur" value="count(//self::cda:entryRelationship[cda:act[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']]])"/>
+            <let name="count_ER_InstructDispensateur" value="count(//cda:entryRelationship[cda:act[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']]])"/>
             
             <assert test="cda:templateId[@root='2.16.840.1.113883.10.20.1.43']">
                 [1] [E_instructionsDispensateur_int.sch] Erreur de conformité IHE PCC : 
@@ -31,7 +31,7 @@
             <!-- Test présence et format de l'élément 'code' -->
             <assert test="($count_code=$count_ER_InstructDispensateur)">
                 [2] [E_instructionsDispensateur_int.sch] Erreur de conformité IHE PCC : 
-                L'entrée FR-Instructions-au-dispensateur doit comporter un élément 'code' et ses attribut @code="PINSTRUCT" et @codeSystem="1.3.6.1.4.1.19376.1.5.3.2".
+                L'entrée FR-Instructions-au-dispensateur doit comporter un élément 'code' et ses attribut @code="FINSTRUCT" et @codeSystem="1.3.6.1.4.1.19376.1.5.3.2".
             </assert>            
             
             <!-- Test de la présence de l'élément 'text' -->

@@ -27,18 +27,18 @@
         <assert test='count(cda:code)=1'>
             [E_familyHistoryObservation_fr] : Erreur de conformité CI-SIS : L'élément code doit être présent une fois.
         </assert>
+        
+        <assert test='count(cda:text[cda:reference/@value])=1'>
+            [E_familyHistoryObservation_fr] : Erreur de conformité CI-SIS : L'élément code doit être présent une fois.
+        </assert>
 
         <assert test="cda:statusCode[@code='completed']"> 
             [E_familyHistoryObservation_fr] : Erreur de conformité CI-SIS : Le composant "statutCode" d'une "Family History Observation"
             est toujours fixé à la valeur code='completed'. </assert>
 
-        <assert test='count(cda:effectiveTime)=1'>
-            [E_familyHistoryObservation_fr] : Erreur de conformité CI-SIS : L'élément effectiveTime doit être présent une fois.
+        <assert test='count(cda:effectiveTime)&lt;=1'>
+            [E_familyHistoryObservation_fr] : Erreur de conformité CI-SIS : L'élément effectiveTime peut être présent maximum une fois.
         </assert>
-
-<!--        <assert test='cda:value[@xsi:type="CD" and @codeSystem="2.16.840.1.113883.6.3"]'>
-            [E_familyHistoryObservation_fr] : L'élément value doit être de type xsi:type="CD" et doit être codé en CIM-10.
-        </assert>-->
 
         <assert test="count(cda:interpretationCode)&lt;2">
             [E_familyHistoryObservation_fr] : L'élément interpretationCode ne doit pas être présent plus d'une fois.

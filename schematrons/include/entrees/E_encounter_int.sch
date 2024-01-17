@@ -25,11 +25,19 @@
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounters", l'attribut "classCode" sera fixé à la valeur "ENC". 
         </assert>
 
-        <assert test="(not(@moodCode='EVN') and cda:templateId[@root='2.16.840.1.113883.10.20.1.25']) or (@moodCode='EVN' and cda:templateId[@root='2.16.840.1.113883.10.20.1.21'])"> 
+        <assert test="(not(@moodCode='EVN')) or (@moodCode='EVN' and cda:templateId[@root='2.16.840.1.113883.10.20.1.21'])"> 
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", le templateId indique que cet élément 
             se conforme aux contraintes de ce module de contenu.
             NOTE: Lorsque l'entrée "Encounter" est en mode événement (moodCode='EVN'), elle se conforme au template CCD 2.16.840.1.113883.10.20.1.21.
             Dans les autres modes, elle se conforme au template CCD 2.16.840.1.113883.10.20.1.25. 
+        </assert>
+        
+        
+        <assert test="(not(@moodCode='PMRS') and not(@moodCode='ARQ')) or ((@moodCode='PMRS' or @moodCode='ARQ') and cda:templateId[@root='2.16.840.1.113883.10.20.1.25'])"> 
+            [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", le templateId indique que cet élément 
+            se conforme aux contraintes de ce module de contenu.
+            NOTE: Lorsque l'entrée "Encounter" est en mode événement (moodCode='PMRS' ou moodCode='ARQ'), elle se conforme au template CCD 2.16.840.1.113883.10.20.1.25.
+            Dans les autres modes, elle se conforme au template CCD 2.16.840.1.113883.10.20.1.21. 
         </assert>
         
         <assert test="$count_templateId&gt;1">
@@ -39,24 +47,30 @@
         <assert test="cda:id"> 
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "id" est obligatoire. </assert>
         
-          <!-- 
-        <assert test="cda:code[@codeSystem='2.16.840.1.113883.5.4']"> 
-        Error: In
-            Encounter, code is a required element and shall contain a code from the HL7
-            ActEncounterCode vocabulary describing the type of encounter (e.g., inpatient,
-            ambulatory, emergency, et cetera). </assert>
-          -->
-        
-        <assert test="cda:text/cda:reference[@value]">
-            [E_encounter_int] Erreur de conformité PCC : L'élément 'text' doit être présent avec un élément 'reference' qui contient une URI dans un attribut @value.
+       
+        <assert test="cda:code"> 
+            [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "code" est obligatoire. </assert>
+    
+        <assert test="not(cda:code[@code='02276797']) or (cda:code[@code='02276797'] and cda:effectiveTime[@nullFlavor='NA'] and cda:id[@nullFlavor='NA'])"> 
+            [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "code" prend la valeur "02276797" si pas d'information sur la rencontre et utilise le code Wolf ‘Aucun’
+            et des nullFlavor=’NA’ dans les éléments obligatoires de l’entrée.
         </assert>
         
-        <assert test="not(@moodCode = 'EVN' or @moodCode = 'APT') or cda:effectiveTime"> 
+        <assert test="not(cda:text) or (cda:text and cda:text/cda:reference[@value])">
+            [E_encounter_int] Erreur de conformité PCC : Si l'élément 'text' est présent, il doit avoir un élément 'reference' qui contient une URI dans un attribut @value.
+        </assert>
+        
+        <assert test="(not(@moodCode = 'EVN' or @moodCode = 'PMRS') and @moodCode = 'ARQ' and cda:priorityCode) or ((@moodCode = 'EVN' or @moodCode = 'PMRS') and cda:effectiveTime)"> 
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "effectiveTime" 
-            horodate l'événement (en mode EVN), ou la date désirée pour la rencontre (en mode ARQ or APT).
-            En mode EVN ou APT, l'élément "effectiveTime" sera présent. En mode ARQ, l'élément "effectiveTime" 
-            pourra être présent, mais si la date n'est pas présente, l'élément "priorityCode" coit être présent  
+            horodate l'événement (en mode EVN), ou la date désirée pour la rencontre (en mode ARQ or PMRS).
+            En mode EVN ou PMRS, l'élément "effectiveTime" sera présent.
+            En mode ARQ, l'élément "effectiveTime" pourra être présent, mais si la date n'est pas présente, l'élément "priorityCode" doit être présent  
             pour indiquer qu'un rappel est nécessaire pour fixer la date de rendez-vous pour la rencontre. 
+        </assert>
+        
+        <assert test="not(cda:performer) or (cda:performer and
+            cda:performer[@typeCode='PRF'])"> 
+            [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", un élément "performer" avec un attribut @typeCode='PRF' pourra être présent pour indiquer l'executant de la rencontre. 
         </assert>
         
         <assert test="not(cda:participant[@typeCode='LOC']) or 

@@ -37,16 +37,32 @@
             Une entrée 'Immunization' doit comporter un (et un seul) élément 'effectiveTime'.
         </assert>
         
+        <assert test='cda:consumable/@typeCode="CSM"'>
+            [E_immunizations_fr.sch] Erreur de Conformité PCC :  
+            Dans une entrée 'Immunization', l'élément 'consumable' est obligatoire. Il doit comporter l'attribut @typeCode="CSM".
+        </assert>
+        
         <assert test='count(cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial/cda:code/cda:originalText/cda:reference)=1 or cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial/cda:code/@nullFlavor'>
             [E_immunizations_fr] Erreur de conformité CI-SIS :
             Une entrée 'Immunization' doit comporter un (et un seul) élément 'consumable' pour décrire le produit (manufacturedProduct) avec une entrée de type Product Entry.
             Cette entrée 'Product Entry' doit comporter un élément 'code' et une description narrative via une référence à l'élément narratif de la section (originalText/reference).
         </assert>
 
+        <assert test='not(cda:performer) or cda:performer/@typeCode="PRF"'>
+            [E_immunizations_fr.sch] Erreur de Conformité PCC :  
+            Dans une entrée 'Immunization', Si l'élément 'performer' est présent, il doit comporter l'attribut @typeCode="PRF".
+        </assert>
+        
+        <assert test='not(cda:author) or (cda:author/@typeCode="AUT" and cda:author/@contextControlCode="OP")'>
+            [E_immunizations_fr.sch] Erreur de Conformité PCC :  
+            Dans une entrée 'Immunization', Si l'élément 'author' est présent, il doit comporter les attributs suivants : @typeCode="AUT" et @contextControlCode="OP".
+        </assert>
+
         <assert test="not(cda:entryRelationship) or 
-            cda:entryRelationship[@typeCode='CAUS']/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.1.28'] or 
             cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2'] or
             cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.1.46'] or 
+            cda:entryRelationship[@typeCode='CAUS']/cda:act/cda:templateId[@root='2.16.840.1.113883.10.20.1.28'] or
+            cda:entryRelationship[@typeCode='COMP']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.12.1'] or
             cda:entryRelationship[@typeCode='REFR']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3']">
             [E_immunizations_fr] Erreur de conformité CI-SIS : 
             Dans une entrée 'Immunization', les éléments 'entryRelationship' ne sont pas obligatoires.
@@ -55,6 +71,7 @@
             - Commentaire ('entryRelationship' avec typeCode='SUBJ') : doit comporter une entrée de type 'act' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.2".
             - Rang de la vaccination ('entryRelationship' avec typeCode='SUBJ') : doit comporter une entrée de type 'observation' avec un OID="2.16.840.1.113883.10.20.1.46".
             - Lien avec la prescription ('entryRelationship' avec typeCode 'REFR') : doit comporter une entrée de type 'supply' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.7.3".
+            - Dose d’antigène reçue ('entryRelationship' avec typeCode 'COMP') : doit comporter une entrée de type 'substanceAdministration' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.12.1".
         </assert>
         
         <assert test="count(cda:entryRelationship[@typeCode='REFR']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3'])&lt;2">
@@ -62,7 +79,7 @@
             Dans une entrée 'Immunization', il ne peut y avoir qu'un seul élément 'entryRelationship' (typeCode 'REFR') décrivant le lien avec la prescription (entrée de type 'supply' avec un OID="1.3.6.1.4.1.19376.1.5.3.1.4.7.3").
         </assert>
         
-        <assert test="count(cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='2.16.840.1.113883.10.20.1.46'])&lt;2">
+        <assert test="count(cda:entryRelationship[@typeCode='SUBJ']/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.1.46'])&lt;2">
             [E_immunizations_fr] Erreur de conformité CI-SIS :
             Dans une entrée 'Immunization', il ne peut y avoir qu'un seul élément 'entryRelationship' (typeCode 'SUBJ') décrivant le rang de la vaccination (entrée de type 'observation' avec un OID="2.16.840.1.113883.10.20.1.46").
         </assert>

@@ -32,7 +32,7 @@
             
         </assert>
         
-        <assert test='count(cda:id)&gt;=1'>
+        <assert test='count(cda:id)=1'>
             [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une ou plusieurs fois.
         </assert>
         
@@ -40,8 +40,8 @@
             [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément code doit être présent une fois.
         </assert>
         
-        <assert test='count(cda:text)=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément text doit être présent une fois.
+        <assert test='count(cda:text)=1 and count(cda:text/cda:reference)=1'>
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément text doit être présent une fois et doit contenir l'élément reference.
         </assert>
         
         <assert test="cda:statusCode[@code='completed']"> 
@@ -50,6 +50,11 @@
         
         <assert test='count(cda:effectiveTime)=1'>
             [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément effectiveTime doit être présent une fois [1..1].
+        </assert>
+        
+        <assert test='(not(cda:value) and cda:code/@code="71388002") or (cda:value/@xsi:type="BL" and cda:text/cda:reference)'>
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : La valeur de la directive identifiée est un élément booléen (xsi:type="BL") qui permet d’indiquer l’autorisation ou la non autorisation, 
+            sauf si l’élément "code" est @code="71388002" [SNOMED CT]("Autre directive") : dans ce cas, l'élément "value" n'est pas présent et la précision est fournie dans la partie narrative ("text/reference").
         </assert>
         
         <assert test='count(cda:value)&lt;=1'>

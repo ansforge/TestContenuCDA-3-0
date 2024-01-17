@@ -37,6 +37,11 @@
             [E_diagnosticDuCancer_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Diagnostic-du-cancer" doit comporter un élément 'text'.
         </assert>
         
+        <!-- Test présence de l'élément 'text' -->
+        <assert test="count(cda:text/cda:reference)=1">
+            [E_diagnosticDuCancer_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Diagnostic-du-cancer" doit comporter un élément 'text/reference'.
+        </assert>
+        
         <!-- Test présence de l'élément 'statusCode' -->
         <assert test="count(cda:statusCode)=1">
             [E_diagnosticDuCancer_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Diagnostic-du-cancer" doit comporter un élément 'statusCode'.
