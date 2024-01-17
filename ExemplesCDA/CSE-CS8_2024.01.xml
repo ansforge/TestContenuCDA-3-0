@@ -2546,6 +2546,8 @@
                                           displayName="1 seringue(s) préremplie(s) en verre de 1 ml avec aiguille(s)"
                                           codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
                                     </code>
+                                    <name>IMMUNOGLOBULINE HUMAINE DE L'HEPATITE B LFB 100 UI/ml, 
+                                       solution injectable en seringue préremplie (IM)</name>
                                  </manufacturedMaterial>
                               </manufacturedProduct>
                            </consumable>
@@ -2723,6 +2725,7 @@
                                  <translation code="J07AN" displayName="Vaccin antituberculeux"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin antituberculeux</name>
                               <lotNumberText nullFlavor="NA"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -2765,6 +2768,7 @@
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                                  </translation>
                               </code>
+                              <name>Vaccin contre l'hépatite B</name>
                               <lotNumberText nullFlavor="NA"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>

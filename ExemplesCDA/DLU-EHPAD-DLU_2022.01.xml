@@ -836,6 +836,7 @@
 											<translation code="J01CA01" displayName="AMPICILLINE PANPHARMA 500 mg, gélule"
 												codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 										</code>
+										<name>AMPICILLINE PANPHARMA 500 mg, poudre et solution pour préparation injectable</name>
 									</manufacturedMaterial>
 								</manufacturedProduct>
 							</consumable>
@@ -1513,6 +1514,7 @@
 											<translation code="J07AM01" displayName="vaccin antitétanique"
 												codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 										</code>
+										<name>VACCIN TETANIQUE PASTEUR, suspension injectable en seringue préremplie vaccin tétanique adsorbé</name>
 										<lotNumberText>6547</lotNumberText>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -1558,6 +1560,7 @@
 											<translation code="J07BB01" displayName="Grippe inactivée, virus entier"
 												codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 										</code>
+										<name>VAXIGRIPTETRA, suspension injectable en seringue préremplie. Vaccin grippal quadrivalent (inactivé, à virion fragmenté)</name>
 										<lotNumberText>0076543</lotNumberText>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -1601,6 +1604,7 @@
 											<translation code="J07AL" displayName="Vaccin pneumococcique"
 												codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 										</code>
+										<name>PNEUMOVAX en flacon. Vaccin pneumococcique polyosidique</name>
 										<lotNumberText>0012345</lotNumberText>
 									</manufacturedMaterial>
 								</manufacturedProduct>

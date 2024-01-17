@@ -402,7 +402,7 @@
                     </originalText>
                   </value>
                   <!-- Entrée FR-Certitude -->
-                  <entryRelationship typeCode="REFR" inversionInd="false">
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
                     <observation classCode="OBS" moodCode="EVN">                      
                       <!-- Conformité FR-Certitude (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.171" />
@@ -657,6 +657,7 @@
                       <translation code="EMEA/H/C/002221" displayName="Dacogen" codeSystem="1.2.250.1.213.2.50" codeSystemName="EMEA Rare Disease medicinal products"/>
                       <translation code="L01BC08" displayName="decitabine" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
                     </code>
+                    <name>Dacogen</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>

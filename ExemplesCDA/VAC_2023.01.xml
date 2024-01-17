@@ -460,6 +460,7 @@
                       <translation code="J07AN" displayName="Vaccin antituberculeux" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <translation code="3400936466425" displayName="1 flacon(s) en verre jaune(brun) - 1 flacon(s) en verre de 1 ml avec nécessaire(s) avec aiguille(s)" codeSystem="1.2.250.1.213.2.3.3" codeSystemName="CIP" />
                     </code>
+                    <name>VACCIN BCG SSI, poudre et solvant pour suspension injectable</name>
                     <lotNumberText>235421176</lotNumberText>
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -648,6 +649,7 @@
                       <translation code="J07AM" displayName="VACCIN TETANIQUE" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <translation code="3400932857241" displayName="1 seringue(s) préremplie(s) en verre de 0,5 ml" codeSystem="1.2.250.1.213.2.3.3" codeSystemName="CIP" />
                     </code>
+                    <name>VACCIN TETANIQUE PASTEUR, suspension injectable en seringue préremplie vaccin tétanique adsorbé</name>
                     <lotNumberText>4456668</lotNumberText>
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -808,6 +810,7 @@
                       <translation code="J07AM" displayName="VACCIN TETANIQUE" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <translation code="3400932857241" displayName="1 seringue(s) préremplie(s) en verre de 0,5 ml" codeSystem="1.2.250.1.213.2.3.3" codeSystemName="CIP" />
                     </code>
+                    <name>VACCIN TETANIQUE PASTEUR, suspension injectable en seringue préremplie vaccin tétanique adsorbé</name>
                     <lotNumberText>4456672</lotNumberText>
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -968,6 +971,7 @@
                       <translation code="J07AH" displayName="VACCIN MENINGOCOCCIQUE" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <translation code="3400933465841" displayName="1 flacon(s) en verre de 10 dose(s) - 1 flacon(s) en verre de 5 ml" codeSystem="1.2.250.1.213.2.3.3" codeSystemName="CIP" />
                     </code>
+                    <name>VACCIN MENINGOCOCCIQUE A+C POLYOSIDIQUE, poudre et solvant pour suspension injectable en seringue préremplie</name>
                     <lotNumberText>357904636</lotNumberText>
                   </manufacturedMaterial>
                 </manufacturedProduct>

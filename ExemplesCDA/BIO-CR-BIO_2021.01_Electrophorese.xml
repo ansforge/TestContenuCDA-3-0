@@ -751,6 +751,9 @@
                         <name>LABORATOIRE SOUS-TRAITANT</name>
                         <telecom nullFlavor="MSK" />
                         <addr nullFlavor="MSK" />
+                        <standardIndustryClassCode code="ETABLISSEMENT"
+                          displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+                          codeSystemName="practiceSettingCode"/>
                       </representedOrganization>
                     </assignedEntity>
                   </performer>

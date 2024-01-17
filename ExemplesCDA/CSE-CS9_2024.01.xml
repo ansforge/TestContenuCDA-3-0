@@ -1273,6 +1273,7 @@
                                  <translation code="J07AN" displayName="Vaccin antituberculeux"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin antituberculeux</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1327,6 +1328,7 @@
                                  <translation code="J07CA01" displayName="Vaccin diphtérie-polyomielite-tétanos"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin diphtérie-polyomielite-tétanos</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1381,6 +1383,7 @@
                                  <translation code="J07CA01" displayName="Vaccin diphtérie-polyomielite-tétanos"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin diphtérie-polyomielite-tétanos</name>                              
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1435,6 +1438,7 @@
                                  <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre la coqueluche</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1489,6 +1493,7 @@
                                  <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre la coqueluche</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1543,6 +1548,7 @@
                                  <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin anti haemophilus influenzae B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1597,6 +1603,7 @@
                                  <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin anti haemophilus influenzae B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1651,6 +1658,7 @@
                                  <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre l'hépatite B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1705,6 +1713,7 @@
                                  <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre l'hépatite B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1759,6 +1768,7 @@
                                  <translation code="J07AL" displayName="Vaccin antipneumococcique"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin antipneumococcique</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1813,6 +1823,7 @@
                                  <translation code="J07AL" displayName="Vaccin antipneumococcique"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin antipneumococcique</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1867,6 +1878,7 @@
                                  <translation code="J07AH07" displayName="Vaccin contre le méningocoque C"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre le méningocoque C</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1921,6 +1933,7 @@
                                  <translation code="J07BH" displayName="Vaccin contre le rotavirus schéma complet"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre le rotavirus schéma complet</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -1975,6 +1988,7 @@
                                  <translation code="J07BH" displayName="Vaccin contre le rotavirus schéma complet"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre le rotavirus schéma complet</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -2029,6 +2043,7 @@
                                  <translation code="J07AH09" displayName="Vaccin contre le méningocoque B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre le méningocoque B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -2083,6 +2098,7 @@
                                  <translation code="J07AH09" displayName="Vaccin contre le méningocoque B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>Vaccin contre le méningocoque B</name>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
                         </manufacturedProduct>
@@ -2183,6 +2199,7 @@
                                  <translation code="J06BD08" displayName="nirsévimab"
                                               codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
+                              <name>BEYFORTUS 100 mg, solution injectable en seringue préremplie</name>
                            </manufacturedMaterial>
                         </manufacturedProduct>
                      </consumable>

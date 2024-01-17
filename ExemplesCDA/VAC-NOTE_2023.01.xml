@@ -380,6 +380,7 @@
                       <translation code="J07AM" displayName="vaccins tétaniques" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <translation code="3400932857241" displayName="VACCIN TETANIQUE PASTEUR, suspension injectable en seringue préremplie. Vaccin tétanique adsorbé 1 seringue(s) préremplie(s) en verre de 0,5 ml" codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP" />
                     </code>
+                    <name>vaccins tétaniques</name>
                     <lotNumberText>4456672</lotNumberText>
                   </manufacturedMaterial>
                 </manufacturedProduct>

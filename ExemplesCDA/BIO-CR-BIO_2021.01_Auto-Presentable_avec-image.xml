@@ -636,6 +636,9 @@
 												<c:name>LABORATOIRE SOUS-TRAITANT</c:name>
 												<c:telecom nullFlavor="MSK"/>
 												<c:addr nullFlavor="MSK"/>
+												<c:standardIndustryClassCode code="ETABLISSEMENT"
+														displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+														codeSystemName="practiceSettingCode"/>
 												</c:representedOrganization>
 												</c:assignedEntity>
 											</c:performer>

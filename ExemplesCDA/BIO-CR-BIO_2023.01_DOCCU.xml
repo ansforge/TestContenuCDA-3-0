@@ -1235,6 +1235,7 @@
                       <translation code="J07BM" displayName="vaccins contre le Papillomavirus"
                             codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/> 
                     </code>
+                    <name>vaccins contre le Papillomavirus</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>              
