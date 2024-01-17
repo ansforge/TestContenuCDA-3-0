@@ -47,6 +47,14 @@
         <assert test='count(cda:value)=1'>
             [E_periodeActiviteEnZoneDangeureuse_fr] : Erreur de conformité CI-SIS : L'élément "value" doit être présent une fois [1..1].
         </assert>
+
+        <assert test='count(cda:value/cda:low)=1'>
+            [E_periodeActiviteEnZoneDangeureuse_fr] : Erreur de conformité CI-SIS : Le sous-élément "low" doit être présent une fois [1..1]dans le "value"[1..1].
+        </assert>
+        <assert test='count(cda:value/cda:high)&lt;1'>
+            [E_periodeActiviteEnZoneDangeureuse_fr] : Erreur de conformité CI-SIS : Un seul sous-élément high au maximum peut être présent dans l'élément "value" [0..1].
+        </assert>
+        
     </rule>
     
 </pattern>

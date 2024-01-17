@@ -19,6 +19,9 @@
         <assert test="cda:code[@code = '80413-8']"> 
             [E_patientTransfer_fr] Erreur de conformité PCC : Le code utilisé pour un transfert est '80413-8'
         </assert>
+        <assert test="not(cda:act/cda:text) or (cda:act/cda:text and cda:act/cda:text/cda:reference/@value)">
+            [E_patientTransfer_fr] Erreur de conformité PCC : Si dans l'élément patientTransfer un élément text est présent, celui-ci doit contenir un élément 'reference' avec un attribut @value
+        </assert>
         <assert test="cda:statusCode[@code = &quot;completed&quot; or @code=&quot;normal&quot;]"> 
             [E_patientTransfer_fr] Erreur de conformité PCC : Le statut du transfert est obligatoire. l'attribut @code prend la valeur
             @code='completed' si le transfert à eu lieu (moodCode='EVN') ou @code='normal' lorsque le
@@ -35,6 +38,9 @@
             test="not(self::cda:act[@negationInd='false']) or (self::cda:act[@negationInd='false' and @moodCode='EVN'] and cda:statusCode[@code = 'completed'])">
             [E_patientTransfer_fr] Erreur de conformité PCC : l'attribut @code prend la valeur @code='completed' si le transfert à eu lieu (moodCode='EVN'). </assert>
         
+        <assert test="count(cda:participant[@typeCode='DST'])&lt;=1"> 
+            [E_patientTransfer_fr] Erreur de conformité PCC : l'entrée patientTransfer peut contenir un élément participant.
+        </assert>
     </rule>
     
 </pattern>

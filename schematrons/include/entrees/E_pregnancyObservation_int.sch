@@ -23,6 +23,10 @@
        [E_pregnancyObservation_int] Erreur de conformité PCC : L'entrée FR-Observation-sur-la-grossesse doit comporter le templateId parent (1.3.6.1.4.1.19376.1.5.3.1.4.13).
     </assert>
       
+      <assert test='cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"]'>
+         [E_pregnancyObservation_int] Erreur de conformité PCC : L'entrée FR-Observation-sur-la-grossesse doit comporter le templateId parent (1.3.6.1.4.1.19376.1.5.3.1.4.13.5).
+      </assert>
+      
       <assert test='cda:code'>
          [E_pregnancyObservation_int] Erreur de conformité PCC : L'entrée FR-Observation-sur-la-grossesse comporte obligatoirement un élément "code".</assert>
 

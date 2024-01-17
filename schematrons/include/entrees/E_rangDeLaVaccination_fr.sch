@@ -19,7 +19,6 @@
         
         <!-- Test des templateId pour l'entrée "FR-Rang-de-la-vaccination " -->
         <assert test="cda:templateId[@root='2.16.840.1.113883.10.20.1.46']">
-            
             [E_rangDeLaVaccination_fr] Erreur de conformité CI-SIS : 
             L'entrée "FR-Rang-de-la-vaccination " doit comporter le 'templateId' suivant:
             -'templateId' dont l'attribut @root="2.16.840.1.113883.10.20.1.46"

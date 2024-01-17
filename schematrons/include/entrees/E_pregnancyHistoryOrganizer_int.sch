@@ -49,8 +49,8 @@
             [E_pregnancyHistoryOrganizer_int] Erreur de conformité PCC : Une entrée FR-Historique-de-la-grossesse doit comporter un élément "effectiveTime" .
         </assert>
         
-        <assert test='cda:component'>
-            [E_pregnancyHistoryOrganizer_int] Erreur de conformité PCC : Une entrée FR-Historique-de-la-grossesse doit comporter au moins un élément "component" pour représenter la personne ou le dispositif
+        <assert test='count(cda:component)&gt;=1'>
+            [E_pregnancyHistoryOrganizer_int] Erreur de conformité PCC : Une entrée FR-Historique-de-la-grossesse doit comporter au moins un élément "component" pour représenter les informations relatives à la naissance ou à la grossesse.
         </assert>
 
         <!-- 30/11/2020 : Présence obligatoire d'au moins une des deux entrées suivantes [1..*] : 

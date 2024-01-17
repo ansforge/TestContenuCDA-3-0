@@ -23,7 +23,13 @@
             test="self::cda:observation[@classCode='OBS' and @moodCode='EVN']">
             [E_problemEntry_int.sch] Erreur de conformité PCC : Dans l'élément "Problem Entry", le format de base utilisé pour 
             représenter un problème utilise l'élément CDA 'observation' d'attribut classCode='OBS' pour
-            signifier qu'il s'agit l'observation d'un problème, et moodCode='EVN', pour exprimer 
+            signifier qu'il s'agit l'observation d'un problème, et moodCode='EVN', pour signifier que l’élément observé a eu lieu. </assert>
+        
+        <assert
+            test="not(self::cda:observation/@negationInd) or (self::cda:observation/@negationInd ='false' or self::cda:observation/@negationInd='true')">
+            [E_problemEntry_int.sch] Erreur de conformité PCC : Dans l'élément "Problem Entry", l'élément 'observation' d'attribut negationInd='true' utilisé pour
+            signifier que l’élément observé n’a pas eu lieu(donnant par exemple ‘absence de fièvre’ si l’élément observé est 
+            ‘fièvre’), et  negationInd='true', pour exprimer 
             que l'événement a déjà eu lieu. </assert>
 
         <assert test="cda:templateId[@root='2.16.840.1.113883.10.20.1.28']"> 
@@ -81,15 +87,6 @@
             [E_problemEntry_int.sch] Erreur de conformité PCC : Un et un seul élément évaluant la sévérité d'une affection 
             sera présent (entryRelationship) pour une entrée "Problem Entry" </assert>
 
-        <assert
-            test="not(cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.1']) or
-                    (cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.1'] and
-                    cda:entryRelationship[@typeCode='SUBJ'])"> 
-            [E_problemEntry_int.sch] Erreur de conformité PCC :un élément "entryRelationship" optionnel peut être présent 
-            et donner une indication sur la sévérité d'une affection. S'il est présent, cet élément 
-            se conformera au template Severity Entry (1.3.6.1.4.1.19376.1.5.3.1.4.1).
-            Son attribut 'typeCode' prendra alors la valeur 'SUBJ'. </assert>
-        
         <!-- Statut d'une affection -->
         <assert
             test="count(cda:entryRelationship/cda:observation/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.1.1']) &lt;= 1"> 
@@ -112,25 +109,8 @@
             d'un patient (Health Status Observation) sera présent par le biais d'une relation "entryRelationship" 
             pour toute entrée "Problem Entry". </assert>
 
-        <assert
-            test="not(cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.1.2']) or
-                    (cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.1.2'] and
-                    cda:entryRelationship[@typeCode='REFR'])"> 
-            [E_problemEntry_int.sch] Erreur de conformité PCC : un élément "entryRelationship" optionnel peut être présent et donner
-            une indication sur le statut de l'état de santé d'un patient -- cf. value set "PCC_HealthStatusCodes" (1.2.250.1.213.1.1.4.2.283.1). 
-            S'il est présent, cet élément se conformera au template "Health Status Observation" (1.3.6.1.4.1.19376.1.5.3.1.4.1.2).
-            Son attribut 'typeCode' prendra alors la valeur 'REFR'.</assert>
         
-        <!-- Commentaire(s) -->
-        <assert
-            test="not(cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2']) or
-                    (cda:entryRelationship/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2'] and
-                    cda:entryRelationship[@typeCode='REFR'])"> 
-            [E_problemEntry_int.sch] Erreur de conformité PCC : un ou plusieurs éléments "entryRelationship" optionnels peuvent être présents et 
-            permettre d'apporter des informations additionnelles sur le problème observé.
-            S'il est présent, cet élément se conformera au template "Comment Entry" (1.3.6.1.4.1.19376.1.5.3.1.4.2).
-            Son attribut 'typeCode' prendra alors la valeur 'REFR'.</assert>
-
+        
         <assert test="cda:code">  
             [E_problemEntry_int.sch] Erreur de conformité PCC : L'élément code -- cf. jeu de valeurs "PCC_ProblemCodes" (1.2.250.1.213.1.1.4.2.283.3) 
             d'une entrée Problem Entry permet d'établir à quel stade diagnostique se positionne un problème : par exemple un diagnostic 
@@ -147,7 +127,15 @@
             PCC déconseille cependant pour des raisons pratiques de l'utiliser dans le cadre d'une entrée Problem Entry.
             Il y a en effet d'autres manières d'assurer la confidentialité des documents, qui pourront être résolus au sein
             du domaine d'affinité.</report>
-        
 
+    </rule>
+    <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5']//*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.2']">
+    <!-- Commentaire(s) -->
+    <assert
+        test="parent::cda:entryRelationship[@typeCode='SUBJ' and @inversionInd='true']"> 
+        [E_problemEntry_int.sch] Erreur de conformité PCC : un élément "entryRelationship" optionnel peut être présent et 
+        permettre d'apporter des informations additionnelles sur le problème observé.
+        S'il est présent, cet élément se conformera au template "Comment Entry" (1.3.6.1.4.1.19376.1.5.3.1.4.2).
+        Son attribut 'typeCode' prendra alors la valeur 'REFR' et l'attribut 'inversionInd' prendra la valeur 'true'.</assert>
     </rule>
 </pattern>

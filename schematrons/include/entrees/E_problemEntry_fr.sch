@@ -26,7 +26,17 @@
         </assert>
 
         <assert test="count(cda:value)=1"> 
-            [E_problemEntry_fr] Erreur de conformité CI-SIS : L'élément "value" ne doit être présent qu'une fois </assert>       
+            [E_problemEntry_fr] Erreur de conformité CI-SIS : L'élément "value" ne doit être présent qu'une fois </assert>  
         
+    </rule>
+    
+    <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5']//*[cda:templateId/@root='1.2.250.1.213.1.1.3.171']">
+        <!-- FR-Certitude -->
+        <assert
+            test="parent::cda:entryRelationship[@typeCode='SUBJ' and @inversionInd='true']"> 
+            [E_problemEntry_int.sch] Erreur de conformité PCC : un élément "entryRelationship" optionnel peut être présent et 
+            permettre de fournir la certitude sur le problème observé.
+            S'il est présent, cet élément se conformera au template "FR-Certitude" (1.2.250.1.213.1.1.3.171).
+            Son attribut 'typeCode' prendra alors la valeur 'SUBJ' et l'attribut 'inversionInd' prendra la valeur 'true'.</assert>
     </rule>
 </pattern>

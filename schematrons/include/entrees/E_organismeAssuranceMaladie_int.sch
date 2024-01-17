@@ -50,14 +50,14 @@
             <assert test="@typeCode='PRF'">
                 [E_organismeAssuranceMaladie_int.sch] Errreur de conformité IHE PCC : Dans l'entrée 'IHE Payer Entry', l'élément 'performer' doit contenir un attribut typeCode='PRF'.
             </assert>
-            <assert test="cda:assignedEntity">
-                [E_organismeAssuranceMaladie_int.sch] Errreur de conformité IHE PCC : Dans l'entrée 'IHE Payer Entry', l'élément 'performer' doit contenir un élément 'assignedEntity'. 
+            <assert test="cda:assignedEntity/@classCode='ASSIGNED'">
+                [E_organismeAssuranceMaladie_int.sch] Errreur de conformité IHE PCC : Dans l'entrée 'IHE Payer Entry', l'élément 'performer' doit contenir un élément 'assignedEntity' avec l'attribut @classCpde="ASSIGNED". 
             </assert>
         </rule>
-        <!-- Test présence de l'élément 'participant' -->
+        <!-- Test présence de l'élément 'participant' @typeCode='COV' -->
     <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.18']/cda:participant[@typeCode='COV']">
         <assert test="@typeCode='COV'">
-            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : L'entrée "IHE Payer Entry " doit comporter un élément "participant"avec l'attribut @typeCode est fixé à 'COV'.
+            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : L'entrée "IHE Payer Entry " peut comporter un élément "participant"avec l'attribut @typeCode est fixé à 'COV'.
         </assert>
         
         <assert test="cda:participantRole[@classCode='PAT']"> 
@@ -65,4 +65,14 @@
         </assert>
     </rule>
     
+    <!-- Test présence de l'élément 'participant' -->
+    <rule context="*[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.18']/cda:participant[@typeCode='HLD']">
+        <assert test="@typeCode='HLD'">
+            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : L'entrée "IHE Payer Entry " peut comporter un élément "participant"avec l'attribut @typeCode est fixé à 'HLD'.
+        </assert>
+        
+        <assert test="cda:participantRole[@classCode='IND']"> 
+            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : Le composant "participant" doit comporter un élément "participantRole"avec l'attribut @classCode est fixé à 'IND'.
+        </assert>
+    </rule>
 </pattern>

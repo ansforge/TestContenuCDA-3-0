@@ -18,11 +18,11 @@
             les attributs de l'élément CDA 'observation' sont classCode='SBADM' et moodCode='INT'</assert>
         
         <!-- Test des templateId pour l'entrée "Reference to Prescription Item Content Module" -->
-        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.10']">
+        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.11']">
             
             [E_referencetoPrescriptionItemEntry_int] Erreur de conformité IHE-PHARM-PRE : 
             L'entrée "Reference to Prescription Item Content Module" doit comporter le 'templateId' suivant:
-            - 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.9.1.3.10"
+            - 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.9.1.3.11"
         </assert>
         
         <!-- Test présence de l'élément 'id' -->

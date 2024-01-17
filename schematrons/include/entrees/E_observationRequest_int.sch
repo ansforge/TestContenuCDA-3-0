@@ -50,16 +50,9 @@
             Dans une entrée "Observation Request", l'élément "text" contiendra
             une référence à la partie narrative. </assert>
         
-        <assert test='cda:statusCode[@code="active"] or 
-            cda:statusCode[@code="suspended"] or
-            cda:statusCode[@code="aborted"] or
-            cda:statusCode[@code="completed"] or
-            cda:statusCode[@code="cancelled"] or
-            cda:statusCode[@code="normal"] or
-            cda:statusCode[@code="new"] or
-            cda:statusCode[@code="held"]'>
-            [E_ObservationRequest_int] :  L'élément "statusCode" associé à tout élément "observation request" doit prendre l'une des valeurs suivantes: 
-            "active", "suspended", "aborted" ou "completed" ou "cancelled" ou "normal" ou "new" ou "held".</assert>
+        <assert test='cda:statusCode'>
+            [E_ObservationRequest_int] :  L'élément "statusCode" associé à tout élément "observation request" est obligatoire et doit prendre l'une des valeurs suivantes: 
+            "active", "suspended", "aborted" ou "completed" ou "cancelled" ou "new" ou "held".</assert>
         
         <assert test="cda:effectiveTime" > 
             [E_ObservationRequest_int] : Erreur de Conformité PCC: 

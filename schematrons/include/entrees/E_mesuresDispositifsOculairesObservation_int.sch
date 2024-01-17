@@ -6,6 +6,8 @@
     
     Historique :
     31/05/2021 : Création
+    16/01/2024 : MAJ du schematron :
+                 - Ajout des tests sur les éléments suivants : 'code,' 'targetSiteCode' et 'text'.
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_mesuresDispositifsOculairesObservation_int">
@@ -21,12 +23,20 @@
         </assert>
         
         <assert test="count(cda:id)&lt;=1"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement Id 
+            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement 'Id' 
+        </assert>
+        
+        <assert test="count(cda:code)=1"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement 'code' 
         </assert>
         
         <assert test="cda:statusCode[@code = 'completed']"> [E_mesuresDispositifsOculairesObservation_int]
             Erreur de Conformité IHE EYE CARE (GEE) : l'élément "mesures de dispositifs oculaires Observation" doit contenir l'élément statusCode avec
             l'attribut @code fixé à 'completed'
+        </assert>
+        
+        <assert test="cda:text">
+            [E_mesuresDispositifsOculairesObservation_int] Erreur de conformité IHE EYE CARE (GEE) : l'élément 'text' doit être présent.
         </assert>
         
         <assert test="cda:effectiveTime[@value] or cda:effectiveTime[@nullFlavor]">
@@ -38,8 +48,13 @@
         </assert>
         
         <assert test="cda:methodCode"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement methodCode 
+            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement 'methodCode' 
         </assert>
+        
+        <assert test="cda:targetSiteCode"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement 'targetSiteCode' 
+        </assert>
+        
         
         <assert test="count(cda:author)&lt;=1"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
             l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement author 

@@ -5,6 +5,8 @@
    Teste la conformité de l'entrée FR-Liste-des-mesures-de-dispositifs-oculaires aux spécifications IHE EYE CARE (GEE)
    
    01/06/2021 : Création
+   16/01/2024 : MAJ du schematron :
+                - Modification de test sur l'élément 'id'
    
 -->
 
@@ -23,7 +25,7 @@
             "1.3.6.1.4.1.19376.1.12.1.3.5". 
         </assert>
 
-        <assert test="count(cda:id)&lt;=1"> [E_mesuresDispositifsOculaires_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-de-dispositifs-oculaires doit contenur un élement "id". 
+        <assert test="count(cda:id)=1"> [E_mesuresDispositifsOculaires_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-de-dispositifs-oculaires doit contenir un élement "id". 
         </assert>
 
         <assert

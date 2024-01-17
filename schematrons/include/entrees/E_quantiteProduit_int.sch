@@ -12,7 +12,13 @@
     <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_quantiteProduit_int">
         <title>IHE Pharm PRE Entrée "Amount of units of the consumable Content Module"</title>      
         
-        <rule context="//cda:entryRelationship[@typeCode='COMP']/cda:supply[@classCode='SPLY'][@moodCode='RQO']">
+        <rule context="//cda:supply[cda:templateId/@root='1.3.6.1.4.1.19376.1.9.1.3.8']">
+            
+            <!-- Test des attributs pour l'entrée "Amount of units of the consumable Content Module" -->
+            <assert test="self::cda:supply[@classCode='SPLY'][@moodCode='RQO']">
+                [1] [E_quantiteProduit_int.sch] Erreur de conformité IHE Pharm PRE : 
+                L'entrée FR-Quantite-de-produit doit avoir l'attribut @classCode='SPLY' et @moodCode='RQO'.
+            </assert>
             
             <!-- Test des templateId pour l'entrée "Amount of units of the consumable Content Module" -->
             <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.8']">

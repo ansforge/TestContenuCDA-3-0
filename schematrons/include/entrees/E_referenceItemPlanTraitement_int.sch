@@ -7,6 +7,7 @@
      Historique :
      - 09/06/2020 : Création
      - 30/11/2020 : Finalisation
+     - 12/01/2014 : MAJ du schematron
 -->
 
     <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_referenceItemPlanTraitement_int">
@@ -40,9 +41,9 @@
             </assert>
            
             <!--  Test du templateId de la sous-entrée (optionnelle) FR-Item-plan-traitement -->
-            <assert test="(($count_ER_itemPlanTraitement=1) or ($count_ER_itemPlanTraitement=0))">
+            <assert test="($count_ER_itemPlanTraitement=1)">
                 [4] [E_referenceItemPlanTraitement_int.sch] Erreur de conformité IHE Pharm PRE : 
-                Dans l'entrée FR-Reference-item-plan-traitement, l'entrée optionnelle FR-Item-plan-traitement doit contenir un 'templateId' @root="1.3.6.1.4.1.19376.1.9.1.3.7".
+                Dans l'entrée FR-Reference-item-plan-traitement, l'entrée FR-Item-plan-traitement est obligatoire et doit contenir un 'templateId' @root="1.3.6.1.4.1.19376.1.9.1.3.7".
            </assert> 
       
         </rule>

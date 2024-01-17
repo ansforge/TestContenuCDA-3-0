@@ -29,8 +29,9 @@
         </assert>
         
         <!-- Test présence de l'élément 'code' -->
-        <assert test="cda:code/cda:code/@code='FINSTRUCT' and cda:code/@codeSystem='1.3.6.1.4.1.19376.1.5.3.2'">
-            [E_notesDuDispensateur_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Notes-du-dispensateur" doit comporter un élément 'code'.
+        <assert test="cda:code/@code='FINSTRUCT' and cda:code/@codeSystem='1.3.6.1.4.1.19376.1.5.3.2'">
+            [E_notesDuDispensateur_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Notes-du-dispensateur" doit comporter un élément 'code' avec l'attribut @code='FINSTRUCT' et
+            @codeSystem='1.3.6.1.4.1.19376.1.5.3.2'.
         </assert>
     </rule>
 </pattern>

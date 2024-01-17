@@ -29,9 +29,14 @@
             Si le transfert est à faire : @moodCode='INT' et l'identifiant de l'entité ayant effectué le transfert n'est pas obligatoire.
         </assert>
         
-        <assert test="not(cda:act/cda:text) or (cda:act/cda:text and cda:act/cda:text/cda:reference/@value)">
-            [E_patientTransfer_int] Erreur de conformité PCC : Si dans l'élément patientTransfer un élément text est présent, celui-ci doit contenir un élément 'reference' avec un attribut @value
+        <assert test="cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1']">
+            [E_patientTransfer_int] Erreur de conformité PCC : L'élément patientTransfer doit contenir un élément templateId avec un attribut @root='1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1'.
         </assert>
+        
+        <assert test="cda:act/cda:id">
+            [E_patientTransfer_int] Erreur de conformité PCC : L'élément patientTransfer doit obligatoirement contenir un élément id (identifiant de l'entrée).
+        </assert>
+       
         <!-- On ne vérfie pas les codes avec la SNOMED CT (pour l'instant) -->
         
         <!--  <assert test="cda:code[@code = '107724000'] and "> 
@@ -45,7 +50,7 @@
         </assert>
         
         <assert test="not(cda:act/cda:statusCode[@code = 'completed']) or 
-            (cda:act/cda:statusCode[@code = 'completed'] and (cda:act/cda:effectiveTime/cda:low and cda:act/cda:effectiveTime/cda:high))"> 
+            (cda:act/cda:statusCode[@code = 'completed'] and (cda:act/cda:effectiveTime and cda:act/cda:effectiveTime/cda:low and cda:act/cda:effectiveTime/cda:high))"> 
             [E_patientTransfer_int] Erreur de conformité PCC : effectiveTime est obligatoire lorsque le transfert a eu lieu. 
             Le sous-élément 'low' indique l'heure de départ et le sous-élément 'high' indique celle d'arrivée.
         </assert>
@@ -61,11 +66,14 @@
         <assert test="@typeCode='DST'">
             [E_patientTransfer_int] Erreur de conformité PCC : L'élément participant contenu dans patientTransfert doit contenir l'attribut @typeCode fixé à la valeur 'DST'
         </assert>
-        <assert test="cda:templateId">
-            [E_patientTransfer_int] Erreur de conformité PCC : L'élément participant contenu dans patientTransfert doit contenir un templateId
+        <assert test="count(cda:templateId/@root='1.2.250.1.71.4.2.2')&lt;=1">
+            [E_patientTransfer_int] Erreur de conformité PCC : L'élément participant contenu dans patientTransfert peut contenir un templateId avec un attribut root='1.2.250.1.71.4.2.2'.
         </assert>
         <assert test="cda:participantRole/@classCode='SDLOC'">
             [E_patientTransfer_int] Erreur de conformité PCC : L'élément participant contenu dans patientTransfert doit contenir un élément 'participantRole' contenant un attribut @classCode dont la valeur est fixé à 'SDLOC'
+        </assert>
+        <assert test="cda:participantRole/cda:code">
+            [E_patientTransfer_int] Erreur de conformité PCC : L'élément participant contenu dans patientTransfert doit contenir un élément 'participantRole' contenant obligatoirement un élément code.
         </assert>
         <assert test="not(cda:participantRole/cda:playingEntity) or ( cda:participantRole/cda:playingEntity and cda:participantRole/cda:playingEntity/@classCode='ENT')">
             [E_patientTransfer_int] Erreur de conformité PCC : Si l'élément participantRole contient un élément playingEntity, celui-ci doit contenir un attribut @classCode fixé à la valeur 'ENT'

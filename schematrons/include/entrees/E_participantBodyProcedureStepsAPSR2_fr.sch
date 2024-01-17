@@ -8,6 +8,8 @@
     
     Historique :
     03/07/2023 : ANS : Création
+    15/01/2024 : MAJ du schematron
+                - Ajout du test sur l'élément 'playingDevice' et 'playingEntity'
    
 -->
 
@@ -23,8 +25,10 @@
         <assert test="count(cda:participantRole)=1">
             [E_participantBodyProcedureStepsAPSR2_int.sch] Erreur de conformité APSR : L'élément "participantRole" doit être présent une seule fois (cardinalité [1..1])
         </assert>
-        <assert test="count(cda:participantRole/cda:playingEntity)=1">
-            [E_participantBodyProcedureStepsAPSR2_int.sch] Erreur de conformité APSR : L'élément "playingEntity" doit être présent une seule fois (cardinalité [1..1])
+        <assert test="not(self::cda:participant[@typeCode='DEV'] and cda:participantRole/cda:playingEntity) or (self::cda:participant[@typeCode='DEV']and cda:participantRole/cda:playingDevice)">
+            [E_participantBodyProcedureStepsAPSR2_int.sch] Erreur de conformité APSR : 
+            - L'élément "playingEntity" doit être présent si le @typeCode du participant est différent de "DEV".
+            - L'élément "playingDevice" doit être présent si le @typeCode du participant est "DEV".
         </assert>
     </rule>
     

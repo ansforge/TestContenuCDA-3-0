@@ -21,6 +21,10 @@
             [E_problemOrganizer_int.sch] Erreur de conformité APSR : L'élément "organizer" de l'entrée "Problem organizer" doit avoir les attributs @classCode et @moodCode fixés respectivement aux valeurs suivante 'BATTERY' et 'EVN'
         </assert>
         
+        <assert test="not(cda:code) or cda:code[@code='75326-9' and @codeSystem='2.16.840.1.113883.6.1']">
+            [E_problemOrganizer_int.sch] Erreur de conformité APSR : L'entrée "Problem organizer" peut contenir un élément "code" avec les attributs @code et @codeSystem qui prennent respectivement les valeurs '75326-9' et '2.16.840.1.113883.6.1'
+        </assert>
+        
         <assert test="cda:statusCode[@code='completed' or @code='aborted']">
             [E_problemOrganizer_int.sch] Erreur de conformité APSR : L'entrée "Problem organizer" doit contenir un "statusCode" avec l'attribut @code qui prend les valeurs 'completed' ou 'aborted'
         </assert>

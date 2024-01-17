@@ -32,7 +32,7 @@
             Une entrée 'FR-Couverture-sociale' doit comporter le code 48768-6.
         </assert>
         
-        <assert test="count(cda:entryRelationship/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.18'])&gt;=1">
+        <assert test="count(cda:entryRelationship[cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.18']])&gt;=1">
             [E_payers_fr] Erreur de Conformité CI-SIS :
             Une entrée 'FR-Couverture-sociale' doit comporter minimum une entryRelationship FR-Organisme-assurance-maladie [1..*].
         </assert>

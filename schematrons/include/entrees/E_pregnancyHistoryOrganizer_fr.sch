@@ -15,8 +15,8 @@
     
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1"]'>
         
-        <assert test="count(cda:code[@codeSystem='2.16.840.1.113883.6.96'])=1">
-            [E_pregnancyHistoryOrganizer_fr] : Erreur de conformité CI-SIS : Il doit y avoir un seul élément code et il doit être codé en SNOMED-CT (2.16.840.1.113883.6.96)
+        <assert test="count(cda:code[@code='118185001' and @codeSystem='2.16.840.1.113883.6.96'])=1">
+            [E_pregnancyHistoryOrganizer_fr] : Erreur de conformité CI-SIS : Il doit y avoir un seul élément code et il doit être codé en SNOMED-CT (2.16.840.1.113883.6.96) et doit avoir un attribut @code='118185001'.
         </assert>
 
     </rule>

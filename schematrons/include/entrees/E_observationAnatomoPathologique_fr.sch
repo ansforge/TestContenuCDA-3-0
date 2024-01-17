@@ -32,14 +32,32 @@
         </assert>
         
         <!-- Test présence de l'élément 'statusCode' -->
-        <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='active' or cda:statusCode/@code='aborted'">
-            [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Observation-Anatomo-pathologique" doit comporter un élément 'statusCode' et fixé à la valeur @code='completed' ou  @code='active ou 'aborted'.
+        <assert test="cda:statusCode/@code='completed' or cda:statusCode/@code='aborted'">
+            [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Observation-Anatomo-pathologique" doit comporter un élément 'statusCode' et fixé à la valeur :
+            - "completed" si l'observation a été effectuée et porte une valeur dans l'élément "value".
+            - "aborted" dans les autres cas (la valeur n'arrivera pas).
+            
         </assert>
         
         <!-- Test présence de l'élément 'effectiveTime' -->
         <assert test="count(cda:effectiveTime)=1">
             [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : 
             L'entrée "FR-Observation-Anatomo-pathologique" doit contenir un élément "effectiveTime".</assert>
+        
+        <!-- Test présence de l'élément 'interpretationCode' -->
+        <assert test="count(cda:interpretationCode)&lt;=1">
+            [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Observation-Anatomo-pathologique" peut contenir un élément "interpretationCode" (cardinalité [0..1]).</assert>
+        
+        <!-- Test présence de l'élément 'methodCode' -->
+        <assert test="count(cda:methodCode)&lt;=1">
+            [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Observation-Anatomo-pathologique" peut contenir un élément "methodCode" (cardinalité [0..1]).</assert>
+        
+        <!-- Test présence de l'élément 'performer' -->
+        <assert test="count(cda:performer)&lt;=1">
+            [E_observationAnatomoPathologique_fr.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Observation-Anatomo-pathologique" peut contenir un élément "performer" (cardinalité [0..1]).</assert>
         
     </rule>
 </pattern>
