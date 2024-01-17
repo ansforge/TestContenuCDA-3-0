@@ -88,6 +88,7 @@
     <include href="../include/entrees/E_organizerDocumentAttache_ANS.sch"/>
     <include href="../include/entrees/E_organizerRCP_ANS.sch"/>
     <include href="../include/entrees/E_organizerTraitementInitialAVC_ANS.sch"/>
+    <include href="../include/entrees/E_statutDuDossier_ANS.sch"/>
 
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -157,6 +158,7 @@
         <active pattern="E_organizerDocumentAttache_ANS"/>
         <active pattern="E_organizerRCP_ANS"/>
         <active pattern="E_organizerTraitementInitialAVC_ANS"/>
+        <active pattern="E_statutDuDossier_ANS"/>
 
     </phase>
 </schema>

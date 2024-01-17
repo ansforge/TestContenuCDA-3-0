@@ -257,7 +257,13 @@
     <include href="../include/entrees/E_mesureKeratometriqueObservation_int.sch"/>
     <include href="../include/entrees/E_laboratoryObservation_int.sch"/>
     <include href="../include/entrees/E_laboratoryIsolateOrganizer_int.sch"/>
-    
+    <include href="../include/entrees/E_immunizationRecommendation_int.sch"/>
+    <include href="../include/entrees/E_specimenContainerProcedureStep_int.sch"/>
+    <include href="../include/entrees/E_joursDeTravailHebdomadaire_int.sch"/>
+    <include href="../include/entrees/E_ocularObservation_int.sch"/>
+    <include href="../include/entrees/E_subjectParticipation_int.sch"/> 
+    <include href="../include/entrees/E_nonHumanSubject_int.sch"/>
+    <include href="../include/entrees/E_humanPatientWithNonHumanSubject_int.sch"/>
     
     <!-- OPH-BRE -->
     <include href="../include/entrees/E_mesuresDispositifsOculaires_int.sch"/>
@@ -269,10 +275,8 @@
     
     <!-- DICOM -->
     <include href="../include/entrees/E_DICOMAdministrationProduitDeSante_int.sch"/>
-    <include href="../include/entrees/E_DICOMAdministrationRadiopharmaceutique_int.sch"/>
     <include href="../include/entrees/E_DICOMCadresAafficher_int.sch"/>
     <include href="../include/entrees/E_DICOMExamenImagerie_int.sch"/>
-    <include href="../include/entrees/E_DICOMExpositionPatient_int.sch"/>
     <include href="../include/entrees/E_DICOMCadresReferences_int.sch"/>
     <include href="../include/entrees/E_DICOM_Observation_int.sch"/>
     <include href="../include/entrees/E_DICOM_Quantite_int.sch"/>
@@ -505,6 +509,13 @@
         <active pattern="E_organismeAssuranceMaladie_int"/>
         <active pattern="E_laboratoryObservation_int"/>
         <active pattern="E_laboratoryIsolateOrganizer_int"/>
+        <active pattern="E_immunizationRecommendation_int"/>
+        <active pattern="E_specimenContainerProcedureStep_int"/>
+        <active pattern="E_nonHumanSubject_int"/>
+        <active pattern="E_joursDeTravailHebdomadaire_int"/>
+        <active pattern="E_humanPatientWithNonHumanSubject_int"/>
+        <active pattern="E_subjectParticipation_int"/>
+        <active pattern="E_ocularObservation_int"/>
 
         <!-- OPH-BRE --> 
         <active pattern="E_mesuresDispositifsOculaires_int"/>        
@@ -524,11 +535,9 @@
         <active pattern="E_DICOM_TechniqueImagerie_int"/>
         <active pattern="E_DICOM_objectifDeReference_int"/>
         <active pattern="E_DICOMAdministrationProduitDeSante_int"/>
-        <active pattern="E_DICOMAdministrationRadiopharmaceutique_int"/>
         <active pattern="E_DICOMCadresAafficher_int"/>
         <active pattern="E_DICOMCadresReferences_int"/>
         <active pattern="E_DICOMExamenImagerie_int"/>
-        <active pattern="E_DICOMExpositionPatient_int"/>
         
     </phase>
 

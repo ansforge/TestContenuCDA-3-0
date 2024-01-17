@@ -137,7 +137,31 @@
     <include href="../include/entrees/E_joursDeTravailHebdomadaire_fr.sch"/>
     <include href="../include/entrees/E_isolatMicrobiologique_fr.sch"/>
     <include href="../include/entrees/E_imageIllustrativeAPSR_fr.sch"/>
-    
+    <include href="../include/entrees/E_instructionAuPatient_fr.sch"/>
+    <include href="../include/entrees/E_scoreNIHSS_fr.sch"/>
+    <include href="../include/entrees/E_DICOMExpositionPatient_fr.sch"/>
+    <include href="../include/entrees/E_DICOMAdministrationProduitDeSante_fr.sch"/>
+    <include href="../include/entrees/E_DICOMAdministrationRadiopharmaceutique_fr.sch"/>
+    <include href="../include/entrees/E_DICOM_Observation_fr.sch"/>
+    <include href="../include/entrees/E_DICOM_Quantite_fr.sch"/>
+    <include href="../include/entrees/E_DICOM_TechniqueImagerie_fr.sch"/>
+    <include href="../include/entrees/E_DICOMExamenImagerie_fr.sch"/>
+    <include href="../include/entrees/E_DICOM_SerieImagerie_fr.sch"/>
+    <include href="../include/entrees/E_DICOM_SOPInstanceObservation_fr.sch"/>
+    <include href="../include/entrees/E_observationOculaireAlignementOculaireEtMotilite_fr.sch"/>
+    <include href="../include/entrees/E_observationOculaireChampVisuel_fr.sch"/>
+    <include href="../include/entrees/E_observationOculairePressionIntraoculaire_fr.sch"/>
+    <include href="../include/entrees/E_observationOculairePupilles_fr.sch"/>
+    <include href="../include/entrees/E_observationOculaireSegmentAnterieur_fr.sch"/>
+    <include href="../include/entrees/E_observationOculaireSystemeLacrymal_fr.sch"/>
+    <include href="../include/entrees/E_observationOculaireTestDeLaVision_fr.sch"/>
+    <include href="../include/entrees/E_ocularObservation_fr.sch"/>
+    <include href="../include/entrees/E_auteurAPSR_fr.sch"/>
+    <include href="../include/entrees/E_batterieExamensSurveillancePrenataux_fr.sch"/>
+    <include href="../include/entrees/E_informantAPSR_fr.sch"/>
+    <include href="../include/entrees/E_laboratoireExecutant_fr.sch"/>
+    <include href="../include/entrees/E_humanPatientWithNonHumanSubject_fr.sch"/>
+    <include href="../include/entrees/E_nonHumanSubject_fr.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
@@ -240,5 +264,30 @@
         <active pattern="E_joursDeTravailHebdomadaire_fr"/>
         <active pattern="E_isolatMicrobiologique_fr"/>
         <active pattern="E_imageIllustrativeAPSR_fr"/>
+        <active pattern="E_instructionAuPatient_fr"/>
+        <active pattern="E_scoreNIHSS_fr"/>
+        <active pattern="E_DICOMAdministrationProduitDeSante_fr"/>
+        <active pattern="E_DICOMExpositionPatient_fr"/>
+        <active pattern="E_DICOM_Observation_fr"/>
+        <active pattern="E_DICOMAdministrationRadiopharmaceutique_fr"/>
+        <active pattern="E_DICOM_Quantite_fr"/>
+        <active pattern="E_DICOM_TechniqueImagerie_fr"/>
+        <active pattern="E_DICOMExamenImagerie_fr"/>
+        <active pattern="E_DICOM_SerieImagerie_fr"/>
+        <active pattern="E_DICOM_SOPInstanceObservation_fr"/>
+        <active pattern="E_observationOculaireAlignementOculaireEtMotilite_fr"/>
+        <active pattern="E_observationOculaireChampVisuel_fr"/>
+        <active pattern="E_observationOculairePressionIntraoculaire_fr"/>
+        <active pattern="E_observationOculairePupilles_fr"/> 
+        <active pattern="E_observationOculaireSegmentAnterieur_fr"/>
+        <active pattern="E_observationOculaireSystemeLacrymal_fr"/>
+        <active pattern="E_observationOculaireTestDeLaVision_fr"/> 
+        <active pattern="E_ocularObservation_fr"/>
+        <active pattern="E_auteurAPSR_fr"/>
+        <active pattern="E_batterieExamensSurveillancePrenataux_fr"/>
+        <active pattern="E_informantAPSR_fr"/>
+        <active pattern="E_laboratoireExecutant_fr"/>
+        <active pattern="E_humanPatientWithNonHumanSubject_fr"/>
+        <active pattern="E_nonHumanSubject_fr"/>
     </phase>
 </schema>
