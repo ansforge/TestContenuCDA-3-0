@@ -15,18 +15,8 @@
         <assert test='self::cda:act[@classCode and @moodCode]'>
             [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", les attributs "classCode" et "moodCode" doivent etre présents.</assert>
         
-        <assert test="$count_templateId=2">
-            [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", il doit y avoir deux templateIds.
-        </assert>
-        
-        <assert test="cda:templateId/@root='1.2.840.10008.9.17' and cda:templateId/@root='1.2.250.1.213.1.1.3.156'">
-            [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", il doit y avoir deux templateIds :
-            - Le premier 1.2.840.10008.9.17 
-            - Le deuxième 1.2.250.1.213.1.1.3.156
-        </assert>
-        
-        <assert test='count(cda:id)=1'>
-            [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", il doit y avoir un seul identifiant "id".</assert>
+        <assert test='count(cda:id)&gt;=1'>
+            [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", il doit y avoir un ou plusieurs éléments "id".</assert>
         
         <assert test='count(cda:code)=1 and cda:code/@code="113015" and cda:code/@codeSystem="1.2.840.10008.2.16.4"'>
             [E_DICOM_SerieImagerie_int] Erreur de conformité DICOM : Dans l'entrée "Series Act", il doit y avoir un élément "code" [1..1] ayant comme attributs :

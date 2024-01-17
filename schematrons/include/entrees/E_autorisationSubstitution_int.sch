@@ -11,7 +11,14 @@
     <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_autorisationSubstitution_int">
         <title>IHE PHARM PRE Entrée FR-Autorisation-substitution</title>    
         
-        <rule context="//cda:entryRelationship[@typeCode='COMP']/cda:act[@classCode='ACT'][@moodCode='DEF']">
+        <rule context="//cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.9.1.3.9.1']">
+            
+            
+            <!-- Test des attributs pour l'entrée "IHE PRE Substitution Permission" -->
+            <assert test="self::cda:act[@classCode='ACT'][@moodCode='DEF']">
+                [1] [E_autorisationSubstitution_int.sch] Erreur de conformité IHE PRE : 
+                L'entrée FR-Autorisation-substitution doit avoir les attributs @classCode='ACT' et @moodCode='DEF'.
+            </assert>
             
             <!-- Test des templateId pour l'entrée "IHE PRE Substitution Permission" -->
             <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.9.1']">

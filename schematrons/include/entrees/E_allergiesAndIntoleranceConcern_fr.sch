@@ -51,6 +51,11 @@
             un élément "Allergies And Intolerance Concern".
            </assert>
         
+        <assert test='(cda:effectiveTime[@nullFlavor]) or ((cda:statusCode[@code="completed" or @code="aborted"] and cda:effectiveTime/cda:high) or
+            (not(cda:statusCode[@code="completed" or @code="aborted"]) and not(cda:effectiveTime/cda:high)))'>
+            [E_allergiesAndIntoleranceConcern_fr] Dans une entrée allergiesAndIntoleranceConcern, l'élément "effectiveTime" indique le début et la fin de l'élément décrit.
+            Une valeur nullFlavor est acceptée. Autrement, son composant "high" est obligatoire si le statutCode est "completed" ou "aborted" et absent absent dans les autres cas.
+        </assert>
     </rule>
     
 </pattern>

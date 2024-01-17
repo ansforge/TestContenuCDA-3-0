@@ -15,7 +15,6 @@
         
         <!-- Test des templateId pour l'entrée "Substitution act" -->
         <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.9.2']">
-            
             [1] [E_acteSubstitution_int.sch] Erreur de conformité CI-SIS : 
             L'entrée "Substitution act" doit comporter le 'templateId' suivant:
             - Un 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.9.1.3.9.2" 
@@ -24,6 +23,11 @@
         <!-- Test présence de l'élément 'code' -->
         <assert test="count(cda:code)=1">
             [E_acteSubstitution_int.sch] Erreur de conformité CI-SIS : L'entrée "FR-Acte-substitution" doit comporter un élément 'code'.
+        </assert>
+        
+        <!-- Test présence de l'élément 'statusCode' -->
+        <assert test="count(cda:statusCode)=1">
+            [E_acteSubstitution_int.sch] Erreur de conformité CI-SIS : L'entrée "FR-Acte-substitution" doit comporter un élément 'statusCode'.
         </assert>
         
     </rule>

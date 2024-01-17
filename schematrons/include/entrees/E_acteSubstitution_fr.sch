@@ -26,7 +26,7 @@
         <assert test="count(cda:code)=1">
             [E_acteSubstitution_fr.sch] Erreur de conformité CI-SIS : L'entrée "FR-Acte-substitution" doit comporter un élément 'code'.
         </assert>
-  
+        
     </rule>
     
 </pattern>

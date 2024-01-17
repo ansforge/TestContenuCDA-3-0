@@ -28,7 +28,7 @@
             [E_allergiesAndIntoleranceConcern_int] Erreur de conformité PCC : Dans l'élément "allergies And Intolerance Concern", il doit y avoir au minimum trois templateIds
         </assert>
         
-        <assert test='cda:entryRelationship[@typeCode="SUBJ"]//cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.6"]'>
+        <assert test='cda:entryRelationship[@typeCode="SUBJ" and @inversionInd="false"]//cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.4.6"]'>
             
             [E_allergiesAndIntoleranceConcern_int] Erreur de Conformité PCC: Cette entrée 'Allergy and Intolerance Concern' doit contenir une ou plusieurs entrées se conformant
             au template de l'entrée 'Allergy and Intolerance' (1.3.6.1.4.1.19376.1.5.3.1.4.6).

@@ -57,5 +57,9 @@
             [E_allergiesAndIntolerances_fr] Erreur de Conformité CI-SIS: une seule entryRelationship avec un templateId (1.3.6.1.4.1.19376.1.5.3.1.4.1.1) au maximum est autorisée, elle décrit le statut du problème
         </assert>
         
+        <assert test="count(cda:entryRelationship/*/cda:templateId[@root='1.2.250.1.213.1.1.3.171'])&lt;2">
+            [E_allergiesAndIntolerances_fr] Erreur de Conformité CI-SIS: une seule entryRelationship avec un templateId (1.2.250.1.213.1.1.3.171) au maximum est autorisée, elle décrit la certitude de l'allergie ou l'hypersensibilité.
+        </assert>
+        
     </rule>
 </pattern>
