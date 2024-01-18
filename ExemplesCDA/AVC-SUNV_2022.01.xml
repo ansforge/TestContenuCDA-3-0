@@ -795,6 +795,7 @@
                 <reference value="#CONSULT01" />
               </text>
               <effectiveTime value="201810150930" />
+              <priorityCode code="CS" displayName="Recontacter pour fixer RDV" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
               <performer>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>     

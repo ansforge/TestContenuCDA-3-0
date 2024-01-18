@@ -3032,6 +3032,8 @@
               <text mediaType="text/xml">
                 <reference value="#demande-RCP-recours"/>
               </text>
+              <priorityCode code='CS' displayName="recontacter pour fixer RDV"
+                codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" />
             </encounter>
           </entry>
           <!-- Entrée FR-Demande-d-examen-ou-de-suivi [0..*] : demande d'expertise complémentaire n°1 -->
@@ -3113,6 +3115,8 @@
               <text mediaType="text/xml">
                 <reference value="#surveillance"/>
               </text>
+              <priorityCode code='CS' displayName="recontacter pour fixer RDV"
+                codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" />
             </encounter>
           </entry>
           <!-- Entrée FR-Acte [0..*] : Proposition thérapeutique de 1ère intention - 1 -->
