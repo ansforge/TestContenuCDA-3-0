@@ -1864,6 +1864,7 @@
                       </originalText>
                       <translation code="H02AB06" displayName="prednisolone" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC Code" />
                     </code>
+                    <name>SOLUPRED 20 mg, comprimé effervescent</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -1918,6 +1919,7 @@
                       </originalText>
                       <translation code="B01A" displayName="Antithrombotiques" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC Code" />
                     </code>
+                    <name>PLAVIX 75 mg, comprimé pelliculé</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -1989,6 +1991,7 @@
                         <reference value="#zz0004" />
                       </originalText>
                     </code>
+                    <name>SOLUPRED 20 mg, comprimé effervescent</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -4850,6 +4853,7 @@
                         </originalText>
                       </translation>
                     </code>
+                    <name>METALYSE 10000 unités, poudre et solvant pour solution injectable</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -5074,6 +5078,7 @@
                         </originalText>
                       </translation>
                     </code>
+                    <name>METALYSE 10000 unités, poudre et solvant pour solution injectable</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>

@@ -2172,6 +2172,7 @@
                       <translation code="J01CR02" displayName="AMOXICILLINE ET INHIBITEUR D'ENZYME"
                         codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"> </translation>
                     </code>
+                    <name>AUGMENTIN 1 g/200 mg, poudre et solvant pour solution injectable</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -2241,6 +2242,7 @@
                       <translation code="N01BB02" displayName="LIDOCAÏNE"
                         codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"> </translation>
                     </code>
+                    <name>CHLORHYDRATE DE LIDOCAINE Renaudin 10 mg/ml</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
@@ -2308,6 +2310,7 @@
                       <translation code="N01AB06" displayName="ISOFLURANE"
                         codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"> </translation>
                     </code>
+                    <name>ISOFLURANE BELAMONT, gaz anesthésique pour inhalation en flacon</name>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
