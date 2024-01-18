@@ -56,16 +56,19 @@
             et des nullFlavor=’NA’ dans les éléments obligatoires de l’entrée.
         </assert>
         
+        <assert test="not(cda:code[@code='CS']) or (@moodCode = 'ARQ' and cda:code[@code='CS'] and cda:priorityCode)"> 
+            [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "priorityCode" doit être présent pour indiquer qu'un rappel est nécessaire pour fixer la date de rendez-vous pour la rencontre, si le "code" de l'entrée prend la valeur "CS".
+            (le "code" de l'entrée prend la valeur "CS" si la rencontre est prévue non confirmée (ARQ) et si une confirmation est attendue).
+        </assert>
         <assert test="not(cda:text) or (cda:text and cda:text/cda:reference[@value])">
             [E_encounter_int] Erreur de conformité PCC : Si l'élément 'text' est présent, il doit avoir un élément 'reference' qui contient une URI dans un attribut @value.
         </assert>
         
-        <assert test="(not(@moodCode = 'EVN' or @moodCode = 'PMRS') and @moodCode = 'ARQ' and cda:priorityCode) or ((@moodCode = 'EVN' or @moodCode = 'PMRS') and cda:effectiveTime)"> 
+        <assert test="(not(@moodCode = 'EVN' or @moodCode = 'PMRS') and @moodCode = 'ARQ') or ((@moodCode = 'EVN' or @moodCode = 'PMRS') and cda:effectiveTime)"> 
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "effectiveTime" 
             horodate l'événement (en mode EVN), ou la date désirée pour la rencontre (en mode ARQ or PMRS).
             En mode EVN ou PMRS, l'élément "effectiveTime" sera présent.
-            En mode ARQ, l'élément "effectiveTime" pourra être présent, mais si la date n'est pas présente, l'élément "priorityCode" doit être présent  
-            pour indiquer qu'un rappel est nécessaire pour fixer la date de rendez-vous pour la rencontre. 
+            En mode ARQ, l'élément "effectiveTime" pourra être présent.
         </assert>
         
         <assert test="not(cda:performer) or (cda:performer and
