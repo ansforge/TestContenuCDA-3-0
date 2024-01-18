@@ -89,6 +89,9 @@
     <include href="../include/entrees/E_organizerRCP_ANS.sch"/>
     <include href="../include/entrees/E_organizerTraitementInitialAVC_ANS.sch"/>
     <include href="../include/entrees/E_statutDuDossier_ANS.sch"/>
+    <include href="../include/entrees/E_typeDocumentAttache_ANS.sch"/>
+    <include href="../include/entrees/E_transfusionProduitsSanguins_ANS.sch"/>
+    <include href="../include/entrees/E_syntheseMedicaleSejour_ANS.sch"/>
 
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -159,6 +162,9 @@
         <active pattern="E_organizerRCP_ANS"/>
         <active pattern="E_organizerTraitementInitialAVC_ANS"/>
         <active pattern="E_statutDuDossier_ANS"/>
+        <active pattern="E_typeDocumentAttache_ANS"/>
+        <active pattern="E_transfusionProduitsSanguins_ANS"/>
+        <active pattern="E_syntheseMedicaleSejour_ANS"/>
 
     </phase>
 </schema>

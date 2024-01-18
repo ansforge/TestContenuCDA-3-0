@@ -162,6 +162,11 @@
     <include href="../include/entrees/E_laboratoireExecutant_fr.sch"/>
     <include href="../include/entrees/E_humanPatientWithNonHumanSubject_fr.sch"/>
     <include href="../include/entrees/E_nonHumanSubject_fr.sch"/>
+    <include href="../include/entrees/E_rechercheMicroOrganismes_fr.sch"/>
+    <include href="../include/entrees/E_motifArretTraitement_fr.sch"/>
+    <include href="../include/entrees/E_modaliteSortie_fr.sch"/>
+    <include href="../include/entrees/E_modaliteEntree_fr.sch"/>
+    
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
@@ -289,5 +294,9 @@
         <active pattern="E_laboratoireExecutant_fr"/>
         <active pattern="E_humanPatientWithNonHumanSubject_fr"/>
         <active pattern="E_nonHumanSubject_fr"/>
+        <active pattern="E_rechercheMicroOrganismes_fr"/>
+        <active pattern="E_motifArretTraitement_fr"/>
+        <active pattern="E_modaliteSortie_fr"/>
+        <active pattern="E_modaliteEntree_fr"/>
     </phase>
 </schema>
