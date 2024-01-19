@@ -5,6 +5,7 @@
    Teste la conformité de l'entrée FR-Liste-des-mesures-de-refraction aux spécifications IHE EYE CARE GEE
    
    27/05/2021 : Création
+   19/01/2024 : MAJ du schematron 
    
 -->
 
@@ -21,6 +22,10 @@
             [E_mesuresDeRefractionOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
             FR-Liste-des-mesures-de-refraction doit contenir l'élément "templateId" avec l'attribut
             @root fixé à "1.3.6.1.4.1.19376.1.12.1.3.3". </assert>
+        
+        <assert test="count(cda:id)=1">
+            [E_mesuresDeRefractionOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
+            FR-Liste-des-mesures-de-refraction doit contenir un élément "id".</assert>
 
         <assert test="cda:code[@code = '70938-6' and @codeSystem = '2.16.840.1.113883.6.1']">
             [E_mesuresDeRefractionOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
@@ -35,9 +40,9 @@
             [E_mesuresDeRefractionOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
             FR-Liste-des-mesures-de-refraction doit contenir un élément "effectiveTime" avec
             l'attribut @value.</assert>
-
-        <assert
-            test="count(.//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']) &gt;= 1"
+        
+        
+        <assert test="count(.//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']) &gt;= 1"
             > [E_mesuresDeRefractionOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
             FR-Liste-des-mesures-de-refraction doit contenir au minimum une entrée FR-Mesure-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.7).</assert>
 

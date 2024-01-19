@@ -5,6 +5,7 @@
    Teste la conformité de l'entrée FR-Liste-des-mesures-keratometriques aux spécifications IHE EYE CARE GEE
    
    04/07/2023 : Création
+   19/01/2024 : MAJ du schematron
    
 -->
 
@@ -22,6 +23,10 @@
             FR-Liste-des-mesures-keratometriques doit contenir l'élément "templateId" avec l'attribut
             @root fixé à "1.3.6.1.4.1.19376.1.12.1.3.4". </assert>
         
+        <assert test="count(cda:id)=1">
+            [E_mesuresKeratometriquesOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
+            FR-Liste-des-mesures-keratometriques doit contenir un élément "id".</assert>
+        
         <assert test="cda:code[@code ='252828005' and @codeSystem ='2.16.840.1.113883.6.96']">
             [E_mesuresKeratometriquesOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée
             FR-Liste-des-mesures-keratometriques doit contenir l'élément "code" avec les attributs
@@ -36,6 +41,11 @@
             [E_mesuresKeratometriquesOrganizer_int] Erreur de conformité IHE EYE CARE (GEE) : 
             L'entrée FR-Liste-des-mesures-keratometriques doit contenir un élément "effectiveTime" avec
             l'attribut @value.</assert>
+        
+        
+        <assert test="cda:author"> 
+            [E_mesuresKeratometriquesOrganizer_int]
+            Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-keratometriques doit contenir l'élément "author".</assert>
         
         <assert
             test="count(.//cda:observation[cda:templateId/@root ='1.3.6.1.4.1.19376.1.12.1.3.8']) &gt;= 1"> 

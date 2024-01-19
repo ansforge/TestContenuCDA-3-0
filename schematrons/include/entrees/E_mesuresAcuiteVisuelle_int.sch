@@ -20,19 +20,35 @@
         <!-- Verifier que le templateId parent de l'observation est présent. -->
         <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.12.1.3.2']">
             [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) :
-            L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "templateId" avec l'attribut @root fixé à "1.3.6.1.4.1.19376.1.12.1.3.3".
+            L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "templateId" avec l'attribut @root fixé à "1.3.6.1.4.1.19376.1.12.1.3.2".
         </assert>
         
         <!-- Verifier que l'élément id est présent. -->        
-        <assert test="count(cda:id)&lt;=1">
+        <assert test="count(cda:id)=1">
             [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) :
-            L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenur un élement "id".
+            L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenur un élement "id" [1..1].
         </assert>
         
         <assert
             test="cda:code[@code = '28631-0' and @codeSystem = '2.16.840.1.113883.6.1']">
             [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "code" 
             avec les attributs @code="28631-0" et @codeSystem="2.16.840.1.113883.6.1".
+        </assert>
+        
+        <assert
+            test="cda:code/cda:qualifier[cda:name/@code='MED-1049' and cda:name/@codeSystem='1.2.250.1.213.1.1.4.322'][cda:value/@code='MED-1048' and cda:value/@codeSystem='1.2.250.1.213.1.1.4.322']">
+            [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "qualifier" dans l'élément "code" (pour préciser l'acuité visuelle observée)
+            ayant comme sous éléments :
+            - "name" avec les attributs @code="MED-1049" et @codeSystem="1.2.250.1.213.1.1.4.322"
+            - "value" avec les attributs @code="MED-1048" et @codeSystem="1.2.250.1.213.1.1.4.322".
+        </assert>
+        
+        <assert
+            test="cda:code/cda:qualifier[cda:name/@code='MED-1054' and cda:name/@codeSystem='1.2.250.1.213.1.1.4.322'][cda:value/@nullFlavor='NA']">
+            [E_mesuresAcuiteVisuelle_int] Erreur de conformité IHE EYE CARE (GEE) : L'entrée FR-Liste-des-mesures-acuite-visuelle doit contenir l'élément "qualifier" dans l'élément "code"  (pour préciser la distance de mesure de l'acuité visuelle)
+            ayant comme sous éléments :
+            - "name" avec les attributs @code="MED-1054" et @codeSystem="1.2.250.1.213.1.1.4.322"
+            - "value" fixé à nullFlavor="NA".
         </assert>
         
         <assert test="cda:statusCode[@code = 'completed']">

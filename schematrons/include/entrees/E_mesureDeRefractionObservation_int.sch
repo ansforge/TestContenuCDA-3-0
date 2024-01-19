@@ -6,6 +6,9 @@
     
     Historique :
     31/05/2021 : Création
+    19/01/2024 : MAJ du schematron : 
+                    - Modification de test sur l'élément 'id'
+                    - Ajout du test sur l'élément 'code' et 'text'
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_mesureDeRefractionObservation_int">
@@ -26,9 +29,19 @@
             'OBS' et 'EVN'
         </assert>
         
-        <assert test="count(cda:id)&lt;=1">
+        <assert test="count(cda:id)=1">
             [E_mesureDeRefractionObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure de refraction Observation" doit contenir un élement Id 
+            l'élément "mesure de refraction Observation" doit contenir un élement "Id" 
+        </assert>
+        
+        <assert test="count(cda:code)=1">
+            [E_mesureDeRefractionObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesure de refraction Observation" doit contenir l'élément 'code'.
+        </assert>
+        
+        <assert test="cda:text">
+            [E_mesureDeRefractionObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesure de refraction Observation" doit contenir l'élément 'text'.
         </assert>
         
         <assert test="cda:statusCode[@code = 'completed']">
@@ -38,12 +51,12 @@
             
         <assert test="cda:effectiveTime">
             [E_mesureDeRefractionObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément 'effectiveTime' doit être présent.
+            l'élément "mesure de refraction Observation" doit contenir l'élément 'effectiveTime' doit être présent.
         </assert>
         
         <assert test="cda:value">
             [E_mesureDeRefractionObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure de refraction Observation" doit contenir un élement value 
+            l'élément "mesure de refraction Observation" doit contenir un élement 'value' 
         </assert>
         
         <assert test="cda:targetSiteCode">

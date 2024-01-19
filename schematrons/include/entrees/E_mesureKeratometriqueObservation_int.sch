@@ -5,7 +5,8 @@
    Teste la conformité de l'entrée FR-Mesure-keratometrique en fonctionn de la conformité IHE EYE CARE GEE
     
     Historique :
-    04/072023 : Création
+    04/07/2023 : Création
+    19/01/2024 : MAJ du schematron
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_mesureKeratometriqueObservation_int">
@@ -26,14 +27,14 @@
             'OBS' et 'EVN'
         </assert>
         
-        <assert test="count(cda:id)&lt;=1">
+        <assert test="count(cda:id)=1">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure keratometrique Observation" doit contenir un ou plusieurs élement "Id"
+            l'élément "mesure keratometrique Observation" doit contenir un élement "Id"
         </assert>
         
-        <assert test="count(cda:code)&lt;=1">
+        <assert test="count(cda:code)=1">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure keratometrique Observation" doit contenir un ou plusieurs élement "code"
+            l'élément "mesure keratometrique Observation" doit contenir un élement "code"
         </assert>
         
         <assert test="cda:text">
@@ -60,15 +61,21 @@
             l'élément "mesure de refraction Observation" doit contenir un élement value 
         </assert>
         
-        <assert test="cda:targetSiteCode">
+        <assert test="cda:targetSiteCode[@codeSystem ='2.16.840.1.113883.6.96']">
             [E_mesureKeratometriqueObservation_int]  Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure de refraction Observation" doit contenir un élement targetSiteCode 
+            l'élément "mesure de refraction Observation" doit contenir un élement targetSiteCode avec les attributs : 
+            @codeSystem ='2.16.840.1.113883.6.96']
         </assert>
         
         <assert test="cda:methodCode">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
             l'élément "mesure de refraction Observation" doit contenir un élement methodCode 
         </assert>
+        
+        <!--<assert test="count(cda:interpretationCode)&gt;=1">
+            [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesure de refraction Observation" doit contenir au minimum un élement "interpretationCode".
+        </assert>-->
         
         <assert test="count(cda:author)&lt;=1">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
