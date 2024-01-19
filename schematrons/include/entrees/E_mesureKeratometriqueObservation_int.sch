@@ -72,10 +72,10 @@
             l'élément "mesure de refraction Observation" doit contenir un élement methodCode 
         </assert>
         
-        <!--<assert test="count(cda:interpretationCode)&gt;=1">
+        <assert test="count(cda:interpretationCode)&lt;=1">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesure de refraction Observation" doit contenir au minimum un élement "interpretationCode".
-        </assert>-->
+            l'élément "mesure de refraction Observation" peut contenir un élement "interpretationCode" [0..1].
+        </assert>
         
         <assert test="count(cda:author)&lt;=1">
             [E_mesureKeratometriqueObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
