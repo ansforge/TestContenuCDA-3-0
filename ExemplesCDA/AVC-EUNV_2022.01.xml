@@ -2339,8 +2339,8 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6" />
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.80" />
-                      <code code="789-8" codeSystem="2.16.840.1.113883.6.1" displayName="Erythtocytes [Nombre/Volume] Sang ; Numérique ; Comptage automate">
-                        <originalText><reference value="#Erythtocytes"/></originalText>
+                      <code code="789-8" codeSystem="2.16.840.1.113883.6.1" displayName="Erythrocytes [Nombre/Volume] Sang ; Numérique ; Comptage automate">
+                        <originalText><reference value="#Erythrocytes"/></originalText>
                       </code>
                       <statusCode code="completed" />
                       <effectiveTime value="20131112113000+0100" />
