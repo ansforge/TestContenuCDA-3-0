@@ -44,15 +44,15 @@
 			RoseTreeToMIFStaticModel.xsl version: 1.1 StaticMifToXsd.xsl version
 			2.0</xs:documentation>
 	</xs:annotation>
-	<xs:import namespace="urn:ihe:pharm:medication" schemaLocation="COCT_MT230100UV_ext_pharmacy.xsd"/>
-	<xs:include schemaLocation="infrastructureRoot.xsd"/>
-	<xs:include schemaLocation="datatypes.xsd"/>
-	<xs:include schemaLocation="voc.xsd"/>
-	<xs:include schemaLocation="NarrativeBlock.xsd"/>
-	<xs:import namespace="urn:hl7-org:sdtc" schemaLocation="SDTC.xsd" />
+	<xs:import namespace="urn:ihe:pharm:medication" schemaLocation="pharmacy/COCT_MT230100UV_ext_pharmacy.xsd"/>
+	<xs:include schemaLocation="general/infrastructureRoot.xsd"/>
+	<xs:include schemaLocation="general/datatypes.xsd"/>
+	<xs:include schemaLocation="general/voc.xsd"/>
+	<xs:include schemaLocation="general/NarrativeBlock.xsd"/>
+	<xs:import namespace="urn:hl7-org:sdtc" schemaLocation="sdtc/SDTC.xsd" />
 	<xs:import namespace="urn:oid:1.3.6.1.4.1.19376.1.3.2"
-		schemaLocation="ihelab.xsd"/>
-	<xs:import namespace="urn:dicom-org:ps3-20" schemaLocation="DICOM.xsd"/>
+		schemaLocation="ihelab/ihelab.xsd"/>
+	<xs:import namespace="urn:dicom-org:ps3-20" schemaLocation="dicom/DICOM.xsd"/>
 	<xs:complexType name="POCD_MT000040.InfrastructureRoot.typeId">
 		<xs:complexContent>
 			<xs:restriction base="II">
