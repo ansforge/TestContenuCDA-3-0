@@ -14,8 +14,8 @@
         <assert test="$count_id=1">
             [inFulfillementOf_fr.sch] Erreur de conformité CI-SIS : L'élément id ne doit être présent qu'une fois (cardinalité [1..1])
         </assert>
-        <assert test="cda:id[@root]">
-            [inFulfillementOf_fr.sch] Erreur de conformité CI-SIS : L'élément id doit contenir un attribut @root
+        <assert test="cda:id[@root] or cda:id[@nullFlavor]">
+            [inFulfillementOf_fr.sch] Erreur de conformité CI-SIS : L'élément id doit contenir un attribut @root ou un attribut @nullFlavor
         </assert>
     </rule>
 </pattern>
