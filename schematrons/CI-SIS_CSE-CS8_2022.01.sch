@@ -88,7 +88,7 @@
     <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_TypeService-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_VaccinCSE8-CISIS.sch"/><!--
     <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_SocialHistoryCodes-CISIS.sch"/>-->
-    <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_condition-ver-status-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_Condition-ver-status-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_Traite-NonTraite-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/CSE-CS8_2022.01/JDV_MotifHospitalisationCSE-CISIS.sch"/>
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -120,7 +120,6 @@
         <active pattern="E_teeth_CSE-CS8"/>
         <active pattern="E_acte_CSE-CS8"/>
         <active pattern="E_decesEnfant_CSE-CS8"/>
-        <active pattern="JDV_condition-ver-status-CISIS"/>
         
         <!-- JDV -->
         <active pattern="JDV_Activite-CISIS"/> 
@@ -139,9 +138,10 @@
         <active pattern="JDV_TypeService-CISIS"/>
         <active pattern="JDV_VaccinCSE8-CISIS"/><!--
         <active pattern="JDV_SocialHistoryCodes-CISIS"/>-->
-        <active pattern="JDV_condition-ver-status-CISIS"/>
+        <active pattern="JDV_Condition-ver-status-CISIS"/>
         <active pattern="JDV_MotifHospitalisationCSE-CISIS"/>
         <active pattern="JDV_Traite-NonTraite-CISIS"/>
+        <active pattern="JDV_Condition-ver-status-CISIS"/>
         
     </phase>
     
@@ -166,7 +166,7 @@
         <let name="JDV_TypeService-CISIS" value="'../jeuxDeValeurs/JDV_TypeService_CISIS.xml'"/>
         <let name="JDV_VaccinCSE8-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE8_CISIS.xml'"/>
         <let name="JDV_SocialHistoryCodes-CISIS" value="'../jeuxDeValeurs/JDV_SocialHistoryCodes_CISIS.xml'"/>
-        <let name="JDV_condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_condition_ver_status_CISIS.xml'"/>
+        <let name="JDV_condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_Condition_ver_status_CISIS.xml'"/>
         <let name="JDV_Traite-NonTraite-CISIS" value="'../jeuxDeValeurs/JDV_Traite_NonTraite_CISIS.xml'"/>
         <let name="JDV_MotifHospitalisationCSE-CISIS" value="'../jeuxDeValeurs/JDV_MotifHospitalisationCSE_CISIS.xml'"/>
         <rule context="cda:ClinicalDocument">

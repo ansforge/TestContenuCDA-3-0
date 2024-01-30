@@ -58,7 +58,7 @@
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_NIHSSNeglInt.sch"/>
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_InterpretationECG.sch"/>
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_TypeLesionImagerie.sch"/>
-    <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_territoireInfarctus.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_TerritoireInfarctus.sch"/>
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_ArtereAnt.sch"/>
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_ArterePost.sch"/>
     <include href="include/jeuxDeValeurs/AVC-AUNV_2022.01/JDV_ArtereTronc.sch"/>
@@ -111,7 +111,7 @@
         <active pattern="JDV_NIHSSNeglInt"/>
         <active pattern="JDV_InterpretationECG"/>
         <active pattern="JDV_TypeLesionImagerie"/>
-        <active pattern="JDV_territoireInfarctus"/>
+        <active pattern="JDV_TerritoireInfarctus"/>
         <active pattern="JDV_ArtereAnt"/>
         <active pattern="JDV_ArterePost"/>
         <active pattern="JDV_ArtereTronc"/>
@@ -167,7 +167,7 @@
         <let name="JDV_TypeLesionImagerie"
             value="'../jeuxDeValeurs/JDV_TypeLesionImagerie_CISIS.xml'"/>
         <let name="JDV_territoireInfarctus"
-            value="'../jeuxDeValeurs/JDV_territoireInfarctus_CISIS.xml'"/>
+            value="'../jeuxDeValeurs/JDV_TerritoireInfarctus_CISIS.xml'"/>
         <let name="JDV_ArtereAnt" value="'../jeuxDeValeurs/JDV_ArtereAnt_CISIS.xml'"/>
         <let name="JDV_ArterePost" value="'../jeuxDeValeurs/JDV_ArterePost_CISIS.xml'"/>
         <let name="JDV_ArtereTronc" value="'../jeuxDeValeurs/JDV_ArtereTronc_CISIS.xml'"/>

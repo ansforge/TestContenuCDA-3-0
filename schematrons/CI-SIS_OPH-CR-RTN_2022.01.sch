@@ -39,8 +39,8 @@
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
 
-        <let name="jdv_confidentialityCode" value="'../jeuxDeValeurs/JDV_HL7_Confidentiality_CISIS.xml'"/>  
-        <let name="jdv_encompassingEncounterCode" value="'../jeuxDeValeurs/JDV_encompassingEncounterCode_CISIS.xml'"/>        
+        <let name="jdv_ConfidentialityCode" value="'../jeuxDeValeurs/JDV_HL7_Confidentiality_CISIS.xml'"/>  
+        <let name="jdv_EncompassingEncounterCode" value="'../jeuxDeValeurs/JDV_EncompassingEncounterCode_CISIS.xml'"/>        
         
         <rule context="cda:ClinicalDocument">
             <assert test="cda:component/cda:structuredBody/cda:component/cda:section/cda:templateId[@root='1.3.6.1.4.1.19376.1.4.1.2.16']">

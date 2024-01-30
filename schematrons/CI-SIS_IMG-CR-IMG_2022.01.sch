@@ -33,7 +33,7 @@
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ModaliteAcquisition-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LateraliteTechniqueImagerie-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_QuantiteExpositionRayonnements-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_contre-indications-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_Contre-indications-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_StatutGrossesse-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ImagerieObjectifsReference-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueTechniqueImg-CISIS.sch"/>
@@ -73,7 +73,7 @@
         <active pattern="JDV_ModaliteAcquisition-CISIS"/>
         <active pattern="JDV_LateraliteTechniqueImagerie-CISIS"/>
         <active pattern="JDV_QuantiteExpositionRayonnements-CISIS"/>
-        <active pattern="JDV_contre-indications-CISIS"/>
+        <active pattern="JDV_Contre-indications-CISIS"/>
         <active pattern="JDV_StatutGrossesse-CISIS"/>
         <active pattern="JDV_ImagerieObjectifsReference-CISIS"/>
         <active pattern="JDV_LocalisationAnatomiqueTechniqueImg-CISIS"/>
@@ -105,7 +105,7 @@
         <let name="JDV_ModaliteAcquisition-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteAcquisition_CISIS.xml'"/>
         <let name="JDV_LateraliteTechniqueImagerie-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteTechniqueImagerie_CISIS.xml'"/>
         <let name="JDV_QuantiteExpositionRayonnements-CISIS" value="'../jeuxDeValeurs/JDV_QuantiteExpositionRayonnements_CISIS.xml'"/>
-        <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_Contre_indications_CISIS.xml'"/>
+        <let name="JDV_Contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_Contre_indications_CISIS.xml'"/>
         <let name="JDV_StatutGrossesse-CISIS" value="'../jeuxDeValeurs/JDV_StatutGrossesse_CISIS.xml'"/>
         <let name="JDV_ImagerieObjectifsReference-CISIS" value="'../jeuxDeValeurs/JDV_ImagerieObjectifsReference_CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueTechniqueImg-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique_CISIS.xml'"/>
