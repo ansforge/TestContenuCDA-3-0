@@ -105,7 +105,7 @@
         <let name="JDV_ModaliteAcquisition-CISIS" value="'../jeuxDeValeurs/JDV_ModaliteAcquisition_CISIS.xml'"/>
         <let name="JDV_LateraliteTechniqueImagerie-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteTechniqueImagerie_CISIS.xml'"/>
         <let name="JDV_QuantiteExpositionRayonnements-CISIS" value="'../jeuxDeValeurs/JDV_QuantiteExpositionRayonnements_CISIS.xml'"/>
-        <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre_indications_CISIS.xml'"/>
+        <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_Contre_indications_CISIS.xml'"/>
         <let name="JDV_StatutGrossesse-CISIS" value="'../jeuxDeValeurs/JDV_StatutGrossesse_CISIS.xml'"/>
         <let name="JDV_ImagerieObjectifsReference-CISIS" value="'../jeuxDeValeurs/JDV_ImagerieObjectifsReference_CISIS.xml'"/>
         <let name="JDV_LocalisationAnatomiqueTechniqueImg-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique_CISIS.xml'"/>

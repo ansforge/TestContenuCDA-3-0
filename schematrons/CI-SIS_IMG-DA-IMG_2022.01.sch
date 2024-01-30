@@ -69,10 +69,10 @@
     
     <pattern id="principal">
         <let name="JDV_Modalite-demandeActeImagerie-CISIS" value="'../jeuxDeValeurs/JDV_Modalite_demandeActeImagerie_CISIS.xml'"/>
-        <let name="JDV_Contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre_indications_CISIS.xml'"/>
+        <let name="JDV_Contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_Contre_indications_CISIS.xml'"/>
         <let name="JDV_InjectionPDC_TEP-CISIS" value="'../jeuxDeValeurs/JDV_InjectionPDC_TEP_CISIS.xml'"/>
         <let name="JDV_LateraliteTechniqueImagerie-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteTechniqueImagerie_CISIS.xml'"/>
-        <let name="JDV_InfoPriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_infoPriseEnCharge_CISIS.xml'"/>
+        <let name="JDV_InfoPriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_InfoPriseEnCharge_CISIS.xml'"/>
         <let name="JDV_ModificateurTopographique-CISIS" value="'../jeuxDeValeurs/JDV_ModificateurTopographique_CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeScintigraphie-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeScintigraphie_CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeTEP-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeTEP_CISIS.xml'"/>
