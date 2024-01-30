@@ -768,7 +768,7 @@
               <!-- Date d'administration -->
               <effectiveTime nullFlavor="UNK"/>
               <!-- Vaccin -->
-              <consumable>
+              <consumable typeCode="CSM">
                 <manufacturedProduct>
                   <!-- Conformité Product (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
@@ -861,7 +861,7 @@
               <!-- Date d'administration -->
               <effectiveTime nullFlavor="UNK"/>
               <!-- Vaccin -->
-              <consumable>
+              <consumable typeCode="CSM">
                 <manufacturedProduct>
                   <!-- Conformité Product (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
@@ -1287,7 +1287,7 @@
                 <low value="20190515"/>
                 <high value="20190530"/>
               </effectiveTime>
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id nullFlavor="UNK" />
                   <!-- Lieu du séjour -->
@@ -1322,7 +1322,7 @@
               <effectiveTime>
                 <low value="20190412"/>
               </effectiveTime>
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id nullFlavor="UNK" />
                   <!-- Lieu du séjour -->
