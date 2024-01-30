@@ -27,10 +27,10 @@
     <include href="abstract/IVL_TS.sch"/> 
     
     <!-- JDV -->
-    <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_contre-indications-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_Contre-indications-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_Modalite-demandeActeImagerie-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_InjectionPDC_TEP-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_infoPriseEnCharge-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_InfoPriseEnCharge-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_ModificateurTopographique-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_FonctionEtudieeScintigraphie-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_FonctionEtudieeTEP-CISIS.sch"/>
@@ -52,9 +52,9 @@
         <active pattern="Entete_IMG-DA-IMG"/>
         <!-- JDV --> 
         <active pattern="JDV_Modalite-demandeActeImagerie-CISIS"/>
-        <active pattern="JDV_contre-indications-CISIS"/>
+        <active pattern="JDV_Contre-indications-CISIS"/>
         <active pattern="JDV_InjectionPDC_TEP-CISIS"/>
-        <active pattern="JDV_infoPriseEnCharge-CISIS"/>
+        <active pattern="JDV_InfoPriseEnCharge-CISIS"/>
         <active pattern="JDV_ModificateurTopographique-CISIS"/>
         <active pattern="JDV_FonctionEtudieeScintigraphie-CISIS"/>
         <active pattern="JDV_FonctionEtudieeTEP-CISIS"/>
@@ -69,10 +69,10 @@
     
     <pattern id="principal">
         <let name="JDV_Modalite-demandeActeImagerie-CISIS" value="'../jeuxDeValeurs/JDV_Modalite_demandeActeImagerie_CISIS.xml'"/>
-        <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre_indications_CISIS.xml'"/>
+        <let name="JDV_Contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre_indications_CISIS.xml'"/>
         <let name="JDV_InjectionPDC_TEP-CISIS" value="'../jeuxDeValeurs/JDV_InjectionPDC_TEP_CISIS.xml'"/>
         <let name="JDV_LateraliteTechniqueImagerie-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteTechniqueImagerie_CISIS.xml'"/>
-        <let name="JDV_infoPriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_infoPriseEnCharge_CISIS.xml'"/>
+        <let name="JDV_InfoPriseEnCharge-CISIS" value="'../jeuxDeValeurs/JDV_infoPriseEnCharge_CISIS.xml'"/>
         <let name="JDV_ModificateurTopographique-CISIS" value="'../jeuxDeValeurs/JDV_ModificateurTopographique_CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeScintigraphie-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeScintigraphie_CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeTEP-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeTEP_CISIS.xml'"/>
