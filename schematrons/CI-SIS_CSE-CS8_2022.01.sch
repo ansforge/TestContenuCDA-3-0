@@ -166,7 +166,7 @@
         <let name="JDV_TypeService-CISIS" value="'../jeuxDeValeurs/JDV_TypeService_CISIS.xml'"/>
         <let name="JDV_VaccinCSE8-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE8_CISIS.xml'"/>
         <let name="JDV_SocialHistoryCodes-CISIS" value="'../jeuxDeValeurs/JDV_SocialHistoryCodes_CISIS.xml'"/>
-        <let name="JDV_condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_Condition_ver_status_CISIS.xml'"/>
+        <let name="JDV_Condition-ver-status-CISIS" value="'../jeuxDeValeurs/JDV_HL7_Condition_ver_status_CISIS.xml'"/>
         <let name="JDV_Traite-NonTraite-CISIS" value="'../jeuxDeValeurs/JDV_Traite_NonTraite_CISIS.xml'"/>
         <let name="JDV_MotifHospitalisationCSE-CISIS" value="'../jeuxDeValeurs/JDV_MotifHospitalisationCSE_CISIS.xml'"/>
         <rule context="cda:ClinicalDocument">

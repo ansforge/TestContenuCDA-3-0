@@ -166,7 +166,7 @@
         <let name="JDV_InterpretationECG" value="'../jeuxDeValeurs/JDV_InterpretationECG_CISIS.xml'"/>
         <let name="JDV_TypeLesionImagerie"
             value="'../jeuxDeValeurs/JDV_TypeLesionImagerie_CISIS.xml'"/>
-        <let name="JDV_territoireInfarctus"
+        <let name="JDV_TerritoireInfarctus"
             value="'../jeuxDeValeurs/JDV_TerritoireInfarctus_CISIS.xml'"/>
         <let name="JDV_ArtereAnt" value="'../jeuxDeValeurs/JDV_ArtereAnt_CISIS.xml'"/>
         <let name="JDV_ArterePost" value="'../jeuxDeValeurs/JDV_ArterePost_CISIS.xml'"/>

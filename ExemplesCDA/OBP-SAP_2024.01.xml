@@ -1619,7 +1619,7 @@
                 <low value="20221211"/>
               </effectiveTime>
               <!-- exécutant obligatoire si rencontre réalisée -->
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
                   <code code="G15_10/SM20" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Gynécologie-obstétrique (SM)" />
@@ -1665,7 +1665,7 @@
                 <low value="20230111" />
               </effectiveTime>
               <!-- exécutant obligatoire si rencontre réalisée -->
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
                   <code code="G15_10/SM20" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Gynécologie-obstétrique (SM)" />
@@ -1712,7 +1712,7 @@
                 <low value="20230125" />
               </effectiveTime>
               <!-- exécutant obligatoire si rencontre réalisée -->
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
                   <code code="G15_10/SM20" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Gynécologie-obstétrique (SM)" />
@@ -1760,7 +1760,7 @@
                 <high value="20230218"/>
               </effectiveTime>
               <!-- exécutant obligatoire si rencontre réalisée -->
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
                   <code code="G15_10/SM20" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Gynécologie-obstétrique (SM)" />

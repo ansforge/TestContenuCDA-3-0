@@ -832,7 +832,7 @@
                   </rateQuantity>
                   
                   <!-- Produit de santé à nullFlavor="NA" -->
-                  <consumable>
+                  <consumable typeCode="CSM">
                     <manufacturedProduct classCode="MANU">
                       <!-- Conformité Product (CCD) -->
                       <templateId root="2.16.840.1.113883.10.20.1.53"/>
@@ -916,7 +916,7 @@
                     </high>
                   </rateQuantity>
                   <!-- Produit de santé à nullFlavor="NA" -->
-                  <consumable>
+                  <consumable typeCode="CSM">
                     <manufacturedProduct classCode="MANU">
                       <!-- Conformité Product (CCD) -->
                       <templateId root="2.16.840.1.113883.10.20.1.53"/>

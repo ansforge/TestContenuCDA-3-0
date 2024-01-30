@@ -1194,7 +1194,7 @@
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
-                  <consumable>
+                  <consumable typeCode="CSM">
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (1.2.250.1.213.1.1.5.690)  -->  
@@ -1704,7 +1704,7 @@
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
-                  <consumable>
+                  <consumable typeCode="CSM">
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  --> 
@@ -2216,7 +2216,7 @@
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
-                  <consumable>
+                  <consumable typeCode="CSM">
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  -->

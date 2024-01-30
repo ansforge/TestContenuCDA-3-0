@@ -1015,7 +1015,7 @@
                            <statusCode code="completed"/>
                            <!-- Organisme de couverture sociale -->
                            <performer typeCode="PRF">
-                              <assignedEntity>
+                              <assignedEntity classCode="ASSIGNED">
                                  <id root="582BB12C-7B63-11EB-9439-0242AC130012" extension="999999"/>
                                  <code code="GUAR" displayName="Garant"
                                     codeSystem="2.16.840.1.113883.5.110"

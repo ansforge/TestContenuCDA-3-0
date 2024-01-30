@@ -62,16 +62,16 @@
 
         <!-- chemins relatifs des fichiers jeux de valeurs -->
         <let name="JDV_ComplicationNeurologique-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationNeurologique_CISIS.xml'"/>
-        <let name="JDV_complication-CISIS" value="'../jeuxDeValeurs/JDV_Complication_CISIS.xml'"/>
+        <let name="JDV_Complication-CISIS" value="'../jeuxDeValeurs/JDV_Complication_CISIS.xml'"/>
         <let name="JDV_InvestigationsRealiseesEUNV-CISIS" value="'../jeuxDeValeurs/JDV_InvestigationsRealiseesEUNV_CISIS.xml'"/>
         <let name="JDV_ExamenHematologieEUVN-CISIS" value="'../jeuxDeValeurs/JDV_ExamenHematologieEUVN_CISIS.xml'"/>
         <let name="JDV_ExamenHemostaseEUNV-CISIS" value="'../jeuxDeValeurs/JDV_ExamenHemostaseEUVN_CISIS.xml'"/>
         <let name="JDV_ExamenBiochimieEUNV-CISIS" value="'../jeuxDeValeurs/JDV_ExamenBiochimieEUVN_CISIS.xml'"/>
         <let name="JDV_TypeActeEUVN-CISIS" value="'../jeuxDeValeurs/JDV_TypeActeEUVN_CISIS.xml'"/>
         <let name="JDV_ComplicationPulmonaire-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationPulmonaire_CISIS.xml'"/>
-        <let name="JDV_complicationneuropsychiatriques-CISIS" value="'../jeuxDeValeurs/JDV_Complicationneuropsychiatriques_CISIS.xml'"/>
-        <let name="JDV_complicationUrinaire-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationUrinaire_CISIS.xml'"/>
-        <let name="JDV_complicationThromboembolique-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationThromboembolique_CISIS.xml'"/>
-        <let name="JDV_complicationDigestive-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationDigestive_CISIS.xml'"/>
+        <let name="JDV_Complicationneuropsychiatriques-CISIS" value="'../jeuxDeValeurs/JDV_Complicationneuropsychiatriques_CISIS.xml'"/>
+        <let name="JDV_ComplicationUrinaire-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationUrinaire_CISIS.xml'"/>
+        <let name="JDV_ComplicationThromboembolique-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationThromboembolique_CISIS.xml'"/>
+        <let name="JDV_ComplicationDigestive-CISIS" value="'../jeuxDeValeurs/JDV_ComplicationDigestive_CISIS.xml'"/>
     </pattern>
 </schema>

@@ -802,7 +802,7 @@
                            <statusCode code="completed"/>
                            <!-- Organisme de couverture sociale -->
                            <performer typeCode="PRF">
-                              <assignedEntity>
+                              <assignedEntity classCode="ASSIGNED">
                                  <id root="582BB12C-7B63-11EB-9439-0242AC130012" extension="999999"/>
                                  <code code="GUAR" displayName="Garant"
                                     codeSystem="2.16.840.1.113883.5.110"
@@ -1596,7 +1596,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15.2"/>
                   <!-- Conformité FR-Sujet (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.60"/>
-                  <relatedSubject>
+                  <relatedSubject classCode="PRS">
                      <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111"/>
                   </relatedSubject>
                </subject>

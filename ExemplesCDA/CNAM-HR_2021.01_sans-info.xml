@@ -346,7 +346,7 @@
               <text><reference value="#NO-VACCIN"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
-              <consumable>
+              <consumable typeCode="CSM">
                 <manufacturedProduct>
                   <!-- Conformité Product (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
