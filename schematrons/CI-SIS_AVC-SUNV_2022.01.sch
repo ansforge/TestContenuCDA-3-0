@@ -26,9 +26,9 @@
     <include href="abstract/dansJeuDeValeurs.sch"/>
     <include href="abstract/IVL_TS.sch"/>  
     
-    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_etiologieInfarctus_AVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_etiologieHemorragie_AVC.sch"/>
-    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_raisonAbsenceEtiologie_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_EtiologieInfarctus_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_EtiologieHemorragie_AVC.sch"/>
+    <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_RaisonAbsenceEtiologie_AVC.sch"/>
     <include href="include/jeuxDeValeurs/AVC-SUNV_2022.01/JDV_AntecedantsMedicaux-CISIS.sch"/> 
     
     <!--Entete-->
@@ -36,9 +36,9 @@
     
     <phase id="CI-SIS_AVC-SUNV_2.2_2022.01">
         <active pattern="variables"/>
-        <active pattern="JDV_etiologieInfarctus_AVC"/>
-        <active pattern="JDV_etiologieHemorragie_AVC"/>
-        <active pattern="JDV_raisonAbsenceEtiologie_AVC"/>
+        <active pattern="JDV_EtiologieInfarctus_AVC"/>
+        <active pattern="JDV_EtiologieHemorragie_AVC"/>
+        <active pattern="JDV_RaisonAbsenceEtiologie_AVC"/>
         <active pattern="Entete_AVC-SUNV"/>
         <active pattern="JDV_AntecedantsMedicaux-CISIS"/>
     </phase>
@@ -47,9 +47,9 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="jdv_AVC_etiologieInfarctus" value="'../jeuxDeValeurs/JDV_etiologieInfarctus_CISIS.xml'"/>
-        <let name="jdv_AVC_etiologieHemorragie" value="'../jeuxDeValeurs/JDV_etiologieHemorragie_CISIS.xml'"/>
-        <let name="jdv_AVC_raisonAbsenceEtiologie" value="'../jeuxDeValeurs/JDV_raisonAbsenceEtiologie_CISIS.xml'"/>
+        <let name="jdv_AVC_EtiologieInfarctus" value="'../jeuxDeValeurs/JDV_EtiologieInfarctus_CISIS.xml'"/>
+        <let name="jdv_AVC_EtiologieHemorragie" value="'../jeuxDeValeurs/JDV_EtiologieHemorragie_CISIS.xml'"/>
+        <let name="jdv_AVC_RaisonAbsenceEtiologie" value="'../jeuxDeValeurs/JDV_RaisonAbsenceEtiologie_CISIS.xml'"/>
         <let name="JDV_AntecedantsMedicaux-CISIS" value="'../jeuxDeValeurs/JDV_AntecedantsMedicaux_CISIS.xml'"/>
         
     </pattern>
