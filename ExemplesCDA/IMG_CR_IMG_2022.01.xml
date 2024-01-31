@@ -373,9 +373,7 @@
   <!-- Acte documenté (CT Tête) -->
   <documentationOf>
     <serviceEvent classCode="ACT">
-      <!-- [1..1] Identifiant de l'examen (DICOM Study Instance UID) L'identifiant unique est en 2 parties, la première est le root avec ici l'OID d'exemple "1.2.3.4.567.8.9.10.", en pratique cet OID est fourni par le centre d'imagerie
-	  la seconde partie est un identifiant unique sur 9 caractères numériques
-	La spécification suivi est celle de DICOM : https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_B.html --> 
+      <!-- [1..1] Identifiant de l'examen (DICOM Study Instance UID) --> 
       <id root="1.2.250.1.3.152.235.2.12.187636474"/>
       <!-- [1..1] Code de l'acte documenté -->
       <code code="24727-0"  displayName="CT Head W contrast IV"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
@@ -515,7 +513,7 @@
   <documentationOf>
     <serviceEvent classCode="ACT">
       <!-- Identifiant de l'examen (DICOM Study Instance UID)-->
-      <id root="CFBE8FA0-8500-11EC-A8A3-0242AC120002"/>
+      <id root="1.2.250.1.3.152.235.2.12.187636476"/>
       <!-- Code de l'acte principal documenté -->
       <code code="24978-9"  displayName="CT Thoracic spine" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
         <!-- [0..1] code CCAM de l'acte documenté  --> 
