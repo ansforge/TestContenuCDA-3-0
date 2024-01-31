@@ -443,7 +443,7 @@
   <documentationOf>
     <serviceEvent classCode="ACT">
       <!-- Identifiant de l'examen (DICOM Study Instance UID)-->
-      <id root="CFBE8FA0-8500-11EC-A8A3-0242AC120002"/>
+      <id root="1.2.250.1.3.152.235.2.12.187636476"/>
       <!-- Code de l'acte principal documenté -->
       <code code="36235-0"  displayName="CT Neck W contrast IV" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
         <!-- [0..1] code CCAM de l'acte documenté  --> 
