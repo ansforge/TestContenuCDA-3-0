@@ -613,8 +613,8 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="20230112171504+0500"/>
-                                    <!-- contre-indications : valeur issue du JDV_contre-indications_CISIS (1.2.250.1.213.1.1.5.659) -->
-                                    <value xsi:type="CD" code="77386006" displayName="patiente actuellement enceinte"
+                                    <!-- contre-indications : valeur issue du JDV_contre_indications_CISIS (1.2.250.1.213.1.1.5.659) -->
+                                    <value xsi:type="CD" code="77386006" displayName="Enceinte"
                                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                                         <originalText><reference value="#contre-indication-01"/></originalText>
                                     </value>
@@ -786,7 +786,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suivi-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="CFE83290-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite_demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="CT" displayName="Scanner/TDM"
                                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                                 <originalText mediaType="text/xml">
@@ -836,7 +836,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suivi-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="CFE83290-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite_demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="CT" displayName="Scanner/TDM"
                                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                                 <originalText mediaType="text/xml">

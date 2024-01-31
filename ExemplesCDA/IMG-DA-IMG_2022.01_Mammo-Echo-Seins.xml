@@ -825,7 +825,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suiv-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="7CC4DDF2-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite_demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="MG" displayName="Mammographie"
                                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                                 <originalText><reference value="#modalite-examen-01"/></originalText>                              
@@ -872,7 +872,7 @@
                             <!-- Conformité FR-Demande-d-examen-ou-de-suivi-IMG-DA (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.27.3"/>
                             <id root="CFE83290-82A0-11EC-A8A3-0242AC120002"/>
-                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite-demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
+                            <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite_demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="MED-1128" displayName="Échographie sans contraste"
                                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                                 <originalText mediaType="text/xml">
