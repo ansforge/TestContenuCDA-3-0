@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="84a9a8b3-6ac3-41c1-892f-461f38075703">
-    <gvr:validationOverview validationDateTime="2024-11-01T08:48:22.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="789b6bc4-df8f-4f72-a28f-266252432951">
+    <gvr:validationOverview validationDateTime="2024-01-02T14:43:40.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,14 +11,364 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="3" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="9212" numberOfErrors="54" numberOfWarnings="16"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="9210" numberOfErrors="54" numberOfWarnings="16"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId/@root='1.2.250.1.213.1.1.2.163']/hl7:entry/hl7:observation/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.217-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11']/hl7:entry/hl7:procedure/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.228-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:code/@code='MED-518']/hl7:entryRelationship/hl7:observation/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.219-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:code/@code='MED-519']/hl7:entryRelationship/hl7:observation/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.220-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:code/@code='MED-521']/hl7:entryRelationship/hl7:observation/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.222-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-EUNV): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:code/@code='MED-522']/hl7:entryRelationship/hl7:observation/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-EUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.223-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[2]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[2]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[2]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[3]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[3]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[3]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[4]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[4]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[4]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[5]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[5]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[5]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[6]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[6]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[6]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[7]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[7]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[7]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[8]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[8]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[8]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[9]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[9]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[9]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[10]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[10]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[10]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[11]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[11]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[11]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[12]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[12]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[12]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[13]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[13]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[13]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[14]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[14]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[14]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[15]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): element hl7:templateId appears too often [max 1x].</gvr:constraintDescription>
+            <gvr:formalExpression>count(hl7:templateId) &lt;= 1</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[15]/observation</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Composant-score-NIHSS): The value for root SHALL be '1.3.6.1.4.1.19376.1.5.3.1.4.13'. Found: "2.16.840.1.113883.10.20.1.31"</gvr:constraintDescription>
+            <gvr:formalExpression>string(@root) = ('1.3.6.1.4.1.19376.1.5.3.1.4.13') or not(@root)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component/section/component[3]/section/entry/observation/entryRelationship[15]/observation/templateId</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[4]/observation/entryRelationship[4]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[5]/observation/entryRelationship[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[6]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[6]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[7]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[7]/observation/entryRelationship[2]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-Resultats-evenements)/d478219e7-true-d478343e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.13'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.48'] | hl7:id | hl7:code | hl7:text | hl7:statusCode[@code = 'completed'] | hl7:effectiveTime | hl7:repeatNumber | hl7:value | hl7:interpretationCode | hl7:methodCode | hl7:targetSiteCode | hl7:author[hl7:assignedAuthor] (rule-reference: d478219e7-true-d478343e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[2]/section/entry[9]/observation/entryRelationship</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d481325e35-true-d481630e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d481325e35-true-d481630e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[4]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d621211e35-true-d621516e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d621211e35-true-d621516e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[5]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(FR-CR-BIO-Chapitre)/d551268e35-true-d551573e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.1'] | hl7:templateId[@root = '1.2.250.1.213.1.1.2.70'] | hl7:id | hl7:code[not(@nullFlavor)] | hl7:title | hl7:text | hl7:languageCode | hl7:component[hl7:section[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.3.2.2']]] | hl7:entry[hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1']] (rule-reference: d551268e35-true-d551573e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/component/structuredBody/component[6]/section/templateId[3]</gvr:locationInValidatedObject>
+        </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
