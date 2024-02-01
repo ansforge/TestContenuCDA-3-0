@@ -45,11 +45,11 @@
   <!-- Type de document -->  
   <code code="18748-4" displayName="CR d’imagerie médicale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
     <!-- valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
-    <translation code="24727-0" displayName="CT Head W contrast IV"
+    <translation code="24727-0" displayName="CT tête avec contraste IV"
       codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-    <translation code="36235-0" displayName="CT Neck W contrast IV"
+    <translation code="36235-0" displayName="CT cou avec contraste IV"
       codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-    <translation code="24979-7" displayName="CT Thoracic spine W contrast IV"
+    <translation code="24979-7" displayName="CT rachis dorsal avec contraste IV"
       codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   </code>
   <!-- Titre du document -->
@@ -387,7 +387,7 @@
           </qualifier>
         </translation>
         <!-- [0..*] Région anatomique : Valeur issue du JDV_RegionAnatomique_CISIS (1.2.250.1.213.1.1.5.695) --> 
-        <translation code="774007" displayName="structure de la tête et/ou du cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+        <translation code="774007" displayName="tête et cou" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <qualifier>
             <name code="39111-0" displayName="localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           </qualifier>
