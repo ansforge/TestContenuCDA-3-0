@@ -378,12 +378,12 @@
     </translation>
     <translation key="birthTimeLongDeceased">
         <comment>Label: Birthdate long and deceased</comment>
-        <value lang="en-us">Birthdate/Deceased</value>
-        <value lang="de-ch">Geburtsdatum/verstorben</value>
-        <value lang="fr-ch">Date de naissance/décédé</value>
-        <value lang="it-ch">Data di nascita/defunto</value>
-        <value lang="nl-nl">Geboren/overleden</value>
-        <value lang="fr-fr">Date de naissance/décédé </value>
+        <value lang="en-us">Birthdate / of deceased</value>
+        <value lang="de-ch">Geburtsdatum / des Verstorbenen</value>
+        <value lang="fr-ch">Date de naissance / de décès</value>
+        <value lang="it-ch">Data di nascita / di defunto</value>
+        <value lang="nl-nl">Geboren / van overleden</value>
+        <value lang="fr-fr">Date de naissance / de décès</value>
     </translation>
     <translation key="Deceased">
         <comment>Label: Deceased</comment>
