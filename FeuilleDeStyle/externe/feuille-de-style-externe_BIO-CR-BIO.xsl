@@ -619,14 +619,39 @@
 							<tr>
 								<td width="20%">
 									<span class="td_label">
-										<xsl:text>Date de naissance</xsl:text>
+										<xsl:choose>
+											<xsl:when
+												test="n1:recordTarget//n1:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']">
+												<xsl:text>Date de naissance / de décès</xsl:text>
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:text>Date de naissance</xsl:text>
+											</xsl:otherwise>
+										</xsl:choose>
 									</span>
 								</td>
 								<td width="80%">
-									<xsl:call-template name="show-time">
-										<xsl:with-param name="datetime"
-											select="n1:recordTarget//n1:patient/n1:birthTime"/>
-									</xsl:call-template>
+									<xsl:choose>
+										<xsl:when
+											test="n1:recordTarget//n1:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']">
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/n1:birthTime"/>
+											</xsl:call-template>
+											<xsl:text> - &#8224; </xsl:text>
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']"
+												/>
+											</xsl:call-template>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/n1:birthTime"/>
+											</xsl:call-template>
+										</xsl:otherwise>
+									</xsl:choose>
 								</td>
 							</tr>
 							<tr>
@@ -968,15 +993,40 @@
 						<fo:table-row>
 							<fo:table-cell>
 								<fo:block font-size="8" width="20%">
-									<xsl:text>Date de naissance</xsl:text>
+									<xsl:choose>
+										<xsl:when
+											test="n1:recordTarget//n1:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']">
+											<xsl:text>Date de naissance / de décès</xsl:text>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:text>Date de naissance</xsl:text>
+										</xsl:otherwise>
+									</xsl:choose>
 								</fo:block>
 							</fo:table-cell>
 							<fo:table-cell>
 								<fo:block width="80%" font-size="8">
-									<xsl:call-template name="show-time">
-										<xsl:with-param name="datetime"
-											select="n1:recordTarget//n1:patient/n1:birthTime"/>
-									</xsl:call-template>
+									<xsl:choose>
+										<xsl:when
+											test="n1:recordTarget//n1:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']">
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/n1:birthTime"/>
+											</xsl:call-template>
+											<xsl:text> - &#8224; </xsl:text>
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/*[local-name() = 'deceasedTime']"
+												/>
+											</xsl:call-template>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:call-template name="show-time">
+												<xsl:with-param name="datetime"
+													select="n1:recordTarget//n1:patient/n1:birthTime"/>
+											</xsl:call-template>
+										</xsl:otherwise>
+									</xsl:choose>
 								</fo:block>
 							</fo:table-cell>
 						</fo:table-row>
