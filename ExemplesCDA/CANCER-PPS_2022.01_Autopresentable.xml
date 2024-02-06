@@ -4458,14 +4458,39 @@
                   <tr>
                     <td width="20%">
                       <span class="td_label">
-                        <xsl:text>Date de naissance</xsl:text>
+                        <xsl:choose>
+                          <xsl:when
+                            test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                            <xsl:text>Date de naissance / de décès</xsl:text>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:text>Date de naissance</xsl:text>
+                          </xsl:otherwise>
+                        </xsl:choose>
                       </span>
                     </td>
                     <td width="80%">
-                      <xsl:call-template name="show-time">
-                        <xsl:with-param name="datetime"
-                          select="c:recordTarget//c:patient/c:birthTime"/>
-                      </xsl:call-template>
+                      <xsl:choose>
+                        <xsl:when
+                          test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                          <xsl:call-template name="show-time">
+                            <xsl:with-param name="datetime"
+                              select="c:recordTarget//c:patient/c:birthTime"/>
+                          </xsl:call-template>
+                          <xsl:text> - &#8224; </xsl:text>
+                          <xsl:call-template name="show-time">
+                            <xsl:with-param name="datetime"
+                              select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
+                            />
+                          </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:call-template name="show-time">
+                            <xsl:with-param name="datetime"
+                              select="c:recordTarget//c:patient/c:birthTime"/>
+                          </xsl:call-template>
+                        </xsl:otherwise>
+                      </xsl:choose>
                     </td>
                   </tr>
                   <!-- Sexe -->
@@ -4697,14 +4722,39 @@
                 <tr>
                   <td width="20%">
                     <span class="td_label">
-                      <xsl:text>Date de naissance</xsl:text>
+                      <xsl:choose>
+                        <xsl:when
+                          test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                          <xsl:text>Date de naissance / de décès</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:text>Date de naissance</xsl:text>
+                        </xsl:otherwise>
+                      </xsl:choose>
                     </span>
                   </td>
                   <td width="80%">
-                    <xsl:call-template name="show-time">
-                      <xsl:with-param name="datetime" select="c:recordTarget//c:patient/c:birthTime"
-                      />
-                    </xsl:call-template>
+                    <xsl:choose>
+                      <xsl:when
+                        test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                        <xsl:text> - &#8224; </xsl:text>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
+                          />
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </td>
                 </tr>
                 <!-- Sexe -->
@@ -5250,15 +5300,40 @@
               <fo:table-row>
                 <fo:table-cell>
                   <fo:block font-size="6">
-                    <xsl:text>Date de naissance</xsl:text>
+                    <xsl:choose>
+                      <xsl:when
+                        test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                        <xsl:text>Date de naissance / de décès</xsl:text>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:text>Date de naissance</xsl:text>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell>
                   <fo:block font-size="6" color="#003366">
-                    <xsl:call-template name="show-time">
-                      <xsl:with-param name="datetime" select="c:recordTarget//c:patient/c:birthTime"
-                      />
-                    </xsl:call-template>
+                    <xsl:choose>
+                      <xsl:when
+                        test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                        <xsl:text> - &#8224; </xsl:text>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
+                          />
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </fo:block>
                 </fo:table-cell>
               </fo:table-row>
@@ -5515,15 +5590,40 @@
               <fo:table-row>
                 <fo:table-cell>
                   <fo:block font-size="6" margin-top="2px">
-                    <xsl:text>Date de naissance</xsl:text>
+                    <xsl:choose>
+                      <xsl:when
+                        test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                        <xsl:text>Date de naissance / de décès</xsl:text>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:text>Date de naissance</xsl:text>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </fo:block>
                 </fo:table-cell>
                 <fo:table-cell>
                   <fo:block font-size="6" color="#003366" margin-top="2px">
-                    <xsl:call-template name="show-time">
-                      <xsl:with-param name="datetime" select="c:recordTarget//c:patient/c:birthTime"
-                      />
-                    </xsl:call-template>
+                    <xsl:choose>
+                      <xsl:when
+                        test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                        <xsl:text> - &#8224; </xsl:text>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
+                          />
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:call-template name="show-time">
+                          <xsl:with-param name="datetime"
+                            select="c:recordTarget//c:patient/c:birthTime"/>
+                        </xsl:call-template>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </fo:block>
                 </fo:table-cell>
               </fo:table-row>
