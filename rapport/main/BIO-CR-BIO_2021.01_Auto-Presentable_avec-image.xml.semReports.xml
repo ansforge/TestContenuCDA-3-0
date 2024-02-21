@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="d98cbdd2-c155-444e-a37c-aff0894cd78f">
-    <gvr:validationOverview validationDateTime="2024-12-02T06:20:41.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="fb958235-d28a-41e4-bf65-73ad9b219a4a">
+    <gvr:validationOverview validationDateTime="2025-08-02T19:14:22.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,12 +11,16 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="47" numberOfErrors="1" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="47" numberOfErrors="2" numberOfWarnings="0"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Schema validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:subReport name="Schema validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="1" numberOfWarnings="0"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>Line:Col[438:63]:cvc-complex-type.2.4.a: Invalid content was found starting with element 'id'. One of '{"urn:hl7-org:v3":realmCode, "urn:hl7-org:v3":typeId, "urn:hl7-org:v3":templateId, "urn:hl7-org:v3":id, "urn:hl7-org:v3":code, "urn:hl7-org:v3":effectiveTime}' is expected.</gvr:constraintDescription>
+            <gvr:locationInValidatedObject></gvr:locationInValidatedObject>
+        </gvr:constraint>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="45" numberOfErrors="1" numberOfWarnings="0"/>
