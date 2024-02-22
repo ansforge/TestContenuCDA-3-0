@@ -71,7 +71,7 @@
             la date de survenue d'une affection (ex: rougeole dans l'enfance sans date précise).
             Dans ce cas, l'élément "low" aura pour attribut un "nullFlavor" fixé à la valeur 'UNK'. </assert>
 
-        <assert test="cda:value[contains(@xsi:type,'CD')]"> 
+        <assert test="cda:value[contains(@xsi:type,'CD')] or cda:value[@nullFlavor]"> 
             [E_problemEntry_int.sch] Erreur de conformité PCC : L'élément "value" correspond à l'état (clinique) décrit et est donc obligatoire.
             Cet élément est toujours codé et son type sera toujours de type 'CD'. </assert>
 
