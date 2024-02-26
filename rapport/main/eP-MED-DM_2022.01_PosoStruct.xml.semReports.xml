@@ -1,1 +1,28 @@
-Echec :  eP-MED-DM_2022.01_PosoStruct.xml(EP-MED-DM_2022.01)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="20663ad2-b7ec-44c2-9276-55f3cc142ed7">
+    <gvr:validationOverview validationDateTime="2026-02-02T07:44:39.000Z" validationOverallResult="FAILED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>.Validation sémantique (bêta)</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="67" numberOfErrors="1" numberOfWarnings="0"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="1" numberOfWarnings="0"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>Line:Col[756:73]:cvc-complex-type.2.4.a: Invalid content was found starting with element 'numerator'. One of '{"urn:ihe:pharm:medication":numerator}' is expected.</gvr:constraintDescription>
+            <gvr:locationInValidatedObject></gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="65" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+</gvr:validationReport>
