@@ -775,7 +775,7 @@
                       <id root="1.2.250.1.71.4.2.1" extension="801234567893" />
                       <!-- Nature de l'échantillon : valeur issue du JDV_HL7_SpecimenType-CISIS (2.16.840.1.113883.5.129) -->
                       <playingEntity>
-                        <code code="UR" displayName="urine" codeSystem="2.16.840.1.113883.5.129">
+                        <code code="UR" displayName="Urine" codeSystem="2.16.840.1.113883.18.311">
                           <originalText>
                             <reference value="#prelevement-nature-echantillon" />
                           </originalText>

@@ -503,8 +503,6 @@
   <!--  Autre acte : Laboratoire de seconde intention et son cadre d’exercice -->
   <documentationOf>
     <serviceEvent>
-      <!-- N° Dossier de la séquence de dépistage (numéro unique permettant de lier tous les résultats de cette séquence de dépistage) -->
-      <id root="1.2.250.1.213.1.1.9" extension="202311111123" />
       <!-- Code du chapitre -->     
       <code code="1443252" displayName="Résultats des examens d'un laboratoire de seconde intention" codeSystem="1.2.250.1.213.1.1.5.130"/>
       <!-- Statut du compte rendu (partiel ou complet) -->
@@ -515,56 +513,6 @@
         <!-- Date de fin de traitement = date et heure du compte rendu -->
         <high value="20230104102300+0100" />
       </effectiveTime>
-      <!-- Laboratoire exécutant de seconde intention -->
-      <performer typeCode="PRF">
-        <templateId root="1.3.6.1.4.1.19376.1.3.3.1.7" />
-        <templateId root="1.2.250.1.213.1.1.3.23" />
-        <time>
-          <high value="20230104093030+0100" />
-        </time>        
-        <!-- Directeur du laboratoire -->
-        <assignedEntity>
-          <!-- PS identifié par son N°RPPS -->
-          <id root="1.2.250.1.71.4.2.1" extension="801234536598" />
-          <!-- Profession / spécialité du PS -->
-          <code code="G15_10/C01" displayName="Médecin - Anatomie et Cytologie pathologiques humaines (C)" codeSystem="1.2.250.1.213.1.1.4.5" />
-          <!-- Adresse du PS-->
-          <addr>
-            <houseNumber>2</houseNumber>
-            <streetName>Rue Georges Pompidou</streetName>
-            <postalCode>92100</postalCode>
-            <city>BOULOGNE-BILLANCOURT</city>
-          </addr>
-          <!-- Coordonnées télécom du PS-->
-          <telecom value="tel:0174589607" use="WP" />
-          <assignedPerson>
-            <name>
-              <prefix>M</prefix>
-              <given>Thierry</given>
-              <family>DUPONT</family>
-              <suffix>DR</suffix>
-            </name>
-          </assignedPerson>
-          <!-- Laboratoire exécutant -->
-          <representedOrganization>
-            <!-- Identifiant de l'organisation -->
-            <id root="1.2.250.1.71.4.2.2" extension="1120453333" />
-            <!-- Nom de l'organisation -->
-            <name>Laboratoire d'anatomo-cyto-pathologie</name>
-            <!-- Coordonnées télécom de l'organisation -->
-            <telecom value="tel:0174589607" use="WP" />
-            <!-- Adresse de l'organisation -->
-            <addr>
-              <houseNumber>2</houseNumber>
-              <streetName>Rue Georges Pompidou</streetName>
-              <postalCode>92100</postalCode>
-              <city>BOULOGNE-BILLANCOURT</city>
-            </addr>
-            <!-- Cadre d'exercice -->
-            <standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire" codeSystem="1.2.250.1.213.1.1.4.9" />
-          </representedOrganization>
-        </assignedEntity>
-      </performer>
     </serviceEvent>
   </documentationOf>
   
@@ -914,7 +862,7 @@
                       <id root="1.2.250.1.71.4.2.1" extension="801234567893" />
                       <!-- Nature de l'échantillon : valeur issue du JDV_HL7_SpecimenType_CISIS (2.16.840.1.113883.5.129) -->
                       <playingEntity>
-                        <code code="GENV" displayName="Prélèvement vaginal" codeSystem="2.16.840.1.113883.5.129">
+                        <code code="GENV" displayName="Prélèvement vaginal" codeSystem="2.16.840.1.113883.18.311">
                           <originalText>
                             <reference value="#prelevement-nature-echantillon" />
                           </originalText>

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:adms="http://www.w3.org/ns/adms#" xmlns:core="http://open-services.net/ns/core#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:icd="http://id.who.int/icd/schema/" xmlns:j.0="http://topbraid.org/swa#"
-    xmlns:j.1="http://teamwork.topbraidlive.org/ontologyprojects#"
-    xmlns:metadata="http://topbraid.org/metadata#"
-    xmlns:ns="https://data.esante.gouv.fr/profile/ns#" xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#"
-    xmlns:terms="http://purl.org/dc/terms/" xmlns:voaf="http://purl.org/vocommons/voaf#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:core="http://open-services.net/ns/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:icd="http://id.who.int/icd/schema/" xmlns:j.0="http://topbraid.org/swa#" xmlns:j.1="http://teamwork.topbraidlive.org/ontologyprojects#" xmlns:metadata="http://topbraid.org/metadata#" xmlns:ns="https://data.esante.gouv.fr/profile/ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#" xmlns:terms="http://purl.org/dc/terms/" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <rdf:Description>
         <skos:notation>D0001-6</skos:notation>
     </rdf:Description>
@@ -293,9 +283,6 @@
         <skos:notation>GEN-065</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>GEN-070</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>GEN-077</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -423,6 +410,9 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-092.03.06</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-092.03.07</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-092.04</skos:notation>
@@ -1166,6 +1156,15 @@
         <skos:notation>GEN-314</skos:notation>
     </rdf:Description>
     <rdf:Description>
+        <skos:notation>GEN-315</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-316</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-317</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
         <skos:notation>image/bm</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -1431,9 +1430,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-045</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-046</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-048</skos:notation>
@@ -1754,9 +1750,6 @@
         <skos:notation>MED-179</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-179</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-181</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -1826,13 +1819,7 @@
         <skos:notation>MED-210</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-211</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-213</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-216</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-217</skos:notation>
@@ -3128,9 +3115,6 @@
         <skos:notation>MED-693</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-694</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-695</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -3314,9 +3298,6 @@
         <skos:notation>MED-756</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-757</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-758</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -3359,9 +3340,6 @@
         <skos:notation>MED-772</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-773</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-774</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -3396,9 +3374,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-785</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-786</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-787</skos:notation>
@@ -3716,9 +3691,6 @@
         <skos:notation>MED-903</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-904</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-905</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -3738,69 +3710,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-911</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-912</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-913</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-914</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-915</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-916</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-917</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-918</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-919</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-920</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-921</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-922</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-923</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-924</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-925</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-926</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-927</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-928</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-929</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-930</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-931</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-932</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-933</skos:notation>
@@ -3834,9 +3743,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-943</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-944</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-945</skos:notation>
@@ -3906,51 +3812,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-968</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-969</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-970</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-971</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-972</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-973</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-974</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-975</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-977</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-978</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-979</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-980</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-981</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-982</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-987</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-988</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-990</skos:notation>
@@ -4788,6 +4649,9 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-1277</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>MED-1278</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>ORG-001</skos:notation>
