@@ -2352,11 +2352,10 @@
 			</xsl:for-each>
 			<xsl:if
 				test="$relation/../hl7:value or $relation/../hl7:interpretationCode or $relation/../hl7:referenceRange/hl7:observationRange">
-
 				<xsl:if test="$relation/../hl7:value">
 					<br/>
 					<xsl:text>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;* résultat : </xsl:text>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'PQ')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 							<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -2386,7 +2385,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_PQ'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_PQ')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 							<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -2416,7 +2415,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'ED'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'ED')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 							<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -2446,7 +2445,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'INT'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'INT')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2471,7 +2470,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_INT'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_INT')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2496,7 +2495,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'BL'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'BL')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2521,7 +2520,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'ST'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'ST')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
@@ -2546,32 +2545,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'TS'">
-						<xsl:if test="$relation/../hl7:value/@value">
-							<xsl:value-of select="$relation/../hl7:value/@value"/>
-						</xsl:if>
-						<xsl:if
-							test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
-							<xsl:text> supérieur à </xsl:text>
-							<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
-						</xsl:if>
-						<xsl:if
-							test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
-							<xsl:text> inférieur à </xsl:text>
-							<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
-						</xsl:if>
-						<xsl:if
-							test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
-							<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
-							<xsl:text> - </xsl:text>
-							<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
-						</xsl:if>
-						<xsl:if
-							test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
-							<xsl:value-of select="$relation/../hl7:value"/>
-						</xsl:if>
-					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_TS'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'TS')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2596,7 +2570,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'REAL'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_TS')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2621,7 +2595,7 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_REAL'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'REAL')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@value"/>
 						</xsl:if>
@@ -2646,7 +2620,32 @@
 							<xsl:value-of select="$relation/../hl7:value"/>
 						</xsl:if>
 					</xsl:if>
-					<xsl:if test="$relation/../hl7:value/@xsi:type = 'CD'">
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_REAL')">
+						<xsl:if test="$relation/../hl7:value/@value">
+							<xsl:value-of select="$relation/../hl7:value/@value"/>
+						</xsl:if>
+						<xsl:if
+							test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+							<xsl:text> supérieur à </xsl:text>
+							<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+						</xsl:if>
+						<xsl:if
+							test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+							<xsl:text> inférieur à </xsl:text>
+							<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+						</xsl:if>
+						<xsl:if
+							test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+							<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+							<xsl:text> - </xsl:text>
+							<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+						</xsl:if>
+						<xsl:if
+							test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+							<xsl:value-of select="$relation/../hl7:value"/>
+						</xsl:if>
+					</xsl:if>
+					<xsl:if test="contains($relation/../hl7:value/@xsi:type,'CD')">
 						<xsl:if test="$relation/../hl7:value/@value">
 							<xsl:value-of select="$relation/../hl7:value/@code"/>
 							<xsl:text> - </xsl:text>
@@ -2680,7 +2679,6 @@
 						</xsl:if>
 					</xsl:if>
 				</xsl:if>
-
 				<xsl:if test="$relation/../hl7:interpretationCode">
 					<br/>
 					<xsl:text>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;* interprétation : </xsl:text>
@@ -2693,7 +2691,7 @@
 					<br/>
 					<xsl:text>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;* valeurs de référence : </xsl:text>
 					<xsl:if
-						test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_REAL'">
+						test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_REAL')">
 						<xsl:if
 							test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 							<xsl:value-of
@@ -2731,7 +2729,7 @@
 						</xsl:if>
 					</xsl:if>
 					<xsl:if
-						test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_TS'">
+						test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_TS')">
 						<xsl:if
 							test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 							<xsl:value-of
@@ -2769,7 +2767,7 @@
 						</xsl:if>
 					</xsl:if>
 					<xsl:if
-						test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_INT'">
+						test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_INT')">
 						<xsl:if
 							test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 							<xsl:value-of
@@ -2807,7 +2805,7 @@
 						</xsl:if>
 					</xsl:if>
 					<xsl:if
-						test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_PQ'">
+						test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_PQ')">
 						<xsl:if
 							test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 							<xsl:value-of
@@ -2926,7 +2924,7 @@
 
 							<fo:block line-height="0.1cm">&#160;</fo:block>
 							<xsl:text>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;* résultat : </xsl:text>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'PQ')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 									<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -2956,7 +2954,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_PQ'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_PQ')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 									<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -2986,7 +2984,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'ED'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'ED')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 									<xsl:value-of select="$relation/../hl7:value/@unit"/>
@@ -3016,7 +3014,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'INT'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'INT')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3041,7 +3039,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_INT'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_INT')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3066,7 +3064,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'BL'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'BL')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3091,7 +3089,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'ST'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'ST')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
@@ -3116,32 +3114,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'TS'">
-								<xsl:if test="$relation/../hl7:value/@value">
-									<xsl:value-of select="$relation/../hl7:value/@value"/>
-								</xsl:if>
-								<xsl:if
-									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
-									<xsl:text> supérieur à </xsl:text>
-									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
-								</xsl:if>
-								<xsl:if
-									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
-									<xsl:text> inférieur à </xsl:text>
-									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
-								</xsl:if>
-								<xsl:if
-									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
-									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
-									<xsl:text> - </xsl:text>
-									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
-								</xsl:if>
-								<xsl:if
-									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
-									<xsl:value-of select="$relation/../hl7:value"/>
-								</xsl:if>
-							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_TS'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'TS')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3166,7 +3139,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'REAL'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_TS')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3191,7 +3164,7 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'IVL_REAL'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'REAL')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@value"/>
 								</xsl:if>
@@ -3216,7 +3189,32 @@
 									<xsl:value-of select="$relation/../hl7:value"/>
 								</xsl:if>
 							</xsl:if>
-							<xsl:if test="$relation/../hl7:value/@xsi:type = 'CD'">
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'IVL_REAL')">
+								<xsl:if test="$relation/../hl7:value/@value">
+									<xsl:value-of select="$relation/../hl7:value/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high)">
+									<xsl:text> supérieur à </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and ($relation/../hl7:value/hl7:high)">
+									<xsl:text> inférieur à </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and ($relation/../hl7:value/hl7:high) and ($relation/../hl7:value/hl7:low)">
+									<xsl:value-of select="$relation/../hl7:value/hl7:low/@value"/>
+									<xsl:text> - </xsl:text>
+									<xsl:value-of select="$relation/../hl7:value/hl7:high/@value"/>
+								</xsl:if>
+								<xsl:if
+									test="not($relation/../hl7:value/@value) and not($relation/../hl7:value/hl7:low) and not($relation/../hl7:value/hl7:high) and ($relation/../hl7:value)">
+									<xsl:value-of select="$relation/../hl7:value"/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if test="contains($relation/../hl7:value/@xsi:type,'CD')">
 								<xsl:if test="$relation/../hl7:value/@value">
 									<xsl:value-of select="$relation/../hl7:value/@code"/>
 									<xsl:text> - </xsl:text>
@@ -3252,8 +3250,6 @@
 							</xsl:if>
 						</xsl:if>
 					</fo:block>
-
-
 					<fo:block>
 						<xsl:if test="$relation/../hl7:interpretationCode">
 
@@ -3271,7 +3267,7 @@
 							<fo:block line-height="0.1cm">&#160;</fo:block>
 							<xsl:text>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;* valeurs de référence : </xsl:text>
 							<xsl:if
-								test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_REAL'">
+								test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_REAL')">
 								<xsl:if
 									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 									<xsl:value-of
@@ -3309,7 +3305,7 @@
 								</xsl:if>
 							</xsl:if>
 							<xsl:if
-								test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_TS'">
+								test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_TS')">
 								<xsl:if
 									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 									<xsl:value-of
@@ -3347,7 +3343,7 @@
 								</xsl:if>
 							</xsl:if>
 							<xsl:if
-								test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_INT'">
+								test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_INT')">
 								<xsl:if
 									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 									<xsl:value-of
@@ -3385,7 +3381,7 @@
 								</xsl:if>
 							</xsl:if>
 							<xsl:if
-								test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type = 'IVL_PQ'">
+								test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type,'IVL_PQ')">
 								<xsl:if
 									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@value">
 									<xsl:value-of
