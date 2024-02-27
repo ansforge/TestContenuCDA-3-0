@@ -241,7 +241,7 @@
 
 			<!-- Médecin prescripteur des examens de biologie -->
 			<c:participant typeCode="REF">
-				<c:templateId root='1.3.6.1.4.1.19376.1.3.3.1.6'/>
+				<c:templateId root="1.3.6.1.4.1.19376.1.3.3.1.6"/>
 				<!-- Date de la prescription -->
 				<c:time xsi:type="c:IVL_TS">
 					<c:high value="20210101"/>
@@ -435,7 +435,7 @@
 			<!-- Contexte de la prise en charge -->
 			<c:componentOf>
 				<c:encompassingEncounter>
-					<c:id root="1.2.250.1.71.4.2.1" extension="801234534765" />
+					<c:id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
 					<c:code code="AMB" displayName="ambulatoire" codeSystem="2.16.840.1.113883.5.4"/>
 					<c:effectiveTime>
 						<c:low value="202101040735+0100"/>
@@ -1708,231 +1708,231 @@
 				<head>
 					<meta name="viewport" content="width=device-width, initial-scale=1"/>
 					<style>
-						@media screen and (max-width : 320px) {
-						    body {
+						@media screen and (max-width : 320px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 1px 0px 1px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 1px 0px 1px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 5px 0px 5px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
-						@media screen and (min-width : 320px) {
-						    body {
+						@media screen and (min-width : 320px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 2px 0px 2px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 2px 0px 2px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 10px 0px 10px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
 						
-						@media screen and (min-width : 480px) {
-						    body {
+						@media screen and (min-width : 480px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 3px 0px 3px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 3px 0px 3px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 15px 0px 15px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
 						
-						@media screen and (min-width : 600px) {
-						    body {
+						@media screen and (min-width : 600px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 3.76px 0px 3.76px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 3.76px 0px 3.76px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 18.8px 0px 18.8px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
 						
-						@media screen and (min-width : 801px) {
-						    body {
+						@media screen and (min-width : 801px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 3.9px 0px 3.9px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 3.9px 0px 3.9px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 19.53px 0px 19.53px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
 						
-						@media screen and (min-width : 1025px) {
-						    body {
+						@media screen and (min-width : 1025px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 5px 0px 5px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 5px 0px 5px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 25px 0px 25px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
 						}
 						
-						@media screen and (min-width : 1281px) {
-						    body {
+						@media screen and (min-width : 1281px){
+						    body{
 						        font-family: Calibri, sans-serif;
 						    }
-						    h1 {
+						    h1{
 						    }
-						    h2 {
+						    h2{
 						        margin: 0px;
 						    }
-						    table {
+						    table{
 						        border-collapse: collapse;
 						    }
-						    th {
+						    th{
 						        padding: 0px 6.25px 0px 6.25px;
 						
 						    }
-						    tr {
+						    tr{
 						        font-weight: normal;
 						    }
-						    td {
+						    td{
 						        padding: 0px 6.25px 0px 6.25px;
 						    }
 						    #header img,
 						    #header p,
-						    #header h2 {
+						    #header h2{
 						        margin: 0px 31.25px 0px 31.25px;
 						    }
-						    .data {
+						    .data{
 						        font-style: italic;
 						        color: rgb(0, 112, 192);
 						    }
@@ -2172,7 +2172,8 @@
 								</td>
 								<td>
 									<xsl:for-each select="c:recordTarget/c:patientRole/c:id">
-										<xsl:if test="
+										<xsl:if
+											test="
 												(@root != '1.2.250.1.213.1.4.8') and (@root != '1.2.250.1.213.1.4.9')
 												and (@root != '1.2.250.1.213.1.4.10') and (@root != '1.2.250.1.213.1.4.11')">
 											<xsl:call-template name="show-id">
@@ -2384,19 +2385,19 @@
 											test="c:recordTarget//c:patient/*[local-name() = 'deceasedInd'][@value = 'true' or @nullFlavor] | c:recordTarget//c:patient/*[local-name() = 'deceasedTime']">
 											<xsl:call-template name="show-time">
 												<xsl:with-param name="datetime"
-													select="c:recordTarget//c:patient/c:birthTime"/>
+												select="c:recordTarget//c:patient/c:birthTime"/>
 											</xsl:call-template>
 											<xsl:text> - &#8224; </xsl:text>
 											<xsl:call-template name="show-time">
 												<xsl:with-param name="datetime"
-													select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
+												select="c:recordTarget//c:patient/*[local-name() = 'deceasedTime']"
 												/>
 											</xsl:call-template>
 										</xsl:when>
 										<xsl:otherwise>
 											<xsl:call-template name="show-time">
 												<xsl:with-param name="datetime"
-													select="c:recordTarget//c:patient/c:birthTime"/>
+												select="c:recordTarget//c:patient/c:birthTime"/>
 											</xsl:call-template>
 										</xsl:otherwise>
 									</xsl:choose>
@@ -2564,7 +2565,8 @@
 							<fo:table-cell>
 								<fo:block font-size="8">
 									<xsl:for-each select="c:recordTarget/c:patientRole/c:id">
-										<xsl:if test="
+										<xsl:if
+											test="
 												(@root != '1.2.250.1.213.1.4.8') and (@root != '1.2.250.1.213.1.4.9')
 												and (@root != '1.2.250.1.213.1.4.10') and (@root != '1.2.250.1.213.1.4.11')">
 											<xsl:call-template name="show-id">
@@ -2805,7 +2807,8 @@
 	</xd:doc>
 	<xsl:template name="printLogo">
 		<xsl:if test="not(contains($vendor, 'Saxonica'))">
-			<img src="data:image/jpeg;base64,
+			<img
+				src="data:image/jpeg;base64,
 				/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQY
 				GBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYa
 				KCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAAR
@@ -2843,11 +2846,13 @@
 				Txw/tGxkruOcj8Rzz8e+dOfRoE1fezVXcpkWj6jegpowXXdB9Ud+0LgrKSNoHtn+mt2j7e9V
 				UcYh/wASUVREg2oy0S07EfJCgj+Q402NGgW/b7ovqGwdX3a6XS8RTUNZDHEtJGxcFkzh+VXa
 				eW4Gc5/gNMjRo0H/2Q==
-				"/>
+				"
+			/>
 		</xsl:if>
 		<xsl:if test="contains($vendor, 'Saxonica')">
 			<fo:external-graphic content-height="scale-to-fit" content-width="50%"
-				scaling="non-uniform" src="data:image/jpeg;base64,
+				scaling="non-uniform"
+				src="data:image/jpeg;base64,
 				/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQY
 				GBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYa
 				KCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAAR
@@ -2884,7 +2889,8 @@
 				ifGs+jQVyvndWvnro6ZbFdq6uXLSUjQPCsBzgBgVOCTwOCfOT8ybp/ovqS/OKu/JQ2uneRZT
 				Txw/tGxkruOcj8Rzz8e+dOfRoE1fezVXcpkWj6jegpowXXdB9Ud+0LgrKSNoHtn+mt2j7e9V
 				UcYh/wASUVREg2oy0S07EfJCgj+Q402NGgW/b7ovqGwdX3a6XS8RTUNZDHEtJGxcFkzh+VXa
-				eW4Gc5/gNMjRo0H/2Q=="/>
+				eW4Gc5/gNMjRo0H/2Q=="
+			/>
 		</xsl:if>
 	</xsl:template>
 
@@ -2895,7 +2901,8 @@
 	<xsl:template name="directeur_signe">
 		<xsl:if test="not(contains($vendor, 'Saxonica'))">
 			<br/>
-			<img src="data:image/jpeg;base64,
+			<img
+				src="data:image/jpeg;base64,
 				iVBORw0KGgoAAAANSUhEUgAAAK8AAACvAQMAAACxXBw2AAAAB3RJTUUH2woPDAQmGYX3JgAAAAlw
 				SFlzAAAK8AAACvABQqw0mAAAAAZQTFRFAAAA////pdmf3QAAAShJREFUeNrtl0EOhCAMRcvKJTeC
 				mw16M7xRl6xgfkGNmllOITPRpEGfCwv/tyCVT1emB/8TToTLEdloC8t90Me+RiaMHGqoY0cmeXZ2
@@ -2904,12 +2911,14 @@
 				WRMtDJuJ2WB8U2a78ECcWo810mTsvK+JJm6NRfraVQY9XJupr1OXnSSc+7cWboeFuGVyNNMBWLZR
 				uG/bR177BqOPAWF6w92wr+Xt4e95IBYZcFRAclL7XXA7LADDg4ED6+Ov/CA8+NfwG147q3gE6HAP
 				AAAAAElFTkSuQmCC
-				"/>
+				"
+			/>
 		</xsl:if>
 		<xsl:if test="(contains($vendor, 'Saxonica'))">
 			<fo:block line-height="0.1cm">&#160;</fo:block>
 			<fo:external-graphic content-height="scale-to-fit" content-width="50%"
-				scaling="non-uniform" src="data:image/jpeg;base64,
+				scaling="non-uniform"
+				src="data:image/jpeg;base64,
 				iVBORw0KGgoAAAANSUhEUgAAAK8AAACvAQMAAACxXBw2AAAAB3RJTUUH2woPDAQmGYX3JgAAAAlw
 				SFlzAAAK8AAACvABQqw0mAAAAAZQTFRFAAAA////pdmf3QAAAShJREFUeNrtl0EOhCAMRcvKJTeC
 				mw16M7xRl6xgfkGNmllOITPRpEGfCwv/tyCVT1emB/8TToTLEdloC8t90Me+RiaMHGqoY0cmeXZ2
@@ -2917,7 +2926,8 @@
 				PDg7Q/8yDGM9kiRHCDhwT1ATxylPWb6PWPhQXhPXWmMDARxdZeiN4yTJwfZkMOZdBk0smTS9nc10
 				WRMtDJuJ2WB8U2a78ECcWo810mTsvK+JJm6NRfraVQY9XJupr1OXnSSc+7cWboeFuGVyNNMBWLZR
 				uG/bR177BqOPAWF6w92wr+Xt4e95IBYZcFRAclL7XXA7LADDg4ED6+Ov/CA8+NfwG147q3gE6HAP
-				AAAAAElFTkSuQmCC"/>
+				AAAAAElFTkSuQmCC"
+			/>
 		</xsl:if>
 	</xsl:template>
 
@@ -3550,14 +3560,17 @@
 					<!-- DTr1 only if not streetAddressLine -->
 					<xsl:when test="self::c:streetName">
 						<xsl:if test="not(../c:streetAddressLine)">
-							<xsl:variable name="additionalLocator" select="
+							<xsl:variable name="additionalLocator"
+								select="
 									following-sibling::c:*[1][local-name() = 'additionalLocator'] |
 									following-sibling::c:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber' or local-name() = 'buildingNumberSuffix']/following-sibling::c:*[1][local-name() = 'additionalLocator'] |
 									following-sibling::c:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::c:*[1][local-name() = 'buildingNumberSuffix']/following-sibling::c:*[1][local-name() = 'additionalLocator']"/>
-							<xsl:variable name="houseNumber" select="
+							<xsl:variable name="houseNumber"
+								select="
 									following-sibling::c:*[1][local-name() = 'houseNumberNumeric'] |
 									following-sibling::c:*[1][local-name() = 'houseNumber']"/>
-							<xsl:variable name="buildingNumberSuffix" select="
+							<xsl:variable name="buildingNumberSuffix"
+								select="
 									following-sibling::c:*[1][local-name() = 'buildingNumberSuffix'] |
 									following-sibling::c:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::c:*[1][local-name() = 'buildingNumberSuffix']"/>
 							<xsl:value-of select="."/>
@@ -3578,10 +3591,12 @@
 							<xsl:if test="string-length($additionalLocator) > 0">
 								<xsl:text>&#160;</xsl:text>
 								<xsl:value-of select="$additionalLocator"/>
-								<xsl:variable name="houseNumber2" select="
+								<xsl:variable name="houseNumber2"
+									select="
 										$additionalLocator/following-sibling::c:*[1][local-name() = 'houseNumberNumeric'] |
 										$additionalLocator/following-sibling::c:*[1][local-name() = 'houseNumber']"/>
-								<xsl:variable name="buildingNumberSuffix2" select="
+								<xsl:variable name="buildingNumberSuffix2"
+									select="
 										$additionalLocator/following-sibling::c:*[1][local-name() = 'buildingNumberSuffix'] |
 										$additionalLocator/following-sibling::c:*[1][local-name() = 'houseNumberNumeric' or local-name() = 'houseNumber']/following-sibling::c:*[1][local-name() = 'buildingNumberSuffix']"/>
 								<xsl:choose>
@@ -3613,14 +3628,17 @@
 					<!-- DTr2 only if not streetAddressLine -->
 					<xsl:when test="self::c:part[@type = 'STR']">
 						<xsl:if test="not(../c:part[@type = 'SAL'])">
-							<xsl:variable name="additionalLocator" select="
+							<xsl:variable name="additionalLocator"
+								select="
 									following-sibling::c:part[1][@type = 'ADL'] |
 									following-sibling::c:part[1][@type = 'BNN' or @type = 'BNR' or @type = 'BNS']/following-sibling::c:part[1][@type = 'ADL'] |
 									following-sibling::c:part[1][@type = 'BNN' or @type = 'BNR' or @type = 'BNS']/following-sibling::c:part[1][@type = 'BNS']/following-sibling::c:part[1][@type = 'ADL']"/>
-							<xsl:variable name="houseNumber" select="
+							<xsl:variable name="houseNumber"
+								select="
 									following-sibling::c:part[1][@type = 'BNN'] |
 									following-sibling::c:part[1][@type = 'BNR']"/>
-							<xsl:variable name="buildingNumberSuffix" select="
+							<xsl:variable name="buildingNumberSuffix"
+								select="
 									following-sibling::c:part[1][@type = 'BNS'] |
 									following-sibling::c:part[1][@type = 'BNN' or @type = 'BNR']/following-sibling::c:part[1][@type = 'BNS']"/>
 							<xsl:value-of select="."/>
@@ -3642,10 +3660,12 @@
 								<xsl:text>&#160;</xsl:text>
 								<xsl:value-of select="$additionalLocator"/>
 
-								<xsl:variable name="houseNumber2" select="
+								<xsl:variable name="houseNumber2"
+									select="
 										$additionalLocator/following-sibling::c:part[1][@type = 'BNN'] |
 										$additionalLocator/following-sibling::c:part[1][@type = 'BNR']"/>
-								<xsl:variable name="buildingNumberSuffix2" select="
+								<xsl:variable name="buildingNumberSuffix2"
+									select="
 										$additionalLocator/following-sibling::c:part[1][@type = 'BNS'] |
 										$additionalLocator/following-sibling::c:part[1][@type = 'BNN' or @type = 'BNR']/following-sibling::c:part[1][@type = 'BNS']"/>
 
