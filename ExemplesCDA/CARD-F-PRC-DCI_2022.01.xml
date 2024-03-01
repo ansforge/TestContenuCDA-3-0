@@ -449,7 +449,7 @@
           <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.136" />
           <id root="80D632D6-3BB4-40A7-A31E-26E01D3977FC" />
-          <code code="47519-4" displayName="Antécédents chirurgicaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="47519-4" displayName="Historique des actes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>INTERVENTIONS</title>
           <text>
             <table border="0" width="100%">

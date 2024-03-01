@@ -1686,7 +1686,7 @@
                            <text><reference value="#typeAccou"/></text>
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
-                           <value xsi:type="CD" code="MED-209" displayName="Césarienne programmée"
+                           <value xsi:type="CD" code="MED-1273" displayName="Césarienne programmée"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                         </observation>
                      </entry>

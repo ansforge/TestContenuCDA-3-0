@@ -772,7 +772,7 @@
 									<!-- Conformité FR-Historique-des-actes (FR CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.2.136" />
 									<id root="6F7DBEC2-0E15-48F0-B61E-00B0753BFCAD"/>
-									<code code="47519-4" displayName="Antécédents chirurgicaux"
+									<code code="47519-4" displayName="Historique des actes"
 										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<title>Antécédents chirurgicaux</title>									
 									<text>

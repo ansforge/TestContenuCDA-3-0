@@ -459,7 +459,7 @@
           <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.136" />
           <id root="5AF7D9F4-B5D9-4FA1-BC48-D80BA4C3C5F5" />
-          <code code="47519-4" displayName="Antécédents chirurgicaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="47519-4" displayName="Historique des actes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>IMPLANTATION</title>
           <text>
             <table border="0" width="100%">

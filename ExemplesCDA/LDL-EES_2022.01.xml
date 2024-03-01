@@ -804,7 +804,7 @@
                     <!-- Conformité CI-SIS -->
                     <templateId root="1.2.250.1.213.1.1.2.136" />
                     <id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D9B" />
-                    <code code='47519-4' displayName='Antécédents chirurgicaux'
+                    <code code='47519-4' displayName='Historique des actes'
                         codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
                     <title>Antécédents chirurgicaux</title>
                     <!-- Bloc narratif de la section -->

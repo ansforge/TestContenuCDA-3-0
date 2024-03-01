@@ -34,7 +34,7 @@
         <!-- FR-Certitude -->
         <assert
             test="parent::cda:entryRelationship[@typeCode='SUBJ' and @inversionInd='true']"> 
-            [E_problemEntry_int.sch] Erreur de conformité PCC : un élément "entryRelationship" optionnel peut être présent et 
+            [E_problemEntry_fr.sch] Erreur de conformité PCC : un élément "entryRelationship" optionnel peut être présent et 
             permettre de fournir la certitude sur le problème observé.
             S'il est présent, cet élément se conformera au template "FR-Certitude" (1.2.250.1.213.1.1.3.171).
             Son attribut 'typeCode' prendra alors la valeur 'SUBJ' et l'attribut 'inversionInd' prendra la valeur 'true'.</assert>
