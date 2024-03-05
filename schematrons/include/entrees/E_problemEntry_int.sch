@@ -51,7 +51,8 @@
             [E_problemEntry_int.sch] Erreur de conformité PCC : L'élément text doit être présent avec un élément reference qui contient une URI dans l'attribut @value
         </assert>
         
-        <assert test="count(cda:value/cda:originalText)=1">
+        <assert test="(cda:value[contains(@xsi:type,'CD')] and count(cda:value/cda:originalText)=1) or
+            cda:value/@nullFlavor">
             [E_problemEntry_fr] Erreur de conformité CI-SIS : L'élément "originalText" doit être présent une fois dans l'élément value
         </assert>
         
@@ -71,7 +72,7 @@
             la date de survenue d'une affection (ex: rougeole dans l'enfance sans date précise).
             Dans ce cas, l'élément "low" aura pour attribut un "nullFlavor" fixé à la valeur 'UNK'. </assert>
 
-        <assert test="cda:value[contains(@xsi:type,'CD')] or cda:value[@nullFlavor]"> 
+        <assert test="cda:value[contains(@xsi:type,'CD') or @nullFlavor='UNK']"> 
             [E_problemEntry_int.sch] Erreur de conformité PCC : L'élément "value" correspond à l'état (clinique) décrit et est donc obligatoire.
             Cet élément est toujours codé et son type sera toujours de type 'CD'. </assert>
 
@@ -79,7 +80,6 @@
                     (not(cda:value[@code]) and not(cda:value[@codeSystem]))"> 
             [E_problemEntry_int.sch] Erreur de conformité PCC : Si l'élément "value" est codé, les attributs "code" et "codeSystem" 
             seront obligatoirement présents. </assert>
-        
         
         <!-- Sévérité d'une affection -->
         <assert

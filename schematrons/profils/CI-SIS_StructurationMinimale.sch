@@ -140,6 +140,7 @@
     <include href="../include/jeuxDeValeurs/JDV_administrativeGenderCode.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_SocialHistoryCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType.sch"/>
     
     
     <include href="../include/jeuxDeValeurs/JDV_ImmunizationCode.sch"/>
@@ -206,8 +207,8 @@
         <active pattern="JDV_administrativeGenderCode"/>
         <active pattern="JDV_SocialHistoryCodes"/>
         <active pattern="JDV_TypeDirectiveAnticipee"/>
-        
         <active pattern="immunizationCode"/>
+        <active pattern="JDV_HL7_PersonalRelationshipRoleType"/>
          
     </phase>
 
@@ -266,6 +267,7 @@
         
         <let name="jdv_immunization_1" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS.xml'"/>
         <let name="jdv_immunization_2" value="'../../jeuxDeValeurs/JDV_AbsentOrUnknownImmunization_CISIS.xml'"/>
+        <let name="jdv_HL7_PersonalRelationshipRoleType_CISIS" value="'../../jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType_CISIS.xml'"/>
         
         <!-- présence des templateId obligatoires -->        
         <rule context="cda:ClinicalDocument">            

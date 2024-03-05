@@ -48,6 +48,14 @@
         <assert test="count(cda:subject/cda:relatedSubject/cda:subject)=1">
             [E_birthEventOrganizer_fr] : L'élément relatedSubject du sujet doit obligatoirement contenir un élément 'subject' qui groupera les caractéristiques du nouveau né
         </assert>
-                        
+
+        <assert test="count(cda:subject/cda:relatedSubject/cda:subject/cda:administrativeGenderCode)=1">
+            [E_birthEventOrganizer_fr] : Le sexe du nouveau né doit obligatoirement être présent
+        </assert>
+        
+        <assert test="count(cda:subject/cda:relatedSubject/cda:subject/cda:birthTime)&lt;=1">
+            [E_birthEventOrganizer_fr] : La date de naissance du nouveau né peut être présente maximum une fois [0..1].
+        </assert>
+                
     </rule>
 </pattern>
