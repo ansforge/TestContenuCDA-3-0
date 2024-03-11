@@ -354,7 +354,7 @@
                     <high value="20181003" />
                   </effectiveTime>
                   <!-- Valeur issue du JDV_AntecedantsMedicaux_CISIS -->
-                  <value xsi:type="CD" code="D3-89400" displayName="Infarctus cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#infarCereb" />
                     </originalText>
@@ -796,7 +796,7 @@
               </text>
               <effectiveTime value="201810150930" />
               <priorityCode code="CS" displayName="Recontacter pour fixer RDV" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-              <performer>
+              <performer typeCode="PRF">
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>     
                   <code code="G15_10/C07" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Cardiologie (C)" />

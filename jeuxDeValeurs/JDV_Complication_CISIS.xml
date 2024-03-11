@@ -4,7 +4,7 @@
         <ConceptList>
             <Concept code="MED-503" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aggravation neurologique"/>
             <Concept code="DA-30000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Crise convulsive"/>
-            <Concept code="R56.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Convulsions, autres et non précisées"/>
+            <Concept code="R56.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Convulsions, autres et non précisées"/>
             <Concept code="MED-504" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles de la déglution justifiant une gastrostomie"/>
             <Concept code="MED-518" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication pulmonaire"/>
             <Concept code="MED-519" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication thromboembolique"/>

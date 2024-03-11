@@ -577,7 +577,7 @@
                 <low value="201809232030" />
               </effectiveTime>
               <!-- Valeur issue du JDV_SymptomesAVC_CISIS -->
-              <value xsi:type="CD" code="F-A2200" codeSystem="1.2.250.1.213.2.12" displayName="Troubles sensitifs" codeSystemName="SNOMED 3.5">
+              <value xsi:type="CD" code="85972008" codeSystem="1.2.250.1.213.2.12" displayName="trouble sensoriel" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#troubSens" />
                 </originalText>
@@ -646,7 +646,7 @@
                   <reference value="#troublesVis" />
                 </originalText>
               </value>
-              <targetSiteCode code="DA-74640" displayName="Troubles visuels - Hémianopsie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <targetSiteCode code="H53.9" displayName="Trouble de la vision, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                 <qualifier>
                   <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                 </qualifier>
@@ -1291,7 +1291,7 @@
                   <effectiveTime>
                     <low value="20100811" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-89400" displayName="Infarctus cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="infaCer">
                       </reference>
@@ -1319,7 +1319,7 @@
                     <low value="201809232030" />
                   </effectiveTime>
                   <!-- Valeur issue du JDV_AntecedantsMedicaux_CISIS -->
-                  <value xsi:type="CD" code="D3-89500" displayName="AIT" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="ait" />
                     </originalText>
@@ -1372,7 +1372,7 @@
                   <effectiveTime>
                     <low value="201809232030" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-89550" displayName="AVC" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I64" displayName="Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="avc" />
                     </originalText>
@@ -1398,7 +1398,7 @@
                   <effectiveTime>
                     <low value="201809232030" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-89110" displayName="HSA" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I60.9" displayName="Hémorragie sous-arachnoïdienne, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="hsa" />
                     </originalText>
@@ -1424,7 +1424,7 @@
                   <effectiveTime>
                     <low value="201809232030" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-15000" displayName="IDM" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I21.9" displayName="Infarctus du myocarde sans précision, prise en charge non précisée" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="idm" />
                     </originalText>
@@ -1450,7 +1450,7 @@
                   <effectiveTime>
                     <low value="201809232030" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-12710" displayName="SCA" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I20.0" displayName="Angine de poitrine instable" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="sca" />
                     </originalText>
@@ -1528,7 +1528,7 @@
                   <effectiveTime>
                     <low value="2006" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D3-31520" displayName="Fibrillation atriale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="I48" displayName="Fibrillation et flutter auriculaires" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="fibriAtri" />
                     </originalText>
@@ -1595,7 +1595,7 @@
                   <effectiveTime>
                     <low value="2006" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="D9-20200" displayName="Démence avérée" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="F03" displayName="Démence, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="demence" />
                     </originalText>
@@ -1621,7 +1621,7 @@
                   <effectiveTime>
                     <low value="2006" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="M-80003" displayName="Cancer évolutif" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="C80" displayName="Tumeur maligne de siège non précisé" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="cancerEvo" />
                     </originalText>
@@ -1707,7 +1707,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="AADF4F54-5072-439A-A552-222A4078C378" />
-              <code code="P1-00000" displayName="Chirurgie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="387713003" displayName="intervention chirurgicale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="chir">
                 </reference>
@@ -1729,7 +1729,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="AADF4F54-5072-439A-A552-222A4078C378" />
-              <code code="P1-30800" displayName="Angioplastie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="2119009" displayName="réparation d'un vaisseau sanguin" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="angioplastie">
                 </reference>
@@ -1748,10 +1748,9 @@
               <templateId root="2.16.840.1.113883.10.20.1.29" />
               <!-- Conformité IHE PCC -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
-              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="AADF4F54-5072-439A-A552-222A4078C378" />
-              <code code="P1-30800" displayName="Angioplastie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="2119009" displayName="réparation d'un vaisseau sanguin" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="coronaire">
                 </reference>
@@ -1773,7 +1772,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="AADF4F54-5072-439A-A552-222A4078C378" />
-              <code code="P1-05550" displayName="Stent" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="1296925008" displayName="insertion d’endoprothèse" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="stent">
                 </reference>
@@ -2106,7 +2105,6 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.49" />
                   <id root="8E76CF4E-0EF9-45CB-9C87-11F4A3054730" />
-                  <!--<code code="F-03400" displayName="Signes vitaux" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />-->
                   <code code="85353-1" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <statusCode code="completed" />
                   <effectiveTime value="20100312" />
@@ -2394,7 +2392,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="F-A5560" displayName="trouble de la conscience" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="R41.8" displayName="Symptômes et signes relatifs aux fonctions cognitives et à la conscience, autres et non précisés" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#avc_100" />
                     </originalText>
@@ -2419,7 +2417,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="F-F2020" displayName="mydriase" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="H57.04" displayName="Mydriase" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#avc_101" />
                     </originalText>
@@ -3940,7 +3938,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="BC7009BF-802D-42E9-A790-C785D7072805" />
-              <code code="F-38000" displayName="résultat de l'électrocardiogramme" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="DEQP003" displayName="ECG" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM" />
               <text>
                 <reference value="#examen-01" />
               </text>
@@ -4139,7 +4137,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20110622" />
-              <value xsi:type="CD" code="D3-89200" displayName="Hémorragie intra-cérébrale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <value xsi:type="CD" code="I61.9" displayName="Hémorragie intracérébrale, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                 <originalText>
                   <reference value="#diag-03" />
                 </originalText>
@@ -4633,7 +4631,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="C383487D-3E73-4F1A-A33D-8CA0666A89AE" />
-              <code code="F-D0720" displayName="Thrombolyse IV" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="233428003" displayName="thrombolyse d'une veine" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="thrombolyse">
                 </reference>
@@ -4651,7 +4649,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="60A548DA-D546-4460-A3D7-E62F08963D89" />
-              <code code="P1-30322" displayName="Thrombectomie ou thrombolyse IA" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="43810009" displayName="thrombectomie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="thrombectomie">
                 </reference>
@@ -4817,7 +4815,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.26" />
               <id root="9E4355FE-51DA-4BF9-80E1-822B5D3FE560" />
-              <code code="F-D0720" codeSystem="1.2.250.1.213.2.12" displayName="Thrombolyse" codeSystemName="SNOMED 3.5" />
+              <code code="233428003" codeSystem="2.16.840.1.113883.6.96" displayName="thrombolyse d'une veine" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="#med-1" />
               </text>
@@ -5041,7 +5039,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.26" />
               <id root="A1F50CDC-2573-4921-8EAB-855DE8D810F3" />
-              <code code="F-D0720" codeSystem="1.2.250.1.213.2.12" displayName="Thrombolyse" codeSystemName="SNOMED 3.5" />
+              <code code="233428003" codeSystem="2.16.840.1.113883.6.96" displayName="thrombolyse d'une veine" codeSystemName="SNOMED CT" />
               <text>
                 <reference value="#med-1" />
               </text>

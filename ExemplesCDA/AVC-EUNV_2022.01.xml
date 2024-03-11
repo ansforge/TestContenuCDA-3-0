@@ -1172,7 +1172,7 @@
               <!-- Conformité CI-SIS Simple Observation -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="19529072-CDFE-4A84-B0FF-99F93BCCE5C3" />
-              <code code="DA-30000" displayName="Crise convulsive" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="R56.8" displayName="Convulsions, autres et non précisées" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
               <text>
                 <reference value="conv">
                 </reference>
@@ -1224,7 +1224,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="DA8D1EBD-D5AC-42F0-8507-E71ABC5C82CB" />
-                  <code code="D2-00100" displayName="Infection pulmonaire" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <code code="J22" displayName="Infection aigüe des voies respiratoires inférieures, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="infectPulmo">
                     </reference>
@@ -1350,7 +1350,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="400947AB-F5B2-4DF8-B9BC-ED372A102A50" />
-                  <code code="M-35106" displayName="Thrombus systémique" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <code code="I82.9" displayName="Embolie et thrombose d'une veine non précisée" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="thrombSys">
                     </reference>
@@ -1457,7 +1457,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="98EE550D-C462-4C4B-9289-03B13E9656AD" />
-                  <code code="D5-00100" displayName="Hémorragie digestive" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <code code="K92.2" displayName="Hémorragie gastro-intestinale, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="hemoDig">
                     </reference>
@@ -1529,7 +1529,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="07CEB1C2-096C-4513-83CF-61E8734D7BFC" />
-                  <code code="F-92300" displayName="Dépression" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <code code="F32.9" displayName="Épisode dépressif, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="dep">
                     </reference>
@@ -1549,7 +1549,7 @@
               <!-- Conformité CI-SIS Simple Observation -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="8A21D3C6-8BBC-469A-8081-F6EEE72AED7C" />
-              <code code="D3-16001" displayName="Insuffisance cardiaque aiguë" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="I50.9" displayName="Insuffisance cardiaque, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
               <text>
                 <reference value="insuCard">
                 </reference>
@@ -2608,7 +2608,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-              <code code="P1-30330" displayName="Endartériectomie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <code code="392031002" displayName="endartériectomie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#avc_10" />
                 </originalText>
@@ -2633,7 +2633,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-              <code code="P1-30800" displayName="Angioplastie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <code code="2119009" displayName="réparation d'un vaisseau sanguin" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#avc_11" />
                 </originalText>
@@ -2658,7 +2658,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-              <code code="P1-91300" displayName="Crâniectomie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <code code="36910002" displayName="craniectomie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#avc_12" />
                 </originalText>
@@ -2683,7 +2683,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
-              <code code="P1-91221" displayName="Evacuation hématome intracérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <code code="10458001" displayName="évacuation d'un hématome intracérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#avc_13" />
                 </originalText>
