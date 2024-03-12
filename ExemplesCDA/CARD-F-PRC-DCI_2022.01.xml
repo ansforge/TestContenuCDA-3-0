@@ -1260,7 +1260,7 @@
                   <effectiveTime nullFlavor="NASK" />
                   <!-- Valeur issue du JDV_UFCV_NYHA_CISIS -->
                   <!-- [ANS] code à remplacer par LA (LOINC) ou SNOMED CT -->
-                  <value xsi:type="CD" code="G-E404" displayName="Stade III (NYHA)" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+                  <value xsi:type="CD" code="420913000" displayName="classe III de la New York Heart Association Classification" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : FEVG -->

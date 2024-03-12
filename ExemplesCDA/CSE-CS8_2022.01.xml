@@ -1629,9 +1629,8 @@
                            <text><reference value="#presentation"/></text>
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
-                           <!-- ANS à trouver le code remplaçant celui de SNOMED 3.5 -->
-                           <value xsi:type="CD" code="F-87050" displayName="Sommet"
-                              codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>
+                           <value xsi:type="CD" code="70028003" displayName="présentation du sommet"
+                              codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         </observation>
                      </entry>     
                      

@@ -1148,8 +1148,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- [ANS] Code à remplacer par LA (LOINC) ou SNOMED CT -->
-                  <value xsi:type="CD" code="G-E404" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" displayName="Classe NYHA III" />
+                  <value xsi:type="CD" code="420913000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="classe III de la New York Heart Association Classification" />
                 </observation>
               </entryRelationship>
               <!-- FEVG -->
