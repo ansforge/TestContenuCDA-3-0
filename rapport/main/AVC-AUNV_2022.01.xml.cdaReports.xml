@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="3ea4c20a-13c8-47ae-8df4-790a2939187f">
-    <gvr:validationOverview validationDateTime="2026-02-02T07:19:58.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="1083d82d-6f5c-4cd4-9897-ac4d6fc70760">
+    <gvr:validationOverview validationDateTime="2025-01-03T06:52:47.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
         <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
-        <gvr:validationServiceVersion>2.5.2-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validationServiceVersion>2.6.1-SAXONEE</gvr:validationServiceVersion>
         <gvr:validatorID>AVC-AUNV_2022.01</gvr:validatorID>
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="13074" numberOfErrors="5" numberOfWarnings="5"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="13074" numberOfErrors="2" numberOfWarnings="5"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,30 +19,15 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="13072" numberOfErrors="5" numberOfWarnings="5"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="13072" numberOfErrors="2" numberOfWarnings="5"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, La latéralité de l'ataxie, du trouble sensoriel, du déficit moteur et du trouble visuel doivent provenir du JDV : JDV_lateralite-CISIS (1.2.250.1.213.1.1.5.160)</gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:value/@code='85972008' or hl7:value/@code='G25.9' or hl7:value/@code='R27.0' or hl7:value/@code='H53.9']/hl7:targetSiteCode/hl7:qualifier/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.160-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, La latéralité du trouble de la vision doit provenir du jeu de valeurs :  JDV_TroubleVisuel-CISIS (1.2.250.1.213.1.1.5.158) </gvr:constraintDescription>
-            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:value/@code='H53.9']/hl7:targetSiteCode/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.158-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, le type d'acte doit provenir du JDV :  JDV_typeIntervention-CISIS (1.2.250.1.213.1.1.5.168) </gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.3.12']/hl7:entry/hl7:procedure/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.168-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, le trouble constaté doit provenir du JDV : JDV_autreSymptomeExNeuro-CISIS (1.2.250.1.213.1.1.5.174)</gvr:constraintDescription>
-            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:component/hl7:section[hl7:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.35']/hl7:entry/hl7:observation/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.174-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, le type d'acte d'administration du bolus et de la Perfusion en IV continue du produit thrombolytique, les valeurs sont issues du jeu de valeurs  JDV_typeTraitementIV-CISIS (1.2.250.1.213.1.1.5.173)</gvr:constraintDescription>
-            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:substanceAdministration/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.173-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
