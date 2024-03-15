@@ -4445,7 +4445,7 @@
                   <td>Oui</td>
                 </tr>
                 <tr>
-                  <td>Contre indication aspirine</td>
+                  <td>Contre-indication aspirine</td>
                   <td>Non</td>
                 </tr>
                 <tr>
@@ -4523,7 +4523,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="B1E9764E-45C3-4438-98A3-C2E1F103BE89" />
-              <code code="MED-497" displayName="Contre indication aspirine" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <code code="MED-497" displayName="Contre-indication aspirine" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
                 <reference value="contreIndiAspi">
                 </reference>
@@ -4541,7 +4541,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="50229153-BF65-497D-BDC2-25A77A01C96C" />
-              <code code="MED-498" displayName="Clopidogrel (Plavix)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <code code="B01AC04" displayName="clopidogrel" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
               <text>
                 <reference value="clopidogrel">
                 </reference>
@@ -4559,7 +4559,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="8B430DB0-217C-44FA-A467-FC22ACD5ECFD" />
-              <code code="MED-499" displayName="Héparine curative" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <code code="B01AB01" displayName="héparine" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
               <text>
                 <reference value="hepaCura">
                 </reference>

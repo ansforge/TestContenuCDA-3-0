@@ -96,7 +96,7 @@
         </report>
     </rule>
     
-    <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.7"]/cda:entryRelationship[@typeCode="SUBJ"]/cda:act'>
+    <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.7"]/cda:entryRelationship[@typeCode="SUBJ" and cda:templateId/@root!="1.3.6.1.4.1.19376.1.5.3.1.4.2"]/cda:act'>
         <report test="cda:templateId[@root !='2.16.840.1.113883.10.20.1.49'
             and @root !='1.3.6.1.4.1.19376.1.5.3.1.4.3'
             and @root !='1.2.250.1.213.1.1.3.33'
