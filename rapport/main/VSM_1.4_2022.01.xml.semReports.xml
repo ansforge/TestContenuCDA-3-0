@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="d58c17de-0c37-4ffa-bb1e-9f17a8f98911">
-    <gvr:validationOverview validationDateTime="2025-07-03T12:49:47.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="51c225fb-5a71-4eec-8163-bf6afbcdc237">
+    <gvr:validationOverview validationDateTime="2025-07-03T18:01:00.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -22,78 +22,84 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="6" numberOfErrors="0" numberOfWarnings="6"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "G45.9"
-	  DisplayName : "Accident Ischémique Cérébral Transitoire"
-	  FTS: "Accident ischémique cérébral transitoire, sans précision"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "G45.9"&lt;br /&gt; 
+	  DisplayName : "Accident Ischémique Cérébral Transitoire"&lt;br /&gt; 
+	  Valeur dans le FTS: "Accident ischémique cérébral transitoire, sans précision"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "N10"
-	  DisplayName : "Pyélonéphrite aiguë"
-	  FTS: "Néphrite tubulo-interstitielle aigüe"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "N10"&lt;br /&gt; 
+	  DisplayName : "Pyélonéphrite aiguë"&lt;br /&gt; 
+	  Valeur dans le FTS: "Néphrite tubulo-interstitielle aigüe"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "I21.1"
-	  DisplayName : "Infarctus transmural inférieur"
-	  FTS: "Infarctus transmural aigu du myocarde, de la paroi inférieure"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "I21.1"&lt;br /&gt; 
+	  DisplayName : "Infarctus transmural inférieur"&lt;br /&gt; 
+	  Valeur dans le FTS: "Infarctus transmural aigu du myocarde, de la paroi inférieure"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "I21.1"
-	  DisplayName : "Infarctus transmural inférieur"
-	  FTS: "Infarctus transmural aigu du myocarde, de la paroi inférieure"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "I21.1"&lt;br /&gt; 
+	  DisplayName : "Infarctus transmural inférieur"&lt;br /&gt; 
+	  Valeur dans le FTS: "Infarctus transmural aigu du myocarde, de la paroi inférieure"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "D57.1"
-	  DisplayName : "Anémie drépanocytaire"
-	  FTS: "Anémie à hématies falciformes sans crises"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "D57.1"&lt;br /&gt; 
+	  DisplayName : "Anémie drépanocytaire"&lt;br /&gt; 
+	  Valeur dans le FTS: "Anémie à hématies falciformes sans crises"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:organizer[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM10" 
-	  Code  : "G45.9"
-	  DisplayName : "Accident Ischémique Cérébral Transitoire"
-	  FTS: "Accident ischémique cérébral transitoire, sans précision"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM10" &lt;br /&gt; 
+	  Code  : "G45.9"&lt;br /&gt; 
+	  DisplayName : "Accident Ischémique Cérébral Transitoire"&lt;br /&gt; 
+	  Valeur dans le FTS: "Accident ischémique cérébral transitoire, sans précision"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:substanceAdministration[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>

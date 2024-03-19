@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="238a4e34-bcd8-4505-a4fd-f0d0ad5033ce">
-    <gvr:validationOverview validationDateTime="2025-07-03T12:47:57.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="4b2b3e5e-92ad-4aab-bbbc-4e4cdbe4d4fb">
+    <gvr:validationOverview validationDateTime="2025-07-03T17:59:20.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -22,26 +22,28 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2" numberOfErrors="0" numberOfWarnings="2"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM 10" 
-	  Code  : "O63.9"
-	  DisplayName : "Travail prolongé"
-	  FTS: "Travail prolongé, sans précision"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM 10" &lt;br /&gt; 
+	  Code  : "O63.9"&lt;br /&gt; 
+	  DisplayName : "Travail prolongé"&lt;br /&gt; 
+	  Valeur dans le FTS: "Travail prolongé, sans précision"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][2]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM-10" 
-	  Code  : "Q42.3"
-	  DisplayName : "Absence, atrésie et sténose congénitales du gros intestin"
-	  FTS: "Absence, atrésie et sténose congénitales de l'anus, sans fistule"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM-10" &lt;br /&gt; 
+	  Code  : "Q42.3"&lt;br /&gt; 
+	  DisplayName : "Absence, atrésie et sténose congénitales du gros intestin"&lt;br /&gt; 
+	  Valeur dans le FTS: "Absence, atrésie et sténose congénitales de l'anus, sans fistule"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>

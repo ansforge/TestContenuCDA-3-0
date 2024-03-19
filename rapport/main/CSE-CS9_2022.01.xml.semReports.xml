@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="79a24c54-e8b8-4e6a-9e68-6cdfcb4c1081">
-    <gvr:validationOverview validationDateTime="2025-07-03T12:45:04.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="2096745b-35e2-4a84-9080-581e1ac0af6c">
+    <gvr:validationOverview validationDateTime="2025-07-03T17:56:48.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -22,26 +22,28 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2" numberOfErrors="0" numberOfWarnings="2"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM-10" 
-	  Code  : "Q99.9"
-	  DisplayName : "Anomalies chromosomiques, non classées ailleurs"
-	  FTS: "Anomalie chromosomique, sans précision"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM-10" &lt;br /&gt; 
+	  Code  : "Q99.9"&lt;br /&gt; 
+	  DisplayName : "Anomalies chromosomiques, non classées ailleurs"&lt;br /&gt; 
+	  Valeur dans le FTS: "Anomalie chromosomique, sans précision"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "2.16.840.1.113883.6.3" 
-	  CodeFile  : "2.16.840.1.113883.6.3 "
-	  CodeSystemName : "CIM-10" 
-	  Code  : "E84"
-	  DisplayName : "Fibrose kystique"
-	  FTS: "Fibrose kystique du pancréas"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM-10" &lt;br /&gt; 
+	  Code  : "E84"&lt;br /&gt; 
+	  DisplayName : "Fibrose kystique"&lt;br /&gt; 
+	  Valeur dans le FTS: "Fibrose kystique du pancréas"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][5]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>

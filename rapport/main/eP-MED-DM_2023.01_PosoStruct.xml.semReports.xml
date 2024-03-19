@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="28f11bda-b63e-465d-9ed5-a8ebd7f822b0">
-    <gvr:validationOverview validationDateTime="2025-07-03T12:46:41.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="aafee948-f0de-4d1d-aede-f6f320624cb9">
+    <gvr:validationOverview validationDateTime="2025-07-03T17:58:16.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -26,13 +26,14 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="1"/>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
-	  CodeSystem : "1.2.250.1.213.2.68" 
-	  CodeFile  : "1.2.250.1.213.2.68 "
-	  CodeSystemName : "EMDN" 
-	  Code  : "V0806"
-	  DisplayName : "LITS MÉDICAUX"
-	  FTS: "LITS M�DICAUX"
-         (Validation  sémantique : libellé incorrect)
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "V0806"&lt;br /&gt; 
+	  DisplayName : "LITS MÉDICAUX"&lt;br /&gt; 
+	  Valeur dans le FTS: "LITS M�DICAUX"&lt;br /&gt; 
+         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
