@@ -44,9 +44,9 @@
         <assert test="cda:name or @nullFlavor"> [associatedEntity_fr.sch] Erreur de conformité CI-SIS
             : Si l'élément associatedPerson n'est pas vide avec un nullFlavor, alors il doit comporter
             un élément fils "name" (nullFlavor autorisé). </assert>
-        <assert test="$count_associatedPerson_name = 1"> [associatedEntity_fr.sch] Erreur de conformité
+        <assert test="$count_associatedPerson_name = 1 or @nullFlavor"> [associatedEntity_fr.sch] Erreur de conformité
             CI-SIS : L'élément associatedPerson doit contenir un seul et unique élément name </assert>
-        <assert test="$count_associatedPerson_family = 1"> [associatedEntity_fr.sch] Erreur de
+        <assert test="$count_associatedPerson_family = 1 or @nullFlavor"> [associatedEntity_fr.sch] Erreur de
             conformité CI-SIS : L'élément associatedPerson/name/family doit être présent et qu'une
             seule fois (cardinalité [1..1]) </assert>
         <assert test="$count_associatedPerson_given &lt;= 1"> [associatedEntity_fr.sch] Erreur de

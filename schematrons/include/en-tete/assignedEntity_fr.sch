@@ -49,9 +49,9 @@
         <assert test="cda:name or @nullFlavor"> [assignedEntity_fr.sch] Erreur de conformité CI-SIS
             : Si l'élément assignedPerson n'est pas vide avec un nullFlavor, alors il doit comporter
             un élément fils "name" (nullFlavor autorisé). </assert>
-        <assert test="$count_assignedPerson_name = 1"> [assignedEntity_fr.sch] Erreur de conformité
+        <assert test="$count_assignedPerson_name = 1 or @nullFlavor"> [assignedEntity_fr.sch] Erreur de conformité
             CI-SIS : L'élément assignedPerson doit contenir un seul et unique élément name </assert>
-        <assert test="$count_assignedPerson_family = 1"> [assignedEntity_fr.sch] Erreur de
+        <assert test="$count_assignedPerson_family = 1 or @nullFlavor"> [assignedEntity_fr.sch] Erreur de
             conformité CI-SIS : L'élément assignedPerson/name/family doit être présent et qu'une
             seule fois (cardinalité [1..1]) </assert>
         <assert test="$count_assignedPerson_given &lt;= 1"> [assignedEntity_fr.sch] Erreur de
