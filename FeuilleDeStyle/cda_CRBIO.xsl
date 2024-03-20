@@ -41,11 +41,11 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times"
 	exclude-result-prefixes="xd hl7 xsi xhtml sdtc ps3-20 common date">
 
-
 	<xsl:output method="xml" omit-xml-declaration="yes"/>
 
-
 	<xsl:strip-space elements="*"/>
+	
+	<xsl:key name="contente" match="hl7:content" use="@ID"/>
 
 	<!-- Extension FR : PDF -->
 	<xsl:attribute-set name="myMargin">
@@ -2276,8 +2276,7 @@
 				<xsl:value-of select="$entree/hl7:code/@displayName"/>
 			</fo:block>
 			<fo:block>
-				<xsl:for-each
-					select="$entree/hl7:entryRelationship/*">
+				<xsl:for-each select="$entree/hl7:entryRelationship/*">
 					<xsl:variable name="template" select="hl7:templateId"/>
 					<xsl:variable name="relation" select="hl7:code"/>
 					<xsl:call-template name="tableau-entryRelationship">
@@ -2298,22 +2297,17 @@
 	</template>
 
 
-	<xsl:key name="contente" match="hl7:content" use="@ID"/>
-
 	<xd:doc>
 		<xd:desc/>
 		<xd:param name="value"/>
 	</xd:doc>
 	<xsl:template name="prefmap">
 		<xsl:param name="value"/>
-		<xsl:value-of select="$value"/>
-		<xsl:for-each select="document('')">
-			<xsl:value-of select="key('contente', $value)"/>
+		<xsl:for-each select="key('contente', $value)">
+			<xsl:value-of select="text()"/>
 		</xsl:for-each>
 	</xsl:template>
-
-
-
+	
 	<xd:doc>
 		<xd:desc/>
 		<xd:param name="relation"/>
@@ -2907,6 +2901,14 @@
 							<xsl:value-of
 								select="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value"
 							/>
+						</xsl:if>
+					</xsl:if>
+					<xsl:if
+						test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type, 'ST')">
+						<xsl:if
+							test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value">
+							<xsl:value-of
+								select="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/text()"/>
 						</xsl:if>
 					</xsl:if>
 				</xsl:if>
@@ -3518,6 +3520,14 @@
 									<xsl:value-of
 										select="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value"
 									/>
+								</xsl:if>
+							</xsl:if>
+							<xsl:if
+								test="contains($relation/../hl7:referenceRange/hl7:observationRange/hl7:value/@xsi:type, 'ST')">
+								<xsl:if
+									test="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value">
+									<xsl:value-of
+										select="$relation/../hl7:referenceRange/hl7:observationRange/hl7:value/text()"/>
 								</xsl:if>
 							</xsl:if>
 						</xsl:if>
