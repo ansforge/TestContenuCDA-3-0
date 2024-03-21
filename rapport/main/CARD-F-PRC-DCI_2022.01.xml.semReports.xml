@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="6d2669b1-ed3a-4ece-afcf-43522f26cc16">
-    <gvr:validationOverview validationDateTime="2025-09-03T10:41:18.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="c799f80c-0447-49e8-b089-010939609cbd">
+    <gvr:validationOverview validationDateTime="2025-09-03T13:10:18.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -82,13 +82,13 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "J019001010101"&lt;br /&gt; 
-	  DisplayName : "SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES DE STIMULATION CARDIAQUE AURICULAIRE � FIXATION PASSIVE"&lt;br /&gt; 
+	  Code  : "J0105"&lt;br /&gt; 
+	  DisplayName : "DÉFIBRILLATEURS IMPLANTABLES"&lt;br /&gt; 
+	  Valeur dans le FTS: "D�FIBRILLATEURS IMPLANTABLES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
