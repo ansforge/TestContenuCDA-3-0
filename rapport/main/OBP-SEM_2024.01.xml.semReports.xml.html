@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsee08c2594-da2a-4512-adf6-24f1da485991" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-Validation FTS(Beta) : PASSED<br/>Nombre d'erreurs : 0<br/>Nombre de warnings :  2<br/>Temps d'execution :  0<br/>Nombre de règles:  4</button></h2><div id="panelsStayOpen-collapsee08c2594-da2a-4512-adf6-24f1da485991" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
+<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1497358f-dbe0-478f-a375-846793aed234" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-Validation FTS(Beta) : FAILED<br/>Nombre d'erreurs : 2<br/>Nombre de warnings :  4<br/>Temps d'execution :  2<br/>Nombre de règles:  8</button></h2><div id="panelsStayOpen-collapse1497358f-dbe0-478f-a375-846793aed234" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
     
     
     <tr><td>Syntactic validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
@@ -7,8 +7,34 @@
     <tr><td>Schema validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
         
     </table></td></tr>
-    <tr><td>Object Checker validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+    <tr><td>Object Checker validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
         
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeSystemName : "HL7:ActCode" &lt;br /&gt; 
+	  Code  : "INITIMMUNIZ"  &lt;br /&gt; 
+	  DisplayName : "1ère série vaccinante"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:substanceAdministration[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "INITIMMUNIZ"  &lt;br /&gt; 
+	  DisplayName : "Primo-vaccination"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:substanceAdministration[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA04"&lt;br /&gt; 
+	  DisplayName : "Etablissement Privé Non PSPH"&lt;br /&gt; 
+	  Valeur dans le FTS: "Etablissement privé non PSPH"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:location[namespace-uri()='urn:hl7-org:v3'][1]/*:healthCareFacility[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
         <tr><td>WARNING</td><td class=".small"><small>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
 	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
@@ -17,7 +43,7 @@
 	  Code  : "Q23.8"&lt;br /&gt; 
 	  DisplayName : "Autres malformations congénitales précisées"&lt;br /&gt; 
 	  Valeur dans le FTS: "Autres malformations congénitales des valvules aortique et mitrale"&lt;br /&gt; 
-         
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
 	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
         <tr><td>WARNING</td><td class=".small"><small>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
@@ -27,7 +53,17 @@
 	  Code  : "P59.3"&lt;br /&gt; 
 	  DisplayName : "Ictère néonatal dû à des inhibiteurs de la lactation"&lt;br /&gt; 
 	  Valeur dans le FTS: "Ictère du nouveau-né dû à des inhibiteurs de la lactation"&lt;br /&gt; 
-         
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
 	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][7]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA04"&lt;br /&gt; 
+	  DisplayName : "Etablissement Privé Non PSPH"&lt;br /&gt; 
+	  Valeur dans le FTS: "Etablissement privé non PSPH"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][10]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
     </table></td></tr>
 </tbody></table></div></div></div>

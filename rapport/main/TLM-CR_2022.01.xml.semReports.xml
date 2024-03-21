@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="c45138bb-7a48-4313-937f-ba55ffc87153">
-    <gvr:validationOverview validationDateTime="2025-07-03T18:00:30.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="35c82ed1-283f-4e67-97d9-b075a6142cc5">
+    <gvr:validationOverview validationDateTime="2025-09-03T10:47:48.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="3" numberOfErrors="0" numberOfWarnings="0"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4" numberOfErrors="0" numberOfWarnings="2"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,6 +19,34 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2" numberOfErrors="0" numberOfWarnings="2"/>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "VR"&lt;br /&gt; 
+	  DisplayName : "Virtuelle"&lt;br /&gt; 
+	  Valeur dans le FTS: "Virtuelle (exemple : RCP en l'absence du patient)"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "healthCareFacilityTypeCode" &lt;br /&gt; 
+	  Code  : "SA03"&lt;br /&gt; 
+	  DisplayName : "Etablissement Privé PSPH"&lt;br /&gt; 
+	  Valeur dans le FTS: "Etablissement privé PSPH"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:location[namespace-uri()='urn:hl7-org:v3'][1]/*:healthCareFacility[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="f98453ed-828d-4a0b-b3e5-08afcb96bc14">
-    <gvr:validationOverview validationDateTime="2025-07-03T17:59:18.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="d0ccaca5-9f13-49e0-b11d-514b0dd79191">
+    <gvr:validationOverview validationDateTime="2025-09-03T10:46:34.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,15 +11,53 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4" numberOfErrors="0" numberOfWarnings="2"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="8" numberOfErrors="2" numberOfWarnings="4"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2" numberOfErrors="0" numberOfWarnings="2"/>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="6" numberOfErrors="2" numberOfWarnings="4"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeSystemName : "HL7:ActCode" &lt;br /&gt; 
+	  Code  : "INITIMMUNIZ"  &lt;br /&gt; 
+	  DisplayName : "1ère série vaccinante"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	  &lt;br /&gt; 
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and not(doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:substanceAdministration[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "INITIMMUNIZ"  &lt;br /&gt; 
+	  DisplayName : "Primo-vaccination"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	  &lt;br /&gt; 
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and not(doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:substanceAdministration[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA04"&lt;br /&gt; 
+	  DisplayName : "Etablissement Privé Non PSPH"&lt;br /&gt; 
+	  Valeur dans le FTS: "Etablissement privé non PSPH"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:location[namespace-uri()='urn:hl7-org:v3'][1]/*:healthCareFacility[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
@@ -29,9 +67,9 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  Code  : "Q23.8"&lt;br /&gt; 
 	  DisplayName : "Autres malformations congénitales précisées"&lt;br /&gt; 
 	  Valeur dans le FTS: "Autres malformations congénitales des valvules aortique et mitrale"&lt;br /&gt; 
-         
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
 	 </gvr:constraintDescription>
-            <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
@@ -43,10 +81,24 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  Code  : "P59.3"&lt;br /&gt; 
 	  DisplayName : "Ictère néonatal dû à des inhibiteurs de la lactation"&lt;br /&gt; 
 	  Valeur dans le FTS: "Ictère du nouveau-né dû à des inhibiteurs de la lactation"&lt;br /&gt; 
-         
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
 	 </gvr:constraintDescription>
-            <gvr:formalExpression>not((exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][7]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA04"&lt;br /&gt; 
+	  DisplayName : "Etablissement Privé Non PSPH"&lt;br /&gt; 
+	  Valeur dans le FTS: "Etablissement privé non PSPH"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][10]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
