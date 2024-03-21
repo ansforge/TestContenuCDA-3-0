@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="3ff73e07-f0c2-4c1f-99ff-a296cc559f73">
-    <gvr:validationOverview validationDateTime="2025-09-03T13:13:58.000Z" validationOverallResult="PASSED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="c99e0d53-db69-4773-b68e-8fede85d4867">
+    <gvr:validationOverview validationDateTime="2025-09-03T18:45:44.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -96,13 +96,13 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "Y2145"&lt;br /&gt; 
-	  DisplayName : "DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"&lt;br /&gt; 
-	  Valeur dans le FTS: "DISPOSITIFS ACCOUSTIQUES D'AIDE � L'AUDITION"&lt;br /&gt; 
+	  Code  : "P0102"&lt;br /&gt; 
+	  DisplayName : "PROTHÈSES DENTAIRES"&lt;br /&gt; 
+	  Valeur dans le FTS: "PROTH�SES DENTAIRES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][6]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][6]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
@@ -110,13 +110,13 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "Y2145"&lt;br /&gt; 
-	  DisplayName : "DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"&lt;br /&gt; 
-	  Valeur dans le FTS: "DISPOSITIFS ACCOUSTIQUES D'AIDE � L'AUDITION"&lt;br /&gt; 
+	  Code  : "P0102"&lt;br /&gt; 
+	  DisplayName : "PROTHÈSES DENTAIRES"&lt;br /&gt; 
+	  Valeur dans le FTS: "PROTH�SES DENTAIRES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][6]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][5]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][6]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
