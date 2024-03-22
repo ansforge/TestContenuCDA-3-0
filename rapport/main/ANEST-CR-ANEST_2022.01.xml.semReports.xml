@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="af63a14c-7a5a-4e6c-8b62-441df82deb6f">
-    <gvr:validationOverview validationDateTime="2025-09-03T18:20:51.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="0828f324-d058-45dc-9b57-7a0195f869e0">
+    <gvr:validationOverview validationDateTime="2025-10-03T06:16:14.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -196,7 +196,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "C010204"&lt;br /&gt; 
 	  DisplayName : "CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
+	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -224,7 +224,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0102"&lt;br /&gt; 
 	  DisplayName : "MASQUE LARYNGE"&lt;br /&gt; 
-	  Valeur dans le FTS: "MASQUES ET TUBES LARYNG�S"&lt;br /&gt; 
+	  Valeur dans le FTS: "MASQUES ET TUBES LARYNGÉS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -238,7 +238,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0102"&lt;br /&gt; 
 	  DisplayName : "DISPOSITIF SUPRAGLOTTIQUE"&lt;br /&gt; 
-	  Valeur dans le FTS: "MASQUES ET TUBES LARYNG�S"&lt;br /&gt; 
+	  Valeur dans le FTS: "MASQUES ET TUBES LARYNGÉS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -252,7 +252,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R010302"&lt;br /&gt; 
 	  DisplayName : "SONDE INTUBATION TRACHEALE"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACH�ALES � BALLONNET"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -266,7 +266,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R018004"&lt;br /&gt; 
 	  DisplayName : "MANDRIN INTUBATION LONG BEQUILLE"&lt;br /&gt; 
-	  Valeur dans le FTS: "GUIDES ÉCHANGEURS D'INTUBATION"&lt;br /&gt; 
+	  Valeur dans le FTS: "GUIDES �CHANGEURS D'INTUBATION"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -294,7 +294,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0102"&lt;br /&gt; 
 	  DisplayName : "MASQUE LARYNGE POUR INTUBATION"&lt;br /&gt; 
-	  Valeur dans le FTS: "MASQUES ET TUBES LARYNG�S"&lt;br /&gt; 
+	  Valeur dans le FTS: "MASQUES ET TUBES LARYNGÉS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -308,7 +308,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "Z12029006"&lt;br /&gt; 
 	  DisplayName : "DISPOSITIF POUR FIBROSCOPIE"&lt;br /&gt; 
-	  Valeur dans le FTS: "FIBROSCOPES D’INTUBATION"&lt;br /&gt; 
+	  Valeur dans le FTS: "FIBROSCOPES D�INTUBATION"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -336,7 +336,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R01050201"&lt;br /&gt; 
 	  DisplayName : "TRACHEOTOMIE"&lt;br /&gt; 
-	  Valeur dans le FTS: "CANULES ET SETS DE TRACH�OTOMIE, � BALLONNET, NON ARM�ES"&lt;br /&gt; 
+	  Valeur dans le FTS: "CANULES ET SETS DE TRACHÉOTOMIE, À BALLONNET, NON ARMÉES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -350,7 +350,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0106"&lt;br /&gt; 
 	  DisplayName : "SET TRACHEOTOMIE PERCUTANEE"&lt;br /&gt; 
-	  Valeur dans le FTS: "SETS DE TRACH�OTOMIE PERCUTAN�E"&lt;br /&gt; 
+	  Valeur dans le FTS: "SETS DE TRACHÉOTOMIE PERCUTANÉE"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -378,7 +378,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "C010204"&lt;br /&gt; 
 	  DisplayName : "CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
+	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -448,7 +448,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0102"&lt;br /&gt; 
 	  DisplayName : "MASQUE LARYNGE"&lt;br /&gt; 
-	  Valeur dans le FTS: "MASQUES ET TUBES LARYNG�S"&lt;br /&gt; 
+	  Valeur dans le FTS: "MASQUES ET TUBES LARYNGÉS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -462,7 +462,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0102"&lt;br /&gt; 
 	  DisplayName : "DISPOSITIF SUPRAGLOTTIQUE"&lt;br /&gt; 
-	  Valeur dans le FTS: "MASQUES ET TUBES LARYNG�S"&lt;br /&gt; 
+	  Valeur dans le FTS: "MASQUES ET TUBES LARYNGÉS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -476,7 +476,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R010302"&lt;br /&gt; 
 	  DisplayName : "SONDE INTUBATION TRACHEALE"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACH�ALES � BALLONNET"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -490,7 +490,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R01050201"&lt;br /&gt; 
 	  DisplayName : "TRACHEOTOMIE"&lt;br /&gt; 
-	  Valeur dans le FTS: "CANULES ET SETS DE TRACH�OTOMIE, � BALLONNET, NON ARM�ES"&lt;br /&gt; 
+	  Valeur dans le FTS: "CANULES ET SETS DE TRACHÉOTOMIE, À BALLONNET, NON ARMÉES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -518,7 +518,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "C010204"&lt;br /&gt; 
 	  DisplayName : "CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
+	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -588,7 +588,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "Z1203019001"&lt;br /&gt; 
 	  DisplayName : "Monitorage neuro-musculaire"&lt;br /&gt; 
-	  Valeur dans le FTS: "ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE"&lt;br /&gt; 
+	  Valeur dans le FTS: "�QUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="dec13800-dce1-4171-8b06-5c862819ad6b">
-    <gvr:validationOverview validationDateTime="2025-09-03T18:42:40.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="56013315-ea30-4030-a396-13a06aae01ad">
+    <gvr:validationOverview validationDateTime="2025-10-03T06:42:59.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -124,7 +124,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "P070301030101"&lt;br /&gt; 
 	  DisplayName : "STENTED BIOLOGICAL AORTIC VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN"&lt;br /&gt; 
-	  Valeur dans le FTS: "VALVES AORTIQUES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTAN�E AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"&lt;br /&gt; 
+	  Valeur dans le FTS: "VALVES AORTIQUES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>

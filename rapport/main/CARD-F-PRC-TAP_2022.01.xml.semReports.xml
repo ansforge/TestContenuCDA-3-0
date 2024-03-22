@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="f450199b-9fa8-4552-a753-2928f5476450">
-    <gvr:validationOverview validationDateTime="2025-09-03T18:43:19.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="993649a7-46e5-49fc-a496-3584f10e162a">
+    <gvr:validationOverview validationDateTime="2025-10-03T06:43:42.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="29" numberOfErrors="5" numberOfWarnings="22"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="18" numberOfErrors="5" numberOfWarnings="11"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="27" numberOfErrors="5" numberOfWarnings="22"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="16" numberOfErrors="5" numberOfWarnings="11"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
@@ -139,20 +139,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][2]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
 	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
 	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
 	  CodeSystemName : "CIM-10" &lt;br /&gt; 
@@ -163,20 +149,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
@@ -195,20 +167,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][5]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
 	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
 	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
 	  CodeSystemName : "CIM-10" &lt;br /&gt; 
@@ -219,20 +177,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][6]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][6]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
@@ -251,20 +195,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][7]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
 	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
 	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
 	  CodeSystemName : "CIM10" &lt;br /&gt; 
@@ -275,90 +205,6 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][8]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][8]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "P0704"&lt;br /&gt; 
-	  DisplayName : "ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "ENDOPROTH�SES VASCULAIRES ET CARDIAQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][5]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
