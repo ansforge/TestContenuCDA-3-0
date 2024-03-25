@@ -1,1 +1,99 @@
-Echec :  CANCER-D2LM-FIN_2022.01.xml(CANCER-D2LM-FIN_2022.01)
+<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8c9e6bcb-7fc2-425c-81cd-eac56a27e849" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-Validation FTS(Beta) : FAILED<br/>Nombre d'erreurs : 2<br/>Nombre de warnings :  7<br/>Temps d'execution :  4<br/>Nombre de règles:  11</button></h2><div id="panelsStayOpen-collapse8c9e6bcb-7fc2-425c-81cd-eac56a27e849" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
+    
+    
+    <tr><td>Syntactic validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Schema validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Object Checker validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
+        
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.110" &lt;br /&gt; 
+	  CodeSystemName : "HL7:RoleClass" &lt;br /&gt; 
+	  Code  : "GUAR"  &lt;br /&gt; 
+	  DisplayName : "Garant"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:performer[namespace-uri()='urn:hl7-org:v3'][1]/*:assignedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.111" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SELF"  &lt;br /&gt; 
+	  DisplayName : "Couverture personnelle"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.1.1.4.5" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "G15_10/SM55"&lt;br /&gt; 
+	  DisplayName : "Médecin - Radiodiagnostic et radiothérapie (SM)"&lt;br /&gt; 
+	  Valeur dans le FTS: "Médecin - Radio-diagnostic et Radio-Thérapie (SM)"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:legalAuthenticator[namespace-uri()='urn:hl7-org:v3'][1]/*:assignedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.1.1.4.5" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "G15_10/SM51"&lt;br /&gt; 
+	  DisplayName : "Médecin - Gynéco-obstétrique et Gynéco méd, opt gyn-obs (SM)"&lt;br /&gt; 
+	  Valeur dans le FTS: "Médecin - Gynéco-obstétrique et Gynéco méd, opt Gyn-obs (SM)"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][2]/*:associatedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.1.1.4.5" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "G15_10/SM55"&lt;br /&gt; 
+	  DisplayName : "Médecin - Radiodiagnostic et radiothérapie (SM)"&lt;br /&gt; 
+	  Valeur dans le FTS: "Médecin - Radio-diagnostic et Radio-Thérapie (SM)"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:documentationOf[namespace-uri()='urn:hl7-org:v3'][1]/*:serviceEvent[namespace-uri()='urn:hl7-org:v3'][1]/*:performer[namespace-uri()='urn:hl7-org:v3'][1]/*:assignedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.111" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "RoleCode" &lt;br /&gt; 
+	  Code  : "FAMMEMB"&lt;br /&gt; 
+	  DisplayName : "Membre de la famille"&lt;br /&gt; 
+	  Valeur dans le FTS: "Autre membre de la famille"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:organizer[namespace-uri()='urn:hl7-org:v3'][1]/*:subject[namespace-uri()='urn:hl7-org:v3'][1]/*:relatedSubject[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM-10" &lt;br /&gt; 
+	  Code  : "C80"&lt;br /&gt; 
+	  DisplayName : "cancer de siège non précisé (primitif) (secondaire)"&lt;br /&gt; 
+	  Valeur dans le FTS: "Tumeur maligne de siège non précisé"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:organizer[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.111" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "RoleCode" &lt;br /&gt; 
+	  Code  : "FAMMEMB"&lt;br /&gt; 
+	  DisplayName : "Membre de la famille"&lt;br /&gt; 
+	  Valeur dans le FTS: "Autre membre de la famille"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:organizer[namespace-uri()='urn:hl7-org:v3'][1]/*:subject[namespace-uri()='urn:hl7-org:v3'][1]/*:relatedSubject[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.111" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "RoleCode" &lt;br /&gt; 
+	  Code  : "FAMMEMB"&lt;br /&gt; 
+	  DisplayName : "Membre de la famille"&lt;br /&gt; 
+	  Valeur dans le FTS: "Autre membre de la famille"&lt;br /&gt; 
+  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:organizer[namespace-uri()='urn:hl7-org:v3'][1]/*:subject[namespace-uri()='urn:hl7-org:v3'][1]/*:relatedSubject[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+    </table></td></tr>
+</tbody></table></div></div></div>
