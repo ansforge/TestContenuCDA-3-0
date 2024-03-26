@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:atih-cim10="http://data.esante.gouv.fr/atih-cim10#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:j.0="http://topbraid.org/swa#" xmlns:metadata="http://topbraid.org/metadata#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#" xmlns:terms="http://purl.org/dc/terms/" xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://data.esante.gouv.fr/atih/cim10">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:atih-cim10="http://data.esante.gouv.fr/atih-cim10#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:j.0="http://topbraid.org/swa#" xmlns:metadata="http://topbraid.org/metadata#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:teamwork="http://topbraid.org/teamwork#" xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://data.esante.gouv.fr/atih/cim10">
     <rdf:Description>
         <skos:notation>F02.00</skos:notation>
     </rdf:Description>
@@ -2695,7 +2695,7 @@
         <skos:notation>M95.08</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>01</skos:notation>
+        <skos:notation>I</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M99.89</skos:notation>
@@ -3037,7 +3037,7 @@
         <skos:notation>M95.04</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>05</skos:notation>
+        <skos:notation>V</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M23.22</skos:notation>
@@ -3121,7 +3121,7 @@
         <skos:notation>A36.2</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>04</skos:notation>
+        <skos:notation>IV</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>T47.1</skos:notation>
@@ -3196,7 +3196,7 @@
         <skos:notation>M83.20</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>03</skos:notation>
+        <skos:notation>III</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>T23.7</skos:notation>
@@ -3271,7 +3271,7 @@
         <skos:notation>T47.3</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>02</skos:notation>
+        <skos:notation>II</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>W29</skos:notation>
@@ -3421,7 +3421,7 @@
         <skos:notation>Z00.4</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>08</skos:notation>
+        <skos:notation>VIII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>H34.9</skos:notation>
@@ -3433,7 +3433,7 @@
         <skos:notation>A20</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>09</skos:notation>
+        <skos:notation>IX</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>G00-G09</skos:notation>
@@ -3508,7 +3508,7 @@
         <skos:notation>F00.932</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>07</skos:notation>
+        <skos:notation>VII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>Y83</skos:notation>
@@ -3577,7 +3577,7 @@
         <skos:notation>Z24.1</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>06</skos:notation>
+        <skos:notation>VI</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M47.12</skos:notation>
@@ -4366,7 +4366,7 @@
         <skos:notation>H33.1</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>21</skos:notation>
+        <skos:notation>XXI</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>V77.0</skos:notation>
@@ -4414,7 +4414,7 @@
         <skos:notation>F02.142</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>20</skos:notation>
+        <skos:notation>XX</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>H33.0</skos:notation>
@@ -4603,7 +4603,7 @@
         <skos:notation>F02.002</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>13</skos:notation>
+        <skos:notation>XIII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>Y58</skos:notation>
@@ -4699,13 +4699,10 @@
         <skos:notation>T48.2</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>M95.19</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>Y57</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>12</skos:notation>
+        <skos:notation>XII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>V90.1</skos:notation>
@@ -4795,7 +4792,7 @@
         <skos:notation>M23</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>11</skos:notation>
+        <skos:notation>XI</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>Z89</skos:notation>
@@ -4823,9 +4820,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>T48.5</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.18</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>F19.41</skos:notation>
@@ -4900,7 +4894,7 @@
         <skos:notation>T00.6</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>10</skos:notation>
+        <skos:notation>X</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>O04.-3.8</skos:notation>
@@ -4919,9 +4913,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>F16.3</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.17</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>T48.4</skos:notation>
@@ -4993,13 +4984,10 @@
         <skos:notation>A37.0</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>17</skos:notation>
+        <skos:notation>XVII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>H94.0</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.16</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>X29</skos:notation>
@@ -5047,10 +5035,7 @@
         <skos:notation>T24.3</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>M95.15</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>16</skos:notation>
+        <skos:notation>XVI</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>X28</skos:notation>
@@ -5066,9 +5051,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>F20.32</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.14</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>G62.9</skos:notation>
@@ -5107,7 +5089,7 @@
         <skos:notation>T48.1</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>15</skos:notation>
+        <skos:notation>XV</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>T24.4</skos:notation>
@@ -5138,9 +5120,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>B95.8</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.13</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>H70.2</skos:notation>
@@ -5185,7 +5164,7 @@
         <skos:notation>T48.0</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>14</skos:notation>
+        <skos:notation>XIV</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M23.55</skos:notation>
@@ -5204,9 +5183,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>Y52.8</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.12</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>F01.82</skos:notation>
@@ -5270,9 +5246,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>H70.8</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>M95.11</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>Z82</skos:notation>
@@ -5365,9 +5338,6 @@
         <skos:notation>H69.9</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>M95.10</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>Z85.9</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -5407,7 +5377,7 @@
         <skos:notation>M41.17</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>19</skos:notation>
+        <skos:notation>XIX</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M23.52</skos:notation>
@@ -5470,7 +5440,7 @@
         <skos:notation>F00.921</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>18</skos:notation>
+        <skos:notation>XVIII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>D81</skos:notation>
@@ -6796,7 +6766,7 @@
         <skos:notation>L01</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>22</skos:notation>
+        <skos:notation>XXII</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>M03.6</skos:notation>
@@ -57482,5 +57452,11 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>P81</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>H57.03</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>H57.04</skos:notation>
     </rdf:Description>
 </rdf:RDF>

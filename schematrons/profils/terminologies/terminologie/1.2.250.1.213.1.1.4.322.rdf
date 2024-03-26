@@ -163,12 +163,6 @@
         <skos:notation>GEN-007</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>GEN-008</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-009</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>GEN-010</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -200,9 +194,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-023</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-036</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-037</skos:notation>
@@ -718,18 +709,6 @@
         <skos:notation>GEN-151</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>GEN-152</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-153</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-156</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-157</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>GEN-158</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -761,18 +740,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-168</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-169</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-170</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-171</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-172</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-173</skos:notation>
@@ -836,15 +803,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-200</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-204</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-205</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-206</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-207</skos:notation>
@@ -949,9 +907,6 @@
         <skos:notation>GEN-244</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>GEN-245</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>GEN-246</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -1021,19 +976,7 @@
         <skos:notation>GEN-269</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>GEN-270</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-271</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-272</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>GEN-273</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>GEN-274</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-275</skos:notation>
@@ -1574,12 +1517,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-100</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-101</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-102</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-103</skos:notation>
@@ -2395,12 +2332,6 @@
         <skos:notation>MED-425</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-426</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-427</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-428</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -2534,9 +2465,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-476</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-478</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-479</skos:notation>
@@ -4807,12 +4735,6 @@
         <skos:notation>ORG-065</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>ORG-067</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>ORG-068</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>ORG-070</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -5150,9 +5072,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>PAT-016</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>PAT-017</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>PAT-018</skos:notation>
