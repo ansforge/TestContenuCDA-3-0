@@ -73,7 +73,7 @@
     <include href="../include/sections/S_travailEtAccouchement_ANS.sch"/>
     <include href="../include/sections/S_principalMotif-non-code_ANS.sch"/>
     <include href="../include/sections/S_documentPDFCopie_ANS.sch"/>
-    
+    <include href="../include/sections/S_resultats_ANS.sch"/>
     <!-- Entrées créées par l'ANS -->
     
     <include href="../include/entrees/E_dispositifMedical-2_ANS.sch"/>
@@ -92,6 +92,7 @@
     <include href="../include/entrees/E_typeDocumentAttache_ANS.sch"/>
     <include href="../include/entrees/E_transfusionProduitsSanguins_ANS.sch"/>
     <include href="../include/entrees/E_syntheseMedicaleSejour_ANS.sch"/>
+    <include href="../include/entrees/E_resultats_ANS.sch"/>
 
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -147,6 +148,7 @@
         <active pattern="S_travailEtAccouchement_ANS"/>
         <active pattern="S_principalMotif-non-code_ANS"/>
         <active pattern="S_documentPDFCopie_ANS"></active>
+        <active pattern="S_resultats_ANS"></active>
  
         <!-- Activation des entrées  -->
         <active pattern="E_dispositifMedical-2_ANS"/>
@@ -165,6 +167,7 @@
         <active pattern="E_typeDocumentAttache_ANS"/>
         <active pattern="E_transfusionProduitsSanguins_ANS"/>
         <active pattern="E_syntheseMedicaleSejour_ANS"/>
+        <active pattern="E_resultats_ANS"/>
 
     </phase>
 </schema>
