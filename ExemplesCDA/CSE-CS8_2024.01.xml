@@ -1033,8 +1033,8 @@
                               </assignedEntity>
                            </performer>
                            <!-- Assuré -->
-                           <participant typeCode="HLD">
-                              <participantRole classCode="IND">
+                           <participant typeCode="COV">
+                              <participantRole classCode="PAT">
                                  <id extension="64579890112345678100" root="1.2.250.1.213.1.4.2"/>
                                  <addr use="H">
                                     <houseNumber>24</houseNumber>
