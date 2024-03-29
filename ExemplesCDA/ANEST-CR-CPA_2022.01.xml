@@ -240,7 +240,7 @@
     <time nullFlavor="NA" />
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801984758437" />
-      <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecin Générale (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecine Générale (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>3</houseNumber>
         <streetName>Rue Petit Pont</streetName>
@@ -325,7 +325,7 @@
   <componentOf>
     <encompassingEncounter>
       <!-- Type de prise en charge -->
-      <code code="EXTERNE" displayName="acte et consultation externe (établissement)" codeSystem="1.2.250.1.213.1.1.4.2.291" />
+      <code code="EXTERNE" displayName="Acte et consultation externe (établissement)" codeSystem="1.2.250.1.213.1.1.4.2.291" />
       <!-- Date de la prise en charge -->
       <effectiveTime>
         <high value="20200317171100+0100" />
@@ -845,7 +845,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="probleme-pneumologique-01">[CIM-10 : J40] Bronchite</content>
+                    <content ID="probleme-pneumologique-01">[CIM-10 : J40] Bronchite, non précisée aigüe ou chronique</content>
                   </td>
                   <td>
                     <content ID="commentaire-probleme-pneumologique-01">(texte libre)</content>
@@ -960,7 +960,7 @@
                 <low value="20200318" />
               </effectiveTime>
               <!-- Problèmes cardio-vasculaires -->
-              <!-- [0..*] Entrée FR-Probleme : Hypertension essentielle -->
+              <!-- [0..*] Entrée FR-Probleme : Hypertension essentielle (primitive) -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="true">
                   <!-- Conformité CCD -->
@@ -979,7 +979,7 @@
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I10" displayName="Hypertension essentielle" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I10" displayName="Hypertension essentielle (primitive)" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-cardio-vasculaire-01" />
                     </originalText>
@@ -1064,7 +1064,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="J40" displayName="Bronchite" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="J40" displayName="Bronchite, non précisée aigüe ou chronique" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-pneumologique-01" />
                     </originalText>
@@ -1215,7 +1215,7 @@
                 </observation>
               </entryRelationship>
               <!-- Problèmes digestifs -->
-              <!-- [0..*] Entrée FR-Probleme : Reflux gastro-oesophagien -->
+              <!-- [0..*] Entrée FR-Probleme : Reflux gastroœsophagien -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN">
                   <!-- Conformité CCD -->
@@ -1233,7 +1233,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="K21" displayName="Reflux gastro-oesophagien" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="K21" displayName="Reflux gastroœsophagien" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-digestif-01" />
                     </originalText>
@@ -1317,7 +1317,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="E10.9" displayName="Diabète sucré de type 1, sans complication" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="E10.9" displayName="Diabète sucré de type 1 - ' Sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-diabete-01" />
                     </originalText>
@@ -1513,7 +1513,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="antecedent-gynecologique-01">[CIM-10 : N76.0] Vaginite</content>
+                    <content ID="antecedent-gynecologique-01">[CIM-10 : N76.0] Vaginite aigüe</content>
                   </td>
                   <td>
                     <content ID="commentaire-antecedent-gynecologique-01">(texte libre)</content>
@@ -1530,7 +1530,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="antecedent-infectieux-01">[CIM-10 : B16] Hépatite aiguë B</content>
+                    <content ID="antecedent-infectieux-01">[CIM-10 : B16] Hépatite aigüe B</content>
                   </td>
                   <td>
                     <content ID="commentaire-antecedent-infectieux-01">(texte libre)</content>
@@ -1679,7 +1679,7 @@
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <!-- Antécédents gynécologiques : code CIM-10 -->
-                  <value xsi:type="CD" code="N76.0" displayName="Vaginite" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="N76.0" displayName="Vaginite aigüe" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#antecedent-gynecologique-01" />
                     </originalText>
@@ -1721,7 +1721,7 @@
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <!-- Antécédent obstetrical : code CIM-10 -->
-                  <value xsi:type="CD" code="O03.9" displayName="Avortement spontané complet ou sans précision, sans complication" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="O03.9" displayName="Avortement spontané - 'Complet ou sans précision, sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#antecedent-obstetrical-01" />
                     </originalText>
@@ -1763,7 +1763,7 @@
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <!-- Antécédents infectieux : code CIM-10 -->
-                  <value xsi:type="CD" code="B16" displayName="Hépatite aiguë B" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="B16" displayName="Hépatite aigüe B" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#antecedent-infectieux-01" />
                     </originalText>
@@ -2725,7 +2725,7 @@
                     <content ID="typeAllergie">(texte libre)</content>
                   </td>
                   <td>
-                    <content ID="agentResponsable">[CIS : 68787715] PARACETAMOL BIOGARAN 1 g, comprimé</content>
+                    <content ID="agentResponsable">[CIS : 68787715] paracétamol</content>
                   </td>
                   <td>
                     <content ID="Reaction">[CIM-10 : T78.3] Urticaire</content>
@@ -2791,7 +2791,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="N02BE01" displayName="PARACETAMOL BIOGARAN 1 g, comprimé" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
+                        <code code="N02BE01" displayName="paracétamol" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                           <originalText>
                             <reference value="#agentResponsable" />
                           </originalText>

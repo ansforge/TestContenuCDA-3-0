@@ -20,6 +20,6 @@
     <param name="path_jdv" value="$jdv_HL7_PersonalRelationshipRoleType_CISIS"/>
     <param name="vue_elt" value="'subject/relatedSubject/code'"/>
     <param name="xpath_elt" value="cda:subject[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.15.2']/cda:relatedSubject/cda:code"/>
-    <param name="nullFlavor" value="0"/>
+    <param name="nullFlavor" value="1"/>
 </pattern>   
 

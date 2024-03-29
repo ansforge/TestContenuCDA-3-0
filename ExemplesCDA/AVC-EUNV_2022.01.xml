@@ -283,7 +283,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.71.4.2.2" extension="11223344" assigningAuthorityName="Clinique de Breteuil" />
-          <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
         </healthCareFacility>
       </location>
     </encompassingEncounter>
@@ -949,7 +949,7 @@
                   <td>
                     <content ID="neuro">Aggravation neurologique</content>
                   </td>
-                  <td>infarctus du myocarde récidivant</td>
+                  <td>Infarctus du myocarde à répétition</td>
                   <td>23/09/2018</td>
                   <td>texte libre</td>
                 </tr>
@@ -1152,7 +1152,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="0FFCEB4F-83E5-4356-A163-32BFD6A1D0C2" />
-                  <code code="I22" displayName="infarctus du myocarde récidivant" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I22" displayName="Infarctus du myocarde à répétition" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="neuro">
                     </reference>
@@ -1332,7 +1332,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="7F027D5A-9834-4A72-BF84-4D184FD950BF" />
-                  <code code="I80.2" displayName="Thrombose veineuse profonde" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I80.2" displayName="Phlébite et thrombophlébite d'autres vaisseaux profonds des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="thrombVein">
                     </reference>
@@ -1378,7 +1378,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20140112" />
               <value xsi:type="BL" value="true" />
-              <!-- 	 Infection urinaire -->
+              <!-- Infection urinaire -->
               <entryRelationship typeCode="RSON">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité IHE PCC -->
@@ -1386,7 +1386,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="1C9A4BDB-F315-491B-8F2D-54D4DD8E8228" />
-                  <code code="N39.0" displayName="Infection urinaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="N39.0" displayName="Infection des voies urinaires, siège non précisé" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="infUri">
                     </reference>

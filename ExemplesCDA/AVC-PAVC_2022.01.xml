@@ -295,7 +295,7 @@
       </effectiveTime>
       <location>
         <healthCareFacility>
-          <code code="SA01" displayName="Etablissement Public de santé" codeSystem="1.2.250.1.71.4.2.4">
+          <code code="SA01" displayName="Etablissement public de santé" codeSystem="1.2.250.1.71.4.2.4">
           </code>
         </healthCareFacility>
       </location>
@@ -486,7 +486,7 @@
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText>
                       <reference value="#infarctus">
                       </reference>
@@ -522,7 +522,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="DB756F27-ACDD-44DB-A0B4-E6B2EE57BA25" />
-                  <code code="I10" displayName="HTA" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I10" displayName="Hypertension essentielle (primitive)" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#hta">
                     </reference>
@@ -540,7 +540,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F1D3CF53-0F44-43F5-8008-D8B35A83394A" />
-                  <code code="E14.9" displayName="Diabète sucré" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="E14.9" displayName="Diabète sucré, sans précision - 'Sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#diabete">
                     </reference>
@@ -558,7 +558,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F0F678C6-EFE9-4ED4-8034-D9B98A6B761F" />
-                  <code code="E66.9" displayName="Obésité" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="E66.9" displayName="Obésité, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#obesite">
                     </reference>
@@ -576,7 +576,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="57F2DE3E-B68B-4725-BFBF-3CCEE575DF1D" />
-                  <code code="F17.2" displayName="Tabac" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="F17.2" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac - 'Syndrome de dépendance'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#tabac">
                     </reference>
@@ -612,7 +612,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="FA8C399A-2C02-4D5F-A4EE-D9903D52D5C5" />
-                  <code code="I51.6" displayName="Maladie cardio-vasculaire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I51.6" displayName="Maladie cardiovasculaire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#cardiaque">
                     </reference>
@@ -2178,7 +2178,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="G15_10/SM18" displayName="Médecin - Gériatrie (SM)re" codeSystem="1.2.250.1.213.1.1.4.5" />
+              <value xsi:type="CD" code="G15_10/SM18" displayName="Médecin - Gériatrie (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
             </observation>
           </entry>
           <!-- Besoin d'un avis medical complémentaire / Autre (besoin présent) v-->
@@ -2933,7 +2933,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="255" displayName="Maison d'accueil spécialisée (MAS)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
+              <value xsi:type="CD" code="255" displayName="Maison d'Accueil Spécialisée (M.A.S.)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Maison d'accueil spécialisé (MAS) / Hospitalisation complète -->
@@ -2973,7 +2973,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="127" displayName="Hospitalisation à domicile (HAD)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
+              <value xsi:type="CD" code="127" displayName="Hospitalisation à Domicile" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
           <!-- Traitement / Prévoir / Maison d'accueil spécialisé (MAS) / Hôpital de jour (HDJ) -->
@@ -3013,7 +3013,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="354" displayName="Service de soins infirmiers à domicile (SSIAD)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
+              <value xsi:type="CD" code="354" displayName="Service de Soins Infirmiers A Domicile (S.S.I.A.D)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
             </observation>
           </entry>
         </section>

@@ -252,7 +252,7 @@
     <time nullFlavor="NA"/>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801984758437"/>
-      <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecin Générale (SM)"
+      <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecine Générale (SM)"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <addr>
         <houseNumber>3</houseNumber>
@@ -339,7 +339,7 @@
   <componentOf>
     <encompassingEncounter>
       <!-- Type de prise en charge -->
-      <code code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4"
+      <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" codeSystem="2.16.840.1.113883.5.4"
         codeSystemName="ActEncounterCode"/>
       <!-- Date de la prise en charge -->
       <effectiveTime>
@@ -353,7 +353,7 @@
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
           <!-- Profession / spécialité du PS -->
           <code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5"
-            displayName="Médecin - Qualifié en Médecin Générale (SM)"/>
+            displayName="Médecin - Qualifié en Médecine Générale (SM)"/>
           <!-- Adresse du PS-->
           <addr>
             <houseNumber>20</houseNumber>
@@ -824,7 +824,7 @@
                   <!-- id de DM -->
                   <id root="E085B89C-FC72-4307-94BD-287CEBEB1548"/>
                   <!-- code de DM référencé -->
-                  <code code="N020101" displayName="CATHÉTERS ÉRIDURAUX/PÉRIDURAUX"
+                  <code code="N020101" displayName="CATHÉTERS ET SETS DE PÉRIDURALE"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -899,7 +899,7 @@
                   <!-- id de DM -->
                   <id root="E085B89C-FC72-4307-94BD-287CEBEB2211"/>
                   <!-- code de DM référencé -->
-                  <code code="C010101" displayName="ACCES VASCULAIRE PERIPHERIQUE"
+                  <code code="C010101" displayName="CATHÉTERS VEINEUX PÉRIPHÉRIQUES"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -975,7 +975,7 @@
                   <!-- id de DM -->
                   <id root="909CA0F1-04C2-4B42-86A1-FB346AB218CC"/>
                   <!-- code de DM référencé -->
-                  <code code="C0102" displayName="ACCES VASCULAIRE CENTRAL"
+                  <code code="C0102" displayName="CATHÉTERS VEINEUX CENTRAUX"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -990,7 +990,7 @@
                   <id root="0DDF2334-BF23-49C1-B9C0-B965F36C3446"/>
                   <!-- code de DM référencé -->
                   <code code="C010204"
-                    displayName="CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"
+                    displayName="SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1063,7 +1063,7 @@
                   <!-- id de DM -->
                   <id root="D062C86F-DDDB-4CE6-8FAD-2E4B7340D88A"/>
                   <!-- code de DM référencé -->
-                  <code code="C0103" displayName="CATHETER INTRA-ARTERIEL"
+                  <code code="C0103" displayName="CATHETERS ARTERIELS"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1120,13 +1120,13 @@
                   <!-- id du DM référencé -->
                   <id root="E6297058-FE7F-4540-AF09-86E7F3D2EDA6"/>
                   <!-- code de DM référencé -->
-                  <code code="R0102" displayName="MASQUE LARYNGE" codeSystem="1.2.250.1.213.2.68"
+                  <code code="R0102" displayName="MASQUES ET TUBES LARYNGÉS" codeSystem="1.2.250.1.213.2.68"
                     codeSystemName="EMDN"> </code>
                 </act>
               </entryRelationship>
             </procedure>
           </entry>
-          <!-- [0..1] Entrée Acte : Ventilation avec un dispositif supraglottique (à créer uniquement si Ventilation avec un dispositif supraglottique) -->
+          <!-- [0..1] Entrée Acte : Ventilation avec un MASQUES ET TUBES LARYNGÉS (à créer uniquement si Ventilation avec un MASQUES ET TUBES LARYNGÉS) -->
           <entry>
             <procedure classCode="PROC" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1177,7 +1177,7 @@
                   <!-- id du DM référencé -->
                   <id root="E6297058-FE7F-4540-AF09-86E7F3D2EDA6"/>
                   <!-- code de DM référencé -->
-                  <code code="R0102" displayName="DISPOSITIF SUPRAGLOTTIQUE"
+                  <code code="R0102" displayName="MASQUES ET TUBES LARYNGÉS"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"> </code>
                 </act>
               </entryRelationship>
@@ -1268,7 +1268,7 @@
                   <!-- id du DM référencé -->
                   <id root="4D8BDD45-20FB-45FF-B32B-CB5018EDF100"/>
                   <!-- Type de DM -->
-                  <code code="R010302" displayName="SONDE INTUBATION TRACHEALE"
+                  <code code="R010302" displayName="SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1282,7 +1282,7 @@
                   <!-- id de DM référencé -->
                   <id root="3858EAD3-0876-4C97-8FBF-D4B2E82DB9BE"/>
                   <!-- Type de DM -->
-                  <code code="R018004" displayName="MANDRIN INTUBATION LONG BEQUILLE"
+                  <code code="R018004" displayName="GUIDES À CHANGEURS D'INTUBATION"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1296,7 +1296,7 @@
                   <!-- id du DM référencé -->
                   <id root="1E1EFEB6-8D8A-4864-8144-63082A1E057A"/>
                   <!-- Type de DM -->
-                  <code code="Z12021004" displayName="OPTOVIDEO LARYNGOSCOPE / GLOTTISCOPE"
+                  <code code="Z12021004" displayName="VIDÉOLARYNGOSCOPES"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1310,7 +1310,7 @@
                   <!-- id du DM référencé -->
                   <id root="6AD5FDDD-A700-4CE3-84AF-EE9E39A3AB54"/>
                   <!-- Type de DM -->
-                  <code code="R0102" displayName="MASQUE LARYNGE POUR INTUBATION"
+                  <code code="R0102" displayName="MASQUES ET TUBES LARYNGÉS POUR INTUBATION"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1324,11 +1324,11 @@
                   <!-- id du DM référencé -->
                   <id root="742A7658-F4A2-4641-B0F0-380DD414EC9D"/>
                   <!-- Type de DM -->
-                  <code code="Z12029006" displayName="DISPOSITIF POUR FIBROSCOPIE"
+                  <code code="Z12029006" displayName="FIBROSCOPES D’INTUBATION"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
-              <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM (DISPOSITIF OXYGENATION TRANSTRACHEALE) -->
+              <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM (SONDES NASALES D'OXYGÉNOTHÉRAPIE HAUT DÉBIT) -->
               <entryRelationship typeCode="REFR" inversionInd="false">
                 <act classCode="ACT" moodCode="EVN">
                   <!-- Conformité IHE PCC -->
@@ -1338,7 +1338,7 @@
                   <!-- id du DM référencé -->
                   <id root="86C9CAD3-7482-4DBC-8BCB-BDB7375EE148"/>
                   <!-- Type de DM -->
-                  <code code="R0301020302" displayName="DISPOSITIF OXYGENATION TRANSTRACHEALE"
+                  <code code="R0301020302" displayName="SONDES NASALES D'OXYGÉNOTHÉRAPIE HAUT DÉBIT"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1395,7 +1395,7 @@
                   <!-- id du DM référencé -->
                   <id root="E6297058-FE7F-4540-AF09-86E7F3D2EDA6"/>
                   <!-- code du DM référencé -->
-                  <code code="R01050201" displayName="TRACHEOTOMIE" codeSystem="1.2.250.1.213.2.68"
+                  <code code="R01050201" displayName="CANULES ET SETS DE TRACHÉOTOMIE, À BALLONNET, NON ARMÉES" codeSystem="1.2.250.1.213.2.68"
                     codeSystemName="EMDN"> </code>
                 </act>
               </entryRelationship>
@@ -1409,7 +1409,7 @@
                   <!-- id du DM référencé -->
                   <id root="E6297058-FE7F-4540-AF09-86E7F3D2EDA6"/>
                   <!-- code de DM référencé -->
-                  <code code="R0106" displayName="SET TRACHEOTOMIE PERCUTANEE"
+                  <code code="R0106" displayName="SETS DE TRACHÉOTOMIE PERCUTANÉE"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"> </code>
                 </act>
               </entryRelationship>
@@ -1464,7 +1464,7 @@
                   <!-- id de DM -->
                   <id root="73FB6512-8E8B-42B6-89A3-0C70393F3901"/>
                   <!-- code de DM référencé -->
-                  <code code="G02020101" displayName="SONDE NASOGASTRIQUE"
+                  <code code="G02020101" displayName="SONDES NASO-GASTRIQUES"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1540,7 +1540,7 @@
                   <id root="A49B3402-2D7D-496A-B7FC-9F9450B2F915"/>
                   <!-- valeur provenant du guide SFAR -->
                   <code code="C010204"
-                    displayName="CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"
+                    displayName="SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"
                     codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
                 </act>
               </entryRelationship>
@@ -1594,37 +1594,37 @@
               <tbody>
                 <tr>
                   <td>
-                    <content ID="DM-01">[N020101] CATHÉTERS ÉRIDURAUX/PÉRIDURAUX</content>
+                    <content ID="DM-01">[N020101] CATHÉTERS ET SETS DE PÉRIDURALE</content>
                   </td>
                   <td/>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-02">[C010101] ACCES VASCULAIRE PERIPHERIQUE</content>
+                    <content ID="DM-02">[C010101] CATHÉTERS VEINEUX PÉRIPHÉRIQUES</content>
                   </td>
                   <td/>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-03">[C0102] ACCES VASCULAIRE CENTRAL</content>
+                    <content ID="DM-03">[C0102] CATHÉTERS VEINEUX CENTRAUX</content>
                   </td>
                   <td/>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-04">[C0103] CATHETER INTRA-ARTERIEL</content>
+                    <content ID="DM-04">[C0103] CATHETERS ARTERIELS</content>
                   </td>
                   <td/>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-05">[R0102] MASQUE LARYNGE</content>
+                    <content ID="DM-05">[R0102] MASQUES ET TUBES LARYNGÉS</content>
                   </td>
                   <td/>
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-06">[R0102] DISPOSITIF SUPRAGLOTTIQUE</content>
+                    <content ID="DM-06">[R0102] MASQUES ET TUBES LARYNGÉS</content>
                   </td>
                   <td>
                     <content ID="DM-06-taille">2,5</content>
@@ -1632,7 +1632,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-07">[R010302] SONDE INTUBATION TRACHEALE</content>
+                    <content ID="DM-07">[R010302] SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET</content>
                   </td>
                   <td>
                     <content ID="DM-07-taille">3</content>
@@ -1646,7 +1646,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="DM-09">[G02020101] SONDE NASOGASTRIQUE</content>
+                    <content ID="DM-09">[G02020101] SONDES NASO-GASTRIQUES</content>
                   </td>
                   <td>
                     <content ID="DM-09-diametre">18</content>
@@ -1674,7 +1674,7 @@
             </table>
           </text>
           <!-- DM posés pendant l'intervention -->
-          <!-- [0..1] Entrée Dispositif médical : N020101 CATHÉTERS ÉRIDURAUX/PÉRIDURAUX -->
+          <!-- [0..1] Entrée Dispositif médical : N020101 CATHÉTERS ET SETS DE PÉRIDURALE -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1696,7 +1696,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="N020101" displayName="CATHÉTERS ÉRIDURAUX/PÉRIDURAUX"
+                    <code code="N020101" displayName="CATHÉTERS ET SETS DE PÉRIDURALE"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-01"> </reference>
@@ -1707,7 +1707,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : C010101 ACCES VASCULAIRE PERIPHERIQUE -->
+          <!-- [0..*] Entrée Dispositif médical : C010101 CATHÉTERS VEINEUX PÉRIPHÉRIQUES -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1729,7 +1729,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="C010101" displayName="ACCES VASCULAIRE PERIPHERIQUE"
+                    <code code="C010101" displayName="CATHÉTERS VEINEUX PÉRIPHÉRIQUES"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-02"> </reference>
@@ -1740,7 +1740,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : C0102 ACCES VASCULAIRE CENTRAL -->
+          <!-- [0..*] Entrée Dispositif médical : C0102 CATHÉTERS VEINEUX CENTRAUX -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1762,7 +1762,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="C0102" displayName="ACCES VASCULAIRE CENTRAL"
+                    <code code="C0102" displayName="CATHÉTERS VEINEUX CENTRAUX"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-03"> </reference>
@@ -1773,7 +1773,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : C0103 CATHETER INTRA-ARTERIEL -->
+          <!-- [0..*] Entrée Dispositif médical : C0103 CATHETERS ARTERIELS -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1795,7 +1795,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="C0103" displayName="CATHETER INTRA-ARTERIEL"
+                    <code code="C0103" displayName="CATHETERS ARTERIELS"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-04"> </reference>
@@ -1806,7 +1806,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : R0102 MASQUE LARYNGE -->
+          <!-- [0..*] Entrée Dispositif médical : R0102 MASQUES ET TUBES LARYNGÉS -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1828,7 +1828,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="R0102" displayName="MASQUE LARYNGE" codeSystem="1.2.250.1.213.2.68"
+                    <code code="R0102" displayName="MASQUES ET TUBES LARYNGÉS" codeSystem="1.2.250.1.213.2.68"
                       codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-05"> </reference>
@@ -1839,7 +1839,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : R0102 DISPOSITIF SUPRAGLOTTIQUE -->
+          <!-- [0..*] Entrée Dispositif médical : R0102 MASQUES ET TUBES LARYNGÉS -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1861,7 +1861,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="R0102" displayName="DISPOSITIF SUPRAGLOTTIQUE"
+                    <code code="R0102" displayName="MASQUES ET TUBES LARYNGÉS"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-06"> </reference>
@@ -1890,7 +1890,7 @@
               </entryRelationship>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : R010302 SONDE INTUBATION TRACHEALE -->
+          <!-- [0..*] Entrée Dispositif médical : R010302 SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1912,7 +1912,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="R010302" displayName="SONDE INTUBATION TRACHEALE"
+                    <code code="R010302" displayName="SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-07"> </reference>
@@ -1941,7 +1941,7 @@
               </entryRelationship>
             </supply>
           </entry>
-          <!-- [0..1] Entrée Dispositif médical : R01050201 TRACHEOTOMIE -->
+          <!-- [0..1] Entrée Dispositif médical : R01050201 CANULES ET SETS DE TRACHÉOTOMIE, À BALLONNET, NON ARMÉES -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1963,7 +1963,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="R01050201" displayName="TRACHEOTOMIE"
+                    <code code="R01050201" displayName="CANULES ET SETS DE TRACHÉOTOMIE, À BALLONNET, NON ARMÉES"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-08"> </reference>
@@ -1974,7 +1974,7 @@
               </participant>
             </supply>
           </entry>
-          <!-- [0..*] Entrée Dispositif médical : G02020101 SONDE NASOGASTRIQUE -->
+          <!-- [0..*] Entrée Dispositif médical : G02020101 SONDES NASO-GASTRIQUES -->
           <entry>
             <supply classCode="SPLY" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1996,7 +1996,7 @@
                 <participantRole classCode="MANU">
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="G02020101" displayName="SONDE NASOGASTRIQUE"
+                    <code code="G02020101" displayName="SONDES NASO-GASTRIQUES"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-09"> </reference>
@@ -2049,7 +2049,7 @@
                   <!-- Type de DM -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <code code="C010204"
-                      displayName="CHAMBRE CATHETER IMPLANTABLE INTRAVEINEUX SOUS-CUTANÉS"
+                      displayName="SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText>
                         <reference value="#DM-10"> </reference>
@@ -3001,7 +3001,7 @@
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="H57.9"
-                    displayName="Affection de l'oeil et de ses annexes, sans précision"
+                    displayName="Affection de l'œil et de ses annexes, sans précision"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM_10">
                     <originalText>
                       <reference value="#lesion-oculaire"/>
@@ -3045,7 +3045,7 @@
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="H54"
-                    displayName="Déficience visuelle binoculaire ou monoculaire, incluant la cécité"
+                    displayName="Déficience visuelle incluant la cécité (binoculaire ou monoculaire)"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM_10">
                     <originalText>
                       <reference value="#diminution-acuite-visuelle"/>
@@ -3123,7 +3123,7 @@
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="T29.0"
-                    displayName="Brûlures de parties multiples du corps, degré non précisé"
+                    displayName="Brulures de parties multiples du corps, degré non précisé"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM_10">
                     <originalText>
                       <reference value="#brulures"/>
@@ -3266,7 +3266,7 @@
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="I73.9"
-                    displayName="Maladie vasculaire périphérique, sans précision [Ischémie artérielle]"
+                    displayName="Maladie vasculaire périphérique, sans précision"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM_10">
                     <originalText>
                       <reference value="#ischemie-territoire-aval"/>
@@ -3691,7 +3691,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="def-materielle-02">Monitorage neuro-musculaire [EMDN :
+                    <content ID="def-materielle-02"> ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE [EMDN :
                       Z1203019001]</content>
                   </td>
                   <td>
@@ -3924,7 +3924,7 @@
               </entryRelationship>
             </observation>
           </entry>
-          <!-- [0..*] Entrée Simple observation : [Z1203019001] Monitorage neuro-musculaire -->
+          <!-- [0..*] Entrée Simple observation : [Z1203019001]  ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <!-- Conformité IHE PCC -->
@@ -3933,7 +3933,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48"/>
               <id root="E494FB3A-DE0A-4701-B011-9ABFE159882C"/>
               <!-- valeur issue du JDV_DefaillanceMaterielle_CISIS (1.2.250.1.213.1.1.5.526) -->
-              <code code="Z1203019001" displayName="Monitorage neuro-musculaire"
+              <code code="Z1203019001" displayName=" ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE"
                 codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"> </code>
               <text>
                 <reference value="#def-materielle-02"/>
