@@ -54,32 +54,6 @@
             et une description narrative via une référence à l'élément narratif de la section.
         </assert>
 
-      <assert test="not(cda:entryRelationship)        
-            or cda:entryRelationship[@typeCode='RSON']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']
-            or cda:entryRelationship[@typeCode='REFR']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3']
-            or cda:entryRelationship[@typeCode='COMP']/cda:substanceAdministration
-            or cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3']
-            or cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2']
-            or cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']
-            or cda:entryRelationship[@typeCode='COMP']/cda:observation/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']
-            or cda:entryRelationship[@typeCode='REFR']/cda:substanceAdministration/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.10']
-            or cda:entryRelationship[@typeCode='COMP']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.8']
-            or cda:entryRelationship[@typeCode='COMP']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.9.1']
-            or cda:entryRelationship[@typeCode='COMP']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.15']
-            ">
-            [E_medications_fr] Erreur de conformité CI-SIS : Seuls les éléments "entryRelationship" optionnels suivants sont autorisés :
-            - Motif du traitement : avec un typeCode='RSON' et une entrée Référence interne (1.3.6.1.4.1.19376.1.5.3.1.4.4.1)           
-            - Référence de la prescription : avec un typeCode 'REFR' et une entrée Prescription (1.3.6.1.4.1.19376.1.5.3.1.4.7.3)
-            - SubstanceAdministration subordonné : avec un typeCode='COMP' et une entrée de type substanceAdministration subordonnée            
-            - Instructions au patient : avec un typeCode='SUBJ'  et une entrée Instructions au patient (1.3.6.1.4.1.19376.1.5.3.1.4.3)  
-            - Instructions au dispensateur : avec un typeCode='SUBJ'  et une entrée Instructions au dispensateur (1.3.6.1.4.1.19376.1.5.3.1.4.3.1)            
-            - Simple Observation : avec un typeCode='COMP' et une entrée Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13)            
-            - Référence à un traitement d'un plan de traitement : avec un typeCode='REFR' et une entrée Référence à un traitement d'un plan de traitement (1.3.6.1.4.1.19376.1.9.1.3.10) 
-            - Quantité à dispenser : avec un typeCode='COMP' et une entrée Quantité à dispenser (1.3.6.1.4.1.19376.1.9.1.3.8)
-            - Autorisation de substitution : avec un typeCode='COMP' et une entrée Autorisation de substitution (1.3.6.1.4.1.19376.1.9.1.3.9.1)
-            - Période de renouvellement : avec un typeCode='COMP' et une entrée Période de renouvellement (1.3.6.1.4.1.19376.1.9.1.3.15)
-             
-        </assert>        
     </rule>
     
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.7"]/cda:entryRelationship[@typeCode="RSON"]/cda:act'>
