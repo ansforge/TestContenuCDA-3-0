@@ -59,9 +59,9 @@
             l'élément 'effectiveTime' doit contenir l'élément 'low' et 'high' pour indiquer respectivement la Date de début de période et la Date de fin de période.
         </assert>
         
-        <assert test='cda:routeCode'>
+        <assert test='count(cda:routeCode)&lt;=1'>
             [immunizationRecommendation_int.sch] Erreur de Conformité PCC : 
-            Dans une entrée 'Immunization Recommendation', l'élément 'routeCode' est obligatoire.
+            Dans une entrée 'Immunization Recommendation', l'élément 'routeCode' peut etre présent [0..1].
         </assert>
         
         <assert test='cda:consumable/@typeCode="CSM"'>
