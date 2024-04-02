@@ -12,6 +12,7 @@
     05/10/17 : NMA : Correction du compte des templateIds
     30/11/17 : NMA : Correction des tests sur le moodCode en remplaçant les or par des and
     10/10/19 : APE : Mise à jour du contrôle du reference@value obligatoire
+    02/04/2024 : SBM : Mise à jour du controle @moodCode='ARQ' (priorityCode obligatoire si effectiveTime non renseignée)
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_encounter_int">
@@ -60,7 +61,9 @@
             [E_encounter_int] Erreur de conformité PCC : Si l'élément 'text' est présent, il doit avoir un élément 'reference' qui contient une URI dans un attribut @value.
         </assert>
         
-        <assert test="(not(@moodCode = 'EVN' or @moodCode = 'PMRS') and @moodCode = 'ARQ' and cda:priorityCode) or ((@moodCode = 'EVN' or @moodCode = 'PMRS') and cda:effectiveTime)"> 
+        <assert test="(not(@moodCode = 'EVN' or @moodCode = 'PMRS') and ((@moodCode = 'ARQ' and cda:effectiveTime and count(cda:priorityCode)&lt;=1) or (@moodCode = 'ARQ' and not(cda:effectiveTime) and cda:priorityCode))) 
+            or
+            ((@moodCode = 'EVN' or @moodCode = 'PMRS') and cda:effectiveTime)"> 
             [E_encounter_int] : Erreur de Conformité PCC: Dans une entrée "Encounter", l'élément "effectiveTime" 
             horodate l'événement (en mode EVN), ou la date désirée pour la rencontre (en mode ARQ or PMRS).
             En mode EVN ou PMRS, l'élément "effectiveTime" sera présent.
