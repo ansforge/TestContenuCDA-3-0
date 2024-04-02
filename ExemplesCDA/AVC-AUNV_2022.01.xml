@@ -577,7 +577,7 @@
                 <low value="201809232030" />
               </effectiveTime>
               <!-- Valeur issue du JDV_SymptomesAVC_CISIS -->
-              <value xsi:type="CD" code="85972008" codeSystem="1.2.250.1.213.2.12" displayName="trouble sensoriel" codeSystemName="SNOMED CT">
+              <value xsi:type="CD" code="85972008" codeSystem="2.16.840.1.113883.6.96" displayName="trouble sensoriel" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#troubSens" />
                 </originalText>
@@ -3987,7 +3987,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="255549009" displayName="Antérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="255549009" displayName="antérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                     </qualifier>
@@ -4067,7 +4067,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="15926001" displayName="Tronc cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="15926001" displayName="tronc de l'encéphale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
@@ -4089,7 +4089,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="15926001" displayName="Tronc cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="15926001" displayName="tronc de l'encéphale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
@@ -4242,7 +4242,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="15926001" displayName="tronc Cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="15926001" displayName="tronc de l'encéphale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
@@ -5110,7 +5110,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20180923232000+0100" />
-              <value xsi:type="CD" code="9571008" displayName="Approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <value xsi:type="CD" code="9571008" displayName="approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>
