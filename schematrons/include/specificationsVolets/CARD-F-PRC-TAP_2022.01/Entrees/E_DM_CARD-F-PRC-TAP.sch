@@ -53,7 +53,7 @@
        
         <!-- Localisation -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="257880008"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="39111-0"'>
             [E_DM-TAP] Erreur de Conformité CI-SIS: L'élément Localisation est obligatoire.
         </assert>
     </rule>
