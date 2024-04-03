@@ -1165,7 +1165,8 @@
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
-                  <value xsi:type="CE" code="D0014-1" codeSystem="1.2.250.1.213.1.1.4.2" />
+                  <value xsi:type="CE" code="D0014-1" displayName="S+T+ (Segment ST sus-décalé avec augmentation des troponines)" 
+                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                 </observation>
               </entryRelationship>
             </procedure>
@@ -1516,7 +1517,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" displayName="localisation">
+                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#tapLocalisation1" />
                     </originalText>
@@ -1576,7 +1577,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" displayName="localisation">
+                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#tapLocalisation2" />
                     </originalText>
@@ -1636,7 +1637,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" displayName="localisation">
+                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#tapLocalisation3" />
                     </originalText>
@@ -1697,7 +1698,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" displayName="localisation">
+                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#tapLocalisation4" />
                     </originalText>
@@ -1757,7 +1758,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
-                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" displayName="localisation">
+                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#tapLocalisation5" />
                     </originalText>
