@@ -15,8 +15,8 @@
     <title>CI-SIS Cible INR (CARD-F-PRC-AVK)</title>
     <rule context='*[cda:templateId/@root = "1.2.250.1.213.1.1.2.158"]//cda:observation[cda:templateId/@root = "1.2.250.1.213.1.1.3.27"]'>
         
-        <assert test='cda:code[@code = "L0045" and @codeSystem="1.2.250.1.213.1.1.4.2"]'>
-            [E_CibleINR_CARD-F-PRC-AVK] Erreur de Conformité CI-SIS: Le code de l'entrée FR-Demande-d-examen-ou-de-suivi (1.2.250.1.213.1.1.3.27) doit avoir obligatoirement @code = "L0045" et @codeSystem="1.2.250.1.213.1.1.4.2" </assert>
+        <assert test='cda:code[@code = "L0045" and @codeSystem="1.2.250.1.213.1.1.4.322"]'>
+            [E_CibleINR_CARD-F-PRC-AVK] Erreur de Conformité CI-SIS: Le code de l'entrée FR-Demande-d-examen-ou-de-suivi (1.2.250.1.213.1.1.3.27) doit avoir obligatoirement @code = "L0045" et @codeSystem="1.2.250.1.213.1.1.4.322" </assert>
         
     </rule>
 </pattern>
