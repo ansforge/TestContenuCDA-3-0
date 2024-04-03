@@ -74,6 +74,8 @@
     <include href="../include/sections/S_principalMotif-non-code_ANS.sch"/>
     <include href="../include/sections/S_documentPDFCopie_ANS.sch"/>
     <include href="../include/sections/S_resultats_ANS.sch"/>
+    <include href="../include/sections/S_pointsDeVigilances-non-code_ANS.sch"/>
+    
     <!-- Entrées créées par l'ANS -->
     
     <include href="../include/entrees/E_dispositifMedical-2_ANS.sch"/>
@@ -149,6 +151,7 @@
         <active pattern="S_principalMotif-non-code_ANS"/>
         <active pattern="S_documentPDFCopie_ANS"></active>
         <active pattern="S_resultats_ANS"></active>
+        <active pattern="S_pointsDeVigilances-non-code_ANS"/>
  
         <!-- Activation des entrées  -->
         <active pattern="E_dispositifMedical-2_ANS"/>
