@@ -1164,7 +1164,7 @@
                   <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="B4988088-E848-465C-819D-39C6266B5A57" />
-                  <code code="MED-071" displayName="Appréciation diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName=" TA_ASIP " />
+                  <code code="MED-071" displayName="Appréciation diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                   <text>
                     <reference value="#appreciation_diagnostic" />
                   </text>

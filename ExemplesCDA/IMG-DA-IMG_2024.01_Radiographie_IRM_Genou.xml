@@ -604,7 +604,7 @@
                                     <effectiveTime value="20230112171504+0500"/>
                                     <!-- contre-indications : valeur issue du JDV_contre_indications_CISIS (1.2.250.1.213.1.1.5.659) -->
                                     <value xsi:type="CD" code="77386006" displayName="Enceinte"
-                                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                                         <originalText><reference value="#contre-indication-01"/></originalText>
                                     </value>
                                     <targetSiteCode nullFlavor="MSK"/>
@@ -760,7 +760,7 @@
                             <effectiveTime nullFlavor="UNK"/> 
                             <!-- [1..*] Localisation anatomique -->
                             <targetSiteCode xsi:type="CD" code="361291001" displayName="région entière du genou" 
-                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                                 <originalText mediaType="text/xml">
                                     <reference value="#localisation-anatomique-01"/>
                                 </originalText> 
@@ -818,7 +818,7 @@
                             <effectiveTime nullFlavor="UNK"/> 
                             <!-- [1..*] Localisation anatomique -->
                             <targetSiteCode xsi:type="CD" code="361291001" displayName="région entière du genou" 
-                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                                 <originalText mediaType="text/xml">
                                     <reference value="#localisation-anatomique-02"/>
                                 </originalText> 
