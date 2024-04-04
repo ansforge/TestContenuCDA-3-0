@@ -1170,7 +1170,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
-                  <value xsi:type="CD" code="MED-426" displayName="absent" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                  <value xsi:type="CD" code="2667000" displayName="absent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- [1..1] FR-Simple-Observation : Age au diagnostic -->
