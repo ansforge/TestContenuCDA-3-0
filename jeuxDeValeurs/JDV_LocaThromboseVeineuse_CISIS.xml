@@ -3,28 +3,14 @@
     <ValueSet displayName="JDV_LocaThromboseVeineuse_CISIS" id="1.2.250.1.213.1.1.5.215" version="test">
         <ConceptList>
             <Concept code="MED-450" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Sinus longitudinal supérieur partiel"/>
-            <Concept code="MED-451" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Sinus longitudinal supérieur total"/>
-            <Concept code="362075006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="sinus sagittal supérieur entier"/>
             <Concept code="24773008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus sagittal supérieur"/>
-            <Concept code="MED-452" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Sinus Latéral droit"/>
-            <Concept code="MED-453" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Sinus Latéral gauche"/>
             <Concept code="1290463001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sinus transverse droit"/>
             <Concept code="1290462006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sinus transverse gauche"/>
-            <Concept code="MED-454" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Sinus droit"/>
-            <Concept code="279261006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="sinus droit entier"/>
             <Concept code="38745009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus droit"/>
-            <Concept code="MED-455" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Veines corticales"/>
-            <Concept code="230722002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="thrombose veineuse cérébrale de la veine corticale"/>
             <Concept code="68351006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine de l'encéphale"/>
-            <Concept code="MED-456" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Veines jugulaires droite"/>
             <Concept code="764263004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine jugulaire droite"/>
-            <Concept code="MED-457" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Veines jugulaires gauche"/>
             <Concept code="764262009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine jugulaire gauche"/>
-            <Concept code="MED-458" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Veines profondes"/>
-            <Concept code="341484008" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="veine profonde entière"/>
             <Concept code="87003004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine profonde"/>
-            <Concept code="T-49840" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Sinus caverneux"/>
-            <Concept code="244402005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="sinus caverneux entier"/>
             <Concept code="18782006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus caverneux"/>
         </ConceptList>
     </ValueSet>

@@ -2,13 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_AvisMedicalComplementaire_CISIS" id="1.2.250.1.213.1.1.5.63" version="test">
         <ConceptList>
-            <Concept code="ORG-169" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="MPR"/>
             <Concept code="G15_10/SM29" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20231114000000" displayName="Médecin - Médecine physique et réadaptation (SM)"/>
             <Concept code="G15_10/SM04" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Cardiologie et maladies vasculaires (SM)"/>
             <Concept code="G15_10/SM32" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Neurologie (SM)"/>
             <Concept code="G15_10/SM18" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Gériatrie (SM)re"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.04.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre avis médical"/>
         </ConceptList>
     </ValueSet>

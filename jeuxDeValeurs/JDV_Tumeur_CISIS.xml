@@ -192,9 +192,6 @@
             <Concept code="C34.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du lobe inférieur, bronches ou poumon"/>
             <Concept code="C34.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës des bronches et du poumon"/>
             <Concept code="C34.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de bronche ou du poumon, sans précision"/>
-            <Concept code="C34.90" codeSystem="2.16.840.1.113883.6.3" dateFin="20210922000000" dateValid="20100101000000" displayName="Tumeur maligne d'une partie non précisée des bronches ou du poumon, sans précision"/>
-            <Concept code="C34.91" codeSystem="2.16.840.1.113883.6.3" dateFin="20210922000000" dateValid="20100101000000" displayName="Tumeur maligne d'une partie non précisée des bronches ou du poumon droit"/>
-            <Concept code="C34.92" codeSystem="2.16.840.1.113883.6.3" dateFin="20210922000000" dateValid="20100101000000" displayName="Tumeur maligne d'une partie non précisée des bronches ou du poumon gauche"/>
             <Concept code="C37" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du thymus"/>
             <Concept code="C38" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du coeur, du médiastin et de la plèvre"/>
             <Concept code="C38.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du coeur"/>
@@ -324,7 +321,6 @@
             <Concept code="C54.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du corps de l'utérus, sans précision"/>
             <Concept code="C55" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'utérus, partie non précisée"/>
             <Concept code="C56" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'ovaire"/>
-            <Concept code="C56.9" codeSystem="2.16.840.1.113883.6.3" dateFin="20210922000000" dateValid="20100101000000" displayName="Tumeur maligne de l'ovaire, sans précision"/>
             <Concept code="C57" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des organes génitaux de la femme, autres et non précisés"/>
             <Concept code="C57.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne d'une trompe de Fallope"/>
             <Concept code="C57.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne d'un ligament large"/>
@@ -460,7 +456,6 @@
             <Concept code="C79.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire d'autres sièges précisés"/>
             <Concept code="C79.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire de siège non précisé"/>
             <Concept code="C80" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de siège non précisé"/>
-            <Concept code="C80+0" codeSystem="2.16.840.1.113883.6.3" dateFin="20210922000000" dateValid="20100101000000" displayName="Tumeur maligne primitive de siège inconnu"/>
             <Concept code="C80.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de siège primitif inconnu, ainsi décrit"/>
             <Concept code="C80.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de siège primitif non précisé"/>
             <Concept code="C81" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin"/>

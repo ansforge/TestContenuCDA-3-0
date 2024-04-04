@@ -2,8 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_VaccinCSE8_CISIS" id="1.2.250.1.213.1.1.5.105" version="test">
         <ConceptList>
-            <Concept code="C-B6050" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
-            <Concept code="C-B6010" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la tuberculose (BCG)"/>
             <Concept code="J07BC01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
             <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin antituberculeux"/>
         </ConceptList>

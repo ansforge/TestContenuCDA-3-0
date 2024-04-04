@@ -3,14 +3,10 @@
     <ValueSet displayName="JDV_TypeAnalgesie_CISIS" id="1.2.250.1.213.1.1.5.114" version="test">
         <ConceptList>
             <Concept code="MED-168" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Analgésie au cours du travail"/>
-            <Concept code="P1-C0010" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Anesthésie générale"/>
             <Concept code="50697003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="anesthésie générale"/>
-            <Concept code="P1-C0210" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Rachi-anesthésie"/>
             <Concept code="231249005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="anesthésie rachidienne"/>
-            <Concept code="P1-C0220" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Anesthésie péridurale"/>
             <Concept code="18946005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="anesthésie épidurale"/>
             <Concept code="MED-222" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231109000000" displayName="Pas d'anesthésie"/>
-            <Concept code="MED-269" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre anesthésie"/>
             <Concept code="GEN-092.03.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre anesthésie"/>
         </ConceptList>
     </ValueSet>

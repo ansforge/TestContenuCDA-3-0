@@ -3,11 +3,8 @@
     <ValueSet displayName="JDV_ModeSortie_OBP_SCM_CISIS" id="1.2.250.1.213.1.1.5.700" version="test">
         <ConceptList>
             <Concept code="419620001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="mort"/>
-            <Concept code="ORG-101" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Retour au domicile"/>
             <Concept code="160849004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="retour au domicile"/>
-            <Concept code="ORG-069" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Transfert ou mutation"/>
             <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220804000000" displayName="Autre"/>
             <Concept code="GEN-092.06.09" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre mode de sortie"/>
         </ConceptList>
     </ValueSet>

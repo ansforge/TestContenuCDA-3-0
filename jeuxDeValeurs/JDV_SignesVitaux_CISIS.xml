@@ -2,14 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_SignesVitaux_CISIS" id="1.2.250.1.213.1.1.5.171" version="test">
         <ConceptList>
-            <Concept code="2710-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20190402000000" dateValid="20100101000000" displayName="Saturation en Oxygène"/>
-            <Concept code="2708-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230131000000" dateValid="20190403000000" displayName="Saturation en Oxygène"/>
-            <Concept code="59408-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20230403000000" dateValid="20230131000000" displayName="Saturation en Oxygène"/>
             <Concept code="20564-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230403000000" displayName="Saturation en O2"/>
             <Concept code="8280-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Périmètre abdominal (à l'ombilic)"/>
             <Concept code="8287-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Périmètre crânien"/>
-            <Concept code="9843-4" codeSystem="2.16.840.1.113883.6.1" dateFin="20210305000000" dateValid="20190924000000" displayName="Périmètre crânien"/>
-            <Concept code="3141-9" codeSystem="2.16.840.1.113883.6.1" dateFin="20190402000000" dateValid="20100101000000" displayName="Poids (mesuré)"/>
             <Concept code="8302-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Taille"/>
             <Concept code="8306-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Taille (couché)"/>
             <Concept code="8310-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Température corporelle"/>

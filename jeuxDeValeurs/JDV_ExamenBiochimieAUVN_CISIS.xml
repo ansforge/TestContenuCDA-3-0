@@ -3,7 +3,6 @@
     <ValueSet displayName="JDV_ExamenBiochimieAUVN_CISIS" id="1.2.250.1.213.1.1.5.192" version="test">
         <ConceptList>
             <Concept code="32016-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose:Masse/Volume:Ponctuel:Sang capillaire:Numérique:"/>
-            <Concept code="2339-0" codeSystem="2.16.840.1.113883.6.1" dateFin="20230803000000" dateValid="20100101000000" displayName="Glucose:Masse/Volume:Ponctuel:Sang:Numérique:"/>
             <Concept code="2345-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Glucose [Masse/Volume] Sérum/Plasma ; Numérique"/>
             <Concept code="53049-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"/>
         </ConceptList>

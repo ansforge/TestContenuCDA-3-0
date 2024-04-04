@@ -3,19 +3,18 @@
     <ValueSet displayName="JDV_HL7_SpecimenType_CISIS" id="2.16.840.1.113883.21.327" version="test">
         <ConceptList>
             <Concept code="ABS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Abcès"/>
-            <Concept code="ACNE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Tissus, acné"/>
-            <Concept code="ACNFLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Fluide, acné"/>
+            <Concept code="ACNE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Acné"/>
+            <Concept code="ACNFLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide d'acné"/>
             <Concept code="AIRS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Échantillon d'air"/>
             <Concept code="ALL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Allogreffe"/>
             <Concept code="AMN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide amniotique"/>
             <Concept code="AMP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Amputation"/>
-            <Concept code="ANGI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Angiographie"/>
-            <Concept code="ARTC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Arteriel"/>
-            <Concept code="ASERU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum, aigu"/>
+            <Concept code="ANGI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter d'angiographie (embout)"/>
+            <Concept code="ARTC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter artériel (embout)"/>
+            <Concept code="ASERU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum en phase aigüe"/>
             <Concept code="ASP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Aspiration"/>
-            <Concept code="ATTE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Environnement, Attest"/>
-            <Concept code="AUTOA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Environnemental, Ampoule autoclave"/>
-            <Concept code="AUTOC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Environnemental, Capsule autoclave"/>
+            <Concept code="AUTOA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Ampoule d'autoclave"/>
+            <Concept code="AUTOC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Capsule d'autoclave"/>
             <Concept code="AUTP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Autopsie"/>
             <Concept code="BBL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Poche de sang"/>
             <Concept code="BCYST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Kyste de Baker"/>
@@ -24,23 +23,22 @@
             <Concept code="BITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Morsure"/>
             <Concept code="BLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sang"/>
             <Concept code="BLDA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sang artériel"/>
-            <Concept code="BLDC" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Sang capillaire"/>
+            <Concept code="BLDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Sang capillaire"/>
             <Concept code="BLDCO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sang de cordon"/>
             <Concept code="BLDV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sang veineux"/>
-            <Concept code="BLEB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Bulle"/>
+            <Concept code="BLEB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cloque"/>
             <Concept code="BLIST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Ampoule"/>
-            <Concept code="BOIL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Furoncle"/>
+            <Concept code="BOIL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Clou"/>
             <Concept code="BON" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Os"/>
             <Concept code="BOWL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Contenu intestinal"/>
             <Concept code="BPH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Polynucléaires basophiles"/>
             <Concept code="BPU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Produit sanguin labile"/>
             <Concept code="BRN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Brûlure"/>
-            <Concept code="BRO" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Prélèvement bronchique"/>
+            <Concept code="BRO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Prélèvement bronchique"/>
             <Concept code="BRSH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Brosse"/>
-            <Concept code="BRTH" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20220929000000" displayName="Breath (use EXHLD)"/>
             <Concept code="BRUS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Brossage"/>
             <Concept code="BUB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Bubon"/>
-            <Concept code="BULLA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Bulle(s)"/>
+            <Concept code="BULLA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Bulle"/>
             <Concept code="BX" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Biopsie"/>
             <Concept code="CALC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Calcul"/>
             <Concept code="CARBU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Anthrax"/>
@@ -52,51 +50,48 @@
             <Concept code="CNL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Canule"/>
             <Concept code="COL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Colostrum"/>
             <Concept code="CONE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Biopsie conique"/>
-            <Concept code="CRN" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Cornée"/>
+            <Concept code="CRN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Cornée"/>
             <Concept code="CSCR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Griffure de chat"/>
-            <Concept code="CSERU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum de convalescen"/>
+            <Concept code="CSERU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum de convalescent"/>
             <Concept code="CSF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide céphalorachidien"/>
-            <Concept code="CSITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site d'insertion du cathéter"/>
-            <Concept code="CSMY" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide (Tube de cystostomie)"/>
-            <Concept code="CST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide (Kyste)"/>
-            <Concept code="CSVR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Récupérateur de sang (Cell Saver)"/>
+            <Concept code="CSITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (Site d'insertion)"/>
+            <Concept code="CSMY" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide de tube de cystostomie"/>
+            <Concept code="CST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide de kyste"/>
+            <Concept code="CSVR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Récupérateur de sang"/>
             <Concept code="CTP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Cathéter (embout)"/>
             <Concept code="CUR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Curetage"/>
             <Concept code="CVM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Glaire cervicale"/>
             <Concept code="CVPS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter veineux central (site)"/>
             <Concept code="CVPT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter veineux central (embout)"/>
-            <Concept code="CVX" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Col de l’utérus"/>
+            <Concept code="CVX" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Col de l’utérus"/>
             <Concept code="CYN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Nodule kystique"/>
             <Concept code="CYST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Kyste"/>
             <Concept code="DBITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Morsure de chien"/>
-            <Concept code="DCS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Crachats, toux profonde"/>
+            <Concept code="DCS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Expectoration profonde (crachat)"/>
             <Concept code="DEC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Ulcère de décubitus"/>
             <Concept code="DEION" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau déminéralisée"/>
             <Concept code="DIA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Dialysat"/>
             <Concept code="DIAF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide de dialyse"/>
             <Concept code="DISCHG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Décharge"/>
             <Concept code="DIV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Diverticule"/>
-            <Concept code="DOSE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Posologie (médicament ou substance)"/>
             <Concept code="DRN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Drain"/>
-            <Concept code="DRNG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain Tube"/>
+            <Concept code="DRNG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain (Tube)"/>
             <Concept code="DRNGP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain Penrose"/>
             <Concept code="DUFL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide duodénal"/>
-            <Concept code="EAR" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Oreille"/>
+            <Concept code="EAR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Oreille"/>
             <Concept code="EARW" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Cérumen"/>
             <Concept code="EBRUSH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Brossage oesophagien"/>
             <Concept code="EEYE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage oculaire"/>
-            <Concept code="EFF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Effluent"/>
-            <Concept code="EFFUS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Effusion"/>
+            <Concept code="EFF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Éffluent environnemental"/>
+            <Concept code="EFFUS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Éffusion"/>
             <Concept code="EFOD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Aliment"/>
-            <Concept code="EISO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Isolette"/>
+            <Concept code="EISO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Isolette environnementale"/>
             <Concept code="ELT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Electrode"/>
-            <Concept code="ENDC" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Endocarde"/>
-            <Concept code="ENDM" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Endomètre"/>
             <Concept code="ENVIR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Substance non identifiée"/>
             <Concept code="EOS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Polynucléaires éosinophiles"/>
             <Concept code="EOTH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Autre substance"/>
             <Concept code="ESOI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sol"/>
-            <Concept code="ESOS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Solution (stérile)"/>
+            <Concept code="ESOS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Solution stérile"/>
             <Concept code="ETA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Aspiration endotrachéale"/>
             <Concept code="ETTP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter endotrachéal (embout)"/>
             <Concept code="ETTUB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Tube endotrachéal"/>
@@ -104,20 +99,19 @@
             <Concept code="EXG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Gaz expiré"/>
             <Concept code="EXS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Dérivation externe"/>
             <Concept code="EXUDTE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Exudat"/>
-            <Concept code="EYE" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Oeil"/>
+            <Concept code="EYE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Oeil"/>
             <Concept code="FAW" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau de puits"/>
-            <Concept code="FBLOOD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sang fœtal"/>
-            <Concept code="FGA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Fluid, Liquide abdominal"/>
+            <Concept code="FBLOOD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sang foetal"/>
+            <Concept code="FGA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide abdominal"/>
             <Concept code="FIB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Fibroblastes"/>
             <Concept code="FIST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Fistule"/>
             <Concept code="FLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide (autre)"/>
             <Concept code="FLT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Filtre"/>
             <Concept code="FLU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide biologique"/>
             <Concept code="FLUID" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide"/>
-            <Concept code="FOLEY" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sonde de Foley (embout)"/>
-            <Concept code="FOOD" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Aliment"/>
-            <Concept code="FRS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Fluide respiratoire"/>
-            <Concept code="FSCLP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cuir chevelu fœtal"/>
+            <Concept code="FOLEY" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter de Foley (embout)"/>
+            <Concept code="FRS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide respiratoire"/>
+            <Concept code="FSCLP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cuir chevelu foetal"/>
             <Concept code="FUR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Furoncle"/>
             <Concept code="GAS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Gaz du sang"/>
             <Concept code="GASA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Aspiration gastrique"/>
@@ -125,9 +119,9 @@
             <Concept code="GASBR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Brossage gastrique"/>
             <Concept code="GASD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage gastrique"/>
             <Concept code="GAST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Prélèvement digestif"/>
-            <Concept code="GEN" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Prélèvement génitaux"/>
-            <Concept code="GENC" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Prélèvement cervico-vaginal"/>
-            <Concept code="GENF" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Sécrétions des organes génitaux"/>
+            <Concept code="GEN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Prélèvement génitaux"/>
+            <Concept code="GENC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Prélèvement cervico-vaginal"/>
+            <Concept code="GENF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Sécrétions des organes génitaux"/>
             <Concept code="GENL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Lochies"/>
             <Concept code="GENV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Prélèvement vaginal"/>
             <Concept code="GRAFT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Greffe"/>
@@ -137,27 +131,27 @@
             <Concept code="GSOL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Solution pour gastrostomie"/>
             <Concept code="GSPEC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Biopsie gastrique"/>
             <Concept code="GT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sonde gastrique"/>
-            <Concept code="GTUBE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain (Gastrostomie)"/>
+            <Concept code="GTUBE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage de gastrostomie"/>
             <Concept code="HAR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Poils/Cheveux"/>
             <Concept code="HBITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Morsure humaine"/>
             <Concept code="HBLUD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sang (Autopsie)"/>
-            <Concept code="HEMAQ" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout) Hemaquit"/>
-            <Concept code="HEMO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout) Hemovac"/>
+            <Concept code="HEMAQ" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter Hemaquit (embout)"/>
+            <Concept code="HEMO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter Hemovac (embout)"/>
             <Concept code="HERNI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Hernie"/>
             <Concept code="HEV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain Hemovac"/>
             <Concept code="HIC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter de Hickman"/>
             <Concept code="HYDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Hydrocèle"/>
             <Concept code="IBITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Morsure d'insecte"/>
             <Concept code="ICYST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Kyste d'inclusion"/>
-            <Concept code="IDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout) Indwelling"/>
+            <Concept code="IDC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter Indwelling (embout)"/>
             <Concept code="IHG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Gaz inhalé"/>
-            <Concept code="ILEO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage, iléostomie"/>
+            <Concept code="ILEO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage d'iléostomie"/>
             <Concept code="ILLEG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Source du spécimen illisible"/>
             <Concept code="IMP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Implant"/>
-            <Concept code="INCI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Localisation de l'incision/chirurgie"/>
-            <Concept code="INFIL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Infiltratation"/>
+            <Concept code="INCI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Incision/chirurgie (Site)"/>
+            <Concept code="INFIL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Infiltration"/>
             <Concept code="INS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Insecte"/>
-            <Concept code="INTRD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Introducteur de cathéter"/>
+            <Concept code="INTRD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (Guide)"/>
             <Concept code="ISLT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Isolat"/>
             <Concept code="IT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Tube d'intubation"/>
             <Concept code="IUD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Dispositif intra-utérin"/>
@@ -166,23 +160,22 @@
             <Concept code="IVTIP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sonde intraveineuse"/>
             <Concept code="JEJU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage jéjunal"/>
             <Concept code="JNTFLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide articulaire"/>
-            <Concept code="JP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage, Jackson Pratt"/>
+            <Concept code="JP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain Jackson Pratt"/>
             <Concept code="KELOI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage"/>
             <Concept code="KIDFLD" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide rénal"/>
             <Concept code="LAM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Lame"/>
-            <Concept code="LAVG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage, Bronhial"/>
+            <Concept code="LAVG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage bronchial"/>
             <Concept code="LAVGG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage gastrique"/>
             <Concept code="LAVGP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage péritonéal"/>
-            <Concept code="LAVPG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage, Pre-Bronch"/>
+            <Concept code="LAVPG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage pré-bronchial"/>
             <Concept code="LENS1" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lentilles de contact"/>
             <Concept code="LENS2" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Étui pour lentilles de contact"/>
             <Concept code="LESN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lésion"/>
-            <Concept code="LIQ" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide (non précisé)"/>
+            <Concept code="LIQ" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide non spécifié"/>
             <Concept code="LIQO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide (autres)"/>
-            <Concept code="LN" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Ponction"/>
             <Concept code="LNA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Ponction artérielle"/>
             <Concept code="LNV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Ponction veineuse"/>
-            <Concept code="LSAC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide, Sac lombaire"/>
+            <Concept code="LSAC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide de sac lombaire"/>
             <Concept code="LYM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Lymphocytes"/>
             <Concept code="MAC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Macrophages"/>
             <Concept code="MAHUR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Catheter Makurkour"/>
@@ -202,7 +195,7 @@
             <Concept code="NGAST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage nasogastrique"/>
             <Concept code="NGS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Nasogastrique (site)"/>
             <Concept code="NODUL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Nodule(s)"/>
-            <Concept code="NOS" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Prélèvement nasopharyngée"/>
+            <Concept code="NOS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Prélèvement nasopharyngée"/>
             <Concept code="NSECR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sécrétion nasale"/>
             <Concept code="ORH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Autre"/>
             <Concept code="ORL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lésion orale"/>
@@ -217,30 +210,29 @@
             <Concept code="PENIL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lésion du pénis"/>
             <Concept code="PERIA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès périanal"/>
             <Concept code="PILOC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="kyste pilonidal"/>
-            <Concept code="PINS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site, Pin"/>
-            <Concept code="PIS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site d'Insertion du stimulateur cardiaque"/>
+            <Concept code="PINS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site de la broche"/>
+            <Concept code="PIS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site d'insertion du stimulateur cardiaque"/>
             <Concept code="PLAN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Matériel végétal"/>
             <Concept code="PLAS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Plasma"/>
             <Concept code="PLB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Poche de plasma"/>
             <Concept code="PLC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Placenta"/>
-            <Concept code="PLEVS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum, niveau maximal"/>
+            <Concept code="PLEVS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sérum au pic"/>
             <Concept code="PLR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide pleural"/>
             <Concept code="PMN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Polynucléaires neutrophiles"/>
-            <Concept code="PND" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage, Pénis"/>
+            <Concept code="PND" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage pénien"/>
             <Concept code="POL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Polypes"/>
-            <Concept code="POPGS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site de greffe, poplité"/>
-            <Concept code="POPLG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Greffe, poplité"/>
+            <Concept code="POPGS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site de greffe poplité"/>
+            <Concept code="POPLG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Greffe poplitée"/>
             <Concept code="POPLV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Veine poplitée (site)"/>
-            <Concept code="PORTA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter, chambre implantable"/>
+            <Concept code="PORTA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Chambre implantable"/>
             <Concept code="PPP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Plasma pauvre en plaquettes"/>
             <Concept code="PROST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Appareil prothétique"/>
             <Concept code="PRP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Plasma riche en plaquettes"/>
-            <Concept code="PRT" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Liquide péritonéal"/>
+            <Concept code="PRT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Liquide péritonéal"/>
             <Concept code="PSC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Pseudokyste"/>
             <Concept code="PUNCT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Blessure, Perforation"/>
             <Concept code="PUS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Pus"/>
             <Concept code="PUSFR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Pustule"/>
-            <Concept code="PUST" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Pus"/>
             <Concept code="QC3" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Contrôle qualité"/>
             <Concept code="RANDU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine aléatoire"/>
             <Concept code="RBC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Erythrocytes"/>
@@ -248,38 +240,38 @@
             <Concept code="RECT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drainage rectal"/>
             <Concept code="RECTA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès rectal"/>
             <Concept code="RENALC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Kyste rénal"/>
-            <Concept code="RENC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide, Kyste rénal"/>
+            <Concept code="RENC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide de kyste rénal"/>
             <Concept code="RES" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Respiratoire"/>
             <Concept code="SAL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Salive"/>
-            <Concept code="SCAR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Tissu, chéloïde (cicatrice)"/>
-            <Concept code="SCLV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Sous-clavière"/>
-            <Concept code="SCROA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès du scrotum"/>
+            <Concept code="SCAR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cicatrice"/>
+            <Concept code="SCLV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter sous-clavière (embout)"/>
+            <Concept code="SCROA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès scrotal"/>
             <Concept code="SECRE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sécrétion(s)"/>
             <Concept code="SER" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sérum"/>
-            <Concept code="SHU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Shunt (site)"/>
-            <Concept code="SHUNF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Shunt, Liquide"/>
-            <Concept code="SHUNT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Shunt"/>
+            <Concept code="SHU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site du shunt"/>
+            <Concept code="SHUNF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Liquide de shunt"/>
+            <Concept code="SHUNT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Shunt (site)"/>
             <Concept code="SITE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Site"/>
-            <Concept code="SKBP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Biopsie de la peau"/>
-            <Concept code="SKM" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Muscle squelettique "/>
+            <Concept code="SKBP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Biopsie de peau"/>
+            <Concept code="SKM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Muscle squelettique "/>
             <Concept code="SKN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Peau"/>
             <Concept code="SMM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Masse sous-mandibulaire"/>
             <Concept code="SMN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sperme"/>
-            <Concept code="SMPLS" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Plasma séminal"/>
+            <Concept code="SMPLS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Plasma séminal"/>
             <Concept code="SNV" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Liquide synovial"/>
             <Concept code="SPRM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Spermatozoïdes"/>
-            <Concept code="SPRP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Sus-pubien"/>
-            <Concept code="SPRPB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Suprapubien"/>
+            <Concept code="SPRP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter sus-pubien (embout)"/>
+            <Concept code="SPRPB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter suprapubien (embout)"/>
             <Concept code="SPS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Bande de spores"/>
             <Concept code="SPT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Expectoration (crachat)"/>
-            <Concept code="SPTC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Crachats - toux"/>
-            <Concept code="SPTT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Aspiration trachéale"/>
-            <Concept code="SPUT1" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Crachat, simulé"/>
-            <Concept code="SPUTIN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Crachat, induit"/>
-            <Concept code="SPUTSP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Crachat, spontané"/>
+            <Concept code="SPTC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Expectoration (Toux)"/>
+            <Concept code="SPTT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Expectoration (crachat) par aspiration trachéale"/>
+            <Concept code="SPUT1" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Expectoration simulée (crachat)"/>
+            <Concept code="SPUTIN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Expectoration induite (crachat)"/>
+            <Concept code="SPUTSP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Expectoration spontanée (crachat)"/>
             <Concept code="STER" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Sterrad"/>
             <Concept code="STL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Selles"/>
-            <Concept code="STONE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Calcul reinal"/>
+            <Concept code="STONE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Calcul rénal"/>
             <Concept code="SUBMA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès sous-mandibulaire"/>
             <Concept code="SUBMX" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès sous-maxillaire"/>
             <Concept code="SUMP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Drain de puisard"/>
@@ -290,45 +282,44 @@
             <Concept code="TASP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Aspiration trachéale"/>
             <Concept code="TEAR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Larmes"/>
             <Concept code="THRB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Plaquettes"/>
-            <Concept code="THRT" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Gorge"/>
-            <Concept code="TISG" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Vésicule biliaire"/>
-            <Concept code="TISPL" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Trophoblastes"/>
+            <Concept code="THRT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Gorge"/>
+            <Concept code="TISG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Vésicule biliaire"/>
+            <Concept code="TISPL" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Trophoblastes"/>
             <Concept code="TISS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Tissu"/>
-            <Concept code="TISU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Tissue ulcéreux"/>
-            <Concept code="TLC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Triple Lumière"/>
-            <Concept code="TLGI" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Gros intestin"/>
-            <Concept code="TLNG" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Tissu pulmonaire"/>
+            <Concept code="TISU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Tissu ulcéreux"/>
+            <Concept code="TLC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter triple lumière (embout)"/>
+            <Concept code="TLGI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Gros intestin"/>
+            <Concept code="TLNG" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Tissu pulmonaire"/>
             <Concept code="TRAC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Trachéotomie (site)"/>
             <Concept code="TRANS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Transudat"/>
             <Concept code="TSERU" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="par sérum"/>
-            <Concept code="TSMI" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Intestin grêle"/>
+            <Concept code="TSMI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Intestin grêle"/>
             <Concept code="TSTES" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Abcès testiculaire"/>
             <Concept code="TTRA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Aspiration transtrachéale"/>
-            <Concept code="TUB" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Tube"/>
             <Concept code="TUBES" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Tubes"/>
             <Concept code="TUMOR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Tumeur"/>
             <Concept code="TZANC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Frottis de Tzanck"/>
             <Concept code="UDENT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Origine non identifiée"/>
-            <Concept code="ULC" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Ulcère"/>
-            <Concept code="UMB" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Sang de cordon ombilical"/>
+            <Concept code="ULC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Ulcère"/>
+            <Concept code="UMB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Sang de cordon ombilical"/>
             <Concept code="UMED" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Médicament inconnu"/>
             <Concept code="UR" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Urine"/>
             <Concept code="URC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Urine 1er jet"/>
-            <Concept code="URINB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, Lavage de vessie"/>
-            <Concept code="URINC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, Vessie cathétérisée"/>
-            <Concept code="URINM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, à mi-jet"/>
-            <Concept code="URINN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, Néphrostomie"/>
-            <Concept code="URINP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, Poche de recueil urinaire pédiatrique"/>
+            <Concept code="URINB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine de lavage vésical"/>
+            <Concept code="URINC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine cathétérisée"/>
+            <Concept code="URINM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine milieu de jet"/>
+            <Concept code="URINN" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine de néphrostomie"/>
+            <Concept code="URINP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine de poche pédiatrique"/>
             <Concept code="URNS" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Sédiments urinaires"/>
             <Concept code="URT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Urine par cathéter"/>
-            <Concept code="URTH" codeSystem="2.16.840.1.113883.18.311" dateFin="20220929000000" dateValid="20100101000000" displayName="Urètre"/>
-            <Concept code="USCOP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine, Cystoscopie"/>
+            <Concept code="URTH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20240126000000" displayName="Urètre"/>
+            <Concept code="USCOP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Urine de cystoscopie"/>
             <Concept code="USPEC" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Origine non spécifiée"/>
             <Concept code="USUB" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Substance inconnue"/>
-            <Concept code="VASTIP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Vas"/>
-            <Concept code="VENT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter (embout), Ventriculaire"/>
+            <Concept code="VASTIP" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter vasculaire (embout)"/>
+            <Concept code="VENT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Cathéter ventriculaire (embout)"/>
             <Concept code="VITF" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Corps vitré"/>
-            <Concept code="VOM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Vomissement"/>
+            <Concept code="VOM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Vomissure"/>
             <Concept code="WASH" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Produit de lavage"/>
             <Concept code="WASI" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Lavage, par ex. lavage broncho-alvéolaire"/>
             <Concept code="WAT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Eau"/>
@@ -342,7 +333,7 @@
             <Concept code="WNDE" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20100101000000" displayName="Exsudat d'une plaie"/>
             <Concept code="WORM" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Ver"/>
             <Concept code="WRT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Verrue"/>
-            <Concept code="WWA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau"/>
+            <Concept code="WWA" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau environnementale"/>
             <Concept code="WWO" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau (océan)"/>
             <Concept code="WWT" codeSystem="2.16.840.1.113883.18.311" dateFin="" dateValid="20220929000000" displayName="Eau (robinet)"/>
         </ConceptList>

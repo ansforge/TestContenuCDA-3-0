@@ -5,7 +5,6 @@
             <Concept code="MED-1077" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère – verre délivré"/>
             <Concept code="MED-1078" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre – verre délivré"/>
             <Concept code="MED-1082" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Axe en degrés – verre délivré"/>
-            <Concept code="96052-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210924000000" displayName="Addition"/>
             <Concept code="MED-886" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Addition"/>
             <Concept code="MED-1079" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme – puissance – verre délivré"/>
             <Concept code="MED-1080" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - orientation base – verre délivré"/>

@@ -2,19 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_SocialHistoryCodes_CISIS" id="1.2.250.1.213.1.1.4.2.283.4" version="test">
         <ConceptList>
-            <Concept code="A-70500" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Exercice physique"/>
-            <Concept code="A-A3260" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Exposition à des produits toxiques"/>
-            <Concept code="S-00520" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Facteur social relié à la vie professionnelle"/>
-            <Concept code="S-32100" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Énolisme"/>
-            <Concept code="S-32200" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Consommation de drogue"/>
-            <Concept code="S-00500" codeSystem="1.2.250.1.213.2.12" dateFin="20190913000000" dateValid="20100101000000" displayName="Autre élément social"/>
-            <Concept code="CDA_007" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20190913000000" dateValid="20100101000000" displayName="Régime"/>
-            <Concept code="39240-7" codeSystem="2.16.840.1.113883.6.1" dateFin="20190913000000" dateValid="20100101000000" displayName="Consommation tabagique"/>
             <Concept code="73985-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Exercice physique"/>
             <Concept code="92944-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Exposition à des produits toxiques"/>
             <Concept code="11295-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Facteur social relié à la vie professionnelle"/>
             <Concept code="74013-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Consommation d'alcool"/>
-            <Concept code="42831-8" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20190913000000" displayName="Consommation de drogue"/>
             <Concept code="11343-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Consommation de drogue non médicales"/>
             <Concept code="11345-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Autre élément social"/>
             <Concept code="81663-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Régime"/>

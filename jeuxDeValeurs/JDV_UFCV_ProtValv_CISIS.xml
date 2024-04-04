@@ -2,10 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_ProtValv_CISIS" id="1.2.250.1.213.1.1.4.2.9" version="test">
         <ConceptList>
-            <Concept code="D0010-1" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Mécanique"/>
-            <Concept code="D0010-2" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Bioprothèse"/>
-            <Concept code="D0010-3" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Anneau de Plastie Mitrale"/>
-            <Concept code="D0010-4" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Anneau de Plastie Tricuspide"/>
             <Concept code="P070302" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES MÉCANIQUES"/>
             <Concept code="P070301" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES BIOLOGIQUES"/>
             <Concept code="P0703020302" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES MITRALES MÉCANIQUES, À DOUBLE AILETTE"/>

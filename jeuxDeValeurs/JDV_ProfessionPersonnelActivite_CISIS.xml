@@ -9,12 +9,7 @@
             <Concept code="G15_94" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Ergothérapeute"/>
             <Concept code="G15_95" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Diététicien(ne)"/>
             <Concept code="G15_96" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Psychomotricien(ne)"/>
-            <Concept code="ORG-050" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20210826000000" dateValid="20100101000000" displayName="Assistante sociale"/>
-            <Concept code="ORG-051" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20210826000000" dateValid="20100101000000" displayName="Psychologue"/>
-            <Concept code="ORG-052" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20210826000000" dateValid="20100101000000" displayName="Conseiller(e) en génétique"/>
-            <Concept code="ORG-053" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre professionnel(le)"/>
             <Concept code="GEN-092.05.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre professionnel(le)"/>
-            <Concept code="ORG-032" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20210826000000" dateValid="20100101000000" displayName="Enseignant(e) spécialisé(e)"/>
             <Concept code="41" codeSystem="1.2.250.1.213.1.6.1.4" dateFin="" dateValid="20210826000000" displayName="Assistant de service social"/>
             <Concept code="93" codeSystem="1.2.250.1.213.1.6.1.109" dateFin="" dateValid="20210826000000" displayName="Psychologue"/>
             <Concept code="97" codeSystem="1.2.250.1.213.1.6.1.109" dateFin="" dateValid="20210826000000" displayName="Conseiller(e) en génétique"/>

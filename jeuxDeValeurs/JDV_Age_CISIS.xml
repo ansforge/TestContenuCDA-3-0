@@ -2,11 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Age_CISIS" id="1.2.250.1.213.1.1.5.43" version="test">
         <ConceptList>
-            <Concept code="GEN-019" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="à la naissance"/>
-            <Concept code="GEN-020" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="à l'âge de"/>
-            <Concept code="GEN-021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="non déterminé"/>
-            <Concept code="MED-080" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="anténatal"/>
-            <Concept code="MED-430" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20100101000000" displayName="postmortem"/>
             <Concept code="255407002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="néonatal"/>
             <Concept code="767023003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période de la vie entre la naissance et la mort"/>
             <Concept code="373068000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="indéterminé(e)"/>

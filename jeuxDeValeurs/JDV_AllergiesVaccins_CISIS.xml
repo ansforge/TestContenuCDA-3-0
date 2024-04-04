@@ -2,14 +2,11 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_AllergiesVaccins_CISIS" id="1.2.250.1.213.1.1.5.100" version="test">
         <ConceptList>
-            <Concept code="MED-134" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221222000000" dateValid="20100101000000" displayName="Protéine d’œuf"/>
             <Concept code="303300008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="protéine d'œuf"/>
-            <Concept code="MED-135" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220224000000" dateValid="20100101000000" displayName="Antibiotiques (néomycine, gentamycine, polymyxine, streptomycine)"/>
             <Concept code="J01GB05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Néomycine"/>
             <Concept code="J01GA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Streptomycine"/>
             <Concept code="J01GB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Gentamicine"/>
             <Concept code="J01XB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Polymyxine B"/>
-            <Concept code="MED-136" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221222000000" dateValid="20100101000000" displayName="Gélatine"/>
             <Concept code="373531009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="gélatine"/>
         </ConceptList>
     </ValueSet>

@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_NIHSSLocqInt_CISIS" id="1.2.250.1.213.1.1.5.180" version="test">
         <ConceptList>
-            <Concept code="MED-399" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Répond aux deux questions correctement."/>
-            <Concept code="MED-400" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Ne répond correctement qu’à une seule question."/>
-            <Concept code="MED-401" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Ne répond correctement à aucune des deux questions."/>
             <Concept code="LA18440-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Répond aux deux questions correctement."/>
             <Concept code="LA18441-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Ne répond correctement qu’à une seule question."/>
             <Concept code="LA18442-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Ne répond correctement à aucune des deux questions."/>

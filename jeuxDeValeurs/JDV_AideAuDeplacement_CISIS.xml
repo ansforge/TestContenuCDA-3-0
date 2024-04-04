@@ -3,11 +3,6 @@
     <ValueSet displayName="JDV_AideAuDeplacement_CISIS" id="1.2.250.1.213.1.1.5.489" version="test">
         <ConceptList>
             <Concept code="GEN-192" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Marche normale"/>
-            <Concept code="GEN-193" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200331000000" displayName="Marche avec canne"/>
-            <Concept code="GEN-194" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200331000000" displayName="Marche avec déambulateur"/>
-            <Concept code="GEN-195" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200331000000" displayName="Fauteuil roulant"/>
-            <Concept code="GEN-241" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200331000000" displayName="Grabataire"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20200331000000" displayName="Autre"/>
             <Concept code="895457008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="se déplace avec canne"/>
             <Concept code="895488007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="se déplace avec déambulateur"/>
             <Concept code="301578005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="se déplace en fauteuil roulant"/>

@@ -2,11 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_AbordVeineuxPeripherique_CISIS" id="1.2.250.1.213.1.1.5.495" version="test">
         <ConceptList>
-            <Concept code="71581" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veines du membre supérieur"/>
             <Concept code="181387000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veines du membre supérieur entier"/>
-            <Concept code="70914" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veines du membre inférieur"/>
             <Concept code="244412003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veines du membre inférieur entier"/>
-            <Concept code="4746" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veine cervicale"/>
             <Concept code="82121006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veine cervicale"/>
         </ConceptList>
     </ValueSet>

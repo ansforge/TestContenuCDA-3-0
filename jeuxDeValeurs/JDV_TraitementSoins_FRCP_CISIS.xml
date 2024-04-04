@@ -4,7 +4,6 @@
         <ConceptList>
             <Concept code="C3580" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="métastases osseuses"/>
             <Concept code="C3303" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="douleur"/>
-            <Concept code="C15292" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230725000000" dateValid="20210414000000" displayName="Soins palliatifs"/>
             <Concept code="C15252" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20230725000000" displayName="soins palliatifs"/>
             <Concept code="C63334" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="Radiologie interventionnelle"/>
             <Concept code="C15747" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="soins de support"/>

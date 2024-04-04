@@ -749,8 +749,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
             </procedure>
@@ -809,9 +809,9 @@
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
-                  <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->                  
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -885,8 +885,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -961,8 +961,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1049,8 +1049,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1106,8 +1106,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1163,8 +1163,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1229,8 +1229,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-205" displayName="Difficile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="52925006" displayName="difficile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..1] Entrée FR-Simple-Observation : Score de Cormack -->
@@ -1381,8 +1381,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1450,8 +1450,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->
@@ -1525,8 +1525,8 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <!-- Difficulté : valeur issue du JDV_Difficulte_CISIS (1.2.250.1.213.1.1.5.494) -->
-                  <value xsi:type="CD" code="GEN-204" displayName="Facile"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                  <value xsi:type="CD" code="36203004" displayName="facile"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 </observation>
               </entryRelationship>
               <!-- [0..*] Entrée FR-Reference-interne : Réference interne au DM -->

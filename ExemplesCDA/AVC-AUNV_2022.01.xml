@@ -4179,7 +4179,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="MED-466" displayName="Hémisphère topographie profonde" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                  <value xsi:type="CD" code="70382005" displayName="artère cérébrale postérieure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>

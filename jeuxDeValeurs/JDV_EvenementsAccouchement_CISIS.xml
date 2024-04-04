@@ -2,19 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_EvenementsAccouchement_CISIS" id="1.2.250.1.213.1.1.5.527" version="test">
         <ConceptList>
-            <Concept code="11878-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20100101000000" displayName="Nombre de fœtus (pour la grossesse actuelle)"/>
             <Concept code="55281-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Nombre de fœtus"/>
-            <Concept code="11884-4" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20100101000000" displayName="Age gestationnel (semaine d'amenorrhée révolues)"/>
             <Concept code="11885-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Age gestationnel (semaines d'amenorrhées révolues)"/>
-            <Concept code="F-87000" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Présentation"/>
             <Concept code="MED-1248" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Présentation fœtale"/>
-            <Concept code="MED-162" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Rang de naissance"/>
             <Concept code="73771-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Rang de naissance"/>
             <Concept code="MED-166" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Rupture membranaire plus de 12 h avant l'accouchement"/>
-            <Concept code="F-84640" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Début de travail"/>
             <Concept code="73813-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Caractéristiques du travail"/>
             <Concept code="MED-168" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Analgésie au cours du travail"/>
-            <Concept code="MED-169" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230206000000" dateValid="20100101000000" displayName="Méthode d'accouchement"/>
             <Concept code="57071-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230206000000" displayName="Méthode d'accouchement"/>
             <Concept code="MED-600" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cause de la césarienne"/>
         </ConceptList>

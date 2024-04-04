@@ -2,14 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Addictions_CISIS" id="1.2.250.1.213.1.1.5.80" version="test">
         <ConceptList>
-            <Concept code="42831-8" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20190913000000" displayName="Consommation de drogue"/>
             <Concept code="11343-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Consommation de drogue non médicales"/>
-            <Concept code="72166-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20221128000000" dateValid="20100101000000" displayName="Consommation tabagique"/>
             <Concept code="74011-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221128000000" displayName="Consommation tabagique"/>
-            <Concept code="74205-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20221128000000" dateValid="20100101000000" displayName="Consommation d’alcool"/>
             <Concept code="74013-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221128000000" displayName="Consommation d’alcool"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.01.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre addiction"/>
         </ConceptList>
     </ValueSet>

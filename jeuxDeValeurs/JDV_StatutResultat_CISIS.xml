@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_StatutResultat_CISIS" id="1.2.250.1.213.1.1.5.96" version="test">
         <ConceptList>
-            <Concept code="GEN-068" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="Validé"/>
-            <Concept code="GEN-075" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="non validé"/>
-            <Concept code="GEN-076" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="modifié, corrigé"/>
             <Concept code="9571008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="approuvé"/>
             <Concept code="441889009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="refusé"/>
             <Concept code="33714007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="corrigé"/>

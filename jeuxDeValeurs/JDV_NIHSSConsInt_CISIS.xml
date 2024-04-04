@@ -2,10 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_NIHSSConsInt_CISIS" id="1.2.250.1.213.1.1.5.179" version="test">
         <ConceptList>
-            <Concept code="MED-395" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Vigilant, réagit vivement."/>
-            <Concept code="MED-396" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Non vigilant (somnolent),  mais réagit ou répond s'il est éveillé par une stimulation mineure."/>
-            <Concept code="MED-397" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Non vigilant; ne réagit qu'à des stimulations répétées, ou est inconscient et une stimulation intense ou douloureuse est nécessaire pour obtenir des mouvements autres que stéréotypés."/>
-            <Concept code="MED-398" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="On obtient uniquement des réponses réflexes motrices ou végétatives ou le patient est totalement aréactif et flasque."/>
             <Concept code="LA18436-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Vigilant, réagit vivement."/>
             <Concept code="LA18437-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Non vigilant (somnolent),  mais réagit ou répond s'il est éveillé par une stimulation mineure."/>
             <Concept code="LA18438-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Non vigilant; ne réagit qu'à des stimulations répétées, ou est inconscient et une stimulation intense ou douloureuse est nécessaire pour obtenir des mouvements autres que stéréotypés."/>

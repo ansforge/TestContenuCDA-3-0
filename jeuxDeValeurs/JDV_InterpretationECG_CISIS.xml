@@ -2,8 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_InterpretationECG_CISIS" id="1.2.250.1.213.1.1.5.197" version="test">
         <ConceptList>
-            <Concept code="F-38001" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="ECG normal"/>
-            <Concept code="F-38002" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="ECG anormal"/>
             <Concept code="164854000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="électrocardiogramme normal"/>
             <Concept code="102594003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="électrocardiogramme anormal"/>
         </ConceptList>

@@ -2,22 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_Impl_CISIS" id="1.2.250.1.213.1.1.4.2.15" version="test">
         <ConceptList>
-            <Concept code="D0009-1" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Apex"/>
-            <Concept code="D0009-10" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Veine Cardiaque Inférieure"/>
-            <Concept code="D0009-11" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Grande Veine Cardiaque"/>
-            <Concept code="D0009-2" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Septum"/>
-            <Concept code="D0009-3" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Infundibulum"/>
-            <Concept code="D0009-4" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Epicardique"/>
-            <Concept code="D0009-5" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Auricule Droite"/>
-            <Concept code="D0009-7" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Plancher VD"/>
-            <Concept code="D0009-8" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20221207000000" dateValid="20100101000000" displayName="Veine Cardiaque Postérieure Gauche"/>
-            <Concept code="362616002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="vertex entière"/>
-            <Concept code="277730007" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="veine Cardiaque Inférieure"/>
-            <Concept code="277728005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="grande Veine Cardiaque entière"/>
-            <Concept code="362019005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="septum interventriculaire entier"/>
-            <Concept code="44627009" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="infundibulum"/>
-            <Concept code="261073003" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="epicardique"/>
-            <Concept code="763801002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="auricule Droite"/>
             <Concept code="13383001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="apex du cœur"/>
             <Concept code="49082002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="petite veine cardiaque"/>
             <Concept code="5928000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="grande veine cardiaque"/>
@@ -27,7 +11,6 @@
             <Concept code="68300000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appendice atrial droite"/>
             <Concept code="D0009-6" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Paroi Libre de l’OD"/>
             <Concept code="D0009-7" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221208000000" displayName="Plancher VD"/>
-            <Concept code="60477001" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="veine Cardiaque Postérieure Gauche entière"/>
             <Concept code="195416006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine postérieure du ventricule gauche"/>
             <Concept code="D0009-9" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Veine Cardiaque Latérale Gauche"/>
         </ConceptList>

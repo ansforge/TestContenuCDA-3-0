@@ -2,12 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_RealisationActivites_CISIS" id="1.2.250.1.213.1.1.5.54" version="test">
         <ConceptList>
-            <Concept code="GEN-154" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Partiellement"/>
             <Concept code="385670004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="partiellement réussi"/>
-            <Concept code="GEN-155" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Avec aide"/>
             <Concept code="371152001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="assisté"/>
-            <Concept code="GEN-009" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Non"/>
-            <Concept code="GEN-135" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Seul"/>
+            <Concept code="373067005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="non"/>
+            <Concept code="371153006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="indépendant(e)"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

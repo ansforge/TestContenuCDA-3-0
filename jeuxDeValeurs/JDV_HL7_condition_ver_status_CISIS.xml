@@ -4,7 +4,7 @@
         <ConceptList>
             <Concept code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" dateFin="" dateValid="20220101000000" displayName="Non confirmé"/>
             <Concept code="confirmed" codeSystem="2.16.840.1.113883.4.642.4.1075" dateFin="" dateValid="20220101000000" displayName="Confirmé"/>
-            <Concept code="Refuted" codeSystem="2.16.840.1.113883.4.642.4.1075" dateFin="" dateValid="20220101000000" displayName="Réfuté"/>
+            <Concept code="refuted" codeSystem="2.16.840.1.113883.4.642.4.1075" dateFin="" dateValid="20220101000000" displayName="Réfuté"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

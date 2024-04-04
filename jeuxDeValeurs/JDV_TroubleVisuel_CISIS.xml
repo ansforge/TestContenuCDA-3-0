@@ -3,9 +3,6 @@
     <ValueSet displayName="JDV_TroubleVisuel_CISIS" id="1.2.250.1.213.1.1.5.158" version="test">
         <ConceptList>
             <Concept code="MED-348" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles visuels bilatéraux"/>
-            <Concept code="DA-74510" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Troubles visuels - Diplopie"/>
-            <Concept code="DA-74640" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Troubles visuels - Hémianopsie"/>
-            <Concept code="F-F3450" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Troubles visuels - Vision monoculaire"/>
             <Concept code="H53.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Diplopie"/>
             <Concept code="H53.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Anomalies du champ visuel"/>
             <Concept code="H54.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Déficience visuelle sévère, monoculaire"/>

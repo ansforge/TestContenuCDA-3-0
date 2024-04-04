@@ -2,13 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ArtereTronc_CISIS" id="1.2.250.1.213.1.1.5.214" version="test">
         <ConceptList>
-            <Concept code="T-A5100" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Mésencéphale"/>
-            <Concept code="279099009" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="mésencéphale entier"/>
             <Concept code="61962009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="mésencéphale"/>
-            <Concept code="T-A5400" codeSystem="1.2.250.1.213.2.12" dateFin="20230707000000" dateValid="20100101000000" displayName="Pont"/>
             <Concept code="49557009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="pont"/>
-            <Concept code="T-A6700" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Bulbe rachidien"/>
-            <Concept code="279104005" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221208000000" displayName="bulbe entier"/>
             <Concept code="26519002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="moelle allongée"/>
         </ConceptList>
     </ValueSet>

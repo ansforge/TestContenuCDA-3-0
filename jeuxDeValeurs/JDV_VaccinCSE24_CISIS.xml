@@ -2,17 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_VaccinCSE24_CISIS" id="1.2.250.1.213.1.1.5.107" version="test">
         <ConceptList>
-            <Concept code="MED-207" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la diphtérie, tétanos et poliomyélite (DT Polio)"/>
-            <Concept code="C-B6140" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la coqueluche"/>
-            <Concept code="C-B6060" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre l'Haemophilus influenzae de type b"/>
-            <Concept code="C-B6050" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
-            <Concept code="C-B60A0" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre le pneumocoque"/>
-            <Concept code="C-B6010" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la tuberculose (BCG)"/>
-            <Concept code="MED-205" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Autres vaccins"/>
-            <Concept code="C-B6150" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la rougeole-oreillons-rubéole (ROR)"/>
-            <Concept code="C-B6100" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre la fièvre jaune"/>
-            <Concept code="MED-216" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Vaccin contre le méningocoque C"/>
-            <Concept code="J07CA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin diphtérie-polyomielite-tétanos"/>
+            <Concept code="J07CA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin diphtérie-poliomyélite-tétanos"/>
             <Concept code="J07AJ" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre la coqueluche"/>
             <Concept code="J07AG" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin anti haemophilus influenzae B"/>
             <Concept code="J07BC01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>

@@ -2,12 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Complicationneuropsychiatriques_CISIS" id="1.2.250.1.213.1.1.5.223" version="test">
         <ConceptList>
-            <Concept code="F-92300" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Dépression"/>
             <Concept code="F32.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Épisode dépressif, sans précision"/>
             <Concept code="MED-523" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Syndrome anxieux"/>
             <Concept code="MED-524" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles du comportement (agitation, hallucinations)"/>
             <Concept code="MED-525" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles du sommeil"/>
-            <Concept code="MED-526" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autres syndromes psycho-comportementaux "/>
             <Concept code="GEN-092.01.15" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres syndromes psycho-comportementaux"/>
         </ConceptList>
     </ValueSet>

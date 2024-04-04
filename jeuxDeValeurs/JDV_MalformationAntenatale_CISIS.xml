@@ -2,10 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_MalformationAntenatale_CISIS" id="1.2.250.1.213.1.1.5.49" version="test">
         <ConceptList>
-            <Concept code="GEN-009" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Non"/>
-            <Concept code="G-A224" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="unique"/>
+            <Concept code="373067005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="non"/>
             <Concept code="50607009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="unique"/>
-            <Concept code="G-A225" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="multiple"/>
             <Concept code="255204007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="multiple"/>
         </ConceptList>
     </ValueSet>

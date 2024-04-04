@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_LateraliteManuelle_CISIS" id="1.2.250.1.213.1.1.5.161" version="test">
         <ConceptList>
-            <Concept code="F-A5410" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="droitier"/>
-            <Concept code="F-A5420" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="gaucher"/>
-            <Concept code="F-A5440" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="ambidextérité"/>
             <Concept code="46669005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="droitier"/>
             <Concept code="87683000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="gaucher"/>
             <Concept code="23088002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="ambidextre"/>

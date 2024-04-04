@@ -2,35 +2,20 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ObservationEtatPatient_CISIS" id="1.2.250.1.213.1.1.5.514" version="test">
         <ConceptList>
-            <Concept code="DLU_001" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20210106000000" displayName="Peut Alerter"/>
             <Concept code="288575003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="capable de communiquer"/>
-            <Concept code="F-91200" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Orienté"/>
             <Concept code="247663003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="bien orienté"/>
-            <Concept code="F-91210" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Désorienté"/>
             <Concept code="62476001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="désorienté(e)"/>
-            <Concept code="F-92540" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Agité"/>
             <Concept code="24199005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sensation d'agitation"/>
-            <Concept code="F91.3" codeSystem="2.16.840.1.113883.6.3" dateFin="20231114000000" dateValid="20210106000000" displayName="Trouble oppositionnel avec provocation"/>
             <Concept code="248043008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="comportement non-conciliant"/>
-            <Concept code="F-94034" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20210106000000" displayName="Risque suicidaire"/>
             <Concept code="425104003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="comportement suicidaire"/>
-            <Concept code="DA-74910" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Handicap visuel"/>
             <Concept code="397540003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="malvoyance"/>
-            <Concept code="DA-95000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Handicap auditif"/>
             <Concept code="15188001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="perte auditive"/>
-            <Concept code="F-94800" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Handicap de langage"/>
             <Concept code="62305002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="trouble du langage"/>
-            <Concept code="A-A1800" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Chute"/>
             <Concept code="161898004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="chutes"/>
-            <Concept code="F-18000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Déambulation"/>
             <Concept code="50239007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="errance"/>
-            <Concept code="F-95250" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20210106000000" displayName="Fugue"/>
             <Concept code="248046000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fugue"/>
-            <Concept code="PA-10130" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20210106000000" displayName="Contention"/>
             <Concept code="386423001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="contention physique"/>
-            <Concept code="M-36784" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20210106000000" displayName="Risque d'escarre"/>
             <Concept code="285304000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="à risque d'escarre"/>
-            <Concept code="M-39280" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20210106000000" displayName="Risque de fausses routes"/>
             <Concept code="249492002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fausse route alimentaire"/>
         </ConceptList>
     </ValueSet>

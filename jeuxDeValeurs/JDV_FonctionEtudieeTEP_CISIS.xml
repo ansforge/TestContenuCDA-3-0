@@ -9,7 +9,6 @@
             <Concept code="MED-1137" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="F-DOPA oncologie"/>
             <Concept code="MED-1138" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="FNA"/>
             <Concept code="MED-1139" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="F-Fluciclovine"/>
-            <Concept code="MED-1140" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220126000000" displayName="Autre (autres traceurs, TEP-IRM)"/>
             <Concept code="GEN-092.04.18" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre (autres traceurs, TEP-IRM)"/>
         </ConceptList>
     </ValueSet>

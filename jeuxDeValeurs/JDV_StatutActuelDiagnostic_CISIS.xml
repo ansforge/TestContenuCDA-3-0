@@ -2,15 +2,11 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_StatutActuelDiagnostic_CISIS" id="1.2.250.1.213.1.1.5.45" version="test">
         <ConceptList>
-            <Concept code="GEN-022" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20200120000000" dateValid="20100101000000" displayName="non classable"/>
-            <Concept code="GEN-034" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="en cours"/>
-            <Concept code="G-2002" codeSystem="1.2.250.1.213.2.12" dateFin="20230131000000" dateValid="20100101000000" displayName="probable"/>
-            <Concept code="GEN-021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="non déterminé"/>
-            <Concept code="GEN-035" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20100101000000" displayName="confirmé"/>
             <Concept code="385651009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="en cours d'exécution"/>
             <Concept code="2931005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="diagnostic probable"/>
             <Concept code="42425007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="équivoque"/>
             <Concept code="255545003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="diagnostic définitif"/>
+            <Concept code="723511001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240207000000" displayName="réfuté"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

@@ -2,12 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_OrientationBaseDuPrisme_CISIS" id="1.2.250.1.213.1.1.5.623" version="test">
         <ConceptList>
-            <Concept code="MED-904" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20210507000000" displayName="Nasale"/>
-            <Concept code="GEN-263" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20210507000000" displayName="Temporale"/>
-            <Concept code="GEN-264" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20210507000000" displayName="Supérieure"/>
-            <Concept code="GEN-265" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20210507000000" displayName="Inférieure"/>
-            <Concept code="260540009" codeSystem="2.16.840.1.113883.6.96" dateFin="20240108000000" dateValid="20221209000000" displayName="nasale"/>
-            <Concept code="255570003" codeSystem="2.16.840.1.113883.6.96" dateFin="20240108000000" dateValid="20221209000000" displayName="temporale"/>
             <Concept code="260521003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240108000000" displayName="interne"/>
             <Concept code="261074009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240108000000" displayName="externe"/>
             <Concept code="264217000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221209000000" displayName="supérieure"/>

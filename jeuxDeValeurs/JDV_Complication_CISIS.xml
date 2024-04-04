@@ -3,7 +3,6 @@
     <ValueSet displayName="JDV_Complication_CISIS" id="1.2.250.1.213.1.1.5.217" version="test">
         <ConceptList>
             <Concept code="MED-503" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aggravation neurologique"/>
-            <Concept code="DA-30000" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Crise convulsive"/>
             <Concept code="R56.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Convulsions, autres et non précisées"/>
             <Concept code="MED-504" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles de la déglution justifiant une gastrostomie"/>
             <Concept code="MED-518" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication pulmonaire"/>
@@ -11,11 +10,8 @@
             <Concept code="MED-520" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication urinaire"/>
             <Concept code="MED-521" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication digestive"/>
             <Concept code="MED-522" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Complication neuropsychiatrique"/>
-            <Concept code="D3-16001" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Insuffisance cardiaque aiguë"/>
             <Concept code="I50.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Insuffisance cardiaque, sans précision"/>
-            <Concept code="MED-510" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre infection"/>
             <Concept code="B99" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladies infectieuses, autres et non précisées"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.01.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre problème"/>
         </ConceptList>
     </ValueSet>

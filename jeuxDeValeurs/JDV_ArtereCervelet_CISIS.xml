@@ -2,15 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ArtereCervelet_CISIS" id="1.2.250.1.213.1.1.5.210" version="test">
         <ConceptList>
-            <Concept code="AVC-129" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Artère cérébelleuse moyenne (ACM)"/>
-            <Concept code="181312002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="artère cérébrale moyenne entière"/>
             <Concept code="17232002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="artère cérébrale moyenne"/>
             <Concept code="AVC-130" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Artère cérébelleuse inférieure (ACI)"/>
-            <Concept code="T-45840" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Artère cérébelleuse supérieure"/>
-            <Concept code="244214000" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="artère cérébelleuse supérieure entière"/>
             <Concept code="51691006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="artère cérébelleuse supérieure"/>
-            <Concept code="T-45850" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Artère cérébelleuse, SAI"/>
-            <Concept code="278102002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="artère cérébelleuse entière"/>
             <Concept code="38608005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="artère cérébelleuse"/>
         </ConceptList>
     </ValueSet>

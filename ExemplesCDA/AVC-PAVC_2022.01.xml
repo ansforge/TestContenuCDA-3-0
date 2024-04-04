@@ -2733,7 +2733,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
-              <value xsi:type="CD" code="GEN-153" displayName="Grand" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="255509001" displayName="grand" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- Contraintes du parcours de soin / Soins ou traitements nocturnes  -->
@@ -2833,7 +2833,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="GEN-157" displayName="A modifier" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="371133007" displayName="modification du traitement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- Traitement / Traitement médical préventif de complication -->
@@ -2853,7 +2853,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="GEN-156" displayName="A poursuivre" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="306805000" displayName="recommandation de continuer un traitement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- Traitement / Prise en charge régulière / Consultation de spécialité -->

@@ -14,7 +14,6 @@
             <Concept code="VHEDHUGYA01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="QIAGEN - Digene HC2 High - Risk HPV DNA (5197-1330/618111)"/>
             <Concept code="VHEDARGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - Cobas 4800 HPV Test (05235910190/05235901190)"/>
             <Concept code="VHEDARGUR02LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - Cobas HPV 6800/8800 Systems (07460155190)"/>
-            <Concept code="VHEDARGUB01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="20231025000000" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - LINEAR ARRAY HPV Genotyping test (04391853190)"/>
             <Concept code="VHEDHVGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="SEEGENE - Anyplex II HPV HR Detection (HP7E00X/HP10380Z)"/>
             <Concept code="VHEDD4GUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="NEUMODX MOLECULAR - NeuMoDx HPV Test Strip (617007)"/>
             <Concept code="VHEDMNGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="SELF SCREEN - QIAscreen HPV PCR Test (617005)"/>

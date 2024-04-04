@@ -6,8 +6,6 @@
             <Concept code="MED-303" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Punch du bloc tumoral"/>
             <Concept code="MED-304" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Production de copeaux de paraffines à partir du bloc tumoral"/>
             <Concept code="MED-305" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Traitement de lames de cytologie"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.04.09" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre méthode de préparation"/>
         </ConceptList>
     </ValueSet>

@@ -6,7 +6,6 @@
             <Concept code="MED-276" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Antibiothérapie (de plus de 48 heures)"/>
             <Concept code="G96.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20221003000000" displayName="Affection du système nerveux central, sans précision"/>
             <Concept code="MED-170" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Urgence chirurgicale"/>
-            <Concept code="MED-171" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20221003000000" displayName="Autres pathologies de la 1ère semaine"/>
             <Concept code="GEN-092.01.11" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres pathologies de la 1ère semaine"/>
         </ConceptList>
     </ValueSet>

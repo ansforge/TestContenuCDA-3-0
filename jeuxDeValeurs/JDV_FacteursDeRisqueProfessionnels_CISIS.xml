@@ -2,10 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_FacteursDeRisqueProfessionnels_CISIS" id="1.2.250.1.213.1.1.5.490" version="test">
         <ConceptList>
-            <Concept code="43164-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20230131000000" dateValid="20200324000000" displayName="Silice"/>
-            <Concept code="38568-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20230131000000" dateValid="20200324000000" displayName="Amiante"/>
-            <Concept code="GEN-186" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20200324000000" displayName="Solvants"/>
-            <Concept code="GEN-187" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230131000000" dateValid="20200324000000" displayName="Pesticides"/>
             <Concept code="83581005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="silice colloidale"/>
             <Concept code="16369005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="Asbestos"/>
             <Concept code="61010005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230131000000" displayName="solvant"/>

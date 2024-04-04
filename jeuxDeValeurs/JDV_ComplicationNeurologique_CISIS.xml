@@ -4,11 +4,8 @@
         <ConceptList>
             <Concept code="MED-469" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Récidive d'hémorragie"/>
             <Concept code="MED-470" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Transformation hémorragique"/>
-            <Concept code="I22.9" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Récidive d'infarctus"/>
             <Concept code="I22" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230612000000" displayName="infarctus du myocarde récidivant"/>
-            <Concept code="M-36300" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Œdème"/>
             <Concept code="R60.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Oedème, sans précision"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.01.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre complication neurologique"/>
         </ConceptList>
     </ValueSet>

@@ -7,7 +7,6 @@
             <Concept code="A060000" codeSystem="1.2.250.1.213.2.64" dateFin="" dateValid="20201216000000" displayName="Problème lié au dispositif qui envoi ou réceptionne des signaux ou des données (y compris les composants internes du dispositif et les périphériques externes)."/>
             <Concept code="A150000" codeSystem="1.2.250.1.213.2.64" dateFin="" dateValid="20201216000000" displayName="Problème lié au dispositif de transfert des liquides ou des gaz (p. ex., problème de dosage, d’alimentation, etc…)"/>
             <Concept code="A110000" codeSystem="1.2.250.1.213.2.64" dateFin="" dateValid="20201216000000" displayName="Problème lié à une défaillance des circuits électriques ou des composants du dispositif."/>
-            <Concept code="GEN-238" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230427000000" dateValid="20201216000000" displayName="Matériel manquant (Moniteurs, curamètre, pousse-seringue, réchauffeur)"/>
             <Concept code="A020602" codeSystem="1.2.250.1.213.2.64" dateFin="" dateValid="20230427000000" displayName="Matériel manquant"/>
             <Concept code="Z1203010101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20210604000000" displayName="APPAREILS D’ANESTHÉSIE"/>
             <Concept code="Z120303" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20210604000000" displayName="DISPOSITIF DE PERFUSION"/>

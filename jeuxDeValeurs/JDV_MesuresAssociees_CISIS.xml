@@ -6,8 +6,6 @@
             <Concept code="ORG-171" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prise en charge des conséquences des tumeurs cérébrales et de leurs traitements"/>
             <Concept code="MED-555" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Contraception"/>
             <Concept code="ORG-001" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prise en charge spécifique en oncogériatrie"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.04.11" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre mesure"/>
         </ConceptList>
     </ValueSet>

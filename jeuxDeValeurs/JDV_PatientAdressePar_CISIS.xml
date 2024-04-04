@@ -10,14 +10,11 @@
             <Concept code="ORG-021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pédiatre ville"/>
             <Concept code="ORG-022" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pédiatre hôpital"/>
             <Concept code="ORG-023" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Centre de protection maternelle et infantile"/>
-            <Concept code="ORG-024" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre spécialiste"/>
             <Concept code="GEN-092.05.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre spécialiste"/>
             <Concept code="ORG-025" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Site de prise en charge"/>
             <Concept code="ORG-026" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Centre pluridisciplinaire de diagnostic prénatal"/>
-            <Concept code="ORG-027" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20200120000000" dateValid="20100101000000" displayName="Centre de dépistage prénatal"/>
             <Concept code="ORG-182" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200120000000" displayName="Centre de référence maladies rares (CRM)"/>
             <Concept code="ORG-183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200120000000" displayName="Centre de compétences maladies rares (CCM)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.05.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre personne"/>
         </ConceptList>
     </ValueSet>

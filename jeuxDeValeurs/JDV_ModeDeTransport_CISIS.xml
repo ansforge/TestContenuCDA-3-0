@@ -11,7 +11,6 @@
             <Concept code="ORG-158" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SAMU, SMUR Hélicoptère"/>
             <Concept code="ORG-159" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pompier"/>
             <Concept code="ORG-160" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="VSL"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.06.08" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre mode de transport"/>
         </ConceptList>
     </ValueSet>

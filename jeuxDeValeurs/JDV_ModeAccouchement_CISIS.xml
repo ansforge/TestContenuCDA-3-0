@@ -5,7 +5,7 @@
             <Concept code="MED-1253" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne pendant travail"/>
             <Concept code="MED-1254" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Césarienne avant travail"/>
             <Concept code="302383004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="accouchement par forceps"/>
-            <Concept code="MED-217" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Accouchement par voie basse non instrumentale"/>
+            <Concept code="700000006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240328000000" displayName="voie basse spontanée"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

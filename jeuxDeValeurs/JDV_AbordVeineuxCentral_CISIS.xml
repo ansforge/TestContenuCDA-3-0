@@ -2,11 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_AbordVeineuxCentral_CISIS" id="1.2.250.1.213.1.1.5.496" version="test">
         <ConceptList>
-            <Concept code="4724" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veine jugulaire interne"/>
-            <Concept code="77883" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Tronc veineux brachio-céphalique"/>
-            <Concept code="4725" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veine sous-clavière"/>
-            <Concept code="21185" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veine fémorale"/>
-            <Concept code="71581" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20201216000000" displayName="Veines du membre supérieur"/>
             <Concept code="181372005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veine jugulaire interne entière"/>
             <Concept code="181371003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veine brachiocéphalique entière"/>
             <Concept code="181388005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="veine sous-clavière entière"/>

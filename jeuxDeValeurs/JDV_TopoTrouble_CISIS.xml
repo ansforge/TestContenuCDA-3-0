@@ -2,16 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TopoTrouble_CISIS" id="1.2.250.1.213.1.1.5.162" version="test">
         <ConceptList>
-            <Concept code="C76.0" codeSystem="2.16.840.1.113883.6.3" dateFin="20230606000000" dateValid="20100101000000" displayName="Tête, face et cou"/>
             <Concept code="774007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230606000000" displayName="tête et cou"/>
-            <Concept code="C76.4" codeSystem="2.16.840.1.113883.6.3" dateFin="20221216000000" dateValid="20100101000000" displayName="Membre supérieur"/>
-            <Concept code="182245002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221206000000" displayName="membre supérieur entier"/>
             <Concept code="53120007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="membre supérieur"/>
-            <Concept code="T-D8700" codeSystem="1.2.250.1.213.2.12" dateFin="20230606000000" dateValid="20100101000000" displayName="Main (isolée)"/>
-            <Concept code="302539009" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20230606000000" displayName="main entière"/>
             <Concept code="85562004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="main"/>
-            <Concept code="C76.5" codeSystem="2.16.840.1.113883.6.3" dateFin="20221216000000" dateValid="20100101000000" displayName="Membre inférieur"/>
-            <Concept code="182281004" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221206000000" displayName="membre inférieur entier"/>
             <Concept code="61685007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="membre inférieur"/>
         </ConceptList>
     </ValueSet>

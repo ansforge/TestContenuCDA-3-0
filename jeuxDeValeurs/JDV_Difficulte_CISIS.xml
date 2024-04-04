@@ -2,9 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Difficulte_CISIS" id="1.2.250.1.213.1.1.5.494" version="test">
         <ConceptList>
-            <Concept code="GEN-204" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Facile"/>
-            <Concept code="GEN-205" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Difficile"/>
-            <Concept code="GEN-206" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Impossible"/>
+            <Concept code="36203004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="facile"/>
+            <Concept code="52925006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="difficile"/>
+            <Concept code="702370009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="procédure impossible"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

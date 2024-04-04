@@ -5,7 +5,6 @@
             <Concept code="C15409" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="transfusion de concentré de globules rouges"/>
             <Concept code="C15366" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="transfusion de plaquettes"/>
             <Concept code="C140042" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="transfusion de plasma"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20210414000000" displayName="Autre"/>
             <Concept code="GEN-092.03.06" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre"/>
         </ConceptList>
     </ValueSet>

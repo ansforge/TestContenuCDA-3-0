@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_EvaluationDepressionGeriatriqueResultat_CISIS" id="1.2.250.1.213.1.1.5.512" version="test">
         <ConceptList>
-            <Concept code="MED-606" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200710000000" displayName="Normal (0 à 10)"/>
-            <Concept code="MED-607" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200710000000" displayName="Dépression légère (11 à 20)"/>
-            <Concept code="MED-608" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20200710000000" displayName="Dépression modérée ou grave (21 à 30)"/>
             <Concept code="17621005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="normal"/>
             <Concept code="310495003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="légère dépression"/>
             <Concept code="310497006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="dépression sévère"/>

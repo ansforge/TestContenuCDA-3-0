@@ -895,7 +895,7 @@
             <Concept code="103737001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="History and physical examination, pre-employment"/>
             <Concept code="103736005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="History and physical examination, sports participation"/>
             <Concept code="103735009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Palliative care"/>
-            <Concept code="103716009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Placement of stent"/>
+            <Concept code="1296925008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240411000000" displayName="insertion d’endoprothèse"/>
             <Concept code="91602002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Thoracentesis"/>
             <Concept code="91251008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Physical therapy procedure"/>
             <Concept code="89634005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Microbial identification kit, rapid strep method"/>

@@ -2,15 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TypeService_CISIS" id="1.2.250.1.213.1.1.5.127" version="test">
         <ConceptList>
-            <Concept code="ORG-139" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Réanimation"/>
             <Concept code="309904001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="unité de soins intensifs"/>
-            <Concept code="ORG-140" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Néonatologie"/>
             <Concept code="1279968000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="service de néonatalogie"/>
             <Concept code="ORG-141" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Unité Kangourou"/>
-            <Concept code="ORG-142" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20100101000000" displayName="Unité de soin intensif en néonatalogie (USIN)"/>
             <Concept code="405269005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="unité de soins intensifs néonatals"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="GEN-092.06.05" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre type de service"/>
         </ConceptList>
     </ValueSet>

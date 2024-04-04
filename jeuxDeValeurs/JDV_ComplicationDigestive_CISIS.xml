@@ -2,7 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ComplicationDigestive_CISIS" id="1.2.250.1.213.1.1.5.222" version="test">
         <ConceptList>
-            <Concept code="D5-00100" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Hémorragie digestive"/>
             <Concept code="K92.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Hémorragie gastro-intestinale, sans précision"/>
             <Concept code="MED-508" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Toubles digestifs justifiant une sonde gastrique"/>
         </ConceptList>

@@ -2,20 +2,11 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_LocalisationInfarctusCerebral_CISIS" id="1.2.250.1.213.1.1.5.205" version="test">
         <ConceptList>
-            <Concept code="G-A105" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Antérieur"/>
-            <Concept code="T-A7086" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Centre ovale"/>
-            <Concept code="G-A106" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Postérieur"/>
-            <Concept code="G-A161" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Jonctionnel"/>
-            <Concept code="T-A2050" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Tronc cérébral"/>
-            <Concept code="T-A6000" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Cervelet"/>
-            <Concept code="255549009" codeSystem="2.16.840.1.113883.6.97" dateFin="20230707000000" dateValid="20221207000000" displayName="antérieur"/>
             <Concept code="60176003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="artère cérébrale antérieure"/>
             <Concept code="55438003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="centre semi-ovale"/>
-            <Concept code="255551008" codeSystem="2.16.840.1.113883.6.99" dateFin="20230707000000" dateValid="20221207000000" displayName="postérieur"/>
             <Concept code="70382005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="artère cérébrale postérieure"/>
             <Concept code="50974003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="jonctionnel"/>
             <Concept code="15926001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="tronc de l'encéphale"/>
-            <Concept code="180924008" codeSystem="2.16.840.1.113883.6.102" dateFin="20230707000000" dateValid="20221207000000" displayName="cervelet entier"/>
             <Concept code="113305005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="cervelet"/>
         </ConceptList>
     </ValueSet>

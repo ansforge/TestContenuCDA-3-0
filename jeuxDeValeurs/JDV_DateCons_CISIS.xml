@@ -3,11 +3,8 @@
     <ValueSet displayName="JDV_DateCons_CISIS" id="1.2.250.1.213.1.1.5.111" version="test">
         <ConceptList>
             <Concept code="GEN-109" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Non suivie"/>
-            <Concept code="GEN-094" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230206000000" dateValid="20100101000000" displayName="1er trimestre"/>
             <Concept code="57630001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="premier trimestre de la grossesse"/>
-            <Concept code="GEN-095" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230206000000" dateValid="20100101000000" displayName="2ème trimestre"/>
             <Concept code="59466002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="deuxième trimestre de la grossesse"/>
-            <Concept code="GEN-096" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230206000000" dateValid="20100101000000" displayName="3ème trimestre"/>
             <Concept code="41587001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="troisième trimestre de la grossesse"/>
         </ConceptList>
     </ValueSet>

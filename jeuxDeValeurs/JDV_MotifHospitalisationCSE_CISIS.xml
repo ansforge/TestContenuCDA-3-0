@@ -5,7 +5,6 @@
             <Concept code="P05.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Faible poids pour l'âge gestationnel"/>
             <Concept code="O13" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Hypertension gestationnelle [liée à la grossesse]"/>
             <Concept code="O47.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Faux travail avant 37 semaines révolues de gestation"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220404000000" displayName="Autre"/>
             <Concept code="GEN-092.01.08" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif d'hospitalisation"/>
         </ConceptList>
     </ValueSet>

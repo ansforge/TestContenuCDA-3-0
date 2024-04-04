@@ -13,7 +13,6 @@
             <Concept code="MED-1149" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Hématologie"/>
             <Concept code="MED-1150" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Lymphoscintigraphie"/>
             <Concept code="MED-1151" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Scintigraphie aux leucocytes marqués"/>
-            <Concept code="MED-1152" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220126000000" displayName="Autre fonction étudiée"/>
             <Concept code="GEN-092.04.19" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre fonction étudiée"/>
         </ConceptList>
     </ValueSet>

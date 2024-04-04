@@ -2,10 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ComplicationThromboembolique_CISIS" id="1.2.250.1.213.1.1.5.220" version="test">
         <ConceptList>
-            <Concept code="I26.9" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Embolie pulmonaire"/>
             <Concept code="I26" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230612000000" displayName="Embolie pulmonaire"/>
             <Concept code="I80.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Thrombose veineuse profonde"/>
-            <Concept code="M-35106" codeSystem="1.2.250.1.213.2.12" dateFin="20231114000000" dateValid="20100101000000" displayName="Thrombus systémique"/>
             <Concept code="I82.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Embolie et thrombose d'une veine non précisée"/>
         </ConceptList>
     </ValueSet>

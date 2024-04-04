@@ -2,13 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_CauseAccidentDom_CISIS" id="1.2.250.1.213.1.1.5.121" version="test">
         <ConceptList>
-            <Concept code="W19" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Chute / Traumatisme"/>
             <Concept code="NF0A.4" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Choc traumatique, non classé ailleurs"/>
-            <Concept code="T30" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Brûlure"/>
             <Concept code="NE2Z" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Brûlures, sans précision"/>
-            <Concept code="T50" codeSystem="2.16.840.1.113883.6.3" dateFin="20230612000000" dateValid="20100101000000" displayName="Intoxication"/>
             <Concept code="NE61" codeSystem="2.16.840.1.113883.6.347" dateFin="" dateValid="20230612000000" displayName="Intoxication SAI"/>
-            <Concept code="MED-206" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre(s) accident(s) domestique(s)"/>
             <Concept code="GEN-092.01.13" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre(s) accident(s) domestique(s)"/>
         </ConceptList>
     </ValueSet>

@@ -4,9 +4,7 @@
         <ConceptList>
             <Concept code="419620001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="mort"/>
             <Concept code="MED-1176" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220804000000" displayName="Suites de couches"/>
-            <Concept code="ORG-069" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Transfert ou mutation"/>
             <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
-            <Concept code="GEN-242" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Non applicable"/>
             <Concept code="385432009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="Non applicable"/>
         </ConceptList>
     </ValueSet>

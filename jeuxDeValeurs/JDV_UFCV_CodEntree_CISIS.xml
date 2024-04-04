@@ -4,23 +4,20 @@
         <ConceptList>
             <Concept code="L0001" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Tension de pile (IRE)"/>
             <Concept code="L0003" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="IRE"/>
-            <Concept code="L0004" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Type DEF"/>
             <Concept code="99686-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Type de stimulateur cardiaque"/>
-            <Concept code="L0005" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20231114000000" dateValid="20100101000000" displayName="Latéralité"/>
             <Concept code="20228-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Latéralité"/>
             <Concept code="L0006" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Asserv"/>
             <Concept code="L0007" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Télésuivi"/>
             <Concept code="L0008" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Télé. activé"/>
             <Concept code="L0009" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="NYHA"/>
             <Concept code="L0010" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="FEVG"/>
-            <Concept code="L0012" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Date de dernier contrôle"/>
+            <Concept code="85734-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240315000000" displayName="Date de la dernière évaluation"/>
             <Concept code="L0013" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Mode programmé"/>
             <Concept code="L0014" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Tension dernier contrôle"/>
             <Concept code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Impédance"/>
             <Concept code="L0016" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Temps de charge"/>
             <Concept code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Connexions"/>
             <Concept code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Adaptateur"/>
-            <Concept code="L0019" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20231114000000" dateValid="20100101000000" displayName="Voie d’abord"/>
             <Concept code="21938-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Voie d'abord"/>
             <Concept code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Courant"/>
             <Concept code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Détection"/>
@@ -36,13 +33,10 @@
             <Concept code="L0035" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Niveau anticoagulation souhaité"/>
             <Concept code="L0036" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Type PM"/>
             <Concept code="L0037" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Fréquence sans aimant"/>
-            <Concept code="L0039" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Nom de l'endoprothèse"/>
             <Concept code="74720-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Nom du dispositif"/>
             <Concept code="L0050" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Marque"/>
-            <Concept code="L0051" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Modèle"/>
             <Concept code="67716-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Modèle"/>
             <Concept code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Polarité"/>
-            <Concept code="L0054" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20231114000000" dateValid="20100101000000" displayName="Localisation"/>
             <Concept code="39111-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20231114000000" displayName="Localisation"/>
             <Concept code="L0055" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Date d’implantation"/>
             <Concept code="L0056" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Dispositif"/>

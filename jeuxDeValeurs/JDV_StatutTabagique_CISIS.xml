@@ -2,14 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_StatutTabagique_CISIS" id="1.2.250.1.213.1.1.5.667" version="test">
         <ConceptList>
-            <Concept code="LA18976-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Fumeur quotidien"/>
-            <Concept code="LA18977-1" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Fumeur occasionnel"/>
-            <Concept code="LA15920-4" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Ancien fumeur"/>
-            <Concept code="LA18978-9" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="N'a jamais fumé"/>
-            <Concept code="LA18979-7" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Statut tabagique actuel inconnu"/>
-            <Concept code="LA18980-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Ne sait pas si n'a jamais fumé"/>
-            <Concept code="LA18981-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Fumeur important"/>
-            <Concept code="LA18982-1" codeSystem="2.16.840.1.113883.6.1" dateFin="20230428000000" dateValid="20220110000000" displayName="Fumeur modéré"/>
             <Concept code="449868002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="fumeur(-euse) quotidien(ne)"/>
             <Concept code="428041000124106" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="fumeur(-euse) occasionnel(le)"/>
             <Concept code="8517006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="ancien(ne) fumeur(-euse)"/>

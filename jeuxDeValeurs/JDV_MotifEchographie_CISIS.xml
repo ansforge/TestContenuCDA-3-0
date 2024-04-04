@@ -4,9 +4,7 @@
         <ConceptList>
             <Concept code="MED-019" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Densité mammaire"/>
             <Concept code="MED-107" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Implant"/>
-            <Concept code="MED-108" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Antécédent de chirurgie"/>
             <Concept code="161615003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="antécédents d'intervention chirurgicale"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
             <Concept code="GEN-092.01.07" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif d'échographie"/>
         </ConceptList>
     </ValueSet>

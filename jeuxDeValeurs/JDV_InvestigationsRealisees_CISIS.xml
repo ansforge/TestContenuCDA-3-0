@@ -2,19 +2,14 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_InvestigationsRealisees_CISIS" id="1.2.250.1.213.1.1.5.47" version="test">
         <ConceptList>
-            <Concept code="G-A304" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Clinique"/>
-            <Concept code="G-B001" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Biologique"/>
-            <Concept code="G-B017" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Biochimique"/>
             <Concept code="58147004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="clinique"/>
             <Concept code="12893009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="biologique"/>
             <Concept code="80534008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="biochimique"/>
-            <Concept code="GEN-036" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Imagerie"/>
-            <Concept code="MED-101" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Génétique moléculaire"/>
-            <Concept code="MED-102" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Cytogénétique"/>
-            <Concept code="MED-477" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Exploration fonctionnelle"/>
+            <Concept code="363679005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="imagerie"/>
+            <Concept code="116148004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="procédé de génétique moléculaire"/>
+            <Concept code="73735000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="procédure cytogénétique"/>
             <Concept code="12894003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="évaluation fonctionnelle"/>
-            <Concept code="MED-478" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Anatomopathologie"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="108257001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="intervention en anatomopathologie"/>
             <Concept code="GEN-092.04.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres investigations"/>
         </ConceptList>
     </ValueSet>

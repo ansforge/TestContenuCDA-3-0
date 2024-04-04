@@ -2,13 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ProblemCodes_CISIS" id="1.2.250.1.213.1.1.5.172" version="test">
         <ConceptList>
-            <Concept code="CDA_014" codeSystem="1.2.250.1.213.1.1.4.2.286" dateFin="20221130000000" dateValid="20100101000000" displayName="Conclusions"/>
-            <Concept code="F-01000" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Problème"/>
-            <Concept code="F-01050" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Condition préexistante"/>
-            <Concept code="F-01100" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Trouble fonctionnel"/>
-            <Concept code="F-01200" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Plainte"/>
-            <Concept code="F-01250" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Symptôme"/>
-            <Concept code="G-1009" codeSystem="1.2.250.1.213.2.12" dateFin="20221130000000" dateValid="20100101000000" displayName="Diagnostic"/>
             <Concept code="404684003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="constatation clinique"/>
             <Concept code="55607006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="problème"/>
             <Concept code="64572001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="maladie"/>

@@ -4,27 +4,13 @@
         <ConceptList>
             <Concept code="28711-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - vision de loin"/>
             <Concept code="64841-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - ETDRS"/>
-            <Concept code="79876-9" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Acuité visuelle - ETDRS œil droit"/>
-            <Concept code="79877-7" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Acuité visuelle - ETDRS œil gauche"/>
             <Concept code="98475-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - vision de près"/>
-            <Concept code="98509-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Acuité visuelle - vision de près œil droit"/>
-            <Concept code="98508-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Acuité visuelle - vision de près œil gauche"/>
             <Concept code="95320-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Puissance de la sphère – acuité visuelle"/>
-            <Concept code="65890-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Puissance de la sphère – acuité visuelle œil droit"/>
-            <Concept code="65894-8" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Puissance de la sphère – acuité visuelle œil gauche"/>
             <Concept code="95322-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Puissance du cylindre – acuité visuelle"/>
-            <Concept code="65892-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Puissance du cylindre – acuité visuelle œil droit"/>
-            <Concept code="65896-3" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Puissance du cylindre – acuité visuelle œil gauche"/>
             <Concept code="95321-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Axe en degrés – acuité visuelle"/>
-            <Concept code="65891-4" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Axe en degrés – acuité visuelle oeil droit"/>
-            <Concept code="65895-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20220919000000" dateValid="20220919000000" displayName="Axe en degrés – acuité visuelle oeil gauche"/>
-            <Concept code="96052-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210622000000" displayName="Addition"/>
             <Concept code="MED-886" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Addition"/>
-            <Concept code="95323-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210622000000" displayName="Prisme - puissance - acuité visuelle"/>
             <Concept code="MED-990" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme – puissance – acuité visuelle"/>
-            <Concept code="96051-8" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210622000000" displayName="Prisme - orientation base - acuité visuelle"/>
             <Concept code="MED-887" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme - orientation base – acuité visuelle"/>
-            <Concept code="95324-0" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210622000000" displayName="Prisme – axe en degrés - acuité visuelle"/>
             <Concept code="MED-1047" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme - axe en degrés – acuité visuelle"/>
         </ConceptList>
     </ValueSet>

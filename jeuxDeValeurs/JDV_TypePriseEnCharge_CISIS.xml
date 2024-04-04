@@ -3,18 +3,11 @@
     <ValueSet displayName="JDV_TypePriseEnCharge_CISIS" id="1.2.250.1.213.1.1.5.231" version="test">
         <ConceptList>
             <Concept code="ORG-165" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Séjour de répit"/>
-            <Concept code="ORG-166" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Maison d'accueil spécialisé (MAS) / Foyer d'accueil médicalisé (FAM)"/>
             <Concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Maison d'accueil spécialisée (MAS)"/>
-            <Concept code="ORG-167" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Hospitalisation complète"/>
             <Concept code="28" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation complète (HC)"/>
-            <Concept code="ORG-072" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="HAD"/>
             <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à domicile (HAD)"/>
-            <Concept code="ORG-044" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Hôpital de jour (HDJ)"/>
             <Concept code="29" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation de jour (HJ)"/>
-            <Concept code="ORG-168" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20100101000000" displayName="Services de soins infirmiers à domicile (SSIAD)"/>
             <Concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Service de soins infirmiers à domicile (SSIAD)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
-            <Concept code="GEN-092.06.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231114000000" dateValid="20230202000000" displayName="Autre structure de soins"/>
             <Concept code="GEN-092.06.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Autre établissement de santé"/>
         </ConceptList>
     </ValueSet>

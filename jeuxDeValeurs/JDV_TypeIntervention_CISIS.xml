@@ -2,12 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TypeIntervention_CISIS" id="1.2.250.1.213.1.1.5.168" version="test">
         <ConceptList>
-            <Concept code="P1-00000" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Chirurgie"/>
             <Concept code="387713003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="intervention chirurgicale"/>
-            <Concept code="P1-30800" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Angioplastie"/>
             <Concept code="2119009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="réparation d'un vaisseau sanguin"/>
-            <Concept code="P1-05550" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Stent"/>
-            <Concept code="103716009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="mise en place d'un 'stent'"/>
+            <Concept code="1296925008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240411000000" displayName="insertion d’endoprothèse"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

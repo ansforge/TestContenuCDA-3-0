@@ -2,9 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ExamenHemostaseAUVN_CISIS" id="1.2.250.1.213.1.1.5.194" version="test">
         <ConceptList>
-            <Concept code="3173-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20230803000000" dateValid="20100101000000" displayName="Temps de céphaline activée:Temps:Ponctuel:Sang:Numérique:Coagulation"/>
             <Concept code="14979-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Temps de céphaline activée [Temps] Plasma pauvre en plaquettes ; Numérique ; Coagulation"/>
-            <Concept code="34714-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20230803000000" dateValid="20100101000000" displayName="Temps de quick INR:Temps relatif:Ponctuel:Sang:Numérique:Coagulation"/>
             <Concept code="6301-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Temps de quick INR [Temps relatif] Plasma pauvre en plaquettes ; Numérique ; Coagulation"/>
         </ConceptList>
     </ValueSet>

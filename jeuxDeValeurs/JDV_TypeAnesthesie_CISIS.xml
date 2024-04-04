@@ -2,7 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_TypeAnesthesie_CISIS" id="1.2.250.1.213.1.1.5.492" version="test">
         <ConceptList>
-            <Concept code="MED-581" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20200331000000" displayName="Anesthésie générale"/>
             <Concept code="50697003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="anesthésie générale"/>
             <Concept code="MED-582" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale péridurale ou épidurale"/>
             <Concept code="MED-583" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Anesthésie locorégionale subarachnoïdienne (rachianesthésie)"/>

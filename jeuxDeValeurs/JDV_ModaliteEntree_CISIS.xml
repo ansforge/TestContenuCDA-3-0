@@ -2,11 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_ModaliteEntree_CISIS" id="1.2.250.1.213.1.1.5.73" version="test">
         <ConceptList>
-            <Concept code="ORG-067" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Urgence"/>
-            <Concept code="ORG-068" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Programmée"/>
-            <Concept code="ORG-069" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230803000000" dateValid="20220804000000" displayName="Transfert ou mutation"/>
-            <Concept code="107724000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfert du patient"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20100101000000" displayName="Autre"/>
+            <Concept code="183452005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation en urgence"/>
+            <Concept code="8715000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation programmée"/>
+            <Concept code="4563007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation, transfert d'un autre hôpital ou établissement de santé"/>
             <Concept code="GEN-092.06.07" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre modalité d'entrée"/>
         </ConceptList>
     </ValueSet>

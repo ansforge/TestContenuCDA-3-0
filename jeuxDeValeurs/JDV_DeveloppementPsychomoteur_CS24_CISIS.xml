@@ -2,16 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_DeveloppementPsychomoteur_CS24_CISIS" id="1.2.250.1.213.1.1.5.712" version="test">
         <ConceptList>
-            <Concept code="GEN-082" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Imite un geste simple (au revoir/bravo)"/>
-            <Concept code="GEN-083" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Joue à faire semblant"/>
-            <Concept code="MED-196" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Comprend une consigne simple"/>
-            <Concept code="MED-197" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Nomme au moins une image"/>
-            <Concept code="MED-198" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Superpose des objets"/>
-            <Concept code="MED-199" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Associe deux mots"/>
             <Concept code="MED-200" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Marche acquise"/>
             <Concept code="MED-201" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Age de la marche acquise (mois)"/>
             <Concept code="MED-1274" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231030000000" displayName="Repérage troubles du neurodéveloppement"/>
-            <Concept code="MED-202" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231030000000" dateValid="20221003000000" displayName="Pointe du doigt"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

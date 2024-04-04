@@ -2,16 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Lateralite_CISIS" id="1.2.250.1.213.1.1.5.160" version="test">
         <ConceptList>
-            <Concept code="G-A100" codeSystem="1.2.250.1.213.2.12" dateFin="20210412000000" dateValid="20100101000000" displayName="Droit"/>
-            <Concept code="G-A101" codeSystem="1.2.250.1.213.2.12" dateFin="20210412000000" dateValid="20100101000000" displayName="Gauche"/>
-            <Concept code="G-A102" codeSystem="1.2.250.1.213.2.12" dateFin="20210412000000" dateValid="20100101000000" displayName="Bilatéral"/>
-            <Concept code="C25228" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20221216000000" dateValid="20210412000000" displayName="Droit"/>
             <Concept code="24028007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="droit"/>
-            <Concept code="C25229" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20221216000000" dateValid="20210412000000" displayName="Gauche"/>
             <Concept code="7771000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="gauche"/>
-            <Concept code="C13332" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20221216000000" dateValid="20210412000000" displayName="Bilatéral"/>
             <Concept code="51440002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="bilatéral"/>
-            <Concept code="GEN-242" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20200101000000" displayName="Non applicable"/>
             <Concept code="385432009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221207000000" displayName="Non applicable"/>
         </ConceptList>
     </ValueSet>

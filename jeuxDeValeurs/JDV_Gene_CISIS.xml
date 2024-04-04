@@ -2,32 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_Gene_CISIS" id="1.2.250.1.213.1.1.5.150" version="test">
         <ConceptList>
-            <Concept code="AKT1" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="AKT1"/>
-            <Concept code="ALK" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="ALK"/>
-            <Concept code="BRAF" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="BRAF"/>
-            <Concept code="EGFR" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="EGFR"/>
-            <Concept code="ERBB2 (HER2)" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="ERBB2 (HER2)"/>
-            <Concept code="ERBB4" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="ERBB4"/>
-            <Concept code="FGFR2" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="FGFR2"/>
-            <Concept code="FGFR3" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="FGFR3"/>
-            <Concept code="HRAS" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="HRAS"/>
-            <Concept code="KIT" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="KIT"/>
-            <Concept code="KRAS" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="KRAS"/>
-            <Concept code="MAP2K1 (MEK1)" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="MAP2K1 (MEK1)"/>
-            <Concept code="MET" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="MET"/>
-            <Concept code="NRAS" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="NRAS"/>
-            <Concept code="PDGFRA" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="PDGFRA"/>
-            <Concept code="PIK3CA" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="PIK3CA"/>
-            <Concept code="CDKN2A" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="CDKN2A"/>
-            <Concept code="CTNNB1" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="CTNNB1"/>
-            <Concept code="DDR2" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="DDR2"/>
-            <Concept code="H3F3A" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="H3F3A"/>
-            <Concept code="HIST1H3B" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="HIST1H3B"/>
-            <Concept code="IDH1" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="IDH1"/>
-            <Concept code="IDH2" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="IDH2"/>
-            <Concept code="PIK3R1" codeSystem="1.2.250.1.213.2.60" dateFin="20230316000000" dateValid="20100101000000" displayName="PIK3R1"/>
-            <Concept code="GEN-097" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220413000000" dateValid="20100101000000" displayName="Autre (préciser)"/>
-            <Concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20220413000000" displayName="Autre"/>
             <Concept code="HGNC:391" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="AKT1"/>
             <Concept code="HGNC:427" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="ALK"/>
             <Concept code="HGNC:1097" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="BRAF"/>

@@ -2,16 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_LocalisationAnesthesie_CISIS" id="1.2.250.1.213.1.1.5.594" version="test">
         <ConceptList>
-            <Concept code="MED-971" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230707000000" dateValid="20210603000000" displayName="Cervico-facial"/>
             <Concept code="774007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="tête et cou"/>
-            <Concept code="62539" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20210603000000" displayName="Thoraco-abdominal"/>
-            <Concept code="260532003" codeSystem="2.16.840.1.113883.6.96" dateFin="20231114000000" dateValid="20221207000000" displayName="thoracoabdominal"/>
             <Concept code="22943007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="tronc"/>
-            <Concept code="7183" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20210603000000" displayName="Membre supérieur"/>
-            <Concept code="182245002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="membre supérieur entier"/>
             <Concept code="53120007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="membre supérieur"/>
-            <Concept code="7184" codeSystem="2.16.840.1.113883.6.119" dateFin="20221216000000" dateValid="20210603000000" displayName="Membre inférieur"/>
-            <Concept code="182281004" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="membre inférieur entier"/>
             <Concept code="61685007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="membre inférieur"/>
         </ConceptList>
     </ValueSet>

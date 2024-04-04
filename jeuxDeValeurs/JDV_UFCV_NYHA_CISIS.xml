@@ -2,10 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_NYHA_CISIS" id="1.2.250.1.213.1.1.4.2.6" version="test">
         <ConceptList>
-            <Concept code="G-E402" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Classe NYHA I "/>
-            <Concept code="G-E403" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Classe NYHA II"/>
-            <Concept code="G-E404" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Classe NYHA III"/>
-            <Concept code="G-E405" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Classe NYHA IV"/>
             <Concept code="420300004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="classe I de la New York Heart Association Classification"/>
             <Concept code="421704003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="classe II de la New York Heart Association Classification"/>
             <Concept code="420913000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="classe III de la New York Heart Association Classification"/>

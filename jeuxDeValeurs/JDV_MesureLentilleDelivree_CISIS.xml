@@ -3,9 +3,7 @@
     <ValueSet displayName="JDV_MesureLentilleDelivree_CISIS" id="1.2.250.1.213.1.1.5.656" version="test">
         <ConceptList>
             <Concept code="MED-1181" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Date de délivrance"/>
-            <Concept code="80418-7" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210924000000" displayName="Produit d'entretien"/>
             <Concept code="MED-1183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Produit d'entretien"/>
-            <Concept code="28866-2" codeSystem="2.16.840.1.113883.6.1" dateFin="20230330000000" dateValid="20210924000000" displayName="Type de lentille"/>
             <Concept code="MED-1180" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Type de lentille"/>
             <Concept code="GEN-292" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Commentaire"/>
             <Concept code="C53610" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="Renouvellement"/>
@@ -13,7 +11,6 @@
             <Concept code="MED-1089" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Diamètre lentille – lentille délivrée"/>
             <Concept code="MED-1090" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 1 lentille – lentille délivrée"/>
             <Concept code="MED-1091" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 2 lentille – lentille délivrée"/>
-            <Concept code="MED-896" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230210000000" dateValid="20210924000000" displayName="Autres paramètres"/>
             <Concept code="GEN-092.08.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230210000000" displayName="Autre(s) paramètre(s)"/>
             <Concept code="MED-1092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère – lentille délivrée"/>
             <Concept code="MED-1093" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre – lentille délivrée"/>

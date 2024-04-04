@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_StatutEvt_CISIS" id="1.2.250.1.213.1.1.5.165" version="test">
         <ConceptList>
-            <Concept code="G-A204" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Absent"/>
-            <Concept code="G-A230" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Actif"/>
-            <Concept code="G-A463" codeSystem="1.2.250.1.213.2.12" dateFin="20230803000000" dateValid="20100101000000" displayName="Ancien"/>
             <Concept code="2667000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="absent"/>
             <Concept code="55561003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="actif"/>
             <Concept code="70753007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="ancien"/>

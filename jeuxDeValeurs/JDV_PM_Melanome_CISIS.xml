@@ -5,7 +5,6 @@
             <Concept code="MED-965" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases à distance (cutanées ou sous-cutanées ou ganglionnaires au-delà des ganglions loco-régionaux)"/>
             <Concept code="MED-966" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases pulmonaires"/>
             <Concept code="MED-968" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases dans le SNC"/>
-            <Concept code="MED-967" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230202000000" dateValid="20210511000000" displayName="Autres métastases viscérales. Toutes métastases à distance (autres que SNC)"/>
             <Concept code="GEN-092.01.19" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres métastases viscérales. Toutes métastases à distance (autres que SNC)"/>
         </ConceptList>
     </ValueSet>

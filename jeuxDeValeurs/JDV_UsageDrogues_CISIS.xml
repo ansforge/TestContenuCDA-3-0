@@ -2,8 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UsageDrogues_CISIS" id="1.2.250.1.213.1.1.5.94" version="test">
         <ConceptList>
-            <Concept code="G-D101" codeSystem="1.2.250.1.213.2.12" dateFin="20220218000000" dateValid="20100101000000" displayName="Voie intraveineuse"/>
-            <Concept code="GEN-070" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220218000000" dateValid="20100101000000" displayName="Voie nasale"/>
             <Concept code="20045000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220218000000" displayName="Voie intraveineuse"/>
             <Concept code="20049000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220218000000" displayName="Voie nasale"/>
         </ConceptList>

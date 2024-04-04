@@ -2,8 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_LateraliteTechniqueImagerie_CISIS" id="1.2.250.1.213.1.1.5.617" version="test">
         <ConceptList>
-            <Concept code="C68598" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20220502000000" dateValid="20210603000000" displayName="unilatéral"/>
-            <Concept code="C13332" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20220502000000" dateValid="20210603000000" displayName="bilatéral"/>
             <Concept code="66459002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="unilatéral"/>
             <Concept code="51440002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="bilatéral"/>
         </ConceptList>

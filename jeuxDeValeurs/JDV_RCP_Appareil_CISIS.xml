@@ -2,20 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_RCP_Appareil_CISIS" id="1.2.250.1.213.1.1.5.597" version="test">
         <ConceptList>
-            <Concept code="C12704" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Glande endocrine"/>
-            <Concept code="C16673" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Hématologie"/>
-            <Concept code="C12401" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Oeil"/>
-            <Concept code="C12366" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Os"/>
-            <Concept code="C12470" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Peau"/>
-            <Concept code="C12971" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Sein"/>
-            <Concept code="C12378" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Système gastro-intestinal"/>
-            <Concept code="C61600" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Système génital de la femme"/>
-            <Concept code="C61599" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Système génital de l'homme"/>
-            <Concept code="C12755" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Système nerveux"/>
-            <Concept code="C12413" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Système urinaire"/>
-            <Concept code="C12799" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Thorax et système respiratoire"/>
-            <Concept code="C12471" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Tissus mous"/>
-            <Concept code="C82347" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="20230707000000" dateValid="20210419000000" displayName="Voies aéro-digestives supérieures"/>
             <Concept code="387910009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande endocrine"/>
             <Concept code="57171008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="structure du système hématopoïétique"/>
             <Concept code="81745001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="œil"/>

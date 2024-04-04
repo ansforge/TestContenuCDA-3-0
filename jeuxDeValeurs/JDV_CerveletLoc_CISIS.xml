@@ -4,8 +4,6 @@
         <ConceptList>
             <Concept code="MED-493" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphérique médial (noyaux)"/>
             <Concept code="MED-494" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphérique latéral"/>
-            <Concept code="T-A6210" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Vermis"/>
-            <Concept code="279105006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="vermis cérébelleux entier"/>
             <Concept code="58501004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="vermis cérebelleux"/>
         </ConceptList>
     </ValueSet>

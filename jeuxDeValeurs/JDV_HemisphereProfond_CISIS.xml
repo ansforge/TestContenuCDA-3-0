@@ -2,16 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_HemisphereProfond_CISIS" id="1.2.250.1.213.1.1.5.211" version="test">
         <ConceptList>
-            <Concept code="MED-490" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Capsulo-thalamique"/>
-            <Concept code="362364002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="fibres corticales thalamosensorielles entières de la capsule interne"/>
             <Concept code="51728003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="fibre thalamocorticale de la capsule interne"/>
-            <Concept code="MED-491" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20221216000000" dateValid="20100101000000" displayName="Capsulo-lenticulaire"/>
-            <Concept code="369207006" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="partie lenticulaire entière du membre postérieur de la capsule interne"/>
             <Concept code="54728004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="portion lenticulaire du bras postérieur de la capsule interne"/>
-            <Concept code="MED-449" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230707000000" dateValid="20100101000000" displayName="Système ventriculaire"/>
             <Concept code="35764002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="ventricule cérébral"/>
-            <Concept code="T-A3200" codeSystem="1.2.250.1.213.2.12" dateFin="20221216000000" dateValid="20100101000000" displayName="Noyau caudé"/>
-            <Concept code="279297002" codeSystem="2.16.840.1.113883.6.96" dateFin="20230707000000" dateValid="20221207000000" displayName="noyau caudé entier"/>
             <Concept code="11000004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="noyau caudé"/>
         </ConceptList>
     </ValueSet>

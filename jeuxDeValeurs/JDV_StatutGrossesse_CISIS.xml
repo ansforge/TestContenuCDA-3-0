@@ -2,11 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_StatutGrossesse_CISIS" id="1.2.250.1.213.1.1.5.671" version="test">
         <ConceptList>
-            <Concept code="LA26683-5" codeSystem="2.16.840.1.113883.6.1" dateFin="20220410000000" dateValid="20220201000000" displayName="absence de grossesse"/>
-            <Concept code="LA15173-0" codeSystem="2.16.840.1.113883.6.1" dateFin="20220410000000" dateValid="20220201000000" displayName="enceinte"/>
-            <Concept code="LA4489-6" codeSystem="2.16.840.1.113883.6.1" dateFin="20220410000000" dateValid="20220201000000" displayName="indéterminé"/>
             <Concept code="60001007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="absence de grossesse"/>
-            <Concept code="77386006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Enceinte"/>
+            <Concept code="77386006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="enceinte"/>
             <Concept code="261665006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="inconnu"/>
         </ConceptList>
     </ValueSet>

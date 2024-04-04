@@ -2,11 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_IndicateurAnormalite_CISIS" id="1.2.250.1.213.1.1.5.95" version="test">
         <ConceptList>
-            <Concept code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="normal"/>
-            <Concept code="GEN-071" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="inférieur à la normale"/>
-            <Concept code="GEN-072" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="supérieur à la normale"/>
-            <Concept code="GEN-073" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="inférieur à la valeur panique basse"/>
-            <Concept code="GEN-074" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20230428000000" dateValid="20100101000000" displayName="supérieur à la valeur panique haute"/>
             <Concept code="N" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20230428000000" displayName="Normal"/>
             <Concept code="L" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20230428000000" displayName="Anormalement bas"/>
             <Concept code="H" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20230428000000" displayName="Anormalement haut"/>

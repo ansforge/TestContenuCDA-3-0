@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_NIHSSSensInt_CISIS" id="1.2.250.1.213.1.1.5.190" version="test">
         <ConceptList>
-            <Concept code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Normal"/>
-            <Concept code="MED-437" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Déficit sensitif discret à modéré ; du côté atteint, la piqûre est moins bien perçue ou non perçue mais le patient est conscient d’être touché."/>
-            <Concept code="MED-438" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Déficit sévère à total; le patient n’a pas conscience d’être touché au niveau de la face, du bras et de la jambe."/>
             <Concept code="LA18468-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Normal"/>
             <Concept code="LA18469-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Déficit sensitif discret à modéré ; du côté atteint, la piqûre est moins bien perçue ou non perçue mais le patient est conscient d’être touché."/>
             <Concept code="LA18470-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Déficit sévère à total; le patient n’a pas conscience d’être touché au niveau de la face, du bras et de la jambe."/>

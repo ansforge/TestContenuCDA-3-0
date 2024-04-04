@@ -3,12 +3,7 @@
     <ValueSet displayName="JDV_AntecedentsCSE9_CISIS" id="1.2.250.1.213.1.1.5.103" version="test">
         <ConceptList>
             <Concept code="MED-183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Prématurité inf. à 33 sem"/>
-            <Concept code="MED-211" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Otites à répétition"/>
-            <Concept code="MED-182" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Affections bronchopulmonaires à répétition"/>
-            <Concept code="MED-184" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Affections bronchopulmonaires à répétition dont plus de trois sifflantes"/>
             <Concept code="MED-186" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Accident(s) domestique(s) avant le 9ème mois"/>
-            <Concept code="ORG-091" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Hospitalisation(s) en période néonatale"/>
-            <Concept code="ORG-093" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20231024000000" dateValid="20100101000000" displayName="Hospitalisation(s) après la période néonatale"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

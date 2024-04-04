@@ -2,13 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_MatImpl_CISIS" id="1.2.250.1.213.1.1.4.2.1" version="test">
         <ConceptList>
-            <Concept code="D0001-1" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Défibrillateur"/>
-            <Concept code="D0001-11" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Prothèse valvulaire"/>
-            <Concept code="D0001-12" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Endoprothèse"/>
-            <Concept code="D0001-2" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Stimulateur"/>
-            <Concept code="D0001-3" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Sonde Auriculaire"/>
-            <Concept code="D0001-4" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Sonde Ventricule Droit"/>
-            <Concept code="D0001-5" codeSystem="1.2.250.1.213.1.1.4.2" dateFin="20230427000000" dateValid="20100101000000" displayName="Sonde Ventricule Gauche"/>
             <Concept code="J0105" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DÉFIBRILLATEURS IMPLANTABLES"/>
             <Concept code="P0703" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES"/>
             <Concept code="P0704" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"/>

@@ -6,7 +6,6 @@
             <Concept code="2571-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Triglycérides:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
             <Concept code="2089-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Cholestérol LDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
             <Concept code="2085-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Cholestérol HDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="2339-0" codeSystem="2.16.840.1.113883.6.1" dateFin="20230803000000" dateValid="20100101000000" displayName="Glucose:Masse/Volume:Ponctuel:Sang:Numérique:"/>
             <Concept code="2345-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Glucose [Masse/Volume] Sérum/Plasma ; Numérique"/>
             <Concept code="53049-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"/>
             <Concept code="27353-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose estimation moyenne:Masse/Volume:Ponctuel:Sang:Numérique:Estimation hémoglobine glyquée"/>

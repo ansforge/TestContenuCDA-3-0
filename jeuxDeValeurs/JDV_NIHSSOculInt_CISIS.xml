@@ -2,9 +2,6 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_NIHSSOculInt_CISIS" id="1.2.250.1.213.1.1.5.182" version="test">
         <ConceptList>
-            <Concept code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="normal"/>
-            <Concept code="MED-405" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Paralysie partielle (ce score est attribué quand l'oculomotricité est anormale pour 1 ou 2 yeux, mais sans déviation forcée, ni paralysie complète)."/>
-            <Concept code="MED-406" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="20220420000000" dateValid="20100101000000" displayName="Déviation forcée ou paralysie complète non vaincue par les manœuvres oculo céphaliques."/>
             <Concept code="LA6626-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="normal"/>
             <Concept code="LA18446-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Paralysie partielle (ce score est attribué quand l'oculomotricité est anormale pour 1 ou 2 yeux, mais sans déviation forcée, ni paralysie complète)."/>
             <Concept code="LA18447-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Déviation forcée ou paralysie complète non vaincue par les manœuvres oculo céphaliques."/>
