@@ -1,69 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--                  -=<<o#%@O[ E_directiveAnticipee_fr.sch ]O@%#o>>=-
+<!-- [ E_directiveAnticipee_fr.sch ]
     
     Teste la conformité de l'entrée FR-Directive-anticipee (1.2.250.1.213.1.1.3.54)
     aux spécifications du CI-SIS
     
     Historique :
-    30/06/23 : ANS : Création
+    30/06/2023 : ANS : Création
+    05/03/2024 : ANS : remplacement du code SNOMED CT "Autre directive" par le code LOINC et ajout du code "Directives anticipées"
     
 -->
 
-
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_directiveAnticipee_fr">
-    <title>CI-SIS directive anticipée</title>
+    <title>CI-SIS directives anticipées</title>
     <rule context='*[cda:templateId/@root="1.2.250.1.213.1.1.3.54"]'>
         
-        <assert
-            test="self::cda:observation[@classCode='OBS' and @moodCode='EVN']">
-            [E_directiveAnticipee_fr] Erreur de conformité CI-SIS : Dans l'entrée FR-Directive-anticipee(1.2.250.1.213.1.1.3.54), 
-            les attributs de l'élément CDA 'observation' sont classCode='OBS' et moodCode='EVN'</assert>
-        
-        <!-- Test des templateId pour l'entrée "FR-Directive-anticipee" -->
-        <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.7'] and cda:templateId[@root='1.2.250.1.213.1.1.3.54']
-            and cda:templateId[@root='2.16.840.1.113883.10.20.1.17'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']">
-            
-            [1] [E_directiveAnticipee_fr.sch] Erreur de conformité CI-SIS : 
-            L'entrée "FR-Directive-anticipee" doit comporter les 'templateId' suivants :
-            - Un premier 'templateId' dont l'attribut @root="1.2.250.1.213.1.1.3.54"
-            - Un deuxième 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.13.7"
-            - Un troisième 'templateId' dont l'attribut @root="2.16.840.1.113883.10.20.1.17"
-            - Un quatrième 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.13"
-            
+        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.3.54']">            
+            [E_directiveAnticipee_fr.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Directive-anticipee" doit comporter le 'templateId' avec l'attribut @root="1.2.250.1.213.1.1.3.54"            
         </assert>
         
-        <assert test='count(cda:id)=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une ou plusieurs fois.
+        <assert test='(not(cda:value) and cda:code/@code="75793-0") or (not(cda:value) and cda:code/@code="42348-3") or(cda:value/@xsi:type="BL" and cda:text/cda:reference)'>
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : La valeur de la directive est un booléen (xsi:type="BL") qui permet d’indiquer l’autorisation ou la non autorisation, 
+            sauf si l’élément "code" est @code="75793-0" [LOINC]("Autre directive") : dans ce cas, l'élément "value" n'est pas présent et la précision est fournie dans la partie narrative ("text/reference") 
+            ou si l'élément "code" est @code="42348-3" [LOINC]("Directives anticipées") : dans ce cas, l'élément "value" n'est pas présent et un document encodé en B64 est encapsulé dans l'élément 'component/observationMedia'.
         </assert>
         
-        <assert test='count(cda:code)=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément code doit être présent une fois.
-        </assert>
+        <assert test='count(cda:entryRelationship/cda:observationMedia)&lt;=1'>
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément 'entryRelationship/observationMedia' ne peut être présent qu'une seule fois [0..1] et doit avoir les attributs @classCode="OBS" et @moodCode="EVN".
+        </assert>        
         
-        <assert test='count(cda:text)=1 and count(cda:text/cda:reference)=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément text doit être présent une fois et doit contenir l'élément reference.
-        </assert>
-        
-        <assert test="cda:statusCode[@code='completed']"> 
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : Le composant "statutCode" 
-            est toujours fixé à la valeur code='completed'. </assert>
-        
-        <assert test='count(cda:effectiveTime)=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément effectiveTime doit être présent une fois [1..1].
-        </assert>
-        
-        <assert test='(not(cda:value) and cda:code/@code="71388002") or (cda:value/@xsi:type="BL" and cda:text/cda:reference)'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : La valeur de la directive identifiée est un élément booléen (xsi:type="BL") qui permet d’indiquer l’autorisation ou la non autorisation, 
-            sauf si l’élément "code" est @code="71388002" [SNOMED CT]("Autre directive") : dans ce cas, l'élément "value" n'est pas présent et la précision est fournie dans la partie narrative ("text/reference").
-        </assert>
-        
-        <assert test='count(cda:value)&lt;=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément value doit être présent maximum une fois [0..1].
-        </assert>
-        
-        <assert test='count(cda:reference)&lt;=1'>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément reference doit être présent maximum une fois [0..1].
-        </assert>
     </rule>
     
 </pattern>
