@@ -231,7 +231,7 @@
         <assignedEntity>
           <!-- PS identifié par son N°RPPS -->
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-          <code code="G15_10/SM36" displayName="Médecin - Oncologie option médicale (SM)"
+          <code code="G15_10/SM36" displayName="Médecin - Oncologie, opt médicale (SM)"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
           <addr>
             <houseNumber>4</houseNumber>
@@ -297,7 +297,7 @@
         <associatedEntity classCode="PROV">
           <!-- PS membre de l'équipe de soins -->
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-          <code code="G15_10/SM36" displayName="Médecin - Oncologie option médicale (SM)"
+          <code code="G15_10/SM36" displayName="Médecin - Oncologie, opt médicale (SM)"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
           <telecom value="tel:0147150001"/>
           <associatedPerson>
@@ -332,7 +332,7 @@
           <!-- PS membre de l'équipe de soins -->
           <id root="1.2.250.1.71.4.2.1" extension="801234576543"/>
           <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="RPPS"
-            displayName="Médecin - Oncologie option médicale (SM)"/>
+            displayName="Médecin - Oncologie, opt médicale (SM)"/>
           <telecom value="tel:0147150000"/>
           <associatedPerson>
             <name>
@@ -679,7 +679,7 @@
               <!-- PS identifié par son N°RPPS -->
               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
               <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="RPPS"
-                displayName="Médecin - Oncologie option médicale (SM)"/>
+                displayName="Médecin - Oncologie, opt médicale (SM)"/>
               <addr>
                 <houseNumber>4</houseNumber>
                 <streetName>Rue de Limoges</streetName>
@@ -1910,7 +1910,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-                        codeSystemName="RPPS" displayName="Médecin - Oncologie option médicale (SM)"/>
+                        codeSystemName="RPPS" displayName="Médecin - Oncologie, opt médicale (SM)"/>
                       <addr>
                         <houseNumber>4</houseNumber>
                         <streetName>Rue de Limoges</streetName>
@@ -2031,7 +2031,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-                        codeSystemName="RPPS" displayName="Médecin - Oncologie option médicale (SM)"/>
+                        codeSystemName="RPPS" displayName="Médecin - Oncologie, opt médicale (SM)"/>
                       <addr>
                         <houseNumber>4</houseNumber>
                         <streetName>Rue de Limoges</streetName>
@@ -2175,7 +2175,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234576543"/>
                       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-                        codeSystemName="RPPS" displayName="Médecin - Oncologie option médicale (SM)"/>
+                        codeSystemName="RPPS" displayName="Médecin - Oncologie, opt médicale (SM)"/>
                       <addr>
                         <houseNumber>4</houseNumber>
                         <streetName>Rue de Limoges</streetName>
@@ -2444,7 +2444,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234576543"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>
@@ -2526,7 +2526,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234576543"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>
@@ -2611,7 +2611,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>
@@ -3063,7 +3063,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>
@@ -3211,7 +3211,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234576543"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>
@@ -3755,7 +3755,7 @@
                       <!-- PS identifié par son N°RPPS -->
                       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                       <code code="G15_10/SM36"
-                        displayName="Médecin - Oncologie option médicale (SM)"
+                        displayName="Médecin - Oncologie, opt médicale (SM)"
                         codeSystem="1.2.250.1.213.1.1.4.5"/>
                       <addr>
                         <houseNumber>4</houseNumber>

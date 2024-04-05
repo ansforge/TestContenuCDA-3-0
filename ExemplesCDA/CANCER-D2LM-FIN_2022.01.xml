@@ -236,7 +236,7 @@
     <signatureCode code="S" />
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-      <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiodiagnostic et radiothérapie (SM)" />
+      <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-diagnostic et Radio-Thérapie (SM)" />
       <addr>
         <houseNumber>3</houseNumber>
         <streetName>Rue du Petit Pont</streetName>
@@ -307,7 +307,7 @@
     <time nullFlavor="NA" />
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="648238538" />
-      <code code="G15_10/SM51" displayName="Médecin - Gynéco-obstétrique et Gynéco méd, opt gyn-obs (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10/SM51" displayName="Médecin - Gynéco-obstétrique et Gynéco méd, opt Gyn-obs (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>98</houseNumber>
         <streetName>Rue Desbordes</streetName>
@@ -382,7 +382,7 @@
       <performer typeCode="PRF">
         <assignedEntity>
           <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-          <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiodiagnostic et radiothérapie (SM)" />
+          <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-diagnostic et Radio-Thérapie (SM)" />
           <addr>
             <houseNumber>3</houseNumber>
             <streetName>rue du Petit Pont</streetName>
@@ -1170,7 +1170,7 @@
                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15.2" />
                 <templateId root="1.2.250.1.213.1.1.3.60" />
                 <relatedSubject classCode="PRS">
-                  <code code="FAMMEMB" displayName="Membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+                  <code code="FAMMEMB" displayName="Autre membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
                     <originalText>
                       <reference value="#cote-pere-mere" />
                     </originalText>
@@ -1192,7 +1192,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20210729" />
-                  <value xsi:type="CD" code="C80" displayName="cancer de siège non précisé (primitif) (secondaire)" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="C80" displayName="Tumeur maligne de siège non précisé" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <qualifier>
                       <name code="30525-0" displayName="Age" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                       </name>
@@ -1286,7 +1286,7 @@
                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15.2" />
                 <templateId root="1.2.250.1.213.1.1.3.60" />
                 <relatedSubject classCode="PRS">
-                  <code code="FAMMEMB" displayName="Membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+                  <code code="FAMMEMB" displayName="Autre membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
                     <originalText>
                       <reference value="#cote-pere" />
                     </originalText>
@@ -1538,7 +1538,7 @@
                 <!-- Conformité CI-SIS -->
                 <templateId root="1.2.250.1.213.1.1.3.60" />
                 <relatedSubject classCode="PRS">
-                  <code code="FAMMEMB" displayName="Membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+                  <code code="FAMMEMB" displayName="Autre membre de la famille" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
                     <originalText>
                       <reference value="#cote-mere" />
                     </originalText>

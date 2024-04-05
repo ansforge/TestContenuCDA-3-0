@@ -210,7 +210,7 @@
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
       <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5"
-        displayName="Médecin - Radiodiagnostic et radiothérapie (SM)"/>
+        displayName="Médecin - Radio-diagnostic et Radio-Thérapie (SM)"/>
       <addr>
         <houseNumber>3</houseNumber>
         <streetName>Rue du Petit Pont</streetName>
@@ -285,7 +285,7 @@
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="648238538"/>
       <code code="G15_10/SM51"
-        displayName="Médecin - Gynéco-obstétrique et Gynéco méd, opt gyn-obs (SM)"
+        displayName="Médecin - Gynéco-obstétrique et Gynéco méd, opt Gyn-obs (SM)"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <addr>
         <houseNumber>98</houseNumber>
@@ -366,7 +366,7 @@
         <assignedEntity>
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
           <code code="G15_10/SM55" codeSystem="1.2.250.1.213.1.1.4.5"
-            displayName="Médecin - Radiodiagnostic et radiothérapie (SM)"/>
+            displayName="Médecin - Radio-diagnostic et Radio-Thérapie (SM)"/>
           <addr>
             <houseNumber>3</houseNumber>
             <streetName>rue du Petit Pont</streetName>

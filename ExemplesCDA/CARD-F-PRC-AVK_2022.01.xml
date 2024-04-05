@@ -311,7 +311,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.213.1.1.9" extension="11223344" assigningAuthorityName="Hôpital des papillons" />
-          <code code="SA21" displayName="Etab. Hébergt Réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA21" displayName="Etablissement d'hébergement et de réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
         </healthCareFacility>
       </location>
     </encompassingEncounter>
@@ -396,7 +396,7 @@
                   <effectiveTime>
                     <low value="20090812" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="G45.9" displayName="Accident Ischémique Cérébral Transitoire"
+                  <value xsi:type="CD" code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision"
                          codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText>
                       <reference value="avk0027" />
@@ -851,7 +851,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.36"/>
                   <id root="2540FA0C-0F70-4A6F-A8F8-E0E38CB52BBE" />
-                  <code code="G45.9" displayName="Accident Ischémique Cérébral Transitoire"
+                  <code code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"/>               
                 </act>
               </entryRelationship>
@@ -1108,7 +1108,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="J01MA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ofloxacin">
+                        <code code="J01MA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ofloxacine">
                           <originalText>
                             <reference value="#avk0012" />
                           </originalText>
@@ -1178,7 +1178,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="A10BB09" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="DIAMICRON 30mg, comprimé à libération modifiée">
+                        <code code="A10BB09" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="gliclazide">
                           <originalText>
                             <reference value="#avk0015" />
                           </originalText>
@@ -1316,7 +1316,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="PARACETAMOL">
+                        <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="paracétamol">
                           <originalText>
                             <reference value="#avk0021" />
                           </originalText>

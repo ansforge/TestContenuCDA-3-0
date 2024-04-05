@@ -227,7 +227,7 @@
       <!-- PS identifié par son N°RPPS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- Profession / spécialité du PS -->
-      <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option médicale (SM)" />
+      <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie, opt médicale (SM)" />
       <!-- Adresse du PS-->
       <addr>
         <houseNumber>4</houseNumber>
@@ -274,7 +274,7 @@
       <!-- PS identifié par son N°RPPS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- Profession / spécialité du PS -->
-      <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option médicale (SM)" />
+      <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie, opt médicale (SM)" />
       <!-- Adresse du PS-->
       <addr>
         <houseNumber>4</houseNumber>
@@ -321,7 +321,7 @@
       <!-- Identifiant RPPS du PS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- spécialité  -->
-      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiothérapie (SM)" />
+      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-thérapie (SM)" />
       <addr>
         <streetName>Rue Pasteur</streetName>
         <houseNumber>25</houseNumber>
@@ -362,7 +362,7 @@
       <!-- Identifiant RPPS du PS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- spécialité  -->
-      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiothérapie (SM)" />
+      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-thérapie (SM)" />
       <addr>
         <streetName>Rue Pasteur</streetName>
         <houseNumber>25</houseNumber>
@@ -432,7 +432,7 @@
       <!-- Identifiant RPPS du PS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- spécialité  -->
-      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiothérapie (SM)" />
+      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-thérapie (SM)" />
       <associatedPerson>
         <name>
           <given>Julie</given>
@@ -466,7 +466,7 @@
       <!-- Identifiant RPPS du PS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <!-- spécialité  -->
-      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiothérapie (SM)" />
+      <code code="G15_10/SM45" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radio-thérapie (SM)" />
       <associatedPerson>
         <name>
           <family>DECOURT</family>
@@ -616,7 +616,7 @@
           <!-- PS identifié par son N°RPPS -->
           <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
           <!-- Profession / spécialité du PS -->
-          <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option médicale (SM)" />
+          <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie, opt médicale (SM)" />
           <!-- Adresse du PS-->
           <addr>
             <houseNumber>4</houseNumber>
@@ -681,7 +681,7 @@
       <!-- [0..*] Identifiant local de la RCP -->
       <id root="1.2.3.4.567.8.9.10" extension="54679" />
       <!-- Type de prise en charge -->
-      <code code="VR" displayName="Virtuelle" codeSystem="2.16.840.1.113883.5.4" />
+      <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4" />
       <!-- Date de la RCP -->
       <effectiveTime>
         <low value="20190218" />
@@ -2114,7 +2114,7 @@
             <assignedAuthor>
               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
               <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="RPPS"
-                displayName="Médecin - Oncologie option médicale (SM)"/>
+                displayName="Médecin - Oncologie, opt médicale (SM)"/>
               <addr>
                 <houseNumber>4</houseNumber>
                 <streetName>Rue Larrey</streetName>
@@ -2337,7 +2337,7 @@
               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
               <!-- Profession / Spécialité du PS -->
               <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-                displayName="Médecin - Oncologie option médicale (SM)"/>
+                displayName="Médecin - Oncologie, opt médicale (SM)"/>
               <!-- Adresse du PS -->
               <addr>
                 <houseNumber>4</houseNumber>
@@ -2586,7 +2586,7 @@
               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
               <!-- Profession / Spécialité du PS -->
               <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-                displayName="Médecin - Oncologie option médicale (SM)"/>
+                displayName="Médecin - Oncologie, opt médicale (SM)"/>
               <!-- Adresse du PS -->
               <addr>
                 <houseNumber>4</houseNumber>
