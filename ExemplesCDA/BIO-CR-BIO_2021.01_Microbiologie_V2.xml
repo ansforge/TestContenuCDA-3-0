@@ -439,7 +439,7 @@
   <componentOf>
     <encompassingEncounter>
       <id root="34853F75-0392-4897-A039-01F1C022CBDA"/>
-      <code code="AMB" displayName="ambulatoire" codeSystem="2.16.840.1.113883.5.4" />
+      <code code="AMB" displayName="Ambulatoire (hors établissement)" codeSystem="2.16.840.1.113883.5.4" />
       <effectiveTime>
         <low value="202101040735+0100" />
       </effectiveTime>

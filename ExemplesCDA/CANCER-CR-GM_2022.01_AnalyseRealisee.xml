@@ -521,7 +521,7 @@
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801101201301" />
       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-        displayName="Médecin - Oncologie option médicale (SM)"/>
+        displayName="Médecin - Oncologie, opt médicale (SM)"/>
       <addr>
         <houseNumber>4</houseNumber>
         <streetName>Rue Larrey</streetName>
@@ -561,7 +561,7 @@
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="802102202302" />
       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-        displayName="Médecin - Oncologie option médicale (SM)"/>
+        displayName="Médecin - Oncologie, opt médicale (SM)"/>
       <addr>
         <houseNumber>4</houseNumber>
         <streetName>Rue Larrey</streetName>
@@ -604,7 +604,7 @@
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5"
-        displayName="Médecin - Oncologie option médicale (SM)"/>
+        displayName="Médecin - Oncologie, opt médicale (SM)"/>
       <addr>
         <houseNumber>4</houseNumber>
         <streetName>Rue Larrey</streetName>
@@ -699,7 +699,7 @@
   <componentOf>
     <encompassingEncounter>
       <!-- Type de prise en charge -->
-      <code code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4" />
+      <code code="AMB" displayName="Ambulatoire (hors établissement)" codeSystem="2.16.840.1.113883.5.4" />
       <effectiveTime>
         <low value="201801230730" />
         <high value="201801230930" />
@@ -2119,7 +2119,7 @@
                     <list>
                       <!-- Mutation avec impact sur une classe de thérapie ciblée -->
                       <item>Présence de la mutation <content ID="Variant" styleCode="Bold">c.2573T&gt;G</content> du gène
-                        <content ID="Gene" styleCode="Bold">EGFR</content> conférant à une <content ID="Impact_mut" styleCode="Bold">Sensibilité</content> à la classe des <content ID="ClasseTherapie" styleCode="Bold">inhibiteurs de la protéine kinase</content>.<br /></item>                      
+                        <content ID="Gene" styleCode="Bold">EGFR</content> conférant à une <content ID="Impact_mut" styleCode="Bold">Sensibilité</content> à la classe des <content ID="ClasseTherapie" styleCode="Bold">inhibiteurs de protéines kinases</content>.<br /></item>                      
                       <!-- Mutation à discuter en staff moléculaire -->
                       <item>Présence d'une mutation du (des) gène(s) <content ID="Gene3" styleCode="Bold">MET</content> à
                         discuter en staff moléculaire.<br /></item>
@@ -2271,7 +2271,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA"/>
                       <!-- Classe de thérapie ciblée -->
-                      <value xsi:type="CD" code="L01E" displayName="Inhibiteurs de la protéine kinase" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
+                      <value xsi:type="CD" code="L01E" displayName="inhibiteurs de protéines kinases" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
                     </observation>
                   </entryRelationship>
                 </observation>
