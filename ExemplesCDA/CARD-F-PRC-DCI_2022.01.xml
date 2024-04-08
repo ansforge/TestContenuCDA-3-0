@@ -316,7 +316,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.213.1.1.9" extension="11223344" assigningAuthorityName="Hôpital des papillons" />
-          <code code="SA21" displayName="Etab. Hébergt Réadaptation" codeSystem="1.2.250.1.71.4.2.4">
+          <code code="SA21" displayName="Etablissement d'hébergement et de réadaptation" codeSystem="1.2.250.1.71.4.2.4">
           </code>
         </healthCareFacility>
       </location>
@@ -405,7 +405,7 @@
                   <effectiveTime>
                     <low value="19850512" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I47.2" displayName="Tachycardie Ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <value xsi:type="CD" code="I47.2" displayName="Tachycardie ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText>
                       <reference value="avk0027" />
                     </originalText>
@@ -477,7 +477,7 @@
                                  voie veineuse transcutanée</content>
                   </td>
                   <td>
-                    <content ID="def0002">Tachycardie Ventriculaire</content>
+                    <content ID="def0002">Tachycardie ventriculaire</content>
                   </td>
                   <td>Clinique Moulinsart</td>
                   <td>1 rue du château 41700 - Cheverny</td>
@@ -492,7 +492,7 @@
                                  gauche par voie veineuse transcutanée</content>
                   </td>
                   <td>
-                    <content ID="def0004">Tachycardie Ventriculaire</content>
+                    <content ID="def0004">Tachycardie ventriculaire</content>
                   </td>
                   <td>Clinique Bonséjour</td>
                   <td>17 rue du Chat qui pêche - 75005 PARIS</td>
@@ -543,7 +543,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.36"/>
                   <id root="E4E334D4-7EC6-408B-B608-D1CFFF90A97C" />
-                  <code code="I47.2" displayName="Tachycardie Ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <code code="I47.2" displayName="Tachycardie ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText mediaType="text/xml">
                       <reference value="#def0002" />
                     </originalText>
@@ -636,7 +636,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.36"/>
                   <id root="E4E334D4-7EC6-408B-B608-D1CFFF90A97C" />
-                  <code code="I47.2" displayName="Tachycardie Ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <code code="I47.2" displayName="Tachycardie ventriculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText mediaType="text/xml">
                       <reference value="#def0004" />
                     </originalText>
@@ -1678,7 +1678,7 @@
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS  -->
                     <code code="J01030101"
-                      displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE"
+                      displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" >
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->
@@ -2000,7 +2000,7 @@
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <!-- Valeur issue du JDV_UFCV_MatImpl_CISIS -->
-                    <code code="J01030102" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE"
+                    <code code="J01030102" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE (LVAD)"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#DM-01"/></originalText>
                       <!--Marque-->

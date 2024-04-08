@@ -325,7 +325,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.213.1.1.9" extension="11223344" assigningAuthorityName="Hôpital des papillons" />
-          <code code="SA21" displayName="Etab. Hébergt Réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA21" displayName="Etablissement d'hébergement et de réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
         </healthCareFacility>
       </location>
     </encompassingEncounter>
@@ -365,7 +365,7 @@
                 <tr>
                   <td>15/07/1999</td>
                   <td>
-                    <content ID="avk0027">Bloc auriculo-ventriculaire complet</content>
+                    <content ID="avk0027">Bloc auriculoventriculaire complet</content>
                   </td>
                 </tr>
                 <tr>
@@ -414,7 +414,7 @@
                   <effectiveTime>
                     <low value="19990715" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I44.2" displayName="Bloc auriculo-ventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <value xsi:type="CD" code="I44.2" displayName="Bloc auriculoventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText>
                       <reference value="avk0027" />
                     </originalText>
@@ -488,7 +488,7 @@
                                  gauche par voie veineuse transcutanée</content>
                   </td>
                   <td>
-                    <content ID="psc0002">Bloc auriculo-ventriculaire complet</content>
+                    <content ID="psc0002">Bloc auriculoventriculaire complet</content>
                   </td>
                   <td>Clinique Bonséjour</td>
                   <td>17 rue du Chat qui pêche - 75005 PARIS</td>
@@ -590,7 +590,7 @@
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
-                  <value xsi:type="CE" code="I44.2" displayName="Bloc auriculo-ventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
+                  <value xsi:type="CE" code="I44.2" displayName="Bloc auriculoventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
                 </observation>
               </entryRelationship>
             </procedure>
@@ -661,7 +661,7 @@
                     <content ID="psc0010">2.5 V</content>
                   </td>
                   <td>
-                    <content ID="psc0011">Simple Chambre AAI</content>
+                    <content ID="psc0011">STIMULATEURS CARDIAQUES IMPLANTABLES SIMPLE CHAMBRE</content>
                   </td>
                   <td>
                     <content ID="psc0012">Oui</content>
@@ -1062,7 +1062,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD" code="J010101" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="Simple Chambre AAI" />
+                  <value xsi:type="CD" code="J010101" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES SIMPLE CHAMBRE" />
                 </observation>
               </entryRelationship>
               <!-- Asservissement -->
@@ -1181,8 +1181,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="356EA8F4-034B-4ABE-9D8B-010EB5A131CD" />
-                  <!-- |ANS] Code à remplacer par SNOMED CT -->
-                  <code code="L0012" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Date dernier controle">
+                  <code code="85734-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date de la dernière évaluation">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0017" />
                     </originalText>
@@ -1617,7 +1616,7 @@
                   <!-- ID du matériel implanté (numéro de série)-->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="J01030101" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
+                    <code code="J01030101" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
                       <originalText><reference value="#psc0041"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">
@@ -1909,7 +1908,7 @@
                   <!-- ID du matériel implanté (numéro de série)-->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <code code="J01030102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE">
+                    <code code="J01030102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE (LVAD)">
                       <originalText><reference value="#psc0059"/></originalText>
                       <!--Marque-->
                       <translation code="C101668" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Marque" codeSystemName="NCIT">

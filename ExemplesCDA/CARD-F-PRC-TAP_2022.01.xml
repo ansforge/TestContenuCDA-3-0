@@ -325,7 +325,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.213.1.1.9" extension="11223344" assigningAuthorityName="Hôpital des papillons" />
-          <code code="SA21" displayName="Etab. Hébergt Réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA21" displayName="Etablissement d'hébergement et de réadaptation" codeSystem="1.2.250.1.71.4.2.4" />
         </healthCareFacility>
       </location>
     </encompassingEncounter>
@@ -373,19 +373,19 @@
                   <td></td>
                 </tr>                
                 <tr>
-                  <td><content ID="pb-03">Syndrome angineux</content></td>
+                  <td><content ID="pb-03">Angine de poitrine</content></td>
                   <td>22/08/2022</td>
                   <td><content ID="pb-03-endoprothese">Oui</content></td>
                   <td><content ID="pb-03-signe">S+T+ (Segment ST sus-décalé avec augmentation des troponines)</content></td>
                 </tr>                
                 <tr>
-                  <td><content ID="pb-04">Sténose de l'artère carotide</content></td>
+                  <td><content ID="pb-04">Occlusion et sténose de l'artère carotide</content></td>
                   <td>22/08/2022</td>
                   <td><content ID="pb-04-endoprothese">Oui</content></td>
                   <td></td>
                 </tr>                
                 <tr>
-                  <td><content ID="pb-05">Thrombose progressive des artères des membres inférieurs</content></td>
+                  <td><content ID="pb-05">Embolie et thrombose des artères des membres inférieurs</content></td>
                   <td>22/08/2022</td>
                   <td><content ID="pb-05-endoprothese">Oui</content></td>
                   <td><content ID="pb-05-stade">Classe NYHA III</content></td>                    
@@ -398,13 +398,13 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td><content ID="pb-07">Artéite mésentérique</content></td>
+                  <td><content ID="pb-07">Troubles vasculaires aigus de l'intestin</content></td>
                   <td>22/08/2022</td>
                   <td><content ID="pb-07-endoprothese">Oui</content></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><content ID="pb-08">Occlusion et thrombose de l'artère rénale</content></td>
+                  <td><content ID="pb-08">Ischémie et infarctus du rein</content></td>
                   <td>22/08/2022</td>
                   <td><content ID="pb-08-endoprothese">Oui</content></td>
                   <td></td>
@@ -456,7 +456,7 @@
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="G45.9" displayName="Accident ischémique cérébral transitoire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-01" />
                     </originalText>
@@ -501,7 +501,7 @@
                   <effectiveTime xsi:type="IVL_TS">
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="I64" displayName="Accident cérébrovasculaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" >
+                  <value xsi:type="CD" code="I64" displayName="Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" >
                     <originalText mediaType="text/xml">
                       <reference value="#pb-02" />
                     </originalText>
@@ -510,7 +510,7 @@
               </entryRelationship>
             </act>
           </entry>
-          <!-- Entrée FR-Liste-des-problemes : Syndrome angineux -->
+          <!-- Entrée FR-Liste-des-problemes : Angine de poitrine -->
           <entry>
             <act classCode="ACT" moodCode="EVN">              
               <!-- Conformité CCD Problem Act  -->
@@ -528,7 +528,7 @@
                 <low nullFlavor="UNK" />
                 <high nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Entrée FR-Probleme : Syndrome angineux -->
+              <!-- Entrée FR-Probleme : Angine de poitrine -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité CCD Problem Observation -->
@@ -549,7 +549,7 @@
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I20.9" displayName="Syndrome angineux" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I20.9" displayName="Angine de poitrine, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-03" />
                     </originalText>
@@ -603,7 +603,7 @@
               </entryRelationship>
             </act>
           </entry>
-          <!-- Entrée FR-Liste-des-problemes : Sténose de l'artère carotide -->
+          <!-- Entrée FR-Liste-des-problemes : Occlusion et sténose de l'artère carotide -->
           <entry>
             <act classCode="ACT" moodCode="EVN">              
               <!-- Conformité CCD Problem Act  -->
@@ -621,7 +621,7 @@
                 <low nullFlavor="UNK" />
                 <high nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Entrée FR-Probleme : Sténose de l'artère carotide -->
+              <!-- Entrée FR-Probleme : Occlusion et sténose de l'artère carotide -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité CCD Problem Observation -->
@@ -642,7 +642,7 @@
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I65.2" displayName="Sténose de l'artère carotide" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I65.2" displayName="Occlusion et sténose de l'artère carotide" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-04" />
                     </originalText>
@@ -671,7 +671,7 @@
               </entryRelationship>                         
             </act>
           </entry>
-          <!-- Entrée FR-Liste-des-problemes : Thrombose progressive des artères des membres inférieurs -->
+          <!-- Entrée FR-Liste-des-problemes : Embolie et thrombose des artères des membres inférieurs -->
           <entry>
             <act classCode="ACT" moodCode="EVN">              
               <!-- Conformité CCD Problem Act  -->
@@ -689,7 +689,7 @@
                 <low nullFlavor="UNK" />
                 <high nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Entrée FR-Probleme : Thrombose progressive des artères des membres inférieurs -->
+              <!-- Entrée FR-Probleme : Embolie et thrombose des artères des membres inférieurs -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité CCD Problem Observation -->
@@ -710,7 +710,7 @@
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I74.3" displayName="Thrombose progressive des artères des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I74.3" displayName="Embolie et thrombose des artères des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-05">
                       </reference>
@@ -802,7 +802,7 @@
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I74.4" displayName="Embolie et thrombose des artères distales"
+                  <value xsi:type="CD" code="I74.4" displayName="Embolie et thrombose des artères distales, sans précision"
                          codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-06" />
@@ -832,7 +832,7 @@
               </entryRelationship>              
             </act>
           </entry>
-          <!-- Entrée FR-Liste-des-problemes : Artérite mésentérique -->
+          <!-- Entrée FR-Liste-des-problemes : Troubles vasculaires aigus de l'intestin -->
           <entry>
             <act classCode="ACT" moodCode="EVN">              
               <!-- Conformité CCD Problem Act  -->
@@ -850,7 +850,7 @@
                 <low nullFlavor="UNK" />
                 <high nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Entrée FR-Probleme : Artérite mésentérique -->
+              <!-- Entrée FR-Probleme : Troubles vasculaires aigus de l'intestin -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité CCD Problem Observation -->
@@ -870,7 +870,7 @@
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="K55.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" displayName="Artérite mésentérique">
+                  <value xsi:type="CD" code="K55.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" displayName="Troubles vasculaires aigus de l'intestin">
                     <originalText>
                       <reference value="#pb-07" />
                     </originalText>
@@ -899,7 +899,7 @@
               </entryRelationship>
             </act>
           </entry>          
-          <!-- Entrée FR-Liste-des-problemes : Occlusion et thrombose de l'artère rénale -->
+          <!-- Entrée FR-Liste-des-problemes : Ischémie et infarctus du rein -->
           <entry>
             <act classCode="ACT" moodCode="EVN">              
               <!-- Conformité CCD Problem Act  -->
@@ -917,7 +917,7 @@
                 <low nullFlavor="UNK" />
                 <high nullFlavor="UNK" />
               </effectiveTime>
-              <!-- Entrée FR-Probleme : Occlusion et thrombose de l'artère rénale -->
+              <!-- Entrée FR-Probleme : Ischémie et infarctus du rein -->
               <entryRelationship typeCode="SUBJ" inversionInd="false">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité CCD Problem Observation -->
@@ -937,7 +937,7 @@
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="N28.0" displayName="Occlusion et thrombose de l'artère rénale"
+                  <value xsi:type="CD" code="N28.0" displayName="Ischémie et infarctus du rein"
                          codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" >
                     <originalText>
                       <reference value="#pb-08" />
@@ -1799,7 +1799,7 @@
               <tbody>
                 <tr>
                   <td>
-                    <content ID="tap0028">ofloxacin</content>
+                    <content ID="tap0028">ofloxacine</content>
                   </td>
                   <td>
                     <content ID="tap0029">Urticaire</content>
@@ -1863,7 +1863,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="J01MA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ofloxacin">
+                        <code code="J01MA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ofloxacine">
                           <originalText>
                             <reference value="#tap0028" />
                           </originalText>
@@ -2092,7 +2092,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.36"/>
                   <id root="B92653B6-AAE7-42C6-922B-89474EE4DF67" />
-                  <code code="G45.9" displayName="Accident Ischémique Cérébral Transitoire"
+                  <code code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"/>               
                 </act>
               </entryRelationship>

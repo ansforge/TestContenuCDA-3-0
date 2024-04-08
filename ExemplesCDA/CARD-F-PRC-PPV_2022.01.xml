@@ -316,7 +316,7 @@
   <componentOf>
     <encompassingEncounter>
       <!-- Type de prise en charge -->
-      <code code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode" />
+      <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode" />
       <!-- Date de la prise en charge -->
       <effectiveTime>
         <low value="20200318115500+0100" />
@@ -328,7 +328,7 @@
           <!-- PS identifié par son N°RPPS -->
           <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
           <!-- Profession / spécialité du PS -->
-          <code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Qualifié en Médecin Générale (SM)" />
+          <code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Qualifié en Médecine Générale (SM)" />
           <!-- Adresse du PS-->
           <addr>
             <houseNumber>20</houseNumber>
@@ -462,7 +462,7 @@
                   <effectiveTime>
                     <low value="20060620" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="G45.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" displayName="Accident ischémique cérébral transitoire">
+                  <value xsi:type="CD" code="G45.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" displayName="Accident ischémique cérébral transitoire, sans précision">
                     <originalText>
                       <reference value="#avk0027" />
                     </originalText>
@@ -560,7 +560,7 @@
                   <effectiveTime>
                     <low value="19990912" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="E78.2" displayName="Insuffisance Aortique Sévère" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+                  <value xsi:type="CD" code="E78.2" displayName="Hyperlipidémie mixte" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                     <originalText>
                       <reference value="#avk0029" />
                     </originalText>
@@ -604,7 +604,7 @@
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20000328" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="G45.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" displayName="Accident Ischémique Cérébral Transitoire, SP">
+                  <value xsi:type="CD" code="G45.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" displayName="Accident ischémique cérébral transitoire, sans précision">
                     <originalText mediaType="text/xml">
                       <reference value="#ppv0006" />
                     </originalText>
@@ -1131,7 +1131,7 @@
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
-                  <value xsi:type="CE" code="E78.2" displayName="Insuffisance Aortique Sévère" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
+                  <value xsi:type="CE" code="E78.2" displayName="Hyperlipidémie mixte" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
                 </observation>
               </entryRelationship>
             </procedure>
@@ -1255,7 +1255,7 @@
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <!-- valeur issue du JDV_UFCV_TypVal_CISIS (1.2.250.1.213.1.1.4.2.16) -->
-                  <value xsi:type="CD" code="P070301030101" displayName="STENTED BIOLOGICAL AORTIC VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>                   
+                  <value xsi:type="CD" code="P070301030101" displayName="VALVES AORTIQUES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>                   
                 </observation>
               </entryRelationship>
               <!-- Composant -->
