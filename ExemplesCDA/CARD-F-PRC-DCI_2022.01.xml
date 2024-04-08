@@ -1294,7 +1294,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.1" />
                   <id root="9AEBF56B-28D8-40C6-B73A-FCD2879C2CF5" />
                   <!-- [ANS] code à remplacer par SNOMED CT  -->
-                  <code code="L0012" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Date dernier controle">
+                  <code code="85734-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date de la dernière évaluation">
                     <originalText mediaType="text/xml">
                       <reference value="#def0022" />
                     </originalText>
