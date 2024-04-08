@@ -1014,8 +1014,8 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
                       <!-- valeur issue du JDV_ModeAccouchement_CISIS (1.2.250.1.213.1.1.5.735) -->
-                      <value xsi:type="CD" code="MED-217" displayName="Accouchement par voie basse non instrumentale" 
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                      <value xsi:type="CD" code="700000006" displayName="voie basse spontanée" 
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </observation>
                   </component>
                   <!-- [1..1] FR-Observation-sur-la-grossesse : Poids à la naissance  -->
