@@ -4981,8 +4981,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_AdditionGrandeur_CISIS(1.2.250.1.213.1.1.5.628) -->
-                          <value xsi:type="CD" code="GEN-270" displayName="faible" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                          
+                          <value xsi:type="CD" code="62482003" displayName="bas" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -5011,8 +5010,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_AdditionGrandeur_CISIS(1.2.250.1.213.1.1.5.628) -->
-                          <value xsi:type="CD" code="GEN-270" displayName="faible" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                          
+                          <value xsi:type="CD" code="62482003" displayName="bas" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -5868,8 +5866,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_AdditionGrandeur_CISIS(1.2.250.1.213.1.1.5.628) -->
-                          <value xsi:type="CD" code="GEN-270" displayName="faible" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                          
+                          <value xsi:type="CD" code="62482003" displayName="bas" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -5898,8 +5895,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_AdditionGrandeur_CISIS(1.2.250.1.213.1.1.5.628) -->
-                          <value xsi:type="CD" code="GEN-270" displayName="faible" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                          
+                          <value xsi:type="CD" code="62482003" displayName="bas" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
