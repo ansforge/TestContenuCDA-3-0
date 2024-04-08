@@ -133,7 +133,7 @@
       <!-- Identiant RPPS du PS -->
       <id root="1.2.250.1.71.4.2.1" extension="518003502400041/1.2.250.1.215.1.2"/>
       <code code="ALIM_AM"
-        displayName="Alimentation automatique à partir du Système d'Information de l'Assurance Maladie"
+        displayName="Alimentation auto à partir du SI de l'Ass Maladie"
         codeSystem="1.2.250.1.213.1.1.4.6"/>      
       <addr nullFlavor="NASK"/>
       <telecom nullFlavor="NASK"/>

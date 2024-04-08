@@ -341,13 +341,13 @@
    <!-- Informations sur la prise en charge -->
    <componentOf>
       <encompassingEncounter>
-         <code code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="hospitalisation"/>
+         <code code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="Hospitalisation (établissement, y compris HAD)"/>
          <effectiveTime>
             <high value="202108031136+0100"/>
          </effectiveTime>
          <location>
             <healthCareFacility>
-               <code code="SA03" displayName="Etablissement Privé PSPH"
+               <code code="SA03" displayName="Etablissement privé PSPH"
                   codeSystem="1.2.250.1.71.4.2.4">
                </code>
             </healthCareFacility>
@@ -1393,7 +1393,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="Q99.9" displayName="Anomalies chromosomiques, non classées ailleurs" 
+                           <value xsi:type="CD" code="Q99.9" displayName="Anomalie chromosomique, sans précision" 
                               codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                               <originalText>
                                  <reference value="#aberration-chromosomique"/>
@@ -1713,7 +1713,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="E84" displayName="Fibrose kystique" 
+                           <value xsi:type="CD" code="E84" displayName="Fibrose kystique du pancréas" 
                               codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                               <originalText>
                                  <reference value="#mucoviscidose"/>                                 
@@ -4360,7 +4360,7 @@
                      <!-- Conformité FR-Rencontre (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.58" />
                      <id root="EA461BC2-E7FA-4694-96CE-4B4561BBDD82"/>
-                     <code code="AMB" displayName="Ambulatoire"
+                     <code code="AMB" displayName= "Ambulatoire (hors établissement)"
                         codeSystem="2.16.840.1.113883.5.4">
                         <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>
@@ -4418,7 +4418,7 @@
                      <!-- Conformité FR-Rencontre (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.58" />
                      <id root="958940F6-BA68-423C-A435-F8FB84497C8F"/>
-                     <code code="AMB" displayName="Ambulatoire"
+                     <code code="AMB" displayName= "Ambulatoire (hors établissement)"
                         codeSystem="2.16.840.1.113883.5.4">
                         <!-- rencontre : valeur issue du JDV_Rencontre_CSE_CISIS (1.2.250.1.213.1.1.5.708) -->
                         <qualifier>

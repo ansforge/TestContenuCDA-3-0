@@ -260,7 +260,7 @@
 			<!-- PS identifié par son N°RPPS -->
 			<id root="1.2.250.1.71.4.2.1" extension="801234545872"/>
 			<code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="RPPS"
-				displayName="Médecin - Qualifié en Médecin Générale (SM)"/>
+				displayName="Médecin - Qualifié en Médecine Générale (SM)"/>
 			<addr>
 				<houseNumber>38</houseNumber>
 				<streetName>Rue Jean Moulin</streetName>
@@ -335,7 +335,7 @@
 					<id root="1.2.250.1.71.4.2.1" extension="801234545872"/>
 					<code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5"
 						codeSystemName="RPPS"
-						displayName="Médecin - Qualifié en Médecin Générale (SM)"/>
+						displayName="Médecin - Qualifié en Médecine Générale (SM)"/>
 					<addr nullFlavor="NASK"/>
 					<telecom nullFlavor="NASK"/>
 					<assignedPerson>
@@ -368,7 +368,7 @@
 	<!-- Contexte de la prise en charge -->
 	<componentOf>
 		<encompassingEncounter>
-			<code code="IMP" displayName="Consultation interne à la structure de soins"
+			<code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)"
 				codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActEncounterCode"/>
 			<effectiveTime>
 				<low value="20200327153500"/>
@@ -380,7 +380,7 @@
 					<id root="1.2.250.1.71.4.2.1" extension="801234545872"/>
 					<code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5"
 						codeSystemName="RPPS"
-						displayName="Médecin - Qualifié en Médecin Générale (SM)"/>
+						displayName="Médecin - Qualifié en Médecine Générale (SM)"/>
 					<addr>
 						<houseNumber>38</houseNumber>
 						<streetName>Rue Jean Moulin</streetName>

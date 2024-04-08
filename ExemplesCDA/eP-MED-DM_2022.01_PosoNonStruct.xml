@@ -481,7 +481,7 @@
   <!-- Contexte de la prise en charge -->
   <componentOf>
     <encompassingEncounter>
-      <code code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4"/>
+      <code code="AMB" displayName="Ambulatoire (hors établissement)" codeSystem="2.16.840.1.113883.5.4"/>
       <effectiveTime>
         <high value="20211201093000+0100"/>
       </effectiveTime>
