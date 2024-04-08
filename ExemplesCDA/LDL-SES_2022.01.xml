@@ -527,7 +527,7 @@
                             <text><reference value="modaliteE"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime value="20181029"/>
-                            <value xsi:type="CE" code="107724000" displayName="transfert du patient" 
+                            <value xsi:type="CE" code="4563007" displayName="hospitalisation, transfert d'un autre hôpital ou établissement de santé" 
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             <author>
                                 <time value="20191203133000+0100"/>
