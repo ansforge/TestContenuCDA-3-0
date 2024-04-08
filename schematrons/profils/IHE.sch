@@ -164,6 +164,7 @@
     <include href="../include/sections/S_head.sch"/>
     <include href="../include/sections/S_vessels.sch"/>
     <include href="../include/sections/S_foreignTravel.sch"/>
+    <include href="../include/sections/S_FunctionnalStatusIPS_fr.sch"/>
     
     <!-- OPH-BRE -->
     <include href="../include/sections/S_examenPhysiqueOculaire.sch"/>
@@ -413,6 +414,7 @@
         <active pattern="S_head"/>
         <active pattern="S_vessels"/>
         <active pattern="S_foreignTravel"/>
+        <active pattern="S_FunctionnalStatusIPS_fr"/>
         
         <!-- DICOM -->
         <active pattern="S_DICOM-acteImagerie"/>
