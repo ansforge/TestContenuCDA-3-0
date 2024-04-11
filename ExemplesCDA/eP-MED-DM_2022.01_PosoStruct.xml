@@ -757,8 +757,8 @@
                         <denominator xsi:type="PQ" value="1"/>
                       </pharm:quantity>                    
                       <pharm:ingredient classCode="MMAT" determinerCode="KIND">
-                        <pharm:code code="N02BE01" displayName="paracetamol" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
-                        <pharm:name>paracetamol</pharm:name>
+                        <pharm:code code="100000090270" displayName="Paracetamol" codeSystem="2.16.840.1.113883.3.6905.2" codeSystemName="SMS"/>
+                        <pharm:name>Paracetamol</pharm:name>
                       </pharm:ingredient>
                     </pharm:ingredient>
                   </manufacturedMaterial>
