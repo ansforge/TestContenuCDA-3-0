@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="04c6edaf-43a3-49f7-8559-85f7365929a5">
-    <gvr:validationOverview validationDateTime="2026-01-03T08:09:20.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="48a3a3f3-54fe-49d9-815a-e3603ed89994">
+    <gvr:validationOverview validationDateTime="2024-11-04T13:03:36.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="16957" numberOfErrors="1" numberOfWarnings="21"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="16957" numberOfErrors="2" numberOfWarnings="21"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,12 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="16955" numberOfErrors="1" numberOfWarnings="21"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="16955" numberOfErrors="2" numberOfWarnings="21"/>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(ANEST-CR-ANEST): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
+            <gvr:formalExpression>(not(//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:procedure/hl7:entryRelationship/hl7:observation[hl7:code/@code='GEN-023'])) or (every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:procedure/hl7:entryRelationship/hl7:observation[hl7:code/@code='GEN-023']/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/ANEST-CR-ANEST_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.494-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(FR-Statut-clinique-du-patient): element hl7:value[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/ANEST-CR-ANEST_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.4.2.283.1-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] is mandatory [min 1x].</gvr:constraintDescription>
             <gvr:formalExpression>count(hl7:value[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/ANEST-CR-ANEST_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.4.2.283.1-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)]) &gt;= 1</gvr:formalExpression>

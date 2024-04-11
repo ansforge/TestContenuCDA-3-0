@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="1d8c9694-4fbc-4aff-902e-8cf00edd6e15">
-    <gvr:validationOverview validationDateTime="2026-01-03T08:11:50.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="f4d842e3-5587-472b-a469-421808f9df83">
+    <gvr:validationOverview validationDateTime="2024-11-04T13:10:25.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="13074" numberOfErrors="2" numberOfWarnings="5"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="13074" numberOfErrors="3" numberOfWarnings="5"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="13072" numberOfErrors="2" numberOfWarnings="5"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="13072" numberOfErrors="3" numberOfWarnings="5"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, La latéralité de l'ataxie, du trouble sensoriel, du déficit moteur et du trouble visuel doivent provenir du JDV : JDV_lateralite-CISIS (1.2.250.1.213.1.1.5.160)</gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:value/@code='85972008' or hl7:value/@code='G25.9' or hl7:value/@code='R27.0' or hl7:value/@code='H53.9']/hl7:targetSiteCode/hl7:qualifier/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.160-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
@@ -28,6 +28,11 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, le type d'acte doit provenir du JDV :  JDV_typeIntervention-CISIS (1.2.250.1.213.1.1.5.168) </gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.3.12']/hl7:entry/hl7:procedure/hl7:code/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.168-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-AUNV): Dans le document AVC-AUNV, si infarctus cérébral est à "Postérieur" les valeurs sont issues du jeu de valeurs JDV_arterePost-CISIS (1.2.250.1.213.1.1.5.209)</gvr:constraintDescription>
+            <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation/hl7:entryRelationship/hl7:observation[hl7:value/@code='70382005']/hl7:targetSiteCode/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-AUNV_2022.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.209-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
