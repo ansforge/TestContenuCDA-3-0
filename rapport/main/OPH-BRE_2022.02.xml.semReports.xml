@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="e9d20b66-0780-4c32-a1cf-6192006cfa70">
-    <gvr:validationOverview validationDateTime="2024-04-11T15:44:24.682Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="2681b9cf-eec3-44dc-b1f6-591b638e5157">
+    <gvr:validationOverview validationDateTime="2024-12-04T09:32:11.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
-        <gvr:validationServiceName>Unknown</gvr:validationServiceName>
-        <gvr:validationServiceVersion>Unknown</gvr:validationServiceVersion>
-        <gvr:validatorID>Unknown</gvr:validatorID>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.6.1-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>Validation FTS(Beta)</gvr:validatorID>
+        <gvr:validatorVersion>Unknown</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="1" numberOfWarnings="0"/>
-    <gvr:subReport name="Syntactic validation" subReportResult="FAILED">
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="3" numberOfErrors="1" numberOfWarnings="0"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="1" numberOfWarnings="0"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>An error occurred during the validation : I/O error reported by XML parser processing https://smt.esante.gouv.fr/fhir//CodeSystem?identifier=urn:oid:2.16.840.1.113883.6.1&amp;_format=xml: Connection timed out (Connection timed out)</gvr:constraintDescription>
-            <gvr:locationInValidatedObject> line: 0 column: 0</gvr:locationInValidatedObject>
+            <gvr:constraintDescription>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA41"  &lt;br /&gt; 
+	  DisplayName : "Autre établissement du domaine social ou médico-social"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	  &lt;br /&gt; 
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and not(doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:location[namespace-uri()='urn:hl7-org:v3'][1]/*:healthCareFacility[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>

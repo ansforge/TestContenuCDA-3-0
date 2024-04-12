@@ -1,8 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseb421b471-f70d-4e2f-96c2-7eb6b20c85dc" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Unknown-Unknown : FAILED<br/>Nombre d'erreurs : 1<br/>Nombre de warnings :  0<br/>Temps d'execution :  130<br/>Nombre de règles:  1</button></h2><div id="panelsStayOpen-collapseb421b471-f70d-4e2f-96c2-7eb6b20c85dc" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
+<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1bd1e9f9-9674-4003-a4da-3b7efbf5af15" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-Validation FTS(Beta) : FAILED<br/>Nombre d'erreurs : 1<br/>Nombre de warnings :  3<br/>Temps d'execution :  1<br/>Nombre de règles:  6</button></h2><div id="panelsStayOpen-collapse1bd1e9f9-9674-4003-a4da-3b7efbf5af15" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
     
     
-    <tr><td>Syntactic validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
+    <tr><td>Syntactic validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
         
-        <tr><td>ERROR</td><td class=".small"><small>An error occurred during the validation : I/O error reported by XML parser processing https://smt.esante.gouv.fr/fhir//CodeSystem?identifier=urn:oid:2.16.840.1.113883.6.1&amp;_format=xml: Connection timed out (Connection timed out)<br/> line: 0 column: 0</small></td></tr>
+    </table></td></tr>
+    <tr><td>Schema validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Object Checker validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
+        
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA17"  &lt;br /&gt; 
+	  DisplayName : "Etablissement pour personnes âgées"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "Q021003"&lt;br /&gt; 
+	  DisplayName : "LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)"&lt;br /&gt; 
+	  Valeur dans le FTS: "LUNETTES PR�TES � PORTER (OU LUNETTES MONT�ES)"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "P0102"&lt;br /&gt; 
+	  DisplayName : "PROTHÈSES DENTAIRES"&lt;br /&gt; 
+	  Valeur dans le FTS: "PROTH�SES DENTAIRES"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "P0102"&lt;br /&gt; 
+	  DisplayName : "PROTHÈSES DENTAIRES"&lt;br /&gt; 
+	  Valeur dans le FTS: "PROTH�SES DENTAIRES"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][4]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
     </table></td></tr>
 </tbody></table></div></div></div>
