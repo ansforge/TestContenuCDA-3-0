@@ -781,7 +781,7 @@
                     <templateId root="1.2.250.1.213.1.1.2.158"/>
                     <!-- Conformité FR-Plan-de-soins-IMG-DA (CI-SIS) -->
                     <templateId root="1.2.250.1.213.1.1.2.158.3"/>
-                    <id root="fc21dc59-43d5-4bb0-acc7-3601784bfbc0"/>
+                    <id root="FC21DC59-43D5-4BB0-ACC7-3601784BFBC0"/>
                     <code code="18776-5" displayName="Plan de soins"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <title>Acte(s) d'imagerie demandé(s)</title>

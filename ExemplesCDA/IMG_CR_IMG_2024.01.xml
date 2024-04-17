@@ -1289,7 +1289,7 @@
                         <templateId root="1.2.840.10008.9.17" />
                         <!-- Conformité FR-DICOM-Serie-imagerie (CI-SIS) -->
                         <templateId root="1.2.250.1.213.1.1.3.156" />
-                        <id root="1.2.250.1.925.994044.27.123.1876360.001"/>
+                        <id root="1.2.250.1.925.994044.27.123.1876360.1"/>
                         <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                           <qualifier>
                             <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
@@ -1310,7 +1310,7 @@
                             <templateId root="1.2.840.10008.9.18" />
                             <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                             <templateId root="1.2.250.1.213.1.1.3.157" />
-                            <id root="1.2.250.1.925.994044.27.123.1876360.001.001"/>
+                            <id root="1.2.250.1.925.994044.27.123.1876360.1.1"/>
                             <!-- Valeur issue du JDV_SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                             <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                               codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
@@ -1770,7 +1770,7 @@
                       <td><content ID="ex-02-serie-01-modalite">CT tomodensitométrie</content></td>
                       <td><content ID="ex-02-serie-01-SOPInstance-01-class">
                           <linkHtml
-                            href="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.001.001 &amp;contentType=application/dicom">images examen 2</linkHtml>
+                            href="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.01 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.01.01 &amp;contentType=application/dicom">images examen 2</linkHtml>
                         </content>
                       </td>
                     </tr>                    
@@ -1798,7 +1798,7 @@
                       <templateId root="1.2.840.10008.9.17" />
                       <!-- Conformité FR-DICOM-Serie-imagerie (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.156" />
-                      <id root="1.2.250.1.925.994044.27.123.1876361.001"/>
+                      <id root="1.2.250.1.925.994044.27.123.1876361.1"/>
                       <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                         <qualifier>
                           <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
@@ -1819,7 +1819,7 @@
                           <templateId root="1.2.840.10008.9.18" />
                           <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                           <templateId root="1.2.250.1.213.1.1.3.157" />
-                          <id root="1.2.250.1.925.994044.27.123.1876361.001.001"/>
+                          <id root="1.2.250.1.925.994044.27.123.1876361.1.1"/>
                           <!-- Valeur issue du JDV_SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                           <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
@@ -1828,7 +1828,7 @@
                           <text mediaType="application/dicom">
                             <!-- référence ex-02-serie-01-SOPInstance-01 : url vers les images de l’examen -->
                             <reference
-                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.001.001"/>
+                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.01 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.01.01"/>
                           </text>
                           <effectiveTime value="20200823223232"/>
                         </observation>
@@ -2282,7 +2282,7 @@
                       <td><content ID="ex-03-serie-01-modalite">CT tomodensitométrie</content></td>
                       <td><content ID="ex-03-serie-01-SOPInstance-01-class">
                           <linkHtml
-                            href="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.001.001 &amp;contentType=application/dicom"
+                            href="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.1 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.1.1 &amp;contentType=application/dicom"
                             >images examen 3</linkHtml>
                         </content>
                       </td>
@@ -2311,7 +2311,7 @@
                       <templateId root="1.2.840.10008.9.17" />
                       <!-- Conformité FR-DICOM-Serie-imagerie (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.156" />
-                      <id root="1.2.250.1.925.994044.27.123.1876362.001"/>
+                      <id root="1.2.250.1.925.994044.27.123.1876362.1"/>
                       <code code="113015" displayName="Séries" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
                         <qualifier>
                           <name code="121139" displayName="Modalité" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/> 
@@ -2332,7 +2332,7 @@
                           <templateId root="1.2.840.10008.9.18" />
                           <!-- Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) -->
                           <templateId root="1.2.250.1.213.1.1.3.157" />
-                          <id root="1.2.250.1.925.994044.27.123.1876362.001.001"/>
+                          <id root="1.2.250.1.925.994044.27.123.1876362.1.1"/>
                           <!-- Valeur issue du JDV_SOPClass_CISIS (1.2.250.1.213.1.1.5.689) -->
                           <code code="1.2.840.10008.5.1.4.1.1.2" displayName="CT Image Storage"
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
@@ -2341,7 +2341,7 @@
                           <text mediaType="application/dicom">
                             <!-- référence ex-03-serie-01-SOPInstance-01 : url vers les images de l’examen -->
                             <reference
-                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.001.001"/>
+                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.1 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.1.1"/>
                           </text>
                           <effectiveTime value="20200823223232"/>
                         </observation>
