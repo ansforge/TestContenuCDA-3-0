@@ -85,8 +85,11 @@
          <patient classCode="PSN">
             <name>
                <!-- Nom et prénom(s) de naissance -->
-               <family qualifier="BR">DECOURCY</family>            
+               <family qualifier="BR">DECOURCY</family>
+               <!-- Prénoms de l’acte de naissance -->
                <given>Ruth Isabelle</given>
+               <!-- Premier prénom de l’acte de naissance -->
+               <given qualifier="BR">Ruth</given>
                <!-- Nom et prénom utilisés -->
                <family qualifier="CL">DECOURCY</family>
                <given qualifier="CL">Ruth</given>   

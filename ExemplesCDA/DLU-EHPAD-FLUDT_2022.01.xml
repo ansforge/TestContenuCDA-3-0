@@ -88,11 +88,15 @@
       <patient classCode="PSN">
         <name>
           <!-- Nom et prénom(s) de naissance -->
-          <family qualifier="BR">PAT-TROIS</family>
-          <given>DOMINIQUE</given>
+          <!-- Nom de l’acte de naissance -->
+          <family qualifier="BR">PAT-TROIS</family> 
+          <!-- Prénoms de l’acte de naissance -->
+          <given>DOMINIQUE MARIE-LOUISE</given>
+          <!-- Premier prénom de l’acte de naissance -->
+          <given qualifier="BR">DOMINIQUE</given>
           <!-- Nom et prénom utilisés -->
           <family qualifier="CL">PAT-TROIS</family>
-          <given qualifier="CL">DOMINIQUE</given>
+          <given qualifier="CL">DOMINIQUE</given>        
         </name>
         <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
         <birthTime value="19790328"/>

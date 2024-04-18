@@ -76,11 +76,15 @@
       <patient classCode="PSN">
         <name>
           <!-- Nom et prénom(s) de naissance -->
-          <family qualifier="BR">DECOURCY</family>            
-          <given>Léa</given>
+          <!-- Nom de l’acte de naissance -->
+          <family qualifier="BR">DECOURCY</family> 
+          <!-- Prénoms de l’acte de naissance -->
+          <given>Marie Jeanne Michelle</given>
+          <!-- Premier prénom de l’acte de naissance -->
+          <given qualifier="BR">Marie</given>
           <!-- Nom et prénom utilisés -->
           <family qualifier="CL">DECOURCY</family>
-          <given qualifier="CL">Léa</given>   
+          <given qualifier="CL">Marie</given> 
         </name>
         <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
         <birthTime value="20230425"/>

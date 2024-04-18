@@ -367,6 +367,9 @@
         <skos:notation>GEN-092.02.01</skos:notation>
     </rdf:Description>
     <rdf:Description>
+        <skos:notation>GEN-092.02.02</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
         <skos:notation>GEN-092.03</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -461,6 +464,9 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-092.04.22</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-092.04.23</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-092.05</skos:notation>
@@ -719,6 +725,12 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-163</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-164</skos:notation>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:notation>GEN-165</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>GEN-166</skos:notation>
@@ -1744,9 +1756,6 @@
         <skos:notation>MED-240</skos:notation>
     </rdf:Description>
     <rdf:Description>
-        <skos:notation>MED-241</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
         <skos:notation>MED-242</skos:notation>
     </rdf:Description>
     <rdf:Description>
@@ -1790,18 +1799,6 @@
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-259</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-260</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-261</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-262</skos:notation>
-    </rdf:Description>
-    <rdf:Description>
-        <skos:notation>MED-263</skos:notation>
     </rdf:Description>
     <rdf:Description>
         <skos:notation>MED-264</skos:notation>

@@ -91,8 +91,11 @@
             <c:name>
                 <c:prefix>MME</c:prefix>
                 <!-- Nom et prénom(s) de naissance -->
-                <c:family qualifier="BR">PAT-TROIS</c:family>            
-                <c:given>DOMINIQUE</c:given>
+                <c:family qualifier="BR">PAT-TROIS</c:family> 
+              <!-- Prénoms de l’acte de naissance -->
+              <c:given>DOMINIQUE MARIE-LOUISE</c:given>
+              <!-- Premier prénom de l’acte de naissance -->
+              <c:given qualifier="BR">DOMINIQUE</c:given>   
                 <!-- Nom et prénom utilisés -->
                 <c:family qualifier="CL">PAT-TROIS</c:family>
                 <c:given qualifier="CL">DOMINIQUE</c:given>        

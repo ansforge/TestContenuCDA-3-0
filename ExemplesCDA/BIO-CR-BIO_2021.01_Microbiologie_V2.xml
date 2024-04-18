@@ -74,11 +74,15 @@
       <!-- Identité du patient -->
       <patient classCode="PSN">
         <name>
-          <given qualifier="BR">DOMINIQUE</given>
-          <given>DOMINIQUE</given>
-          <family qualifier="BR">PAT-TROIS</family>
-          <family qualifier="SP">PAT-TROIS</family>
-          <family qualifier="CL">PAT-TROIS</family>
+          <!-- Nom et prénom(s) de naissance -->
+          <family qualifier="BR">DECOURCY</family>
+          <!-- Prénoms de l’acte de naissance -->
+          <given>Ruth Isabelle</given>
+          <!-- Premier prénom de l’acte de naissance -->
+          <given qualifier="BR">Ruth</given>
+          <!-- Nom et prénom utilisés -->
+          <family qualifier="CL">DECOURCY</family>
+          <given qualifier="CL">Ruth</given>   
         </name>
         <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1" />
         <birthTime value="19790328"/>

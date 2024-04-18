@@ -13,6 +13,8 @@
     17/12/20 : ANS : Suppression des contrôles de présence obligatoire des éléments « addr » et « telecom »
     17/12/20 : ANS : Ajout d'un contrôle sur « given/@qualifier» afin de tester les valeurs à respecter si l’élément existe.
     19/04/21 : ANS : Ajout d'un contrôle sur les valeurs possibles des éléments "given/@qualifier" et "family/@qualifier"
+    18/01/2024 : ANS : Suppression du contrôle sur le qualifier "SP" dans l'élément name/family.
+    18/04/2024 : ANS : Correction du contrôle sur le nom de naissance et le premier prénom de naissance qui sont obligatoire, si le matricule INS est présent.
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="recordTarget_fr">
@@ -44,16 +46,16 @@
         </assert>
         <assert test="(not(cda:id/@root='1.2.250.1.213.1.4.8') and not(cda:id/@root='1.2.250.1.213.1.4.9') and not(cda:id/@root='1.2.250.1.213.1.4.10') and not(cda:id/@root='1.2.250.1.213.1.4.11'))
             and cda:id/@extension
-            or (cda:patient/cda:name/cda:family/@qualifier
-            and cda:patient/cda:name/cda:given
+            or (cda:patient/cda:name/cda:family/@qualifier='BR'
+            and cda:patient/cda:name/cda:given/@qualifier='BR'
             and cda:patient/cda:birthTime
             and cda:patient/cda:administrativeGenderCode
             )">
-            [recordTarget_fr.sch] Erreur de conformité CI-SIS : Dans le cadre de l'INS, les traits de l'INS (Nom de naissance, premier prénom, date de naissance et sexe) sont obligatoires
+            [recordTarget_fr.sch] Erreur de conformité CI-SIS : Dans le cadre de l'INS, les traits de l'INS (Nom de naissance, premier prénom de l’acte de naissance, date de naissance et sexe) sont obligatoires
         </assert>
-        <assert test="cda:patient/cda:name/cda:family/@qualifier='BR' or cda:patient/cda:name/cda:family/@qualifier='SP' or cda:patient/cda:name/cda:family/@qualifier='CL'">
-            [recordTarget_fr.sch] Erreur de conformité CI-SIS : L'élément patient/name/family/@qualifier prend l'une des valeurs suivantes : "BR" pour le nom de famille
-            "SP" pour le nom d’usage
+        <assert test="cda:patient/cda:name/cda:family/@qualifier='BR'  or cda:patient/cda:name/cda:family/@qualifier='CL'">
+            [recordTarget_fr.sch] Erreur de conformité CI-SIS : L'élément patient/name/family/@qualifier prend l'une des valeurs suivantes : 
+            "BR" pour le nom de famille
             "CL" pour le nom utilisé (RNIV)
         </assert>
         <assert test="cda:patient/cda:name/cda:given/@qualifier='BR' or cda:patient/cda:name/cda:given/@qualifier='CL' or not(cda:patient/cda:name/cda:given/@qualifier)">
@@ -64,11 +66,10 @@
     </rule>
     <rule context="cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:patient/cda:name/cda:family">
         <assert test="@qualifier">
-            [recordTarget_fr.sch] Erreur de conformité CI-SIS : L'attribut @qualifier est obligatoire d'ans l'élément family
+            [recordTarget_fr.sch] Erreur de conformité CI-SIS : L'attribut @qualifier est obligatoire dans l'élément family
         </assert>
-        <assert test='@qualifier="BR" or @qualifier="CL" or @qualifier="SP"'>
+        <assert test='@qualifier="BR" or @qualifier="CL"'>
             [recordTarget_fr.sch] Erreur de conformité CI-SIS : L'élément patient/name/family/@qualifier prend l'une des valeurs suivantes : "BR" pour le nom de famille
-            "SP" pour le nom d’usage
             "CL" pour le nom utilisé (RNIV)
         </assert>
     </rule>
