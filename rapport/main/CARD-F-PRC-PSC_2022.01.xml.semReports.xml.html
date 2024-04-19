@@ -1,1 +1,69 @@
-Echec :  CARD-F-PRC-PSC_2022.01.xml(CARD-F-PRC-PSC_2022)
+<?xml version="1.0" encoding="UTF-8"?><div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gvr="http://validationreport.gazelle.ihe.net/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseebbe5d47-277f-45e3-9407-f3630a3342d1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Gazelle Schematron Validator-Validation FTS(Beta) : FAILED<br/>Nombre d'erreurs : 2<br/>Nombre de warnings :  4<br/>Temps d'execution :  1<br/>Nombre de règles:  8</button></h2><div id="panelsStayOpen-collapseebbe5d47-277f-45e3-9407-f3630a3342d1" class="accordion-collapse collapse "><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">résulat</th></tr></thead><tbody>
+    
+    
+    <tr><td>Syntactic validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Schema validation</td><td class=".small">PASSED<table class="table table-striped table-hover">
+        
+    </table></td></tr>
+    <tr><td>Object Checker validation</td><td class=".small">FAILED<table class="table table-striped table-hover">
+        
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.71.4.2.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "SA21"  &lt;br /&gt; 
+	  DisplayName : "Etablissement d'hébergement et de réadaptation"&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:location[namespace-uri()='urn:hl7-org:v3'][1]/*:healthCareFacility[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>ERROR</td><td class=".small"><small>
+	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
+	  CodeSystem : "2.16.840.1.113883.5.4" &lt;br /&gt; 
+	  CodeSystemName : "" &lt;br /&gt; 
+	  Code  : "ASSERTION"  &lt;br /&gt; 
+	  DisplayName : ""&lt;br /&gt; 
+	  system (SMT): "https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode"	  &lt;br /&gt; 
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "J0190010102"&lt;br /&gt; 
+	  DisplayName : "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE � FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "J01030101"&lt;br /&gt; 
+	  DisplayName : "DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)"&lt;br /&gt; 
+	  Valeur dans le FTS: "DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE (RVAD)"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "J0190010102"&lt;br /&gt; 
+	  DisplayName : "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE � FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+        <tr><td>WARNING</td><td class=".small"><small>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
+	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
+	  CodeSystemName : "EMDN" &lt;br /&gt; 
+	  Code  : "J0190010102"&lt;br /&gt; 
+	  DisplayName : "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE � FIXATION ACTIVE OU PASSIVE"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
+	 <br/>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</small></td></tr>
+    </table></td></tr>
+</tbody></table></div></div></div>
