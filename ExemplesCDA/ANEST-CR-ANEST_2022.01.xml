@@ -256,7 +256,7 @@
     <time nullFlavor="NA"/>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801984758437"/>
-      <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecine Générale (SM)"
+      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <addr>
         <houseNumber>3</houseNumber>
@@ -3937,7 +3937,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48"/>
               <id root="E494FB3A-DE0A-4701-B011-9ABFE159882C"/>
               <!-- valeur issue du JDV_DefaillanceMaterielle_CISIS (1.2.250.1.213.1.1.5.526) -->
-              <code code="Z1203019001" displayName=" ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE"
+              <code code="Z1203019001" displayName="ÉQUIPEMENTS DE SURVEILLANCE DE LA RELAXATION NEUROMUSCULAIRE"
                 codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"> </code>
               <text>
                 <reference value="#def-materielle-02"/>

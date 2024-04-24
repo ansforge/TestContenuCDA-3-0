@@ -2218,7 +2218,7 @@
 										<low value="20190811"/>
 										<high nullFlavor="UNK"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="N10" displayName="Néphrite tubulo-interstitielle aigüe"
+									<value xsi:type="CD" code="N10" displayName="Pyélonéphrite aiguë"
 										codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
 										<originalText><reference value="#ant-med-002-pb"/></originalText>
 									</value>

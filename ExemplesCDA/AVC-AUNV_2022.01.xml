@@ -946,7 +946,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I10" displayName="Hypertension essentielle (primitive)" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I10" displayName="Hypertension artérielle" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="hyperArt">
                       </reference>
@@ -2937,7 +2937,7 @@
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.8" />
                       <id root="63117B9D-7A75-49CF-8711-5CA158C20C65" />
-                      <code code="70190-4" displayName=" motricité MSG [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <code code="70190-4" displayName="motricité MSG [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
                         <reference value="#nihssMsg" />
                       </text>
@@ -2961,7 +2961,7 @@
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.8" />
                       <id root="76186DF5-2C6B-4419-84B4-25E04843EB76" />
-                      <code code="70968-3" displayName=" motricité MID [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <code code="70968-3" displayName="motricité MID [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
                         <reference value="#nihssMid" />
                       </text>

@@ -738,7 +738,7 @@
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.8" />
                       <id root="FB1416EA-1B50-43FE-9D9A-C65FA0892279" />
-                      <code code="70190-4" displayName=" motricité MSG [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <code code="70190-4" displayName="motricité MSG [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
                         <reference value="#nihssMsg" />
                       </text>
@@ -762,7 +762,7 @@
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.8" />
                       <id root="197F16F3-01D3-48E2-B59C-186A61206082" />
-                      <code code="70968-3" displayName=" motricité MID [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <code code="70968-3" displayName="motricité MID [NIHSS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
                         <reference value="#nihssMid" />
                       </text>
@@ -953,7 +953,7 @@
                   <td>
                     <content ID="neuro">Aggravation neurologique</content>
                   </td>
-                  <td>Infarctus du myocarde à répétition</td>
+                  <td>infarctus du myocarde récidivant</td>
                   <td>23/09/2018</td>
                   <td>texte libre</td>
                 </tr>
@@ -1156,7 +1156,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="0FFCEB4F-83E5-4356-A163-32BFD6A1D0C2" />
-                  <code code="I22" displayName="Infarctus du myocarde à répétition" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I22" displayName="infarctus du myocarde récidivant" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="neuro">
                     </reference>
@@ -1336,7 +1336,7 @@
                   <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="7F027D5A-9834-4A72-BF84-4D184FD950BF" />
-                  <code code="I80.2" displayName="Phlébite et thrombophlébite d'autres vaisseaux profonds des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="I80.2" displayName="Thrombose veineuse profonde" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="thrombVein">
                     </reference>
