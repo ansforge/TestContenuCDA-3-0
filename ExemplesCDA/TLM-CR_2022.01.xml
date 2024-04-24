@@ -446,7 +446,7 @@
     <componentOf>
         <encompassingEncounter>
             <!-- Type de prise en charge -->
-            <code code="VR" displayName="Virtuelle" codeSystem="2.16.840.1.113883.5.4"/>
+            <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4"/>
             <!-- Date de la PRC -->
             <effectiveTime>
                 <low value="20200327"/>
@@ -501,7 +501,7 @@
                     <!-- Numéro FINESS -->
                     <id root="1.2.250.1.71.4.2.2" extension="1120456789"/>
                     <!-- Modalité d'exercice -->
-                    <code code="SA03" displayName="Etablissement Privé PSPH"
+                    <code code="SA03" displayName="Etablissement privé PSPH"
                         codeSystem="1.2.250.1.71.4.2.4" codeSystemName="healthCareFacilityTypeCode"/>
                     <!-- Localisation de l'ES -->
                     <location>

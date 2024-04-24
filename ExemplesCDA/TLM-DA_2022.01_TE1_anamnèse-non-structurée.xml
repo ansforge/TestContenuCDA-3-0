@@ -387,7 +387,7 @@
           <!-- Numéro FINESS -->
           <id root="1.2.250.1.71.4.2.2" extension="1120456789" />
           <!-- Modalité d'exercice -->
-          <code code="SA03" displayName="Etablissement Privé PSPH" codeSystem="1.2.250.1.71.4.2.4" codeSystemName="healthCareFacilityTypeCode" />
+          <code code="SA03" displayName="Etablissement privé PSPH" codeSystem="1.2.250.1.71.4.2.4" codeSystemName="healthCareFacilityTypeCode" />
           <!-- Localisation de l'ES -->
           <location>
             <name>Centre de soins le Belvédère</name>

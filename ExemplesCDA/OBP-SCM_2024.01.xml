@@ -448,7 +448,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.71.4.2.2" extension="101238887" />
-          <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
           <location>
             <name>Clinique du Belvédère</name>
             <addr>
@@ -657,7 +657,7 @@
 		  <!-- Identifiant de l’entité ayant effectué le transfert -->
 		  <id nullFlavor="UNK"/>
                   <!-- valeur issue du JDV_J02_XdsHealthcareFacilityTypeCode_CISIS (1.2.250.1.213.1.1.5.3) -->
-                  <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
+                  <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
                   <addr>
                     <houseNumber>142</houseNumber>
                     <streetName>Rue Belvédère</streetName>

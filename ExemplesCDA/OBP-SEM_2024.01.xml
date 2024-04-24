@@ -466,7 +466,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.71.4.2.2" extension="101238887" />
-          <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
           <location>
             <name>Clinique du Belvédère</name>
             <addr>
@@ -884,7 +884,7 @@
                 </tr>
                 <tr>
                   <td rowspan="1">Ictère</td>
-                  <td><content ID="ictere">Ictère néonatal dû à des inhibiteurs de la lactation</content></td>
+                  <td><content ID="ictere">Ictère du nouveau-né dû à des inhibiteurs de la lactation</content></td>
                   <td></td>
                 </tr>                
                 <tr>
@@ -1083,7 +1083,7 @@
             </observation>
           </entry>
           
-          <!-- [0..1] Entrée FR-Probleme : Ictère néonatal dû à des inhibiteurs de la lactation -->
+          <!-- [0..1] Entrée FR-Probleme : Ictère du nouveau-né dû à des inhibiteurs de la lactation -->
           <entry>
             <observation classCode="OBS" moodCode="EVN" negationInd="false">
               <!-- Conformité Problem observation (CCD) -->
@@ -1099,7 +1099,7 @@
               <effectiveTime>
                 <low value="20230427"/>
               </effectiveTime>
-              <value xsi:type="CD" code="P59.3" displayName="Ictère néonatal dû à des inhibiteurs de la lactation" 
+              <value xsi:type="CD" code="P59.3" displayName="Ictère du nouveau-né dû à des inhibiteurs de la lactation" 
                      codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                 <originalText><reference value="#ictere"/></originalText>
               </value>
@@ -1169,7 +1169,7 @@
 		<!-- Identifiant de l’entité ayant effectué le transfert -->
                   <id nullFlavor="UNK"/>
                   <!-- valeur issue du JDV_J02_XdsHealthcareFacilityTypeCode_CISIS (1.2.250.1.213.1.1.5.3) -->
-                  <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
+                  <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
                   <addr>
                     <houseNumber>142</houseNumber>
                     <streetName>Rue Belvédère</streetName>
