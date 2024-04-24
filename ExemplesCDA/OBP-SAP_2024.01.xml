@@ -926,7 +926,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.53"/>
                   <id root="10E86757-E586-4ECC-9DFD-C7313A537CB8" />
                   <!-- valeur issue du JDV_AntecedentsObstetricaux_OBP_CISIS (1.2.250.1.213.1.1.5.732) -->
-                  <code code="O72" displayName="Hémorragie du post-partum" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
+                  <code code="O72" displayName="Hémorragie du postpartum" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   <text><reference value="#antecedent-obs-01-hemorragie"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -944,7 +944,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.53"/>
                   <id root="8B6DADE2-F2B5-42D6-B502-D04C81E339F3" />
                   <!-- valeur issue du JDV_AntecedentsObstetricaux_OBP_CISIS (1.2.250.1.213.1.1.5.732) -->
-                  <code code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse," codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
+                  <code code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   <text><reference value="antecedent-obs-01-patho-1"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
@@ -991,7 +991,7 @@
                     <!-- Conformité FR-Sujet (CI-SIS) -->
                     <templateId root="1.2.250.1.213.1.1.3.60" />
                     <relatedSubject classCode="PRS">
-                      <code code="CHILD" displayName="enfant" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+                      <code code="CHILD" displayName="Enfant" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
                       <subject>
                         <administrativeGenderCode code="M" displayName="Masculin" codeSystem="2.16.840.1.113883.5.1" >
                           <originalText>
@@ -1185,7 +1185,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="PARACETAMOL">
+                        <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="paracétamol">
                           <originalText>
                             <reference value="allergie-agent" />
                           </originalText>
@@ -2036,7 +2036,7 @@
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="O24.0" displayName="Diabète sucré préexistant, de type 1" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="O24.0" displayName="Diabète sucré préexistant à la grossesse, de type 1" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-05" />
                     </originalText>
