@@ -24,11 +24,10 @@
         <assert test="(
             ($nba = 0 and $nbch &gt; 0) or
             ($nba and name(@*) = 'use' and $nbch &gt; 0) or 
-            ($nba = 1 and name(@*) = 'nullFlavor' and $nbch = 0 and
-            ($val = 'UNK' or $val = 'NASK' or $val = 'ASKU' or $val = 'NAV' or $val = 'MSK')) 
+            ($nba = 1 and name(@*) = 'nullFlavor' and $nbch = 0 ) 
             )">
             [addr.sch] Erreur de conformité CI-SIS : <name/> ne contient pas un attribut autorisé pour une adresse, 
-            ou est vide et sans nullFlavor, ou contient une valeur de nullFlavor non admise.
+            ou est vide et sans nullFlavor.
         </assert>
         <assert test="$nbch = 0 or
                         (cda:streetAddressLine and not(cda:postalCode) and not(cda:city) and not(cda:country) and not(cda:state)

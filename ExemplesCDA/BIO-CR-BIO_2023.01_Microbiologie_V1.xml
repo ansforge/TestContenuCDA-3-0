@@ -648,21 +648,21 @@
                   <td>
                     <content ID="isolat-1-amoxicilline">Amoxicilline</content>
                   </td>
-                  <td>&gt;=0,512 (µg/ml)</td>
+                  <td>&gt;=0,512 µg/ml</td>
                   <td>R</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="isolat-1-ampicilline">Ampicilline</content>
                   </td>
-                  <td>&lt;0,128 (µg/ml)</td>
+                  <td>&lt;0,128 µg/ml</td>
                   <td>I</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="isolat-1-gentamicine">Gentamicine</content>
                   </td>
-                  <td>&lt;0,0032 (µg/ml)</td>
+                  <td>&lt;0,0032 µg/ml</td>
                   <td>S</td>
                 </tr>
               </tbody>
@@ -695,21 +695,21 @@
                   <td>
                     <content ID="isolat-2-amoxicilline">Amoxicilline</content>
                   </td>
-                  <td>&lt;0,012 (µg/ml)</td>
+                  <td>&lt;0,012 µg/ml</td>
                   <td>S</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="isolat-2-ampicilline">Ampicilline</content>
                   </td>
-                  <td>&lt;0,013 (µg/ml)</td>
+                  <td>&lt;0,013 µg/ml</td>
                   <td>S</td>
                 </tr>
                 <tr>
                   <td>
                     <content ID="isolat-2-gentamicine">Gentamicine</content>
                   </td>
-                  <td>&lt;0,014 (µg/ml)</td>
+                  <td>&lt;0,014 µg/ml</td>
                   <td>S</td>
                 </tr>
               </tbody>
