@@ -285,7 +285,7 @@
 	<!-- Personne 2 à prévenir en cas d'urgence -->
 	<informant>
 		<relatedEntity classCode="ECON">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
@@ -347,7 +347,7 @@
 	<!-- Personne 2 de confiance -->
 	<informant>
 		<relatedEntity classCode="NOK">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
@@ -409,7 +409,7 @@
 	<!-- Aidant 2 -->
 	<informant>
 		<relatedEntity classCode="CAREGIVER">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
