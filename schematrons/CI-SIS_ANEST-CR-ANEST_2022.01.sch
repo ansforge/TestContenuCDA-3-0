@@ -12,6 +12,7 @@
       16/12/2020 : Renommage JDV
       05/04/2022 : Migration des terminologies et JDV : Ajout du JDV_RouteofAdministration_CISIS.sch
       28/08/2023 : Migration des terminologies et JDV
+      25/04/2024 : Suppression du JDV_RouteofAdministration_CISIS.sch 
    ......................................................................................................................................................    
 -->
 
@@ -44,7 +45,6 @@
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_AccesArtere-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_HL7_ActPriority-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_TypeProduitSanguinLabile-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_RouteofAdministration-CISIS.sch"/>
     
     <!-- Entete -->
     <include href="include/specificationsVolets/ANEST-CR-ANEST_2022.01/Entete/Entete_Anest-CR-Anest.sch"/>
@@ -80,7 +80,6 @@
         <active pattern="JDV_AccesArtere-CISIS"/>
         <active pattern="JDV_HL7_ActPriority-CISIS"/>
         <active pattern="JDV_TypeProduitSanguinLabile-CISIS"/>
-        <active pattern="JDV_RouteofAdministration-CISIS"/>
         
         <!-- Entete -->
         <active pattern="Entete_Anest-CR-Anest"/>
@@ -116,7 +115,6 @@
         <let name="JDV_AccesArtere-CISIS" value="'../jeuxDeValeurs/JDV_AccesArtere_CISIS.xml'"/>
         <let name="JDV_HL7_ActPriority-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ActPriority_CISIS.xml'"/>
         <let name="JDV_TypeProduitSanguinLabile-CISIS" value="'../jeuxDeValeurs/JDV_TypeProduitSanguinLabile_CISIS.xml'"/>
-        <let name="JDV_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration_CISIS.xml'"/>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            
