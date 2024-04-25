@@ -478,7 +478,7 @@
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
                                 <period value="1" unit="d"/>
                             </effectiveTime>
-                            <!-- Voie d'administration : JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+                            <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
                             <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                             <!-- Dose -->
                             <doseQuantity>

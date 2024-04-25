@@ -985,7 +985,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-01-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -1188,7 +1188,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
@@ -1463,7 +1463,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-02-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -1698,7 +1698,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
@@ -1974,7 +1974,7 @@
               <id root="A5ECB39E-843F-11EC-A8A3-0242AC120002"/>
               <text><reference value="#acte-03-traitement"/></text>
               <statusCode code="completed"/>
-              <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
               <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
               <!-- Dose -->
               <doseQuantity>
@@ -2210,7 +2210,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.173" />
                   <code code="440252007" displayName="administration de produits radiopharmaceutiques"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
-                  <!-- Voie d'administration : Valeur issue du JDV_RouteOfAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+                  <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
                   <routeCode code="20045000" displayName="Voie intraveineuse" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
