@@ -553,7 +553,7 @@
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I20.9" displayName="Angine de poitrine, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I20.9" displayName="Syndrome angineux" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#pb-03" />
                     </originalText>

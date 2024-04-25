@@ -329,7 +329,7 @@
     <!-- Actes documentés-->
     <documentationOf typeCode="DOC">
         <serviceEvent classCode="ACT" moodCode="EVN">
-            <code code="IMP" displayName="Hospitalisation" 
+            <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" 
                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
             <effectiveTime>
                 <!-- Date de début d'hospitalisation -->
@@ -1218,7 +1218,7 @@
                                     <id root="xxxxxxxxxxxxxxxxxxxxxx" extension="{01}00844588003288{17}141120{10}7654321D{21}10987654d321" />
                                     <!-- [1..1] Catégorie de DM -->
                                     <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                                        <code code="J010104" displayName="STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE" 
+                                        <code code="J010104" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE" 
                                             codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">                                            
                                             <originalText><reference value="#DM001-categorie"></reference></originalText>
                                             <translation code="C50FA05" displayName="STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE" 
