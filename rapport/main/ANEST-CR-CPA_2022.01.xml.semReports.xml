@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="1642e902-86a1-4128-a735-39b4eb32878e">
-    <gvr:validationOverview validationDateTime="2025-11-04T13:15:17.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="b493bb94-a6dc-4667-9a93-4626862e61e4">
+    <gvr:validationOverview validationDateTime="2026-01-04T18:01:51.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -59,16 +59,16 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.1.1.4.5" &lt;br /&gt; 
-	  CodeFile  : " "&lt;br /&gt; 
-	  CodeSystemName : "" &lt;br /&gt; 
-	  Code  : "G15_10/SM26"&lt;br /&gt; 
-	  DisplayName : " Médecin - Qualifié en Médecine Générale (SM)"&lt;br /&gt; 
-	  Valeur dans le FTS: "Médecin - Qualifié en Médecine Générale (SM)"&lt;br /&gt; 
-  	  system (SMT) : "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS"	         
+	  CodeSystem : "2.16.840.1.113883.6.3" &lt;br /&gt; 
+	  CodeFile  : "2.16.840.1.113883.6.3 "&lt;br /&gt; 
+	  CodeSystemName : "CIM-10" &lt;br /&gt; 
+	  Code  : "I10"&lt;br /&gt; 
+	  DisplayName : "Hypertension essentielle"&lt;br /&gt; 
+	  Valeur dans le FTS: "Hypertension essentielle (primitive)"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-cim-10"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:associatedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][3]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][1]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][1]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:value[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>

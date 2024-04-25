@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="UNDEFINED" uuid="7ccc95ee-3494-4cbf-9e41-ffe1a6822032">
-    <gvr:validationOverview validationDateTime="2024-04-23T13:21:41.396Z" validationOverallResult="UNDEFINED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="UNDEFINED" uuid="6ac0326c-00ec-4307-90ff-cb018343a631">
+    <gvr:validationOverview validationDateTime="2024-04-25T18:08:07.430Z" validationOverallResult="UNDEFINED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -14,9 +14,9 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
     <gvr:subReport name="Unexpected error" subReportResult="UNDEFINED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="0" numberOfErrors="0" numberOfWarnings="0"/>
         <gvr:unexpectedError name="net.ihe.gazelle.evsclient.domain.validationservice.ValidationServiceOperationException">
-            <gvr:message>org.apache.axis2.AxisFault: Transport error: 504 Error: Gateway Time-out</gvr:message>
+            <gvr:message>org.apache.axis2.AxisFault: Transport error: 408 Error: Request Timeout</gvr:message>
             <gvr:cause name="org.apache.axis2.AxisFault">
-                <gvr:message>Transport error: 504 Error: Gateway Time-out</gvr:message>
+                <gvr:message>Transport error: 408 Error: Request Timeout</gvr:message>
             </gvr:cause>
         </gvr:unexpectedError>
     </gvr:subReport>
