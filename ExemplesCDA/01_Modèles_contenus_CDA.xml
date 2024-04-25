@@ -85,9 +85,8 @@
 					<family qualifier="CL">PAT-TROIS</family>
 					<given qualifier="CL">DOMINIQUE</given>
 					<!-- Noms d’usage : Pas affichés en gras -->
-					<family qualifier="SP">PAT-TROIS</family>					
 					<!-- Liste des prénoms de l’acte de naissance : Pas affichés en gras -->
-					<given>DOMINIQUE</given>
+					<given>DOMINIQUE MARIE-LOUISE</given>
 				</name>
 				<administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
 				<birthTime value="19790328"/>
@@ -3052,7 +3051,7 @@
 							<templateId root="1.2.250.1.213.1.1.3.52" />
 							<id root="8378F25F-7EC2-4CEE-A9A5-168030827D07" />
 							<!-- valeur issue du JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
-							<code code="42831-8" displayName="Consommation de drogue"
+							<code code="11343-1" displayName="Consommation de drogue non médicales"
 								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<text><reference value="#drogue"/></text>
 							<statusCode code="completed" />
