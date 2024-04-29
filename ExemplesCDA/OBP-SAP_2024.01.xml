@@ -949,7 +949,7 @@
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <!-- code CIM-10 de la pathologie -->
-                  <value xsi:type="CD" code="E11.9" displayName="Diabète sucré de type 2, sans complication" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
+                  <value xsi:type="CD" code="E11.9" displayName="Diabète sucré de type 2 - ' Sans complication '" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                 </observation>
               </component>
               <!-- [1..1] FR-Observation-sur-la-grossesse : nombre d'enfants -->
