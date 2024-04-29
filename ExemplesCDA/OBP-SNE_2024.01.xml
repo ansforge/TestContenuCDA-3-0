@@ -1140,7 +1140,7 @@
                     <table>
                       <tbody>
                         <tr>
-                          <td><content ID="anale">Absence, atrésie et sténose congénitales du gros intestin</content></td>
+                          <td><content ID="anale">Absence, atrésie et sténose congénitales de l'anus, sans fistule</content></td>
                           <td>Non</td>
                         </tr>
                       </tbody>
@@ -1162,7 +1162,7 @@
                       <effectiveTime>
                         <low nullFlavor="UNK"/>
                       </effectiveTime>
-                      <value xsi:type="CD" code="Q42.3" displayName="Absence, atrésie et sténose congénitales du gros intestin" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                      <value xsi:type="CD" code="Q42.3" displayName="Absence, atrésie et sténose congénitales de l'anus, sans fistule" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                         <originalText><reference value="#anale"/></originalText>
                       </value>
                     </observation>

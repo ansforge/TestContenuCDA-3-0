@@ -1005,7 +1005,7 @@
               <effectiveTime>
                 <low value="20230427"/>
               </effectiveTime>
-              <value xsi:type="CD" code="Q23.8" displayName="Autres malformations congénitales précisées" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10">
+              <value xsi:type="CD" code="Q89.8" displayName="Autres malformations congénitales précisées" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10">
                 <originalText><reference value="#anomalie-congenitale-2"/></originalText>
               </value>
             </observation>
