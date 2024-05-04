@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="7156ec22-5134-4540-8978-e60eeebcb696">
-    <gvr:validationOverview validationDateTime="2026-01-04T18:01:03.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="8f16c9ae-69bd-4594-8850-0bb72aea05f2">
+    <gvr:validationOverview validationDateTime="2024-04-05T09:12:55.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>Validation FTS(Beta)</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="25" numberOfErrors="7" numberOfWarnings="16"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="14" numberOfErrors="7" numberOfWarnings="5"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="23" numberOfErrors="7" numberOfWarnings="16"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="12" numberOfErrors="7" numberOfWarnings="5"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>
 	  -Validation  sémantique : Code non trouvé &lt;br /&gt; 
@@ -110,51 +110,9 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C010101"&lt;br /&gt; 
-	  DisplayName : "CATHÉTERS VEINEUX PÉRIPHÉRIQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS VEINEUX P�RIPH�RIQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][2]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C0102"&lt;br /&gt; 
-	  DisplayName : "CATHÉTERS VEINEUX CENTRAUX"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS VEINEUX CENTRAUX"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][5]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][2]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C010204"&lt;br /&gt; 
-	  DisplayName : "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][5]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][3]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "C0103"&lt;br /&gt; 
 	  DisplayName : "CATHETERS ARTERIELS"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS ART�RIELS"&lt;br /&gt; 
+	  Valeur dans le FTS: "CATHÉTERS ARTÉRIELS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -166,23 +124,9 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "R010302"&lt;br /&gt; 
-	  DisplayName : "SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACH�ALES � BALLONNET"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][9]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][3]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R018004"&lt;br /&gt; 
 	  DisplayName : "GUIDES À CHANGEURS D'INTUBATION"&lt;br /&gt; 
-	  Valeur dans le FTS: "GUIDES �CHANGEURS D'INTUBATION"&lt;br /&gt; 
+	  Valeur dans le FTS: "GUIDES ÉCHANGEURS D'INTUBATION"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -208,23 +152,9 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "Z12029006"&lt;br /&gt; 
-	  DisplayName : "FIBROSCOPES D’INTUBATION"&lt;br /&gt; 
-	  Valeur dans le FTS: "FIBROSCOPES D�INTUBATION"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][9]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][7]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "R0301020302"&lt;br /&gt; 
 	  DisplayName : "SONDES NASALES D'OXYGÉNOTHÉRAPIE HAUT DÉBIT"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES NASALES D�OXYG�NOTH�RAPIE HAUT D�BIT"&lt;br /&gt; 
+	  Valeur dans le FTS: "SONDES NASALES D’OXYGÉNOTHÉRAPIE HAUT DÉBIT"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
@@ -236,97 +166,13 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
 	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
 	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
 	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "R0106"&lt;br /&gt; 
-	  DisplayName : "SETS DE TRACHÉOTOMIE PERCUTANÉE"&lt;br /&gt; 
-	  Valeur dans le FTS: "SETS DE TRACH�OTOMIE PERCUTAN�E"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][10]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][3]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C010204"&lt;br /&gt; 
-	  DisplayName : "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][12]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:entryRelationship[namespace-uri()='urn:hl7-org:v3'][2]/*:act[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C010101"&lt;br /&gt; 
-	  DisplayName : "CATHÉTERS VEINEUX PÉRIPHÉRIQUES"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS VEINEUX P�RIPH�RIQUES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][2]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C0102"&lt;br /&gt; 
-	  DisplayName : "CATHÉTERS VEINEUX CENTRAUX"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS VEINEUX CENTRAUX"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][3]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
 	  Code  : "C0103"&lt;br /&gt; 
 	  DisplayName : "CATHETERS ARTERIELS"&lt;br /&gt; 
-	  Valeur dans le FTS: "CATH�TERS ART�RIELS"&lt;br /&gt; 
+	  Valeur dans le FTS: "CATHÉTERS ARTÉRIELS"&lt;br /&gt; 
   	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
 	 </gvr:constraintDescription>
             <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
             <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][4]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "R010302"&lt;br /&gt; 
-	  DisplayName : "SONDES D'INTUBATION ENDOTRACHÉALES À BALLONNET"&lt;br /&gt; 
-	  Valeur dans le FTS: "SONDES D'INTUBATION ENDOTRACH�ALES � BALLONNET"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][7]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>
-	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
-	  CodeSystem : "1.2.250.1.213.2.68" &lt;br /&gt; 
-	  CodeFile  : "1.2.250.1.213.2.68 "&lt;br /&gt; 
-	  CodeSystemName : "EMDN" &lt;br /&gt; 
-	  Code  : "C010204"&lt;br /&gt; 
-	  DisplayName : "SYSTÈMES D'ACCÈS VEINEUX IMPLANTABLES"&lt;br /&gt; 
-	  Valeur dans le FTS: "SYST�MES D'ACC�S VEINEUX IMPLANTABLES"&lt;br /&gt; 
-  	  system (SMT) : "https://smt.esante.gouv.fr/terminologie-emdn"	         
-	 </gvr:constraintDescription>
-            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][10]/*:supply[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:participantRole[namespace-uri()='urn:hl7-org:v3'][1]/*:playingDevice[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
