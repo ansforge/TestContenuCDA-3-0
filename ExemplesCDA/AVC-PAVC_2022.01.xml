@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -544,7 +545,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F1D3CF53-0F44-43F5-8008-D8B35A83394A" />
-                  <code code="E14.9" displayName="Diabète sucré, sans précision - 'Sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="E14.9" displayName="Diabète sucré, sans précision - &quot; Sans complication &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#diabete">
                     </reference>
@@ -580,7 +581,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="57F2DE3E-B68B-4725-BFBF-3CCEE575DF1D" />
-                  <code code="F17.2" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac - 'Syndrome de dépendance'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="F17.2" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac - &quot; Syndrome de dépendance &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#tabac">
                     </reference>

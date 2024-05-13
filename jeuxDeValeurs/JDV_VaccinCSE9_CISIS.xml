@@ -3,13 +3,13 @@
     <ValueSet displayName="JDV_VaccinCSE9_CISIS" id="1.2.250.1.213.1.1.5.106" version="test">
         <ConceptList>
             <Concept code="J07CA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin diphtérie-poliomyélite-tétanos"/>
-            <Concept code="J07AJ" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre la coqueluche"/>
-            <Concept code="J07AG" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin anti haemophilus influenzae B"/>
+            <Concept code="J07AJ" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="vaccins coquelucheux"/>
+            <Concept code="J07AG" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="vaccins de l'Haemophilus influenzae B"/>
             <Concept code="J07BC01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
-            <Concept code="J07AL" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin antipneumococcique"/>
-            <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin antituberculeux"/>
+            <Concept code="J07AL" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="vaccins pneumococciques"/>
+            <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="vaccins de la tuberculose"/>
             <Concept code="J07AH07" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre le méningocoque C"/>
-            <Concept code="J07BH" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20231024000000" displayName="Vaccin contre le rotavirus schéma complet"/>
+            <Concept code="J07BH" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20231024000000" displayName="vaccins des diarrhées à Rotavirus"/>
             <Concept code="J07AH09" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20231024000000" displayName="Vaccin contre le méningocoque B"/>
         </ConceptList>
     </ValueSet>

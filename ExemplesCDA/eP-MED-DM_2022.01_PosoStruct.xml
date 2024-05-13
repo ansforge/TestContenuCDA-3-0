@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -695,7 +696,7 @@
               <repeatNumber value="3"/>
               
               <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
               <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
                 <originalText>
                   <reference value="#voie-001"/>
@@ -1167,7 +1168,7 @@
               <repeatNumber value="0"/>
               
               <!-- [0..1] Voie d'administration : uniquement si posologie structurée -->
-              <!-- valeur issue du JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+              <!-- valeur issue de la terminologie EDQM - Standard terms / classe ROA (Voie d'administration)  -->
               <routeCode code="20003000" displayName="Voie cutanée" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
                 <originalText>
                   <reference value="#med-002-voie"/>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
@@ -470,7 +471,7 @@
   <!-- Prise en charge -->
   <componentOf>
     <encompassingEncounter>
-      <code code="EXTERNE" displayName="acte et consultation externe (établissement)" codeSystem="1.2.250.1.213.1.1.4.2.291" />
+      <code code="EXTERNE" displayName="Acte et consultation externe (établissement)" codeSystem="1.2.250.1.213.1.1.4.2.291" />
       <effectiveTime>
         <low value="20230425080000+0100" />
         <high value="20230425111000+0100" />
@@ -503,7 +504,7 @@
       <location>
         <healthCareFacility>
           <id root="1.2.250.1.71.4.2.2" extension="1120456789"/>
-          <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
+          <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
           <location>
             <name>Clinique du Belvédère</name>
             <addr>
@@ -618,7 +619,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
                       <!-- CIM 10 -->
-                      <value xsi:type="CE" code="O63.9" displayName="Travail prolongé" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10" />
+                      <value xsi:type="CE" code="O63.9" displayName="Travail prolongé, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10" />
                     </observation>
                   </entryRelationship>
                   
@@ -1140,7 +1141,7 @@
                     <table>
                       <tbody>
                         <tr>
-                          <td><content ID="anale">Absence, atrésie et sténose congénitales du gros intestin</content></td>
+                          <td><content ID="anale">Absence, atrésie et sténose congénitales de l'anus, sans fistule</content></td>
                           <td>Non</td>
                         </tr>
                       </tbody>
@@ -1162,7 +1163,7 @@
                       <effectiveTime>
                         <low nullFlavor="UNK"/>
                       </effectiveTime>
-                      <value xsi:type="CD" code="Q42.3" displayName="Absence, atrésie et sténose congénitales du gros intestin" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                      <value xsi:type="CD" code="Q42.3" displayName="Absence, atrésie et sténose congénitales de l'anus, sans fistule" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                         <originalText><reference value="#anale"/></originalText>
                       </value>
                     </observation>
@@ -1510,7 +1511,7 @@
                   <!-- Identifiant de l’entité ayant effectué le transfert -->
                   <id nullFlavor="UNK"/>
                   <!-- valeur issue du JDV_J02_XdsHealthcareFacilityTypeCode_CISIS (1.2.250.1.213.1.1.5.3) -->
-                  <code code="SA04" displayName="Etablissement Privé Non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
+                  <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4"/>                  
                   <addr>
                     <houseNumber>142</houseNumber>
                     <streetName>Rue Belvédère</streetName>

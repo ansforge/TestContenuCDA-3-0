@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ResultatDepistage_CISIS" id="1.2.250.1.213.1.1.5.761" version="test">
+        <ConceptList>
+            <Concept code="10828004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231218000000" displayName="positif"/>
+            <Concept code="260385009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231218000000" displayName="négatif"/>
+            <Concept code="373068000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231218000000" displayName="indéterminé(e)"/>
+            <Concept code="125154007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231218000000" displayName="échantillon insatisfaisant pour l'évaluation"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

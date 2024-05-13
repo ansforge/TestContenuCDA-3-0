@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ResultatDepistageCetonemie_CISIS" id="1.2.250.1.213.1.1.5.769" version="test">
+        <ConceptList>
+            <Concept code="17621005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="normal"/>
+            <Concept code="" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20240307000000" displayName="Cétonurie"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

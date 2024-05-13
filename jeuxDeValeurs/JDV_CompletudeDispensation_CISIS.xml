@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_CompletudeDispensation_CISIS" id="1.2.250.1.213.1.1.5.765" version="test">
+        <ConceptList>
+            <Concept code="FFC " codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20231221000000" displayName="Première dispensation - complète"/>
+            <Concept code="FFP" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20231221000000" displayName="Première dispensation - partielle"/>
+            <Concept code="RFP" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20231221000000" displayName="Dispensation suivante - partielle"/>
+            <Concept code="RFC" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20231221000000" displayName="Dispensation suivante - complète"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

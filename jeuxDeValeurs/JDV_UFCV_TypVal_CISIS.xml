@@ -2,10 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_TypVal_CISIS" id="1.2.250.1.213.1.1.4.2.16" version="test">
         <ConceptList>
-            <Concept code="P070301030101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STENTED BIOLOGICAL AORTIC VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN"/>
-            <Concept code="P070301030102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STENTED BIOLOGICAL MITRAL VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN"/>
-            <Concept code="P070301030103" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STENTED BIOLOGICAL PULMONARY VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN"/>
-            <Concept code="P070301030104" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STENTED BIOLOGICAL TRICUSPID VALVES FOR PERCUTANEOUS IMPLANT - VALVE TISSUE OF ANIMAL ORIGIN"/>
+            <Concept code="P070301030101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES AORTIQUES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"/>
+            <Concept code="P070301030102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES MITRALES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"/>
+            <Concept code="P070301030103" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES PULMONAIRES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"/>
+            <Concept code="P070301030104" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES TRICUSPIDES BIOLOGIQUES AVEC ARMATURE PAR VOIE PERCUTANÉE AVEC SUPPORT - VALVE D'ORIGINE ANIMALE"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

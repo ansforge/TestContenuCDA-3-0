@@ -3,11 +3,11 @@
     <ValueSet displayName="JDV_TraitementSuivi_CISIS" id="1.2.250.1.213.1.1.5.57" version="test">
         <ConceptList>
             <Concept code="ORG-165" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20180101000000" displayName="Séjour de répit"/>
-            <Concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Maison d'accueil spécialisée (MAS)"/>
+            <Concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Maison d'Accueil Spécialisée (M.A.S.)"/>
             <Concept code="28" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation complète (HC)"/>
-            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à domicile (HAD)"/>
+            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à Domicile"/>
             <Concept code="29" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation de jour (HJ)"/>
-            <Concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Service de soins infirmiers à domicile (SSIAD)"/>
+            <Concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="&quot;Service de Soins Infirmiers A Domicile (S.S.I.A.D)"/>
             <Concept code="GEN-092.04.05" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre traitement / suivi"/>
         </ConceptList>
     </ValueSet>

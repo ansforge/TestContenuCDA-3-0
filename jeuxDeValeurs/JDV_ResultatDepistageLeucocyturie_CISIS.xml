@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ResultatDepistageLeucocyturie_CISIS" id="1.2.250.1.213.1.1.5.782" version="test">
+        <ConceptList>
+            <Concept code="260385009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="négatif"/>
+            <Concept code="1303844008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="Résultat positif (+)"/>
+            <Concept code="1303846005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="Résultat positif (++)"/>
+            <Concept code="1303845009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="Résultat positif (+++)"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

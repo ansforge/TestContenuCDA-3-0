@@ -10,6 +10,7 @@
             <Concept code="11613-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'interruptions volontaires de grossesse"/>
             <Concept code="11614-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'interruptions involontaires de grossesse"/>
             <Concept code="MED-1184" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230403000000" displayName="Nombre d'enfants nés vivants et décédés avant 28 jours"/>
+            <Concept code="11636-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240408000000" displayName="Nombre d'enfants nés vivants"/>
             <Concept code="11637-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants prématurés (nés avant 37 semaines)"/>
             <Concept code="11638-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants vivants"/>
             <Concept code="11639-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants nés à terme (premier jour (259e jour) de la 38e semaine suivant le début des dernières règles)"/>
@@ -23,6 +24,7 @@
             <Concept code="11977-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Parité (nombre total d'accouchements y compris actuel)"/>
             <Concept code="11996-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Gestité (nombre total de grossesses y compris actuelle)"/>
             <Concept code="32396-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Durée de l'accouchement"/>
+            <Concept code="33065-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240408000000" displayName="Nombre de grossesses extra-utérines"/>
             <Concept code="MED-1185" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230403000000" displayName="Grossesse extra-utérine"/>
             <Concept code="45371-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Grossesse multiple"/>
             <Concept code="49051-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Age gestationnel en semaines"/>

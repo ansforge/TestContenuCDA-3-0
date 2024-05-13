@@ -3,10 +3,10 @@
     <ValueSet displayName="JDV_AllergiesVaccins_CISIS" id="1.2.250.1.213.1.1.5.100" version="test">
         <ConceptList>
             <Concept code="303300008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="protéine d'œuf"/>
-            <Concept code="J01GB05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Néomycine"/>
-            <Concept code="J01GA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Streptomycine"/>
-            <Concept code="J01GB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Gentamicine"/>
-            <Concept code="J01XB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="Polymyxine B"/>
+            <Concept code="J01GB05" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="néomycine"/>
+            <Concept code="J01GA01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="streptomycine"/>
+            <Concept code="J01GB03" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="gentamicine"/>
+            <Concept code="J01XB02" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20220224000000" displayName="polymyxine B"/>
             <Concept code="373531009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221222000000" displayName="gélatine"/>
         </ConceptList>
     </ValueSet>

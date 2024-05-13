@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -902,8 +903,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="probleme-diabete-01">[CIM-10 : E10.9] Diabète sucré de type
-                      1, sans complication</content>
+                    <content ID="probleme-diabete-01">[CIM-10 : E10.9] Diabète sucré de type 1, Sans complication'</content>
                   </td>
                   <td>
                     <content ID="commentaire-probleme-diabete-01">(texte libre)</content>
@@ -1321,7 +1321,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="E10.9" displayName="Diabète sucré de type 1 - ' Sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="E10.9" displayName="Diabète sucré de type 1 - &quot; Sans complication &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#probleme-diabete-01" />
                     </originalText>
@@ -1725,7 +1725,7 @@
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <!-- Antécédent obstetrical : code CIM-10 -->
-                  <value xsi:type="CD" code="O03.9" displayName="Avortement spontané - 'Complet ou sans précision, sans complication'" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="O03.9" displayName="Avortement spontané - &quot; Complet ou sans précision, sans complication &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#antecedent-obstetrical-01" />
                     </originalText>

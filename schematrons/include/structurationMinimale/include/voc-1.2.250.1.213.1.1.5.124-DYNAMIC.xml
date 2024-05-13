@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" displayName="JDV_J47_FunctionCode_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.124" name="JDV_J47_FunctionCode_CISIS" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.280" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.280" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.280" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.280" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.280"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.88" identifierName="Participation Function" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationFunction" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationFunction" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.107" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.107" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.107" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.107" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.107"/>
+      <publishingAuthority name="ASIP Santé" inherited="project"/>
+      <conceptList>
+         <concept code="CORRE" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Correspondant" level="0" type="L"/>
+         <concept code="PRELV" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Préleveur" level="0" type="L"/>
+         <concept code="ES-REF" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Etablissement de santé de référence" level="0" type="L"/>
+         <concept code="ES-PREF" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Etablissement de santé de préférence" level="0" type="L"/>
+         <concept code="ADMPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de l'admission" level="0" type="L"/>
+         <concept code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Référent - Responsable du patient dans la structure de soins" level="0" type="L"/>
+         <concept code="DISPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de la sortie" level="0" type="L"/>
+         <concept code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin traitant" level="0" type="L"/>
+         <concept code="353" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Membre de l'équipe de soins" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

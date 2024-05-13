@@ -2,8 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../Schematrons/profils/terminologies/schematron/terminologie.sch"?> 
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
@@ -209,8 +210,8 @@
 	</author>
 	
 	<!-- Opérateur de saisie -->
-	<dataEnterer>
-		<time value="202302091110+0100"/>
+	<dataEnterer><!--
+		<time value="202302091110+0100"/>-->
 		<assignedEntity classCode="ASSIGNED">
 			<id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
 			<addr>
@@ -285,7 +286,7 @@
 	<!-- Personne 2 à prévenir en cas d'urgence -->
 	<informant>
 		<relatedEntity classCode="ECON">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
@@ -347,7 +348,7 @@
 	<!-- Personne 2 de confiance -->
 	<informant>
 		<relatedEntity classCode="NOK">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
@@ -409,7 +410,7 @@
 	<!-- Aidant 2 -->
 	<informant>
 		<relatedEntity classCode="CAREGIVER">
-			<code code="HUSB" displayName="Mari" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111"/>
 			<addr use="H">
 				<houseNumber>28</houseNumber>
 				<streetName>Avenue de Breteuil</streetName>
@@ -1307,8 +1308,8 @@
 		</associatedEntity>
 	</participant>
 	
-	<!-- [0..*] Responsable de l'admission (typeCode="ADM" et functionCode code="ADMPHYS")-->
-	<participant typeCode="ADM">
+	<!-- [0..*] Responsable de l'admission -->
+	<participant typeCode="RESP">
 		<functionCode code="ADMPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de l'admission">
 			<!-- Commentaire sur le PS -->
 			<originalText>Commentaire sur le DR ADMISSION</originalText>
@@ -1353,7 +1354,7 @@
 	</participant>
 	
 	<!-- [0..*] Responsable de la sortie (typeCode="DIS" et functionCode code="ADMPHYS")-->
-	<participant typeCode="DIS">
+	<participant typeCode="RESP">
 		<functionCode code="DISPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de la sortie">
 			<!-- Commentaire sur le PS -->
 			<originalText>Commentaire sur le DR SORTIE</originalText>
@@ -1398,7 +1399,7 @@
 	</participant>
 	
 	<!-- [0..*] Valideur des résultats (typeCode="AUTHEN")-->
-	<participant typeCode="AUTHEN">
+	<participant typeCode="VRF">
 		<functionCode nullFlavor="NA">
 			<!-- Commentaire sur le PS -->
 			<originalText>Commentaire sur le DR VALID</originalText>
@@ -1443,14 +1444,14 @@
 	</participant>	
 	
 	<!-- [0..*] Autre participant : Employeur (autre combinaison typeCode / functionCode) -->
-	<participant typeCode="WIT">
+	<participant typeCode="INF">
 		<functionCode nullFlavor="NA">
 			<!-- Commentaire sur le participant -->
 			<originalText>Employeur</originalText>
 		</functionCode>
 		<time xsi:type="IVL_TS" nullFlavor="UNK"/>		
 		<associatedEntity classCode="AGNT">
-			<id root="XXXYYY" extension="XXXYYY"/>
+			<id root="1.2.250.1.71.4.2.1" extension="801234563977"/>
 			<associatedPerson>
 				<name>
 					<family>WORK</family>
@@ -1497,7 +1498,7 @@
 			<code code="34117-2" displayName="Historique et clinique"
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<effectiveTime>
-				<low value="2023020911700+0100"/>
+				<low value="20230209115000+0100"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
 				<assignedEntity>
@@ -1625,7 +1626,7 @@
 			<code code="EXTERNE" displayName="Acte et consultation externe (établissement)"
 				codeSystem="1.2.250.1.213.1.1.4.2.291"/>
 			<effectiveTime>
-				<high value="2023020911700+0100"/>
+				<high value="20230209115000+0100"/>
 			</effectiveTime>
 			<!-- Responsable de la prise en charge -->
 			<responsibleParty>
@@ -3052,7 +3053,7 @@
 							<templateId root="1.2.250.1.213.1.1.3.52" />
 							<id root="8378F25F-7EC2-4CEE-A9A5-168030827D07" />
 							<!-- valeur issue du JDV_SocialHistoryCodes-CISIS (1.2.250.1.213.1.1.4.2.283.4) -->
-							<code code="42831-8" displayName="Consommation de drogue"
+							<code code="11343-1" displayName="Consommation de drogue non médicales"
 								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<text><reference value="#drogue"/></text>
 							<statusCode code="completed" />

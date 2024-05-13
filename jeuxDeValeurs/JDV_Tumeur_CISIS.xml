@@ -11,8 +11,8 @@
             <Concept code="B21.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladie par VIH à l'origine d'autres tumeurs malignes"/>
             <Concept code="B21.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladie par VIH à l'origine d'une tumeur maligne, sans précision"/>
             <Concept code="C00" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre"/>
-            <Concept code="C00.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre supérieure, (bord libre)"/>
-            <Concept code="C00.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre inférieure, (bord libre)"/>
+            <Concept code="C00.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre supérieure, bord libre"/>
+            <Concept code="C00.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre supérieure, bord libre"/>
             <Concept code="C00.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre, sans précision, bord libre"/>
             <Concept code="C00.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre supérieure, face interne"/>
             <Concept code="C00.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la lèvre inférieure, face interne"/>
@@ -52,17 +52,17 @@
             <Concept code="C06.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la bouche, sans précision"/>
             <Concept code="C07" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande parotide"/>
             <Concept code="C08" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des glandes salivaires principales, autres et non précisées"/>
-            <Concept code="C08.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande sous-maxillaire"/>
+            <Concept code="C08.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande sousmaxillaire"/>
             <Concept code="C08.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande sublinguale"/>
             <Concept code="C08.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës des glandes salivaires principales"/>
-            <Concept code="C08.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande salivaire (principale), sans précision"/>
+            <Concept code="C08.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glande salivaire principale, sans précision"/>
             <Concept code="C09" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'amygdale"/>
             <Concept code="C09.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la fosse amygdalienne"/>
             <Concept code="C09.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du pilier de l'amygdale (antérieur) (postérieur)"/>
             <Concept code="C09.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës de l'amygdale"/>
             <Concept code="C09.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'amygdale, sans précision"/>
             <Concept code="C10" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'oropharynx"/>
-            <Concept code="C10.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du sillon glosso-épiglottique"/>
+            <Concept code="C10.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du sillon glossoépiglottique"/>
             <Concept code="C10.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la face antérieure de l'épiglotte"/>
             <Concept code="C10.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la paroi latérale de l'oropharynx"/>
             <Concept code="C10.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la paroi postérieure de l'oropharynx"/>
@@ -78,8 +78,8 @@
             <Concept code="C11.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du rhinopharynx, sans précision"/>
             <Concept code="C12" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du sinus piriforme"/>
             <Concept code="C13" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'hypopharynx"/>
-            <Concept code="C13.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la région rétro-cricoïdienne"/>
-            <Concept code="C13.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du repli ary-épiglottique, (versant hypopharyngé)"/>
+            <Concept code="C13.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la région rétrocricoïdienne"/>
+            <Concept code="C13.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du repli aryépiglottique, versant hypopharyngé"/>
             <Concept code="C13.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la paroi postérieure de l'hypopharynx"/>
             <Concept code="C13.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës de l'hypopharynx"/>
             <Concept code="C13.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'hypopharynx, sans précision"/>
@@ -128,7 +128,7 @@
             <Concept code="C18.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du côlon, sans précision"/>
             <Concept code="C18.9+0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Syndrome de Lynch"/>
             <Concept code="C18.9+8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeurs malignes du côlon, autres et non précisées"/>
-            <Concept code="C19" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la jonction recto-sigmoïdienne"/>
+            <Concept code="C19" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la jonction rectosigmoïdienne"/>
             <Concept code="C20" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du rectum"/>
             <Concept code="C21" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'anus et du canal anal"/>
             <Concept code="C21.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'anus, sans précision"/>
@@ -145,7 +145,7 @@
             <Concept code="C22.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du foie, sans précision"/>
             <Concept code="C23" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la vésicule biliaire"/>
             <Concept code="C24" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeurs malignes des voies biliaires, autres et non précisées"/>
-            <Concept code="C24.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du canal biliaire extra-hépatique"/>
+            <Concept code="C24.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du canal biliaire extrahépatique"/>
             <Concept code="C24.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'ampoule de Vater"/>
             <Concept code="C24.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës des voies biliaires"/>
             <Concept code="C24.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des voies biliaires, sans précision"/>
@@ -163,7 +163,7 @@
             <Concept code="C25.9+0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du pancréas, familiale"/>
             <Concept code="C25.9+8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du pancréas, autre et non précisée"/>
             <Concept code="C26" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des organes digestifs, de sièges autres et mal définis"/>
-            <Concept code="C26.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du tractus intestinal, (partie non précisée)"/>
+            <Concept code="C26.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du tractus intestinal, partie non précisée"/>
             <Concept code="C26.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la rate"/>
             <Concept code="C26.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës de l'appareil digestif"/>
             <Concept code="C26.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de sièges mal définis de l'appareil digestif"/>
@@ -179,8 +179,8 @@
             <Concept code="C31.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des sinus de la face, sans précision"/>
             <Concept code="C32" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du larynx"/>
             <Concept code="C32.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la glotte"/>
-            <Concept code="C32.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'étage sus-glottique"/>
-            <Concept code="C32.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'étage sous-glottique"/>
+            <Concept code="C32.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'étage susglottique"/>
+            <Concept code="C32.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'étage sousglottique"/>
             <Concept code="C32.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du cartilage laryngé"/>
             <Concept code="C32.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës du larynx"/>
             <Concept code="C32.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du larynx, sans précision"/>
@@ -229,7 +229,7 @@
             <Concept code="C43.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Mélanome malin du membre supérieur, y compris l'épaule"/>
             <Concept code="C43.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Mélanome malin du membre inférieur, y compris la hanche"/>
             <Concept code="C43.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lésion à localisations contiguës d'un mélanome malin de la peau"/>
-            <Concept code="C43.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Mélanome malin de la peau, sans précision"/>
+            <Concept code="C43.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Mélanome (malin) de la peau, sans précision"/>
             <Concept code="C44" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs malignes de la peau"/>
             <Concept code="C44.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la face cutanée de la lèvre"/>
             <Concept code="C44.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la peau de la paupière, y compris le canthus"/>
@@ -401,7 +401,7 @@
             <Concept code="C72.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du nerf auditif"/>
             <Concept code="C72.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des nerfs crâniens, autres et non précisés"/>
             <Concept code="C72.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à localisations contiguës de l'encéphale et d'autres parties du système nerveux central"/>
-            <Concept code="C72.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du système nerveux (central), sans précision"/>
+            <Concept code="C72.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du système nerveux central, sans précision"/>
             <Concept code="C73" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la thyroïde"/>
             <Concept code="C74" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la surrénale"/>
             <Concept code="C74.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du cortex de la surrénale"/>
@@ -410,7 +410,7 @@
             <Concept code="C75" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne d'autres glandes endocrines et structures apparentées"/>
             <Concept code="C75.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de la parathyroïde"/>
             <Concept code="C75.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'hypophyse"/>
-            <Concept code="C75.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du tractus cranio-pharyngien"/>
+            <Concept code="C75.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du tractus craniopharyngien"/>
             <Concept code="C75.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de l'épiphyse"/>
             <Concept code="C75.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du corpuscule carotidien"/>
             <Concept code="C75.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne du glomus aortique et autres paraganglions"/>
@@ -428,7 +428,7 @@
             <Concept code="C77" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne des ganglions lymphatiques, secondaire et non précisée"/>
             <Concept code="C77.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques de la tête, de la face et du cou"/>
             <Concept code="C77.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques intrathoraciques"/>
-            <Concept code="C77.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques intra-abdominaux"/>
+            <Concept code="C77.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques intraabdominaux"/>
             <Concept code="C77.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques de l'aisselle et du membre supérieur"/>
             <Concept code="C77.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques inguinaux et du membre inférieur"/>
             <Concept code="C77.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne secondaire et non précisée des ganglions lymphatiques intrapelviens"/>
@@ -459,17 +459,17 @@
             <Concept code="C80.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de siège primitif inconnu, ainsi décrit"/>
             <Concept code="C80.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne de siège primitif non précisé"/>
             <Concept code="C81" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin"/>
-            <Concept code="C81.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin à prédominance lymphocytaire, à forme nodulaire"/>
-            <Concept code="C81.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin (classique), à sclérose nodulaire"/>
+            <Concept code="C81.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin à prédominance lymphocytaire, forme nodulaire"/>
+            <Concept code="C81.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin (classique), sclérose nodulaire"/>
             <Concept code="C81.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin (classique), à cellularité mixte"/>
             <Concept code="C81.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin (classique), à déplétion lymphocytaire"/>
             <Concept code="C81.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin (classique), riche en lymphocytes"/>
-            <Concept code="C81.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres formes de la maladie lymphome de Hodgkin (classique)"/>
+            <Concept code="C81.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres formes de lymphome de Hodgkin (classique)"/>
             <Concept code="C81.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin, sans précision"/>
             <Concept code="C82" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire"/>
             <Concept code="C82.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade I"/>
             <Concept code="C82.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade II"/>
-            <Concept code="C82.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade III, sans précision"/>
+            <Concept code="C82.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade III, non précisé"/>
             <Concept code="C82.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade IIIa"/>
             <Concept code="C82.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome folliculaire, grade IIIb"/>
             <Concept code="C82.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome centrofolliculaire diffus"/>
@@ -479,8 +479,8 @@
             <Concept code="C83" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome non folliculaire"/>
             <Concept code="C83.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome à petites cellules B"/>
             <Concept code="C83.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome à cellules du manteau"/>
-            <Concept code="C83.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome à grandes cellules B"/>
-            <Concept code="C83.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome lymphoblastique (diffus)"/>
+            <Concept code="C83.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome diffus à grandes cellules B"/>
+            <Concept code="C83.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome lymphoblastique"/>
             <Concept code="C83.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Burkitt"/>
             <Concept code="C83.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres lymphomes non folliculaires"/>
             <Concept code="C83.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome (diffus) non folliculaire, sans précision"/>
@@ -497,7 +497,7 @@
             <Concept code="C85.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphomes à cellules B, sans précision"/>
             <Concept code="C85.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome médiastinal (thymique) à grandes cellules B"/>
             <Concept code="C85.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres types précisés de lymphome non hodgkinien"/>
-            <Concept code="C85.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome non hodgkinien, sans précision"/>
+            <Concept code="C85.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome non hodgkinien, non précisé"/>
             <Concept code="C86" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres types précisés de lymphomes à cellules T/NK"/>
             <Concept code="C86.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome extranodal à cellules T/NK, type nasal"/>
             <Concept code="C86.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome hépatosplénique à cellules T"/>
@@ -521,19 +521,19 @@
             <Concept code="C91" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie lymphoïde"/>
             <Concept code="C91.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie lymphoblastique aigüe [LLA]"/>
             <Concept code="C91.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie lymphoïde chronique à cellules B"/>
-            <Concept code="C91.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie prolymphocytaire B"/>
+            <Concept code="C91.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à prolymphocytes à cellules B"/>
             <Concept code="C91.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à tricholeucocytes"/>
-            <Concept code="C91.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie/lymphome T de l’adulte (associée à HTLV-1)"/>
-            <Concept code="C91.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie prolymphocytaire T"/>
+            <Concept code="C91.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome/leucémie de l'adulte à cellules T (associé(e) à HTLV-1)"/>
+            <Concept code="C91.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à prolymphocytes à cellules T"/>
             <Concept code="C91.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres leucémies lymphoïdes"/>
             <Concept code="C91.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à cellules B matures, de type Burkitt"/>
             <Concept code="C91.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie lymphoïde, sans précision"/>
             <Concept code="C92" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myéloïde"/>
-            <Concept code="C92.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie aigüe myéloblastique [LAM]"/>
+            <Concept code="C92.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myéloblastique aigüe [LAM]"/>
             <Concept code="C92.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myéloïde chronique [LMC] ABL-BCR positif"/>
             <Concept code="C92.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myéloïde chronique atypique, ABL-BCR négatif"/>
             <Concept code="C92.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Sarcome myéloïde"/>
-            <Concept code="C92.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie promyélocytaire aigüe"/>
+            <Concept code="C92.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie promyélocytaire aigüe [PML]"/>
             <Concept code="C92.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myélomonocytaire aigüe"/>
             <Concept code="C92.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie myéloïde aigüe avec anomalies 11q23"/>
             <Concept code="C92.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres leucémies myéloïdes"/>
@@ -547,20 +547,20 @@
             <Concept code="C93.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie monocytaire, sans précision"/>
             <Concept code="C94" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres leucémies à cellules précisées"/>
             <Concept code="C94.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie érythroïde aigüe"/>
-            <Concept code="C94.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie aigüe à mégacaryocytes"/>
+            <Concept code="C94.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie (aiguë) à mégacaryocytes"/>
             <Concept code="C94.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à mastocytes"/>
             <Concept code="C94.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Panmyélose aigüe avec myélofibrose"/>
             <Concept code="C94.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladie myélodysplasique et myéloproliférative, non classée ailleurs"/>
             <Concept code="C94.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres leucémies précisées"/>
             <Concept code="C95" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie à cellules non précisées"/>
-            <Concept code="C95.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie aigüe à cellules non précisées"/>
+            <Concept code="C95.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie aiguë à cellules non précisées"/>
             <Concept code="C95.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie chronique à cellules non précisées"/>
             <Concept code="C95.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres leucémies à cellules non précisées"/>
             <Concept code="C95.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie, sans précision"/>
             <Concept code="C96" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeurs malignes des tissus lymphoïde, hématopoïétique et apparentés, autres et non précisées"/>
-            <Concept code="C96.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Histiocytose à cellules de Langerhans multifocale et multisystémique (disséminée) [maladie de Letterer–Siwe]"/>
+            <Concept code="C96.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Histiocytose à cellules de Langerhans multifocale et multisystémique (disséminée) [Maladie de Letterer-Siwe]"/>
             <Concept code="C96.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur maligne à mastocytes"/>
-            <Concept code="C96.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Sarcome à cellules dendritiques [cellules accessoires]"/>
+            <Concept code="C96.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Sarcome à cellules dendritiques (cellules accessoires)"/>
             <Concept code="C96.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Histiocytose à cellules de Langerhans multifocale et unisystémique"/>
             <Concept code="C96.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Histiocytose à cellules de Langerhans unifocale"/>
             <Concept code="C96.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs malignes précisées des tissus lymphoïde, hématopoïétique et apparentés"/>
@@ -573,7 +573,7 @@
             <Concept code="D00.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ de l'estomac"/>
             <Concept code="D01" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ des organes digestifs, autres et non précisés"/>
             <Concept code="D01.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ du côlon"/>
-            <Concept code="D01.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ de la jonction recto-sigmoïdienne"/>
+            <Concept code="D01.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ de la jonction rectosigmoïdienne"/>
             <Concept code="D01.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ du rectum"/>
             <Concept code="D01.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ de l'anus et du canal anal"/>
             <Concept code="D01.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Carcinome in situ de parties de l'intestin, autres et non précisées"/>
@@ -681,7 +681,7 @@
             <Concept code="D43.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue des nerfs crâniens"/>
             <Concept code="D43.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue de la moelle épinière"/>
             <Concept code="D43.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue d'autres parties du système nerveux central"/>
-            <Concept code="D43.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue du système nerveux (central), sans précision"/>
+            <Concept code="D43.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue du système nerveux central, sans précision"/>
             <Concept code="D44" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur des glandes endocrines à évolution imprévisible ou inconnue"/>
             <Concept code="D44.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue de la thyroïde"/>
             <Concept code="D44.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible ou inconnue de la surrénale"/>
@@ -699,27 +699,27 @@
             <Concept code="D46" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Syndromes myélodysplasiques"/>
             <Concept code="D46.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Anémie réfractaire sans sidéroblastes en couronne, ainsi précisée"/>
             <Concept code="D46.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Anémie réfractaire avec sidéroblastes en couronne"/>
-            <Concept code="D46.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="AAnémie réfractaire avec excès de blastes [AREB]"/>
+            <Concept code="D46.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Anémie réfractaire avec excès de blastes [AREB]"/>
             <Concept code="D46.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Anémie réfractaire, non précisée"/>
             <Concept code="D46.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Anémie réfractaire avec dysplasie de plusieurs lignées cellulaires"/>
             <Concept code="D46.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Syndrome myélodysplasique avec syndrome de délétion isolée du chromosome 5 [del(5q)]"/>
             <Concept code="D46.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres syndromes myélodysplasiques"/>
             <Concept code="D46.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Syndrome myélodysplasique, sans précision"/>
             <Concept code="D47" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs des tissus lymphoïde, hématopoïétique et apparentés à évolution imprévisible ou inconnue"/>
-            <Concept code="D47.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeurs à histiocytes et mastocytes à évolution imprévisible et inconnue"/>
-            <Concept code="D47.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladie myéloproliférative chronique"/>
+            <Concept code="D47.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeurs à histiocytes et mastocytes (à évolution imprévisible et inconnue)"/>
+            <Concept code="D47.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Maladie myéloproliférative (chronique)"/>
             <Concept code="D47.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Gammapathie monoclonale de signification indéterminée [GMSI]"/>
             <Concept code="D47.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Thrombocytémie essentielle (hémorragique)"/>
             <Concept code="D47.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Ostéomyélofibrose"/>
             <Concept code="D47.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Leucémie chronique à éosinophiles [syndrome hyperéosinophilique]"/>
-            <Concept code="D47.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs précisées des tissus lymphoïde, hématopoïétique et apparentés à évolution imprévisible ou inconnue"/>
-            <Concept code="D47.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur des tissus lymphoïde, hématopoïétique et apparentés à évolution imprévisible ou inconnue, sans précision"/>
+            <Concept code="D47.7" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs précisées à évolution imprévisible et inconnue des tissus lymphoïde, hématopoïétique et apparentés à (évolution imprévisible ou inconnue)"/>
+            <Concept code="D47.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue des tissus lymphoïde, hématopoïétique et apparentés (à évolution imprévisible ou inconnue), sans précision"/>
             <Concept code="D48" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur de sièges autres et non précisés à évolution imprévisible ou inconnue"/>
             <Concept code="D48.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue des os et du cartilage articulaire"/>
             <Concept code="D48.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue du tissu conjonctif et des autres tissus mous"/>
             <Concept code="D48.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue des nerfs périphériques et du système nerveux autonome"/>
             <Concept code="D48.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue du rétropéritoine"/>
-            <Concept code="D48.30" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tératome [dysembryome] sacrococcygien"/>
+            <Concept code="D48.30" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tératome sacro-coccygien [dysembryome]"/>
             <Concept code="D48.38" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres tumeurs à évolution imprévisible ou inconnue du rétropéritoine"/>
             <Concept code="D48.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible du péritoine"/>
             <Concept code="D48.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue de la peau"/>

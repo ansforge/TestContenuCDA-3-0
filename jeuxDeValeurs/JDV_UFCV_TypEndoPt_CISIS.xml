@@ -2,11 +2,10 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_UFCV_TypEndoPt_CISIS" id="1.2.250.1.213.1.1.4.2.20" version="test">
         <ConceptList>
-            <Concept code="D0001-6" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Endoprothèse Coronaire"/>
-            <Concept code="D0001-7" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Endoprothèse Carotide"/>
-            <Concept code="D0001-8" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Endoprothèse MI"/>
-            <Concept code="D0001-9" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Endoprothèse Rénale"/>
-            <Concept code="D0001-10" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Endoprothèse Autre"/>
+            <Concept code="P07040201" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20240423000000" displayName="STENTS CORONAIRES"/>
+            <Concept code="P0704020201" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20240423000000" displayName="STENTS VASCULAIRES PÉRIPHÉRIQUES NUS"/>
+            <Concept code="P07040202" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20240423000000" displayName="NDOPROTHÈSES VASCULAIRES PÉRIPHÉRIQUES DITES &quot;STENTS PÉRIPHÉRIQUES&quot;"/>
+            <Concept code="P07040199" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20240423000000" displayName="ENDOPROTHÈSES VASCULAIRES - AUTRES"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

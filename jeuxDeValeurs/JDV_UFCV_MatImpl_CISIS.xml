@@ -7,8 +7,8 @@
             <Concept code="P0704" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"/>
             <Concept code="J0101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES"/>
             <Concept code="J019001010101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE"/>
-            <Concept code="J01030101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE  VENTRICULAIRE DROITE"/>
-            <Concept code="J01030102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE"/>
+            <Concept code="J01030101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)"/>
+            <Concept code="J01030102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE (LVAD)"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

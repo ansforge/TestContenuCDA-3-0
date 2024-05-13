@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ValueSet dateFin="" dateMaj="20210326120000" dateValid="20210326120000" description="Type de participation CI-SIS" displayName="JDV_J144_ParticipationType_CISIS.tabs" id="1.2.250.1.213.1.1.5.591" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J144-ParticipationType-CISIS">
+        <ConceptList>
+            <Concept code="REF" codeSystem="2.16.840.1.113883.5.90" displayName="Référent / Prescripteur"/>
+            <Concept code="REFB" codeSystem="2.16.840.1.113883.5.90" displayName="Personne ayant adressé le patient"/>
+            <Concept code="INF" codeSystem="2.16.840.1.113883.5.90" displayName="Informateur"/>
+            <Concept code="RESP" codeSystem="2.16.840.1.113883.5.90" displayName="Responsable de l'acte"/>
+            <Concept code="PRF" codeSystem="2.16.840.1.113883.5.90" displayName="Exécutant"/>
+            <Concept code="CON" codeSystem="2.16.840.1.113883.5.90" displayName="Consultant"/>
+            <Concept code="VRF" codeSystem="2.16.840.1.113883.5.90" displayName="Vérificateur"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>

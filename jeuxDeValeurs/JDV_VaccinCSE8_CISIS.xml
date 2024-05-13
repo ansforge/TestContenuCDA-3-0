@@ -3,7 +3,7 @@
     <ValueSet displayName="JDV_VaccinCSE8_CISIS" id="1.2.250.1.213.1.1.5.105" version="test">
         <ConceptList>
             <Concept code="J07BC01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin contre l'hépatite B"/>
-            <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="Vaccin antituberculeux"/>
+            <Concept code="J07AN" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20100101000000" displayName="vaccins de la tuberculose"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

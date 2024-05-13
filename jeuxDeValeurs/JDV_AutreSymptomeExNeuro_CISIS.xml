@@ -5,7 +5,7 @@
             <Concept code="MED-380" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20180101000000" displayName="Déficit moteur de la main"/>
             <Concept code="MED-484" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20180101000000" displayName="Latéropulsion"/>
             <Concept code="G52.3" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Affections du nerf grand hypoglosse"/>
-            <Concept code="G90.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Syndrome de Claude Bernard-Horner"/>
+            <Concept code="G90.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Syndrome de Claude Bernard–Horner"/>
             <Concept code="H53.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Diplopie"/>
             <Concept code="H54.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Cécité monoculaire"/>
             <Concept code="H55" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Nystagmus et autres anomalies des mouvements oculaires"/>

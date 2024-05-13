@@ -2,8 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
@@ -288,7 +289,7 @@
         <time nullFlavor="NA"/>
         <associatedEntity classCode="PROV">
             <id root="1.2.250.1.71.4.2.1" extension="801984758437"/>
-            <code code="G15_10/SM26" displayName=" Médecin - Qualifié en Médecin Générale (SM)"
+            <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
                 codeSystem="1.2.250.1.213.1.1.4.5"/>
             <addr>
                 <houseNumber>3</houseNumber>
@@ -322,7 +323,7 @@
     <!-- Acte documenté (acte principal) -->
     <documentationOf typeCode="DOC">
         <serviceEvent classCode="ACT" moodCode="EVN">
-            <code code="IMP" displayName="Hospitalisation" 
+            <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" 
                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>            
             <!-- Date de début d'hospitalisation (obligatoire pour l'acte principal) -->
             <effectiveTime>
@@ -368,7 +369,7 @@
     <!-- Contexte de la prise en charge -->   
     <componentOf>
         <encompassingEncounter>
-            <code code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode"/>
+            <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode"/>
             <effectiveTime>
                 <low value="20191029111700+0100"/>
                 <high value="20191029111800+0100"/>
@@ -478,7 +479,7 @@
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
                                 <period value="1" unit="d"/>
                             </effectiveTime>
-                            <!-- Voie d'administration : JDV_RouteofAdministration_CISIS (1.2.250.1.213.1.1.5.677) -->
+                            <!-- Voie d'administration : Terminologie EDQM - Standard terms / classe ROA (Voie d'administration) -->
                             <routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
                             <!-- Dose -->
                             <doseQuantity>

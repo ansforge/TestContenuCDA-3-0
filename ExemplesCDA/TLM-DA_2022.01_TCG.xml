@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -256,7 +257,7 @@
       <!-- PS identifié par son N°RPPS -->
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
       <!-- Profession / spécialité du PS -->
-      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecin Générale (SM)"
+      <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <!-- Adresse du PS-->
       <addr>
@@ -338,7 +339,7 @@
         <assignedEntity>
           <!-- PS identifié par son N°RPPS -->
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-          <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecin Générale (SM)"
+          <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
           <!-- Adresse du PS-->
           <addr>
@@ -433,7 +434,7 @@
   <componentOf>
     <encompassingEncounter>
       <!-- Type de prise en charge -->
-      <code code="VR" displayName="Virtuelle" codeSystem="2.16.840.1.113883.5.4"/>
+      <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4"/>
       <!-- Date de la prise en charge -->
       <effectiveTime>
         <low value="20191219"/>
@@ -442,7 +443,7 @@
       <responsibleParty>
         <assignedEntity classCode="ASSIGNED">
           <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-          <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecin Générale (SM)"
+          <code code="G15_10/SM26" displayName="Médecin - Qualifié en Médecine Générale (SM)"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
           <!-- Adresse du PS-->
           <addr>
@@ -613,7 +614,7 @@
                             <low value="20191125"/>
                           </effectiveTime>
                           <value xsi:type="CD" code="G45.9"
-                            displayName="Accident Ischémique Cérébral Transitoire"
+                            displayName="Accident ischémique cérébral transitoire, sans précision"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                             <originalText>
                               <reference value="#patho001"/>
@@ -966,7 +967,7 @@
                           <participant typeCode="CSM">
                             <participantRole classCode="MANU">
                               <playingEntity classCode="MMAT">
-                                <code code="J01DE01" displayName="Céfépime"
+                                <code code="J01DE01" displayName="céfépime"
                                   codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                                   <originalText>
                                     <reference value="#Agent"/>

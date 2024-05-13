@@ -2,9 +2,9 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
     <ValueSet displayName="JDV_PatientAdressePar_CISIS" id="1.2.250.1.213.1.1.5.38" version="test">
         <ConceptList>
-            <Concept code="G15_10/C23" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Gynéco/obstétricien"/>
-            <Concept code="G15_10/C72" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Généticien"/>
-            <Concept code="G15_10/SM54" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Généraliste"/>
+            <Concept code="G15_10/C23" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Gynécologie médicale et Obstétrique ©"/>
+            <Concept code="G15_10/C72" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Génétique médicale ©"/>
+            <Concept code="G15_10/SM54" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Médecine Générale (SM)"/>
             <Concept code="ORG-019" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Venu de lui-même"/>
             <Concept code="ORG-020" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Association de patients"/>
             <Concept code="ORG-021" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pédiatre ville"/>

@@ -3,9 +3,9 @@
     <ValueSet displayName="JDV_ModaliteSortie_CISIS" id="1.2.250.1.213.1.1.5.74" version="test">
         <ConceptList>
             <Concept code="160849004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="retour au domicile"/>
-            <Concept code="109" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Etablissement de santé privé autorisé en soins de suite et de réadaptation (SSR)"/>
-            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à domicile (HAD)"/>
-            <Concept code="500" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="EHPAD"/>
+            <Concept code="109" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Etablissement de santé privé autorisé en SSR"/>
+            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à Domicile"/>
+            <Concept code="500" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Etablissement d'hébergement pour personnes âgées dépendantes"/>
             <Concept code="GEN-092.06.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre établissement de santé"/>
             <Concept code="GEN-092.06.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre destination"/>
         </ConceptList>

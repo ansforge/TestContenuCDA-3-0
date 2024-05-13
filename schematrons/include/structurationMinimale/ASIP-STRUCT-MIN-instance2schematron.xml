@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    <!-- Chapter 1: Release Info (if publication is a release) -->
+    <!-- ========= -->
+   <release project="1.2.250.1.213.1.1.1.1" prefix="ASIP-STRUCT-MIN-" signature="develop" date="2018-12-17T01:02:05">
+      <note language="fr-FR">
+         <div>There have been no changes to issues since the last intermediate version or release.</div>
+      </note>
+   </release>
+   <!-- Chapter 2: Mapping based on model list -->
+   <!-- ========= -->
+   <!-- Used to map an instance to a specific Schematron. How to read:
+- For every template-id that is used in instances there is an element map, e.g.
+  <map model="REPC_IN004110UV01" namespace="urn:hl7-org:v3" sch="peri20-counseling-fase-1c.sch" schsvrl="peri20-counseling-fase-1c.xsl"/>
+  or
+  <map templateRoot="2.16.840.1.113883.2.4.6.10.90.59" templateExt="2017-03-27" sch="peri20-counseling-fase-1c.sch" schsvrl="peri20-counseling-fase-1c.xsl"/>
+  <map templateRoot="2.16.840.1.113883.2.4.6.10.90.59" sch="peri20-counseling-fase-1c.sch" schsvrl="peri20-counseling-fase-1c.xsl"/>
+  or 
+  <map rootelement="REPC_IN004110UV01" namespace="urn:hl7-org:v3" sch="peri20-counseling-fase-1c.sch" schsvrl="peri20-counseling-fase-1c.xsl"/>
+  
+  - @model       - optional    - hint as to the XML Schema that could be used
+  - @namespace   - mandatory   - default namespace-uri() of the project and of the instance unless specified otherwise
+  or
+  - templateRoot - mandatory   - in HL7v3 this would be an OID. In other instance types it might be something else, but then this mapping file might need adjusted setup
+  - templateExt  - optional    - in HL7v3 this would be any string found in templateId/@extension
+  or
+  - @rootelement - required    - local-name() of the root element of the instance
+  - @namespace   - mandatory   - namespace-uri() of the root element
+  
+  One of the following is required, normally schsvrl makes sense:
+  - @schsvrl     - conditional - path+file name of the SVRL XSL. The path should be relative to this index/map file
+  - @schtext     - conditional - path+file name of the Text XSL. The path should be relative to this index/map file
+  - @sch         - conditional - path+file name of the original Schematron file. The path should be relative to this index/map file
+    
+  Note that the same template may be part of multiple transactions, hence multiple map element could be present for the same template. The attached Schematron
+  will have different names, but will have the exact same rules (same template, same rules) hence only the first match is needed for validation.
+  
+- As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... -->
+   <!-- template name: SMDS_CDAClinicalDocument -->
+   <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="ASIP-STRUCT-MIN-StrucMin.sch" schsvrl="ASIP-STRUCT-MIN-StrucMin.xsl" xsd="ClinicalDocument.xsd"/>
+   <!-- Chapter 3: Mapping based on representing templates -->
+   <!-- ========= -->
+   <!-- Used to map a representing template to a specific Schematron. How to read:
+- For every representing template the schematron file and sch svrl xsl conversion file is mentioned
+- The corresponding root element plus its namespace is mentioned 
+- Every transaction represented by this template is named-->
+   <template id="1.2.250.1.213.1.1.1.1" effectiveDate="" sch="ASIP-STRUCT-MIN-StrucMin.sch" schsvrl="ASIP-STRUCT-MIN-StrucMin.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="1.2.250.1.213.1.1.1.1.4.2" effectiveDate="2018-01-08T14:04:33" statusCode="draft" name="StrucMinDoc"/>
+   </template>
+   <!-- Chapter 4: Schematron parameters that were used for this compilation -->
+</mappings>

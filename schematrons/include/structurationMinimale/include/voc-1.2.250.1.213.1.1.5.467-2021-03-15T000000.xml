@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" displayName="JDV_J04_XdsPracticeSettingCode_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.467" name="JDV_J04_XdsPracticeSettingCode_CISIS" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.6" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.6"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.9" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.9" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.9" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.9" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.9"/>
+      <publishingAuthority name="ASIP Santé" inherited="project"/>
+      <conceptList>
+         <concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Expression personnelle du patient" level="0" type="L"/>
+         <concept code="SNR" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Service numérique référencé" level="0" type="L"/>
+         <concept code="AMBULATOIRE" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Ambulatoire" level="0" type="L"/>
+         <concept code="AMO" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Organisme d'assurance maladie obligatoire" level="0" type="L"/>
+         <concept code="DEPISTAGE" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Dépistage" level="0" type="L"/>
+         <concept code="ETABLISSEMENT" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Etablissement de santé" level="0" type="L"/>
+         <concept code="HAD" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Hospitalisation à domicile" level="0" type="L"/>
+         <concept code="MAD" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Maintien à domicile" level="0" type="L"/>
+         <concept code="PALLIATIF" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Soins palliatifs" level="0" type="L"/>
+         <concept code="SAD" codeSystem="1.2.250.1.213.1.1.4.9" displayName="Soins à domicile" level="0" type="L"/>
+         <concept code="SAMU_SMUR" codeSystem="1.2.250.1.213.1.1.4.9" displayName="SAMU/SMUR" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

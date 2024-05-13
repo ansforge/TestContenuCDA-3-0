@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
+<?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -131,7 +132,7 @@
     <time value="20190128120000+0100" />
     <assignedAuthor>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10" displayName="Médecin" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>48</houseNumber>
         <streetName>Bd Sérurier</streetName>
@@ -202,7 +203,7 @@
     <signatureCode code="S" />
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10" displayName="Médecin" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>48</houseNumber>
         <streetName>Bd Sérurier</streetName>
@@ -717,7 +718,7 @@
               <!-- Identifiant de la prise en charge -->
               <id root="6917FE7A-2F04-458E-8224-D273C6B643E7"/>
               <!-- Type de prise en charge : valeur issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) -->
-              <code code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4"/>
+              <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" codeSystem="2.16.840.1.113883.5.4"/>
               <text>
                 <reference value="#IdPEC" />
               </text>
@@ -729,7 +730,7 @@
                 <time nullFlavor="NA" />
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+                  <code code="G15_10" displayName="Médecin" codeSystem="1.2.250.1.213.1.1.4.5" />
                   <addr nullFlavor="NASK" />
                   <telecom nullFlavor="NASK" />
                   <assignedPerson>
@@ -876,7 +877,7 @@
                 <time nullFlavor="NA"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
-                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
+                  <code code="G15_10" displayName="Médecin" codeSystem="1.2.250.1.213.1.1.4.5" />
                   <addr>
                     <houseNumber>48</houseNumber>
                     <streetName>Bd Sérurier</streetName>

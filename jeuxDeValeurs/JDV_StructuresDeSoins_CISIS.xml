@@ -3,11 +3,11 @@
     <ValueSet displayName="JDV_StructuresDeSoins_CISIS" id="1.2.250.1.213.1.1.5.82" version="test">
         <ConceptList>
             <Concept code="ORG-107" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Service de médecine du travail"/>
-            <Concept code="220" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Centre social"/>
+            <Concept code="220" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Centre Social"/>
             <Concept code="ORG-109" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Caisse d'assurance de retraite et santé au travail (CARSAT)"/>
             <Concept code="ORG-110" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Service d'appui au maintien dans l'emploi des travailleurs handicapés (SAMETH)"/>
             <Concept code="609" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Maison Départementale pour Personnes Handicapées (MDPH)"/>
-            <Concept code="463" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Centre local d'information et de coordination de personnes âgées"/>
+            <Concept code="463" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Centres Locaux Information Coordination P.A.(C.L.I.C.)"/>
             <Concept code="ORG-054" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Établissement de santé de référence"/>
             <Concept code="ORG-055" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Centre d'hébergement"/>
             <Concept code="ORG-056" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Structure(s) de coordination ville-hôpital"/>
