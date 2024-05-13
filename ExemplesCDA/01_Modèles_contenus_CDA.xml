@@ -86,9 +86,8 @@
 					<family qualifier="CL">PAT-TROIS</family>
 					<given qualifier="CL">DOMINIQUE</given>
 					<!-- Noms d’usage : Pas affichés en gras -->
-					<family qualifier="SP">PAT-TROIS</family>					
 					<!-- Liste des prénoms de l’acte de naissance : Pas affichés en gras -->
-					<given>DOMINIQUE</given>
+					<given>DOMINIQUE MARIE-LOUISE</given>
 				</name>
 				<administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
 				<birthTime value="19790328"/>
