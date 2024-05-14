@@ -335,7 +335,9 @@
                   <td>
                     <content ID="vac-01-reac">Fièvre due à des médicaments</content>
                   </td>     
-                  <td ID="vac-01-comment">Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td>
+                  <td>
+                    <content ID="vac-01-comment">Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</content>
+                  </td>
                   <td>Dr Charles MULLER</td>
                 </tr>
               </tbody>

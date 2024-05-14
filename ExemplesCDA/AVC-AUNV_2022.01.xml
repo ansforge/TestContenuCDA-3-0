@@ -990,7 +990,7 @@
                   <effectiveTime>
                     <low value="20180923" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="E10.9" displayName="Diabète sucré de type 1 - &quot; Sans complication &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="E10" displayName="Diabète sucré de type 1" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText><reference value="diab"/></originalText>
                   </value>
                   <!-- Suivi du traitement -->

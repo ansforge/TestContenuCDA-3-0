@@ -545,7 +545,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F1D3CF53-0F44-43F5-8008-D8B35A83394A" />
-                  <code code="E14.9" displayName="Diabète sucré, sans précision - &quot; Sans complication &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="E14" displayName="Diabète sucré, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#diabete">
                     </reference>
@@ -581,7 +581,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="57F2DE3E-B68B-4725-BFBF-3CCEE575DF1D" />
-                  <code code="F17.2" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac - &quot; Syndrome de dépendance &quot;" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
+                  <code code="F17" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                   <text>
                     <reference value="#tabac">
                     </reference>
@@ -2838,7 +2838,7 @@
               </text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
-              <value xsi:type="CD" code="371133007" displayName="modification du traitement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <value xsi:type="CD" code="445528004" displayName="traitement modifié" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- Traitement / Traitement médical préventif de complication -->

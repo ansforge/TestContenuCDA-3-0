@@ -307,8 +307,8 @@
                   <td>voie intramusculaire</td>
                   <td><content ID="approachSiteCode-01">Deltoïde gauche</content></td>
                   <td><content ID="bcg-reac">fièvre due à des médicaments</content></td>
-                  <td ID="bcg-comment">L'usager a été informé des avantages et risques liés à
-                              la vaccination</td>
+                  <td><content ID="bcg-comment">L'usager a été informé des avantages et risques liés à
+                    la vaccination</content></td>
                   <td>Dr Charles MULLER</td>
                 </tr>
               </tbody>
@@ -346,7 +346,7 @@
                   <td>voie intramusculaire</td>
                   <td><content ID="approachSiteCode-02">Deltoïde gauche</content></td>
                   <td><content ID="tetanos1-reac">fièvre due à des médicaments</content></td>
-                  <td ID="tetanos1-comment">-</td>
+                  <td><content ID="tetanos1-comment">-</content></td>
                   <td>Dr Charles MULLER</td>
                 </tr>
                 <tr>
@@ -359,7 +359,7 @@
                   <td>voie intramusculaire</td>
                   <td><content ID="approachSiteCode-03">Deltoïde gauche</content></td>
                   <td><content ID="tetanos2-reac">fièvre due à des médicaments</content></td>
-                  <td ID="tetanos2-comment">Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td>
+                  <td><content ID="tetanos2-comment">Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</content></td>
                   <td>Dr Charles MULLER</td>
                 </tr>
               </tbody>
