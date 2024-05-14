@@ -2157,32 +2157,6 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="not(cda:entryRelationship)                     or cda:entryRelationship[@typeCode='RSON']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1']             or cda:entryRelationship[@typeCode='REFR']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3']             or cda:entryRelationship[@typeCode='COMP']/cda:substanceAdministration             or cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3']             or cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1']             or cda:entryRelationship[@typeCode='COMP']/cda:observation/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']             or cda:entryRelationship[@typeCode='REFR']/cda:substanceAdministration/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.10']             or cda:entryRelationship[@typeCode='COMP']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.8']             or cda:entryRelationship[@typeCode='COMP']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.9.1']             or cda:entryRelationship[@typeCode='COMP']/cda:supply/cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.15']             "/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_medications_fr] Erreur de conformité CI-SIS : Seuls les éléments "entryRelationship" optionnels suivants sont autorisés :
-            - Motif du traitement : avec un typeCode='RSON' et une entrée Référence interne (1.3.6.1.4.1.19376.1.5.3.1.4.4.1)           
-            - Référence de la prescription : avec un typeCode 'REFR' et une entrée Prescription (1.3.6.1.4.1.19376.1.5.3.1.4.7.3)
-            - SubstanceAdministration subordonné : avec un typeCode='COMP' et une entrée de type substanceAdministration subordonnée            
-            - Instructions au patient : avec un typeCode='SUBJ'  et une entrée Instructions au patient (1.3.6.1.4.1.19376.1.5.3.1.4.3)  
-            - Instructions au dispensateur : avec un typeCode='SUBJ'  et une entrée Instructions au dispensateur (1.3.6.1.4.1.19376.1.5.3.1.4.3.1)            
-            - Simple Observation : avec un typeCode='COMP' et une entrée Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13)            
-            - Référence à un traitement d'un plan de traitement : avec un typeCode='REFR' et une entrée Référence à un traitement d'un plan de traitement (1.3.6.1.4.1.19376.1.9.1.3.10) 
-            - Quantité à dispenser : avec un typeCode='COMP' et une entrée Quantité à dispenser (1.3.6.1.4.1.19376.1.9.1.3.8)
-            - Autorisation de substitution : avec un typeCode='COMP' et une entrée Autorisation de substitution (1.3.6.1.4.1.19376.1.9.1.3.9.1)
-            - Période de renouvellement : avec un typeCode='COMP' et une entrée Période de renouvellement (1.3.6.1.4.1.19376.1.9.1.3.15)
-             
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
       <xsl:apply-templates select="*" mode="M19"/>
    </xsl:template>
 
@@ -5947,8 +5921,8 @@
       <xsl:apply-templates select="*" mode="M53"/>
    </xsl:template>
 
-   <!--PATTERN E_directiveAnticipee_frCI-SIS directive anticipée-->
-<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">CI-SIS directive anticipée</svrl:text>
+   <!--PATTERN E_directiveAnticipee_frCI-SIS directives anticipées-->
+<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">CI-SIS directives anticipées</svrl:text>
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.54&#34;]" priority="1000"
@@ -5958,36 +5932,15 @@
 
 		    <!--ASSERT -->
 <xsl:choose>
-         <xsl:when test="self::cda:observation[@classCode='OBS' and @moodCode='EVN']"/>
+         <xsl:when test="cda:templateId[@root='1.2.250.1.213.1.1.3.54']"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] Erreur de conformité CI-SIS : Dans l'entrée FR-Directive-anticipee(1.2.250.1.213.1.1.3.54), 
-            les attributs de l'élément CDA 'observation' sont classCode='OBS' et moodCode='EVN'</svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.7'] and cda:templateId[@root='1.2.250.1.213.1.1.3.54']             and cda:templateId[@root='2.16.840.1.113883.10.20.1.17'] and cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.13']"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            
-            [1] [E_directiveAnticipee_fr.sch] Erreur de conformité CI-SIS : 
-            L'entrée "FR-Directive-anticipee" doit comporter les 'templateId' suivants :
-            - Un premier 'templateId' dont l'attribut @root="1.2.250.1.213.1.1.3.54"
-            - Un deuxième 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.13.7"
-            - Un troisième 'templateId' dont l'attribut @root="2.16.840.1.113883.10.20.1.17"
-            - Un quatrième 'templateId' dont l'attribut @root="1.3.6.1.4.1.19376.1.5.3.1.4.13"
-            
+               <svrl:text>            
+            [E_directiveAnticipee_fr.sch] Erreur de conformité CI-SIS : 
+            L'entrée "FR-Directive-anticipee" doit comporter le 'templateId' avec l'attribut @root="1.2.250.1.213.1.1.3.54"            
         </svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
@@ -5995,14 +5948,16 @@
 
 		    <!--ASSERT -->
 <xsl:choose>
-         <xsl:when test="count(cda:id)=1"/>
+         <xsl:when test="(not(cda:value) and cda:code/@code=&#34;75793-0&#34;) or (not(cda:value) and cda:code/@code=&#34;42348-3&#34;) or(cda:value/@xsi:type=&#34;BL&#34; and cda:text/cda:reference)"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
                <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément id est obligatoirement présent une ou plusieurs fois.
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : La valeur de la directive est un booléen (xsi:type="BL") qui permet d’indiquer l’autorisation ou la non autorisation, 
+            sauf si l’élément "code" est @code="75793-0" [LOINC]("Autre directive") : dans ce cas, l'élément "value" n'est pas présent et la précision est fournie dans la partie narrative ("text/reference") 
+            ou si l'élément "code" est @code="42348-3" [LOINC]("Directives anticipées") : dans ce cas, l'élément "value" n'est pas présent et un document encodé en B64 est encapsulé dans l'élément 'component/observationMedia'.
         </svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
@@ -6010,105 +5965,14 @@
 
 		    <!--ASSERT -->
 <xsl:choose>
-         <xsl:when test="count(cda:code)=1"/>
+         <xsl:when test="count(cda:entryRelationship/cda:observationMedia)&lt;=1"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
                <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément code doit être présent une fois.
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="count(cda:text)=1 and count(cda:text/cda:reference)=1"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément text doit être présent une fois et doit contenir l'élément reference.
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="cda:statusCode[@code='completed']"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text> 
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : Le composant "statutCode" 
-            est toujours fixé à la valeur code='completed'. </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="count(cda:effectiveTime)=1"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément effectiveTime doit être présent une fois [1..1].
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="(not(cda:value) and cda:code/@code=&#34;71388002&#34;) or (cda:value/@xsi:type=&#34;BL&#34; and cda:text/cda:reference)"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : La valeur de la directive identifiée est un élément booléen (xsi:type="BL") qui permet d’indiquer l’autorisation ou la non autorisation, 
-            sauf si l’élément "code" est @code="71388002" [SNOMED CT]("Autre directive") : dans ce cas, l'élément "value" n'est pas présent et la précision est fournie dans la partie narrative ("text/reference").
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="count(cda:value)&lt;=1"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément value doit être présent maximum une fois [0..1].
-        </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
-         <xsl:when test="count(cda:reference)&lt;=1"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément reference doit être présent maximum une fois [0..1].
+            [E_directiveAnticipee_fr] : Erreur de conformité CI-SIS : L'élément 'entryRelationship/observationMedia' ne peut être présent qu'une seule fois [0..1] et doit avoir les attributs @classCode="OBS" et @moodCode="EVN".
         </svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>

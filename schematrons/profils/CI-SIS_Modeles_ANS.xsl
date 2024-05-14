@@ -396,85 +396,100 @@
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M49"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_dispositifMedical-2_ANS</xsl:attribute>
+            <xsl:attribute name="id">S_resultats_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M50"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_dispositifMedicalComplement_ANS</xsl:attribute>
+            <xsl:attribute name="id">S_pointsDeVigilances-non-code_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M51"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_dispositifMedicalImplante_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_dispositifMedical-2_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M52"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_enRapportAccidentTravail_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_dispositifMedicalComplement_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M53"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_enRapportALD_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_dispositifMedicalImplante_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M54"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_horsAMM_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_enRapportAccidentTravail_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M55"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_nonRemboursable_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_enRapportALD_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M56"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_observationNIHSSComponent_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_horsAMM_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M57"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_observationScoreNIHSS_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_nonRemboursable_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M58"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_organizerDocumentAttache_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_observationNIHSSComponent_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M59"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_organizerRCP_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_observationScoreNIHSS_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M60"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_organizerTraitementInitialAVC_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_organizerDocumentAttache_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M61"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_statutDuDossier_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_organizerRCP_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M62"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_typeDocumentAttache_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_organizerTraitementInitialAVC_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M63"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_transfusionProduitsSanguins_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_statutDuDossier_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M64"/>
          <svrl:active-pattern>
-            <xsl:attribute name="id">E_syntheseMedicaleSejour_ANS</xsl:attribute>
+            <xsl:attribute name="id">E_typeDocumentAttache_ANS</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M65"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="id">E_transfusionProduitsSanguins_ANS</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M66"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="id">E_syntheseMedicaleSejour_ANS</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M67"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="id">E_resultats_ANS</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M68"/>
       </svrl:schematron-output>
    </xsl:template>
 
@@ -4495,12 +4510,177 @@
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M49"/>
    </xsl:template>
 
+   <!--PATTERN S_resultats_ANSVérification de la conformité de la section FR-Resultats (1.2.250.1.213.1.1.2.244) créée par l'ANS-->
+<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Vérification de la conformité de la section FR-Resultats (1.2.250.1.213.1.1.2.244) créée par l'ANS</svrl:text>
+
+	  <!--RULE -->
+<xsl:template match="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.2.244&#34;]" priority="1000"
+                 mode="M50">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.2.244&#34;]"/>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="../cda:section"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text> 
+            [S_resultats_ANS.sch] Erreur de conformité CI-SIS : Cet élément ne peut être utilisé que comme section.
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="count(cda:id)=1"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_resultats_ANS.sch] Erreur de conformité CI-SIS : La section doit contenir un élément 'id'.
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:text"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_resultats_ANS.sch] Erreur de conformité CI-SIS : La section doit contenir un élément 'text'
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:code[@code = &#34;30954-2&#34;]"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_resultats_ANS.sch] Erreur de conformité CI-SIS : Le 'code' de la section doit être '30954-2'.
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="not(cda:entry) or cda:entry/cda:organizer/cda:templateId/@root='1.2.250.1.213.1.1.3.208'"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_resultats_ANS.sch] Erreur de conformité CI-SIS : Les entrées optionnelles autorisées sont FR-Resultats (1.2.250.1.213.1.1.3.208).    
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M50"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M50"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M50">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M50"/>
+   </xsl:template>
+
+   <!--PATTERN S_pointsDeVigilances-non-code_ANSVérification de la conformité de la section FR-Points-de-vigilances-non-code (1.2.250.1.213.1.1.2.245) créée par l'ANS-->
+<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Vérification de la conformité de la section FR-Points-de-vigilances-non-code (1.2.250.1.213.1.1.2.245) créée par l'ANS</svrl:text>
+
+	  <!--RULE -->
+<xsl:template match="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.2.245&#34;]" priority="1000"
+                 mode="M51">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.2.245&#34;]"/>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="../cda:section"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text> 
+            [S_pointsDeVigilances-non-code_ANS.sch] Erreur de conformité CI-SIS : Cet élément ne peut être utilisé que comme section.
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="count(cda:id)=1"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_pointsDeVigilances-non-code_ANS.sch] Erreur de conformité CI-SIS : Cette section doit contenir un élément 'id' unique.
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:code[@code = &#34;44944-7&#34;]"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_pointsDeVigilances-non-code_ANS.sch] Erreur de conformité CI-SIS : Le code de cette section doit être '44944-7'
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:code[@codeSystem = &#34;2.16.840.1.113883.6.1&#34;]"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [S_pointsDeVigilances-non-code_ANS.sch] Erreur de conformité CI-SIS : L'élément 'codeSystem' doit être codé à partir de la nomenclature LOINC (2.16.840.1.113883.6.1).
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M51"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M51"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M51">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M51"/>
+   </xsl:template>
+
    <!--PATTERN E_dispositifMedical-2_ANSVérification de la conformité de l'entrée FR-Dispositif-medical (1.2.250.1.213.1.1.3.20) créée par l'ANS-->
 <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Vérification de la conformité de l'entrée FR-Dispositif-medical (1.2.250.1.213.1.1.3.20) créée par l'ANS</svrl:text>
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.20&#34;]" priority="1000"
-                 mode="M50">
+                 mode="M52">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.20&#34;]"/>
 
@@ -4672,11 +4852,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M50"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M52"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M50"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M50">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M50"/>
+   <xsl:template match="text()" priority="-1" mode="M52"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M52">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M52"/>
    </xsl:template>
 
    <!--PATTERN E_dispositifMedicalComplement_ANSVérification de la conformité de l'entrée Entrée Dispositif Médical – complément (1.2.250.1.213.1.1.3.1) créée par l'ANS-->
@@ -4684,7 +4864,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.1&#34;]" priority="1000"
-                 mode="M51">
+                 mode="M53">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.1&#34;]"/>
 
@@ -4816,11 +4996,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M51"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M53"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M51"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M51">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M51"/>
+   <xsl:template match="text()" priority="-1" mode="M53"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M53">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M53"/>
    </xsl:template>
 
    <!--PATTERN E_dispositifMedicalImplante_ANSVérification de la conformité de l'entrée "Dispositif Médical Implanté" (1.2.250.1.213.1.1.3.2) créée par l'ANS-->
@@ -4828,7 +5008,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.2&#34;]" priority="1000"
-                 mode="M52">
+                 mode="M54">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.2&#34;]"/>
 
@@ -4906,11 +5086,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M52"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M54"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M52"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M52">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M52"/>
+   <xsl:template match="text()" priority="-1" mode="M54"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M54">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M54"/>
    </xsl:template>
 
    <!--PATTERN E_enRapportAccidentTravail_ANSCI-SIS Entrée "FR-En-rapport-avec-accident-travail"-->
@@ -4918,7 +5098,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.14']" priority="1000"
-                 mode="M53">
+                 mode="M55">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.14']"/>
       <xsl:variable name="count_valueTrue" select="(count(cda:value[@value='true']))"/>
@@ -5042,11 +5222,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M53"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M55"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M53"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M53">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M53"/>
+   <xsl:template match="text()" priority="-1" mode="M55"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M55">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M55"/>
    </xsl:template>
 
    <!--PATTERN E_enRapportALD_ANSVérification de la conformité de l'entrée FR-En-rapport-avec-ALD (1.2.250.1.213.1.1.3.48.13) créée par l'ANS-->
@@ -5054,7 +5234,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.13']" priority="1000"
-                 mode="M54">
+                 mode="M56">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.13']"/>
       <xsl:variable name="count_valueTrue" select="(count(cda:value[@value='true']))"/>
@@ -5178,11 +5358,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M54"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M56"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M54"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M54">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M54"/>
+   <xsl:template match="text()" priority="-1" mode="M56"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M56">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M56"/>
    </xsl:template>
 
    <!--PATTERN E_horsAMM_ANSCI-SIS Entrée FR-Hors-AMM-->
@@ -5190,7 +5370,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.12']" priority="1000"
-                 mode="M55">
+                 mode="M57">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.12']"/>
       <xsl:variable name="count_valueTrue" select="(count(cda:value[@value='true']))"/>
@@ -5316,11 +5496,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M55"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M57"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M55"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M55">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M55"/>
+   <xsl:template match="text()" priority="-1" mode="M57"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M57">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M57"/>
    </xsl:template>
 
    <!--PATTERN E_nonRemboursable_ANSVérification de la conformité de l'entrée FR-Non-remboursable (1.2.250.1.213.1.1.3.48.15) créée par l'ANS-->
@@ -5328,7 +5508,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.15']" priority="1000"
-                 mode="M56">
+                 mode="M58">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.48.15']"/>
       <xsl:variable name="count_valueTrue" select="(count(cda:value[@value='true']))"/>
@@ -5454,11 +5634,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M56"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M58"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M56"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M56">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M56"/>
+   <xsl:template match="text()" priority="-1" mode="M58"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M58">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M58"/>
    </xsl:template>
 
    <!--PATTERN E_observationNIHSSComponent_ANSVérification de la conformité de l'entrée FR-Composant-score-NIHSS (1.2.250.1.213.1.1.3.8) créée par l'ANS-->
@@ -5466,7 +5646,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.8&#34;]" priority="1000"
-                 mode="M57">
+                 mode="M59">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.8&#34;]"/>
 
@@ -5603,11 +5783,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M57"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M59"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M57"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M57">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M57"/>
+   <xsl:template match="text()" priority="-1" mode="M59"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M59">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M59"/>
    </xsl:template>
 
    <!--PATTERN E_observationScoreNIHSS_ANSVérification de la conformité de l'entrée FR-Score-NIHSS (1.2.250.1.213.1.1.3.6) créée par l'ANS-->
@@ -5615,7 +5795,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.6&#34;]" priority="1000"
-                 mode="M58">
+                 mode="M60">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.6&#34;]"/>
 
@@ -5752,11 +5932,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M58"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M60"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M58"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M58">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M58"/>
+   <xsl:template match="text()" priority="-1" mode="M60"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M60">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M60"/>
    </xsl:template>
 
    <!--PATTERN E_organizerDocumentAttache_ANSASIP Santé organizer RCP -->
@@ -5764,7 +5944,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.3.18&#34;]" priority="1000"
-                 mode="M59">
+                 mode="M61">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root = &#34;1.2.250.1.213.1.1.3.18&#34;]"/>
 
@@ -5862,11 +6042,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M59"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M61"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M59"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M59">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M59"/>
+   <xsl:template match="text()" priority="-1" mode="M61"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M61">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M61"/>
    </xsl:template>
 
    <!--PATTERN E_organizerRCP_ANSVérification de la conformité de l'entrée FR-Statut-du-dossier-presente-en-RCP (1.2.250.1.213.1.1.3.7) créée par l'ANS-->
@@ -5874,7 +6054,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.7&#34;]" priority="1000"
-                 mode="M60">
+                 mode="M62">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.7&#34;]"/>
 
@@ -5936,11 +6116,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M60"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M62"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M60"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M60">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M60"/>
+   <xsl:template match="text()" priority="-1" mode="M62"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M62">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M62"/>
    </xsl:template>
 
    <!--PATTERN E_organizerTraitementInitialAVC_ANSVérification de la conformité de l'entrée Traitement initial AVC (1.2.250.1.213.1.1.3.16) créée par l'ANS-->
@@ -5948,7 +6128,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.16&#34;]" priority="1000"
-                 mode="M61">
+                 mode="M63">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.16&#34;]"/>
 
@@ -6025,11 +6205,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M61"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M63"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M61"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M61">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M61"/>
+   <xsl:template match="text()" priority="-1" mode="M63"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M63">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M63"/>
    </xsl:template>
 
    <!--PATTERN E_statutDuDossier_ANSCI-SIS Statut du dossier-->
@@ -6037,7 +6217,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.7&#34;]" priority="1001"
-                 mode="M62">
+                 mode="M64">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.7&#34;]"/>
 
@@ -6114,13 +6294,13 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M62"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M64"/>
    </xsl:template>
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.7']//*[cda:templateId[@root='1.2.250.1.213.1.1.3.48']]"
                  priority="1000"
-                 mode="M62">
+                 mode="M64">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.7']//*[cda:templateId[@root='1.2.250.1.213.1.1.3.48']]"/>
 
@@ -6237,11 +6417,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M62"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M64"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M62"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M62">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M62"/>
+   <xsl:template match="text()" priority="-1" mode="M64"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M64">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M64"/>
    </xsl:template>
 
    <!--PATTERN E_typeDocumentAttache_ANSVérification de la conformité de l'entrée FR-Type-document-attache (1.2.250.1.213.1.1.3.48.18) créée par l'ANS-->
@@ -6249,7 +6429,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.18&#34;]" priority="1000"
-                 mode="M63">
+                 mode="M65">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.18&#34;]"/>
 
@@ -6374,11 +6554,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M63"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M65"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M63"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M63">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M63"/>
+   <xsl:template match="text()" priority="-1" mode="M65"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M65">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M65"/>
    </xsl:template>
 
    <!--PATTERN E_transfusionProduitsSanguins_ANSVérification de la conformité de l'entrée FR-Transfusion-de-produits-sanguins (1.2.250.1.213.1.1.3.48.10) créée par l'ANS-->
@@ -6386,7 +6566,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.10&#34;]" priority="1000"
-                 mode="M64">
+                 mode="M66">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.10&#34;]"/>
 
@@ -6511,11 +6691,11 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M64"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M66"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M64"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M64">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M64"/>
+   <xsl:template match="text()" priority="-1" mode="M66"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M66">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M66"/>
    </xsl:template>
 
    <!--PATTERN E_syntheseMedicaleSejour_ANSVérification de la conformité de l'entrée FR-Synthese-medicale-sejour (1.2.250.1.213.1.1.3.48.9) créée par l'ANS-->
@@ -6523,7 +6703,7 @@
 
 	  <!--RULE -->
 <xsl:template match="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.9&#34;]" priority="1000"
-                 mode="M65">
+                 mode="M67">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="*[cda:templateId/@root=&#34;1.2.250.1.213.1.1.3.48.9&#34;]"/>
 
@@ -6648,10 +6828,123 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M65"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M67"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M65"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M65">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M65"/>
+   <xsl:template match="text()" priority="-1" mode="M67"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M67">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M67"/>
+   </xsl:template>
+
+   <!--PATTERN E_resultats_ANSFR-Resultats Organizer-->
+<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">FR-Resultats Organizer</svrl:text>
+
+	  <!--RULE -->
+<xsl:template match="*[cda:templateId/@root='1.2.250.1.213.1.1.3.208']" priority="1000"
+                 mode="M68">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[cda:templateId/@root='1.2.250.1.213.1.1.3.208']"/>
+      <xsl:variable name="count_templateId" select="count(cda:templateId)"/>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="self::cda:organizer[@classCode='CLUSTER' and @moodCode='EVN']"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'élément "organizer" doit contenir les attributs @classCode et @moodCode fixés respectivement aux valeurs 'CLUSTER' et 'EVN'
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="$count_templateId=1"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'élément "organizer" doit contenir un seul élément templateId
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:id"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'entrée FR-Resultats(1.2.250.1.213.1.1.3.208) doit contenur un élement Id
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:code[@code='26436-6' or @code='18748-4' or @code='26438-2' or @code='27898-6' or @code='26435-8']"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'élément "organizer" doit contenir un élément "code" avec les attributs @code suivants : 
+            26436-6 : Biologie polyvalente
+            18748-4 : Imagerie
+            26438-2 : Cytologie
+            27898-6 : Pathologie
+            26435-8 : Génétique humaine
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="cda:statusCode[@code='completed']"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'élément "organizer" doit contenir un élément "statusCode" avec l'attribut @code='completed'
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+
+		    <!--ASSERT -->
+<xsl:choose>
+         <xsl:when test="count(cda:component/cda:observation[@classCode='OBS' and @moodCode='EVN']/cda:templateId[@root='1.2.250.1.213.1.1.3.209'])&gt;=1"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>
+            [E_resultats_ANS] Erreur de Conformité PCC : l'élément "organizer" doit contenir une ou plusieurs entrée FR-Resultat (templateId : 1.2.250.1.213.1.1.3.209) : 
+            &lt;observation classCode='OBS' moodCode='EVN'&gt;
+            &lt;templateId root='1.2.250.1.213.1.1.3.209'/&gt;
+        </svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M68"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M68"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M68">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M68"/>
    </xsl:template>
 </xsl:stylesheet>

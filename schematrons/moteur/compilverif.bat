@@ -108,31 +108,31 @@ echo.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Partie à ne garder qu'en développement
 :: Test de conformité à IHE_XDS-SD
-del colle.sch concret.sch
-echo.
-echo 1) Pre-compilation du schematron : collage des include
-@echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:..\profils\IHE_XDS-SD.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
-@echo off
-echo.
-echo 2) Pre-compilation du schematron : expansion des abstract
-@echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:colle.sch -xsl:iso_abstract_expand.xsl -o:concret.sch 
-@echo off
-echo.
-echo 3) Compilation en xslt2 : produit \profils\IHE_XDS-SD.xsl
-@echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:concret.sch -xsl:iso_svrl_for_xslt2.xsl -o:..\profils\IHE_XDS-SD.xsl 
-@echo off
+:: del colle.sch concret.sch
+:: echo.
+:: echo 1) Pre-compilation du schematron : collage des include
+:: @echo on
+:: java -cp saxon9he.jar net.sf.saxon.Transform -s:..\profils\IHE_XDS-SD.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
+:: @echo off
+:: echo.
+:: echo 2) Pre-compilation du schematron : expansion des abstract
+:: @echo on
+:: java -cp saxon9he.jar net.sf.saxon.Transform -s:colle.sch -xsl:iso_abstract_expand.xsl -o:concret.sch 
+:: @echo off
+:: echo.
+:: echo 3) Compilation en xslt2 : produit \profils\IHE_XDS-SD.xsl
+:: @echo on
+:: java -cp saxon9he.jar net.sf.saxon.Transform -s:concret.sch -xsl:iso_svrl_for_xslt2.xsl -o:..\profils\IHE_XDS-SD.xsl 
+:: @echo off
 ::
-echo.
-echo Verification du fichier %1.xml
-@echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:..\..\ExemplesCDA\%1.xml -xsl:..\profils\IHE_XDS-SD.xsl -o:..\rapports\%1_verif_IHE_entete.xml 
-@echo off
-echo.
-echo Rapport de verification : ..\rapports\%1_verif_IHE_entete.xml
-echo.
+:: echo.
+:: echo Verification du fichier %1.xml
+:: @echo on
+:: java -cp saxon9he.jar net.sf.saxon.Transform -s:..\..\ExemplesCDA\%1.xml -xsl:..\profils\IHE_XDS-SD.xsl -o:..\rapports\%1_verif_IHE_entete.xml 
+:: @echo off
+:: echo.
+:: echo Rapport de verification : ..\rapports\%1_verif_IHE_entete.xml
+:: echo.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Partie à ne garder qu'en développement
 :: Test de conformité à la structuration minimale
@@ -140,7 +140,7 @@ del colle.sch concret.sch
 echo.
 echo 1) Pre-compilation du schematron : collage des include
 @echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:..\profils\CI-SIS_StructurationMinimale.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
+java -cp saxon9he.jar net.sf.saxon.Transform -s:..\include\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
 @echo off
 echo.
 echo 2) Pre-compilation du schematron : expansion des abstract
