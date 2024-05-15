@@ -3266,7 +3266,7 @@
                               <code code="61077869" displayName="VACCIN BCG SSI, poudre et solvant pour suspension injectable"
                                     codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
                                  <originalText><reference value="#vaccin-BCG"/></originalText>
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>VACCIN BCG SSI, poudre et solvant pour suspension injectable</name>
@@ -3321,7 +3321,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-Hepatite-B"/></originalText>
                                  <!-- Code ATC -->
-                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                 <translation code="J07BC01" displayName="hépatite B, antigène purifié"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                                  </translation>
                               </code>

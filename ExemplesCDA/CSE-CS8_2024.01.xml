@@ -2726,7 +2726,7 @@
                            <manufacturedMaterial>
                               <code>
                                  <originalText><reference value="#vaccin-antituberculeux"/></originalText>
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antituberculeux</name>
@@ -2768,7 +2768,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-Hepatite-B"/></originalText>
                                  <!-- Code ATC -->
-                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                 <translation code="J07BC01" displayName="hépatite B, antigène purifié"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
                                  </translation>
                               </code>

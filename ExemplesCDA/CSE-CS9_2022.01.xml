@@ -2895,7 +2895,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-DPT-dose-1"/></originalText>
                                  <!-- code ATC du vaccin -->
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antituberculeux</name>
@@ -2950,7 +2950,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-DPT-dose-2"/></originalText>  
                                  <!-- code ATC du vaccin -->
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antituberculeux</name>
@@ -3005,7 +3005,7 @@
                               <code>        
                                  <originalText><reference value="#vaccin-Coq-dose-1"/></originalText>   
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
+                                 <translation code="J07AJ" displayName="vaccins coquelucheux"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin contre la coqueluche</name>
@@ -3060,7 +3060,7 @@
                               <code>  
                                  <originalText><reference value="#vaccin-Coq-dose-2"/></originalText> 
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
+                                 <translation code="J07AJ" displayName="vaccins coquelucheux"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin contre la coqueluche</name>
@@ -3115,7 +3115,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-InfB-dose-1"/></originalText>     
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                 <translation code="J07AG" displayName="vaccins de l'Haemophilus influenzae B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin anti haemophilus influenzae B</name>
@@ -3170,7 +3170,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-InfB-dose-2"/></originalText> 
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                 <translation code="J07AG" displayName="vaccins de l'Haemophilus influenzae B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin anti haemophilus influenzae B</name>
@@ -3225,7 +3225,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-HepB-dose-1"/></originalText> 
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                 <translation code="J07AG" displayName="vaccins de l'Haemophilus influenzae B"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin anti haemophilus influenzae B</name>
@@ -3280,7 +3280,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-HepB-dose-2"/></originalText>
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                 <translation code="J07BC01" displayName="hépatite B, antigène purifié"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin contre l'hépatite B</name>
@@ -3335,7 +3335,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-Pneumo-dose-1"/></originalText>
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AL" displayName="Vaccin antipneumococcique"
+                                 <translation code="J07AL" displayName="vaccins pneumococciques"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antipneumococcique</name>
@@ -3390,7 +3390,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-Pneumo-dose-2"/></originalText>  
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AL" displayName="Vaccin antipneumococcique"
+                                 <translation code="J07AL" displayName="vaccins pneumococciques"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antipneumococcique</name>
@@ -3445,7 +3445,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-Mening-dose-1"/></originalText>
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AH07" displayName="Vaccin contre le méningocoque C"
+                                 <translation code="J07AH07" displayName="méningocoque C, antigène polysaccharidique purifié conjugué"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin contre le méningocoque C</name>
@@ -3500,7 +3500,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-BCG-dose-1"/></originalText>
                                  <!-- Code ATC du vaccin -->
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <name>Vaccin antituberculeux</name>
@@ -3581,7 +3581,7 @@
                               <code>
                                  <originalText><reference value="#vaccin-BCG"/></originalText>
                                  <!-- code ATC du vaccin -->
-                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                 <translation code="J07AN" displayName="vaccins de la tuberculose"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <!-- Dénomination de la spécialité -->
