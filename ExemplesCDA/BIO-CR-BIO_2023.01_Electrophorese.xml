@@ -713,7 +713,7 @@
                     </tr>
                     <tr>
                       <td>Conclusion</td>
-                      <td ID="CONCL">Bisalbuminémie</td>
+                      <td><content ID="CONCL">Bisalbuminémie</content></td>
                       <td />
                     </tr>
                   </tbody>

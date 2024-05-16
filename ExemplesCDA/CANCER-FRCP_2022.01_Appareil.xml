@@ -1143,17 +1143,17 @@
                 <tr>
                   <td>Topographie</td>
                   <td>C50.2 [CIM-10]</td>
-                  <td ID="topographie-1">Quadrant supéro-interne du sein</td>
+                  <td><content ID="topographie-1">Quadrant supéro-interne du sein</content></td>
                 </tr>
                 <tr>
                   <td>Latéralité (si applicable)</td>
                   <td>C25228 [NCIT]</td>
-                  <td ID="lateralite-1">Droit</td>
+                  <td><content ID="lateralite-1">Droit</content></td>
                 </tr>
                 <tr>
                   <td>Morphologie</td>
                   <td>8000/3 [CIM-O]</td>
-                  <td ID="morphologie-1">Tumeur maligne, SAI</td>
+                  <td><content ID="morphologie-1">Tumeur maligne, SAI</content></td>
                 </tr>
                 <tr>
                   <td>Stade clinique</td>
@@ -1163,28 +1163,28 @@
                 </tr>
                 <tr>
                   <td>TNM (T)</td>
-                  <td ID="TNM-T">T1b : Tumeur envahissant la sous-muqueuse</td>
+                  <td><content ID="TNM-T">T1b : Tumeur envahissant la sous-muqueuse</content></td>
                   <td>2-3cm</td>
                 </tr>
                 <tr>
                   <td>TNM (N)</td>
-                  <td ID="TNM-N">N1 : Envahissement de 1 à 2 ganglions lymphatiques régionaux</td>
+                  <td><content ID="TNM-N">N1 : Envahissement de 1 à 2 ganglions lymphatiques régionaux</content></td>
                   <td>
                   </td>
                 </tr>
                 <tr>
                   <td>TNM (M)</td>
-                  <td ID="TNM-M">M0 : Pas de métastases à distance</td>
+                  <td><content ID="TNM-M">M0 : Pas de métastases à distance</content></td>
                   <td>
                   </td>
                 </tr>
                 <tr>
                   <td>Autre stade si pertinent</td>
-                  <td colspan="2" ID="autre-classification-11">(Texte libre)</td>
+                  <td colspan="2"><content ID="autre-classification-11">(Texte libre)</content></td>
                 </tr>
                 <tr>
                   <td>Commentaire sur la tumeur</td>
-                  <td colspan="2" ID="commentaire-tumeur-1">(Texte libre)</td>
+                  <td colspan="2"><content ID="commentaire-tumeur-1">(Texte libre)</content></td>
                 </tr>
               </tbody>
             </table>
@@ -1745,21 +1745,21 @@
               </thead>
               <tbody>
                 <tr>
-                  <td ID="phase">Phase</td>
+                  <td><content ID="phase">Phase</content></td>
                   <td>Rechute du cancer</td>
                   <td>15/02/2019</td>
                 </tr>
                 <tr>
                   <td rowspan="3">Progression</td>
-                  <td ID="progression-locale">Locale</td>
+                  <td><content ID="progression-locale">Locale</content></td>
                   <td>Oui</td>
                 </tr>
                 <tr>
-                  <td ID="progression-regionale">Régionale</td>
+                  <td><content ID="progression-regionale">Régionale</content></td>
                   <td>Oui</td>
                 </tr>
                 <tr>
-                  <td ID="progression-distance">A distance</td>
+                  <td><content ID="progression-distance">A distance</content></td>
                   <td>Non</td>
                 </tr>
                 <tr>
@@ -1904,20 +1904,20 @@
               </thead>
               <tbody>
                 <tr>
-                  <td ID="traitement-01">Surveillance active</td>
-                  <td ID="autre-traitement-01">-</td>
-                  <td ID="debut-traitement-01">02/10/2018</td>
-                  <td ID="fin-traitement-01">15/02/2019</td>
-                  <td ID="statut-traitement-01">En cours de réalisation</td>
-                  <td ID="commentaire-traitement-01">(Texte libre)</td>
+                  <td><content ID="traitement-01">Surveillance active</content></td>
+                  <td><content ID="autre-traitement-01">-</content></td>
+                  <td><content ID="debut-traitement-01">02/10/2018</content></td>
+                  <td><content ID="fin-traitement-01">15/02/2019</content></td>
+                  <td><content ID="statut-traitement-01">En cours de réalisation</content></td>
+                  <td><content ID="commentaire-traitement-01">(Texte libre)</content></td>
                 </tr>
                 <tr>
-                  <td ID="traitement-02">Autres traitements</td>
-                  <td ID="autre-traitement-02">(Texte libre)</td>
-                  <td ID="debut-traitement-02">10/02/2019</td>
-                  <td ID="fin-traitement-02">15/02/2019</td>
-                  <td ID="statut-traitement-02">Déjà réalisé</td>
-                  <td ID="commentaire-traitement-02">(Texte libre)</td>
+                  <td><content ID="traitement-02">Autres traitements</content></td>
+                  <td><content ID="autre-traitement-02">(Texte libre)</content></td>
+                  <td><content ID="debut-traitement-02">10/02/2019</content></td>
+                  <td><content ID="fin-traitement-02">15/02/2019</content></td>
+                  <td><content ID="statut-traitement-02">Déjà réalisé</content></td>
+                  <td><content ID="commentaire-traitement-02">(Texte libre)</content></td>
                 </tr>
               </tbody>
             </table>
@@ -2032,7 +2032,7 @@
                 </tr>
                 <tr>
                   <td>Conclusion</td>
-                  <td ID="CRO-conclusion">Texte de la conclusion du CRO</td>
+                  <td><content ID="CRO-conclusion">Texte de la conclusion du CRO</content></td>
                 </tr>
                 <tr>
                   <td>Auteur de la conclusion</td>
@@ -2187,7 +2187,7 @@
                       <th colspan="4">Commentaires / Précisions</th>
                     </tr>
                     <tr>
-                      <td ID="commentaire-cro">(Texte libre)</td>
+                      <td><content ID="commentaire-cro">(Texte libre)</content></td>
                     </tr>
                   </tbody>
                 </table>
@@ -2242,7 +2242,7 @@
                 </tr>
                 <tr>
                   <td>Conclusion</td>
-                  <td ID="CR-ACP-conclusion">Texte de la conclusion du CR-ACP</td>
+                  <td><content ID="CR-ACP-conclusion">Texte de la conclusion du CR-ACP</content></td>
                 </tr>
                 <tr>
                   <td>Auteur de la conclusion</td>
@@ -2425,7 +2425,7 @@
                       <th colspan="4" align="left">Commentaires / Précisions</th>
                     </tr>
                     <tr>
-                      <td ID="commentaire-conclusion-CR-ACP">(Texte libre)</td>
+                      <td><content ID="commentaire-conclusion-CR-ACP">(Texte libre)</content></td>
                     </tr>
                   </tbody>
                 </table>
@@ -2672,7 +2672,7 @@
                       <th colspan="4" align="left">Commentaires / Précisions</th>
                     </tr>
                     <tr>
-                      <td ID="commentaire-crgm">(Texte libre)</td>
+                      <td><content ID="commentaire-crgm">(Texte libre)</content></td>
                     </tr>
                   </tbody>
                 </table>
@@ -2849,7 +2849,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td ID="demande-RCP-recours">OUI</td>
+                  <td><content ID="demande-RCP-recours">OUI</content></td>
                 </tr>
               </tbody>
             </table>
@@ -2867,17 +2867,17 @@
               </thead>
               <tbody>
                 <tr>
-                  <td ID="demande-expertise-01">(Texte libre)</td>
+                  <td><content ID="demande-expertise-01">(Texte libre)</content></td>
                   <td>18/02/2019</td>
                   <td>28/02/2019</td>
                 </tr>
                 <tr>
-                  <td ID="demande-expertise-02">(Texte libre)</td>
+                  <td><content ID="demande-expertise-02">(Texte libre)</content></td>
                   <td>18/02/2019</td>
                   <td>28/02/2019</td>
                 </tr>
                 <tr>
-                  <td ID="demande-expertise-03">(Texte libre)</td>
+                  <td><content ID="demande-expertise-03">(Texte libre)</content></td>
                   <td>18/02/2019</td>
                   <td>28/02/2019</td>
                 </tr>
@@ -2892,7 +2892,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td ID="surveillance">OUI (Texte libre)</td>
+                  <td><content ID="surveillance">OUI (Texte libre)</content></td>
                 </tr>
               </tbody>
             </table>
@@ -3330,7 +3330,7 @@
                 </tr>
                 <tr>
                   <td>Commentaire sur la fiche RCP</td>
-                  <td ID="commentaire-ficheRCP">(Texte libre)</td>
+                  <td><content ID="commentaire-ficheRCP">(Texte libre)</content></td>
                 </tr>
               </tbody>
             </table>

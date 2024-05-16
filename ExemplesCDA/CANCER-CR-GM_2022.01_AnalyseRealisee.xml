@@ -1418,12 +1418,10 @@
                     <content ID="SeqRef_Cl3">NM_002524.3</content>
                   </td>
                   <td align="left">
-                    <content ID="Variant_Cl3">
-                    </content>
+                    <content ID="Variant_Cl3"/>                    
                   </td>
                   <td align="left">
-                    <content ID="AltProt_Cl3">
-                    </content>
+                    <content ID="AltProt_Cl3"/>                    
                   </td>
                 </tr>
               </tbody>
