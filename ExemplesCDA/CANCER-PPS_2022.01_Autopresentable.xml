@@ -5109,10 +5109,11 @@
                       <xsl:text>Date du document</xsl:text>
                     </span>
                   </td>
-                  <td width="80%" id="date_document">
+                  <td width="80%"><content id="date_document">
                     <xsl:call-template name="show-creation">
                       <xsl:with-param name="creation" select="c:effectiveTime"/>
                     </xsl:call-template>
+                  </content>
                   </td>
                 </tr>
                 <!-- Date de la RCP -->
