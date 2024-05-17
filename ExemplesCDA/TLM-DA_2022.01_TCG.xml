@@ -606,9 +606,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.37"/>
                           <id root="12DA3A06-18E7-40B7-9397-1FA5B1552472"/>
                           <code code="55607006" displayName="problème" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                          <text>
-                            <reference value="#patho001"/>
-                          </text>
+                          <text><reference value="#patho001"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime>
                             <low value="20191125"/>
@@ -616,9 +614,7 @@
                           <value xsi:type="CD" code="G45.9"
                             displayName="Accident ischémique cérébral transitoire, sans précision"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                            <originalText>
-                              <reference value="#patho001"/>
-                            </originalText>
+                            <originalText><reference value="#patho001"/></originalText>
                           </value>
                           <!-- [0..1] FR-Statut-du-probleme : problème actif -->
                           <entryRelationship typeCode="REFR" inversionInd="false">
@@ -650,9 +646,7 @@
                               <templateId root="1.2.250.1.213.1.1.3.29"/>
                               <code code="SEV" displayName="Severity"
                                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                              <text>
-                                <reference value="#sevPatho"/>
-                              </text>
+                              <text><reference value="#sevPatho"/></text>
                               <statusCode code="completed"/>
                               <value xsi:type="CD" code="24484000" displayName="élevé" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
                             </observation>
@@ -668,9 +662,7 @@
                               <templateId root="1.2.250.1.213.1.1.3.31"/>
                               <code code="11323-3" displayName="Statut clinique du patient"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#statutCli"/>
-                              </text>
+                              <text><reference value="#statutCli"/></text>
                               <statusCode code="completed"/>
                               <value xsi:type="CE" code="21134002" displayName="incapacité"
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
@@ -748,18 +740,14 @@
                           <id root="21872220-FBDF-4BCC-85B1-61D1BBB420A5"/>
                           <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                             codeSystemName="SNOMED CT"/>
-                          <text>
-                            <reference value="#patho002"/>
-                          </text>
+                          <text><reference value="#patho002"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime>
                             <low value="20080811"/>
                           </effectiveTime>
                           <value xsi:type="CD" code="N10" displayName="Pyélonéphrite aiguë"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                            <originalText>
-                              <reference value="#patho002"/>
-                            </originalText>
+                            <originalText><reference value="#patho002"/></originalText>
                           </value>
                         </observation>
                       </entryRelationship>
@@ -822,9 +810,7 @@
                       <code code="DDAF004"
                         displayName="Dilatation intraluminale de deux vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
                         codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-                      <text>
-                        <reference value="#patho003"/>
-                      </text>
+                      <text><reference value="#patho003"/></text>
                       <!-- Statut de l'entrée -->
                       <statusCode code="completed"/>
                       <!-- Date de l'acte  -->
@@ -946,9 +932,7 @@
                           <!-- Type d'allergie / hypersensibilité -->
                           <code code="DALG" displayName="Allergie médicamenteuse"
                             codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                          <text>
-                            <reference value="#TypeAllergie"/>
-                          </text>
+                          <text><reference value="#TypeAllergie"/></text>
                           <statusCode code="completed"/>
                           <!-- Date de l'allergie / hypersensibilité -->
                           <effectiveTime xsi:type="IVL_TS">
@@ -958,10 +942,7 @@
                           <value xsi:type="CD">
                           <!--<value xsi:type="CD" code="R53.+0" displayName="Malaise"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">-->
-                            <originalText><!--
-                              <reference value="#allergie"/>-->
-                              <reference value="#"/>
-                            </originalText>
+                            <originalText><reference value="#"/></originalText>
                           </value>
                           <!-- Agent responsable de l'allergie / hypersensibilité -->
                           <participant typeCode="CSM">
@@ -969,9 +950,7 @@
                               <playingEntity classCode="MMAT">
                                 <code code="J01DE01" displayName="céfépime"
                                   codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                  <originalText>
-                                    <reference value="#Agent"/>
-                                  </originalText>
+                                  <originalText><reference value="#Agent"/></originalText>
                                 </code>
                                 <name>Allergie bêta-lactamines</name>
                               </playingEntity>
@@ -992,9 +971,7 @@
                               <code code="418799008"
                                 displayName="symptôme rapporté par le patient ou le répondant"
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                              <text>
-                                <reference value="#Reaction"/>
-                              </text>
+                              <text><reference value="#Reaction"/></text>
                               <statusCode code="completed"/>
                               <effectiveTime>
                                 <low value="20180221"/>
@@ -1002,9 +979,7 @@
                               <!-- [ANS] à trouver le code CIM-11 provenant du JDV_AllergieReaction_CISIS (1.2.250.1.213.1.1.5.674)
                                (JDV à fournir par l'OMS) -->
                               <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96">
-                                <originalText>
-                                  <reference value="#Réaction"/>
-                                </originalText>
+                                <originalText><reference value="#Réaction"/></originalText>
                               </value>
                             </observation>
                           </entryRelationship>
@@ -1019,9 +994,7 @@
                               <templateId root="1.2.250.1.213.1.1.3.29"/>
                               <code code="SEV" displayName="Severity"
                                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                              <text>
-                                <reference value="#Severite_allerg"/>
-                              </text>
+                              <text><reference value="#Severite_allerg"/></text>
                               <statusCode code="completed"/>
                               <!-- JDV_SeveriteObservation_CISIS (1.2.250.1.213.1.1.5.675) -->
                               <value xsi:type="CD" code="6736007" displayName="modéré"
@@ -1041,9 +1014,7 @@
                               <templateId root="1.2.250.1.213.1.1.3.30"/>
                               <code code="33999-4" displayName="Status"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#StatutProb"/>
-                              </text>
+                              <text><reference value="#StatutProb"/></text>
                               <statusCode code="completed"/>
                               <value xsi:type="CE" code="active"
                                 codeSystem="2.16.840.1.113883.4.642.4.1373"
@@ -1113,9 +1084,7 @@
                         <relatedSubject classCode="PRS">
                           <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111"
                             codeSystemName="RoleCode">
-                            <originalText>
-                              <reference value="lien-fam-001"/>
-                            </originalText>
+                            <originalText><reference value="lien-fam-001"/></originalText>
                           </code>
                           <subject>
                             <administrativeGenderCode code="F" displayName="Féminin"
@@ -1139,16 +1108,12 @@
                           <!--<code code="75326-9" displayName="Problème" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />-->
                           <code code="55607006" displayName="problème"
                             codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                          <text>
-                            <reference value="#patho004"/>
-                          </text>
+                          <text><reference value="#patho004"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime nullFlavor="NAV"/>
                           <value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                            <originalText>
-                              <reference value="#antécédent-fam-001"/>
-                            </originalText>
+                            <originalText><reference value="#antécédent-fam-001"/></originalText>
                           </value>
                         </observation>
                       </component>
@@ -1284,9 +1249,7 @@
               <!-- [1..1] Mode d'administration : Normal -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="25DF8166-7F45-4119-96AC-94D9527FAA58"/>
-              <text>
-                <reference> </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20190429"/>
@@ -1314,15 +1277,11 @@
                   <manufacturedMaterial>
                     <code code="63564053" displayName="PLAVIX 75mg, comprimé pelliculé"
                       codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-                      <originalText mediaType="text/xml">
-                        <reference value="#MED-CIS-001"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#MED-CIS-001"/></originalText>
                       <translation code="MV00002297"
                         displayName="Clopidogrel (hydrogénosulfate) 75 mg comprimé"
                         codeSystem="1.2.250.1.213.2.59" codeSystemName="MV">
-                        <originalText mediaType="text/xml">
-                          <reference value="#MED-MV-001"/>
-                        </originalText>
+                        <originalText mediaType="text/xml"><reference value="#MED-MV-001"/></originalText>
                       </translation>
                     </code>
                     <name>PLAVIX 75 mg</name>
@@ -1339,9 +1298,7 @@
                   <id root="CDBD5B08-6CDE-11DB-9FE1-0800200C9A66"/>
                   <code code="I20.0" displayName="Angine de poitrine instable"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                    <originalText mediaType="text/xml">
-                      <reference value="#MED-MOTIF-001"/>
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#MED-MOTIF-001"/></originalText>
                   </code>
                 </act>
               </entryRelationship>
@@ -1355,9 +1312,7 @@
                   <id root="A8A8D0C6-E610-4466-9A03-28F63FB0B0B3"/>
                   <code code="MED-052" displayName="Arrêt de tous les traitements actifs"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="MED-ARRET-001"/>
-                  </text>
+                  <text><reference value="MED-ARRET-001"/></text>
                   <statusCode code="completed"/>
                   <!-- Date d'arrrêt des traitements actifs -->
                   <effectiveTime value="20190529"/>
@@ -1411,9 +1366,7 @@
               <!-- Identifiant de la fourniture du DM -->
               <id nullFlavor="UNK"/>
               <!-- Référence vers la partie narrative de la section DM -->
-              <text>
-                <reference value="#DM001"/>
-              </text>
+              <text><reference value="#DM001"/></text>
               <!-- Date d'utilisation du DM -->
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK"/>
@@ -1467,9 +1420,7 @@
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <code code="P07040201" displayName="STENTS CORONAIRES"
                       codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
-                      <originalText mediaType="text/xml">
-                        <reference value="#DM001-categorie"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#DM001-categorie"/></originalText>
                     </code>
                   </playingDevice>
                 </participantRole>
@@ -1559,9 +1510,7 @@
                   <id root="ECD72DDD-C2A0-42C8-9BD3-E3C8B408003D"/>
                   <code code="29463-7" displayName="Poids" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="poids"/>
-                  </text>
+                  <text><reference value="poids"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
                   <value xsi:type="PQ" value="59" unit="kg"/>
@@ -1581,9 +1530,7 @@
                   <id root="1183D2C2-A4D2-454E-9CA7-94CA50EDD454"/>
                   <code code="8302-2" displayName="Taille" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="taille"/>
-                  </text>
+                  <text><reference value="taille"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
                   <value xsi:type="PQ" value="176" unit="cm"/>
@@ -1603,9 +1550,7 @@
                   <id root="3704BDE3-3BB7-4483-B0A0-037B90A99901"/>
                   <code code="39156-5" displayName="Index de masse corporelle (IMC)"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="imc"/>
-                  </text>
+                  <text><reference value="imc"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
                   <value xsi:type="PQ" value="19" unit="kg/m2"/>
@@ -1735,9 +1680,7 @@
               <id root="0BB6C75D-0A98-4FF5-8073-D53FC9308417"/>
               <code code="11449-6" displayName="Statut de la grossesse"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
-              <text>
-                <reference value="statutGross"/>
-              </text>
+              <text><reference value="statutGross"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <value xsi:type="ST">enceinte</value>
@@ -1755,9 +1698,7 @@
               <id root="65AA3213-B4E6-4F1B-A69F-64A7B547CF94"/>
               <code code="8678-5" displayName="Statut de l'état menstruel"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
-              <text>
-                <reference value="statutMenstruel"/>
-              </text>
+              <text><reference value="statutMenstruel"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <value xsi:type="ST">Troubles Menstruels</value>
@@ -1775,9 +1716,7 @@
               <id root="65AA3213-B4E6-4F1B-A69F-64A7B547CF94"/>
               <code code="8665-2" displayName="Date des dernières règles"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
-              <text>
-                <reference value="DateDernMenstru"/>
-              </text>
+              <text><reference value="DateDernMenstru"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <value xsi:type="TS" value="20190712"/>
@@ -1795,9 +1734,7 @@
               <id root="65AA3213-B4E6-4F1B-A69F-64A7B547CF94"/>
               <code code="11778-8" displayName="Date estimée d'accouchement"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
-              <text>
-                <reference value="DateEstAcc"/>
-              </text>
+              <text><reference value="DateEstAcc"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <value xsi:type="TS" value="20200312"/>
@@ -1815,13 +1752,9 @@
               <id root="519793CA-54AC-4B6C-A966-A00054AF187C"/>
               <code code="11884-4" displayName="Age gestationnel du fœtus (estimation clinique)"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                <originalText>
-                  <reference value="#ageGestationnel"/>
-                </originalText>
+                <originalText><reference value="#ageGestationnel"/></originalText>
               </code>
-              <text>
-                <reference value="ageGestationnel"/>
-              </text>
+              <text><reference value="ageGestationnel"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <!-- 15/07/2021 : correction de l'unité en "mo" (au lieu de "mois") -->
@@ -1840,13 +1773,9 @@
               <id root="519793CA-54AC-4B6C-A966-A00054AF187C"/>
               <code code="MED-089" displayName="Grossesse multiple"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#grossesseMult"/>
-                </originalText>
+                <originalText><reference value="#grossesseMult"/></originalText>
               </code>
-              <text>
-                <reference value="grossesseMult"/>
-              </text>
+              <text><reference value="grossesseMult"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NA"/>
               <value xsi:type="BL" value="false"/>
@@ -1902,9 +1831,7 @@
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E"/>
                   <code code="69764-9" displayName="Type de document"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#titreDoc"/>
-                  </text>
+                  <text><reference value="#titreDoc"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20191215"/>
                   <value xsi:type="CD">

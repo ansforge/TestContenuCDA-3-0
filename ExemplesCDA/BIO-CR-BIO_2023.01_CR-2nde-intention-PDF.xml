@@ -632,8 +632,7 @@
 								<br/>
 								<paragraph>Résultats validés par Jean DE SANTS - 04/01/2023,
 									11h20</paragraph>
-								<br/>
-							</text>
+								<br/></text>
 							<!-- Entrée FR-Resultats-examens-de-biologie-medicale -->
 							<entry typeCode="DRIV">
 								<!-- Conformité Laboratory Report Data Processing Entry (IHE PALM) -->
@@ -676,9 +675,7 @@
 												displayName="Temps de quick INR [Temps relatif] Plasma pauvre en plaquettes ; Numérique ; Coagulation"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<originalText>
-												<reference value="#INR"/>
-												</originalText>
+												<originalText><reference value="#INR"/></originalText>
 											</code>
 											<statusCode code="completed"/>
 											<effectiveTime value="20230104"/>
@@ -741,9 +738,7 @@
 									<id root="DBD2E27B-D2F8-44E2-B180-243F87D312FA"/>
 									<code code="69764-9" displayName="Type de document"
 										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-									<text>
-										<reference value="#titreDoc"> </reference>
-									</text>
+									<text><reference value="#titreDoc"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime nullFlavor="NA"/>
 									<value xsi:type="CD">

@@ -794,9 +794,7 @@
                   <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                   <code code="ORG-116" displayName="Pédiatrie"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#pediatrie"/>
-                  </text>
+                  <text><reference value="#pediatrie"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NI"/>
                   <value xsi:type="BL" value="false"/>
@@ -811,9 +809,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#commentaire-pediatrie"/>
-                      </text>
+                      <text><reference value="#commentaire-pediatrie"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -831,18 +827,14 @@
                   <templateId root="1.2.250.1.213.1.1.3.37"/>
                   <id root="8E3DB610-72F0-463C-8E9A-5998C1256662"/>
                   <code code="55607006" displayName="problème" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#raison"/>
-                  </text>
+                  <text><reference value="#raison"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="42349-1" displayName="Raison de la recommandation"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                    <originalText>
-                      <reference value="#raison"/>
-                    </originalText>
+                    <originalText><reference value="#raison"/></originalText>
                   </value>
                 </observation>
               </entry>
@@ -983,9 +975,7 @@
                       <id root="F4A5860F-5FDB-4EDE-93EF-EF8F33F245BC"/>
                       <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" 
                         codeSystemName="SNOMED CT"/>
-                      <text>
-                        <reference value="#tumeurPrim"/>
-                      </text>
+                      <text><reference value="#tumeurPrim"/></text>
                       <statusCode code="completed"/>
                       <!-- Date de diagnostic -->
                       <effectiveTime>
@@ -995,9 +985,7 @@
                       <!-- [1..1] Morphologie : JDV_Morphologie_CISIS (1.2.250.1.213.1.1.5.585) -->
                       <value xsi:type="CD" code="8000/3" displayName="Tumeur maligne, SAI"
                         codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O">
-                        <originalText>
-                          <reference value="#morphologie-1"/>
-                        </originalText>
+                        <originalText><reference value="#morphologie-1"/></originalText>
                       </value>
                       <!-- si JDV_Morphologie_CISIS non applicable : précision dans la partie narrative -->
                       <!-- <value xsi:type="CD" nullFlavor="OTH">
@@ -1006,9 +994,7 @@
                       <!-- [0..1] Topographie : JDV_Tumeur_CISIS (1.2.250.1.213.1.1.4.2.281.21) -->
                       <targetSiteCode code="C502" displayName="Quadrant supéro-interne du sein"
                         codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O">
-                        <originalText>
-                          <reference value="#topographie-1"/>
-                        </originalText>
+                        <originalText><reference value="#topographie-1"/></originalText>
                         <!-- Latéralité -->
                         <qualifier>
                           <name code="20228-3" displayName="Latéralité"
@@ -1016,9 +1002,7 @@
                           <!-- code latéralité : JDV_LateraliteNCIT_CISIS (1.2.250.1.213.1.1.5.586) -->
                           <value xsi:type="CD" code="C25228" displayName="droit"
                             codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT">
-                            <originalText>
-                              <reference value="#lateralite-1"/>
-                            </originalText>
+                            <originalText><reference value="#lateralite-1"/></originalText>
                           </value>
                         </qualifier>
                       </targetSiteCode>
@@ -1034,9 +1018,7 @@
                           <templateId root="1.3.6.1.4.1.19376.1.7.3.1.4.14.2"/>
                           <code code="75620-5" displayName="Stade TNM Clinique"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#stade-clinique-tnm"/>
-                          </text>
+                          <text><reference value="#stade-clinique-tnm"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime>
                             <low value="20190129"/>
@@ -1067,9 +1049,7 @@
                               <id root="02DF6527-DEF2-45CB-BB8C-D9A9E5AB6872"/>
                               <code code="21905-5" displayName="TNM Clinique T"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#TNM-T"/>
-                              </text>
+                              <text><reference value="#TNM-T"/></text>
                               <statusCode code="completed"/>
                               <effectiveTime nullFlavor="NAV"/>
                               <value xsi:type="CD" code="T1b"
@@ -1088,9 +1068,7 @@
                               <id root="351A3E1F-A1EC-4211-8863-E3C24EBECAE5"/>
                               <code code="21906-3" displayName="TNM Clinique N"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#TNM-N"/>
-                              </text>
+                              <text><reference value="#TNM-N"/></text>
                               <statusCode code="completed"/>
                               <effectiveTime nullFlavor="NAV"/>
                               <value xsi:type="CD" code="N1"
@@ -1109,9 +1087,7 @@
                               <id root="AE14D1C8-2268-4468-B015-EE7EA7A495AA"/>
                               <code code="21907-1" displayName="TNM Clinique M"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#TNM-M"/>
-                              </text>
+                              <text><reference value="#TNM-M"/></text>
                               <statusCode code="completed"/>
                               <effectiveTime nullFlavor="NAV"/>
                               <value xsi:type="CD" code="M0"
@@ -1132,15 +1108,11 @@
                           <id/>
                           <code code="21918-8" displayName="Autre classification du stade"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference/>
-                          </text>
+                          <text><reference/></text>
                           <statusCode code="completed"/>
                           <effectiveTime nullFlavor="NA"/>
                           <value xsi:type="CD">
-                            <originalText>
-                              <reference value="#autre-classification-11"/>
-                            </originalText>
+                            <originalText><reference value="#autre-classification-11"/></originalText>
                           </value>
                         </observation>
                       </entryRelationship>
@@ -1155,9 +1127,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.32"/>
                           <code code="48767-8" displayName="Commentaire"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#commentaire-tumeur-1"/>
-                          </text>
+                          <text><reference value="#commentaire-tumeur-1"/></text>
                           <statusCode code="completed"/>
                         </act>
                       </entryRelationship>
@@ -1211,9 +1181,7 @@
                   <id root="E2598BC5-2574-4FF2-9F6E-B503CAC76FD3"/>
                   <code code="63921-1" displayName="Dépistage du cancer"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#depistage"/>
-                  </text>
+                  <text><reference value="#depistage"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="20210110"/>
@@ -1293,18 +1261,14 @@
                   <id root="B1D68C8E-4A83-4ED5-A5E3-60B55B54B016"/>
                   <code code="MED-243" displayName="Phase du cancer"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#phase"/>
-                  </text>
+                  <text><reference value="#phase"/></text>
                   <statusCode code="completed"/>
                   <!-- Date de l'observation si phase initiale ou Date de la rechute si rechute -->
                   <effectiveTime value="20210110"/>
                   <!-- <effectiveTime nullFlavor="UNK"/> : nullFlavor autorisé -->
                   <value xsi:type="CD" code="MED-244" displayName="Rechute du cancer"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#phase"/>
-                    </originalText>
+                    <originalText><reference value="#phase"/></originalText>
                   </value>
                   <!-- Entrée FR-Commentaire-ER : Commentaire sur la phase du cancer -->
                   <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1317,9 +1281,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#commentaire-phase"/>
-                      </text>
+                      <text><reference value="#commentaire-phase"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime value="20210110"/>
                     </act>
@@ -1337,9 +1299,7 @@
                   <id root="0E68CDF8-A1D4-4CE0-9029-7FBB6C10599A"/>
                   <code code="MED-245" displayName="Progression du cancer"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#"/>
-                  </text>
+                  <text><reference value="#"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20210110"/>
                   <value xsi:type="BL" value="true"/>
@@ -1353,9 +1313,7 @@
                       <id root="01E2F991-A70D-474A-B0C1-5A13B7838981"/>
                       <code code="MED-246" displayName="Progression locale du cancer"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#progression-locale"/>
-                      </text>
+                      <text><reference value="#progression-locale"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime value="20210110"/>
                       <value xsi:type="BL" value="true"/>
@@ -1371,9 +1329,7 @@
                       <id root="A8B56C5E-EC4D-40AA-92DA-C0040A1A1054"/>
                       <code code="MED-247" displayName="Progression régionale du cancer"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#progression-regionale"/>
-                      </text>
+                      <text><reference value="#progression-regionale"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime value="20210110"/>
                       <value xsi:type="BL" value="true"/>
@@ -1389,9 +1345,7 @@
                       <id root="BC37A3A6-BAB3-4EA4-9583-23C89FC16D76"/>
                       <code code="MED-248" displayName="Progression à distance du cancer"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#progression-distance"/>
-                      </text>
+                      <text><reference value="#progression-distance"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime value="20210110"/>
                       <value xsi:type="BL" value="false"/>
@@ -1831,9 +1785,7 @@
                         codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#trait-realise-radiotherapie"/>
-                  </text>
+                  <text><reference value="#trait-realise-radiotherapie"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement -->
@@ -1851,9 +1803,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -1875,9 +1825,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#trait-réalise-radiotherapie-comment"/>
-                      </text>
+                      <text><reference value="#trait-réalise-radiotherapie-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -1902,9 +1850,7 @@
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#trait-propose-chirurgie"/>
-                  </text>
+                  <text><reference value="#trait-propose-chirurgie"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -1955,9 +1901,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -1977,9 +1921,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-chirurgie-rythme"/>
-                      </text>
+                      <text><reference value="#trait-propose-chirurgie-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="BL" value="false"/>
@@ -1996,9 +1938,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#trait-propose-chirurgie-comment"/>
-                      </text>
+                      <text><reference value="#trait-propose-chirurgie-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2023,9 +1963,7 @@
                         codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#trait-propose-chimiotherapie"/>
-                  </text>
+                  <text><reference value="#trait-propose-chimiotherapie"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -2076,9 +2014,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -2098,9 +2034,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-chimiotherapie-rythme"/>
-                      </text>
+                      <text><reference value="#trait-propose-chimiotherapie-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="BL" value="false"/>
@@ -2116,9 +2050,7 @@
                       <id root="E521BD9E-539A-4E40-8317-5AB21F015523"/>
                       <code code="MED-565" displayName="Effets secondaires"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-chimiotherapie-effets"/>
-                      </text>
+                      <text><reference value="#trait-propose-chimiotherapie-effets"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"></effectiveTime>
                       <value xsi:type="CD">
@@ -2137,9 +2069,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#trait-propose-chimiotherapie-comment"/>
-                      </text>
+                      <text><reference value="#trait-propose-chimiotherapie-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2164,9 +2094,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#trait-propose-autre"/>
-                  </text>
+                  <text><reference value="#trait-propose-autre"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -2220,9 +2148,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -2242,9 +2168,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-autre-rythme"/>
-                      </text>
+                      <text><reference value="#trait-propose-autre-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="BL" value="true"/>
@@ -2260,9 +2184,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-006" displayName="Mode" codeSystem="1.2.250.1.213.1.1.4.322"
                         codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-autre-mode"/>
-                      </text>
+                      <text><reference value="#trait-propose-autre-mode"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="CD" code="20062000" displayName="Autre(s)"
@@ -2279,15 +2201,11 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="MED-565" displayName="Effets secondaires"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#trait-propose-autre-mode"/>
-                      </text>
+                      <text><reference value="#trait-propose-autre-mode"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="CD">
-                        <originalText>
-                          <reference value="#trait-propose-autre-effets"> </reference>
-                        </originalText>
+                        <originalText><reference value="#trait-propose-autre-effets"></reference></originalText>
                       </value>
                     </observation>
                   </entryRelationship>
@@ -2302,9 +2220,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#trait-propose-autre-comment"/>
-                      </text>
+                      <text><reference value="#trait-propose-autre-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2330,9 +2246,7 @@
                         codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#trait-propose-autre"/>
-                  </text>
+                  <text><reference value="#trait-propose-autre"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -2347,9 +2261,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -2369,9 +2281,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#effet-rythme"/>
-                      </text>
+                      <text><reference value="#effet-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="BL" value="false"/>
@@ -2387,9 +2297,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-006" displayName="Mode" codeSystem="1.2.250.1.213.1.1.4.322"
                         codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#effet-mode"/>
-                      </text>
+                      <text><reference value="#effet-mode"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="CD" code="IDINJ" displayName="injection intradermique"
@@ -2408,9 +2316,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#effet-comment"/>
-                      </text>
+                      <text><reference value="#effet-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2436,9 +2342,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#mesure-modalite"/>
-                  </text>
+                  <text><reference value="#mesure-modalite"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -2491,9 +2395,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#mesure-comment"/>
-                      </text>
+                      <text><reference value="#mesure-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2518,9 +2420,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#mesure-modalite-2"/>
-                  </text>
+                  <text><reference value="#mesure-modalite-2"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement confirmées -->
@@ -2573,9 +2473,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#mesure-comment-2"/>
-                      </text>
+                      <text><reference value="#mesure-comment-2"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2600,9 +2498,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#suivi-actif-consultation"/>
-                  </text>
+                  <text><reference value="#suivi-actif-consultation"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement -->
@@ -2657,9 +2553,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de traitement prévisionnelles -->
                       <effectiveTime>
@@ -2679,9 +2573,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#suivi-actif-rythme"/>
-                      </text>
+                      <text><reference value="#suivi-actif-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <value xsi:type="BL" value="false"/>
@@ -2698,9 +2590,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#suivi-actif-comment"/>
-                      </text>
+                      <text><reference value="#suivi-actif-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2717,9 +2607,7 @@
                   <id/>
                   <code code="MED-052" displayName="Arrêt de tous les traitements actifs"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#arret-traitements-comment"/>
-                  </text>
+                  <text><reference value="#arret-traitements-comment"/></text>
                   <statusCode code="completed"/>
                   <!-- Date d'arrêt des traitements -->
                   <effectiveTime value="20210112"/>
@@ -3003,9 +2891,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#soin-support-hygiene"/>
-                  </text>
+                  <text><reference value="#soin-support-hygiene"/></text>
                   <!-- statut du traitement -->
                   <statusCode code="completed"/>
                   <!-- Dates de traitement -->
@@ -3024,9 +2910,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#soin-support-hygiene-comment"/>
-                      </text>
+                      <text><reference value="#soin-support-hygiene-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3052,9 +2936,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#soin-propose-dietetique"/>
-                  </text>
+                  <text><reference value="#soin-propose-dietetique"/></text>
                   <!-- statut -->
                   <statusCode code="completed"/>
                   <!-- Dates du soin -->
@@ -3109,9 +2991,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de soins prévisionnelles -->
                       <effectiveTime>
@@ -3131,9 +3011,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#soin-propose-dietetique-rythme"/>
-                      </text>
+                      <text><reference value="#soin-propose-dietetique-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- à domicile (false/true) -->
@@ -3151,9 +3029,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#soin-propose-dietetique-comment"/>
-                      </text>
+                      <text><reference value="#soin-propose-dietetique-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3171,9 +3047,7 @@
                       <id/>
                       <code code="29463-7" displayName="Poids" codeSystem="2.16.840.1.113883.6.1"
                         codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#soin-propose-dietetique-poids"/>
-                      </text>
+                      <text><reference value="#soin-propose-dietetique-poids"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime value="20191114"/>
                       <value xsi:type="PQ" value="70" unit="kg"/>
@@ -3200,9 +3074,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#soin-propose-tabagique"/>
-                  </text>
+                  <text><reference value="#soin-propose-tabagique"/></text>
                   <!-- statut -->
                   <statusCode code="completed"/>
                   <!-- Dates du soin -->
@@ -3257,9 +3129,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates de soins prévisionnelles -->
                       <effectiveTime>
@@ -3279,9 +3149,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-116" displayName="Rythme d'administration"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#soin-propose-tabagique-rythme"/>
-                      </text>
+                      <text><reference value="#soin-propose-tabagique-rythme"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- à domicile (false/true) -->
@@ -3299,9 +3167,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#soin-propose-tabagique-comment"/>
-                      </text>
+                      <text><reference value="#soin-propose-tabagique-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3319,9 +3185,7 @@
                       <id/>
                       <code code="74011-8" displayName="Consommation tabagique"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#soin-propose-tabagique-actif-sevre"/>
-                      </text>
+                      <text><reference value="#soin-propose-tabagique-actif-sevre"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="UNK"/>
                       <value xsi:type="CD" nullFlavor="NA"/>
@@ -3348,9 +3212,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#accompagnement-1"/>
-                  </text>
+                  <text><reference value="#accompagnement-1"/></text>
                   <!-- statut -->
                   <statusCode code="completed"/>
                   <!-- Dates confirmées -->
@@ -3396,9 +3258,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates prévisionnelles -->
                       <effectiveTime>
@@ -3418,9 +3278,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#accompagnement-1-domicile"/>
-                      </text>
+                      <text><reference value="#accompagnement-1-domicile"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- à domicile (false/true) -->
@@ -3438,9 +3296,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#accompagnement-1-comment"/>
-                      </text>
+                      <text><reference value="#accompagnement-1-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3465,9 +3321,7 @@
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </qualifier>
                   </code>
-                  <text>
-                    <reference value="#accompagnement-2"/>
-                  </text>
+                  <text><reference value="#accompagnement-2"/></text>
                   <!-- statut -->
                   <statusCode code="completed"/>
                   <!-- Dates confirmées -->
@@ -3510,9 +3364,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="GEN-177" displayName="Date(s) prévisionnelle(s)"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#"/>
-                      </text>
+                      <text><reference value="#"/></text>
                       <statusCode code="completed"/>
                       <!-- Dates prévisionnelles -->
                       <effectiveTime>
@@ -3532,9 +3384,7 @@
                       <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
                       <code code="ORG-004" displayName="Rythme"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#accompagnement-2-domicile"/>
-                      </text>
+                      <text><reference value="#accompagnement-2-domicile"/></text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- à domicile (false/true) -->
@@ -3552,9 +3402,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#accompagnement-2-comment"/>
-                      </text>
+                      <text><reference value="#accompagnement-2-comment"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3647,9 +3495,7 @@
                   <id root="0AEADA3B-351D-482D-82A0-1CB912332D1E"/>
                   <code code="GEN-065" displayName="Statut du document"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#status-document"/>
-                  </text>
+                  <text><reference value="#status-document"/></text>
                   <statusCode code="completed"/>
                   <!-- Date de mise à jour du statut du document -->
                   <effectiveTime value="20210113"/>
@@ -3667,9 +3513,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#commentaire-document"/>
-                      </text>
+                      <text><reference value="#commentaire-document"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3686,9 +3530,7 @@
                   <id/>
                   <code code="GEN-037" displayName="Motif de mise à jour"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#motif-maj"/>
-                  </text>
+                  <text><reference value="#motif-maj"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20210113"/>
                   <!-- Motif de mise à jour -->
@@ -3706,9 +3548,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#motif-maj-précision"/>
-                      </text>
+                      <text><reference value="#motif-maj-précision"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -3725,9 +3565,7 @@
                   <id/>
                   <code code="ORG-189" displayName="Date de la RCP"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#date-RCP"/>
-                  </text>
+                  <text><reference value="#date-RCP"/></text>
                   <statusCode code="completed"/>
                   <!-- Date de la RCP -->
                   <effectiveTime value="20210110"/>
@@ -3746,9 +3584,7 @@
                   <id/>
                   <code code="GEN-178" displayName="Date de remise du document au patient"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#remis-patient"/>
-                  </text>
+                  <text><reference value="#remis-patient"/></text>
                   <statusCode code="completed"/>
                   <!-- Date de la remise du document au patient -->
                   <effectiveTime value="20210113"/>
@@ -3851,9 +3687,7 @@
                       <!-- Identifiant du document -->
                       <id root="1.2.3.4.567.8.9.10" extension="FRCP-2021-00001-1"/>
                       <!-- URL du document -->
-                      <text>
-                        <reference value="#document-ref-1"/>
-                      </text>
+                      <text><reference value="#document-ref-1"/></text>
                     </externalDocument>
                   </reference>
                   <!-- [1..*] Document 2 référencé : CR-GM -->
@@ -3862,9 +3696,7 @@
                       <!-- Identifiant du document -->
                       <id root="1.2.250.1.213.1.1.9" extension="CRGM-2021-00002_1"/>
                       <!-- URL du document -->
-                      <text>
-                        <reference value="#document-ref-2"/>
-                      </text>
+                      <text><reference value="#document-ref-2"/></text>
                     </externalDocument>
                   </reference>
                   <!-- [1..*] Document 2 référencé : PPS Cancer antérieur -->
@@ -3873,9 +3705,7 @@
                       <!-- Identifiant du document -->
                       <id root="1.2.250.1.213.1.1.10" extension="PPS-2020-0099_1"/>
                       <!-- URL du document -->
-                      <text>
-                        <reference value="#document-ref-3"/>
-                      </text>
+                      <text><reference value="#document-ref-3"/></text>
                     </externalDocument>
                   </reference>
                 </act>

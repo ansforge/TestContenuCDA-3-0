@@ -623,9 +623,7 @@
                   </effectiveTime> 
                   <!-- Valeur issue du JDV_OBP_TestAudition_CISIS (1.2.250.1.213.1.1.5.725)-->
                   <value xsi:type="CD" code="134376008" displayName="examen auditif ou vestibulaire anormal à droite" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText>
-                      <reference value="#resultat-audition"/>
-                    </originalText>
+                    <originalText><reference value="#resultat-audition"/></originalText>
                   </value>
                 </observation>
               </entry>
@@ -939,7 +937,7 @@
               <!-- Valeur isseur du JDV_LesionTraumatiqueObstetricale-CISIS (1.2.250.1.213.1.1.5.751)  -->
               <value xsi:type="CD" code="P15.4" displayName="Lésion faciale due à un traumatisme obstétrical" 
                 codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10" >
-                <originalText><reference value="#lesionTraumatique-1"></reference></originalText>
+                <originalText><reference value="#lesionTraumatique-1"/></originalText>
               </value>
             </observation>
           </entry>
@@ -961,9 +959,7 @@
                 <low value="20230427"/>
               </effectiveTime>
               <value xsi:type="CD" code="P15.8" displayName="Autres traumatismes obstétricaux précisés" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10">
-                <originalText>
-                  <reference value="#lesionTraumatique-2" />
-                </originalText>
+                <originalText><reference value="#lesionTraumatique-2" /></originalText>
               </value>
             </observation>
           </entry>
@@ -1029,7 +1025,7 @@
                 <low value="20230427"/>
               </effectiveTime>
               <value xsi:type="CD" code="P36.4" displayName="Infection du nouveau-né à Escherichia coli" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                <originalText><reference value="#infection-1"></reference></originalText>
+                <originalText><reference value="#infection-1"/></originalText>
               </value>
               <!-- [1..1] Entrée FR-Simple-Observation : Antibiothérapie (negationInd=’false’ : il y a eu administration d’antobiotique) -->
               <entryRelationship typeCode="RSON">
@@ -1124,7 +1120,7 @@
                 <low value="20230427"/>
               </effectiveTime>
               <value xsi:type="CD" code="P92.1" displayName="Régurgitation et mérycisme du nouveau-né" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM 10">
-                <originalText><reference value="#autre-Pb-1"></reference></originalText>
+                <originalText><reference value="#autre-Pb-1"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1274,9 +1270,7 @@
               <id root="878F54EB-D561-4F90-855C-71BF3D97FE1D"/>
               <code code="GEN-065" displayName="Statut du document"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#statutDocument"/>
-              </text>
+              <text><reference value="#statutDocument"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20230425"/>
               <!-- Valeur isssue du JDV_StatutDoc_CISIS. (1.2.250.1.213.1.1.5.93) -->

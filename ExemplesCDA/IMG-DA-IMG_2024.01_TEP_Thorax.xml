@@ -604,9 +604,7 @@
                                     <id root="4F5F282A-7CCF-492C-920D-2845D594BD27"/>
                                     <code code="64100-1" displayName="Contre-indications"
                                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                                    <text>
-                                        <reference value="#contre-indication-01-commentaire"/> 
-                                    </text>
+                                    <text><reference value="#contre-indication-01-commentaire"/></text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="20230112171504+0500"/>
                                     <!-- contre-indications : valeur issue du JDV_contre_indications_CISIS (1.2.250.1.213.1.1.5.659) -->
@@ -684,9 +682,7 @@
                             <id root="E6A6ADA0-7DE5-11EC-90D6-0242AC120003"/>
                             <code code="99622-3" displayName="Informations pour le patient"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                            <text>
-                                <reference value="#informations-transmises"/>
-                            </text>
+                            <text><reference value="#informations-transmises"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime>
                                 <low value="20180221100000"/>
@@ -784,17 +780,13 @@
                             <!-- [1..1] Modalité de l’examen : Valeur issue du JDV_modalite_demandeActeImagerie_CISIS(1.2.250.1.213.1.1.5.660) -->
                             <code code="PT" displayName="TEP : Tomographie par émission de positons"
                                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                                <originalText mediaType="text/xml">
-                                    <reference value="#modalite-examen-01"/>
-                                </originalText>
+                                <originalText mediaType="text/xml"><reference value="#modalite-examen-01"/></originalText>
                                 <!-- [0..1] Injection de produit de contraste souhaitée (spécifique à modalité = TEP) -->
                                 <!-- Valeur issue du JDV_InjectionPDC_TEP_CISIS(1.2.250.1.213.1.1.5.670) -->
                                 <qualifier>
                                     <value code="MED-1153" displayName="avec injection de produit de contraste" 
                                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                                        <originalText> 
-                                            <reference value="#InjectionPDC-TEP-01"></reference>
-                                        </originalText>
+                                        <originalText><reference value="#InjectionPDC-TEP-01"/></originalText>
                                     </value>
                                 </qualifier>
                             </code>
@@ -806,25 +798,19 @@
                             <!-- [0..1] A créer si urgence vitale ou fonctionnelle avec justification de l'urgence -->
                             <priorityCode code="UR" displayName="Urgent"
                                 codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7:ActPriority">
-                                <originalText>
-                                    <reference value="#justification-urgence"/>
-                                </originalText>
+                                <originalText><reference value="#justification-urgence"/></originalText>
                             </priorityCode>
                             <!-- [1..*] Localisation anatomique -->
                             <targetSiteCode xsi:type="CD" code="302551006" displayName="thorax entier"
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                                <originalText mediaType="text/xml">
-                                    <reference value="#localisation-anatomique-01"/>
-                                </originalText>                                
+                                <originalText mediaType="text/xml"><reference value="#localisation-anatomique-01"/></originalText>                                
                             </targetSiteCode>
                             <!-- [0..1] Médecin effecteur contacté -->
                             <performer typeCode="PRF">
                                 <assignedEntity classCode="ASSIGNED">
                                     <id root="1.2.250.1.71.4.2.1" extension="801234560801"/>
                                     <code code="G15_10/SM44" displayName="Médecin - Radio-diagnostic (SM)" codeSystem="1.2.250.1.213.1.1.4.5">
-                                        <originalText>
-                                            <reference value="#medecin-effecteur-01"/>
-                                        </originalText>
+                                        <originalText><reference value="#medecin-effecteur-01"/></originalText>
                                     </code>
                                     <addr>
                                         <houseNumber>12</houseNumber>
@@ -867,9 +853,7 @@
                                     <templateId root="1.2.250.1.213.1.1.3.32"/>
                                     <code code="48767-8" displayName="Commentaire"
                                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                                    <text>
-                                        <reference value="#commentaire-modalite-01"/>
-                                    </text>
+                                    <text><reference value="#commentaire-modalite-01"/></text>
                                     <statusCode code="completed"/>
                                 </act>
                             </entryRelationship>        

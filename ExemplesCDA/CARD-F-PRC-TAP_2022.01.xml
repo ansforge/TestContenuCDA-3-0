@@ -454,17 +454,13 @@
                   <id root="B92653B6-AAE7-42C6-922B-89474EE4DF67" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-01" />
-                  </text>
+                  <text><reference value="#pb-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
                   <value xsi:type="CD" code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#pb-01" />
-                    </originalText>
+                    <originalText><reference value="#pb-01" /></originalText>
                   </value>                  
                 </observation>
               </entryRelationship>              
@@ -499,17 +495,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37"/>
                   <id root="BAEC8F66-2EFA-4D2D-8495-14576011CA72" />
                   <code code="55607006" displayName="problème" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-02" />
-                  </text>
+                  <text><reference value="#pb-02" /></text>
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
                     <low nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="I64" displayName="Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" >
-                    <originalText mediaType="text/xml">
-                      <reference value="#pb-02" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#pb-02" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -546,18 +538,14 @@
                   <!-- Type d'observation -->
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-03" />
-                  </text>
+                  <text><reference value="#pb-03" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I20.9" displayName="Syndrome angineux" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#pb-03" />
-                    </originalText>
+                    <originalText><reference value="#pb-03" /></originalText>
                   </value>
                   <!-- Signes électriques et biologiques du syndrome coronaire aigu -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -568,9 +556,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.48"/>
                       <id root="F32F2DFC-F65C-4741-90EC-11FDE84FDA6F"/>
                       <code code="GEN-089" displayName="Description" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                      <text>
-                        <reference value="#pb-03-signe" />
-                      </text>
+                      <text><reference value="#pb-03-signe" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -578,9 +564,7 @@
                       <!-- valeur issue du JDV_UFCV_MotImplEndoC_CISIS (1.2.250.1.213.1.1.4.2.12) -->
                       <value xsi:type="CD" code="D0014-1" displayName="S+T+ (Segment ST sus-décalé avec augmentation des troponines)" 
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                        <originalText>
-                          <reference value="#pb-03-signe" />
-                        </originalText>
+                        <originalText><reference value="#pb-03-signe" /></originalText>
                       </value>
                     </observation>
                   </entryRelationship>
@@ -594,9 +578,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB131" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-03-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-03-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -639,18 +621,14 @@
                   <id root="C01A3A77-6023-4C1B-9169-FFB5DD839220" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-04" />
-                  </text>
+                  <text><reference value="#pb-04" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I65.2" displayName="Occlusion et sténose de l'artère carotide" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#pb-04" />
-                    </originalText>
+                    <originalText><reference value="#pb-04" /></originalText>
                   </value>
                   <!-- Présence d'endoprothèse ? -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -662,9 +640,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB127" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-04-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-04-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -706,20 +682,14 @@
                   <id root="43EF0118-6FB3-4ED2-9876-A1CE457EF2B4" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-05">
-                    </reference>
-                  </text>
+                  <text><reference value="#pb-05"/></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                     <high value="20220922" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I74.3" displayName="Embolie et thrombose des artères des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#pb-05">
-                      </reference>
-                    </originalText>
+                    <originalText><reference value="#pb-05"/></originalText>
                   </value>
                   <!-- Présence d'endoprothèse ? -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -731,9 +701,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB127" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-05-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-05-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -751,17 +719,13 @@
                       <id root="4CC924D8-E33D-47D8-8CE4-51E55EAF5AAA" />
                       <!-- Type d'observation -->
                       <code code="L0009" displayName="NYHA" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                      <text>
-                        <reference value="#pb-05-stade" />
-                      </text>
+                      <text><reference value="#pb-05-stade" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
                       </effectiveTime>
                       <value xsi:type="CD" code="420913000" displayName="classe III de la New York Heart Association Classification" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                        <originalText>
-                          <reference value="#pb-05-stade" />
-                        </originalText>
+                        <originalText><reference value="#pb-05-stade" /></originalText>
                       </value>                  
                     </observation>
                   </entryRelationship>                  
@@ -800,18 +764,14 @@
                   <id root="34D81BCE-90FF-4E4F-8AE4-2C8326C20E1F" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-06" />
-                  </text>
+                  <text><reference value="#pb-06" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I74.4" displayName="Embolie et thrombose des artères distales, sans précision"
                          codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#pb-06" />
-                    </originalText>
+                    <originalText><reference value="#pb-06" /></originalText>
                   </value>
                   <!-- Présence d'endoprothèse ? -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -823,9 +783,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB127" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-06-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-06-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -868,17 +826,13 @@
                   <id root="184FCB9E-6A7D-4064-AA91-BE0278AF0A64" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-07" />
-                  </text>
+                  <text><reference value="#pb-07" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
                   <value xsi:type="CD" code="K55.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" displayName="Artérite mésentérique">
-                    <originalText>
-                      <reference value="#pb-07" />
-                    </originalText>
+                    <originalText><reference value="#pb-07" /></originalText>
                   </value>
                   <!-- Présence d'endoprothèse ? -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -890,9 +844,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB127" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-07-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-07-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -935,18 +887,14 @@
                   <id root="FDD422BA-FE62-4DCD-8FDD-4B1AE718FF99" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-08" />
-                  </text>
+                  <text><reference value="#pb-08" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
                   <value xsi:type="CD" code="N28.0" displayName="Ischémie et infarctus du rein"
                          codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" >
-                    <originalText>
-                      <reference value="#pb-08" />
-                    </originalText>
+                    <originalText><reference value="#pb-08" /></originalText>
                   </value>                  
                   <!-- Présence d'endoprothèse ? -->
                   <entryRelationship typeCode="COMP" inversionInd="false">
@@ -958,9 +906,7 @@
                       <id root="00EC1010-5989-4DD4-8110-C87CFABCB127" />
                       <!-- Type d'observation -->
                       <code code="P0704" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-                      <text>
-                        <reference value="#pb-08-endoprothese" />
-                      </text>
+                      <text><reference value="#pb-08-endoprothese" /></text>
                       <statusCode code="completed" />
                       <effectiveTime>
                         <low value="20220822" />
@@ -1003,18 +949,14 @@
                   <id root="87A11770-697D-47C8-A249-F3BD961AB8E8" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#pb-09" />
-                  </text>
+                  <text><reference value="#pb-09" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20220822" />
                   </effectiveTime>
                   <value xsi:type="CD" code="D0016-6" displayName="Prévention primaire d'un sujet à haut risque"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#pb-09" />
-                    </originalText>
+                    <originalText><reference value="#pb-09" /></originalText>
                   </value>                  
                 </observation>
               </entryRelationship>              
@@ -1107,13 +1049,9 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="B540A0B5-2BBA-4481-85B4-FCCECCDC9AAD" />
               <code code="DDAF004" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
-                <originalText mediaType="text/xml">
-                  <reference value="#tap0009" />
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#tap0009" /></originalText>
               </code>
-              <text>
-                <reference value="#tap0009" />
-              </text>
+              <text><reference value="#tap0009" /></text>
               <statusCode code="completed" />
               <effectiveTime value="19990812" />
               <participant typeCode="AUT">
@@ -1165,9 +1103,7 @@
                   <id root="8AFAF066-DF80-497D-933C-86D616F96217" />
                   <!-- ID de l'observation  -->
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-                  <text>
-                    <reference value="#tap0009"></reference>
-                  </text>
+                  <text><reference value="#tap0009"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <value xsi:type="CE" code="D0014-1" displayName="S+T+ (Segment ST sus-décalé avec augmentation des troponines)" 
@@ -1186,13 +1122,9 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="437E605B-2CEF-447C-AE30-AE173EE5C354" />
               <code code="EBAF010" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
-                <originalText mediaType="text/xml">
-                  <reference value="#tap0010" />
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#tap0010" /></originalText>
               </code>
-              <text>
-                <reference value="#tap0010" />
-              </text>
+              <text><reference value="#tap0010" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20010617" />
               <participant typeCode="AUT">
@@ -1233,9 +1165,7 @@
                   <!-- Problem observation template -->
                   <id root="4CA33828-8C97-419A-8CD4-2ACF1BCA783D" />
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-                  <text>
-                    <reference value="#tap0009"></reference>
-                  </text>
+                  <text><reference value="#tap0009"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                 </observation>
@@ -1252,13 +1182,9 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="08FF15FE-7348-4242-98F5-7B03EBB07724" />
               <code code="EAAF004" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
-                <originalText mediaType="text/xml">
-                  <reference value="#tap0011" />
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#tap0011" /></originalText>
               </code>
-              <text>
-                <reference value="#tap0011" />
-              </text>
+              <text><reference value="#tap0011" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20050620" />
               <participant typeCode="AUT">
@@ -1300,9 +1226,7 @@
                   <id root="916E9073-0C77-4469-9DD7-CD0453C41809" />
                   <!-- ID de l'observation motif du ttt -->
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-                  <text>
-                    <reference nullFlavor="MSK"/>
-                  </text>
+                  <text><reference nullFlavor="MSK"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                 </observation>
@@ -1320,13 +1244,9 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="AC34D75A-3DD2-4B2D-9316-C97329EE59D2" />
               <code code="EDAF001" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
-                <originalText mediaType="text/xml">
-                  <reference value="#tap0032" />
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#tap0032" /></originalText>
               </code>
-              <text>
-                <reference value="#tap0032" />
-              </text>
+              <text><reference value="#tap0032" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20050620" />
               <participant typeCode="AUT">
@@ -1368,9 +1288,7 @@
                   <id root="7419E3D6-3550-48B6-A38B-9285456FF348" />
                   <!-- ID de l'observation motif du ttt -->
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-                  <text>
-                    <reference value="#tap0009"></reference>
-                  </text>
+                  <text><reference value="#tap0009"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                 </observation>
@@ -1523,13 +1441,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
                    <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#tapLocalisation1" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#tapLocalisation1" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tapLocalisation1" />
-                  </text>
+                  <text><reference value="#tapLocalisation1" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Site d'implantation 1</value>
@@ -1583,13 +1497,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
                    <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#tapLocalisation2" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#tapLocalisation2" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tapLocalisation2" />
-                  </text>
+                  <text><reference value="#tapLocalisation2" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Site d'implantation 2</value>
@@ -1643,13 +1553,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
                    <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#tapLocalisation3" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#tapLocalisation3" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tapLocalisation3" />
-                  </text>
+                  <text><reference value="#tapLocalisation3" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Site d'implantation 3</value>
@@ -1704,13 +1610,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
                    <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#tapLocalisation4" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#tapLocalisation4" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tapLocalisation4" />
-                  </text>
+                  <text><reference value="#tapLocalisation4" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Site d'implantation 4</value>
@@ -1764,13 +1666,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="71454805-F598-4F9D-8234-24F5F2768C94" />
                    <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#tapLocalisation5" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#tapLocalisation5" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tapLocalisation5" />
-                  </text>
+                  <text><reference value="#tapLocalisation5" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Site d'implantation 5</value>
@@ -1847,31 +1745,23 @@
                   <id root="53AD4ED4-9966-4BAC-BFB6-7DE12FECF84E" />
                   <!-- ALG = Allergy -->
                   <code code="ALG" displayName="Allergie" codeSystem="2.16.840.1.113883.5.4">
-                    <originalText>
-                      <reference value="#tap0029" />
-                    </originalText>
+                    <originalText><reference value="#tap0029" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#tap0029" />
-                  </text>
+                  <text><reference value="#tap0029" /></text>
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20220822" />
                   </effectiveTime>
                   <!-- Description de l'allergie / hypersensibilite -->
                   <value xsi:type="CD">
-                    <originalText>
-                      <reference value="#" />
-                    </originalText>
+                    <originalText><reference value="#" /></originalText>
                   </value>
                   <!-- Agent responsable -->
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
                         <code code="J01MA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ofloxacine">
-                          <originalText>
-                            <reference value="#tap0028" />
-                          </originalText>
+                          <originalText><reference value="#tap0028" /></originalText>
                         </code>
                         <name />
                       </playingEntity>
@@ -1978,10 +1868,7 @@
               <!-- Conformité IHE Mode d’administration "Normal" -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="25DF8166-7F45-4119-96AC-94D9527FAA58" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20220822" />
@@ -2007,14 +1894,10 @@
                   <!-- Product template -->
                   <manufacturedMaterial>
                     <code code="63564053" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS" displayName="PLAVIX 75mg, comprimé pelliculé">
-                      <originalText mediaType="text/xml">
-                        <reference value="#tap0040" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#tap0040" /></originalText>
                       <translation code="MV00002297" displayName="Clopidogrel (hydrogénosulfate) 75 mg comprimé"
                         codeSystem="1.2.250.1.213.2.59" codeSystemName="MV">
-                        <originalText mediaType="text/xml">
-                          <reference value="#tap0041" />
-                        </originalText>
+                        <originalText mediaType="text/xml"><reference value="#tap0041" /></originalText>
                       </translation>
                     </code>
                     <name>PLAVIX 75 mg</name>
@@ -2046,10 +1929,7 @@
               <!-- Conformité IHE Mode d’administration "Normal" -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="8C7B8380-D9DB-46F7-BA74-8FE0AF8725D6" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20220822" />
@@ -2075,14 +1955,10 @@
                   <!-- Product template -->
                   <manufacturedMaterial>
                     <code code="63245753" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS" displayName="COUMADINE 5mg, comprimé sécable">
-                      <originalText mediaType="text/xml">
-                        <reference value="#tap0043" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#tap0043" /></originalText>
                       <translation code="MV00002377" displayName="Warfarine sodique 5 mg comprimé"
                         codeSystem="1.2.250.1.213.2.59" codeSystemName="MV">
-                        <originalText mediaType="text/xml">
-                          <reference value="#tap0044" />
-                        </originalText>
+                        <originalText mediaType="text/xml"><reference value="#tap0044" /></originalText>
                       </translation>
                     </code>
                     <name>COUMADINE 5mg</name>
@@ -2138,15 +2014,11 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4" />
               <id root="41ABABDC-220C-44D0-8553-0FB5600DAE91" />
               <code nullFlavor="NA" />
-              <text>
-                <reference value="avk0035"></reference>
-              </text>
+              <text><reference value="avk0035"/></text>
               <reference typeCode="REFR">
                 <externalDocument classCode="DOC" moodCode="EVN">
                   <id root="A49FA706-28A1-418E-BC56-94070C9D3681"/>
-                  <text>
-                    <reference value="http://..." />
-                  </text>
+                  <text><reference value="http://..." /></text>
                 </externalDocument>
               </reference>
             </act>

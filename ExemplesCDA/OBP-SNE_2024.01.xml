@@ -579,9 +579,7 @@
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138" />
                   <!-- Valeur issue du JDV_ModeNaissance_CISIS (1.2.250.1.213.1.1.5.744) -->
                   <code code="700000006" displayName="accouchement par voie basse" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#modeAccouchement" />
-                  </text>
+                  <text><reference value="#modeAccouchement" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>                  
                   
@@ -594,9 +592,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.48" />
                       <id root="721A82E2-3775-4705-9FC7-BDB87872C948" />
                       <code code="MED-1171" displayName="Type intervention voie basse" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                      <text>
-                        <reference value="#typeInterventionVoieBasse" />
-                      </text>
+                      <text><reference value="#typeInterventionVoieBasse" /></text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
                       <!-- mode d’accouchement : valeur issue du JDV_TypeInterventionVoieBasse_CISIS (1.2.250.1.213.1.1.5.750) -->
@@ -613,9 +609,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.48" />
                       <id root="441DF6CB-D9A8-4023-BFC3-2F0A5D4DC0A5" />
                       <code code="MED-1268" displayName="Motif intervention voie basse" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                      <text>
-                        <reference value="#motifInterventionVoieBasse" />
-                      </text>
+                      <text><reference value="#motifInterventionVoieBasse" /></text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
                       <!-- CIM 10 -->
@@ -632,14 +626,10 @@
                       <templateId root="1.2.250.1.213.1.1.3.35"/>
                       <id root="1E2DF585-ACF2-4004-B179-3010A99DD158" />
                       <code nullFlavor="NA">
-                        <originalText >
-                          <reference value="#a3">
-                          </reference>
-                        </originalText>
+                        <originalText><reference value="#a3"/></originalText>
                       </code>
                       <text nullFlavor="NA"> 
-                      </text>
-                      <reference typeCode="REFR">
+                      </text><reference typeCode="REFR">
                         <externalDocument classCode="DOC" moodCode="EVN">
                           <!-- Identifiant unique du document de référence -->
                           <id root="1.2.250.1.213.1.1.9" extension="A7102400008_630" />
@@ -707,9 +697,7 @@
                   <id root="F50090E5-B029-41D0-B00A-380A45E3E3D8" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="73771-8" displayName="Rang de naissance" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#rang" />
-                  </text>
+                  <text><reference value="#rang" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <value xsi:type="INT" value="1" />
@@ -725,9 +713,7 @@
                   <id root="29E37FE1-C7EC-4C1B-A3C0-C68E66DBE5F1" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="11884-4" displayName="Age gestationnel du fœtus (estimation clinique)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#ageGest" />
-                  </text>
+                  <text><reference value="#ageGest" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <value xsi:type="PQ" value="36" unit="wk" />
@@ -744,9 +730,7 @@
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <!-- Code à valider -->
                   <code code="MED-1223" displayName="Présentation fœtale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#presFoet" />
-                  </text>
+                  <text><reference value="#presFoet" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <!-- Valeur issue du JDV_PresentationFoetale_CISIS (1.2.250.1.213.1.1.5.746) -->
@@ -763,9 +747,7 @@
                   <id root="FF14E7F0-A73C-4F91-AB7B-8A04F713B36B" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="3156-7" displayName="Volume de liquide amniotique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#quantiteLiq" />
-                  </text>
+                  <text><reference value="#quantiteLiq" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <!-- Valeur issue du JDV_QuantiteLA_CISIS (1.2.250.1.213.1.1.5.747) -->
@@ -782,9 +764,7 @@
                   <id root="074B1861-D92E-4441-9E52-0C563D7AB51C" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="38386-9" displayName="Couleur du liquide amniotique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#aspLiq" />
-                  </text>
+                  <text><reference value="#aspLiq" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <!-- Valeur issue du JDV_AspectLA_CISIS (1.2.250.1.213.1.1.5.740) -->
@@ -801,9 +781,7 @@
                   <id root="B3C83C2D-3667-4FE7-BFAB-B2B554E920C5" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="56829-5" displayName="Durée d'ouverture de l'oeuf" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#dureeOeuf" />
-                  </text>
+                  <text><reference value="#dureeOeuf" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <value xsi:type="PQ" value="12" unit="min" />
@@ -819,9 +797,7 @@
                   <id root="DE89B61E-6EF0-4EFB-B1C2-FDEE89138E04" />
                   <!-- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -->
                   <code code="73757-7" displayName="Enfant vivant" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#enfantViv" />
-                  </text>
+                  <text><reference value="#enfantViv" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <value xsi:type="BL" value="true" />
@@ -838,9 +814,7 @@
                   <id root="FE062A9D-6E00-4DE2-B866-D60C892B0AC3" />
                   <!-\- Valeur issue de JDV_OBP_Result_Evenement_CISIS (1.2.250.1.213.1.1.5.724) -\->
                   <code code="92022-3" displayName="Cause initiale du décès fétus" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#deces" />
-                  </text>
+                  <text><reference value="#deces" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20230425"/>
                   <!-\- Valeur issue de JDV_CirconstancesDeces_CISIS (1.2.250.1.213.1.1.5.741) -\->
@@ -956,9 +930,7 @@
                           <id root="4461355E-71B1-41B9-8D48-80D672C8D08C"/>
                           <code code="9272-6" displayName="APGAR à 1mn"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#apgar1mn"/>
-                          </text>
+                          <text><reference value="#apgar1mn"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>
                           <value xsi:type="PQ" value="10" unit="{score}"/>
@@ -979,9 +951,7 @@
                           <id root="2D06DA10-5A5E-4782-BA57-9A0DC1FA5CFA"/>
                           <code code="9274-2" displayName="APGAR à 5mn"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#apgar5mn"/>
-                          </text>
+                          <text><reference value="#apgar5mn"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>                          
                           <value xsi:type="PQ" value="10" unit="{score}"/>
@@ -1001,9 +971,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.50"/>
                           <id root="1AC40147-D987-475D-9C57-B7B91CBAC1C5"/>
                           <code code="9271-8" displayName="APGAR à 10mn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#apgar10mn"/>
-                          </text>
+                          <text><reference value="#apgar10mn"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>                          
                           <value xsi:type="PQ" value="10" unit="{score}"/>
@@ -1024,9 +992,7 @@
                           <id root="222B0A68-94C4-47B2-BC51-2375CD896B42"/>
                           <code code="29463-7" codeSystem="2.16.840.1.113883.6.1"
                             displayName="Poids" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#poids"/>
-                          </text>
+                          <text><reference value="#poids"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>
                           <value xsi:type="PQ" value="3900" unit="g"/>
@@ -1047,9 +1013,7 @@
                           <id root="2D8611C6-9F6B-4964-9837-7F999E092A1B"/>
                           <code code="8302-2" codeSystem="2.16.840.1.113883.6.1"
                             displayName="Taille" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#taille"/>
-                          </text>
+                          <text><reference value="#taille"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>
                           <value xsi:type="PQ" value="52" unit="cm"/>
@@ -1070,9 +1034,7 @@
                           <id root="F3FF9F82-8188-47F8-912B-FF848621F210"/>
                           <code code="8287-5" displayName="Périmètre crânien"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#perimetre-cranien"/>
-                          </text>
+                          <text><reference value="#perimetre-cranien"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20190901"/>
                           <value xsi:type="PQ" value="35" unit="cm"/>
@@ -1306,9 +1268,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="D3DCE1E0-EB52-47CB-8507-D33F0041D112" />
                   <code code="MED-1174" displayName="Administration de Vitamine K" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#vita-K" />
-                  </text>
+                  <text><reference value="#vita-K" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230425"/>
@@ -1554,9 +1514,7 @@
               <id root="878F54EB-D561-4F90-855C-71BF3D97FE1D"/>
               <code code="GEN-065" displayName="Statut du document"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#statutDocument"/>
-              </text>
+              <text><reference value="#statutDocument"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20230425"/>
               <!-- Valeur isssue du JDV_StatutDoc_CISIS. (1.2.250.1.213.1.1.5.93) -->

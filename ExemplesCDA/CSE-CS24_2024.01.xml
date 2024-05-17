@@ -497,7 +497,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111">
-                              <originalText><reference value="parent1"></reference></originalText>
+                              <originalText><reference value="parent1"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -549,7 +549,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111">
-                              <originalText><reference value="parent1"></reference></originalText>
+                              <originalText><reference value="parent1"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -601,7 +601,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111">                              
-                              <originalText><reference value="parent2"></reference></originalText>
+                              <originalText><reference value="parent2"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -645,7 +645,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111">                              
-                              <originalText><reference value="parent2"></reference></originalText>
+                              <originalText><reference value="parent2"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>

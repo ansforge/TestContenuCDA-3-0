@@ -634,9 +634,7 @@
               <id root="B95156E1-B262-40DA-A4BB-3C9C71D19F4F"/>
               <code code="42349-1" displayName="Raison de la recommandation"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#contexte"/>
-              </text>
+              <text><reference value="#contexte"/></text>
               <statusCode code="completed"/>
               <effectiveTime nullFlavor="NI"/>
               <!-- Contexte de l'examen - Valeur issue du JDV_ContexteExamenCCU_CISIS (1.2.250.1.213.1.1.5.722) -->
@@ -655,18 +653,14 @@
               <templateId root="1.2.250.1.213.1.1.3.37"/>
               <id root="8E3DB610-72F0-463C-8E9A-5998C1256662"/>
               <code code="55607006" displayName="problème" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#contexte"/>
-              </text>
+              <text><reference value="#contexte"/></text>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low nullFlavor="UNK"/>
               </effectiveTime>
               <value xsi:type="CD" code="B97.7" displayName="Papillovirus, cause de maladies classées dans d'autres chapitres"
                 codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                <originalText>
-                  <reference value="#contexte"/>
-                </originalText>
+                <originalText><reference value="#contexte"/></originalText>
               </value>
             </observation>
           </entry>
@@ -868,9 +862,7 @@
                       <!-- Nature de l'échantillon : valeur issue du JDV_HL7_SpecimenType_CISIS (2.16.840.1.113883.21.327) -->
                       <playingEntity>
                         <code code="GENV" displayName="Prélèvement vaginal" codeSystem="2.16.840.1.113883.18.311">
-                          <originalText>
-                            <reference value="#prelevement-nature-echantillon" />
-                          </originalText>
+                          <originalText><reference value="#prelevement-nature-echantillon" /></originalText>
                         </code>
                       </playingEntity>
                     </participantRole>
@@ -905,7 +897,7 @@
                       <!-- Résultat de recherche HPV - valeur issue du JDV_ResultatRechercheHPVCCU_CISIS (1.2.250.1.213.1.1.5.720) -->
                       <value xsi:type="CD" code="1269497006" displayName="ADN d'HPV-HR détecté"
                             codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                        <originalText><reference value="#examen-01-resultat"></reference></originalText>
+                        <originalText><reference value="#examen-01-resultat"/></originalText>
                       </value>     
                       
                       <!-- [0..1] Trousse de détection HPV -->
@@ -938,9 +930,7 @@
                         <observation classCode="OBS" moodCode="EVN">
                           <code code="77379-6" codeSystem="2.16.840.1.113883.6.1" 
                             displayName="Papillomavirus humain 16 et 18 et 31+33+35+39+45+51+52+56+58+59+66+68 ADN:Interprétation:Ponctuel:Col de l'utérus:Résultat nominal" codeSystemName="LOINC">
-                            <originalText>
-                              <reference value="#examen-01-ant" />
-                            </originalText>
+                            <originalText><reference value="#examen-01-ant" /></originalText>
                           </code>
                           <statusCode code="completed" />
                           <!-- Date du dernier test HPV réalisé -->

@@ -574,10 +574,7 @@
               <!-- [1..1] Mode d'administration : Normal -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="25DF8166-7F45-4119-96AC-94D9527FAA58" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20190429" />
@@ -605,15 +602,11 @@
                   <manufacturedMaterial>
                     <code code="63564053" displayName="PLAVIX 75mg, comprimé pelliculé"
                       codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-                      <originalText mediaType="text/xml">
-                        <reference value="#MED-CIS-001"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#MED-CIS-001"/></originalText>
                       <translation code="MV00002297"
                         displayName="Clopidogrel (hydrogénosulfate) 75 mg comprimé"
                         codeSystem="1.2.250.1.213.2.59" codeSystemName="MV">
-                        <originalText mediaType="text/xml">
-                          <reference value="#MED-MV-001"/>
-                        </originalText>
+                        <originalText mediaType="text/xml"><reference value="#MED-MV-001"/></originalText>
                       </translation>
                     </code>
                     <name>PLAVIX 75 mg</name>
@@ -630,9 +623,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.36"/>
                   <id root="931E7870-C02F-4A1D-BEB2-C59614A9BE30" />
                   <code code="I20.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" displayName="Angine de poitrine instable">
-                    <originalText mediaType="text/xml">
-                      <reference value="#MED-MOTIF-001" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#MED-MOTIF-001" /></originalText>
                   </code>
                 </act>
               </entryRelationship>
@@ -646,9 +637,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="8EFA259C-2C88-499D-88EA-B96E72D8B8DB" />
                   <code code="MED-052" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Arrêt de tous les traitements actifs" />
-                  <text>
-                    <reference value="MED-ARRET-001" />
-                  </text>
+                  <text><reference value="MED-ARRET-001" /></text>
                   <statusCode code="completed" />
                   <!-- Date d'arrrêt des traitements actifs -->
                   <effectiveTime value="20190529" />
@@ -700,9 +689,7 @@
               <!-- Identifiant de la fourniture du DM -->
               <id nullFlavor="UNK" />
               <!-- Référence vers la partie narrative de la section DM -->
-              <text>
-                <reference value="#DM001" />
-              </text>
+              <text><reference value="#DM001" /></text>
               <!-- Date d'utilisation du DM -->
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK"/>
@@ -752,9 +739,7 @@
                   <!-- Catégorie de DM (EMDN) -->
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
                     <code code="P07040201" displayName="STENTS CORONAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">
-                      <originalText mediaType="text/xml">
-                        <reference value="#DM001-categorie" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#DM001-categorie" /></originalText>
                     </code>
                   </playingDevice>
                 </participantRole>
@@ -843,9 +828,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="94EB957B-9A5C-413C-B675-93985D34EE4E" />
                   <code code="29463-7" displayName="Poids" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="poids" />
-                  </text>
+                  <text><reference value="poids" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="PQ" value="59" unit="kg" />
@@ -865,9 +848,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="1C569004-BB62-45B7-BF02-5288B1E8C445" />
                   <code code="8302-2" displayName="Taille" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="taille" />
-                  </text>
+                  <text><reference value="taille" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="PQ" value="176" unit="cm" />
@@ -887,9 +868,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="DC6660D5-D06B-4D67-B830-744E870A436E" />
                   <code code="39156-5" displayName="Index de masse corporelle (IMC)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="imc" />
-                  </text>
+                  <text><reference value="imc" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="PQ" value="19" unit="kg/m2" />
@@ -1036,9 +1015,7 @@
               <id root="159A968A-9B52-4934-A3AB-CBD099F230F1" />
               <code code="11449-6" displayName="Statut de la grossesse" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
               </code>
-              <text>
-                <reference value="statutGross" />
-              </text>
+              <text><reference value="statutGross" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="ST">enceinte</value>
@@ -1056,9 +1033,7 @@
               <id root="F6CC68B0-E865-49D4-AA9D-0DA0E68CE082" />
               <code code="8678-5" displayName="Statut de l'état menstruel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
               </code>
-              <text>
-                <reference value="statutMenstruel" />
-              </text>
+              <text><reference value="statutMenstruel" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="ST">Troubles Menstruels</value>
@@ -1076,9 +1051,7 @@
               <id root="3788D1BE-F42F-4732-9D73-568B95040620" />
               <code code="8665-2" displayName="Date des dernières règles" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
               </code>
-              <text>
-                <reference value="DateDernMenstru" />
-              </text>
+              <text><reference value="DateDernMenstru" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="TS" value="20190712" />
@@ -1096,9 +1069,7 @@
               <id root="BB0484BC-CA70-49C0-B759-88C6DABE425D" />
               <code code="11778-8" displayName="Date estimée d'accouchement" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
               </code>
-              <text>
-                <reference value="DateEstAcc" />
-              </text>
+              <text><reference value="DateEstAcc" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="TS" value="20200312" />
@@ -1115,13 +1086,9 @@
               <templateId root="1.2.250.1.213.1.1.3.53"/>
               <id root="D2BC7793-14B9-44BB-B022-33E2CE06CB0A" />
               <code code="11884-4" displayName="Age gestationnel du fœtus (estimation clinique)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                <originalText>
-                  <reference value="#ageGestationnel" />
-                </originalText>
+                <originalText><reference value="#ageGestationnel" /></originalText>
               </code>
-              <text>
-                <reference value="ageGestationnel" />
-              </text>
+              <text><reference value="ageGestationnel" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <!-- 15/07/2021 : Correction de l'unité en "mo" (au lieu de "mois") -->
@@ -1139,13 +1106,9 @@
               <templateId root="1.2.250.1.213.1.1.3.53"/>
               <id root="43176E88-85B3-4889-9F36-29C25E0B114F" />
               <code code="MED-089" displayName="Grossesse multiple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#grossesseMult" />
-                </originalText>
+                <originalText><reference value="#grossesseMult" /></originalText>
               </code>
-              <text>
-                <reference value="grossesseMult" />
-              </text>
+              <text><reference value="grossesseMult" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="false" />
@@ -1198,9 +1161,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#titreDoc" />
-                  </text>
+                  <text><reference value="#titreDoc" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20191215" />
                   <value xsi:type="CD"><originalText><reference value="#titreDoc"/></originalText></value>

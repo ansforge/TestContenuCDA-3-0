@@ -441,17 +441,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="21872220-FBDF-4BCC-85B1-61D1BBB420A5" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#antecedent-medical-01" />
-                  </text>
+                  <text><reference value="#antecedent-medical-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="N10" displayName="Pyélonéphrite aiguë" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#antecedent-medical-01" />
-                    </originalText>
+                    <originalText><reference value="#antecedent-medical-01" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -503,9 +499,7 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="AADF4F54-5072-439A-A552-222A4078C378" />
               <code code="SURG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
-              <text>
-                <reference value="#acte-01" />
-              </text>
+              <text><reference value="#acte-01" /></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low value="20230322" />
@@ -600,9 +594,7 @@
                 <templateId root="1.2.250.1.213.1.1.3.60"/>
                 <relatedSubject classCode="PRS">
                   <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
-                    <originalText>
-                      <reference value="#antecedent-familial-01-origine" />
-                    </originalText>
+                    <originalText><reference value="#antecedent-familial-01-origine" /></originalText>
                   </code>
                   <subject>
                     <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" />
@@ -622,15 +614,11 @@
                   <templateId root="1.2.250.1.213.1.1.3.51" />
                   <id root="32EB23D0-5F3A-4DE6-A7F5-B52BFC0D88FE" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#antecedent-familial-01" />
-                  </text>
+                  <text><reference value="#antecedent-familial-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#antecedent-familial-01" />
-                    </originalText>
+                    <originalText><reference value="#antecedent-familial-01" /></originalText>
                   </value>
                 </observation>
               </component>
@@ -650,9 +638,7 @@
                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15.2"/>
                 <relatedSubject classCode="PRS">
                   <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
-                    <originalText>
-                      <reference value="#antecedent-familial-02-origine" />
-                    </originalText>
+                    <originalText><reference value="#antecedent-familial-02-origine" /></originalText>
                   </code>
                   <subject>
                     <administrativeGenderCode code="M" displayName="Masculin" codeSystem="2.16.840.1.113883.5.1" />
@@ -672,15 +658,11 @@
                   <templateId root="1.2.250.1.213.1.1.3.51" />
                   <id root="3DB3BC22-4956-412C-A55F-7BAAC8731368" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#antecedent-familial-02" />
-                  </text>
+                  <text><reference value="#antecedent-familial-02" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="CD" code="D66" displayName="Hémophilie A" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#antecedent-familial-02" />
-                    </originalText>
+                    <originalText><reference value="#antecedent-familial-02" /></originalText>
                   </value>
                 </observation>
               </component>
@@ -797,9 +779,7 @@
               <id root="9854174F-532F-471B-9C75-1F1EE917C0DC" />
               <!-- valeur issue du JDV_ObservationGrossesse-CISIS (1.2.250.1.213.1.1.5.500) -->
               <code code="8665-2" displayName="Date de début des dernières règles" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#date-debut-dernieres-regles" />
-              </text>
+              <text><reference value="#date-debut-dernieres-regles" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="TS" value="20221201"/>     
@@ -818,9 +798,7 @@
               <id root="9854174F-532F-471B-9C75-1F1EE917C0DC" />
               <!-- valeur issue du JDV_ObservationGrossesse-CISIS (1.2.250.1.213.1.1.5.500) -->
               <code code="55281-0" displayName="Nombre de foetus" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#nb-foetus" />
-              </text>
+              <text><reference value="#nb-foetus" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="INT" value="1"/>     
@@ -995,9 +973,7 @@
                       <code code="CHILD" displayName="Enfant" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
                       <subject>
                         <administrativeGenderCode code="M" displayName="Masculin" codeSystem="2.16.840.1.113883.5.1" >
-                          <originalText>
-                            <reference value="#enfant-1-sexe" />
-                          </originalText>
+                          <originalText><reference value="#enfant-1-sexe" /></originalText>
                         </administrativeGenderCode>
                         <birthTime value="20000911183055" />
                       </subject>
@@ -1090,9 +1066,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.32"/>
                           <code code="48767-8" displayName="Commentaire"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                          <text>
-                            <reference value="#transfert-commentaire"/>
-                          </text>
+                          <text><reference value="#transfert-commentaire"/></text>
                           <statusCode code="completed"/>
                         </act>
                       </entryRelationship>
@@ -1170,26 +1144,20 @@
                   <id root="BD75F82B-6BB7-4138-A038-03A1C5336B84" />
                   <!-- ALG = Allergy -->
                   <code code="ALG" displayName="Allergie" codeSystem="2.16.840.1.113883.5.4" />
-                  <text>
-                    <reference value="alg" />
-                  </text>
+                  <text><reference value="alg" /></text>
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="L50.0" codeSystem="2.16.840.1.113883.6" codeSystemName="CIM-10" displayName="Urticaire allergique">
-                    <originalText>
-                      <reference value="alg" />
-                    </originalText>
+                    <originalText><reference value="alg" /></originalText>
                   </value>
                   <!-- Agent responsable de l'allergie/hypersensibilité -->
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
                         <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="paracétamol">
-                          <originalText>
-                            <reference value="allergie-agent" />
-                          </originalText>
+                          <originalText><reference value="allergie-agent" /></originalText>
                         </code>
                         <name nullFlavor="NA" />
                       </playingEntity>
@@ -1216,9 +1184,7 @@
                       <!-- valeur issue du JDV_AllergieReaction-CISIS (1.2.250.1.213.1.1.5.674) -->
                       <value xsi:type="CD" code="126485001" displayName="urticaire" 
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                        <originalText>
-                          <reference value="#allergie-reaction" />
-                        </originalText>
+                        <originalText><reference value="#allergie-reaction" /></originalText>
                       </value>
                       <!-- [0..1] Entrée FR-Severite : Sévérité de la réaction -->
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1231,9 +1197,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.29" />
                           <code code="SEV" displayName="Sévérité" 
                             codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
-                          <text>
-                            <reference value="#allergie-01-severite-reaction-1" />
-                          </text>
+                          <text><reference value="#allergie-01-severite-reaction-1" /></text>
                           <statusCode code="completed" />
                           <!-- valeur issue du JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
                           <value xsi:type="CD" code="6736007" displayName="modéré" 
@@ -1359,9 +1323,7 @@
               <templateId root="1.2.250.1.213.1.1.3.32"/>
               <code code="48767-8" displayName="Commentaire"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#habitus-commentaire"/>
-              </text>
+              <text><reference value="#habitus-commentaire"/></text>
               <statusCode code="completed"/>
             </act>
           </entry>
@@ -1902,17 +1864,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="81F63B26-1107-44A0-9D2D-4ACDAB02536F" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-01" />
-                  </text>
+                  <text><reference value="#probleme-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O46" displayName="Hémorragie précédant l'accouchement, non classée ailleurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-01" />
-                    </originalText>
+                    <originalText><reference value="#probleme-01" /></originalText>
                   </value>
                   <!-- [0..1] Entrée FR-Commentaire-ER : Commentaire -->
                   <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1924,13 +1882,9 @@
                       <!-- Conformité FR-Commentaire-ER (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                        <originalText>
-                          <reference value="#probleme-01-comment" />
-                        </originalText>
+                        <originalText><reference value="#probleme-01-comment" /></originalText>
                       </code>
-                      <text>
-                        <reference value="#probleme-01-comment" />
-                      </text>
+                      <text><reference value="#probleme-01-comment" /></text>
                       <statusCode code="completed" />
                     </act>
                   </entryRelationship>
@@ -1949,17 +1903,13 @@
                   <!-- ID de l'observation -->
                   <id root="5BE3EF14-1B14-4595-BA29-B1B89AA26699" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-02" />
-                  </text>
+                  <text><reference value="#probleme-02" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O47.0" displayName="Faux travail avant 37 semaines révolues de gestation" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-02" />
-                    </originalText>
+                    <originalText><reference value="#probleme-02" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -1976,17 +1926,13 @@
                   <!-- ID de l'observation -->
                   <id root="82D010B2-B627-469E-B73B-5B7CE1F44CA3" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-03" />
-                  </text>
+                  <text><reference value="#probleme-03" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O42" displayName="Rupture prématurée des membranes" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-03" />
-                    </originalText>
+                    <originalText><reference value="#probleme-03" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -2003,17 +1949,13 @@
                   <!-- ID de l'observation -->
                   <id root="EE79BC4E-2533-4920-A7FF-3ADCD5558A68" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-04" />
-                  </text>
+                  <text><reference value="#probleme-04" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O13" displayName="Hypertension gestationnelle [liée à la grossesse]" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-04" />
-                    </originalText>
+                    <originalText><reference value="#probleme-04" /></originalText>
                   </value>                  
                 </observation>
               </entryRelationship>
@@ -2030,17 +1972,13 @@
                   <!-- ID de l'observation -->
                   <id root="F04F6D6C-E07A-4D61-9025-7A9C3BD8F621" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-05" />
-                  </text>
+                  <text><reference value="#probleme-05" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O24.0" displayName="Diabète sucré préexistant à la grossesse, de type 1" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-05" />
-                    </originalText>
+                    <originalText><reference value="#probleme-05" /></originalText>
                   </value>                 
                 </observation>
               </entryRelationship>
@@ -2057,17 +1995,13 @@
                   <!-- ID de l'observation -->
                   <id root="F7FD74AB-A27D-44A5-BD56-F4AA5E5CCE54" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-06" />
-                  </text>
+                  <text><reference value="#probleme-06" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="N39.0" displayName="Infection des voies urinaires, siège non précisé" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-06" />
-                    </originalText>
+                    <originalText><reference value="#probleme-06" /></originalText>
                   </value>                  
                 </observation>
               </entryRelationship>
@@ -2084,17 +2018,13 @@
                   <!-- ID de l'observation -->
                   <id root="6F812DF0-4556-4D95-AE82-B793E44B919E" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-07" />
-                  </text>
+                  <text><reference value="#probleme-07" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="O23" displayName="Infections de l'appareil génito-urinaire au cours de la grossesse" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-07" />
-                    </originalText>
+                    <originalText><reference value="#probleme-07" /></originalText>
                   </value>                  
                 </observation>
               </entryRelationship>
@@ -2149,17 +2079,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="81F63B26-1107-44A0-9D2D-4ACDAB02536F" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-foetus-01" />
-                  </text>
+                  <text><reference value="#probleme-foetus-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="P05.0" displayName="Faible poids pour l'âge gestationnel" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-foetus-01" />
-                    </originalText>
+                    <originalText><reference value="#probleme-foetus-01" /></originalText>
                   </value>
                   <!-- [0..1] Entrée FR-Commentaire-ER : Commentaire -->
                   <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -2171,13 +2097,9 @@
                       <!-- Conformité FR-Commentaire-ER (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                        <originalText>
-                          <reference value="#probleme-foetus-01-comment" />
-                        </originalText>
+                        <originalText><reference value="#probleme-foetus-01-comment" /></originalText>
                       </code>
-                      <text>
-                        <reference value="#probleme-foetus-01-comment" />
-                      </text>
+                      <text><reference value="#probleme-foetus-01-comment" /></text>
                       <statusCode code="completed" />
                     </act>
                   </entryRelationship>
@@ -2196,17 +2118,13 @@
                   <!-- ID de l'observation -->
                   <id root="5BE3EF14-1B14-4595-BA29-B1B89AA26699" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-foetus-02" />
-                  </text>
+                  <text><reference value="#probleme-foetus-02" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="Q39.0" displayName="Atrésie de l'oesophage, SAI" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-foetus-02" />
-                    </originalText>
+                    <originalText><reference value="#probleme-foetus-02" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -2223,17 +2141,13 @@
                   <!-- ID de l'observation -->
                   <id root="82D010B2-B627-469E-B73B-5B7CE1F44CA3" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#probleme-foetus-03" />
-                  </text>
+                  <text><reference value="#probleme-foetus-03" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20230322" />
                   </effectiveTime>
                   <value xsi:type="CD" code="Q42.3" displayName="Imperforation anale" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#probleme-foetus-03" />
-                    </originalText>
+                    <originalText><reference value="#probleme-foetus-03" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -2298,10 +2212,7 @@
               <!-- Conformité FR-Traitement (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.42"/>
               <id root="8609F763-4F75-4FB5-A1A3-A6A269D15F4A" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK" />
@@ -2320,9 +2231,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.43"/>
                   <manufacturedMaterial>
                     <code code="66871876" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS" displayName="SOLUPRED 20 mg, comprimé effervescent">
-                      <originalText mediaType="text/xml">
-                        <reference value="#traitement-01" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#traitement-01" /></originalText>
                     </code>
                     <!-- Nom de la marque -->
                     <name>SOLUPRED 20 mg, comprimé effervescent</name>
@@ -2344,10 +2253,7 @@
               <!-- Conformité FR-Traitement (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.42"/>
               <id root="8609F763-4F75-4FB5-A1A3-A6A269D15F4A" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK" />
@@ -2375,9 +2281,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.43"/>
                   <manufacturedMaterial>
                     <code code="63564053" displayName="PLAVIX 75mg, comprimé pelliculé" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-                      <originalText mediaType="text/xml">
-                        <reference value="#traitement-02" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#traitement-02" /></originalText>
                     </code>
                     <!-- Nom de la marque -->
                     <name>PLAVIX 75mg, comprimé pelliculé</name>
@@ -2410,9 +2314,7 @@
               <id root="878F54EB-D561-4F90-855C-71BF3D97FE1D"/>
               <code code="GEN-065" displayName="Statut du document"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#statutDocument"/>
-              </text>
+              <text><reference value="#statutDocument"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20230322"/>
               <!-- Valeur isssue du JDV_StatutDoc_CISIS. (1.2.250.1.213.1.1.5.93) -->

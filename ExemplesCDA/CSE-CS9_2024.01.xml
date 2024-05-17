@@ -492,7 +492,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111">
-                              <originalText><reference value="parent1"></reference></originalText>
+                              <originalText><reference value="parent1"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -544,7 +544,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111">
-                              <originalText><reference value="parent1"></reference></originalText>
+                              <originalText><reference value="parent1"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -596,7 +596,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111">                              
-                              <originalText><reference value="parent2"></reference></originalText>
+                              <originalText><reference value="parent2"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -640,7 +640,7 @@
                         <templateId root="1.2.250.1.213.1.1.3.60"/>
                         <relatedSubject classCode="PRS">
                            <code code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111">                              
-                              <originalText><reference value="parent2"></reference></originalText>
+                              <originalText><reference value="parent2"/></originalText>
                            </code>
                            <addr use="H">
                               <houseNumber>24</houseNumber>
@@ -2163,9 +2163,7 @@
                      <code code="DRUG" displayName="Médicament"
                         codeSystem="2.16.840.1.113883.5.4"/>                           
                      <!-- Elément narratif de la section -->
-                     <text>
-                        <reference value="#med-1"/>
-                     </text>
+                     <text><reference value="#med-1"/></text>
                      <statusCode code="completed"/>
                      <!-- Durée d'administration -->
                      <effectiveTime xsi:type="IVL_TS">
@@ -2194,9 +2192,7 @@
                            <manufacturedMaterial>
                               <code code="65150617" displayName="BEYFORTUS 100 mg, solution injectable en seringue préremplie"
                                  codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-                                 <originalText mediaType="text/xml">
-                                    <reference value="#med-1"/>
-                                 </originalText>
+                                 <originalText mediaType="text/xml"><reference value="#med-1"/></originalText>
                                  <translation code="3400930268636"
                                     displayName="BEYFORTUS 100 mg, solution injectable en seringue préremplie 1 seringue préremplie en verre de 1 mL + 2 aiguilles"
                                     codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>

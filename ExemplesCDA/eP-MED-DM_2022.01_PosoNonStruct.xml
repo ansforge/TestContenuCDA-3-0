@@ -515,8 +515,7 @@
             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title>Code 2D de la prescription</title>
           <text>
-            <renderMultiMedia referencedObject="Code2dPDF"/>
-          </text>
+            <renderMultiMedia referencedObject="Code2dPDF"/></text>
           <entry>
             <observationMedia classCode="OBS" moodCode="EVN" ID="Code2dPDF">
               <!-- Conformité CDAObservationMedia (CCD) -->
@@ -655,9 +654,7 @@
               <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
               <code code="DRUG" displayName="Médicament" 
                 codeSystem="2.16.840.1.113883.5.4"  codeSystemName="HL7:ActCode"/>
-              <text>
-                <reference value="#med-001"/>
-              </text>
+              <text><reference value="#med-001"/></text>
               <statusCode code="completed"/>
               <!-- [0..1] Durée du traitement -->
               <effectiveTime xsi:type="IVL_TS">
@@ -747,9 +744,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.33"/>
                   <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
-                  <text>
-                    <reference value="#med-001-instrPatient"/>
-                  </text>
+                  <text><reference value="#med-001-instrPatient"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -765,9 +760,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.34"/>
                   <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
-                  <text>
-                    <reference value="#med-001-instrDisp"/>
-                  </text>
+                  <text><reference value="#med-001-instrDisp"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -795,10 +788,8 @@
                   <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                     codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
-                    <originalText>
-                      <!-- Motif de non substitution obligatoire si substitution non autorisée -->
-                      <reference value="med-001-substitution"/>
-                    </originalText>
+                    <!-- Motif de non substitution obligatoire si substitution non autorisée -->
+                    <originalText><reference value="med-001-substitution"/></originalText>
                   </code>
                   <statusCode code="completed"/>
                 </act>
@@ -816,9 +807,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-001-ALD"/>
-                  </text>
+                  <text><reference value="#med-001-ALD"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20191227093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas liée à une ALD -->
@@ -838,9 +827,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
                   <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-001-ATMP"/>
-                  </text>
+                  <text><reference value="#med-001-ATMP"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas liée à un AT ou une MP -->
@@ -860,9 +847,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
                   <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-001-prev"/>
-                  </text>
+                  <text><reference value="#med-001-prev"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas en rapport avec la prévention -->
@@ -882,9 +867,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
                   <code code="GEN-181" displayName="Non remboursable"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-001-non-remb"/>
-                  </text>
+                  <text><reference value="#med-001-non-remb"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : le médicament est non remboursable -->
@@ -904,9 +887,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130017"/>
                   <code code="GEN-179" displayName="Hors Autorisation de Mise sur le Marché (AMM)"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-001-horsamm"/>
-                  </text>
+                  <text><reference value="#med-001-horsamm"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : le médicament est Hors AMM -->
@@ -917,9 +898,7 @@
              <!-- Précondition -->
               <precondition>
                 <criterion>
-                  <text>
-                    <reference value="#precond-001"/>
-                  </text>
+                  <text><reference value="#precond-001"/></text>
                 </criterion>
               </precondition>
             
@@ -1006,9 +985,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.33"/>
                   <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
-                  <text>
-                    <reference value="#med-002-instrPatient"/>
-                  </text>
+                  <text><reference value="#med-002-instrPatient"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1024,9 +1001,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.34"/>
                   <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
-                  <text>
-                    <reference value="#med-002-instrDisp"/>
-                  </text>
+                  <text><reference value="#med-002-instrDisp"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1054,10 +1029,8 @@
                   <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode_CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" displayName="Aucune substitution permise" 
                     codeSystem="2.16.840.1.113883.5.1070" codeSystemName="HL7_substanceAdminSubstitution">
-                    <originalText>
-                      <!-- Motif de non substitution obligatoire si substitution non autorisée -->
-                      <reference value="med-002-substitution"/>
-                    </originalText>
+                    <!-- Motif de non substitution obligatoire si substitution non autorisée -->
+                    <originalText><reference value="med-002-substitution"/></originalText>
                   </code>
                   <statusCode code="completed"/>
                 </act>
@@ -1075,9 +1048,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-002-ALD"/>
-                  </text>
+                  <text><reference value="#med-002-ALD"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20191227093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas liée à une ALD -->
@@ -1097,9 +1068,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
                   <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-002-ATMP"/>
-                  </text>
+                  <text><reference value="#med-002-ATMP"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas liée à un AT ou une MP -->
@@ -1119,9 +1088,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
                   <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-002-prev"/>
-                  </text>
+                  <text><reference value="#med-002-prev"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du médicament n'est pas en rapport avec la prévention -->
@@ -1141,9 +1108,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
                   <code code="GEN-181" displayName="Non remboursable"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-002-non-remb"/>
-                  </text>
+                  <text><reference value="#med-002-non-remb"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : le médicament est non remboursable -->
@@ -1163,9 +1128,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130017"/>
                   <code code="GEN-179" displayName="Hors Autorisation de Mise sur le Marché (AMM)"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#med-002-horsamm"/>
-                  </text>
+                  <text><reference value="#med-002-horsamm"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : le médicament est Hors AMM -->
@@ -1176,9 +1139,7 @@
               <!-- Précondition -->
               <precondition>
                 <criterion>
-                  <text>
-                    <reference value="#precond-002"/>
-                  </text>
+                  <text><reference value="#precond-002"/></text>
                 </criterion>
               </precondition>
               
@@ -1260,9 +1221,7 @@
                       <translation code="1215702"
                         displayName="lit médical, lit + 135 kg, forfait de livraison du lit et accessoires"
                         codeSystem="1.2.250.1.215.200.2.1" codeSystemName="LPP">
-                        <originalText>
-                          <reference value="#DM-001-LPP"> </reference>
-                        </originalText>
+                        <originalText><reference value="#DM-001-LPP"/></originalText>
                       </translation>
                     </code>
                   </playingDevice>
@@ -1281,9 +1240,7 @@
                   <id root="7FA00C4C-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#DM-001-ALD"/>
-                  </text>
+                  <text><reference value="#DM-001-ALD"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20191227093000+0100"/>
                   <!-- false : la prescription du DM n'est pas liée à une ALD -->
@@ -1303,9 +1260,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130034"/>
                   <code code="GEN-180" displayName="En rapport avec un accident du travail ou une maladie professionnelle"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#DM-001-ATMP"/>
-                  </text>
+                  <text><reference value="#DM-001-ATMP"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du DM n'est pas liée à un AT ou une MP -->
@@ -1325,9 +1280,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
                   <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#DM-001-prev"/>
-                  </text>
+                  <text><reference value="#DM-001-prev"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : la prescription du DM n'est pas en rapport avec la prévention -->
@@ -1347,9 +1300,7 @@
                   <id root="40C12236-3721-11EC-8D3D-0242AC130026"/>
                   <code code="GEN-181" displayName="Non remboursable"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-                  <text>
-                    <reference value="#DM-001-non-remb"/>
-                  </text>
+                  <text><reference value="#DM-001-non-remb"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201093000+0100"/>
                   <!-- false : le DM est non remboursable -->
@@ -1434,9 +1385,7 @@
                   <id root="C4815527-3DBA-4907-B3B1-EC6F9F8D1224"/>
                   <code code="29463-7" displayName="Poids (mesuré)" 
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#poids"/>
-                  </text>
+                  <text><reference value="#poids"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201"/>
                   <value xsi:type="PQ" value="55" unit="kg"/>
@@ -1456,9 +1405,7 @@
                   <id root="80E7B7B1-353A-4870-B8F4-F1176A23F1DB"/>
                   <code code="8302-2" displayName="Taille"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#taille"/>
-                  </text>
+                  <text><reference value="#taille"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20211201"/>
                   <value xsi:type="PQ" value="170" unit="cm"/>
@@ -1508,9 +1455,7 @@
               <id root="889E8A7C-ABE9-426B-873C-BDF23B505006"/>
               <code code="11449-6" displayName="Statut de grossesse"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#grossesse-001"/>
-              </text>
+              <text><reference value="#grossesse-001"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20211201"/>
               <value xsi:type="CE" code="77386006" displayName="patiente actuellement enceinte" 

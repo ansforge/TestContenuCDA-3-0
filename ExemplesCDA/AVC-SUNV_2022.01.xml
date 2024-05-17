@@ -350,9 +350,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="45E07A3F-4F31-4805-8FAF-7FC722A2F9BA" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#infarCereb" />
-                  </text>
+                  <text><reference value="#infarCereb" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20180923" />
@@ -360,9 +358,7 @@
                   </effectiveTime>
                   <!-- Valeur issue du JDV_AntecedantsMedicaux_CISIS -->
                   <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                    <originalText>
-                      <reference value="#infarCereb" />
-                    </originalText>
+                    <originalText><reference value="#infarCereb" /></originalText>
                   </value>
                   <!-- Raison de l'étiologie -->
                   <entryRelationship typeCode="RSON">
@@ -373,9 +369,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.48" />
                       <id root="F4B0093C-7A21-4B49-9713-77904F7664D3" />
                       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-                      <text>
-                        <reference value="#assert1" />
-                      </text>
+                      <text><reference value="#assert1" /></text>
                       <statusCode code="completed" />
                       <effectiveTime value="2018" />
                       <value xsi:type="CD" code="MED-479" displayName="Athérome extracrânien" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -493,9 +487,7 @@
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="AADF4F65-5072-439A-A552-222A4078C378" />
               <code code="30954-2" displayName="Résultats d'examens" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="avc_re" />
-              </text>
+              <text><reference value="avc_re" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
             </procedure>
@@ -509,16 +501,12 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="D2E4CDE5-9596-4AC1-B963-AB78E0C111FC" />
               <code code="75859-9" displayName="Score de Rankin" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#avc_42" />
-              </text>
+              <text><reference value="#avc_42" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="INT" value="0" />
               <interpretationCode xsi:type="CE" code="MED-382" displayName="Absence de symptômes" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#rankin" />
-                </originalText>
+                <originalText><reference value="#rankin" /></originalText>
               </interpretationCode>
             </observation>
           </entry>
@@ -531,9 +519,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="6F4C7311-3CFD-4552-9C8D-81A71E831B89" />
               <code code="70182-1" displayName="Score NIH Stroke Scale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#avc_43" />
-              </text>
+              <text><reference value="#avc_43" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -548,9 +534,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="F2E6A0B7-95F5-465D-813E-802D9847CF5E" />
               <code code="MED-513" displayName="Evaluation en kinésithérapie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_44" />
-              </text>
+              <text><reference value="#avc_44" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -565,9 +549,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="52B928F8-6597-449B-AEAD-91C3B4F0E2E1" />
               <code code="MED-514" displayName="Evaluation en orthophonie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_45" />
-              </text>
+              <text><reference value="#avc_45" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -582,9 +564,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="53FD5020-E85E-4385-812D-DC4B3200D9A4" />
               <code code="MED-515" displayName="Evaluation en ergothérapie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_46" />
-              </text>
+              <text><reference value="#avc_46" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -599,9 +579,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="FD64DAB3-562E-4D0F-85B7-2515D1B493CE" />
               <code code="MED-516" displayName="Evaluation de l'assistance sociale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_47" />
-              </text>
+              <text><reference value="#avc_47" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -616,9 +594,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="DA259E25-7B05-4332-9B29-83B695A57AC3" />
               <code code="MED-513" displayName="Evaluation en neuropsychologie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_48" />
-              </text>
+              <text><reference value="#avc_48" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="true" />
@@ -633,9 +609,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="699354F7-86EB-4AC4-9AA2-35213F46F2AB" />
               <code code="MED-218" displayName="Rééducation en cours d'hospitalisation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#avc_49" />
-              </text>
+              <text><reference value="#avc_49" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20181003" />
               <value xsi:type="BL" value="false" />
@@ -683,9 +657,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="7BBD22BA-89C9-467E-AD2F-04A8DFD2F9C6" />
               <code code="ORG-074" displayName="Modalité de sortie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#sortie" />
-              </text>
+              <text><reference value="#sortie" /></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low value="20181003" />
@@ -702,9 +674,7 @@
               <templateId root="1.2.250.1.213.1.1.3.28" />
               <id root="781FA177-1F90-40A9-B884-2E994EB93848" />
               <code code="80413-8" displayName="Transfert du patient" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#transfert" />
-              </text>
+              <text><reference value="#transfert" /></text>
               <statusCode code="normal" />
               <effectiveTime>
                 <low value="20181003" />
@@ -796,9 +766,7 @@
               <templateId root="1.2.250.1.213.1.1.3.58" />
               <id root="4B3B5473-69E4-47E4-9B84-C6CD2CDF237D" />
               <code code="AMB" displayName="Ambulatoire (hors établissement)" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode" />
-              <text mediaType="text/xml">
-                <reference value="#CONSULT01" />
-              </text>
+              <text mediaType="text/xml"><reference value="#CONSULT01" /></text>
               <effectiveTime value="201810150930" />
               <priorityCode code="CS" displayName="Recontacter pour fixer RDV" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
               <performer typeCode="PRF">
@@ -839,10 +807,7 @@
               <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.42" />
               <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0" />
-              <text>
-                <reference>
-                </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed" />
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK" />
@@ -859,9 +824,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.43" />
                   <manufacturedMaterial>
                     <code code="63564053" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS" displayName="PLAVIX 75 mg, comprimé pelliculé">
-                      <originalText mediaType="text/xml">
-                        <reference value="#MEDIC01" />
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#MEDIC01" /></originalText>
                     </code>
                     <name>PLAVIX 75 mg, comprimé pelliculé</name>
                   </manufacturedMaterial>
@@ -891,9 +854,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48.16" />
               <id root="7E8F0E39-C756-4B73-BC00-BC72D29E41BB" />
               <code code="GEN-065" displayName="Statut du document" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#statut"/>
-              </text>
+              <text><reference value="#statut"/></text>
               <statusCode code="completed" />
               <effectiveTime value="20180923232000+0100" />
               <value xsi:type="CD" code="9571008" displayName="approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />

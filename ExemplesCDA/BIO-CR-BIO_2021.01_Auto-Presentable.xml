@@ -715,8 +715,7 @@
 												</c:tr>
 											</c:tbody>
 										</c:table>
-										<c:br/>
-									</c:text>
+										<c:br/></c:text>
 
 									<!-- Entrée FR-Resultats-examens-de-biologie-medicale : "Bilan lipidique" -->
 									<c:entry typeCode="DRIV">
@@ -749,9 +748,7 @@
 												displayName="Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="Triglycerides"/>
-												</c:originalText>
+												<c:originalText><c:reference value="Triglycerides"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -763,9 +760,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#BL0002"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#BL0002"/></c:originalText>
 												</c:methodCode>
 												<c:referenceRange typeCode="REFV">
 												<c:observationRange>
@@ -797,9 +792,7 @@
 												displayName="Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="Cholesterol"/>
-												</c:originalText>
+												<c:originalText><c:reference value="Cholesterol"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -810,9 +803,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#BL0003"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#BL0003"/></c:originalText>
 												</c:methodCode>
 												<c:referenceRange typeCode="REFV">
 												<c:observationRange>
@@ -842,9 +833,7 @@
 												displayName="Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="hdl"/>
-												</c:originalText>
+												<c:originalText><c:reference value="hdl"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -853,9 +842,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#BL0004"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#BL0004"/></c:originalText>
 												</c:methodCode>
 												<c:referenceRange typeCode="REFV">
 												<c:observationRange>
@@ -881,9 +868,7 @@
 												displayName="Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique ; Résultat calculé"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="ldl"/>
-												</c:originalText>
+												<c:originalText><c:reference value="ldl"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -892,9 +877,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#BL0005"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#BL0005"/></c:originalText>
 												</c:methodCode>
 												<c:referenceRange typeCode="REFV">
 												<c:observationRange>
@@ -1029,8 +1012,7 @@
 												</c:tr>
 											</c:tbody>
 										</c:table>
-										<c:br/>
-									</c:text>
+										<c:br/></c:text>
 
 									<!-- Entrée FR-Resultats-examens-de-biologie-medicale : "Biochimie" -->
 									<c:entry typeCode="DRIV">
@@ -1056,9 +1038,7 @@
 												displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="glucose"/>
-												</c:originalText>
+												<c:originalText><c:reference value="glucose"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1070,9 +1050,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#ABS0001"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#ABS0001"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1105,9 +1083,7 @@
 												displayName="Aspartate aminotransférase [Catalytique/Volume] Sérum/Plasma ; Numérique ; Avec phosphate de pyridoxal"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="aspartate"/>
-												</c:originalText>
+												<c:originalText><c:reference value="aspartate"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1116,9 +1092,7 @@
 												displayName="Anormalement haut"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#ABS0002"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#ABS0002"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1147,9 +1121,7 @@
 												displayName="Alanine aminotransférase [Catalytique/Volume] Sérum/Plasma ; Numérique ; Avec phosphate de pyridoxal"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="alanine"/>
-												</c:originalText>
+												<c:originalText><c:reference value="alanine"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1158,9 +1130,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#ABS0003"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#ABS0003"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1189,9 +1159,7 @@
 												displayName="Gamma glutamyltransférase [Catalytique/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="gamma"/>
-												</c:originalText>
+												<c:originalText><c:reference value="gamma"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1200,9 +1168,7 @@
 												displayName="Anormalement haut"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#ABS0004"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#ABS0004"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1272,8 +1238,7 @@
 												</c:tr>
 											</c:tbody>
 										</c:table>
-										<c:br/>
-									</c:text>
+										<c:br/></c:text>
 
 									<!-- Entrée FR-Resultats-examens-de-biologie-medicale : "Biochimie" -->
 									<c:entry typeCode="DRIV">
@@ -1299,9 +1264,7 @@
 												displayName="C Réactive protéine [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="CReactive"/>
-												</c:originalText>
+												<c:originalText><c:reference value="CReactive"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1310,9 +1273,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#PR0001"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#PR0001"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1403,8 +1364,7 @@
 												</c:tr>
 											</c:tbody>
 										</c:table>
-										<c:br/>
-									</c:text>
+										<c:br/></c:text>
 
 									<!-- Entrée FR-Resultats-examens-de-biologie-medicale : "Biochimie" -->
 									<c:entry typeCode="DRIV">
@@ -1430,9 +1390,7 @@
 												displayName="Thyréostimuline [Arbitraire/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="Thyreostimuline"/>
-												</c:originalText>
+												<c:originalText><c:reference value="Thyreostimuline"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1442,9 +1400,7 @@
 												displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#TH0001"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#TH0001"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">
@@ -1473,9 +1429,7 @@
 												displayName="Thyroxine libre [Masse/Volume] Sérum/Plasma ; Numérique"
 												codeSystem="2.16.840.1.113883.6.1"
 												codeSystemName="LOINC">
-												<c:originalText>
-												<c:reference value="Thyroxine"/>
-												</c:originalText>
+												<c:originalText><c:reference value="Thyroxine"/></c:originalText>
 												</c:code>
 												<c:statusCode code="completed"/>
 												<c:effectiveTime value="20140402145521+0200"/>
@@ -1484,9 +1438,7 @@
 												displayName="Anormalement bas"
 												codeSystem="2.16.840.1.113883.5.83"/>
 												<c:methodCode>
-												<c:originalText>
-												<c:reference value="#TH0002"/>
-												</c:originalText>
+												<c:originalText><c:reference value="#TH0002"/></c:originalText>
 												</c:methodCode>
 												<!-- Intervalle de valeurs de référence -->
 												<c:referenceRange typeCode="REFV">

@@ -393,18 +393,14 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="ECCF7414-8464-47BF-A2DE-9F023A255E34" />
                   <code code="55607006" displayName="problème" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#maladie_rare" />
-                  </text>
+                  <text><reference value="#maladie_rare" /></text>
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20181213" />
                   </effectiveTime>
                   <value xsi:type="CD" code="513" displayName="Leucémie lymphoblastique aigüe" 
                          codeSystem="1.2.250.1.213.2.49.1" codeSystemName="JDV_Orpha_Maladies">
-                    <originalText>
-                      <reference value="#maladie_rare" />
-                    </originalText>
+                    <originalText><reference value="#maladie_rare" /></originalText>
                   </value>
                   <!-- Entrée FR-Certitude -->
                   <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -415,9 +411,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.48"/>
                       <id root="1CE382B4-70AF-11ED-A1EB-0242AC120002"/>
                       <code code="66455-7" displayName="Certitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                      <text>
-                        <reference value="#certitude_probleme-1" />
-                      </text>
+                      <text><reference value="#certitude_probleme-1" /></text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="MSK"/>
                       <!-- valeur issue du JDV_HL7_condition-ver-status_CISIS (2.16.840.1.113883.4.642.3.166) -->
@@ -435,9 +429,7 @@
                       <!-- Conformité FR-Statut-clinique-du-patient (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.31" />
                       <code code="11323-3" displayName="Statut clinique du patient" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                      <text>
-                        <reference value="#statut_clinique-1" />
-                      </text>
+                      <text><reference value="#statut_clinique-1" /></text>
                       <statusCode code="completed" />
                       <!-- valeur issue du JDV_HealthStatusCodes_CISIS (1.2.250.1.213.1.1.4.2.283.1) -->
                       <value xsi:type="CE" code="27624003" displayName="maladie chronique"
@@ -458,17 +450,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="B920A6A0-3162-4B98-8BBA-665923EEEB11" />
                   <code code="64572001" displayName="maladie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#consanguinite" />
-                  </text>
+                  <text><reference value="#consanguinite" /></text>
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20181213" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-553" displayName="Consanguinité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#consanguinite" />
-                    </originalText>
+                    <originalText><reference value="#consanguinite" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -528,9 +516,7 @@
               <templateId root="1.2.250.1.213.1.1.3.62" />
               <id root="D5C3639B-2A68-4C87-8019-CBD941B7B429" />
               <code nullFlavor="NA" />
-              <text>
-                <reference value="#resultat" />
-              </text>
+              <text><reference value="#resultat" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
             </procedure>
@@ -546,9 +532,7 @@
               <id root="559A978D-C501-4684-BC73-8891FBE7C719" />
               <code code="PAT-023" displayName="Patient participant à un protocole" 
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#boolean_protocole" />
-              </text>
+              <text><reference value="#boolean_protocole" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
@@ -565,9 +549,7 @@
               <id root="5610E17B-1CC7-4A53-85CF-E38879EC32CB" />
               <code code="PAT-012" displayName="Accord du patient pour contact protocole" 
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#accord_protocole" />
-              </text>
+              <text><reference value="#accord_protocole" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
@@ -584,9 +566,7 @@
               <id root="3E40E2A4-6FC1-448F-AACB-EEB12386F8C1" />
               <code code="MED-065" displayName="Patient ayant précédemment donné un échantillon biologique pour la recherche MR" 
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#recherche_mr" />
-              </text>
+              <text><reference value="#recherche_mr" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="false" />
@@ -603,9 +583,7 @@
               <id root="62BCFD5C-1332-4BC8-8D4B-377B24E6AA71" />
               <code code="MED-066" displayName="Patient ayant précédemment donné un échantillon biologique pour le diagnostic moléculaire" 
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#diagnostic_moleculaire" />
-              </text>
+              <text><reference value="#diagnostic_moleculaire" /></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
@@ -656,9 +634,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
                   <manufacturedMaterial>
                     <code >
-                      <originalText>
-                        <reference value="traitEnCours" />
-                      </originalText>
+                      <originalText><reference value="traitEnCours" /></originalText>
                       <translation code="EMEA/H/C/002221" displayName="Dacogen" codeSystem="1.2.250.1.213.2.50" codeSystemName="EMEA Rare Disease medicinal products"/>
                       <translation code="L01BC08" displayName="decitabine" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
                     </code>
@@ -719,9 +695,7 @@
               <id root="6917FE7A-2F04-458E-8224-D273C6B643E7"/>
               <!-- Type de prise en charge : valeur issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) -->
               <code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)" codeSystem="2.16.840.1.113883.5.4"/>
-              <text>
-                <reference value="#IdPEC" />
-              </text>
+              <text><reference value="#IdPEC" /></text>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20181213" />
               </effectiveTime>
@@ -806,9 +780,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="490392D8-C59D-4CF9-A3E4-D85033E7D6CC" />
                   <code code="GEN-162" displayName="Indicateur Hors labélisation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#indHorsLab" />
-                  </text>
+                  <text><reference value="#indHorsLab" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="BL" value="true" />
@@ -867,9 +839,7 @@
               <id root="C38D726B-6DE0-43A0-B309-96FF1D524888" />
               <!-- Contexte de l'activité : valeur issue du JDV_ContexteActivite_CISIS (1.2.250.1.213.1.1.5.40) -->
               <code code="ORG-029" displayName="Avis sur dossier en consultation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#activite-01" />
-              </text>
+              <text><reference value="#activite-01" /></text>
               <!-- Date de l'activité -->
               <effectiveTime value="20181213" />
               <!-- Personne ayant réalisé l'activité -->
@@ -937,9 +907,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="098A0F48-BEA0-46DA-B192-5973005E9963" />
                   <code code="ORG-034" displayName="Objectifs de l'activité MR" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#objectifActiv-01" />
-                  </text>
+                  <text><reference value="#objectifActiv-01" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />                  
                   <!-- Objectif de l’activité MR : valeur issue du jeu de valeurs JDV_ObjectifActivite_CISIS (1.2.250.1.213.1.1.5.41) -->
@@ -955,9 +923,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="A67475FC-CFEA-4875-8F57-C7BF1399B56A" />
                   <code code="65649-6" displayName="Pays" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#codePays" />
-                  </text>
+                  <text><reference value="#codePays" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <!-- Code Pays ISO 3166  -->
@@ -973,9 +939,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="E19DE2BD-3CDB-4B37-B298-F36F1ED81FE0" />
                   <code code="65647-0" displayName="Code commune" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#codeCommune" />
-                  </text>
+                  <text><reference value="#codeCommune" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <!-- Code commune COG INSEE -->
@@ -1109,9 +1073,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="5F7B8B9A-83D6-4B26-BB30-1D7B95F9FF71" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#diagnostic_mr" />
-                  </text>
+                  <text><reference value="#diagnostic_mr" /></text>
                   <statusCode code="completed" />
                   <!-- Date du diagnostic MR -->
                   <effectiveTime xsi:type="IVL_TS">
@@ -1121,9 +1083,7 @@
                   <!-- Diagnostic MR -->
                   <value xsi:type="CD" code="513" displayName="Leucémie lymphoblastique aigüe" 
                          codeSystem="1.2.250.1.213.2.49.1" codeSystemName="JDV_Orpha_Maladies">
-                    <originalText>
-                      <reference value="#diagnostic_mr" />
-                    </originalText>
+                    <originalText><reference value="#diagnostic_mr" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -1136,9 +1096,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="87B88A38-8DF6-4198-9995-0B3D20472D05" />
                   <code code="PAT-013" displayName="Age aux premiers signes " codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#age_premiers_signes" />
-                  </text>
+                  <text><reference value="#age_premiers_signes" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="CD" code="767023003" displayName="période de la vie entre la naissance et la mort" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -1153,9 +1111,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="11C6F145-CF8B-4358-A68C-83EFD8E65507" />
                   <code code="PAT-014" displayName="Précision de l'âge aux premiers signes" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#precision_age_premiers_signes" />
-                  </text>
+                  <text><reference value="#precision_age_premiers_signes" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="PQ" value="5" unit="mo" />
@@ -1170,9 +1126,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="B4988088-E848-465C-819D-39C6266B5A57" />
                   <code code="MED-071" displayName="Appréciation diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#appreciation_diagnostic" />
-                  </text>
+                  <text><reference value="#appreciation_diagnostic" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="CD" code="2667000" displayName="absent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -1187,9 +1141,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="7867E08B-D92F-49CF-9026-B9E1C8275C9E" />
                   <code code="PAT-015" displayName="Age au Diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#age_diagnostic " />
-                  </text>
+                  <text><reference value="#age_diagnostic " /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="CD" code="767023003" displayName="période de la vie entre la naissance et la mort" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -1204,9 +1156,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="DF8953BE-F761-4F62-885D-9C5D15DFEB5B" />
                   <code code="PAT-016" displayName="Précision de l'âge au diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#precision_age_diagnostic" />
-                  </text>
+                  <text><reference value="#precision_age_diagnostic" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="PQ" value="12" unit="mo" />
@@ -1221,9 +1171,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="E31D4A1D-9D9D-4EEF-B1B7-C6D209B459DB" />
                   <code code="MED-072" displayName="Statut actuel du Diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#statut_actuel_diagnostic" />
-                  </text>
+                  <text><reference value="#statut_actuel_diagnostic" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="CD" code="385651009" displayName="en cours d'exécution" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -1238,9 +1186,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="F769E135-6907-443A-8E4F-A6E431A02573" />
                   <code code="MED-073" displayName="Cas Sporadique ou Familial" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#sporadique_familiale " />
-                  </text>
+                  <text><reference value="#sporadique_familiale " /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <!-- Valeur issue du JDV_CasSporadiqueFamilial_CISIS (1.2.250.1.213.1.1.5.46) -->
@@ -1256,9 +1202,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="8A4AC9D5-BFEC-4470-BC4B-3A8D2A231E1E" />
                   <code code="MED-068" displayName="Précision de(s) technique(s) génétique(s) utilisée(s)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#techniques_diagnostic" />
-                  </text>
+                  <text><reference value="#techniques_diagnostic" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="CD" code="GEN-092.04.17" displayName="Autre technique diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" />
@@ -1273,9 +1217,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="6ECDF212-73CA-40BD-82F5-6F932197CC61" />
                   <code code="ORG-017" displayName="Investigations réalisées" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#investigations_realisees" />
-                  </text>
+                  <text><reference value="#investigations_realisees" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <!-- Valeur issue du JDV_InvestigationsRealisees_CISIS (1.2.250.1.213.1.1.5.47) -->
@@ -1291,9 +1233,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="FB83A892-A4CD-431E-9803-F97BDBEB5906" />
                   <code code="GEN-163" displayName="Précision du mode de confirmation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#precModeConf" />
-                  </text>
+                  <text><reference value="#precModeConf" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="ST" />
@@ -1308,9 +1248,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="78FCC344-92BE-4C1A-A253-780EE60F00CF" />
                   <code code="MED-074" displayName="Signes complémentaires associés à la MR" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#signes_complémentaires" />
-                  </text>
+                  <text><reference value="#signes_complémentaires" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="CD" code="98006" displayName="Maladie neurologique rare" codeSystem="1.2.250.1.213.2.49.2" codeSystemName="JDV_Orpha_Groupes-Maladies" />
@@ -1325,9 +1263,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="FD154481-4C5A-43D2-BE63-B4E17E2A04AF" />
                   <code code="MED-086" displayName="Signes complémentaires associés à la MR" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#signes_inhabituels" />
-                  </text>
+                  <text><reference value="#signes_inhabituels" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="CD" code="R26.0" displayName="Démarche ataxique" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
@@ -1342,9 +1278,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="A1FDA6D4-FC8C-47AD-98C4-A36977EFC8DF" />
                   <code code="MED-552" displayName="Gène" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#gene" />
-                  </text>
+                  <text><reference value="#gene" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="CD" code="HGNC:39983" displayName="ABCA9 antisense RNA 1" codeSystemName="HGNC" codeSystem="2.16.840.1.113883.4.642.2.468" />
@@ -1359,9 +1293,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="42D894FC-ADD5-4521-8605-5A960AE26634" />
                   <code code="MED-064" displayName="Sujet apparemment sain" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#sujet_sain" />
-                  </text>
+                  <text><reference value="#sujet_sain" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="BL" value="false" />
@@ -1376,9 +1308,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="6B54CA53-F7F6-42C1-94FF-09F505AE41C5" />
                   <code code="MED-554" displayName="Mutation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#autres_descriptions_genetiques" />
-                  </text>
+                  <text><reference value="#autres_descriptions_genetiques" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20181213" />
                   <value xsi:type="ST">texte pour décrire la mutation</value>
@@ -1438,9 +1368,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.62"/>
                   <id root="3E43DBF8-DCC3-4EF1-B60C-E3506E697935" />
                   <code code="MED-075" displayName="Assistance médicale à la procréation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#assistance_procreation" />
-                  </text>
+                  <text><reference value="#assistance_procreation" /></text>
                   <statusCode code="active" />
                   <!-- Date de l'assistance médicale à la procréation -->
                   <effectiveTime value="20100501" />
@@ -1529,9 +1457,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.50"/>
                           <id root="61CD147E-CB7A-4B1C-9850-BDAB9ACC2A7D" />
                           <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" displayName="Poids (mesuré)" codeSystemName="LOINC" />
-                          <text>
-                            <reference value="#poids" />
-                          </text>
+                          <text><reference value="#poids" /></text>
                           <statusCode code="completed" />
                           <effectiveTime nullFlavor="NA" />
                           <value xsi:type="PQ" value="2500" unit="g" />
@@ -1550,9 +1476,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.50"/>
                           <id root="D26F6FC2-F711-4816-A0A8-841838451BBD" />
                           <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="Taille" codeSystemName="LOINC" />
-                          <text>
-                            <reference value="#taille" />
-                          </text>
+                          <text><reference value="#taille" /></text>
                           <statusCode code="completed" />
                           <effectiveTime nullFlavor="NA" />
                           <value xsi:type="PQ" value="40" unit="cm" />
@@ -1571,9 +1495,7 @@
                           <templateId root="1.2.250.1.213.1.1.3.50"/>
                           <id root="226B2352-710D-48BD-8F83-2C221BC00F09" />
                           <code code="8287-5" displayName="Périmètre cranien" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                          <text>
-                            <reference value="#perimetre_cranien" />
-                          </text>
+                          <text><reference value="#perimetre_cranien" /></text>
                           <statusCode code="completed" />
                           <effectiveTime nullFlavor="NA" />
                           <value xsi:type="PQ" value="17" unit="cm" />
@@ -1634,9 +1556,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="C0345C97-FEC3-4863-BBEB-CBF99886B0EF" />
                   <code code="MED-077" displayName="Précision terme (cas échéant)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#semaines_avant_terme" />
-                  </text>
+                  <text><reference value="#semaines_avant_terme" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20090812" />
                   <!-- 15/07/2021 : correction de l'unité en "wk" (au lieu de "semaines") -->
@@ -1652,9 +1572,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="D86C32CE-C3AF-445E-8B7A-566FAA5CF70A" />
                   <code code="MED-078" displayName="Présence de malformations anténatale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#presence_malformations_antenatales" />
-                  </text>
+                  <text><reference value="#presence_malformations_antenatales" /></text>
                   <statusCode code="completed" />
                   <effectiveTime value="20090812" />
                   <!-- Valeur issue du JDV_MalformationAntenatale_CISIS -->
@@ -1743,9 +1661,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.51"/>
                   <id root="4F052078-E014-40A2-B6D9-BA76159C6A5D" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="#description" />
-                  </text>
+                  <text><reference value="#description" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="ST">-</value>
@@ -1798,9 +1714,7 @@
               <!-- Identifiant du dossier -->
               <id root="33341B85-96D9-4FFC-A165-37152FEA4FE1" />
               <code code="GEN-164" displayName="Date de création" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#date_creation" />
-              </text>
+              <text><reference value="#date_creation" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20090812" />
               <!-- date de création du dossier -->
@@ -1816,9 +1730,7 @@
               <templateId root="1.2.250.1.213.1.1.3.48"/>
               <id root="C57578D1-D2B7-44EA-9C00-BE653E3D0D10" />
               <code code="GEN-165" displayName="Date de mise à jour" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#date_maj" />
-              </text>
+              <text><reference value="#date_maj" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20090812" />
               <!-- date de la dernière maj du dossier -->

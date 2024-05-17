@@ -843,9 +843,7 @@
                   <id root="4F5F282A-7CCF-492C-920D-2845D594BD27"/>
                   <code code="64100-1" displayName="Contre-indications"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#contre-indication-01-commentaire"/> 
-                  </text>
+                  <text><reference value="#contre-indication-01-commentaire"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20230112171504+0500"/>
                   <!-- contre-indications : valeur issue du JDV_contre_indications_CISIS (1.2.250.1.213.1.1.5.659) -->
@@ -933,28 +931,22 @@
               <id root="73B4C3B2-843F-11EC-A8A3-0242AC120002"/>
               <!-- Valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
               <code code="24727-0" displayName="CT tête avec contraste IV" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-01"/>
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#acte-01"/></originalText>
                 <!-- Acte CCAM​ -->
                 <translation code="ACQH004" 
                   displayName="Scanographie du crâne, de son contenu et du tronc, avec injection intraveineuse de produit de contraste" 
                   codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
               </code>
-              <text><reference value="#acte-01-description"></reference></text>
+              <text><reference value="#acte-01-description"/></text>
               <effectiveTime value="20210108111700"/>
               <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-01-modalite"/>
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#acte-01-modalite"/></originalText>
               </methodCode>
               <!-- [1..*] Localisation anatomique -->
               <targetSiteCode xsi:type="CD" code="302548004" displayName="tête entière"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-01-localisation"/>
-                </originalText>                
+                <originalText mediaType="text/xml"><reference value="#acte-01-localisation"/></originalText>                
               </targetSiteCode>
               <!-- [0..1] Entrée FR-Commentaire-ER :  Autres parametres -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -967,9 +959,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-01-autres-parametres"/>
-                  </text>
+                  <text><reference value="#acte-01-autres-parametres"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -992,9 +982,7 @@
               <doseQuantity>
                 <low value="150" unit="mL">
                   <translation>
-                    <originalText>
-                      <reference value="#acte-01-dose"/>
-                    </originalText>
+                    <originalText><reference value="#acte-01-dose"/></originalText>
                   </translation>
                 </low>
               </doseQuantity>
@@ -1004,9 +992,7 @@
                   <manufacturedMaterial>
                     
                     <code>
-                      <originalText mediaType="text/xml">
-                        <reference value="#acte-01-traitement"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#acte-01-traitement"/></originalText>
                       <!-- code CIP ou UCD -->
                       <translation code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
                         codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
@@ -1029,9 +1015,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-01-traitement-commentaire"/>
-                  </text>
+                  <text><reference value="#acte-01-traitement-commentaire"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1113,9 +1097,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.165"/> 
                   <code code="121290" displayName="Exposition du patient aux rayonnements ionisants"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                    <originalText>
-                      <reference value="#acte-01-exposition-rayonnements"/>
-                    </originalText>
+                    <originalText><reference value="#acte-01-exposition-rayonnements"/></originalText>
                   </code>
                   <participant typeCode="RESP">
                     <participantRole>
@@ -1148,9 +1130,7 @@
                   <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="Enceinte"
                          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
-                    <originalText>
-                      <reference value="#statutGrossesse-1"/>
-                    </originalText>
+                    <originalText><reference value="#statutGrossesse-1"/></originalText>
                   </value>
                   <targetSiteCode nullFlavor="NA"/>
                 </observation>
@@ -1166,18 +1146,14 @@
                   <id root="334A0490-843F-11EC-A8A3-0242AC120002"/>
                   <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
-                  <text>
-                    <reference value="#acte-01-mesure-1"/>
-                  </text>
+                  <text><reference value="#acte-01-mesure-1"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140913223912"/>
                   <value xsi:type="PQ" value="1140.26" unit="mGy.cm"/>
                   <!-- Localisation -->
                   <targetSiteCode xsi:type="CD" code="302548004" displayName="tête entière"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText mediaType="text/xml">
-                      <reference value="#acte-01-mesure-1-localisation"/>
-                    </originalText>                    
+                    <originalText mediaType="text/xml"><reference value="#acte-01-mesure-1-localisation"/></originalText>                    
                   </targetSiteCode>
                 </observation>
               </entry>
@@ -1194,9 +1170,7 @@
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
                     <translation>
-                      <originalText>
-                        <reference value="#acte-01-radiopharmaceutique-activite"/>
-                      </originalText>
+                      <originalText><reference value="#acte-01-radiopharmaceutique-activite"/></originalText>
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
@@ -1205,9 +1179,7 @@
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (1.2.250.1.213.1.1.5.690)  -->  
                         <code>
-                          <originalText mediaType="text/xml">
-                            <reference value="#acte-01-radiopharmaceutique"/>
-                          </originalText>
+                          <originalText mediaType="text/xml"><reference value="#acte-01-radiopharmaceutique"/></originalText>
                           <translation code="V09AX01" displayName="111In-indium acide pentétique"
                             codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
@@ -1227,9 +1199,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#acte-01-radiopharmaceutique-commentaire"/>
-                      </text>
+                      <text><reference value="#acte-01-radiopharmaceutique-commentaire"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -1301,9 +1271,7 @@
                             <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                             <value code="CT" displayName="Tomodensitométrie"
                               codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                              <originalText mediaType="text/plain">
-                                <reference value="#ex-01-serie-01-modalite"/>
-                              </originalText>
+                              <originalText mediaType="text/plain"><reference value="#ex-01-serie-01-modalite"/></originalText>
                             </value>
                           </qualifier>
                         </code>
@@ -1321,10 +1289,8 @@
                               codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                               <originalText><reference value="#ex-01-serie-01-SOPInstance-01-class"/></originalText>
                             </code>
-                            <text mediaType="application/dicom">
-                              <!-- référence ex-01-serie-01-SOPInstance-01 : url vers les images de l’examen -->                              
-                              <reference value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876360 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876360.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876360.001.001"/>
-                            </text>
+                            <!-- référence ex-01-serie-01-SOPInstance-01 : url vers les images de l’examen -->  
+                            <text mediaType="application/dicom"><reference value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876360 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876360.001 &amp;objectUID=1.2.250.1.925.994044.27.123.1876360.001.001"/></text>
                             <effectiveTime value="20200823223232"/>
                           </observation>
                         </entryRelationship>
@@ -1410,29 +1376,23 @@
               <!-- Valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
               <code code="36235-0"  displayName="CT cou avec contraste IV"   
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-02"/>
-                </originalText>                
+                <originalText mediaType="text/xml"><reference value="#acte-02"/></originalText>                
                 <!-- Acte CCAM​ -->
                 <translation code="LCQH001" 
                   displayName="Scanographie des tissus mous du cou, avec injection intraveineuse de produit de contraste" 
                   codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
               </code>
-              <text><reference value="#acte-02-description"></reference></text>
+              <text><reference value="#acte-02-description"/></text>
               <effectiveTime value="20210108111700"/>              
               <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie"
                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-02-modalite"/>
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#acte-02-modalite"/></originalText>
               </methodCode>
               <!-- [1..*] Localisation anatomique -->
               <targetSiteCode xsi:type="CD" code="302550007" displayName="cou entier"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-02-localisation"/>
-                </originalText>                
+                <originalText mediaType="text/xml"><reference value="#acte-02-localisation"/></originalText>                
               </targetSiteCode>
               <!-- [0..1] Entrée FR-Commentaire-ER :  Autres parametres -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1445,9 +1405,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-02-autres-parametres"/>
-                  </text>
+                  <text><reference value="#acte-02-autres-parametres"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1470,9 +1428,7 @@
               <doseQuantity>
                 <low value="150" unit="mL">
                   <translation>
-                    <originalText>
-                      <reference value="#acte-02-dose"/>
-                    </originalText>
+                    <originalText><reference value="#acte-02-dose"/></originalText>
                   </translation>
                 </low>
               </doseQuantity>
@@ -1481,9 +1437,7 @@
                 <manufacturedProduct classCode="MANU">
                   <manufacturedMaterial>
                     <code>
-                      <originalText mediaType="text/xml">
-                        <reference value="#acte-02-traitement"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#acte-02-traitement"/></originalText>
                       <!-- code ATC -->
                       <translation code="V08AB11" displayName="IOBITRIDOL" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <!-- code CIP ou UCD -->
@@ -1506,9 +1460,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-02-traitement-commentaire"/>
-                  </text>
+                  <text><reference value="#acte-02-traitement-commentaire"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1596,9 +1548,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.165"/> 
                   <code code="121290" displayName="Exposition du patient aux rayonnements ionisants"
                     codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                    <originalText>
-                      <reference value="#acte-02-exposition-rayonnements"/>
-                    </originalText>
+                    <originalText><reference value="#acte-02-exposition-rayonnements"/></originalText>
                   </code>
                   <participant typeCode="RESP">
                     <participantRole>
@@ -1631,9 +1581,7 @@
                   <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="Enceinte"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
-                    <originalText>
-                      <reference value="#statutGrossesse-2"/>
-                    </originalText>
+                    <originalText><reference value="#statutGrossesse-2"/></originalText>
                   </value>
                   <targetSiteCode nullFlavor="NA"/>
                 </observation>
@@ -1650,18 +1598,14 @@
                   <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
-                  <text>
-                    <reference value="#acte-02-mesure-1"/>
-                  </text>
+                  <text><reference value="#acte-02-mesure-1"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140913223912"/>
                   <value xsi:type="PQ" value="1140.26" unit="mGy.cm"/>
                   <!-- Localisation -->
                   <targetSiteCode xsi:type="CD" code="302550007" displayName="cou entier"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText mediaType="text/xml">
-                      <reference value="#acte-02-mesure-1-localisation"/>
-                    </originalText>   
+                    <originalText mediaType="text/xml"><reference value="#acte-02-mesure-1-localisation"/></originalText>   
                   </targetSiteCode>
                 </observation>
               </entry>
@@ -1676,18 +1620,14 @@
                   <id root="034DA300-843F-11EC-A8A3-0242AC120002"/>
                   <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113830" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
-                  <text>
-                    <reference value="#acte-02-mesure-2"/>
-                  </text>
+                  <text><reference value="#acte-02-mesure-2"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140913223912"/>
                   <value xsi:type="PQ" value="13.64" unit="mGy"/>
                   <!-- Localisation -->
                   <targetSiteCode xsi:type="CD" code="302550007" displayName="cou entier"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText mediaType="text/xml">
-                      <reference value="#acte-02-mesure-2-localisation"/>
-                    </originalText>                    
+                    <originalText mediaType="text/xml"><reference value="#acte-02-mesure-2-localisation"/></originalText>                    
                   </targetSiteCode>
                 </observation>
               </entry>
@@ -1704,9 +1644,7 @@
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
                     <translation>
-                      <originalText>
-                        <reference value="#acte-02-radiopharmaceutique-activite"/>
-                      </originalText>
+                      <originalText><reference value="#acte-02-radiopharmaceutique-activite"/></originalText>
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
@@ -1715,9 +1653,7 @@
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  --> 
                         <code>
-                          <originalText mediaType="text/xml">
-                            <reference value="#acte-02-radiopharmaceutique"/>
-                          </originalText>
+                          <originalText mediaType="text/xml"><reference value="#acte-02-radiopharmaceutique"/></originalText>
                           <translation code="V09AX01" displayName="111In-indium acide pentétique"
                             codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
@@ -1737,9 +1673,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#acte-02-radiopharmaceutique-commentaire"/>
-                      </text>
+                      <text><reference value="#acte-02-radiopharmaceutique-commentaire"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -1810,9 +1744,7 @@
                           <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                           <value code="CT" displayName="Tomodensitométrie"
                             codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                            <originalText mediaType="text/plain">
-                              <reference value="#ex-02-serie-01-modalite"/>
-                            </originalText>
+                            <originalText mediaType="text/plain"><reference value="#ex-02-serie-01-modalite"/></originalText>
                           </value>
                         </qualifier>
                       </code>
@@ -1830,11 +1762,8 @@
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                             <originalText><reference value="#ex-02-serie-01-SOPInstance-01-class"/></originalText>
                           </code>
-                          <text mediaType="application/dicom">
-                            <!-- référence ex-02-serie-01-SOPInstance-01 : url vers les images de l’examen -->
-                            <reference
-                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.01 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.01.01"/>
-                          </text>
+                          <!-- référence ex-02-serie-01-SOPInstance-01 : url vers les images de l’examen -->
+                          <text mediaType="application/dicom"><reference value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876361 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876361.01 &amp;objectUID=1.2.250.1.925.994044.27.123.1876361.01.01"/></text>
                           <effectiveTime value="20200823223232"/>
                         </observation>
                       </entryRelationship>
@@ -1921,29 +1850,23 @@
               <code code="24979-7" 
                 displayName="CT rachis dorsal avec contraste IV"   
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-03"/>
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#acte-03"/></originalText>
                 <!-- Acte CCAM​ -->
                 <translation code="ZBQH001" 
                   displayName="Scanographie du thorax, avec injection intraveineuse de produit de contraste" 
                   codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
               </code>
-              <text><reference value="#acte-03-description"></reference></text>
+              <text><reference value="#acte-03-description"/></text>
               <effectiveTime value="20210108111700"/>              
               <!--[1..*] valeur issue JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
               <methodCode code="CT" displayName="Tomodensitométrie"
                 codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-03-modalite"/>
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#acte-03-modalite"/></originalText>
               </methodCode>
               <!-- [1..*] Localisation anatomique -->
               <targetSiteCode xsi:type="CD" code="302551006" displayName="thorax entier"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                <originalText mediaType="text/xml">
-                  <reference value="#acte-03-localisation"/>
-                </originalText>                
+                <originalText mediaType="text/xml"><reference value="#acte-03-localisation"/></originalText>                
               </targetSiteCode>
               <!-- [0..1] Entrée FR-Commentaire-ER :  Autres parametres -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1956,9 +1879,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-03-autres-parametres"/>
-                  </text>
+                  <text><reference value="#acte-03-autres-parametres"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -1981,9 +1902,7 @@
               <doseQuantity>
                 <low value="150" unit="mL">
                   <translation>
-                    <originalText>
-                      <reference value="#acte-03-dose"/>
-                    </originalText>
+                    <originalText><reference value="#acte-03-dose"/></originalText>
                   </translation>
                 </low>
               </doseQuantity>
@@ -1992,9 +1911,7 @@
                 <manufacturedProduct classCode="MANU">
                   <manufacturedMaterial>
                     <code >
-                      <originalText mediaType="text/xml">
-                        <reference value="#acte-03-traitement"/>
-                      </originalText>
+                      <originalText mediaType="text/xml"><reference value="#acte-03-traitement"/></originalText>
                       <!-- code ATC -->
                       <translation code="V08AB11" displayName="IOBITRIDOL" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                       <!-- code CIP ou UCD -->
@@ -2017,9 +1934,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#acte-03-traitement-commentaire"/>
-                  </text>
+                  <text><reference value="#acte-03-traitement-commentaire"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -2107,9 +2022,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.165"/> 
                   <code code="121290" displayName="Exposition du patient aux rayonnements ionisants"
                     codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                    <originalText>
-                      <reference value="#acte-03-exposition-rayonnements"/>
-                    </originalText>
+                    <originalText><reference value="#acte-03-exposition-rayonnements"/></originalText>
                   </code>
                   <participant typeCode="RESP">
                     <participantRole>
@@ -2142,9 +2055,7 @@
                   <!-- Valeur issue du JDV_StatutGrossesse_CISIS (1.2.250.1.213.1.1.5.671) -->
                   <value xsi:type="CD" code="77386006" displayName="Enceinte"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" >
-                    <originalText>
-                      <reference value="#statutGrossesse-3"/>
-                    </originalText>
+                    <originalText><reference value="#statutGrossesse-3"/></originalText>
                   </value>
                   <targetSiteCode nullFlavor="NA"/>
                 </observation>
@@ -2161,18 +2072,14 @@
                   <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113813" displayName="PDL Total : Produit Dose Longueur Total"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
-                  <text>
-                    <reference value="#acte-03-mesure-1"/>
-                  </text>
+                  <text><reference value="#acte-03-mesure-1"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140913223912"/>
                   <value xsi:type="PQ" value="1140.26" unit="mGy.cm"/>
                   <!-- Localisation -->
                   <targetSiteCode xsi:type="CD" code="302551006" displayName="thorax entier"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText mediaType="text/xml">
-                      <reference value="#acte-03-mesure-1-localisation"/>
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#acte-03-mesure-1-localisation"/></originalText>
                   </targetSiteCode>
                 </observation>
               </entry>
@@ -2188,18 +2095,14 @@
                   <!-- Valeur issue du JDV_QuantiteExpositionRayonnements_CISIS (1.2.250.1.213.1.1.5.620) -->
                   <code code="113830" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique"
                         codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
-                  <text>
-                    <reference value="#acte-03-mesure-2"/>
-                  </text>
+                  <text><reference value="#acte-03-mesure-2"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20140913223912"/>
                   <value xsi:type="PQ" value="13.64" unit="mGy"/>
                   <!-- Localisation -->
                   <targetSiteCode xsi:type="CD" code="302551006" displayName="thorax entier"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                    <originalText mediaType="text/xml">
-                      <reference value="#acte-03-mesure-2-localisation"/>
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#acte-03-mesure-2-localisation"/></originalText>
                   </targetSiteCode>
                 </observation>
               </entry>
@@ -2216,9 +2119,7 @@
                   <!-- [0..1] Activité administrée -->
                   <doseQuantity value="200" unit="MBq">
                     <translation>
-                      <originalText>
-                        <reference value="#acte-03-radiopharmaceutique-activite"/>
-                      </originalText>
+                      <originalText><reference value="#acte-03-radiopharmaceutique-activite"/></originalText>
                     </translation>
                   </doseQuantity>
                   <!-- [1..1] Produit radiopharmaceutique administré -->
@@ -2227,9 +2128,7 @@
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique_CISIS (APE : préciser l'OID du JDV)  -->
                         <code>
-                          <originalText mediaType="text/xml">
-                            <reference value="#acte-03-radiopharmaceutique"/>
-                          </originalText>
+                          <originalText mediaType="text/xml"><reference value="#acte-03-radiopharmaceutique"/></originalText>
                           <translation  code="V09AX01" displayName="111In-indium acide pentétique"
                             codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
@@ -2249,9 +2148,7 @@
                       <templateId root="1.2.250.1.213.1.1.3.32"/>
                       <code code="48767-8" displayName="Commentaire"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <text>
-                        <reference value="#acte-03-radiopharmaceutique-commentaire"/>
-                      </text>
+                      <text><reference value="#acte-03-radiopharmaceutique-commentaire"/></text>
                       <statusCode code="completed"/>
                     </act>
                   </entryRelationship>
@@ -2323,9 +2220,7 @@
                           <!-- Valeur issue du JDV_ModaliteAcquisition_CISIS (1.2.250.1.213.1.1.5.618) -->
                           <value code="CT" displayName="Tomodensitométrie"
                             codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
-                            <originalText mediaType="text/plain">
-                              <reference value="#ex-03-serie-01-modalite"/>
-                            </originalText>
+                            <originalText mediaType="text/plain"><reference value="#ex-03-serie-01-modalite"/></originalText>
                           </value>
                         </qualifier>
                       </code>
@@ -2343,11 +2238,8 @@
                             codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID">
                             <originalText><reference value="#ex-03-serie-01-SOPInstance-01-class"/></originalText>
                           </code>
-                          <text mediaType="application/dicom">
-                            <!-- référence ex-03-serie-01-SOPInstance-01 : url vers les images de l’examen -->
-                            <reference
-                              value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.1 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.1.1"/>
-                          </text>
+                          <!-- référence ex-03-serie-01-SOPInstance-01 : url vers les images de l’examen -->
+                          <text mediaType="application/dicom"><reference value="http://www.example.org/wado?requestType=WADO &amp;studyUID=1.2.250.1.925.994044.27.123.1876362 &amp;seriesUID=1.2.250.1.925.994044.27.123.1876362.1 &amp;objectUID=1.2.250.1.925.994044.27.123.1876362.1.1"/></text>
                           <effectiveTime value="20200823223232"/>
                         </observation>
                       </entryRelationship>
@@ -2594,9 +2486,7 @@
               <id root="7E359CA6-5689-49E1-B453-3B16E8F1BC56"/>
               <code code="99622-3" displayName="Informations pour le patient"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#informations-transmises"/>
-              </text>
+              <text><reference value="#informations-transmises"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20210108"/>
             </observation>

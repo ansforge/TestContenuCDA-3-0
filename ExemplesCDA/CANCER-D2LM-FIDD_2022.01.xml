@@ -721,9 +721,7 @@
               <effectiveTime value="20210729" />
               <!-- Précision technique du bilan diagnostic -->
               <value xsi:type="CD">
-                <originalText>
-                  <reference value="#bilan-technique-precision"/>
-                </originalText>
+                <originalText><reference value="#bilan-technique-precision"/></originalText>
               </value>
             </observation>
           </entry>

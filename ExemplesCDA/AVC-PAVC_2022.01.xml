@@ -483,19 +483,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="57D87592-F031-4D93-BE02-F1BBF3B6769E" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#infarctus">
-                    </reference>
-                  </text>
+                  <text><reference value="#infarctus"/></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I63.9" displayName="Infarctus cérébral, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                    <originalText>
-                      <reference value="#infarctus">
-                      </reference>
-                    </originalText>
+                    <originalText><reference value="#infarctus"/></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -508,10 +502,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="FCA755B7-0236-4684-9167-8EC436882F18" />
                   <code code="MED-325" displayName="Risque de récidive" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#recidive">
-                    </reference>
-                  </text>
+                  <text><reference value="#recidive"/></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
@@ -528,10 +519,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="DB756F27-ACDD-44DB-A0B4-E6B2EE57BA25" />
                   <code code="I10" displayName="Hypertension essentielle (primitive)" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#hta">
-                    </reference>
-                  </text>
+                  <text><reference value="#hta"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="true" />
@@ -546,10 +534,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F1D3CF53-0F44-43F5-8008-D8B35A83394A" />
                   <code code="E14" displayName="Diabète sucré, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#diabete">
-                    </reference>
-                  </text>
+                  <text><reference value="#diabete"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -564,10 +549,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="F0F678C6-EFE9-4ED4-8034-D9B98A6B761F" />
                   <code code="E66.9" displayName="Obésité, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#obesite">
-                    </reference>
-                  </text>
+                  <text><reference value="#obesite"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -582,10 +564,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="57F2DE3E-B68B-4725-BFBF-3CCEE575DF1D" />
                   <code code="F17" displayName="Troubles mentaux et du comportement liés à l'utilisation de tabac" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#tabac">
-                    </reference>
-                  </text>
+                  <text><reference value="#tabac"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -600,10 +579,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="2C7D347A-20D1-4684-9A25-540EC75B87F1" />
                   <code code="E78" displayName="Anomalies du métabolisme des lipoprotéines et autres lipidémies" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#dyslipidemie">
-                    </reference>
-                  </text>
+                  <text><reference value="#dyslipidemie"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -618,10 +594,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="FA8C399A-2C02-4D5F-A4EE-D9903D52D5C5" />
                   <code code="I51.6" displayName="Maladie cardiovasculaire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
-                  <text>
-                    <reference value="#cardiaque">
-                    </reference>
-                  </text>
+                  <text><reference value="#cardiaque"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -636,10 +609,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="C0BB3564-5FC6-4B4C-9706-FC0C6F14679F" />
                   <code code="MED-1157" displayName="Hématologique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#hematologique">
-                    </reference>
-                  </text>
+                  <text><reference value="#hematologique"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -654,10 +624,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="DB484066-BE31-474C-A91E-E6F11DF7D838" />
                   <code code="32895009" displayName="maladie héréditaire" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#gen">
-                    </reference>
-                  </text>
+                  <text><reference value="#gen"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -674,18 +641,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="677487D0-171D-45B3-811E-1776EAA1C3CA" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#ald">
-                    </reference>
-                  </text>
+                  <text><reference value="#ald"/></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-320" displayName="ALD" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#ald" />
-                    </originalText>
+                    <originalText><reference value="#ald" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -700,16 +662,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="40B0DA35-AE32-4029-8B47-2E1139EC0717" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#surhandicap" />Surhandicap</text>
+                  <text><reference value="#surhandicap" />Surhandicap</text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-321" displayName="Surhandicap" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#surhandicap" />
-                    </originalText>
+                    <originalText><reference value="#surhandicap" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -724,16 +683,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="15B0E483-592D-4349-907F-EE0FF9D36B68" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#plurihandicap" />Plurihandicap</text>
+                  <text><reference value="#plurihandicap" />Plurihandicap</text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-322" displayName="Plurihandicap" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#plurihandicap" />
-                    </originalText>
+                    <originalText><reference value="#plurihandicap" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -748,16 +704,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="02F09A1F-F102-4860-AA76-8298FFDCC391" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#polyhandicap" />Polyhandicap</text>
+                  <text><reference value="#polyhandicap" />Polyhandicap</text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-323" displayName="Polyhandicap" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#polyhandicap" />
-                    </originalText>
+                    <originalText><reference value="#polyhandicap" /></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -772,19 +725,13 @@
                   <templateId root="1.2.250.1.213.1.1.3.37" />
                   <id root="795A53A9-818A-4238-AEA7-3DB8B0EF777E" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <text>
-                    <reference value="#polypathologies">
-                    </reference>
-                  </text>
+                  <text><reference value="#polypathologies"/></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low nullFlavor="UNK" />
                   </effectiveTime>
                   <value xsi:type="CD" code="MED-324" displayName="Polypathologies" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                    <originalText>
-                      <reference value="#polypathologies">
-                      </reference>
-                    </originalText>
+                    <originalText><reference value="#polypathologies"/></originalText>
                   </value>
                 </observation>
               </entryRelationship>
@@ -886,19 +833,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="4982B981-59A3-499B-99BE-D330527351F2" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#paralysie">
-                </reference>
-              </text>
+              <text><reference value="#paralysie"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="44695005" displayName="paralysie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                <originalText>
-                  <reference value="#paralysie">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#paralysie"/></originalText>
               </value>
             </observation>
           </entry>
@@ -913,19 +854,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="7546D442-0A88-4B19-9F91-82071EC299A0" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#spasticite">
-                </reference>
-              </text>
+              <text><reference value="#spasticite"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-329" displayName="Spasticité génante" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#spasticite">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#spasticite"/></originalText>
               </value>
               <!-- Sévérité -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -937,10 +872,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.29" />
                   <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
-                  <text>
-                    <reference value="#spasticite-severite">
-                    </reference>
-                  </text>
+                  <text><reference value="#spasticite-severite"/></text>
                   <statusCode code="completed" />
                   <value xsi:type="CD" code="24484000" displayName="élevé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
@@ -958,19 +890,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="D63179D5-64CA-4072-954D-DC0069AC8CE6" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#anesthesie">
-                </reference>
-              </text>
+              <text><reference value="#anesthesie"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="33653009" displayName="absence de sensation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-                <originalText>
-                  <reference value="#anesthesie">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#anesthesie"/></originalText>
               </value>
             </observation>
           </entry>
@@ -985,19 +911,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="CE633C7F-B05D-4265-8A6B-FEA68D00D816" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#aphasie">
-                </reference>
-              </text>
+              <text><reference value="#aphasie"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="R47.02" displayName="Aphasie, autre et sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-                <originalText>
-                  <reference value="#aphasie">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#aphasie"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1012,19 +932,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="A631F961-8CED-441A-8B26-8330C95AF3D9" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#negliVisuospatiale">
-                </reference>
-              </text>
+              <text><reference value="#negliVisuospatiale"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-330" displayName="Négligence visuospatiale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#negliVisuospatiale">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#negliVisuospatiale"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1039,19 +953,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="C3599E69-A622-48CA-A715-8D936561D24E" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#hlh">
-                </reference>
-              </text>
+              <text><reference value="#hlh"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-331" displayName="HLH-QLH" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#hlh">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#hlh"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1066,19 +974,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="342B2555-DB76-4A98-B5EF-9729CA04CAB0" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#troubleDeglutition">
-                </reference>
-              </text>
+              <text><reference value="#troubleDeglutition"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-332" displayName="Troubles de la déglutition " codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#troubleDeglutition">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#troubleDeglutition"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1093,19 +995,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="7F1335E8-375F-479A-8C20-D7B1F2A68C9D" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#troubleUrinaire">
-                </reference>
-              </text>
+              <text><reference value="#troubleUrinaire"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-333" displayName="Troubles de l'élimination urinaire" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#troubleUrinaire">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#troubleUrinaire"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1120,19 +1016,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="53591A68-E890-4CE7-B3E5-779FBD3C6EE7" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#troubleFecale">
-                </reference>
-              </text>
+              <text><reference value="#troubleFecale"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-334" displayName="Troubles de l'élimination fécale" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#troubleFecale">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#troubleFecale"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1147,19 +1037,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="76201176-0685-412E-A148-A30D63FECCBD" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#troubleSexualite">
-                </reference>
-              </text>
+              <text><reference value="#troubleSexualite"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-335" displayName="Troubles de la sexualité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="troubleSexualite">
-                  </reference>
-                </originalText>
+                <originalText><reference value="troubleSexualite"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1289,10 +1173,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="B8086370-587E-41C7-8FFD-6DF9682E2BDE" />
               <code code="45590-7" displayName="Faire ses transferts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#transferts">
-                </reference>
-              </text>
+              <text><reference value="#transferts"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1313,10 +1194,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="95720237-A14A-4C04-AC99-1B7AEC0618CE" />
               <code code="45588-1" displayName="se lever seul" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#seLeverSeul">
-                </reference>
-              </text>
+              <text><reference value="#seLeverSeul"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1337,10 +1215,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="C96D7E46-5ECB-4AA1-A5A4-6CDAE79DC935" />
               <code code="45592-3" displayName="Marcher seul à l'intérieur" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="marcherSeulInt">
-                </reference>
-              </text>
+              <text><reference value="marcherSeulInt"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1363,10 +1238,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-148" displayName="Marcher seul à l'exterieur (transports)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="marcherSeulExt">
-                </reference>
-              </text>
+              <text><reference value="marcherSeulExt"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1387,10 +1259,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="C7785E05-E365-4460-9114-C76C3A15DCBD" />
               <code code="45537-8" displayName="Se déplacer en fauteuil roulant seul" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#fauteuilRoulant">
-                </reference>
-              </text>
+              <text><reference value="#fauteuilRoulant"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1413,10 +1282,7 @@
               <code nullFlavor="NA">
                 <translation  code="GEN-144" displayName="Risque de chute" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#chute">
-                </reference>
-              </text>
+              <text><reference value="#chute"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1437,10 +1303,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="4C760AD2-7A03-42D9-851F-2BC617FBFCE2" />
               <code code="45606-1" displayName="Faire sa toilette seul" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#toiletteSeul">
-                </reference>
-              </text>
+              <text><reference value="#toiletteSeul"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1461,10 +1324,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="DB68D11C-900A-4FDC-8D5C-8F8D46E8D031" />
               <code code="45604-6" displayName="Utiliser les wc seul" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#wcSeul">
-                </reference>
-              </text>
+              <text><reference value="#wcSeul"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1485,10 +1345,7 @@
               <templateId root="1.2.250.1.213.1.1.3.25" />
               <id root="C0B1AE25-1A6C-42BD-AFE1-46B8BF5A1685" />
               <code code="45602-0" displayName="Manger un repas preparé seul" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-              <text>
-                <reference value="#repasSeul">
-                </reference>
-              </text>
+              <text><reference value="#repasSeul"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1511,10 +1368,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-147" displayName="Gérer seul ses traitements" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#traitementsSeul">
-                </reference>
-              </text>
+              <text><reference value="#traitementsSeul"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1537,10 +1391,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-145" displayName="Incontinence" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#incontinence">
-                </reference>
-              </text>
+              <text><reference value="#incontinence"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1563,10 +1414,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-149" displayName="Communiquer : proches" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#communiquer">
-                </reference>
-              </text>
+              <text><reference value="#communiquer"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1589,10 +1437,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-150" displayName="Extérieur (appel secours, courses…)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#exterieur">
-                </reference>
-              </text>
+              <text><reference value="#exterieur"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1615,10 +1460,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-146" displayName="Gérer ses comptes et ses affaires personnelles" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="comptes">
-                </reference>
-              </text>
+              <text><reference value="comptes"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1641,10 +1483,7 @@
               <code nullFlavor="NA">
                 <translation code="GEN-151" displayName="Le patient bénéficie-t-il d'une aide humaine ?" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#aideHumaine">
-                </reference>
-              </text>
+              <text><reference value="#aideHumaine"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -1660,9 +1499,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.32" />
                   <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#aideHumaine" />
-                  </text>
+                  <text><reference value="#aideHumaine" /></text>
                   <statusCode code="completed" />
                 </act>
               </entryRelationship>
@@ -1715,19 +1552,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="51D223CA-2B1C-4F11-B2B0-CE70FC02A682" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#dysexecutif">
-                </reference>
-              </text>
+              <text><reference value="#dysexecutif"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-337" displayName="Syndrôme dysexecutif" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#dysexecutif">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#dysexecutif"/></originalText>
               </value>
             </observation>
           </entry>
@@ -1742,19 +1573,13 @@
               <templateId root="1.2.250.1.213.1.1.3.37" />
               <id root="F271E102-BA09-465A-A34A-F67F4EA1CEA2" />
               <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              <text>
-                <reference value="#deterioration">
-                </reference>
-              </text>
+              <text><reference value="#deterioration"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
               </effectiveTime>
               <value xsi:type="CD" code="MED-338" displayName="Détérioration intellectuelle" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#deterioration">
-                  </reference>
-                </originalText>
+                <originalText><reference value="#deterioration"/></originalText>
               </value>
               <!-- Sévérité -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -1766,10 +1591,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.29" />
                   <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
-                  <text>
-                    <reference value="#deterioration-sev">
-                    </reference>
-                  </text>
+                  <text><reference value="#deterioration-sev"/></text>
                   <statusCode code="completed" />
                   <value xsi:type="CD" code="24484000" displayName="élevé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
@@ -2026,10 +1848,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="7B87569D-DE67-4A34-A59B-4DB4F42B8F38" />
               <code code="MED-326" displayName="Bilan initial étiologique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#bilanInitial">
-                </reference>
-              </text>
+              <text><reference value="#bilanInitial"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="true" />
@@ -2046,9 +1865,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="8A13C8E2-82C1-49FD-8CCE-8612FDCDF1AC" />
               <code code="MED-327" displayName="Ce qui a été prévu ultérieurement a-t-il été fait?" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#fait" />
-              </text>
+              <text><reference value="#fait" /></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="true" />
@@ -2065,9 +1882,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="F6849C4E-FE7E-4870-9330-CA728AE495D7" />
               <code code="MED-319" displayName="Besoin d'un bilan complémentaire" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#bilanOrtho" />
-              </text>
+              <text><reference value="#bilanOrtho" /></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="G15_91" displayName="Orthophoniste" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2077,10 +1892,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
                   <id root="E8428249-EBDE-4A0B-8DFC-E0625B9AA521" />
                   <code code="GEN-118" displayName="Fait" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#bilanOrthoFait">
-                    </reference>
-                  </text>
+                  <text><reference value="#bilanOrthoFait"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="true" />
@@ -2095,10 +1907,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="4C202BC1-2291-4874-9491-24EAC961DA6D" />
                   <code code="GEN-118" displayName="A faire / A refaire" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#bilanOrthoAFaire">
-                    </reference>
-                  </text>
+                  <text><reference value="#bilanOrthoAFaire"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -2117,10 +1926,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="A8F5C626-C1D3-49E1-BBE0-1E64C6467FE7" />
               <code code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#ortho">
-                </reference>
-              </text>
+              <text><reference value="#ortho"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="G15_10/SM29" displayName="Médecin - Médecine physique et réadaptation (SM)" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="TRE_A02-ProfessionSavFaire-CISIS" />
@@ -2137,10 +1943,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="410358DD-BC43-4CEA-BC53-61E931B7F28D" />
               <code code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#cardio">
-                </reference>
-              </text>
+              <text><reference value="#cardio"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="G15_10/SM04" displayName="Médecin - Cardiologie et maladies vasculaires (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2157,10 +1960,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="4AE418FD-C651-4974-B609-7721108CAA27" />
               <code code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#neuro">
-                </reference>
-              </text>
+              <text><reference value="#neuro"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="G15_10/SM32" displayName="Médecin - Neurologie (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2177,10 +1977,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="79F3A15A-48FB-4410-A0F5-D47828406053" />
               <code code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#geriatre">
-                </reference>
-              </text>
+              <text><reference value="#geriatre"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="G15_10/SM18" displayName="Médecin - Gériatrie (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2197,10 +1994,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="99826168-908F-470A-81D9-42C8BDF94AB9" />
               <code code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#autre">
-                </reference>
-              </text>
+              <text><reference value="#autre"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="ST">Orthopédiste</value>
@@ -2217,10 +2011,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="48130D0D-266C-432F-8F11-F2C141B0A2E2" />
               <code code="MED-317" displayName="Besoin d'un soutien psychotérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#soutienPatient">
-                </reference>
-              </text>
+              <text><reference value="#soutienPatient"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
@@ -2237,10 +2028,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="0CC1B8C5-E223-4A5F-A793-FEEEAE5F8D7F" />
               <code code="MED-317" displayName="Besoin d'un soutien psychotérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#soutienProche">
-                </reference>
-              </text>
+              <text><reference value="#soutienProche"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
@@ -2263,10 +2051,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="0BD6EE83-18FB-4E4D-ADDD-40BEF23B0872" />
               <code code="GEN-120" displayName="Mesure de protection" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#protectionJuridique">
-                </reference>
-              </text>
+              <text><reference value="#protectionJuridique"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="GEN-121" displayName="A envisager" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2283,10 +2068,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="FF32F986-7F13-4B4F-B891-261F244EDA9C" />
               <code code="GEN-124" displayName="Mesures de protection / Reprise professionnelle" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#protectionProfessionnelle">
-                </reference>
-              </text>
+              <text><reference value="#protectionProfessionnelle"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="GEN-125" displayName="Reprise à envisager. Démarches faites." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2303,10 +2085,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="9C54D4C5-55C5-458E-A4F5-7CEC417C4DB9" />
               <code code="GEN-127" displayName="Mesures de protection / Conduite automobile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#conduiteContreindiquee">
-                </reference>
-              </text>
+              <text><reference value="#conduiteContreindiquee"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="GEN-128" displayName="Conduite formellement contre-indiquée" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2323,10 +2102,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="A0AFAFA4-1DAC-4850-9BBA-71DBE97BB6F1" />
               <code code="GEN-127" displayName="Mesures de protection / Conduite automobile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#conduitePossible">
-                </reference>
-              </text>
+              <text><reference value="#conduitePossible"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="GEN-129" displayName="Conduite possible sans permis spécial" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2343,10 +2119,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="7FD19A94-97B9-46D0-9900-61B4A2336722" />
               <code code="GEN-127" displayName="Mesures de protection / Conduite automobile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#conduiteDemarche">
-                </reference>
-              </text>
+              <text><reference value="#conduiteDemarche"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="GEN-130" displayName="Les démarches ont-elles été faites ? (Commission médicale)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2363,10 +2136,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="D6A98DD7-7313-4D3B-86FE-DCABFFB8267F" />
               <code code="GEN-131" displayName="Lieu de vie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#lieuDeVie">
-                </reference>
-              </text>
+              <text><reference value="#lieuDeVie"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="GEN-117" displayName="Domicile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2383,10 +2153,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="CFB9878B-4F47-450E-ADB4-BE5BD8529084" />
               <code code="GEN-132" displayName="Mode de vie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#modeDeVie">
-                </reference>
-              </text>
+              <text><reference value="#modeDeVie"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
               <value xsi:type="CD" code="408821002" displayName="vit avec son/sa partenaire" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -2403,10 +2170,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="3558613A-A1DE-406A-A272-3832FCF452E4" />
               <code code="GEN-142" displayName="autonomie de l'habitat" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#Habitat">
-                </reference>
-              </text>
+              <text><reference value="#Habitat"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="ST" />
@@ -2419,10 +2183,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="36CBE9D0-9575-4390-9B13-EEA87B692056" />
                   <code code="GEN-118" displayName="Fait" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#bilanFait">
-                    </reference>
-                  </text>
+                  <text><reference value="#bilanFait"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="true" />
@@ -2437,10 +2198,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.48" />
                   <id root="706C7AB9-1A90-4873-8554-46BE1341B8C8" />
                   <code code="GEN-118" displayName="A faire / A refaire" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#bilanAFaire">
-                    </reference>
-                  </text>
+                  <text><reference value="#bilanAFaire"/></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NA" />
                   <value xsi:type="BL" value="false" />
@@ -2459,10 +2217,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="B909E7F2-66A4-4DDE-84DF-8B23A533B2F8" />
               <code code="GEN-136" displayName="Dossier MDPH en cours,adapté" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#mdph">
-                </reference>
-              </text>
+              <text><reference value="#mdph"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="true" />
@@ -2479,10 +2234,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="E4B7AF18-E627-43DA-8ABD-4E888E1F006B" />
               <code code="GEN-137" displayName="Dossier à mettre en œuvre ou à réadapter" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#apa">
-                </reference>
-              </text>
+              <text><reference value="#apa"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="GEN-138" displayName="Allocation personnalisée d'autonomie (APA)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2499,10 +2251,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="88BB70CF-E4DD-4599-8328-05DC21AEBB51" />
               <code code="GEN-137" displayName="Dossier à mettre en œuvre ou à réadapter" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#pch">
-                </reference>
-              </text>
+              <text><reference value="#pch"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="GEN-139" displayName="Prestation de compensation du handicap (PCH)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2519,10 +2268,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="C730BA53-9E11-4BD3-B0DA-D26EA95311EA" />
               <code code="GEN-137" displayName="Dossier à mettre en œuvre ou à réadapter" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#aah">
-                </reference>
-              </text>
+              <text><reference value="#aah"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="GEN-140" displayName="Allocation aux adultes handicapés (AAH)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2539,10 +2285,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="DE106603-AF76-4591-8063-FF7FECC691AE" />
               <code code="GEN-137" displayName="Dossier à mettre en œuvre ou à réadapter" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#aspa">
-                </reference>
-              </text>
+              <text><reference value="#aspa"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="GEN-141" displayName="Allocation de solidarité aux personnes âgées (ASPA) /Allocation supplémentaire d'invalidité (ASI)" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2559,10 +2302,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="40ADC3B4-E207-4985-A076-583C46F466D0" />
               <code code="GEN-143" displayName="Souhait et projet de vie de la personne" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#souhait">
-                </reference>
-              </text>
+              <text><reference value="#souhait"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="160849004" displayName="retour au domicile" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -2712,10 +2452,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="8A51A0DD-F784-4950-847D-0087B7FC65B0" />
               <code code="GEN-158" displayName="Soins de réadaptation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#readaptation">
-                </reference>
-              </text>
+              <text><reference value="#readaptation"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="CD" code="G15_60" displayName="Infirmier" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2732,10 +2469,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="C08DFDF1-EA42-4883-A283-F406C59E1C17" />
               <code code="MED-345" displayName="Appareillage" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#appareillage">
-                </reference>
-              </text>
+              <text><reference value="#appareillage"/></text>
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="CD" code="255509001" displayName="grand" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -2752,10 +2486,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="23A75D93-427F-4ED0-80CE-E5361C9D039C" />
               <code code="MED-527" displayName="Soins ou traitements nocturnes" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#soinsNocturnes">
-                </reference>
-              </text>
+              <text><reference value="#soinsNocturnes"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="true" />
@@ -2772,10 +2503,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="F1B7174D-AE37-41DB-8974-C7E4225DCEE8" />
               <code code="MED-528" displayName="Ventilation" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#ventilation">
-                </reference>
-              </text>
+              <text><reference value="#ventilation"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="false" />
@@ -2792,10 +2520,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="F309CABE-56D0-486B-AE5A-53D808E27DFC" />
               <code code="MED-529" displayName="Contrainte alimentaire" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#alim">
-                </reference>
-              </text>
+              <text><reference value="#alim"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="false" />
@@ -2812,10 +2537,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="4CEC61BB-0D34-4C87-AC0D-4383546DA2D3" />
               <code code="MED-318" displayName="Association de soutien" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#associationSoutien">
-                </reference>
-              </text>
+              <text><reference value="#associationSoutien"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="false" />
@@ -2832,10 +2554,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="8C4F9C89-D721-4B67-8712-5A084AF6736B" />
               <code code="MED-530" displayName="Traitement médical préventif de récidive" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#traitementPreventifRecidive">
-                </reference>
-              </text>
+              <text><reference value="#traitementPreventifRecidive"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="445528004" displayName="traitement modifié" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -2852,10 +2571,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="6BAFEB17-7225-435C-A14C-0FAD88D0F801" />
               <code code="MED-531" displayName="Traitement médical préventif de complication" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#traitementPreventifComplication">
-                </reference>
-              </text>
+              <text><reference value="#traitementPreventifComplication"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="306805000" displayName="recommandation de continuer un traitement" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
@@ -2872,10 +2588,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="B6C16798-F700-45A6-A2FD-6357F6BB5A86" />
               <code code="ORG-163" displayName="Consultation de spécialité" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#pecReguliereSpecialite">
-                </reference>
-              </text>
+              <text><reference value="#pecReguliereSpecialite"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="false" />
@@ -2892,10 +2605,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="539F6992-10CC-4C2A-ABC2-A8A23D10DBE5" />
               <code code="ORG-164" displayName="Education thérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#pecReguliereEducation">
-                </reference>
-              </text>
+              <text><reference value="#pecReguliereEducation"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="BL" value="false" />
@@ -2912,10 +2622,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="57E5AD79-C245-470E-B7DC-3FC382611DA4" />
               <code code="GEN-161" displayName="Prévoir" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir1">
-                </reference>
-              </text>
+              <text><reference value="#prevoir1"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="ORG-165" displayName="Séjour de répit" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -2932,10 +2639,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="64258030-EF69-4306-8749-81A5610AB7F4" />
               <code code="GEN-161" displayName="Prévoir" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir2">
-                </reference>
-              </text>
+              <text><reference value="#prevoir2"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="255" displayName="Maison d'Accueil Spécialisée (M.A.S.)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
@@ -2952,10 +2656,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="7A07A692-5967-4E80-BD45-C8A3401223E8" />
               <code code="GEN-161" displayName="Prévoir" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir3">
-                </reference>
-              </text>
+              <text><reference value="#prevoir3"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="28" displayName="Hospitalisation complète (HC)" codeSystem="1.2.250.1.213.3.3.13" codeSystemName="TRE_R213-ModePriseEnCharge" />
@@ -2972,10 +2673,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="C67D3F70-2EFE-4BB8-AAD9-23467328C8E3" />
               <code code="GEN-161" displayName="Prévoir" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir4">
-                </reference>
-              </text>
+              <text><reference value="#prevoir4"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="127" displayName="Hospitalisation à Domicile" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
@@ -2992,10 +2690,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="8C165EA7-E47C-4A69-99A9-001599CADEAB" />
               <code code="GEN-161" displayName="Prévoir" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir4">
-                </reference>
-              </text>
+              <text><reference value="#prevoir4"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="29" displayName="Hospitalisation de jour (HJ)" codeSystem="1.2.250.1.213.3.3.13" codeSystemName="TRE_R213-ModePriseEnCharge" />
@@ -3012,10 +2707,7 @@
               <templateId root="1.2.250.1.213.1.1.3.27" />
               <id root="2B754E96-3619-4F9A-BBBE-DD640C01D937" />
               <code code="GEN-161" displayName="Prévoir1" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-              <text>
-                <reference value="#prevoir1">
-                </reference>
-              </text>
+              <text><reference value="#prevoir1"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="NASK" />
               <value xsi:type="CD" code="354" displayName="Service de Soins Infirmiers A Domicile (S.S.I.A.D)" codeSystem="1.2.250.1.213.1.6.1.8" codeSystemName="TRE_R66-CategorieEtablissement" />
@@ -3055,8 +2747,7 @@
                 </tr>
               </tbody>
             </table>
-            <br />
-          </text>
+            <br /></text>
           <!-- Entrée de type Questionnaire d'évalutation -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
@@ -3072,10 +2763,7 @@
               <code nullFlavor="NA">
                 <translation code="MED-346" displayName="Perte d'autonomie" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#perteAuto">
-                </reference>
-              </text>
+              <text><reference value="#perteAuto"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />
@@ -3098,10 +2786,7 @@
               <code nullFlavor="NA">
                 <translation code="MED-347" displayName="Realisation effective d'activités" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
               </code>
-              <text>
-                <reference value="#realisation">
-                </reference>
-              </text>
+              <text><reference value="#realisation"/></text>
               <statusCode code="completed" />
               <effectiveTime>
                 <low nullFlavor="UNK" />

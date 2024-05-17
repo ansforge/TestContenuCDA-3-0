@@ -1805,9 +1805,7 @@
 									<templateId root="1.2.250.1.213.1.1.3.37" />
 									<id root="12da3a06-18e7-40b7-9397-1fa5b1552472"/>
 									<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-									<text>
-										<reference value="#problem-001-type"/>
-									</text>
+									<text><reference value="#problem-001-type"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime>
 										<low value="20210626"/>
@@ -2252,9 +2250,7 @@
 									<templateId root="1.2.250.1.213.1.1.3.37" />
 									<id root="fc21dc59-43d5-4bb0-acc7-3601784bfbc0"/>
 									<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-									<text>
-										<reference value="#ant-med-001-type"/>
-									</text>
+									<text><reference value="#ant-med-001-type"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime>
 										<low value="20140623"/>
@@ -2602,9 +2598,7 @@
 									<!-- Type d'allergie / hypersensibilité -->
 									<!-- valeur issue du JDV_HL7_ObservationIntoleranceType-CISIS (2.16.840.1.113883.1.11.19700) -->
 									<code code="DALG" displayName="Allergie médicamenteuse" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" />
-									<text>
-										<reference value="#allergie-01-type"/>
-									</text>
+									<text><reference value="#allergie-01-type"/></text>
 									<statusCode code="completed" />
 									<!-- Date de l'allergie / hypersensibilité -->
 									<effectiveTime xsi:type="IVL_TS">
@@ -2612,9 +2606,7 @@
 									</effectiveTime>
 									<!-- Description clinique de l'allergie / hypersensibilité : non renseigné -->
 									<value xsi:type="CD">
-										<originalText>
-											<reference value="#" />
-										</originalText>
+										<originalText><reference value="#" /></originalText>
 									</value>
 									<!-- Agent responsable de l'allergie / de l'hypersensibilité -->
 									<participant typeCode="CSM">
@@ -2641,9 +2633,7 @@
 											<!-- Conformité FR-Statut-du-probleme (FR CI-SIS) --> 
 											<templateId root="1.2.250.1.213.1.1.3.30" />
 											<code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-											<text>
-												<reference value="#allergie-statut-01" />
-											</text>
+											<text><reference value="#allergie-statut-01" /></text>
 											<statusCode code="completed" />
 											<!-- valeur du JDV_HL7_allergyintolerance-clinical-CISIS (2.16.840.1.113883.4.642.3.1372) -->
 											<value xsi:type="CE" code="active" displayName="Actif" codeSystem="2.16.840.1.113883.4.642.4.1373" codeSystemName="HL7:allergyintolerance-clinical"/>
@@ -2700,9 +2690,7 @@
 											</effectiveTime>
 											<!-- valeur issue de la CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hypersensibilité -->
 											<value xsi:type="CD" code="4A80.0" displayName="Bronchospasme d'origine médicamenteuse" codeSystem="2.16.840.1.113883.6.347" codeSystemName="CIM-11">
-												<originalText>
-													<reference value="#allergie-01-reaction-1" />
-												</originalText>
+												<originalText><reference value="#allergie-01-reaction-1" /></originalText>
 											</value>
 											<!-- [0..1] Entrée FR-Severite : Sévérité de la réaction -->
 											<entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -2714,9 +2702,7 @@
 													<!-- Conformité FR-Severite (FR CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.29" />
 													<code code="SEV" displayName="Sévérité" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
-													<text>
-														<reference value="#allergie-01-reaction-1-severite" />
-													</text>
+													<text><reference value="#allergie-01-reaction-1-severite" /></text>
 													<statusCode code="completed" />
 													<!-- valeur issue du JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
 													<value xsi:type="CD" code="6736007" displayName="modéré" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
@@ -2745,9 +2731,7 @@
 											</effectiveTime>
 											<!-- valeur issue de la CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hypersensibilité -->
 											<value xsi:type="CD" code="4A82" displayName="Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses" codeSystem="2.16.840.1.113883.6.347" codeSystemName="CIM-11">
-												<originalText>
-													<reference value="#allergie-01-reaction-2" />
-												</originalText>
+												<originalText><reference value="#allergie-01-reaction-2" /></originalText>
 											</value>
 											<!-- [0..1] Entrée FR-Severite : Sévérité de la réaction -->
 											<entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -2761,9 +2745,7 @@
 													<!-- Conformité FR-Severite (FR CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.29" />
 													<code code="SEV" displayName="Sévérité" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
-													<text>
-														<reference value="#allergie-01-reaction-2-severite" />
-													</text>
+													<text><reference value="#allergie-01-reaction-2-severite" /></text>
 													<statusCode code="completed" />
 													<!-- valeur issue du JDV_SeveriteObservation-CISIS (1.2.250.1.213.1.1.5.675) -->
 													<value xsi:type="CD" code="255604002" displayName="léger" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
@@ -3154,9 +3136,7 @@
 		              <effectiveTime xsi:type="PIVL_TS" operator="A">
 		                <period value="1" unit="d">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-01-frequence"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-01-frequence"/></originalText>
 		                  </translation>
 		                </period>
 		              </effectiveTime>
@@ -3168,16 +3148,12 @@
 		              <doseQuantity>
 		                <low value="1" unit="{tablet}">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-01-doseMin-1"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-01-doseMin-1"/></originalText>
 		                  </translation>
 		                </low>
 		                <high value="1" unit="{tablet}">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-01-doseMax-1"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-01-doseMax-1"/></originalText>
 		                  </translation>
 		                </high>
 		              </doseQuantity>
@@ -3200,14 +3176,10 @@
 		                  <manufacturedMaterial>                    
 		                    <!-- Code CIS du produit -->
 		                    <code code="63564053" displayName="PLAVIX 75 mg, comprimé pelliculé" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-		                      <originalText>
-		                        <reference value="#med-01" />
-		                      </originalText>                      
+		                      <originalText><reference value="#med-01" /></originalText>                      
 		                      <!-- Code CIP du produit -->
 		                      <translation code="3400938022209" displayName="PLAVIX 75 mg, comprimé pelliculé, plaquette(s) thermoformée(s) PVC PVDC aluminium de 30 comprimé(s)" codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
-		                        <originalText>
-		                          <reference value="#med-01" />
-		                        </originalText>
+		                        <originalText><reference value="#med-01" /></originalText>
 		                      </translation>
 		                    </code>
 		                    <name>PLAVIX 75 mg</name>
@@ -3228,9 +3200,7 @@
 		                  <templateId root="1.2.250.1.213.1.1.3.36" />
 		                  <id root="CDBD5B08-6CDE-11DB-9FE1-0800200C9A66" />
 		                  <code code="I20.0" displayName="Angine de poitrine instable" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-		                    <originalText mediaType="text/xml">
-		                      <reference value="#med-01-motif" />
-		                    </originalText>
+		                    <originalText mediaType="text/xml"><reference value="#med-01-motif" /></originalText>
 		                  </code>
 		                  <statusCode code="completed" />
 		                  <effectiveTime xsi:type="IVL_TS">
@@ -3265,9 +3235,7 @@
 		              <effectiveTime xsi:type="PIVL_TS" operator="A">
 		                <period value="6" unit="h">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-02-frequence"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-02-frequence"/></originalText>
 		                  </translation>
 		                </period>
 		              </effectiveTime>
@@ -3279,16 +3247,12 @@
 		              <doseQuantity>
 		                <low value="1" unit="{tablet}">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-02-doseMin-1"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-02-doseMin-1"/></originalText>
 		                  </translation>
 		                </low>
 		                <high value="1" unit="{tablet}">
 		                  <translation>
-		                    <originalText>
-		                      <reference value="#med-02-doseMax-1"/>
-		                    </originalText>
+		                    <originalText><reference value="#med-02-doseMax-1"/></originalText>
 		                  </translation>
 		                </high>
 		              </doseQuantity>
@@ -3306,14 +3270,10 @@
 		                  <manufacturedMaterial>
 		                    <!-- Code CIS du produit -->
 		                    <code code="63245753" displayName="COUMADINE 5mg, comprimé sécable" codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-		                      <originalText mediaType="text/xml">
-		                        <reference value="#med-02" />
-		                      </originalText>
+		                      <originalText mediaType="text/xml"><reference value="#med-02" /></originalText>
 		                      <!-- Code CIP du produit -->
 		                      <translation code="3400935693099" displayName="COUMADINE 5mg, comprimé sécable, plaquette(s) thermoformée(s) PVC-aluminium de 30 comprimé(s)" codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
-		                        <originalText mediaType="text/xml">
-		                          <reference value="#med-02" />
-		                        </originalText>
+		                        <originalText mediaType="text/xml"><reference value="#med-02" /></originalText>
 		                      </translation>
 		                    </code>
 		                    <name>COUMADINE 5mg</name>                    
@@ -3333,9 +3293,7 @@
 		                  <templateId root="1.2.250.1.213.1.1.3.36" />
 		                  <id root="12DA3A06-18E7-40B7-9397-1FA5B1552472" />
 		                	<code code="G45.9" displayName="Accident ischémique cérébral transitoire, sans précision" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-		                    <originalText mediaType="text/xml">
-		                      <reference value="#med-02-motif" />
-		                    </originalText>
+		                    <originalText mediaType="text/xml"><reference value="#med-02-motif" /></originalText>
 		                  </code>
 		                  <statusCode code="completed" />
 		                  <effectiveTime xsi:type="IVL_TS">
@@ -3455,9 +3413,7 @@
 		                  <!-- Conformité Modalité : Doses progressives (IHE PCC)-->
 		                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8"/>
 		                  <id root="C93DE620-3722-11EC-8D3D-0242AC130003"/>
-		                  <text>
-		                    <reference value="#med-03-ModeAdminProg-1"/>
-		                  </text>
+		                  <text><reference value="#med-03-ModeAdminProg-1"/></text>
 		                  <statusCode code="completed"/>
 		                  <!-- Fréquence d'administration : toutes les 8h (3 fois/j) à partir du 01/12/2021 pendant 2 jours -->
 		                  <effectiveTime xsi:type="SXPR_TS">
@@ -3468,9 +3424,7 @@
 		                    <comp xsi:type="PIVL_TS" operator="A">
 		                      <period value="8" unit="h">
 		                        <translation>
-		                          <originalText>
-		                            <reference value="#med-03-frequence-1"/>
-		                          </originalText>
+		                          <originalText><reference value="#med-03-frequence-1"/></originalText>
 		                        </translation>
 		                      </period>
 		                    </comp>
@@ -3479,16 +3433,12 @@
 		                  <doseQuantity>
 		                    <low value="1" unit="{tablet}">
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-doseMin-1"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-doseMin-1"/></originalText>
 		                      </translation>
 		                    </low>
 		                    <high value="1" unit="{tablet}">
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-doseMax-1"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-doseMax-1"/></originalText>
 		                      </translation>
 		                    </high>
 		                  </doseQuantity>
@@ -3496,16 +3446,12 @@
 		                  <rateQuantity>
 		                    <low value="1500" unit='mg/d'>
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-rateMin-1"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-rateMin-1"/></originalText>
 		                      </translation>
 		                    </low>
 		                    <high value="3000" unit='mg/d'>
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-rateMax-1"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-rateMax-1"/></originalText>
 		                      </translation>
 		                    </high>
 		                  </rateQuantity>
@@ -3540,9 +3486,7 @@
 		                  <!-- Conformité Modalité : Doses progressives (IHE PCC) -->
 		                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8"/>
 		                  <id root="3FDCAA46-3723-11EC-8D3D-0242AC130003"/>
-		                  <text>
-		                    <reference value="#med-03-ModeAdminProg-2"/>
-		                  </text>
+		                  <text><reference value="#med-03-ModeAdminProg-2"/></text>
 		                  <statusCode code="completed"/>              
 		                  <!-- Fréquence d'administration : toutes les 12h (2 fois/j) à partir du 03/12/2021 pendant 4 jours -->
 		                  <effectiveTime xsi:type="SXPR_TS">
@@ -3553,9 +3497,7 @@
 		                    <comp xsi:type="PIVL_TS" operator="A">
 		                      <period value="12" unit="h">
 		                        <translation>
-		                          <originalText>
-		                            <reference value="#med-03-frequence-2"/>
-		                          </originalText>
+		                          <originalText><reference value="#med-03-frequence-2"/></originalText>
 		                        </translation>
 		                      </period>
 		                    </comp>
@@ -3564,16 +3506,12 @@
 		                  <doseQuantity>
 		                    <low value="1" unit="{tablet}">
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-doseMin-2"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-doseMin-2"/></originalText>
 		                      </translation>
 		                    </low>
 		                    <high value="1" unit="{tablet}">
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-doseMax-2"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-doseMax-2"/></originalText>
 		                      </translation>
 		                    </high>
 		                  </doseQuantity>
@@ -3581,16 +3519,12 @@
 		                  <rateQuantity>
 		                    <low value="1000" unit='mg/d'>
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-rateMin-2"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-rateMin-2"/></originalText>
 		                      </translation>
 		                    </low>
 		                    <high value="2000" unit='mg/d'>
 		                      <translation>
-		                        <originalText>
-		                          <reference value="#med-03-rateMax-2"/>
-		                        </originalText>
+		                        <originalText><reference value="#med-03-rateMax-2"/></originalText>
 		                      </translation>
 		                    </high>
 		                  </rateQuantity>
@@ -3972,9 +3906,7 @@
 		              <!-- Région d'administration -->
 		              <!-- valeur issue du JDV_ImmunizationApproachSiteCode-CISIS (1.2.250.1.213.1.1.5.621)  -->
 		              <approachSiteCode code="16217701000119102" displayName="Deltoïde gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-		                <originalText>
-		                  <reference value="#" />
-		                </originalText>
+		                <originalText><reference value="#" /></originalText>
 		              </approachSiteCode>
 		              <!--Dose à administrer-->
 		              <doseQuantity value="1" />
@@ -4053,9 +3985,7 @@
 		                    <low value="20090825" />
 		                  </effectiveTime>
 		                  <value xsi:type="CD" code="R50.2" displayName="Fièvre due à des médicaments" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
-		                    <originalText>
-		                      <reference value="#tetanos1-reac" />
-		                    </originalText>
+		                    <originalText><reference value="#tetanos1-reac" /></originalText>
 		                  </value>
 		                </observation>
 		              </entryRelationship>
@@ -4069,9 +3999,7 @@
 		                  <!-- Conformité FR-Commentaire-ER (CI-SIS) -->
 		                  <templateId root="1.2.250.1.213.1.1.3.32" />
 		                  <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-		                  <text>
-		                    <reference value="#tetanos1-comment" />
-		                  </text>
+		                  <text><reference value="#tetanos1-comment" /></text>
 		                  <statusCode code="completed" />
 		                </act>
 		              </entryRelationship>
@@ -4099,9 +4027,7 @@
 		              <!-- Région d'administration -->
 		              <!-- valeur issue du JDV_ImmunizationApproachSiteCode-CISIS (1.2.250.1.213.1.1.5.621)  -->              
 		              <approachSiteCode code="16217701000119102" displayName="Deltoïde gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-		                <originalText>
-		                  <reference value="#" />
-		                </originalText>
+		                <originalText><reference value="#" /></originalText>
 		              </approachSiteCode>
 		              <!--Dose à administrer-->
 		              <doseQuantity value="1" />
@@ -4117,9 +4043,7 @@
 		                  <manufacturedMaterial>
 		                    <code code="3400936876293" displayName="REVAXIS Susp inj en seringue préremplie Ser/0,5ml+2Aig"
 		                      codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-		                      <originalText>
-		                        <reference value="#tetanos2" />
-		                      </originalText>
+		                      <originalText><reference value="#tetanos2" /></originalText>
 		                      <translation code="J07CA01" displayName="Vaccin diphtérie-polyomielite-tétanos"
 		                        codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 		                    </code>
@@ -4182,9 +4106,7 @@
 		                    <low value="20090928" />
 		                  </effectiveTime>
 		                  <value xsi:type="CD" code="R50.2" displayName="Fièvre due à des médicaments" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" >
-		                    <originalText>
-		                      <reference value="#tetanos2-reac" />
-		                    </originalText>
+		                    <originalText><reference value="#tetanos2-reac" /></originalText>
 		                  </value>
 		                </observation>
 		              </entryRelationship>
@@ -4728,9 +4650,7 @@
 							<!-- Code de l'acte -->
 							<code code="CBLA001" displayName="Pose d'une prothèse auditive implantable dans l'oreille moyenne" 
 								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM" />
-							<text>
-								<reference value="#plan-acte-02-code" />
-							</text>
+							<text><reference value="#plan-acte-02-code" /></text>
 							<!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
 							<statusCode code="active" />
 							<!-- Date de l'acte -->
@@ -5226,9 +5146,7 @@
 							<!-- Valeur de l'évaluation -->
 							<value xsi:type="CD" code="MED-264" displayName="Stade 1"
 								codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-								<originalText>
-									<reference value="#echelle-performance-OMS"/>
-								</originalText>
+								<originalText><reference value="#echelle-performance-OMS"/></originalText>
 							</value>
 							<interpretationCode code="MED-241" displayName="Capable d'une activité identique 
 								à celle précédant la maladie sans aucune restriction"
@@ -5259,9 +5177,7 @@
 							<value xsi:type="CD" code="d4500.3" 
 								displayName="Restriction modérée de la performance de marche sur de courtes distances"
 								codeSystem="2.16.840.1.113883.6.254" codeSystemName="ICF">
-								<originalText>
-									<reference value="#statut-fonctionnel"/>
-								</originalText>
+								<originalText><reference value="#statut-fonctionnel"/></originalText>
 							</value>
 						</observation>
 					</entry>					

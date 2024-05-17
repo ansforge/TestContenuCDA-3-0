@@ -412,17 +412,13 @@
                   <id root="EDC895EB-FB96-4E86-816F-F5804F616782" />
                   <code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT"/>
-                  <text>
-                    <reference value="avk0027" />
-                  </text>
+                  <text><reference value="avk0027" /></text>
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="19990715" />
                   </effectiveTime>
                   <value xsi:type="CD" code="I44.2" displayName="Bloc auriculoventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-                    <originalText>
-                      <reference value="avk0027" />
-                    </originalText>
+                    <originalText><reference value="avk0027" /></originalText>
                   </value>
                   <!-- Entrée FR-Statut-du-probleme -->
                   <entryRelationship typeCode="REFR" inversionInd="false">
@@ -512,13 +508,9 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="21C415B8-533A-4BAA-8EF0-D900E0FDAA27" />
               <code code="DELF015" codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM" displayName="Implantation d'un stimulateur cardiaque définitif, avec pose d'une sonde intraatriale et d'une sonde intraventriculaire droites, et d'une sonde dans une veine cardiaque gauche par voie veineuse transcutanée">
-                <originalText mediaType="text/xml">
-                  <reference value="#psc0001" />
-                </originalText>
+                <originalText mediaType="text/xml"><reference value="#psc0001" /></originalText>
               </code>
-              <text>
-                <reference value="#psc0001" />
-              </text>
+              <text><reference value="#psc0001" /></text>
               <statusCode code="completed" />
               <effectiveTime value="19990812" />
               <participant typeCode="LOC">
@@ -586,13 +578,9 @@
                   <!-- Code de l'observation relevée dans la section Active problem -->
                   <id root="EDC895EB-FB96-4E86-816F-F5804F616782" />
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0002" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0002" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0002"></reference>
-                  </text>
+                  <text><reference value="#psc0002"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200319"/>
                   <value xsi:type="CE" code="I44.2" displayName="Bloc auriculoventriculaire complet" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10" />
@@ -1015,13 +1003,9 @@
                   <id root="9E2D9FFC-8BEC-4BD4-AA66-7DADD7AD8694" />
                   <!-- [ANS]Code à remplacer -->
                   <code code="L0060" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Fréquence avec aimant">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0008" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0008" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0008" />
-                  </text>
+                  <text><reference value="#psc0008" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="100" unit="/min" />
@@ -1037,13 +1021,9 @@
                   <id root="35BD28EC-4A3F-4924-9C00-9A1E6A706A56" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0065" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Tension batterie">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0010" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0010" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0010" />
-                  </text>
+                  <text><reference value="#psc0010" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="2.5" unit="V" />
@@ -1058,13 +1038,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="F4A01984-5477-4095-ACA1-92C99531B99B" />
                   <code code="L0036" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Type Pacemaker">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0011" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0011" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0011" />
-                  </text>
+                  <text><reference value="#psc0011" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="J010101" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES SIMPLE CHAMBRE" />
@@ -1079,13 +1055,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="038EAE88-357B-4579-83B2-5DB61CE24AD7" />
                   <code code="L0006" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Asservissement">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0012" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0012" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0012" />
-                  </text>
+                  <text><reference value="#psc0012" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1100,13 +1072,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="AC733F60-B7E3-436E-97B9-FA83A31216D4" />
                   <code code="L0007" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Télésuivi">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0013" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0013" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0013" />
-                  </text>
+                  <text><reference value="#psc0013" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1122,13 +1090,9 @@
                   <id root="151D521A-7839-462B-A1A1-C9FBDFAA1EAD" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0008" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Télésuivi Activé">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0014" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0014" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0014" />
-                  </text>
+                  <text><reference value="#psc0014" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1144,13 +1108,9 @@
                   <id root="9408195D-85C9-4990-A6F0-24A4B9813FEA" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0009" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Stade NYHA">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0015" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0015" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0015" />
-                  </text>
+                  <text><reference value="#psc0015" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="420913000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="classe III de la New York Heart Association Classification" />
@@ -1166,13 +1126,9 @@
                   <id root="F6928DF6-2F36-4C88-A0FF-40BDB2E75C6D" />
                   <!-- [ANS] Code à remplacer  -->
                   <code code="L0010" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="FEVG">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0016" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0016" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0016" />
-                  </text>
+                  <text><reference value="#psc0016" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="33" unit="%" />
@@ -1187,13 +1143,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="356EA8F4-034B-4ABE-9D8B-010EB5A131CD" />
                   <code code="85734-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date de la dernière évaluation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0017" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0017" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0017" />
-                  </text>
+                  <text><reference value="#psc0017" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="TS" value="20090812" />
@@ -1209,13 +1161,9 @@
                   <!-- [ANS] Code à remplacer  -->
                   <id root="8687EADC-E461-42AB-B0FB-89B762C8521A" />
                   <code code="L0013" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Mode Programmé">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0018" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0018" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0018" />
-                  </text>
+                  <text><reference value="#psc0018" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="ST">Texte</value>
@@ -1231,13 +1179,9 @@
                   <id root="457E1331-DA0E-486B-A7B0-3E02A9EC5164" />
                   <!-- [ANS] Code à remplacer  -->
                   <code code="L0037" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Fréquence sans aimant">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0019" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0019" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0019" />
-                  </text>
+                  <text><reference value="#psc0019" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="60" unit="/min" />
@@ -1253,13 +1197,9 @@
                   <id root="545CB492-1145-4D41-A768-AB5A167A489B" />
                   <!-- [ANS] Code à remplacer  -->
                   <code code="L0066" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Fréq. s/s aimant dernier contrôle">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0020" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0020" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0020" />
-                  </text>
+                  <text><reference value="#psc0020" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="70" unit="/min" />
@@ -1275,13 +1215,9 @@
                   <id root="F80F0872-059A-4A8B-81DC-727EA88B79E6" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0014" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Tension">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0021" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0021" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0021" />
-                  </text>
+                  <text><reference value="#psc0021" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="90.6" unit="V" />
@@ -1297,13 +1233,9 @@
                   <id root="470DBA81-DF85-4256-BA72-3020755C1F3B" />
                   <!-- [ANS] Code à remplacer  -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0022" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0022" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0022" />
-                  </text>
+                  <text><reference value="#psc0022" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="91.6" unit="Ohm" />
@@ -1353,13 +1285,9 @@
                   <id root="185CBA27-93E4-4267-BC06-040E6010FB94" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0028" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0028" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0028" />
-                  </text>
+                  <text><reference value="#psc0028" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
@@ -1375,13 +1303,9 @@
                   <id root="C4B7A330-2D11-45ED-AEA4-AB357D1F183C" />
                   <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexion">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0030" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0030" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0030" />
-                  </text>
+                  <text><reference value="#psc0030" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IS-1" />
@@ -1396,13 +1320,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="A73C372F-DED6-433D-8861-A01A037C3769" />
                   <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adaptateur">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0031" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0031" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0031" />
-                  </text>
+                  <text><reference value="#psc0031" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1417,13 +1337,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="53091222-D11E-47F2-8958-87071D19DE59" />
                   <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0032" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0032" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0032" />
-                  </text>
+                  <text><reference value="#psc0032" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
@@ -1438,13 +1354,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="95048585-70A3-4F18-A6C7-6CBD3CC76319" />
                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0033" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0033" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0033" />
-                  </text>
+                  <text><reference value="#psc0033" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
@@ -1460,13 +1372,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="460D66C3-4F41-4499-9AF0-ABE6B51A1BC9" />
                   <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0034" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0034" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0034" />
-                  </text>
+                  <text><reference value="#psc0034" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="66.6" unit="mA" />
@@ -1482,13 +1390,9 @@
                   <id root="84398C71-7494-44BA-BC21-4CCC111026A6" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0035" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0035" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0035" />
-                  </text>
+                  <text><reference value="#psc0035" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="69.6" unit="mV" />
@@ -1504,13 +1408,9 @@
                   <id root="7A701447-DB98-4BDB-BDA0-61E48709BD9C" />
                   <!-- [ANS] Code à remplacer -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0036" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0036" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0036" />
-                  </text>
+                  <text><reference value="#psc0036" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="72.6" unit="Ohm" />
@@ -1525,13 +1425,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="3C130BA2-331D-4526-AAF2-7461B208AA23" />
                   <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0037" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0037" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0037" />
-                  </text>
+                  <text><reference value="#psc0037" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="75.6" unit="V" />
@@ -1547,13 +1443,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="F9ADF906-8E11-4D36-B6AB-2B6AF7379CD9" />
                   <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de stimulation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0038" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0038" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0038" />
-                  </text>
+                  <text><reference value="#psc0038" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="66.6" unit="V" />
@@ -1568,13 +1460,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="5A032963-1BB1-4278-9991-94E48FF5A5BE" />
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0039" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0039" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0039" />
-                  </text>
+                  <text><reference value="#psc0039" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="0.5" unit="mV" />
@@ -1589,13 +1477,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="3A31BE6A-339C-4BF7-B88E-EB9C9135AB9D" />
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0040" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0040" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0040" />
-                  </text>
+                  <text><reference value="#psc0040" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="69.6" unit="Ohm" />
@@ -1645,13 +1529,9 @@
                   <id root="2E936B0A-5BDC-45DD-8BF6-42C6DD747616" />
                   <!-- [ANS] Code à remplacer  -->
                   <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0046" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0046" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0046" />
-                  </text>
+                  <text><reference value="#psc0046" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
@@ -1667,13 +1547,9 @@
                   <id root="CA493239-91DE-4FE2-BE16-5D949612BBDF" />
                   <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexions">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0048" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0048" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0048" />
-                  </text>
+                  <text><reference value="#psc0048" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <!-- Code à remplacer  -->
@@ -1690,13 +1566,9 @@
                   <id root="95796814-9FEE-4C3B-BCCB-5ECEC63C4C1C" />
                   <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adaptateur">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0049" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0049" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0049" />
-                  </text>
+                  <text><reference value="#psc0049" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1711,13 +1583,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="695F809B-BBBB-4EA5-A44B-C071DCB90B58" />
                   <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0050" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0050" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0050" />
-                  </text>
+                  <text><reference value="#psc0050" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
@@ -1732,13 +1600,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="00C5607E-E16C-44E6-85D8-3A8FE1F8D2BC" />
                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0051" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0051" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0051" />
-                  </text>
+                  <text><reference value="#psc0051" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
@@ -1754,13 +1618,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="154A85C8-97AE-4D96-A32C-C1017E0AACE3" />
                   <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0052" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0052" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0052" />
-                  </text>
+                  <text><reference value="#psc0052" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="68.6" unit="mA" />
@@ -1775,13 +1635,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="94C1E46F-4E67-49FC-AFEC-AE4B32B6F250" />
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0053" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0053" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0053" />
-                  </text>
+                  <text><reference value="#psc0053" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="71.6" unit="mV" />
@@ -1796,13 +1652,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="6E3411E2-5F46-49BB-B6DA-80CAE5DC3537" />
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0054" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0054" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0054" />
-                  </text>
+                  <text><reference value="#psc0054" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="74.6" unit="Ohm" />
@@ -1817,13 +1669,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="B840948A-A955-4A69-B9AF-BC87F1A9E228" />
                   <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0055" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0055" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0055" />
-                  </text>
+                  <text><reference value="#psc0055" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="77.6" unit="V" />
@@ -1839,13 +1687,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="30076BF4-B039-41FA-ADCE-B7C30C824228" />
                   <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de stimulation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0056" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0056" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0056" />
-                  </text>
+                  <text><reference value="#psc0056" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="67" unit="V" />
@@ -1860,13 +1704,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="0AD4B638-3F6E-40AB-848C-7E5FF5E35125" />
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0057" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0057" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0057" />
-                  </text>
+                  <text><reference value="#psc0057" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="0.6" unit="mV" />
@@ -1881,13 +1721,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="BB1CF361-F4C5-40E6-B61E-B573FAC0D1CD" />
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0058" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0058" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0058" />
-                  </text>
+                  <text><reference value="#psc0058" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="70" unit="Ohm" />
@@ -1936,13 +1772,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="93A56FCD-8B11-4A6C-91A7-9E32DF979B54" />
                   <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Polarité">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0064" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0064" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0064" />
-                  </text>
+                  <text><reference value="#psc0064" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="J0190010102" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" displayName="SONDES DE STIMULATION CARDIAQUE ENDOCAVITAIRES BIPOLAIRES AURICULAIRE ET VENTRICULAIRE À FIXATION ACTIVE OU PASSIVE" />
@@ -1957,13 +1789,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="217A84A6-2711-47B5-B323-0E4FF54662D2" />
                   <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Connexions">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0066" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0066" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0066" />
-                  </text>
+                  <text><reference value="#psc0066" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="IS-1" />
@@ -1978,13 +1806,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="A31153E4-C928-436B-8651-C0C83BA3CEDC" />
                   <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Adapteur">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0067" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0067" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0067" />
-                  </text>
+                  <text><reference value="#psc0067" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="BL" value="true" />
@@ -1999,13 +1823,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="6788B930-B652-4EED-BF95-D4928E669FAD" />
                   <code code="21938-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Voie d'abord">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0068" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0068" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0068" />
-                  </text>
+                  <text><reference value="#psc0068" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
@@ -2020,13 +1840,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="BAF6429E-A203-4578-96A5-FFD9049225EC" />
                   <code code="39111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="localisation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0069" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0069" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0069" />
-                  </text>
+                  <text><reference value="#psc0069" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
@@ -2042,13 +1858,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="86AECA70-B94C-499D-9D22-86B587699C55" />
                   <code code="L0021" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Courant">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0070" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0070" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0070" />
-                  </text>
+                  <text><reference value="#psc0070" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="70" unit="mA" />
@@ -2063,13 +1875,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="7F97E353-85C1-4A10-8333-98F0A9961D5A" />
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0071" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0071" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0071" />
-                  </text>
+                  <text><reference value="#psc0071" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="75.6" unit="mV" />
@@ -2084,13 +1892,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="3F8285F4-ECB4-4474-A707-E8CBC22DE1AA" />
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0072" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0072" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0072" />
-                  </text>
+                  <text><reference value="#psc0072" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="75" unit="Ohm" />
@@ -2105,13 +1909,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="DA399025-2625-4579-82B4-E6ADB9012020" />
                   <code code="L0023" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil à ms">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0073" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0073" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0073" />
-                  </text>
+                  <text><reference value="#psc0073" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="78" unit="V" />
@@ -2127,13 +1927,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="48DBC025-4439-4D32-8B05-64D62125DA98" />
                   <code code="L0026" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Seuil de stimulation">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0074" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0074" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0074" />
-                  </text>
+                  <text><reference value="#psc0074" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="68" unit="V" />
@@ -2148,13 +1944,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="21A371AB-8D1D-4D7D-9186-65DA8CBECA57" />
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Détection">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0075" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0075" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0075" />
-                  </text>
+                  <text><reference value="#psc0075" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="0.4" unit="mV" />
@@ -2169,13 +1961,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="0B276C49-FCA9-43A9-B7CD-E7F5EEC716F1" />
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Impédance">
-                    <originalText mediaType="text/xml">
-                      <reference value="#psc0076" />
-                    </originalText>
+                    <originalText mediaType="text/xml"><reference value="#psc0076" /></originalText>
                   </code>
-                  <text>
-                    <reference value="#psc0076" />
-                  </text>
+                  <text><reference value="#psc0076" /></text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <value xsi:type="PQ" value="71" unit="Ohm" />
@@ -2217,15 +2005,11 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4" />
               <id root="3856999D-7907-4A04-9D9D-6D16FA3F9706" />
               <code nullFlavor="NA" />
-              <text>
-                <reference value="avk0035"></reference>
-              </text>
+              <text><reference value="avk0035"/></text>
               <reference typeCode="REFR">
                 <externalDocument classCode="DOC" moodCode="EVN">
                   <id root="66DB1312-E27C-4CBF-B7C7-AFFA9073FF37"/>
-                  <text>
-                    <reference value="http://..." />
-                  </text>
+                  <text><reference value="http://..." /></text>
                 </externalDocument>
               </reference>
             </act>

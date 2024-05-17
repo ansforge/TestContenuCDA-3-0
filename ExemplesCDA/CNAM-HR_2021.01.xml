@@ -337,7 +337,7 @@
               <!-- Conformité IHE Mode d’administration "Normal" -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="D93E0545-3313-4C89-9DFB-CC5E64BE46D5"/>
-              <text><reference></reference></text>
+              <text><reference/></text>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <!-- Date de début de traitement -->
@@ -460,7 +460,7 @@
               <!-- Conformité IHE Mode d’administration "Normal" -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="503F7BB3-31B2-46E0-A148-A1C54613185A"/>
-              <text><reference></reference></text>
+              <text><reference/></text>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <!-- Date de début de traitement -->
@@ -581,7 +581,7 @@
               <!-- Conformité IHE Mode d’administration "Normal" -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="1FE3F627-6565-4CF5-95E9-33BA2BAEFC58"/>
-              <text><reference></reference></text>
+              <text><reference/></text>
               <statusCode code="completed"/>
               <!-- Durée du traitement -->
               <effectiveTime xsi:type="IVL_TS">

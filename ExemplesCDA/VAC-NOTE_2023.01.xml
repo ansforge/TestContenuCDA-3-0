@@ -357,9 +357,7 @@
               <id root="41DAC707-7C96-47B7-B600-AC63D8002142" />
               <!-- Type d'acte de vaccination : JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS (2.16.840.1.113883.1.11.19709) -->
               <code code="INITIMMUNIZ" displayName="1ère série vaccinante" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActSubstanceAdministrationImmunizationCode" />
-              <text>
-                <reference value="#vac-01" />
-              </text>
+              <text><reference value="#vac-01" /></text>
               <statusCode code="completed" />
               <effectiveTime value="20090928" />
               <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes_CISIS (1.2.250.1.213.1.1.5.676) -->

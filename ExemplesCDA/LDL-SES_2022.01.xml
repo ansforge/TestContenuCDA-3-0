@@ -607,7 +607,7 @@
                             <id root="174F6D84-986E-4032-8F99-91975403B955"/>
                             <code code="MED-142" displayName="Synthèse médicale"
                                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName='TA_ASIP'/>
-                            <text><reference value="synthese"></reference></text>
+                            <text><reference value="synthese"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime value='20181203'/>
                             <value xsi:type='ST'>Infection respiratoire aigüe</value>
@@ -847,7 +847,7 @@
                             <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
                             <id root="2ED5EF29-8305-4383-8945-C13F2A988D5E"/>
                             <code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"></code>
-                            <text><reference value="#MED-001"></reference></text>
+                            <text><reference value="#MED-001"/></text>
                             <statusCode code="completed"/>
                             <!-- Durée du traitement -->
                             <effectiveTime xsi:type="IVL_TS">
@@ -959,7 +959,7 @@
                             <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
                             <id root="2ED5EF29-8305-4383-8945-C13F2A988D5E"/>
                             <code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"></code>
-                            <text><reference value="#MED-002"></reference></text>
+                            <text><reference value="#MED-002"/></text>
                             <statusCode code="completed"/>
                             <!-- Durée du traitement -->
                             <effectiveTime xsi:type="IVL_TS">
@@ -1221,7 +1221,7 @@
                                     <playingDevice classCode="DEV" determinerCode="INSTANCE">
                                         <code code="J010104" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES TRIPLE CHAMBRE" 
                                             codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN">                                            
-                                            <originalText><reference value="#DM001-categorie"></reference></originalText>
+                                            <originalText><reference value="#DM001-categorie"/></originalText>
                                             <translation code="C50FA05" displayName="STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE" 
                                                 codeSystem="1.2.250.1.213.2.65" codeSystemName="CLADIMED">
                                             </translation>            

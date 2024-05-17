@@ -459,15 +459,11 @@
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
               <code code="57277-6" displayName="Motif du transfert vers le service des urgences"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#transfert-motif"/>
-              </text>
+              <text><reference value="#transfert-motif"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="CD">
-                <originalText>
-                  <reference value="#transfert-motif"> </reference>
-                </originalText>
+                <originalText><reference value="#transfert-motif"/></originalText>
               </value>
             </observation>
           </entry>
@@ -481,9 +477,7 @@
               <id root="6DA489A9-D085-4D7E-B669-1EC4973EFA64"/>
               <code code="80413-8" displayName="Transfert du patient"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-              <text>
-                <reference value="#transfert-ES"/>
-              </text>
+              <text><reference value="#transfert-ES"/></text>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="20200327153500+0100"/>
@@ -603,9 +597,7 @@
                   <id root="32DD091E-8820-4E21-A08C-527B96F0EF3A"/>
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1"
                     displayName="Fréquence cardiaque" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="pouls"> </reference>
-                  </text>
+                  <text><reference value="pouls"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200327153500+0100"/>
                   <value xsi:type="PQ" value="80" unit="/min"/>
@@ -625,9 +617,7 @@
                   <id root="0E08A205-50D2-48E4-8F11-029DE794264F"/>
                   <code code="8310-5" codeSystem="2.16.840.1.113883.6.1"
                     displayName="Température corporelle" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#temp"/>
-                  </text>
+                  <text><reference value="#temp"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200327153500+0100"/>
                   <value xsi:type="PQ" value="37" unit="Cel"/>
@@ -647,9 +637,7 @@
                   <id root="3237D4E1-402A-43A5-B905-0D0A8442B634"/>
                   <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" displayName="Poids"
                     codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#poids"/>
-                  </text>
+                  <text><reference value="#poids"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200327153500+0100"/>
                   <value xsi:type="PQ" value="80" unit="kg"/>
@@ -669,9 +657,7 @@
                   <id root="22C8375A-5B6E-4600-8E42-9CEBE15988DB"/>
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1"
                     displayName="Pression artérielle systolique" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#tensionH"/>
-                  </text>
+                  <text><reference value="#tensionH"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200327153500+0100"/>
                   <value xsi:type="PQ" value="155" unit="mm[Hg]"/>
@@ -691,9 +677,7 @@
                   <id root="842AD920-6A99-4841-AAA9-3E212F9D1B92"/>
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1"
                     displayName="Pression artérielle diastolique" codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#tensionB"/>
-                  </text>
+                  <text><reference value="#tensionB"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20200327153500+0100"/>
                   <value xsi:type="PQ" value="85" unit="mm[Hg]"/>
@@ -756,9 +740,7 @@
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
               <code nullFlavor="NA"/>
-              <text>
-                <reference value="#xxx"/>
-              </text>
+              <text><reference value="#xxx"/></text>
               <statusCode code="cancelled"/>
               <effectiveTime value="20200327153500+0100"/>
             </procedure>
@@ -773,9 +755,7 @@
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
               <code code="DLU_002" displayName="Conscient et éveillé"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#etat-conscience"/>
-              </text>
+              <text><reference value="#etat-conscience"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -791,9 +771,7 @@
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
               <code code="R52.9" displayName="Douleur, sans précision" codeSystem="2.16.840.1.113883.6.3"
                 codeSystemName="CIM-10"/>
-              <text>
-                <reference value="#douleur"/>
-              </text>
+              <text><reference value="#douleur"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -813,9 +791,7 @@
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
               <code code="R52.9" displayName="Douleur, sans précision" codeSystem="2.16.840.1.113883.6.3"
                 codeSystemName="CIM-10"/>
-              <text>
-                <reference value="#douleur"/>
-              </text>
+              <text><reference value="#douleur"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -854,9 +830,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="BADC9E92-AD6F-4D95-A3C4-2294C18C2FE9"/>
               <code nullFlavor="NA"/>
-              <text>
-                <reference> </reference>
-              </text>
+              <text><reference/></text>
               <statusCode code="completed"/>
               <!-- date et l’heure de la dernière prise du traitement habituel -->
               <effectiveTime xsi:type="IVL_TS">
@@ -906,9 +880,7 @@
               <id root="673E3AA9-9962-4D43-AF57-8559E8F477B4"/>
               <code code="GEN-244" displayName="Date et heure du dernier repas"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#xxx"/>
-              </text>
+              <text><reference value="#xxx"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327120000"/>
               <value xsi:type="REAL" nullFlavor="NA"/>
@@ -987,9 +959,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)"
                 codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-              <text>
-                <reference value="#lunettes"/>
-              </text>
+              <text><reference value="#lunettes"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -1009,9 +979,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68"
                 codeSystemName="EMDN"/>
-              <text>
-                <reference value="#protDentHaut"/>
-              </text>
+              <text><reference value="#protDentHaut"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -1032,9 +1000,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68"
                 codeSystemName="EMDN"/>
-              <text>
-                <reference value="#protDentBas"/>
-              </text>
+              <text><reference value="#protDentBas"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -1055,9 +1021,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"
                 codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-              <text>
-                <reference value="#protAudDroit"/>
-              </text>
+              <text><reference value="#protAudDroit"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -1078,9 +1042,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"
                 codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
-              <text>
-                <reference value="#protAudGauche"/>
-              </text>
+              <text><reference value="#protAudGauche"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="BL" value="true"/>
@@ -1101,9 +1063,7 @@
               <!-- valeur issue du JDV_ProtheseObjetPersonnel_CISIS (1.2.250.1.213.1.1.5.515) -->
               <code code="GEN-092.02.01" displayName="Autre prothèse et objet personnel"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-              <text>
-                <reference value="#autreDispoST"/>
-              </text>
+              <text><reference value="#autreDispoST"/></text>
               <statusCode code="completed"/>
               <effectiveTime value="20200327153500+0100"/>
               <value xsi:type="CD">

@@ -295,7 +295,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="A70A8DBC-1CAC-412A-BEB7-3C249659E9CF"/>
               <code code="no-known-medications" displayName="Pas de traitement médicamenteux connu" codeSystem="2.16.840.1.113883.5.1150.1"/>
-              <text><reference value="#NO-TREATMENT"></reference></text>
+              <text><reference value="#NO-TREATMENT"/></text>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low nullFlavor="UNK"/>
