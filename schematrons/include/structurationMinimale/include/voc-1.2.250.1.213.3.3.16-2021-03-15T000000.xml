@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
    <valueSet xmlns="" displayName="JDV_J11_RelationPatient_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.3.3.16" name="JDV_J11_RelationPatient_CISIS" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
       <sourceCodeSystem id="2.16.840.1.113883.5.111" identifierName="Role Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleCode" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleCode" hl7v2table0396="ROLECODE"/>
       <sourceCodeSystem id="1.2.250.1.213.1.1.4.327" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.327"/>

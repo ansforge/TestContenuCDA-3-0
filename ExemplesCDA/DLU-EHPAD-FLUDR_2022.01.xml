@@ -2,8 +2,6 @@
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
  
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<!--<?oxygen SCHSchema="../schematrons/profils/IHE_XDS-SD.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/CI-SIS_StructurationMinimale.sch"?>-->
 <?oxygen SCHSchema="../schematrons/include/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
