@@ -10,7 +10,7 @@
 @echo off
 if "%1"=="" goto USAGE
 set schema=%2
-if "%2"=="" set schema=profils\CI-SIS_StructurationMinimale
+if "%2"=="" set schema=include\structurationMinimale\ASIP-STRUCT-MIN-StrucMin
 ::echo.
 ::echo Sélection de l'arbre ClinicalDocument dans %1.xml
 ::@echo on
@@ -107,40 +107,12 @@ echo Rapport de verification : ..\rapports\%1_verif_ModelesDeContenusCDA.xml
 echo.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Partie à ne garder qu'en développement
-:: Test de conformité à IHE_XDS-SD
-:: del colle.sch concret.sch
-:: echo.
-:: echo 1) Pre-compilation du schematron : collage des include
-:: @echo on
-:: java -cp saxon9he.jar net.sf.saxon.Transform -s:..\profils\IHE_XDS-SD.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
-:: @echo off
-:: echo.
-:: echo 2) Pre-compilation du schematron : expansion des abstract
-:: @echo on
-:: java -cp saxon9he.jar net.sf.saxon.Transform -s:colle.sch -xsl:iso_abstract_expand.xsl -o:concret.sch 
-:: @echo off
-:: echo.
-:: echo 3) Compilation en xslt2 : produit \profils\IHE_XDS-SD.xsl
-:: @echo on
-:: java -cp saxon9he.jar net.sf.saxon.Transform -s:concret.sch -xsl:iso_svrl_for_xslt2.xsl -o:..\profils\IHE_XDS-SD.xsl 
-:: @echo off
-::
-:: echo.
-:: echo Verification du fichier %1.xml
-:: @echo on
-:: java -cp saxon9he.jar net.sf.saxon.Transform -s:..\..\ExemplesCDA\%1.xml -xsl:..\profils\IHE_XDS-SD.xsl -o:..\rapports\%1_verif_IHE_entete.xml 
-:: @echo off
-:: echo.
-:: echo Rapport de verification : ..\rapports\%1_verif_IHE_entete.xml
-:: echo.
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:: Partie à ne garder qu'en développement
 :: Test de conformité à la structuration minimale
 del colle.sch concret.sch
 echo.
 echo 1) Pre-compilation du schematron : collage des include
 @echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:..\include\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
+java -cp saxon9he.jar net.sf.saxon.Transform -s:..\profils\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.sch -xsl:iso_dsdl_include.xsl -o:colle.sch
 @echo off
 echo.
 echo 2) Pre-compilation du schematron : expansion des abstract
@@ -148,15 +120,15 @@ echo 2) Pre-compilation du schematron : expansion des abstract
 java -cp saxon9he.jar net.sf.saxon.Transform -s:colle.sch -xsl:iso_abstract_expand.xsl -o:concret.sch 
 @echo off
 echo.
-echo 3) Compilation en xslt2 : produit \profils\CI-SIS_StructurationMinimale.xsl
+echo 3) Compilation en xslt2 : produit \profils\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.xsl
 @echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:concret.sch -xsl:iso_svrl_for_xslt2.xsl -o:..\profils\CI-SIS_StructurationMinimale.xsl 
+java -cp saxon9he.jar net.sf.saxon.Transform -s:concret.sch -xsl:iso_svrl_for_xslt2.xsl -o:..\profils\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.xsl 
 @echo off
 ::
 echo.
 echo Verification du fichier %1.xml
 @echo on
-java -cp saxon9he.jar net.sf.saxon.Transform -s:..\..\ExemplesCDA\%1.xml -xsl:..\profils\CI-SIS_StructurationMinimale.xsl -o:..\rapports\%1_verif_StructurationMinimale.xml 
+java -cp saxon9he.jar net.sf.saxon.Transform -s:..\..\ExemplesCDA\%1.xml -xsl:..\\profils\structurationMinimale\ASIP-STRUCT-MIN-StrucMin.xsl -o:..\rapports\%1_verif_StructurationMinimale.xml 
 @echo off
 echo.
 echo Rapport de verification : ..\rapports\%1_verif_StructurationMinimale.xml
