@@ -814,7 +814,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Couleur [Type] Urine ; Résultat textuel">
+                      <code code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Couleur [Type] Urine ; Résultat nominal">
                         <originalText><reference value="#CBU-couleur" /></originalText>
                       </code>
                       <statusCode code="completed" />
@@ -831,7 +831,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Aspect [Aspect] Urine ; Résultat textuel">
+                      <code code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Aspect [Aspect] Urine ; Résultat nominal">
                         <originalText><reference value="#CBU-aspect" /></originalText>
                       </code>
                       <statusCode code="completed" />
@@ -862,7 +862,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="24122-4" codeSystem="2.16.840.1.113883.6.1" displayName="Leucocytes [Nombre/Volume] Urine ; Numérique ; Comptage manuel">
+                      <code code="30405-5" codeSystem="2.16.840.1.113883.6.1" displayName="Leucocytes [Nombre/Volume] Urine ; Numérique ; Comptage manuel">
                         <originalText><reference value="#CBU-leucocytes" /></originalText>
                       </code>
                       <statusCode code="completed" />
@@ -877,7 +877,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="799-7" codeSystem="2.16.840.1.113883.6.1" displayName="Érythrocytes [Nombre/Volume] Urine ; Numérique ; Comptage manuel">
+                      <code code="30391-7" codeSystem="2.16.840.1.113883.6.1" displayName="Érythrocytes [Nombre/Volume] Urine ; Numérique">
                         <originalText><reference value="#CBU-erythrocytes" /></originalText>
                       </code>
                       <statusCode code="completed" />
@@ -892,7 +892,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="24123-2" codeSystem="2.16.840.1.113883.6.1" displayName="Cellules épithéliales [Nombre/Volume] Urine ; Numérique ; Comptage manuel">
+                      <code code="30383-4" codeSystem="2.16.840.1.113883.6.1" displayName="Cellules épithéliales [Nombre/Volume] Urine ; Numérique">
                         <originalText><reference value="#CBU-epitheliales" /></originalText>
                       </code>
                       <statusCode code="completed" />
@@ -909,7 +909,7 @@
                       <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
                       <!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.80"/>
-                      <code code="653-6" codeSystem="2.16.840.1.113883.6.1" displayName="Observation microscopique [Identification] Urine ; Résultat textuel ; Coloration Gram">
+                      <code code="653-6" codeSystem="2.16.840.1.113883.6.1" displayName="Observation microscopique [Identification] Urine ; Résultat nominal ; Coloration Gram">
                         <originalText><reference value="#CBU-gram" /></originalText>
                       </code>
                       <statusCode code="completed" />
