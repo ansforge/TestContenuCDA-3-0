@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20231030120000" dateValid="20121112000000" description="XDS authorSpecialty CI-SIS" displayName="JDV_J01_XdsAuthorSpecialty_CISIS.tabs" id="1.2.250.1.213.1.1.5.461" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS">
+    <ValueSet dateFin="" dateMaj="20240329120000" dateValid="20121112000000" description="XDS authorSpecialty CI-SIS" displayName="JDV_J01_XdsAuthorSpecialty_CISIS.tabs" id="1.2.250.1.213.1.1.5.461" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS">
         <ConceptList>
             <Concept code="ALIM_AM" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Alimentation automatique à partir du Système d'Information de l'Assurance Maladie"/>
             <Concept code="DISPOSITIF" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Dispositif médical"/>
@@ -8,6 +8,7 @@
             <Concept code="SECRETARIAT_MEDICAL" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Secrétariat médical"/>
             <Concept code="AUTOMATE" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Automate"/>
             <Concept code="SNR" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Service numérique référencé"/>
+            <Concept code="LOGICIEL_DUI" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Logiciel de Dossier Usager Informatisé"/>
             <Concept code="G15_10" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin"/>
             <Concept code="G15_10/PAC00" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Qualification Praticien adjoint contractuel (PAC)"/>
             <Concept code="G15_10/SM01" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Anatomie et Cytologie pathologiques (SM)"/>
@@ -93,7 +94,7 @@
             <Concept code="G15_10/SM81" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Médecine cardiovasculaire option rythmologie interventionnelle et stimulation cardiaque (SM)"/>
             <Concept code="G15_10/SM82" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Médecine intensive-réanimation option réanimation pédiatrique (SM)"/>
             <Concept code="G15_10/SM83" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Néphrologie option soins intensifs néphrologiques (SM)"/>
-            <Concept code="G15_10/SM84" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Neurologie option traitement interventionnel de l’ischémie cérébrale aigüe (SM)"/>
+            <Concept code="G15_10/SM84" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Neurologie option traitement interventionnel de l'ischémie cérébrale aigüe (SM)"/>
             <Concept code="G15_10/SM85" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Ophtalmo option chirurgie ophtalmopédiatrique et strabologique (SM)"/>
             <Concept code="G15_10/SM86" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - ORL et chirurgie cervico-faciale option audiophonologie (SM)"/>
             <Concept code="G15_10/SM87" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Pédiatrie option néonatologie (SM)"/>
@@ -373,7 +374,10 @@
             <Concept code="328" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Accompagnant éducatif et social"/>
             <Concept code="329" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en génétique"/>
             <Concept code="331" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Secrétaire médicale"/>
+            <Concept code="333" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Responsable de secteur"/>
+            <Concept code="334" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Biologiste médical ni médecin ni pharmacien"/>
             <Concept code="332" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant médical"/>
+            <Concept code="335" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Gestionnaire alertes et urgences sanitaires"/>
             <Concept code="350" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide à domicile"/>
             <Concept code="351" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant(e) maternel(le)"/>
         </ConceptList>

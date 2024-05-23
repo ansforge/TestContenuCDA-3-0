@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20180330120000" description="Jeux de Valeurs des professions/spécialités des Non Ps" displayName="JDV_J48_ProfessionNonPS_CISIS.tabs" id="1.2.250.1.213.1.1.5.123" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J48-ProfessionNonPS-CISIS">
+    <ValueSet dateFin="" dateMaj="20240426120000" dateValid="20180330120000" description="Jeux de Valeurs des professions/spécialités des Non Ps" displayName="JDV_J48_ProfessionNonPS_CISIS.tabs" id="1.2.250.1.213.1.1.5.123" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J48-ProfessionNonPS-CISIS">
         <ConceptList>
             <Concept code="71" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Ostéopathe"/>
             <Concept code="72" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Psychothérapeute"/>
@@ -23,6 +23,9 @@
             <Concept code="301" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Coordination territoriale d'appui (PAERPA)"/>
             <Concept code="302" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide et accompagnement à domicile (PAERPA)"/>
             <Concept code="303" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Avocat participant aux processus de soins sans consentement (eSSS)"/>
+            <Concept code="304" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant de service social (Expérimentation MAIA)"/>
+            <Concept code="305" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Psychologue (Expérimentation MAIA)"/>
+            <Concept code="306" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Psychothérapeute (Expérimentation MAIA)"/>
             <Concept code="307" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Mandataire judiciaire à la protection des majeurs (MJPM)"/>
             <Concept code="308" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Pilote MAIA"/>
             <Concept code="309" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Gestionnaire de cas MAIA"/>
@@ -48,6 +51,9 @@
             <Concept code="329" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en génétique"/>
             <Concept code="331" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Secrétaire médicale"/>
             <Concept code="332" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant médical"/>
+            <Concept code="333" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Responsable de secteur"/>
+            <Concept code="334" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Biologiste médical ni médecin ni pharmacien"/>
+            <Concept code="335" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Gestionnaire alertes et urgences sanitaires"/>
             <Concept code="350" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide à domicile"/>
             <Concept code="351" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant(e) maternel(le)"/>
         </ConceptList>

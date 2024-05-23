@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de la mesure de nombre de pas par jour" displayName="JDV_J158_MethodStepsByDay_ENS.tabs" id="1.2.250.1.213.1.1.5.613" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS">
+    <ValueSet dateFin="" dateMaj="20231215120000" dateValid="20210430120000" description="JDV pour la méthode de la mesure de nombre de pas par jour" displayName="JDV_J158_MethodStepsByDay_ENS.tabs" id="1.2.250.1.213.1.1.5.613" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS">
         <ConceptList>
-            <Concept code="C88165" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="podomètre"/>
-            <Concept code="C153216" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="objet connecté"/>
-            <Concept code="C156877" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="application pour smartphone"/>
+            <Concept code="Y210905" codeSystem="1.2.250.1.213.2.68" displayName="INTERFACES DE CAPTEURS EXTERNES"/>
+            <Concept code="Z120626" codeSystem="1.2.250.1.213.2.68" displayName="SYSTÈMES D'ANALYSE DE LA DYNAMIQUE DU MOUVEMENT"/>
+            <Concept code="Z12062692" codeSystem="1.2.250.1.213.2.68" displayName="SYSTÈMES D'ANALYSE DE LA DYNAMIQUE DU MOUVEMENT - LOGICIELS QUALIFIÉS DM"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

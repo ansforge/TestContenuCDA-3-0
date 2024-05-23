@@ -3,7 +3,7 @@
     <ValueSet displayName="JDV_TraitementPreventif_CISIS" id="1.2.250.1.213.1.1.5.55" version="test">
         <ConceptList>
             <Concept code="306805000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="recommandation de continuer un traitement"/>
-            <Concept code="371133007 " codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="modification du traitement"/>
+            <Concept code="445528004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="traitement modifié"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>

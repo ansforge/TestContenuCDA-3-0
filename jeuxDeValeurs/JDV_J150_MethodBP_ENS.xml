@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de mesure de la pression artérielle" displayName="JDV_J150_MethodBP_ENS.tabs" id="1.2.250.1.213.1.1.5.605" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS">
+    <ValueSet dateFin="" dateMaj="20231215120000" dateValid="20210430120000" description="JDV pour la méthode de mesure de la pression artérielle" displayName="JDV_J150_MethodBP_ENS.tabs" id="1.2.250.1.213.1.1.5.605" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS">
         <ConceptList>
-            <Concept code="C69319" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="moniteur de pression sanguine oscillométrique (tensiomètre automatique)"/>
-            <Concept code="C69318" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="moniteur de pression sanguine auscultatoire (tensiomètre manuel)"/>
-            <Concept code="C153216" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="objet connecté"/>
-            <Concept code="MED-875" codeSystem="1.2.250.1.213.1.1.4.322" displayName="MAPA : mesure automatisée de la pression artérielle"/>
+            <Concept code="Y210905" codeSystem="1.2.250.1.213.2.68" displayName="INTERFACES DE CAPTEURS EXTERNES"/>
+            <Concept code="Z12050404" codeSystem="1.2.250.1.213.2.68" displayName="ENREGISTREURS HOLTER DE LA PRESSION ARTÉRIELLE"/>
+            <Concept code="Z1203020501" codeSystem="1.2.250.1.213.2.68" displayName="TENSIOMÈTRES OSCILLOMÉTRIQUES NON INVASIFS"/>
+            <Concept code="Z1203020599" codeSystem="1.2.250.1.213.2.68" displayName="TENSIOMÈTRES NON INVASIFS - AUTRES"/>
         </ConceptList>
     </ValueSet>
 </RetrieveValueSetResponse>
