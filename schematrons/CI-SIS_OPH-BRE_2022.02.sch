@@ -89,26 +89,26 @@
                 
         </phase>
         <pattern id="variables">      
-                <let name="jdv_MotifConsultationOphtalmologique-CISIS" value="'../jeuxDeValeurs/JDV_MotifConsultationOphtalmologique-CISIS.xml'"/>
-                <let name="jdv_OrientationBaseDuPrisme-CISIS" value="'../jeuxDeValeurs/JDV_OrientationBaseDuPrisme-CISIS.xml'"/>
-                <let name="jdv_OeilExamine-CISIS" value="'../jeuxDeValeurs/JDV_OeilExamine-CISIS.xml'"/>
-                <let name="jdv_TypeDeVerresPrescrits-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeVerresPrescrits-CISIS.xml'"/>
-                <let name="jdv_TypeDeLentilles-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeLentilles-CISIS.xml'"/>
-                <let name="jdv_AdditionGrandeur-CISIS" value="'../jeuxDeValeurs/JDV_AdditionGrandeur-CISIS.xml'"/>
-                <let name="jdv_TypeDePrisme-CISIS" value="'../jeuxDeValeurs/JDV_TypeDePrisme-CISIS.xml'"/>
-                <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite-CISIS.xml'"/>
-                <let name="jdv_TypeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureAcuiteVisuelle-CISIS.xml'"/>
-                <let name="jdv_TypeDeMesureDeRefraction-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDeRefraction-CISIS.xml'"/>
-                <let name="jdv_TypeDeMesureDispositifOculaire-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDispositifOculaire-CISIS.xml'"/>
-                <let name="jdv_TypeDeDistanceDeVisualisation-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeDistanceDeVisualisation-CISIS.xml'"/>
-                <let name="jdv_MesureVerrePrescrit-CISIS" value="'../jeuxDeValeurs/JDV_MesureVerrePrescrit-CISIS.xml'"/>
-                <let name="jdv_MesureTypeVerrePrescrit-CISIS" value="'../jeuxDeValeurs/JDV_MesureTypeVerrePrescrit-CISIS.xml'"/>
-                <let name="jdv_MesureVerreDelivre-CISIS" value="'../jeuxDeValeurs/JDV_MesureVerreDelivre-CISIS.xml'"/>
-                <let name="jdv_MesureTypeVerreDelivre-CISIS" value="'../jeuxDeValeurs/JDV_MesureTypeVerreDelivre-CISIS.xml'"/>
-                <let name="jdv_MesureLentillePrescrite-CISIS " value="'../jeuxDeValeurs/JDV_MesureLentillePrescrite-CISIS.xml'"/>
-                <let name="jdv_MesureLentilleDelivree-CISIS" value="'../jeuxDeValeurs/JDV_MesureLentilleDelivree-CISIS.xml'"/>
-                <let name="jdv_MethodeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_MethodeDeMesureAcuiteVisuelle-CISIS.xml'"/>
-                <let name="jdv_TypeDispositifOcculaire-CISIS" value="'../jeuxDeValeurs/JDV_TypeDispositifOcculaire-CISIS.xml'"/>  
+                <let name="jdv_MotifConsultationOphtalmologique-CISIS" value="'../jeuxDeValeurs/JDV_MotifConsultationOphtalmologique_CISIS.xml'"/>
+                <let name="jdv_OrientationBaseDuPrisme-CISIS" value="'../jeuxDeValeurs/JDV_OrientationBaseDuPrisme_CISIS.xml'"/>
+                <let name="jdv_OeilExamine-CISIS" value="'../jeuxDeValeurs/JDV_OeilExamine_CISIS.xml'"/>
+                <let name="jdv_TypeDeVerresPrescrits-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeVerresPrescrits_CISIS.xml'"/>
+                <let name="jdv_TypeDeLentilles-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeLentilles_CISIS.xml'"/>
+                <let name="jdv_AdditionGrandeur-CISIS" value="'../jeuxDeValeurs/JDV_AdditionGrandeur_CISIS.xml'"/>
+                <let name="jdv_TypeDePrisme-CISIS" value="'../jeuxDeValeurs/JDV_TypeDePrisme_CISIS.xml'"/>
+                <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite_CISIS.xml'"/>
+                <let name="jdv_TypeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureAcuiteVisuelle_CISIS.xml'"/>
+                <let name="jdv_TypeDeMesureDeRefraction-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDeRefraction_CISIS.xml'"/>
+                <let name="jdv_TypeDeMesureDispositifOculaire-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDispositifOculaire_CISIS.xml'"/>
+                <let name="jdv_TypeDeDistanceDeVisualisation-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeDistanceDeVisualisation_CISIS.xml'"/>
+                <let name="jdv_MesureVerrePrescrit-CISIS" value="'../jeuxDeValeurs/JDV_MesureVerrePrescrit_CISIS.xml'"/>
+                <let name="jdv_MesureTypeVerrePrescrit-CISIS" value="'../jeuxDeValeurs/JDV_MesureTypeVerrePrescrit_CISIS.xml'"/>
+                <let name="jdv_MesureVerreDelivre-CISIS" value="'../jeuxDeValeurs/JDV_MesureVerreDelivre_CISIS.xml'"/>
+                <let name="jdv_MesureTypeVerreDelivre-CISIS" value="'../jeuxDeValeurs/JDV_MesureTypeVerreDelivre_CISIS.xml'"/>
+                <let name="jdv_MesureLentillePrescrite-CISIS " value="'../jeuxDeValeurs/JDV_MesureLentillePrescrite_CISIS.xml'"/>
+                <let name="jdv_MesureLentilleDelivree-CISIS" value="'../jeuxDeValeurs/JDV_MesureLentilleDelivree_CISIS.xml'"/>
+                <let name="jdv_MethodeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_MethodeDeMesureAcuiteVisuelle_CISIS.xml'"/>
+                <let name="jdv_TypeDispositifOcculaire-CISIS" value="'../jeuxDeValeurs/JDV_TypeDispositifOcculaire_CISIS.xml'"/>  
                 <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
                         <!-- [1..1] Section FR-Raison-de-la-recommandation (obligatoire) -->
                         <assert test="cda:component/cda:section/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.1']"> 
