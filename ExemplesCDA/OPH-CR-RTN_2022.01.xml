@@ -142,7 +142,7 @@
           <postalCode>75005</postalCode>
           <city>Paris</city>
         </addr>
-        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
       </representedOrganization>
     </assignedAuthor>
   </author>
@@ -302,7 +302,7 @@
             <name>Cabinet Orthoptiste</name>
             <telecom nullFlavor="MSK" />
             <addr nullFlavor="MSK" />
-            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" />
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" />
           </representedOrganization>
         </assignedEntity>
       </performer>
