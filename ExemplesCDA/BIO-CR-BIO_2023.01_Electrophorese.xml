@@ -632,67 +632,67 @@
                     </tr>
                     <tr>
                       <td><content ID="Albumine-pourcentage">Albumine (%)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-02">Electrophorèse</content></td>
                       <td>60,0</td>
                       <td>40 à 80</td>
                     </tr>
                     <tr>
                       <td><content ID="Albumine">Albumine (g/L)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-03">Electrophorèse</content></td>
                       <td>45,0</td>
                       <td>36,00 à 48,00</td>
                     </tr>
                     <tr>
                       <td><content ID="Alpha-1-globulines-pourcentage">Alpha 1 globulines (%)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-04">Electrophorèse</content></td>
                       <td>5,0</td>
                       <td />
                     </tr>
                     <tr>
                       <td><content ID="Alpha-1-globulines">Alpha1 (g/L)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-05">Electrophorèse</content></td>
                       <td>3,8</td>
                       <td>0,80 à 3,20</td>
                     </tr>
                     <tr>
                       <td><content ID="Alpha-2-globulines-pourcentage">Alpha 2 globulines (%)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-06">Electrophorèse</content></td>
                       <td>9,0</td>
                       <td>8,3 à 10,1</td>
                     </tr>
                     <tr>
                       <td><content ID="Alpha-2-globulines">Alpha2 (g/L)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-07">Electrophorèse</content></td>
                       <td>6,8</td>
                       <td>4,50 à 10,50</td>
                     </tr>
                     <tr>
                       <td><content ID="Beta-globulines-pourcentage">Béta globulines (%)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-08">Electrophorèse</content></td>
                       <td>11,0</td>
                       <td>6 à 12</td>
                     </tr>
                     <tr>
                       <td><content ID="Beta-globulines">Béta (g/L)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-09">Electrophorèse</content></td>
                       <td>8,3</td>
                       <td>3,50 à 9,50</td>
                     </tr>
                     <tr>
                       <td><content ID="Gamma-globulines-pourcentage">Gamma globulines (%)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-10">Electrophorèse</content></td>
                       <td>15,0</td>
                       <td>8 à 17</td>
                     </tr>
                     <tr>
                       <td><content ID="Gamma-globulines">Gamma (g/L)</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-11">Electrophorèse</content></td>
                       <td>11,3</td>
                       <td>6,50 à 14,50</td>
                     </tr>
                     <tr>
                       <td><content ID="Rapport-Albumine-globuline">Rapport Albumine/globuline</content></td>
-                      <td><content ID="methode-01">Electrophorèse</content></td>
+                      <td><content ID="methode-12">Electrophorèse</content></td>
                       <td>1,50</td>
                       <td>1 à 5</td>
                     </tr>                    
@@ -889,7 +889,7 @@
                           <value xsi:type="PQ" value="60.0" unit="%" />                          
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-02"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -909,7 +909,7 @@
                           <value xsi:type="PQ" value="45.0" unit="g/L" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-03"/></originalText>
                           </methodCode>
                           <referenceRange typeCode="REFV">
                             <observationRange>
@@ -938,7 +938,7 @@
                           <value xsi:type="PQ" value="5.0" unit="%" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-04"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -959,7 +959,7 @@
                           <interpretationCode code="H" displayName="Anormalement haut" codeSystem="2.16.840.1.113883.5.83" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-05"/></originalText>
                           </methodCode>
                           <referenceRange typeCode="REFV">
                             <observationRange>
@@ -988,7 +988,7 @@
                           <value xsi:type="PQ" value="9.0" unit="%" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-06"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -1008,7 +1008,7 @@
                           <value xsi:type="PQ" value="6.8" unit="g/L" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-07"/></originalText>
                           </methodCode>
                           <referenceRange typeCode="REFV">
                             <observationRange>
@@ -1037,7 +1037,7 @@
                           <value xsi:type="PQ" value="11.0" unit="%" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-08"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -1057,7 +1057,7 @@
                           <value xsi:type="PQ" value="8.3" unit="g/L" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-09"/></originalText>
                           </methodCode>
                           <referenceRange typeCode="REFV">
                             <observationRange>
@@ -1086,7 +1086,7 @@
                           <value xsi:type="PQ" value="15.0" unit="%" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-10"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -1106,7 +1106,7 @@
                           <value xsi:type="PQ" value="11.3" unit="g/L" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-11"/></originalText>
                           </methodCode>
                           <referenceRange typeCode="REFV">
                             <observationRange>
@@ -1135,7 +1135,7 @@
                           <value xsi:type="PQ" value="1.50" unit="{ratio}" />
                           <methodCode code="VA" displayName="Electrophorèse" codeSystem="1.2.250.1.213.2.3.5" 
                             codeSystemName="ANSM – Table de codage commune des réactifs">
-                            <originalText><reference value="#methode-01"/></originalText>
+                            <originalText><reference value="#methode-12"/></originalText>
                           </methodCode>
                         </observation>
                       </component>
@@ -2699,12 +2699,12 @@
                           <value xsi:type="IVL_PQ">
                             <low value="0.512" unit="ug/mL" inclusive="true" />
                           </value>
+                          <!-- Interprétation : valeur issue du JDV_HL7_ObservationInterpretation-CISIS (2.16.840.1.113883.1.11.78) -->
+                          <interpretationCode code="R" displayName="Résistant" codeSystem="2.16.840.1.113883.5.83" />
                           <methodCode code="BDD" displayName="Antibiogramme - méthode disque" 
                             codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs">
                             <originalText><reference value="#methode-02" /></originalText>
                           </methodCode>
-                          <!-- Interprétation : valeur issue du JDV_HL7_ObservationInterpretation-CISIS (2.16.840.1.113883.1.11.78) -->
-                          <interpretationCode code="R" displayName="Résistant" codeSystem="2.16.840.1.113883.5.83" />
                         </observation>
                       </component>
                       <!-- Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Ampicilline -->
