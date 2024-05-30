@@ -3086,27 +3086,39 @@
         <value lang="nl-nl">eerstelijns arts</value>
         <value lang="fr-fr">Médecin traitant</value>
     </translation>
+    <translation key="2.16.840.1.113883.5.90-INF-ES-REF">
+        <comment>Label: ParticipationFunction Reference health institution</comment>
+        <value lang="en-us">Reference health institution</value>
+        <value lang="nl-nl">Referentie zorginstelling</value>
+        <value lang="fr-fr">Etablissement de santé de référence</value>
+    </translation>
+    <translation key="2.16.840.1.113883.5.90-INF-ES-PREF">
+        <comment>Label: ParticipationFunction Prefered health institution</comment>
+        <value lang="en-us">Prefered health institution</value>
+        <value lang="nl-nl">Voorkeur zorginstelling</value>
+        <value lang="fr-fr">Etablissement de santé de préférence</value>
+    </translation>
     <translation key="2.16.840.1.113883.5.90-IND-PCP">
         <comment>Label: ParticipationFunction primary care physician</comment>
-        <value lang="en-us">primary care physician</value>
-        <value lang="nl-nl">eerstelijns arts</value>
+        <value lang="en-us">Primary care physician</value>
+        <value lang="nl-nl">Eerstelijns arts</value>
         <value lang="fr-fr">Médecin traitant</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-TRANS">
         <comment>Label: ParticipationType Transcriber</comment>
         <value lang="en-us">Transcriber</value>
-        <value lang="nl-nl">transscribent</value>
+        <value lang="nl-nl">Transscribent</value>
         <value lang="fr-fr">Transcripteur</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-ENT">
         <comment>Label: ParticipationType data entry person</comment>
-        <value lang="en-us">data entry person</value>
-        <value lang="nl-nl">ingevoerd door</value>
+        <value lang="en-us">Data entry person</value>
+        <value lang="nl-nl">Ingevoerd door</value>
         <value lang="fr-fr">Opérateur de saisie</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-WIT">
         <comment>Label: ParticipationType witness</comment>
-        <value lang="en-us">witness</value>
+        <value lang="en-us">Witness</value>
         <value lang="nl-nl">getuige</value>
         <value lang="fr-fr">Témoin</value>
     </translation>
