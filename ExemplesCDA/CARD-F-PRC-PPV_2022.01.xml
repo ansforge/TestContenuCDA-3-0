@@ -198,7 +198,7 @@
     <time value="20060922" />
     <signatureCode code="S" />
     <assignedEntity>
-      <id root="1.2.250.1.71" extension="801234567897" />
+      <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
       <addr nullFlavor="NAV" />
       <telecom nullFlavor="NAV" />
       <!-- PS identifié par son N°ADELI -->
