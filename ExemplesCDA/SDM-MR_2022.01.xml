@@ -226,7 +226,7 @@
           <postalCode>75019</postalCode>
           <city>PARIS</city>
         </addr>
-        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
       </representedOrganization>
     </assignedEntity>
   </legalAuthenticator>
@@ -283,7 +283,7 @@
               <postalCode>75019</postalCode>
               <city>PARIS</city>
             </addr>
-            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
           </representedOrganization>
         </assignedEntity>
       </performer>
@@ -722,7 +722,7 @@
                       <postalCode>75019</postalCode>
                       <city>PARIS</city>
                     </addr>
-                    <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+                    <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
                   </representedOrganization>
                 </assignedEntity>
               </performer>
@@ -870,7 +870,7 @@
                       <postalCode>75019</postalCode>
                       <city>PARIS</city>
                     </addr>
-                    <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+                    <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
                   </representedOrganization>
                 </assignedEntity>
               </performer>
