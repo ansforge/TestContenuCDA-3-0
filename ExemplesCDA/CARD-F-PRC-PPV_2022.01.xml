@@ -308,7 +308,7 @@
             <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
             <name>Hôpital Européen Georges Pompidou</name>
             <!-- standardIndustryClassCode obligatoire -->
-            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
           </representedOrganization>
         </assignedEntity>
       </performer>
@@ -360,7 +360,7 @@
               <postalCode>75015</postalCode>
               <city>PARIS</city>
             </addr>
-            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
           </representedOrganization>
         </assignedEntity>
       </responsibleParty>
