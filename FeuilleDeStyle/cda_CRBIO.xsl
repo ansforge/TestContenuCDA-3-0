@@ -11720,7 +11720,7 @@
 	</xd:doc>
 	<!-- Extension FR -->
 	<xsl:template name="componentOf">
-		<xsl:if test="hl7:componentOf">
+		<xsl:if test="hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:location">
 			<xsl:if test="not(contains($vendor, 'Saxonica'))">
 				<br/>
 				<br/>
