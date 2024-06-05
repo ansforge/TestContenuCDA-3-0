@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_TrousseCCU_CISIS" id="1.2.250.1.213.1.1.5.729" version="test">
+        <ConceptList>
+            <Concept code="VHEDA1GUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ABBOTT - Alinity m HR HPV AMP Kit (09N15-090)"/>
+            <Concept code="VHEDA1GUR02LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ABBOTT - RealTime High Risk HPV (02N09-092)"/>
+            <Concept code="VHEDC7GUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="BD - Onclarity HPV Assay (442946)"/>
+            <Concept code="VHEDC7GUR02LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="BD - Onclarity HPV Assay pour le système BD COR (443982)"/>
+            <Concept code="VHEDCDGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="CEPHEID - Xpert HPV (GXHPV-CE-10)"/>
+            <Concept code="VHEDNGGUP01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="GENOMICA - CLART HPV4S ()"/>
+            <Concept code="VHEDB2GUP01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="GREINER BIO-ONE - PapilloCheck  (465060)"/>
+            <Concept code="VHERCQGAX01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="HOLOGIC - APTIMA HPV Assay (Panther System) (302929/303093)"/>
+            <Concept code="VHEDNHGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="HYBRIBIO - 14 High-risk HPV with 16/18 Genotyping Real-time PCR kit (HBRT-H14)"/>
+            <Concept code="VHEDHUGYA01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="QIAGEN - Digene HC2 High - Risk HPV DNA (5197-1330/618111)"/>
+            <Concept code="VHEDARGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - Cobas 4800 HPV Test (05235910190/05235901190)"/>
+            <Concept code="VHEDARGUR02LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - Cobas HPV 6800/8800 Systems (07460155190)"/>
+            <Concept code="VHEDARGUB01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="20231025000000" dateValid="20230913000000" displayName="ROCHE DIAGNOSTICS - LINEAR ARRAY HPV Genotyping test (04391853190)"/>
+            <Concept code="VHEDHVGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20230913000000" displayName="SEEGENE - Anyplex II HPV HR Detection (HP7E00X/HP10380Z)"/>
+            <Concept code="VHEDD4GUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="NEUMODX MOLECULAR - NeuMoDx HPV Test Strip (617007)"/>
+            <Concept code="VHEDMNGUR01LX" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="SELF SCREEN - QIAscreen HPV PCR Test (617005)"/>
+            <Concept code="code à fournir" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="Euroimmun EUROArray HPV - libellé tableau CNRP"/>
+            <Concept code="code à fournir" codeSystem="1.2.250.1.213.2.3.5" dateFin="" dateValid="20231025000000" displayName="AB ANALITICA Realquality RQ-HPV Screen - libellé tableau CNRP"/>
+            <Concept code="GEN-092.08.06" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Autre trousse"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
