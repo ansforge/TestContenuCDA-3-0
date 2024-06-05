@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeDeTestRealise_CISIS" id="1.2.250.1.213.1.1.5.728" version="test">
+    <ValueSet displayName="JDV_TypeDeTestRealiseCCU_CISIS" id="1.2.250.1.213.1.1.5.728" version="test">
         <ConceptList>
             <Concept code="10524-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230627000000" displayName="Observation microscopique:Identification:Ponctuel:Col de l'utérus:Résultat nominal:Coloration cellulaire"/>
             <Concept code="77379-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230627000000" displayName="Papillomavirus humain 16 et 18 et 31+33+35+39+45+51+52+56+58+59+66+68 ADN:Interprétation:Ponctuel:Col de l'utérus:Résultat nominal"/>

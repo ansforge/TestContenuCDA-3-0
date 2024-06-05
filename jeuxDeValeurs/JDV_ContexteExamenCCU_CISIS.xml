@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+    <ValueSet displayName="JDV_ContexteExamenCCU_CISIS" id="1.2.250.1.213.1.1.5.722" version="test">
+        <ConceptList>
+            <Concept code="MED-1210" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Test HPV-HR de dépistage primaire réalisé sur prélèvement cervico-utérin"/>
+            <Concept code="MED-1211" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Test HPV-HR de dépistage primaire réalisé sur un auto-prélèvement"/>
+            <Concept code="MED-1212" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Test HPV-HR réalisé en réflexe après examen cytologique anormal (ASCUS - AGC) de dépistage primaire"/>
+            <Concept code="MED-1213" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Test HPV-HR de contrôle"/>
+            <Concept code="MED-1214" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Examen cytologique de dépistage primaire"/>
+            <Concept code="MED-1215" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Examen cytologique de contrôle"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
