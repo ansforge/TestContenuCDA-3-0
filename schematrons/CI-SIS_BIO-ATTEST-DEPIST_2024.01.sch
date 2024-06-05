@@ -6,6 +6,10 @@
     ......................................................................................................................................................
     Historique :
         20/12/2023 : Création
+        03/06/2024 : MAJ : 
+                    - Ajout des schematrons des JDVs
+                    - MAJ des schematrons des entrées 
+                              
     ......................................................................................................................................................               
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_BIO-ATTEST-DEPIST_2024.01"
@@ -31,14 +35,35 @@
     
     <!-- Entrées spécifiques au volet -->    
     <include href="include/specificationsVolets/BIO-ATTEST-DEPIST_2024.01/Entrees/E_laboratoryReportDataProcessing_BIO-ATTEST-DEPIST.sch"/>
+    <include href="include/specificationsVolets/BIO-ATTEST-DEPIST_2024.01/Entrees/E_resultatExamensBiologieElementCliniquePertinent.sch"/>
     
     
     <!-- JDV -->    
-      <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistage_CISIS.sch"/>   
+      <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistage_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageGlycemie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCetonemie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCholesterol_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCRP_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageRuptureMembranePH_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageBilirubinemie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageTcPO2_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageProteinurie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCorpsCetoniques_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageGlucose_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageBilirubinurie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageUrobilinogenurie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageNitriturie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageHematurie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageLeucocyturie_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageAcideAscorbique_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageNitriturieCystite_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageLeucocyturieCystite_CISIS.sch"/>
+    
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
+    
     <phase id="CI-SIS_BIO-ATTEST-DEPIST_2024.01">
         <active pattern="variables"/>
         <p>Vérification complète de la conformité au CI-SIS</p>
@@ -51,10 +76,30 @@
         
         <!-- Entrées spécifiques -->        
         <active pattern="E_laboratoryReportDataProcessing_BIO-ATTEST-DEPIST"/>
+        <active pattern="E_resultatExamensBiologieElementCliniquePertinent_BIO-ATTEST-DEPIST"/>
        
         
         <!-- JDV -->        
         <active pattern="JDV_ResultatDepistage_CISIS"/>
+        <active pattern="JDV_ResultatDepistageGlycemie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageCetonemie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageCholesterol_CISIS"/>
+        <active pattern="JDV_ResultatDepistageCRP_CISIS"/>
+        <active pattern="JDV_ResultatDepistageRuptureMembranePH_CISIS"/>
+        <active pattern="JDV_ResultatDepistageBilirubinemie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageTcPO2_CISIS"/>
+        <active pattern="JDV_ResultatDepistageProteinurie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageCorpsCetoniques_CISIS"/>
+        <active pattern="JDV_ResultatDepistageGlucose_CISIS"/>
+        <active pattern="JDV_ResultatDepistageBilirubinurie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageUrobilinogenurie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageNitriturie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageHematurie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageLeucocyturie_CISIS"/>
+        <active pattern="JDV_ResultatDepistageAcideAscorbique_CISIS"/>
+        <active pattern="JDV_ResultatDepistageNitriturieCystite_CISIS"/>
+        <active pattern="JDV_ResultatDepistageLeucocyturieCystite_CISIS"/>
+        
         
     </phase>
     
@@ -64,6 +109,25 @@
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
         <let name="JDV_ResultatDepistage_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistage_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageGlycemie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageGlycemie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageCetonemie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCetonemie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageCholesterol_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCholesterol_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageCRP_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCRP_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageRuptureMembranePH_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageRuptureMembranePH_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageBilirubinemie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageBilirubinemie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageTcPO2_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageTcPO2_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageProteinurie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageProteinurie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageCorpsCetoniques_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCorpsCetoniques_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageGlucose_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageGlucose_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageBilirubinurie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageBilirubinurie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageUrobilinogenurie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageUrobilinogenurie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageNitriturie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageNitriturie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageHematurie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageHematurie_CISIS'"/>
+        <let name="JDV_ResultatDepistageLeucocyturie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageLeucocyturie_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageAcideAscorbique_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageAcideAscorbique_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageNitriturieCystite_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistage_CISIS.xml'"/>
+        <let name="JDV_ResultatDepistageLeucocyturieCystite_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistage_CISIS.xml'"/>
+        
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            
