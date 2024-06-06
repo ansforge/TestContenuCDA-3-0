@@ -42,6 +42,10 @@
     <ns prefix="lab" uri="urn:oid:1.3.6.1.4.1.19376.1.3.2"/>
     <ns prefix="pharm" uri="urn:ihe:pharm"/>
 
+    <include href="../abstract/dansJeuDeValeurs.sch"/>  
+    <include href="../abstract/IVL_TS.sch"/>
+    <include href="../abstract/abstractImmunization.sch"/>
+
     <!-- Entrées -->
     <include href="../include/entrees/E_allergiesAndIntoleranceConcern_fr.sch"/>
     <include href="../include/entrees/E_allergiesAndIntolerances_fr.sch"/>
@@ -168,11 +172,30 @@
     <include href="../include/entrees/E_modaliteEntree_fr.sch"/>
     
     
+    <!-- schématrons des JDV génériques -->
+    <include href="../include/jeuxDeValeurs/JDV_healthStatusCodes.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_approachSiteCode.sch"/> 
+    <include href="../include/jeuxDeValeurs/JDV_problemCodes.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_HL7_conditionClinical.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_TypeEffetIndesirablePrevisible.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_ImmunizationRouteCodes.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_vitalSignCode.sch"/>   
+    <include href="../include/jeuxDeValeurs/JDV_administrativeGenderCode.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_SocialHistoryCodes.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_ImmunizationCode.sch"/>
+    
+    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
     <!-- ::::::::::::::::::::::::::::::::::::: -->
 
     <phase id="CI-SIS_ModelesDeContenusCDA">
+        
+        <!-- obligatoire dans tout schématron -->
+        <active pattern="variablesSM"/>
         
         <!-- Activation des entrées  -->
         <active pattern="E_allergiesAndIntoleranceConcern_fr"/>
@@ -298,5 +321,45 @@
         <active pattern="E_motifArretTraitement_fr"/>
         <active pattern="E_modaliteSortie_fr"/>
         <active pattern="E_modaliteEntree_fr"/>
+        
+        <!-- schématrons des JDV génériques -->
+        <active pattern="JDV_HL7_allergyintolerance_clinical"/>
+        <active pattern="JDV_HL7_conditionclinical"/>
+        <active pattern="JDV_healthStatusCodes"/>        
+        <active pattern="JDV_TypeEffetIndesirablePrevisible"/>  
+        <active pattern="JDV_problemCodes"/>          
+        <active pattern="JDV_substanceAdministration_approachSiteCode"/>         
+        <active pattern="JDV_substanceAdministration_ImmunizationRouteCodes"/>
+        <active pattern="JDV_vitalSignCode"/>     
+        <active pattern="JDV_administrativeGenderCode"/>
+        <active pattern="JDV_SocialHistoryCodes"/>
+        <active pattern="JDV_TypeDirectiveAnticipee"/>
+        <active pattern="immunizationCode"/>
+        <active pattern="JDV_HL7_PersonalRelationshipRoleType"/>
     </phase>
+    
+    <!-- ::::::::::::::::::::::::::::::::::::: -->
+    <!--           Variables globales          -->
+    <!-- ::::::::::::::::::::::::::::::::::::: -->
+    
+    <pattern id="variablesSM">
+        <!-- JDV génériques -->
+        <let name="jdv_actSubstanceAdministrationImmunizationCode" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS.xml'"/>        
+        <let name="jdv_clinicalStatusCodes" value="'../../jeuxDeValeurs/JDV_ClinicalStatusCodes_CISIS.xml'"/>
+        <let name="jdv_healthStatusCodes" value="'../../jeuxDeValeurs/JDV_HealthStatusCodes_CISIS.xml'"/>        
+        <let name="jdv_typeEffetIndesirablePrevisible" value="'../../jeuxDeValeurs/JDV_TypeEffetIndesirablePrevisible_CISIS.xml'"/>
+        <let name="jdv_problemCodes" value="'../../jeuxDeValeurs/JDV_ProblemCodes_CISIS.xml'"/>
+        <let name="jdv_HL7_allergyintolerance_clinical" value="'../../jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical_CISIS.xml'"/>
+        <let name="jdv_HL7_conditionclinical" value="'../../jeuxDeValeurs/JDV_HL7_ConditionClinical_CISIS.xml'"/>
+        <let name="jdv_substanceAdministration_approachSiteCode" value="'../../jeuxDeValeurs/JDV_ImmunizationApproachSiteCode_CISIS.xml'"/>
+        <let name="jdv_substanceAdministration_ImmunizationRouteCodes" value="'../../jeuxDeValeurs/JDV_ImmunizationRouteCodes_CISIS.xml'"/>
+        <let name="jdv_vitalSignCode" value="'../../jeuxDeValeurs/JDV_SignesVitaux_CISIS.xml'"/>
+        <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/JDV_J143_AdministrativeGender_CISIS.xml'"/>
+        <let name="jdv_SocialHistoryCodes" value="'../../jeuxDeValeurs/JDV_SocialHistoryCodes_CISIS.xml'"/>
+        <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee_CISIS.xml'"/>
+        <let name="jdv_immunization_1" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS.xml'"/>
+        <let name="jdv_immunization_2" value="'../../jeuxDeValeurs/JDV_AbsentOrUnknownImmunization_CISIS.xml'"/>
+        <let name="jdv_HL7_PersonalRelationshipRoleType_CISIS" value="'../../jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType_CISIS.xml'"/>
+    </pattern>
+
 </schema>
