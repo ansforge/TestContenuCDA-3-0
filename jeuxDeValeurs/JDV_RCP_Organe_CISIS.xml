@@ -1,64 +1,298 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_RCP_Organe_CISIS" id="1.2.250.1.213.1.1.5.598" version="test">
-        <ConceptList>
-            <Concept code="57171008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="structure du système hématopoïétique"/>
-            <Concept code="C3211" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="lymphome non hodgkinien"/>
-            <Concept code="C88" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20210419000000" displayName="Maladies immunoprolifératives malignes"/>
-            <Concept code="C9357" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Lymphome de Hodgkin"/>
-            <Concept code="C3483" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="leucémie chronique"/>
-            <Concept code="C3163" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Leucémie lymphocytique chronique"/>
-            <Concept code="C3167" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Leucémie lymphoblastique aiguë"/>
-            <Concept code="C3172" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Leucémie myéloïde"/>
-            <Concept code="C3171" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="leucémie myéloïde aiguë"/>
-            <Concept code="C3174" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="leucémie myéloïde chronique BCR-ABL positive"/>
-            <Concept code="C4861" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="leucémie monocytaire aiguë"/>
-            <Concept code="C9300" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="leucémie aiguë"/>
-            <Concept code="119253004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="voie aérodigestive supérieure"/>
-            <Concept code="MED-237" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Fosses nasales, sinus, oreille moy/int"/>
-            <Concept code="MED-251" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Colon-Rectum-Anus"/>
-            <Concept code="303270005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="foie et/ou voies biliaires"/>
-            <Concept code="C27262" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="maladies myélodysplasiques-myéloprolifératives"/>
-            <Concept code="C3242" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="myélome à cellules plasmatiques"/>
-            <Concept code="MED-255" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210419000000" displayName="Trachée, Bronches, Poumon"/>
-            <Concept code="39937001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="peau"/>
-            <Concept code="76752008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sein"/>
-            <Concept code="306721000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="os et/ou articulation"/>
-            <Concept code="87784001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="tissus mous"/>
-            <Concept code="312419003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil respiratoire et/ou cavité thoracique"/>
-            <Concept code="4596009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="larynx"/>
-            <Concept code="3120008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="plèvre"/>
-            <Concept code="86762007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système digestif"/>
-            <Concept code="74262004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="cavité orale"/>
-            <Concept code="48477009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="lèvre de la bouche"/>
-            <Concept code="21974007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="langue"/>
-            <Concept code="54066008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="pharynx"/>
-            <Concept code="32849002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="œsophage"/>
-            <Concept code="69695003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="estomac"/>
-            <Concept code="30315005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="intestin grêle"/>
-            <Concept code="385294005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande salivaire"/>
-            <Concept code="15776009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="pancréas"/>
-            <Concept code="122489005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système urinaire"/>
-            <Concept code="431491007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="voies urinaires supérieures proprement dites"/>
-            <Concept code="64033007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="rein"/>
-            <Concept code="89837001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="vessie"/>
-            <Concept code="53065001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil génital féminin"/>
-            <Concept code="C94529" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Vulve et vagin"/>
-            <Concept code="23952005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="corps de l'utérus"/>
-            <Concept code="71252005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="col utérin"/>
-            <Concept code="15497006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="ovaire"/>
-            <Concept code="90264002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil génital masculin"/>
-            <Concept code="18911002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="pénis"/>
-            <Concept code="41216001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="prostate"/>
-            <Concept code="40689003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="testicule"/>
-            <Concept code="21483005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système nerveux central"/>
-            <Concept code="84782009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="nerf périphérique"/>
-            <Concept code="81745001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="œil"/>
-            <Concept code="387910009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande endocrine"/>
-            <Concept code="23451007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande surrénale"/>
-            <Concept code="69748006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande thyroïde"/>
-            <Concept code="72410000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="médiastin"/>
-            <Concept code="C12664" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210419000000" displayName="Péritoine-rétropéritoine"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_RCP_Organe_CISIS"
+             id="1.2.250.1.213.1.1.5.598"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="57171008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="structure du système hématopoïétique"/>
+         <Concept code="C3211"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="lymphome non hodgkinien"/>
+         <Concept code="C88"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Maladies immunoprolifératives malignes"/>
+         <Concept code="C9357"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Lymphome de Hodgkin"/>
+         <Concept code="C3483"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="leucémie chronique"/>
+         <Concept code="C3163"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Leucémie lymphocytique chronique"/>
+         <Concept code="C3167"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Leucémie lymphoblastique aiguë"/>
+         <Concept code="C3172"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Leucémie myéloïde"/>
+         <Concept code="C3171"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="leucémie myéloïde aiguë"/>
+         <Concept code="C3174"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="leucémie myéloïde chronique BCR-ABL positive"/>
+         <Concept code="C4861"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="leucémie monocytaire aiguë"/>
+         <Concept code="C9300"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="leucémie aiguë"/>
+         <Concept code="119253004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="voie aérodigestive supérieure"/>
+         <Concept code="MED-237"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Fosses nasales, sinus, oreille moy/int"/>
+         <Concept code="MED-251"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Colon-Rectum-Anus"/>
+         <Concept code="303270005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="foie et/ou voies biliaires"/>
+         <Concept code="C27262"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="maladies myélodysplasiques-myéloprolifératives"/>
+         <Concept code="C3242"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="myélome à cellules plasmatiques"/>
+         <Concept code="MED-255"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Trachée, Bronches, Poumon"/>
+         <Concept code="39937001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="peau"/>
+         <Concept code="76752008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="sein"/>
+         <Concept code="306721000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="os et/ou articulation"/>
+         <Concept code="87784001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="tissus mous"/>
+         <Concept code="312419003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil respiratoire et/ou cavité thoracique"/>
+         <Concept code="4596009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="larynx"/>
+         <Concept code="3120008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="plèvre"/>
+         <Concept code="86762007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système digestif"/>
+         <Concept code="74262004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="cavité orale"/>
+         <Concept code="48477009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="lèvre de la bouche"/>
+         <Concept code="21974007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="langue"/>
+         <Concept code="54066008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="pharynx"/>
+         <Concept code="32849002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="œsophage"/>
+         <Concept code="69695003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="estomac"/>
+         <Concept code="30315005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="intestin grêle"/>
+         <Concept code="385294005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="glande salivaire"/>
+         <Concept code="15776009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="pancréas"/>
+         <Concept code="122489005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système urinaire"/>
+         <Concept code="431491007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="voies urinaires supérieures proprement dites"/>
+         <Concept code="64033007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="rein"/>
+         <Concept code="89837001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="vessie"/>
+         <Concept code="53065001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil génital féminin"/>
+         <Concept code="C94529"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Vulve et vagin"/>
+         <Concept code="23952005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="corps de l'utérus"/>
+         <Concept code="71252005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="col utérin"/>
+         <Concept code="15497006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="ovaire"/>
+         <Concept code="90264002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil génital masculin"/>
+         <Concept code="18911002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="pénis"/>
+         <Concept code="41216001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="prostate"/>
+         <Concept code="40689003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="testicule"/>
+         <Concept code="21483005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système nerveux central"/>
+         <Concept code="84782009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="nerf périphérique"/>
+         <Concept code="81745001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="œil"/>
+         <Concept code="387910009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="glande endocrine"/>
+         <Concept code="23451007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="glande surrénale"/>
+         <Concept code="69748006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="glande thyroïde"/>
+         <Concept code="72410000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="médiastin"/>
+         <Concept code="C12664"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Péritoine-rétropéritoine"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

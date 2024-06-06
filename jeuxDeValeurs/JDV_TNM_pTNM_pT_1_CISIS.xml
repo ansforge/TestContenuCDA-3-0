@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TNM_pTNM_pT_1_CISIS" id="1.2.250.1.213.1.1.5.519" version="test">
-        <ConceptList>
-            <Concept code="MED-787" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Évaluation impossible"/>
-            <Concept code="MED-788" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Pas de tumeur retrouvée"/>
-            <Concept code="MED-805" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur &lt;= 2 cm"/>
-            <Concept code="MED-806" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur &gt; 2 cm et &lt;= 5 cm"/>
-            <Concept code="MED-807" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur &gt; 5 cm et &lt;= 10 cm"/>
-            <Concept code="MED-808" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur &gt; 10 cm"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TNM_pTNM_pT_1_CISIS"
+             id="1.2.250.1.213.1.1.5.519"
+             revisionDate="2021-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-787"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Évaluation impossible"/>
+         <Concept code="MED-788"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Pas de tumeur retrouvée"/>
+         <Concept code="MED-805"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur &lt;= 2 cm"/>
+         <Concept code="MED-806"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur &gt; 2 cm et &lt;= 5 cm"/>
+         <Concept code="MED-807"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur &gt; 5 cm et &lt;= 10 cm"/>
+         <Concept code="MED-808"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur &gt; 10 cm"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

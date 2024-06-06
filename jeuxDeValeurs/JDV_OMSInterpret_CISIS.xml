@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_OMSInterpret_CISIS" id="1.2.250.1.213.1.1.4.2.281.2" version="test">
-        <ConceptList>
-            <Concept code="LA9622-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240405000000" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction."/>
-            <Concept code="LA9623-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240405000000" displayName="Activité physique diminuée mais ambulatoire et capable de mener un travail"/>
-            <Concept code="LA9624-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240405000000" displayName="Ambulatoire et capable de prendre soin de soi-même, incapable de travailler. Alité moins de 50 % de son temps"/>
-            <Concept code="LA9625-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240405000000" displayName="Capable seulement de quelques soins. Alité ou en chaise plus de 50 % du temps"/>
-            <Concept code="LA9626-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240405000000" displayName="Incapable de prendre soins de soi-même. Alité ou en chaise en permanence"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_OMSInterpret_CISIS"
+             id="1.2.250.1.213.1.1.4.2.281.2"
+             revisionDate="2024-04-05T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA9622-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240405000000"
+                  displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction."/>
+         <Concept code="LA9623-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240405000000"
+                  displayName="Activité physique diminuée mais ambulatoire et capable de mener un travail"/>
+         <Concept code="LA9624-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240405000000"
+                  displayName="Ambulatoire et capable de prendre soin de soi-même, incapable de travailler. Alité moins de 50 % de son temps"/>
+         <Concept code="LA9625-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240405000000"
+                  displayName="Capable seulement de quelques soins. Alité ou en chaise plus de 50 % du temps"/>
+         <Concept code="LA9626-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240405000000"
+                  displayName="Incapable de prendre soins de soi-même. Alité ou en chaise en permanence"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

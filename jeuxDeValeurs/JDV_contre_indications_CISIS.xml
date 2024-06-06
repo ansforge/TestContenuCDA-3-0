@@ -1,29 +1,123 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Contre_indications_CISIS" id="1.2.250.1.213.1.1.5.659" version="test">
-        <ConceptList>
-            <Concept code="77386006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="Enceinte"/>
-            <Concept code="1260078007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="Allaitement"/>
-            <Concept code="MED-1105" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Hypersensibilité au PDC iodé"/>
-            <Concept code="N18.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20230330000000" displayName="Maladie rénale chronique, sans précision"/>
-            <Concept code="MED-1106" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Hyperthyroidie non traitée"/>
-            <Concept code="MED-1107" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Antécédents chirurgicaux digestifs récents contre-indiquant l’usage de produit baryté et nécessitant l’usage d’un produit hydrosoluble"/>
-            <Concept code="MED-1108" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Hypersensibilité au PDC ultrasonore"/>
-            <Concept code="I50.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20211216000000" displayName="Insuffisance cardiaque, sans précision"/>
-            <Concept code="MED-1109" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient claustrophobe"/>
-            <Concept code="MED-1110" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur de corps étranger ferromagnétique (œil ou autre)"/>
-            <Concept code="MED-1111" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur de clips métalliques ou coils intracrâniens"/>
-            <Concept code="MED-1112" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’un implant cochléaire"/>
-            <Concept code="MED-1113" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’un neurostimulateur"/>
-            <Concept code="MED-1114" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’une sonde de dérivation du LCS"/>
-            <Concept code="MED-1115" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’un capteur implanté"/>
-            <Concept code="MED-1116" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’une pompe implantée"/>
-            <Concept code="MED-1117" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur de Pacemaker"/>
-            <Concept code="MED-1118" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’une valve cardiaque mécanique"/>
-            <Concept code="MED-1119" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’un matériel d'orthodontie"/>
-            <Concept code="MED-1120" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Patient porteur d’un stent ou un filtre cave"/>
-            <Concept code="MED-1122" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20211216000000" displayName="Hypersensibilité au produit de contraste gadoliné"/>
-            <Concept code="GEN-092.01.20" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre contre-indication connue"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Contre_indications_CISIS"
+             id="1.2.250.1.213.1.1.5.659"
+             revisionDate="2023-04-28T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="77386006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="Enceinte"/>
+         <Concept code="1260078007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="Allaitement"/>
+         <Concept code="MED-1105"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Hypersensibilité au PDC iodé"/>
+         <Concept code="N18.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Maladie rénale chronique, sans précision"/>
+         <Concept code="MED-1106"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Hyperthyroidie non traitée"/>
+         <Concept code="MED-1107"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Antécédents chirurgicaux digestifs récents contre-indiquant l’usage de produit baryté et nécessitant l’usage d’un produit hydrosoluble"/>
+         <Concept code="MED-1108"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Hypersensibilité au PDC ultrasonore"/>
+         <Concept code="I50.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Insuffisance cardiaque, sans précision"/>
+         <Concept code="MED-1109"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient claustrophobe"/>
+         <Concept code="MED-1110"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur de corps étranger ferromagnétique (œil ou autre)"/>
+         <Concept code="MED-1111"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur de clips métalliques ou coils intracrâniens"/>
+         <Concept code="MED-1112"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’un implant cochléaire"/>
+         <Concept code="MED-1113"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’un neurostimulateur"/>
+         <Concept code="MED-1114"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’une sonde de dérivation du LCS"/>
+         <Concept code="MED-1115"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’un capteur implanté"/>
+         <Concept code="MED-1116"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’une pompe implantée"/>
+         <Concept code="MED-1117"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur de Pacemaker"/>
+         <Concept code="MED-1118"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’une valve cardiaque mécanique"/>
+         <Concept code="MED-1119"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’un matériel d'orthodontie"/>
+         <Concept code="MED-1120"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Patient porteur d’un stent ou un filtre cave"/>
+         <Concept code="MED-1122"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20211216000000"
+                  displayName="Hypersensibilité au produit de contraste gadoliné"/>
+         <Concept code="GEN-092.01.20"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre contre-indication connue"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

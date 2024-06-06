@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSAtaxInt_CISIS" id="1.2.250.1.213.1.1.5.187" version="test">
-        <ConceptList>
-            <Concept code="LA9634-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Absente."/>
-            <Concept code="LA18466-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Présente pour un membre."/>
-            <Concept code="LA18467-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Présente pour deux membres."/>
-            <Concept code="LA18461-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Amputation, blocage articulaire (expliquer)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSAtaxInt_CISIS"
+             id="1.2.250.1.213.1.1.5.187"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA9634-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Absente."/>
+         <Concept code="LA18466-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Présente pour un membre."/>
+         <Concept code="LA18467-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Présente pour deux membres."/>
+         <Concept code="LA18461-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Amputation, blocage articulaire (expliquer)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

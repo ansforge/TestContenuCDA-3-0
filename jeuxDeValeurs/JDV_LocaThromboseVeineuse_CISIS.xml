@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_LocaThromboseVeineuse_CISIS" id="1.2.250.1.213.1.1.5.215" version="test">
-        <ConceptList>
-            <Concept code="MED-450" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Sinus longitudinal supérieur partiel"/>
-            <Concept code="24773008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus sagittal supérieur"/>
-            <Concept code="1290463001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sinus transverse droit"/>
-            <Concept code="1290462006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sinus transverse gauche"/>
-            <Concept code="38745009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus droit"/>
-            <Concept code="68351006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine de l'encéphale"/>
-            <Concept code="764263004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine jugulaire droite"/>
-            <Concept code="764262009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine jugulaire gauche"/>
-            <Concept code="87003004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="veine profonde"/>
-            <Concept code="18782006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sinus caverneux"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_LocaThromboseVeineuse_CISIS"
+             id="1.2.250.1.213.1.1.5.215"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-450"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sinus longitudinal supérieur partiel"/>
+         <Concept code="24773008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="sinus sagittal supérieur"/>
+         <Concept code="1290463001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="sinus transverse droit"/>
+         <Concept code="1290462006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="sinus transverse gauche"/>
+         <Concept code="38745009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="sinus droit"/>
+         <Concept code="68351006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="veine de l'encéphale"/>
+         <Concept code="764263004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="veine jugulaire droite"/>
+         <Concept code="764262009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="veine jugulaire gauche"/>
+         <Concept code="87003004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="veine profonde"/>
+         <Concept code="18782006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="sinus caverneux"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

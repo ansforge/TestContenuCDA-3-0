@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_UFCV_Connx_CISIS" id="1.2.250.1.213.1.1.4.2.17" version="test">
-        <ConceptList>
-            <Concept code="D0020-1" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="3.2mm"/>
-            <Concept code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="IS-1"/>
-            <Concept code="D0020-3" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="5 mm"/>
-            <Concept code="D0020-4" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="6 mm"/>
-            <Concept code="D0020-5" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="IS-4"/>
-            <Concept code="D0020-6" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="LV-1"/>
-            <Concept code="D0020-7" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="DF-1"/>
-            <Concept code="D0020-8" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="DF-4"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_Connx_CISIS"
+             id="1.2.250.1.213.1.1.4.2.17"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="D0020-1"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="3.2mm"/>
+         <Concept code="D0020-2"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="IS-1"/>
+         <Concept code="D0020-3"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="5 mm"/>
+         <Concept code="D0020-4"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="6 mm"/>
+         <Concept code="D0020-5"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="IS-4"/>
+         <Concept code="D0020-6"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="LV-1"/>
+         <Concept code="D0020-7"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="DF-1"/>
+         <Concept code="D0020-8"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="DF-4"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Readaptation_CISIS" id="1.2.250.1.213.1.1.5.66" version="test">
-        <ConceptList>
-            <Concept code="G15_60" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Infirmier"/>
-            <Concept code="G15_70" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Masseur-Kinésithérapeute"/>
-            <Concept code="G15_94" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Ergothérapeute"/>
-            <Concept code="G15_91" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Orthophoniste"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Readaptation_CISIS"
+             id="1.2.250.1.213.1.1.5.66"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="G15_60"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Infirmier"/>
+         <Concept code="G15_70"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Masseur-Kinésithérapeute"/>
+         <Concept code="G15_94"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ergothérapeute"/>
+         <Concept code="G15_91"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Orthophoniste"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

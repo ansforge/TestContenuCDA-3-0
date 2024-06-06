@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_InvestigationsRealisees_CISIS" id="1.2.250.1.213.1.1.5.47" version="test">
-        <ConceptList>
-            <Concept code="58147004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="clinique"/>
-            <Concept code="12893009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="biologique"/>
-            <Concept code="80534008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="biochimique"/>
-            <Concept code="363679005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="imagerie"/>
-            <Concept code="116148004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="procédé de génétique moléculaire"/>
-            <Concept code="73735000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="procédure cytogénétique"/>
-            <Concept code="12894003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="évaluation fonctionnelle"/>
-            <Concept code="108257001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="intervention en anatomopathologie"/>
-            <Concept code="GEN-092.04.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres investigations"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_InvestigationsRealisees_CISIS"
+             id="1.2.250.1.213.1.1.5.47"
+             revisionDate="2024-03-15T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="58147004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="clinique"/>
+         <Concept code="12893009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="biologique"/>
+         <Concept code="80534008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="biochimique"/>
+         <Concept code="363679005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="imagerie"/>
+         <Concept code="116148004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="procédé de génétique moléculaire"/>
+         <Concept code="73735000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="procédure cytogénétique"/>
+         <Concept code="12894003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="évaluation fonctionnelle"/>
+         <Concept code="108257001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="intervention en anatomopathologie"/>
+         <Concept code="GEN-092.04.03"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autres investigations"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

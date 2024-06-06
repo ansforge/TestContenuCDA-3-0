@@ -1,53 +1,243 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ModificateurTopographique_CISIS" id="1.2.250.1.213.1.1.5.688" version="test">
-        <ConceptList>
-            <Concept code="24028007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="droit"/>
-            <Concept code="7771000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="gauche"/>
-            <Concept code="51440002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="bilatéral"/>
-            <Concept code="66459002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="unilatéral(e)"/>
-            <Concept code="49370004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="latéral(e)"/>
-            <Concept code="260528009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="médian(e)"/>
-            <Concept code="255549009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="antérieur(e)"/>
-            <Concept code="255551008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="postérieur(e)"/>
-            <Concept code="66787007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="céphalique"/>
-            <Concept code="3583002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="caudal(e)"/>
-            <Concept code="255561001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="médial(e)"/>
-            <Concept code="26216008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="central(e)"/>
-            <Concept code="14414005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="périphérique"/>
-            <Concept code="261074009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="externe"/>
-            <Concept code="260521003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="interne"/>
-            <Concept code="11896004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="intermédiaire"/>
-            <Concept code="261089000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="inférieur(e)"/>
-            <Concept code="264217000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="supérieur(e)"/>
-            <Concept code="62824007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="transverse"/>
-            <Concept code="40415009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="proximal(e)"/>
-            <Concept code="46053002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="distal(e)"/>
-            <Concept code="60583000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="postaxial"/>
-            <Concept code="32400000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="préaxial"/>
-            <Concept code="43674008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="apical(e)"/>
-            <Concept code="57195005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="basal(e)"/>
-            <Concept code="49530007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="afférent(e)"/>
-            <Concept code="33843005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="efférent(e)"/>
-            <Concept code="81654009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="coronal(e)"/>
-            <Concept code="26283006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="superficiel(le)"/>
-            <Concept code="795002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="profond(e)"/>
-            <Concept code="24020000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="horizontal(e)"/>
-            <Concept code="38717003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="longitudinal(e)"/>
-            <Concept code="33096000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="vertical(e)"/>
-            <Concept code="30730003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="sagital(le)"/>
-            <Concept code="24422004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="axial(e)"/>
-            <Concept code="87687004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="extra-articulaire"/>
-            <Concept code="410679008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="surface"/>
-            <Concept code="68493006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="gouttière"/>
-            <Concept code="32381004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="hilaire"/>
-            <Concept code="11070000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="capsulaire"/>
-            <Concept code="61397002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="sous-capsulaire"/>
-            <Concept code="57183005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="le long d'un bord"/>
-            <Concept code="37197008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="antérolatéral(e)"/>
-            <Concept code="90069004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="postérolatéral(e)"/>
-            <Concept code="131183008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="intra-articulaire"/>
-            <Concept code="112233002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221114000000" displayName="marginal"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ModificateurTopographique_CISIS"
+             id="1.2.250.1.213.1.1.5.688"
+             revisionDate="2022-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="24028007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="droit"/>
+         <Concept code="7771000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="gauche"/>
+         <Concept code="51440002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="bilatéral"/>
+         <Concept code="66459002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="unilatéral(e)"/>
+         <Concept code="49370004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="latéral(e)"/>
+         <Concept code="260528009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="médian(e)"/>
+         <Concept code="255549009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="antérieur(e)"/>
+         <Concept code="255551008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="postérieur(e)"/>
+         <Concept code="66787007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="céphalique"/>
+         <Concept code="3583002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="caudal(e)"/>
+         <Concept code="255561001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="médial(e)"/>
+         <Concept code="26216008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="central(e)"/>
+         <Concept code="14414005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="périphérique"/>
+         <Concept code="261074009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="externe"/>
+         <Concept code="260521003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="interne"/>
+         <Concept code="11896004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="intermédiaire"/>
+         <Concept code="261089000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="inférieur(e)"/>
+         <Concept code="264217000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="supérieur(e)"/>
+         <Concept code="62824007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="transverse"/>
+         <Concept code="40415009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="proximal(e)"/>
+         <Concept code="46053002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="distal(e)"/>
+         <Concept code="60583000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="postaxial"/>
+         <Concept code="32400000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="préaxial"/>
+         <Concept code="43674008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="apical(e)"/>
+         <Concept code="57195005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="basal(e)"/>
+         <Concept code="49530007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="afférent(e)"/>
+         <Concept code="33843005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="efférent(e)"/>
+         <Concept code="81654009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="coronal(e)"/>
+         <Concept code="26283006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="superficiel(le)"/>
+         <Concept code="795002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="profond(e)"/>
+         <Concept code="24020000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="horizontal(e)"/>
+         <Concept code="38717003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="longitudinal(e)"/>
+         <Concept code="33096000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="vertical(e)"/>
+         <Concept code="30730003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="sagital(le)"/>
+         <Concept code="24422004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="axial(e)"/>
+         <Concept code="87687004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="extra-articulaire"/>
+         <Concept code="410679008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="surface"/>
+         <Concept code="68493006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="gouttière"/>
+         <Concept code="32381004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="hilaire"/>
+         <Concept code="11070000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="capsulaire"/>
+         <Concept code="61397002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="sous-capsulaire"/>
+         <Concept code="57183005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="le long d'un bord"/>
+         <Concept code="37197008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="antérolatéral(e)"/>
+         <Concept code="90069004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="postérolatéral(e)"/>
+         <Concept code="131183008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="intra-articulaire"/>
+         <Concept code="112233002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221114000000"
+                  displayName="marginal"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

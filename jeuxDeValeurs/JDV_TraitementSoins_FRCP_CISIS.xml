@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TraitementSoins_FRCP_CISIS" id="1.2.250.1.213.1.1.5.596" version="test">
-        <ConceptList>
-            <Concept code="C3580" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="métastases osseuses"/>
-            <Concept code="C3303" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="douleur"/>
-            <Concept code="C15252" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20230725000000" displayName="soins palliatifs"/>
-            <Concept code="C63334" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="Radiologie interventionnelle"/>
-            <Concept code="C15747" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="soins de support"/>
-            <Concept code="ORG-129" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210414000000" displayName="Oncogénétique"/>
-            <Concept code="ORG-130" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210414000000" displayName="Oncogériatrie"/>
-            <Concept code="C16832" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="oncologie médicale"/>
-            <Concept code="C71326" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="préservation de la fertilité"/>
-            <Concept code="C7201" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210414000000" displayName="tumeur rare"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TraitementSoins_FRCP_CISIS"
+             id="1.2.250.1.213.1.1.5.596"
+             revisionDate="2023-07-25T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="C3580"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="métastases osseuses"/>
+         <Concept code="C3303"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="douleur"/>
+         <Concept code="C15252"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20230725000000"
+                  displayName="soins palliatifs"/>
+         <Concept code="C63334"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="Radiologie interventionnelle"/>
+         <Concept code="C15747"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="soins de support"/>
+         <Concept code="ORG-129"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="Oncogénétique"/>
+         <Concept code="ORG-130"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="Oncogériatrie"/>
+         <Concept code="C16832"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="oncologie médicale"/>
+         <Concept code="C71326"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="préservation de la fertilité"/>
+         <Concept code="C7201"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210414000000"
+                  displayName="tumeur rare"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

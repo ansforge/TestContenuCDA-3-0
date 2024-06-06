@@ -1,364 +1,1798 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_LocalisationAnatomique_CISIS" id="1.2.250.1.213.1.1.5.694" version="test">
-        <ConceptList>
-            <Concept code="302553009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="abdomen entier"/>
-            <Concept code="244231007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte abdominale entière"/>
-            <Concept code="897132006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="segment transverse abdominal entier du tronc"/>
-            <Concept code="822978001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité abdominopelvienne entière"/>
-            <Concept code="182166001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation acromioclaviculaire entière"/>
-            <Concept code="181127006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="glande suprarénale entière"/>
-            <Concept code="361292008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de la cheville"/>
-            <Concept code="399978003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine cubitale antérieure entière"/>
-            <Concept code="43967001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine cardiaque antérieure entière"/>
-            <Concept code="181309000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère cérébrale antérieure entière"/>
-            <Concept code="181311009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère communicante antérieure entière"/>
-            <Concept code="181329004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère vertébrale antérieure entière"/>
-            <Concept code="181357006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère tibiale antérieure entière"/>
-            <Concept code="181262009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="anus entier"/>
-            <Concept code="181298001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte entière"/>
-            <Concept code="181300001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="arc aortique entier"/>
-            <Concept code="264843009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="apex entier du ventricule gauche"/>
-            <Concept code="314790003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="apex pulmonaire entier"/>
-            <Concept code="264913008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="apex entier du ventricule droit"/>
-            <Concept code="181255000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="appendice entier"/>
-            <Concept code="730364005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="zone entière du conduit auditif interne"/>
-            <Concept code="362877004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère entière"/>
-            <Concept code="244324006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère entière d'un membre inférieur"/>
-            <Concept code="244310007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère entière d'un membre supérieur"/>
-            <Concept code="181299009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte ascendante entière"/>
-            <Concept code="362162009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côlon ascendant entier"/>
-            <Concept code="261405004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="oreillette cardiaque entière"/>
-            <Concept code="181321001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère axillaire entière"/>
-            <Concept code="362732006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région axillaire entière"/>
-            <Concept code="181389002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine axillaire entière"/>
-            <Concept code="244407004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine azygos entière"/>
-            <Concept code="244215004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère basilaire entière"/>
-            <Concept code="276157007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit biliaire entier"/>
-            <Concept code="181267003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voies biliaires entières"/>
-            <Concept code="361097006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vaisseau sanguin entier"/>
-            <Concept code="38266002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="corps entier"/>
-            <Concept code="346902003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit corporel entier"/>
-            <Concept code="731691008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="coccyx entier"/>
-            <Concept code="731717004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="crâne entier"/>
-            <Concept code="731698002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fémur entier"/>
-            <Concept code="731660002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ilion entier"/>
-            <Concept code="361370006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os entier du membre inférieur"/>
-            <Concept code="731690009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="patella entière"/>
-            <Concept code="368532003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os entier du membre supérieur"/>
-            <Concept code="731684005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sacrum entier"/>
-            <Concept code="730852007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine perforante de Boyd entière"/>
-            <Concept code="181322008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère brachiale entière"/>
-            <Concept code="181002002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="plexus brachial entier"/>
-            <Concept code="181390006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine brachiale entière"/>
-            <Concept code="244244002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="tronc artériel brachiocéphalique entier"/>
-            <Concept code="181371003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine brachiocéphalique entière"/>
-            <Concept code="258335003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="encéphale entier"/>
-            <Concept code="181131000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sein entier"/>
-            <Concept code="362723009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ligament large entier"/>
-            <Concept code="181215002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="bronche entière"/>
-            <Concept code="244247009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère bronchique entière"/>
-            <Concept code="362677002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fesse entière"/>
-            <Concept code="182099002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="calcanéum entier"/>
-            <Concept code="244015008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="mollet entier"/>
-            <Concept code="276832000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="calice rénal entier"/>
-            <Concept code="277699000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ventricule cardiaque entier"/>
-            <Concept code="362040006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère carotide entière"/>
-            <Concept code="281137000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sinus carotidien entier"/>
-            <Concept code="897047000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité entière du grand bassin"/>
-            <Concept code="818953007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité entière du petit bassin"/>
-            <Concept code="181340007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="tronc cœliaque entier"/>
-            <Concept code="181391005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine céphalique entière"/>
-            <Concept code="180924008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cervelet entier"/>
-            <Concept code="181308008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère cérébrale entière"/>
-            <Concept code="278251007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="hémisphère cérébral entier"/>
-            <Concept code="870632003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère cervicale entière"/>
-            <Concept code="361684008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="colonne vertébrale cervicale entière"/>
-            <Concept code="1145015006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="jonction cervicothoracique vertébrale entière"/>
-            <Concept code="181453009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="col utérin entier"/>
-            <Concept code="182325008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="joue entière"/>
-            <Concept code="181608004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="paroi thoracique entière"/>
-            <Concept code="264450003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="plexus choroïde entier"/>
-            <Concept code="362047009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cercle de Willis entier"/>
-            <Concept code="181910004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="clavicule entière"/>
-            <Concept code="302508007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côlon entier"/>
-            <Concept code="362199009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit biliaire commun entier"/>
-            <Concept code="362041005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère carotide commune entière"/>
-            <Concept code="727608008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère fémorale commune entière"/>
-            <Concept code="732146000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine fémorale commune entière"/>
-            <Concept code="362050007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère iliaque commune entière"/>
-            <Concept code="181398004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine iliaque commune entière"/>
-            <Concept code="181162001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cornée entière"/>
-            <Concept code="181294004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère coronaire entière"/>
-            <Concept code="244386006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sinus coronaire entier"/>
-            <Concept code="264452006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité crânienne entière"/>
-            <Concept code="728315009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="denture entière"/>
-            <Concept code="362165006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côlon descendant entier"/>
-            <Concept code="181301002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte thoracique descendante entière"/>
-            <Concept code="731977000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="tube digestif entier"/>
-            <Concept code="730855009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine perforante de Dodd entière"/>
-            <Concept code="181247007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="duodénum entier"/>
-            <Concept code="1910005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="oreille entière"/>
-            <Concept code="76248009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière du coude"/>
-            <Concept code="362257002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité utérine entière"/>
-            <Concept code="278867007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="endomètre entier"/>
-            <Concept code="181432000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="épididyme entier"/>
-            <Concept code="362693006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région épigastrique entière"/>
-            <Concept code="181245004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="œsophage entier"/>
-            <Concept code="181178004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit auditif externe entier"/>
-            <Concept code="362044002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère carotide externe entière"/>
-            <Concept code="181352000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère iliaque externe entière"/>
-            <Concept code="181400000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine iliaque externe entière"/>
-            <Concept code="181373000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine jugulaire externe entière"/>
-            <Concept code="244486005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="œil entier"/>
-            <Concept code="732141005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région oculaire entière"/>
-            <Concept code="265782007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="paupière entière"/>
-            <Concept code="302549007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="face entière"/>
-            <Concept code="181328007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère faciale entière"/>
-            <Concept code="181799005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ossature entière de la face"/>
-            <Concept code="181463001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="salpinx entier"/>
-            <Concept code="244332003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère fémorale entière"/>
-            <Concept code="362071002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine fémorale entière"/>
-            <Concept code="302529003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fibula entière"/>
-            <Concept code="302541005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="doigt entier de la main, sauf le pouce"/>
-            <Concept code="362673003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="flanc entier"/>
-            <Concept code="272681004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fontanelle crânienne entière"/>
-            <Concept code="302545001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pied entier"/>
-            <Concept code="362741001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="avant-bras entier"/>
-            <Concept code="180932000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quatrième ventricule cérébral entier"/>
-            <Concept code="181269000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vésicule biliaire entière"/>
-            <Concept code="281060006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine gastrique entière"/>
-            <Concept code="244333008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère géniculée entière"/>
-            <Concept code="277728005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="grande veine cardiaque entière"/>
-            <Concept code="302546000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="hallux entier"/>
-            <Concept code="302539009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="main entière"/>
-            <Concept code="302548004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="tête entière"/>
-            <Concept code="302509004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cœur entier"/>
-            <Concept code="727223007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère entière du foie"/>
-            <Concept code="278191001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine hépatique entière"/>
-            <Concept code="302543008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de la hanche"/>
-            <Concept code="181923006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="humérus entier"/>
-            <Concept code="730856005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine perforante hunterienne entière"/>
-            <Concept code="182339008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de l'hypochondre"/>
-            <Concept code="182348003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région hypogastrique entière"/>
-            <Concept code="281490009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="partie laryngée entière du pharynx"/>
-            <Concept code="181249005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="iléon entier"/>
-            <Concept code="244330006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère iliaque entière"/>
-            <Concept code="732003000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine iliaque entière"/>
-            <Concept code="278013002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine pulmonaire inférieure gauche entière"/>
-            <Concept code="181341006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère mésentérique inférieure entière"/>
-            <Concept code="278012007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine pulmonaire inférieure droite entière"/>
-            <Concept code="181369003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine cave inférieure entière"/>
-            <Concept code="278960008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voie afférente entière du ventricule gauche"/>
-            <Concept code="278950004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voie afférente entière du ventricule droit"/>
-            <Concept code="204747008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="angle infrasternal entier"/>
-            <Concept code="243962005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région inguinale entière"/>
-            <Concept code="181189006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="oreille interne entière"/>
-            <Concept code="182176003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation entière du carpe"/>
-            <Concept code="361734005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit auditif interne entier de l'os temporal"/>
-            <Concept code="362045001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère carotide interne entière"/>
-            <Concept code="181346001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère iliaque interne entière"/>
-            <Concept code="181372005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine jugulaire interne entière"/>
-            <Concept code="361929003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="partie interne entière du nez"/>
-            <Concept code="244239009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère thoracique interne entière"/>
-            <Concept code="182221001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation entière du tarse"/>
-            <Concept code="244391007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine intracrânienne entière"/>
-            <Concept code="181811001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de la mâchoire"/>
-            <Concept code="181248002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="jéjunum entier"/>
-            <Concept code="302536002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation entière"/>
-            <Concept code="279160004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="incisure jugulaire du sternum entière"/>
-            <Concept code="181414000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="rein entier"/>
-            <Concept code="361291001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière du genou"/>
-            <Concept code="369324002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère lacrymale entière"/>
-            <Concept code="181254001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="gros intestin entier"/>
-            <Concept code="181212004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="larynx entier"/>
-            <Concept code="180930008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ventricule latéral entier"/>
-            <Concept code="244387002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="atrium gauche entier"/>
-            <Concept code="277930000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="appendice atrial gauche entier"/>
-            <Concept code="244385005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ventricule cardiaque gauche entier"/>
-            <Concept code="55188000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine hépatique gauche entière"/>
-            <Concept code="304374005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="branche principale gauche entière de la veine porte"/>
-            <Concept code="243972008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="bourse omentale entière"/>
-            <Concept code="243996003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="membre entier"/>
-            <Concept code="181327002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère linguale entière"/>
-            <Concept code="181268008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="foie entier"/>
-            <Concept code="181402008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine saphène interne entière"/>
-            <Concept code="243406001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant abdominal inférieur entier"/>
-            <Concept code="181135009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant mammaire inféro-interne entier"/>
-            <Concept code="362793004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="partie inférieure entière de la jambe, du genou à la cheville"/>
-            <Concept code="182281004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="membre inférieur entier"/>
-            <Concept code="181136005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant mammaire inféroexterne entier"/>
-            <Concept code="181420004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voies urinaires inférieures entières"/>
-            <Concept code="244285007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère lombaire entière"/>
-            <Concept code="1017226003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région lombaire entière"/>
-            <Concept code="302506006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="plexus lombaire entier"/>
-            <Concept code="361686005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="colonne vertébrale lombaire entière"/>
-            <Concept code="1145016007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="jonction lombosacrée vertébrale entière"/>
-            <Concept code="727322004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="lumière entière d'un vaisseau sanguin"/>
-            <Concept code="181216001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="poumon entier"/>
-            <Concept code="181756000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="nœud lymphatique entier"/>
-            <Concept code="362715007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="grand bassin entier"/>
-            <Concept code="181812008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="mandibule entière"/>
-            <Concept code="265784008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="mastoïde entière"/>
-            <Concept code="181813003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="maxillaire entier"/>
-            <Concept code="181217005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="médiastin entier"/>
-            <Concept code="281084003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère mésentérique entière"/>
-            <Concept code="304045008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine mésentérique entière"/>
-            <Concept code="280995004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation métacarpophalangienne entière"/>
-            <Concept code="302535003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation métatarsophalangienne entière"/>
-            <Concept code="181312002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère cérébrale moyenne entière"/>
-            <Concept code="54895000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine hépatique moyenne entière"/>
-            <Concept code="362717004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="petit bassin entier"/>
-            <Concept code="21082005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de la bouche"/>
-            <Concept code="770866008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="matrice entière de l'ongle"/>
-            <Concept code="770803002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ongle entier"/>
-            <Concept code="181801008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os nasal entier"/>
-            <Concept code="181203001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sinus paranasal entier"/>
-            <Concept code="179072008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité nasopharyngée entière"/>
-            <Concept code="181200003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="nasopharynx entier"/>
-            <Concept code="302550007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cou entier"/>
-            <Concept code="256864008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="nerf entier"/>
-            <Concept code="181195007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="nez entier"/>
-            <Concept code="244219005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère occipitale entière"/>
-            <Concept code="150289003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine occipitale entière"/>
-            <Concept code="362710002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="omentum entier"/>
-            <Concept code="181310005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère ophtalmique entière"/>
-            <Concept code="361732009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="canal optique entier"/>
-            <Concept code="363657000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="orbite entière proprement dite"/>
-            <Concept code="272683001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os zygomatique entier"/>
-            <Concept code="264070001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voie efférente entière du ventricule gauche"/>
-            <Concept code="264183003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voie efférente entière du ventricule droit"/>
-            <Concept code="181464007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ovaire entier"/>
-            <Concept code="181277001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pancréas entier"/>
-            <Concept code="181278006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="conduit pancréatique entier"/>
-            <Concept code="279232005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région parasternale entière"/>
-            <Concept code="181121007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="glande parathyroïde entière"/>
-            <Concept code="181234002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="glande parotide entière"/>
-            <Concept code="816977005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="segment transverse pelvien entier du tronc"/>
-            <Concept code="229765004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pelvis entier"/>
-            <Concept code="731160001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère pénienne entière"/>
-            <Concept code="265793009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pénis entier"/>
-            <Concept code="243990009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="périnée entier"/>
-            <Concept code="181359009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère péronière entière"/>
-            <Concept code="181211006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pharynx entier"/>
-            <Concept code="264194004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fosse hypophysaire entière"/>
-            <Concept code="181125003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="hypophyse entière"/>
-            <Concept code="181455002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="placenta entier"/>
-            <Concept code="181350008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère poplitée entière"/>
-            <Concept code="731976009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="fosse poplitée entière"/>
-            <Concept code="281065001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine poplitée entière"/>
-            <Concept code="362064007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine porte entière"/>
-            <Concept code="181313007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère cérébrale postérieure entière"/>
-            <Concept code="181314001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère communicante postérieure entière"/>
-            <Concept code="727505000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="affluent médial postérieur entier du système veineux superficiel du membre inférieur"/>
-            <Concept code="181358001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère tibiale postérieure entière"/>
-            <Concept code="60477001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine postérieure entière du ventricule gauche"/>
-            <Concept code="361317000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte primitive entière"/>
-            <Concept code="198813007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère pulmonaire primitive entière"/>
-            <Concept code="181348000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère fémorale profonde entière"/>
-            <Concept code="302640003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine fémorale profonde entière"/>
-            <Concept code="181422007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="prostate entière"/>
-            <Concept code="181380003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère pulmonaire entière"/>
-            <Concept code="181332001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère radiale entière"/>
-            <Concept code="182178002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation radiocarpienne entière"/>
-            <Concept code="181940002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="radius entier"/>
-            <Concept code="181447009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cul-de-sac recto-utérin entier"/>
-            <Concept code="181261002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="rectum entier"/>
-            <Concept code="243984005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région de l'espace rétropéritonéal en entier"/>
-            <Concept code="181339005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère rénale entière"/>
-            <Concept code="362221007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pelvis rénal entier"/>
-            <Concept code="181370002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine rénale entière"/>
-            <Concept code="302523002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côte entière"/>
-            <Concept code="244383003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="oreillette droite entière"/>
-            <Concept code="277713005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="appendice auriculaire droit entier"/>
-            <Concept code="244384009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ventricule cardiaque droit entier"/>
-            <Concept code="18135006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine hépatique droite entière"/>
-            <Concept code="304375006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="branche principale droite entière de la veine porte"/>
-            <Concept code="730859003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="poche de Rutherford Morison entière"/>
-            <Concept code="182199004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation sacro-iliaque entière"/>
-            <Concept code="244414002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="jonction saphénofémorale entière"/>
-            <Concept code="732135003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine saphène entière"/>
-            <Concept code="181480002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cuir chevelu entier"/>
-            <Concept code="302517007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="scapula entière"/>
-            <Concept code="181163006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sclère entière"/>
-            <Concept code="265794003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="scrotum entier"/>
-            <Concept code="181434004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vésicule séminale entière"/>
-            <Concept code="1163304004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ganglion sentinelle entier"/>
-            <Concept code="244675002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os sésamoïde entier du pied"/>
-            <Concept code="361103004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière de l'épaule"/>
-            <Concept code="362166007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côlon sigmoïde entier"/>
-            <Concept code="245012000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="muscle squelettique entier du membre inférieur"/>
-            <Concept code="244978002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="muscle squelettique entier du membre supérieur"/>
-            <Concept code="361378004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="squelette entier"/>
-            <Concept code="181250005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="intestin grêle entier"/>
-            <Concept code="180959008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="moelle spinale entière"/>
-            <Concept code="181279003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="rate entière"/>
-            <Concept code="244266009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère splénique entière"/>
-            <Concept code="278029005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine splénique entière"/>
-            <Concept code="182165002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation sternoclaviculaire entière"/>
-            <Concept code="302522007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="sternum entier"/>
-            <Concept code="181246003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="estomac entier"/>
-            <Concept code="265790007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère subclavière entière"/>
-            <Concept code="181388005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine subclavière entière"/>
-            <Concept code="361357002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="zone sous-mandibulaire entière"/>
-            <Concept code="727093009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="appareil salivaire sous-maxillaire entier"/>
-            <Concept code="362635002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="trigone submental entier"/>
-            <Concept code="727609000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère fémorale superficielle entière"/>
-            <Concept code="732147009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine fémorale superficielle entière"/>
-            <Concept code="181325005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère temporale superficielle entière"/>
-            <Concept code="278014008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine pulmonaire supérieure gauche entière"/>
-            <Concept code="362048004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère mésentérique supérieure entière"/>
-            <Concept code="278011000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine pulmonaire supérieure droite entière"/>
-            <Concept code="244218002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère thyroïdienne supérieure entière"/>
-            <Concept code="181368006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine cave supérieure entière"/>
-            <Concept code="362656000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région supraclaviculaire entière du cou"/>
-            <Concept code="181795004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="os temporal entier"/>
-            <Concept code="181814009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="articulation temporomandibulaire entière"/>
-            <Concept code="181431007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="testicule entier"/>
-            <Concept code="244433007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="thalamus entier"/>
-            <Concept code="302544002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cuisse entière"/>
-            <Concept code="180931007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="troisième ventricule cérébral entier"/>
-            <Concept code="302510009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="aorte thoracique entière"/>
-            <Concept code="243949006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité thoracique entière"/>
-            <Concept code="243931006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="colonne thoracique entière"/>
-            <Concept code="1145018008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="jonction thoracolombaire vertébrale entière"/>
-            <Concept code="302551006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="thorax entier"/>
-            <Concept code="302540006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="pouce entier"/>
-            <Concept code="118507000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="thymus entier"/>
-            <Concept code="181117000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="glande thyroïde entière"/>
-            <Concept code="182061009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="tibia entier"/>
-            <Concept code="302547009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="orteil entier"/>
-            <Concept code="181226008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="langue entière"/>
-            <Concept code="302214001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="dent entière"/>
-            <Concept code="181213009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="trachée entière"/>
-            <Concept code="362163004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="côlon transverse entier"/>
-            <Concept code="181948009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="ulna entier"/>
-            <Concept code="181333006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère ulnaire entière"/>
-            <Concept code="261404000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère ombilicale entière"/>
-            <Concept code="61660003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="portion ombilicale entière de la veine porte"/>
-            <Concept code="243961003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région ombilicale entière"/>
-            <Concept code="243382001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant abdominal supérieur entier"/>
-            <Concept code="302538001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="partie supérieure entière du bras, de l'épaule au coude"/>
-            <Concept code="181132007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant mammaire supéro-interne entier"/>
-            <Concept code="182245002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="membre supérieur entier"/>
-            <Concept code="181134008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="quadrant mammaire supéroexterne entier"/>
-            <Concept code="731430002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="voies urinaires supérieures entières proprement dites"/>
-            <Concept code="302511008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="uretère entier"/>
-            <Concept code="302513006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="urètre entier"/>
-            <Concept code="302512001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vessie entière"/>
-            <Concept code="279405003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="cavité entière de la vessie"/>
-            <Concept code="181452004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="utérus entier"/>
-            <Concept code="181441005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vagin entier"/>
-            <Concept code="181367001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine entière"/>
-            <Concept code="430160002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="veine pulmonaire entière"/>
-            <Concept code="322151008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="réseau veineux entier"/>
-            <Concept code="181323003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="artère vertébrale entière"/>
-            <Concept code="44300000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="colonne vertébrale entière"/>
-            <Concept code="265796001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="vulve entière"/>
-            <Concept code="822993002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="paroi abdominale entière"/>
-            <Concept code="361289009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="région entière du poignet"/>
-            <Concept code="127962001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="diverticule de l'iléon"/>
-            <Concept code="39937001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230601000000" displayName="peau"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_LocalisationAnatomique_CISIS"
+             id="1.2.250.1.213.1.1.5.694"
+             revisionDate="2023-06-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="302553009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="abdomen entier"/>
+         <Concept code="244231007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte abdominale entière"/>
+         <Concept code="897132006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="segment transverse abdominal entier du tronc"/>
+         <Concept code="822978001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité abdominopelvienne entière"/>
+         <Concept code="182166001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation acromioclaviculaire entière"/>
+         <Concept code="181127006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="glande suprarénale entière"/>
+         <Concept code="361292008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de la cheville"/>
+         <Concept code="399978003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine cubitale antérieure entière"/>
+         <Concept code="43967001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine cardiaque antérieure entière"/>
+         <Concept code="181309000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère cérébrale antérieure entière"/>
+         <Concept code="181311009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère communicante antérieure entière"/>
+         <Concept code="181329004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère vertébrale antérieure entière"/>
+         <Concept code="181357006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère tibiale antérieure entière"/>
+         <Concept code="181262009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="anus entier"/>
+         <Concept code="181298001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte entière"/>
+         <Concept code="181300001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="arc aortique entier"/>
+         <Concept code="264843009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="apex entier du ventricule gauche"/>
+         <Concept code="314790003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="apex pulmonaire entier"/>
+         <Concept code="264913008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="apex entier du ventricule droit"/>
+         <Concept code="181255000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="appendice entier"/>
+         <Concept code="730364005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="zone entière du conduit auditif interne"/>
+         <Concept code="362877004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère entière"/>
+         <Concept code="244324006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère entière d'un membre inférieur"/>
+         <Concept code="244310007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère entière d'un membre supérieur"/>
+         <Concept code="181299009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte ascendante entière"/>
+         <Concept code="362162009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côlon ascendant entier"/>
+         <Concept code="261405004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="oreillette cardiaque entière"/>
+         <Concept code="181321001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère axillaire entière"/>
+         <Concept code="362732006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région axillaire entière"/>
+         <Concept code="181389002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine axillaire entière"/>
+         <Concept code="244407004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine azygos entière"/>
+         <Concept code="244215004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère basilaire entière"/>
+         <Concept code="276157007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit biliaire entier"/>
+         <Concept code="181267003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voies biliaires entières"/>
+         <Concept code="361097006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vaisseau sanguin entier"/>
+         <Concept code="38266002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="corps entier"/>
+         <Concept code="346902003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit corporel entier"/>
+         <Concept code="731691008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="coccyx entier"/>
+         <Concept code="731717004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="crâne entier"/>
+         <Concept code="731698002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fémur entier"/>
+         <Concept code="731660002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ilion entier"/>
+         <Concept code="361370006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os entier du membre inférieur"/>
+         <Concept code="731690009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="patella entière"/>
+         <Concept code="368532003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os entier du membre supérieur"/>
+         <Concept code="731684005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sacrum entier"/>
+         <Concept code="730852007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine perforante de Boyd entière"/>
+         <Concept code="181322008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère brachiale entière"/>
+         <Concept code="181002002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="plexus brachial entier"/>
+         <Concept code="181390006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine brachiale entière"/>
+         <Concept code="244244002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="tronc artériel brachiocéphalique entier"/>
+         <Concept code="181371003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine brachiocéphalique entière"/>
+         <Concept code="258335003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="encéphale entier"/>
+         <Concept code="181131000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sein entier"/>
+         <Concept code="362723009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ligament large entier"/>
+         <Concept code="181215002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="bronche entière"/>
+         <Concept code="244247009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère bronchique entière"/>
+         <Concept code="362677002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fesse entière"/>
+         <Concept code="182099002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="calcanéum entier"/>
+         <Concept code="244015008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="mollet entier"/>
+         <Concept code="276832000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="calice rénal entier"/>
+         <Concept code="277699000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ventricule cardiaque entier"/>
+         <Concept code="362040006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère carotide entière"/>
+         <Concept code="281137000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sinus carotidien entier"/>
+         <Concept code="897047000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité entière du grand bassin"/>
+         <Concept code="818953007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité entière du petit bassin"/>
+         <Concept code="181340007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="tronc cœliaque entier"/>
+         <Concept code="181391005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine céphalique entière"/>
+         <Concept code="180924008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cervelet entier"/>
+         <Concept code="181308008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère cérébrale entière"/>
+         <Concept code="278251007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="hémisphère cérébral entier"/>
+         <Concept code="870632003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère cervicale entière"/>
+         <Concept code="361684008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="colonne vertébrale cervicale entière"/>
+         <Concept code="1145015006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="jonction cervicothoracique vertébrale entière"/>
+         <Concept code="181453009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="col utérin entier"/>
+         <Concept code="182325008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="joue entière"/>
+         <Concept code="181608004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="paroi thoracique entière"/>
+         <Concept code="264450003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="plexus choroïde entier"/>
+         <Concept code="362047009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cercle de Willis entier"/>
+         <Concept code="181910004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="clavicule entière"/>
+         <Concept code="302508007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côlon entier"/>
+         <Concept code="362199009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit biliaire commun entier"/>
+         <Concept code="362041005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère carotide commune entière"/>
+         <Concept code="727608008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère fémorale commune entière"/>
+         <Concept code="732146000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine fémorale commune entière"/>
+         <Concept code="362050007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère iliaque commune entière"/>
+         <Concept code="181398004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine iliaque commune entière"/>
+         <Concept code="181162001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cornée entière"/>
+         <Concept code="181294004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère coronaire entière"/>
+         <Concept code="244386006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sinus coronaire entier"/>
+         <Concept code="264452006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité crânienne entière"/>
+         <Concept code="728315009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="denture entière"/>
+         <Concept code="362165006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côlon descendant entier"/>
+         <Concept code="181301002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte thoracique descendante entière"/>
+         <Concept code="731977000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="tube digestif entier"/>
+         <Concept code="730855009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine perforante de Dodd entière"/>
+         <Concept code="181247007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="duodénum entier"/>
+         <Concept code="1910005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="oreille entière"/>
+         <Concept code="76248009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière du coude"/>
+         <Concept code="362257002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité utérine entière"/>
+         <Concept code="278867007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="endomètre entier"/>
+         <Concept code="181432000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="épididyme entier"/>
+         <Concept code="362693006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région épigastrique entière"/>
+         <Concept code="181245004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="œsophage entier"/>
+         <Concept code="181178004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit auditif externe entier"/>
+         <Concept code="362044002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère carotide externe entière"/>
+         <Concept code="181352000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère iliaque externe entière"/>
+         <Concept code="181400000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine iliaque externe entière"/>
+         <Concept code="181373000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine jugulaire externe entière"/>
+         <Concept code="244486005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="œil entier"/>
+         <Concept code="732141005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région oculaire entière"/>
+         <Concept code="265782007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="paupière entière"/>
+         <Concept code="302549007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="face entière"/>
+         <Concept code="181328007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère faciale entière"/>
+         <Concept code="181799005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ossature entière de la face"/>
+         <Concept code="181463001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="salpinx entier"/>
+         <Concept code="244332003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère fémorale entière"/>
+         <Concept code="362071002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine fémorale entière"/>
+         <Concept code="302529003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fibula entière"/>
+         <Concept code="302541005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="doigt entier de la main, sauf le pouce"/>
+         <Concept code="362673003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="flanc entier"/>
+         <Concept code="272681004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fontanelle crânienne entière"/>
+         <Concept code="302545001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pied entier"/>
+         <Concept code="362741001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="avant-bras entier"/>
+         <Concept code="180932000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quatrième ventricule cérébral entier"/>
+         <Concept code="181269000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vésicule biliaire entière"/>
+         <Concept code="281060006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine gastrique entière"/>
+         <Concept code="244333008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère géniculée entière"/>
+         <Concept code="277728005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="grande veine cardiaque entière"/>
+         <Concept code="302546000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="hallux entier"/>
+         <Concept code="302539009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="main entière"/>
+         <Concept code="302548004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="tête entière"/>
+         <Concept code="302509004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cœur entier"/>
+         <Concept code="727223007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère entière du foie"/>
+         <Concept code="278191001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine hépatique entière"/>
+         <Concept code="302543008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de la hanche"/>
+         <Concept code="181923006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="humérus entier"/>
+         <Concept code="730856005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine perforante hunterienne entière"/>
+         <Concept code="182339008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de l'hypochondre"/>
+         <Concept code="182348003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région hypogastrique entière"/>
+         <Concept code="281490009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="partie laryngée entière du pharynx"/>
+         <Concept code="181249005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="iléon entier"/>
+         <Concept code="244330006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère iliaque entière"/>
+         <Concept code="732003000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine iliaque entière"/>
+         <Concept code="278013002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine pulmonaire inférieure gauche entière"/>
+         <Concept code="181341006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère mésentérique inférieure entière"/>
+         <Concept code="278012007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine pulmonaire inférieure droite entière"/>
+         <Concept code="181369003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine cave inférieure entière"/>
+         <Concept code="278960008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voie afférente entière du ventricule gauche"/>
+         <Concept code="278950004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voie afférente entière du ventricule droit"/>
+         <Concept code="204747008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="angle infrasternal entier"/>
+         <Concept code="243962005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région inguinale entière"/>
+         <Concept code="181189006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="oreille interne entière"/>
+         <Concept code="182176003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation entière du carpe"/>
+         <Concept code="361734005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit auditif interne entier de l'os temporal"/>
+         <Concept code="362045001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère carotide interne entière"/>
+         <Concept code="181346001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère iliaque interne entière"/>
+         <Concept code="181372005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine jugulaire interne entière"/>
+         <Concept code="361929003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="partie interne entière du nez"/>
+         <Concept code="244239009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère thoracique interne entière"/>
+         <Concept code="182221001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation entière du tarse"/>
+         <Concept code="244391007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine intracrânienne entière"/>
+         <Concept code="181811001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de la mâchoire"/>
+         <Concept code="181248002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="jéjunum entier"/>
+         <Concept code="302536002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation entière"/>
+         <Concept code="279160004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="incisure jugulaire du sternum entière"/>
+         <Concept code="181414000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="rein entier"/>
+         <Concept code="361291001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière du genou"/>
+         <Concept code="369324002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère lacrymale entière"/>
+         <Concept code="181254001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="gros intestin entier"/>
+         <Concept code="181212004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="larynx entier"/>
+         <Concept code="180930008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ventricule latéral entier"/>
+         <Concept code="244387002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="atrium gauche entier"/>
+         <Concept code="277930000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="appendice atrial gauche entier"/>
+         <Concept code="244385005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ventricule cardiaque gauche entier"/>
+         <Concept code="55188000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine hépatique gauche entière"/>
+         <Concept code="304374005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="branche principale gauche entière de la veine porte"/>
+         <Concept code="243972008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="bourse omentale entière"/>
+         <Concept code="243996003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="membre entier"/>
+         <Concept code="181327002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère linguale entière"/>
+         <Concept code="181268008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="foie entier"/>
+         <Concept code="181402008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine saphène interne entière"/>
+         <Concept code="243406001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant abdominal inférieur entier"/>
+         <Concept code="181135009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant mammaire inféro-interne entier"/>
+         <Concept code="362793004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="partie inférieure entière de la jambe, du genou à la cheville"/>
+         <Concept code="182281004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="membre inférieur entier"/>
+         <Concept code="181136005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant mammaire inféroexterne entier"/>
+         <Concept code="181420004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voies urinaires inférieures entières"/>
+         <Concept code="244285007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère lombaire entière"/>
+         <Concept code="1017226003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région lombaire entière"/>
+         <Concept code="302506006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="plexus lombaire entier"/>
+         <Concept code="361686005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="colonne vertébrale lombaire entière"/>
+         <Concept code="1145016007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="jonction lombosacrée vertébrale entière"/>
+         <Concept code="727322004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="lumière entière d'un vaisseau sanguin"/>
+         <Concept code="181216001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="poumon entier"/>
+         <Concept code="181756000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="nœud lymphatique entier"/>
+         <Concept code="362715007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="grand bassin entier"/>
+         <Concept code="181812008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="mandibule entière"/>
+         <Concept code="265784008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="mastoïde entière"/>
+         <Concept code="181813003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="maxillaire entier"/>
+         <Concept code="181217005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="médiastin entier"/>
+         <Concept code="281084003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère mésentérique entière"/>
+         <Concept code="304045008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine mésentérique entière"/>
+         <Concept code="280995004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation métacarpophalangienne entière"/>
+         <Concept code="302535003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation métatarsophalangienne entière"/>
+         <Concept code="181312002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère cérébrale moyenne entière"/>
+         <Concept code="54895000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine hépatique moyenne entière"/>
+         <Concept code="362717004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="petit bassin entier"/>
+         <Concept code="21082005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de la bouche"/>
+         <Concept code="770866008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="matrice entière de l'ongle"/>
+         <Concept code="770803002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ongle entier"/>
+         <Concept code="181801008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os nasal entier"/>
+         <Concept code="181203001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sinus paranasal entier"/>
+         <Concept code="179072008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité nasopharyngée entière"/>
+         <Concept code="181200003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="nasopharynx entier"/>
+         <Concept code="302550007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cou entier"/>
+         <Concept code="256864008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="nerf entier"/>
+         <Concept code="181195007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="nez entier"/>
+         <Concept code="244219005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère occipitale entière"/>
+         <Concept code="150289003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine occipitale entière"/>
+         <Concept code="362710002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="omentum entier"/>
+         <Concept code="181310005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère ophtalmique entière"/>
+         <Concept code="361732009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="canal optique entier"/>
+         <Concept code="363657000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="orbite entière proprement dite"/>
+         <Concept code="272683001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os zygomatique entier"/>
+         <Concept code="264070001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voie efférente entière du ventricule gauche"/>
+         <Concept code="264183003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voie efférente entière du ventricule droit"/>
+         <Concept code="181464007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ovaire entier"/>
+         <Concept code="181277001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pancréas entier"/>
+         <Concept code="181278006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="conduit pancréatique entier"/>
+         <Concept code="279232005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région parasternale entière"/>
+         <Concept code="181121007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="glande parathyroïde entière"/>
+         <Concept code="181234002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="glande parotide entière"/>
+         <Concept code="816977005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="segment transverse pelvien entier du tronc"/>
+         <Concept code="229765004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pelvis entier"/>
+         <Concept code="731160001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère pénienne entière"/>
+         <Concept code="265793009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pénis entier"/>
+         <Concept code="243990009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="périnée entier"/>
+         <Concept code="181359009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère péronière entière"/>
+         <Concept code="181211006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pharynx entier"/>
+         <Concept code="264194004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fosse hypophysaire entière"/>
+         <Concept code="181125003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="hypophyse entière"/>
+         <Concept code="181455002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="placenta entier"/>
+         <Concept code="181350008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère poplitée entière"/>
+         <Concept code="731976009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="fosse poplitée entière"/>
+         <Concept code="281065001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine poplitée entière"/>
+         <Concept code="362064007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine porte entière"/>
+         <Concept code="181313007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère cérébrale postérieure entière"/>
+         <Concept code="181314001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère communicante postérieure entière"/>
+         <Concept code="727505000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="affluent médial postérieur entier du système veineux superficiel du membre inférieur"/>
+         <Concept code="181358001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère tibiale postérieure entière"/>
+         <Concept code="60477001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine postérieure entière du ventricule gauche"/>
+         <Concept code="361317000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte primitive entière"/>
+         <Concept code="198813007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère pulmonaire primitive entière"/>
+         <Concept code="181348000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère fémorale profonde entière"/>
+         <Concept code="302640003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine fémorale profonde entière"/>
+         <Concept code="181422007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="prostate entière"/>
+         <Concept code="181380003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère pulmonaire entière"/>
+         <Concept code="181332001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère radiale entière"/>
+         <Concept code="182178002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation radiocarpienne entière"/>
+         <Concept code="181940002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="radius entier"/>
+         <Concept code="181447009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cul-de-sac recto-utérin entier"/>
+         <Concept code="181261002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="rectum entier"/>
+         <Concept code="243984005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région de l'espace rétropéritonéal en entier"/>
+         <Concept code="181339005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère rénale entière"/>
+         <Concept code="362221007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pelvis rénal entier"/>
+         <Concept code="181370002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine rénale entière"/>
+         <Concept code="302523002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côte entière"/>
+         <Concept code="244383003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="oreillette droite entière"/>
+         <Concept code="277713005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="appendice auriculaire droit entier"/>
+         <Concept code="244384009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ventricule cardiaque droit entier"/>
+         <Concept code="18135006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine hépatique droite entière"/>
+         <Concept code="304375006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="branche principale droite entière de la veine porte"/>
+         <Concept code="730859003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="poche de Rutherford Morison entière"/>
+         <Concept code="182199004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation sacro-iliaque entière"/>
+         <Concept code="244414002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="jonction saphénofémorale entière"/>
+         <Concept code="732135003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine saphène entière"/>
+         <Concept code="181480002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cuir chevelu entier"/>
+         <Concept code="302517007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="scapula entière"/>
+         <Concept code="181163006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sclère entière"/>
+         <Concept code="265794003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="scrotum entier"/>
+         <Concept code="181434004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vésicule séminale entière"/>
+         <Concept code="1163304004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ganglion sentinelle entier"/>
+         <Concept code="244675002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os sésamoïde entier du pied"/>
+         <Concept code="361103004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière de l'épaule"/>
+         <Concept code="362166007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côlon sigmoïde entier"/>
+         <Concept code="245012000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="muscle squelettique entier du membre inférieur"/>
+         <Concept code="244978002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="muscle squelettique entier du membre supérieur"/>
+         <Concept code="361378004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="squelette entier"/>
+         <Concept code="181250005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="intestin grêle entier"/>
+         <Concept code="180959008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="moelle spinale entière"/>
+         <Concept code="181279003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="rate entière"/>
+         <Concept code="244266009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère splénique entière"/>
+         <Concept code="278029005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine splénique entière"/>
+         <Concept code="182165002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation sternoclaviculaire entière"/>
+         <Concept code="302522007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="sternum entier"/>
+         <Concept code="181246003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="estomac entier"/>
+         <Concept code="265790007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère subclavière entière"/>
+         <Concept code="181388005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine subclavière entière"/>
+         <Concept code="361357002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="zone sous-mandibulaire entière"/>
+         <Concept code="727093009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="appareil salivaire sous-maxillaire entier"/>
+         <Concept code="362635002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="trigone submental entier"/>
+         <Concept code="727609000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère fémorale superficielle entière"/>
+         <Concept code="732147009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine fémorale superficielle entière"/>
+         <Concept code="181325005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère temporale superficielle entière"/>
+         <Concept code="278014008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine pulmonaire supérieure gauche entière"/>
+         <Concept code="362048004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère mésentérique supérieure entière"/>
+         <Concept code="278011000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine pulmonaire supérieure droite entière"/>
+         <Concept code="244218002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère thyroïdienne supérieure entière"/>
+         <Concept code="181368006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine cave supérieure entière"/>
+         <Concept code="362656000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région supraclaviculaire entière du cou"/>
+         <Concept code="181795004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="os temporal entier"/>
+         <Concept code="181814009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="articulation temporomandibulaire entière"/>
+         <Concept code="181431007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="testicule entier"/>
+         <Concept code="244433007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="thalamus entier"/>
+         <Concept code="302544002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cuisse entière"/>
+         <Concept code="180931007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="troisième ventricule cérébral entier"/>
+         <Concept code="302510009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="aorte thoracique entière"/>
+         <Concept code="243949006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité thoracique entière"/>
+         <Concept code="243931006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="colonne thoracique entière"/>
+         <Concept code="1145018008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="jonction thoracolombaire vertébrale entière"/>
+         <Concept code="302551006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="thorax entier"/>
+         <Concept code="302540006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="pouce entier"/>
+         <Concept code="118507000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="thymus entier"/>
+         <Concept code="181117000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="glande thyroïde entière"/>
+         <Concept code="182061009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="tibia entier"/>
+         <Concept code="302547009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="orteil entier"/>
+         <Concept code="181226008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="langue entière"/>
+         <Concept code="302214001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="dent entière"/>
+         <Concept code="181213009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="trachée entière"/>
+         <Concept code="362163004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="côlon transverse entier"/>
+         <Concept code="181948009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="ulna entier"/>
+         <Concept code="181333006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère ulnaire entière"/>
+         <Concept code="261404000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère ombilicale entière"/>
+         <Concept code="61660003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="portion ombilicale entière de la veine porte"/>
+         <Concept code="243961003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région ombilicale entière"/>
+         <Concept code="243382001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant abdominal supérieur entier"/>
+         <Concept code="302538001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="partie supérieure entière du bras, de l'épaule au coude"/>
+         <Concept code="181132007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant mammaire supéro-interne entier"/>
+         <Concept code="182245002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="membre supérieur entier"/>
+         <Concept code="181134008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="quadrant mammaire supéroexterne entier"/>
+         <Concept code="731430002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="voies urinaires supérieures entières proprement dites"/>
+         <Concept code="302511008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="uretère entier"/>
+         <Concept code="302513006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="urètre entier"/>
+         <Concept code="302512001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vessie entière"/>
+         <Concept code="279405003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="cavité entière de la vessie"/>
+         <Concept code="181452004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="utérus entier"/>
+         <Concept code="181441005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vagin entier"/>
+         <Concept code="181367001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine entière"/>
+         <Concept code="430160002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="veine pulmonaire entière"/>
+         <Concept code="322151008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="réseau veineux entier"/>
+         <Concept code="181323003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="artère vertébrale entière"/>
+         <Concept code="44300000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="colonne vertébrale entière"/>
+         <Concept code="265796001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="vulve entière"/>
+         <Concept code="822993002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="paroi abdominale entière"/>
+         <Concept code="361289009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="région entière du poignet"/>
+         <Concept code="127962001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="diverticule de l'iléon"/>
+         <Concept code="39937001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230601000000"
+                  displayName="peau"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

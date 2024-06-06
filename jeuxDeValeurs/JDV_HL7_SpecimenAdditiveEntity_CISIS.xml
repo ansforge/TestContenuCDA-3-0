@@ -1,61 +1,283 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_SpecimenAdditiveEntity_CISIS" id="2.16.840.1.113883.1.11.16042" version="test">
-        <ConceptList>
-            <Concept code="ACDA" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="ACD Solution A"/>
-            <Concept code="ACDB" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="ACD Solution B"/>
-            <Concept code="ACET" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Acetic Acid"/>
-            <Concept code="AMIES" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Amies transport medium"/>
-            <Concept code="BACTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Bacterial Transport medium"/>
-            <Concept code="BF10" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Buffered 10% formalin"/>
-            <Concept code="BOR" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Boric Acid"/>
-            <Concept code="BOUIN" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Bouin's solution"/>
-            <Concept code="BSKM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Buffered skim milk"/>
-            <Concept code="C32" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="3.2% Citrate"/>
-            <Concept code="C38" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="3.8% Citrate"/>
-            <Concept code="CARS" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Carson's Modified 10% formalin"/>
-            <Concept code="CARY" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Cary Blair Medium"/>
-            <Concept code="CHLTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Chlamydia transport medium"/>
-            <Concept code="CTAD" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="CTAD"/>
-            <Concept code="EDTK15" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Potassium/K EDTA 15%"/>
-            <Concept code="EDTK75" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Potassium/K EDTA 7.5%"/>
-            <Concept code="EDTN" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium/Na EDTA"/>
-            <Concept code="ENT" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Enteric bacteria transport medium"/>
-            <Concept code="F10" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="10% Formalin"/>
-            <Concept code="FDP" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Thrombin NIH; soybean trypsin inhibitor"/>
-            <Concept code="FL10" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium Fluoride, 10mg"/>
-            <Concept code="FL100" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium Fluoride, 100mg"/>
-            <Concept code="HCL6" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="6N HCL"/>
-            <Concept code="HEPA" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Ammonium heparin"/>
-            <Concept code="HEPL" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Lithium/Li Heparin"/>
-            <Concept code="HEPN" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium/Na Heparin"/>
-            <Concept code="HNO3" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Nitric Acid"/>
-            <Concept code="JKM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Jones Kendrick Medium"/>
-            <Concept code="KARN" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Karnovsky's fixative"/>
-            <Concept code="KOX" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Potassium Oxalate"/>
-            <Concept code="LIA" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Lithium iodoacetate"/>
-            <Concept code="M4" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="M4"/>
-            <Concept code="M4RT" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="M4-RT"/>
-            <Concept code="M5" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="M5"/>
-            <Concept code="MICHTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Michel's transport medium"/>
-            <Concept code="MMDTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="MMD transport medium"/>
-            <Concept code="NAF" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium Fluoride"/>
-            <Concept code="NONE" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="None"/>
-            <Concept code="PAGE" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Page's Saline"/>
-            <Concept code="PHENOL" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Phenol"/>
-            <Concept code="PVA" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Polyvinylalcohol"/>
-            <Concept code="RLM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Reagan Lowe Medium"/>
-            <Concept code="SILICA" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Siliceous earth"/>
-            <Concept code="SPS" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride"/>
-            <Concept code="SST" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Serum Separator Tube"/>
-            <Concept code="STUTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Stuart transport medium"/>
-            <Concept code="THROM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Thrombin"/>
-            <Concept code="THYMOL" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Thymol"/>
-            <Concept code="THYO" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Thyoglycolate broth"/>
-            <Concept code="TOLU" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Toluene"/>
-            <Concept code="URETM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Ureaplasma transport medium"/>
-            <Concept code="VIRTM" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Viral Transport medium"/>
-            <Concept code="WEST" codeSystem="2.16.840.1.113883.5.1060" dateFin="" dateValid="20200118000000" displayName="Buffered Citrate"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_SpecimenAdditiveEntity_CISIS"
+             id="2.16.840.1.113883.1.11.16042"
+             revisionDate="2020-01-18T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="ACDA"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="ACD Solution A"/>
+         <Concept code="ACDB"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="ACD Solution B"/>
+         <Concept code="ACET"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Acetic Acid"/>
+         <Concept code="AMIES"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Amies transport medium"/>
+         <Concept code="BACTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Bacterial Transport medium"/>
+         <Concept code="BF10"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Buffered 10% formalin"/>
+         <Concept code="BOR"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Boric Acid"/>
+         <Concept code="BOUIN"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Bouin's solution"/>
+         <Concept code="BSKM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Buffered skim milk"/>
+         <Concept code="C32"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="3.2% Citrate"/>
+         <Concept code="C38"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="3.8% Citrate"/>
+         <Concept code="CARS"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Carson's Modified 10% formalin"/>
+         <Concept code="CARY"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Cary Blair Medium"/>
+         <Concept code="CHLTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Chlamydia transport medium"/>
+         <Concept code="CTAD"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="CTAD"/>
+         <Concept code="EDTK15"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Potassium/K EDTA 15%"/>
+         <Concept code="EDTK75"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Potassium/K EDTA 7.5%"/>
+         <Concept code="EDTN"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium/Na EDTA"/>
+         <Concept code="ENT"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Enteric bacteria transport medium"/>
+         <Concept code="F10"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="10% Formalin"/>
+         <Concept code="FDP"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Thrombin NIH; soybean trypsin inhibitor"/>
+         <Concept code="FL10"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium Fluoride, 10mg"/>
+         <Concept code="FL100"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium Fluoride, 100mg"/>
+         <Concept code="HCL6"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="6N HCL"/>
+         <Concept code="HEPA"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Ammonium heparin"/>
+         <Concept code="HEPL"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Lithium/Li Heparin"/>
+         <Concept code="HEPN"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium/Na Heparin"/>
+         <Concept code="HNO3"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Nitric Acid"/>
+         <Concept code="JKM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Jones Kendrick Medium"/>
+         <Concept code="KARN"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Karnovsky's fixative"/>
+         <Concept code="KOX"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Potassium Oxalate"/>
+         <Concept code="LIA"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Lithium iodoacetate"/>
+         <Concept code="M4"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="M4"/>
+         <Concept code="M4RT"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="M4-RT"/>
+         <Concept code="M5"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="M5"/>
+         <Concept code="MICHTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Michel's transport medium"/>
+         <Concept code="MMDTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="MMD transport medium"/>
+         <Concept code="NAF"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium Fluoride"/>
+         <Concept code="NONE"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="None"/>
+         <Concept code="PAGE"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Page's Saline"/>
+         <Concept code="PHENOL"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Phenol"/>
+         <Concept code="PVA"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Polyvinylalcohol"/>
+         <Concept code="RLM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Reagan Lowe Medium"/>
+         <Concept code="SILICA"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Siliceous earth"/>
+         <Concept code="SPS"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride"/>
+         <Concept code="SST"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Serum Separator Tube"/>
+         <Concept code="STUTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Stuart transport medium"/>
+         <Concept code="THROM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Thrombin"/>
+         <Concept code="THYMOL"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Thymol"/>
+         <Concept code="THYO"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Thyoglycolate broth"/>
+         <Concept code="TOLU"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Toluene"/>
+         <Concept code="URETM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Ureaplasma transport medium"/>
+         <Concept code="VIRTM"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Viral Transport medium"/>
+         <Concept code="WEST"
+                  codeSystem="2.16.840.1.113883.5.1060"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Buffered Citrate"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

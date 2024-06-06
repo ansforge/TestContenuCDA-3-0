@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSLangInt_CISIS" id="1.2.250.1.213.1.1.5.188" version="test">
-        <ConceptList>
-            <Concept code="LA18471-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Normal, pas d’aphasie."/>
-            <Concept code="LA18472-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Aphasie discrète à modérée."/>
-            <Concept code="LA18473-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Aphasie sévère"/>
-            <Concept code="LA18474-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Mutisme; aphasie globale"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSLangInt_CISIS"
+             id="1.2.250.1.213.1.1.5.188"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA18471-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Normal, pas d’aphasie."/>
+         <Concept code="LA18472-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Aphasie discrète à modérée."/>
+         <Concept code="LA18473-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Aphasie sévère"/>
+         <Concept code="LA18474-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Mutisme; aphasie globale"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

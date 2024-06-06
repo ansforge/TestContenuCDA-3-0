@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ExamenBiochimieEUVN_CISIS" id="1.2.250.1.213.1.1.5.224" version="test">
-        <ConceptList>
-            <Concept code="2093-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Cholestérol:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="2571-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Triglycérides:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="2089-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Cholestérol LDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="2085-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Cholestérol HDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="2345-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Glucose [Masse/Volume] Sérum/Plasma ; Numérique"/>
-            <Concept code="53049-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"/>
-            <Concept code="27353-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Glucose estimation moyenne:Masse/Volume:Ponctuel:Sang:Numérique:Estimation hémoglobine glyquée"/>
-            <Concept code="14682-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Créatinine:Moles/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-            <Concept code="35591-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Créatinine clairance calculée:Volume/Temps:Ponctuel:Sérum/Plasma:Numérique:Formule de Cockroft-Gault"/>
-            <Concept code="1988-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="C Réactive protéine:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ExamenBiochimieEUVN_CISIS"
+             id="1.2.250.1.213.1.1.5.224"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="2093-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cholestérol:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+         <Concept code="2571-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Triglycérides:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+         <Concept code="2089-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cholestérol LDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+         <Concept code="2085-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cholestérol HDL:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+         <Concept code="2345-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Glucose [Masse/Volume] Sérum/Plasma ; Numérique"/>
+         <Concept code="53049-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Glucose à jeun [Masse/Volume] Sérum/Plasma ; Numérique"/>
+         <Concept code="27353-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Glucose estimation moyenne:Masse/Volume:Ponctuel:Sang:Numérique:Estimation hémoglobine glyquée"/>
+         <Concept code="14682-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Créatinine:Moles/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+         <Concept code="35591-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Créatinine clairance calculée:Volume/Temps:Ponctuel:Sérum/Plasma:Numérique:Formule de Cockroft-Gault"/>
+         <Concept code="1988-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="C Réactive protéine:Masse/Volume:Ponctuel:Sérum/Plasma:Numérique:"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

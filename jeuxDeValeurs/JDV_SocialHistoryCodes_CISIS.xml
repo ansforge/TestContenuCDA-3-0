@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_SocialHistoryCodes_CISIS" id="1.2.250.1.213.1.1.4.2.283.4" version="test">
-        <ConceptList>
-            <Concept code="73985-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Exercice physique"/>
-            <Concept code="92944-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Exposition à des produits toxiques"/>
-            <Concept code="11295-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Facteur social relié à la vie professionnelle"/>
-            <Concept code="74013-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Consommation d'alcool"/>
-            <Concept code="11343-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Consommation de drogue non médicales"/>
-            <Concept code="11345-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Autre élément social"/>
-            <Concept code="81663-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Régime"/>
-            <Concept code="74011-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Consommation tabagique"/>
-            <Concept code="29556-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Trouble du comportement"/>
-            <Concept code="72166-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190913000000" displayName="Statut tabagique"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_SocialHistoryCodes_CISIS"
+             id="1.2.250.1.213.1.1.4.2.283.4"
+             revisionDate="2023-03-30T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="73985-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Exercice physique"/>
+         <Concept code="92944-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Exposition à des produits toxiques"/>
+         <Concept code="11295-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Facteur social relié à la vie professionnelle"/>
+         <Concept code="74013-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Consommation d'alcool"/>
+         <Concept code="11343-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Consommation de drogue non médicales"/>
+         <Concept code="11345-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Autre élément social"/>
+         <Concept code="81663-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Régime"/>
+         <Concept code="74011-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Consommation tabagique"/>
+         <Concept code="29556-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Trouble du comportement"/>
+         <Concept code="72166-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190913000000"
+                  displayName="Statut tabagique"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

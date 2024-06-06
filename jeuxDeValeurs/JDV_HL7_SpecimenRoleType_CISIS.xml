@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_SpecimenRoleType_CISIS" id="2.16.840.1.113883.1.11.16515" version="test">
-        <ConceptList>
-            <Concept code="C" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20200118000000" displayName="Spécimen utilisé pour les paramètres d'étalonnage initiaux d'un instrument"/>
-            <Concept code="G" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20200118000000" displayName="Ensemble d'échantillons de patients dans lequel les individus du groupe peuvent ou non être identifiés."/>
-            <Concept code="L" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20200118000000" displayName="Aliquot d'échantillons individuels combinés pour former un seul spécimen représentant tous les individus inclus."/>
-            <Concept code="P" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20200118000000" displayName="Spécimen prélevé sur un patient"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_SpecimenRoleType_CISIS"
+             id="2.16.840.1.113883.1.11.16515"
+             revisionDate="2020-01-18T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="C"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Spécimen utilisé pour les paramètres d'étalonnage initiaux d'un instrument"/>
+         <Concept code="G"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Ensemble d'échantillons de patients dans lequel les individus du groupe peuvent ou non être identifiés."/>
+         <Concept code="L"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Aliquot d'échantillons individuels combinés pour former un seul spécimen représentant tous les individus inclus."/>
+         <Concept code="P"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20200118000000"
+                  displayName="Spécimen prélevé sur un patient"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

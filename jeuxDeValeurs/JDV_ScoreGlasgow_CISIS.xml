@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreGlasgow_CISIS" id="1.2.250.1.213.1.1.5.177" version="test">
-        <ConceptList>
-            <Concept code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Normal"/>
-            <Concept code="MED-392" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Somnolence ou coma léger"/>
-            <Concept code="MED-393" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Coma lourd"/>
-            <Concept code="MED-394" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Coma profond ou mort"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreGlasgow_CISIS"
+             id="1.2.250.1.213.1.1.5.177"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-103"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Normal"/>
+         <Concept code="MED-392"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Somnolence ou coma léger"/>
+         <Concept code="MED-393"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coma lourd"/>
+         <Concept code="MED-394"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coma profond ou mort"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

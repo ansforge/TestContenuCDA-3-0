@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ContexteActivite_CISIS" id="1.2.250.1.213.1.1.5.40" version="test">
-        <ConceptList>
-            <Concept code="GEN-092.05.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre contexte"/>
-            <Concept code="MED-095" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis d'expertise sur un dossier"/>
-            <Concept code="MED-096" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Téléconsultation"/>
-            <Concept code="29" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Hospitalisation de jour (HJ)"/>
-            <Concept code="ORG-045" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hospitalisation traditionnelle"/>
-            <Concept code="11429006" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Consultation"/>
-            <Concept code="ORG-028" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Consultation pluridisciplinaire"/>
-            <Concept code="ORG-029" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis sur dossier en consultation"/>
-            <Concept code="ORG-030" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Avis en salle"/>
-            <Concept code="39" codeSystem="1.2.250.1.213.3.3.13" dateFin="" dateValid="20231114000000" displayName="Réunion de Concertation Pluridisciplinaire (RCP)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ContexteActivite_CISIS"
+             id="1.2.250.1.213.1.1.5.40"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-092.05.04"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre contexte"/>
+         <Concept code="MED-095"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Avis d'expertise sur un dossier"/>
+         <Concept code="MED-096"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Téléconsultation"/>
+         <Concept code="29"
+                  codeSystem="1.2.250.1.213.3.3.13"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Hospitalisation de jour (HJ)"/>
+         <Concept code="ORG-045"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hospitalisation traditionnelle"/>
+         <Concept code="11429006"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Consultation"/>
+         <Concept code="ORG-028"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Consultation pluridisciplinaire"/>
+         <Concept code="ORG-029"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Avis sur dossier en consultation"/>
+         <Concept code="ORG-030"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Avis en salle"/>
+         <Concept code="39"
+                  codeSystem="1.2.250.1.213.3.3.13"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Réunion de Concertation Pluridisciplinaire (RCP)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

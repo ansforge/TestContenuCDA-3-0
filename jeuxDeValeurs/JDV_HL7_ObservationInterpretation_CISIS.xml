@@ -1,46 +1,208 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_ObservationInterpretation_CISIS" id="2.16.840.1.113883.1.11.78" version="test">
-        <ConceptList>
-            <Concept code="&lt;" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Inférieur à la limite de détection"/>
-            <Concept code="&gt;" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Supérieur à la limite maximale de mesure"/>
-            <Concept code="A" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Anormal"/>
-            <Concept code="AA" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Très anormal, alerte"/>
-            <Concept code="B" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Amélioration"/>
-            <Concept code="CAR" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Porteur d'une forme altérée d'un gène"/>
-            <Concept code="D" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Diminution significative par rapport au résultat antérieur"/>
-            <Concept code="DET" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Détecté"/>
-            <Concept code="E" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Équivoque"/>
-            <Concept code="EX" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Hors seuils"/>
-            <Concept code="EXP" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Attendu"/>
-            <Concept code="H" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Anormalement haut"/>
-            <Concept code="HH" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Très anormalement haut, alerte"/>
-            <Concept code="HU" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Significativement haut"/>
-            <Concept code="HX" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Hors seuil supérieur"/>
-            <Concept code="I" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Intermédiaire"/>
-            <Concept code="IE" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Preuves insuffisantes"/>
-            <Concept code="IND" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Indéterminé"/>
-            <Concept code="L" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Anormalement bas"/>
-            <Concept code="LL" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Très anormalement bas, alerte"/>
-            <Concept code="LU" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Significativement bas"/>
-            <Concept code="LX" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Hors seuil inférieur"/>
-            <Concept code="N" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Normal"/>
-            <Concept code="NCL" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Pas de standard défini"/>
-            <Concept code="ND" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Non détecté"/>
-            <Concept code="NEG" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Négatif"/>
-            <Concept code="NR" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Non réactif"/>
-            <Concept code="NS" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Non sensible"/>
-            <Concept code="POS" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Positif"/>
-            <Concept code="R" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Résistant"/>
-            <Concept code="RR" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Réactif"/>
-            <Concept code="S" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Sensible"/>
-            <Concept code="SDD" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Sensible à la dose dépendante"/>
-            <Concept code="SYN-R" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Synergie - résistant"/>
-            <Concept code="SYN-S" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Synergie - sensible"/>
-            <Concept code="U" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Augmentation significative par rapport au résultat antérieur"/>
-            <Concept code="UNE" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Inattendu"/>
-            <Concept code="W" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Dégradation"/>
-            <Concept code="WR" codeSystem="2.16.840.1.113883.5.83" dateFin="" dateValid="20100101000000" displayName="Faiblement réactif"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_ObservationInterpretation_CISIS"
+             id="2.16.840.1.113883.1.11.78"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="&lt;"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inférieur à la limite de détection"/>
+         <Concept code="&gt;"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Supérieur à la limite maximale de mesure"/>
+         <Concept code="A"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Anormal"/>
+         <Concept code="AA"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Très anormal, alerte"/>
+         <Concept code="B"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Amélioration"/>
+         <Concept code="CAR"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Porteur d'une forme altérée d'un gène"/>
+         <Concept code="D"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Diminution significative par rapport au résultat antérieur"/>
+         <Concept code="DET"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Détecté"/>
+         <Concept code="E"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Équivoque"/>
+         <Concept code="EX"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hors seuils"/>
+         <Concept code="EXP"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Attendu"/>
+         <Concept code="H"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Anormalement haut"/>
+         <Concept code="HH"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Très anormalement haut, alerte"/>
+         <Concept code="HU"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Significativement haut"/>
+         <Concept code="HX"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hors seuil supérieur"/>
+         <Concept code="I"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Intermédiaire"/>
+         <Concept code="IE"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Preuves insuffisantes"/>
+         <Concept code="IND"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Indéterminé"/>
+         <Concept code="L"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Anormalement bas"/>
+         <Concept code="LL"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Très anormalement bas, alerte"/>
+         <Concept code="LU"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Significativement bas"/>
+         <Concept code="LX"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hors seuil inférieur"/>
+         <Concept code="N"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Normal"/>
+         <Concept code="NCL"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Pas de standard défini"/>
+         <Concept code="ND"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Non détecté"/>
+         <Concept code="NEG"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Négatif"/>
+         <Concept code="NR"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Non réactif"/>
+         <Concept code="NS"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Non sensible"/>
+         <Concept code="POS"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Positif"/>
+         <Concept code="R"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Résistant"/>
+         <Concept code="RR"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Réactif"/>
+         <Concept code="S"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sensible"/>
+         <Concept code="SDD"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sensible à la dose dépendante"/>
+         <Concept code="SYN-R"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Synergie - résistant"/>
+         <Concept code="SYN-S"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Synergie - sensible"/>
+         <Concept code="U"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Augmentation significative par rapport au résultat antérieur"/>
+         <Concept code="UNE"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inattendu"/>
+         <Concept code="W"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Dégradation"/>
+         <Concept code="WR"
+                  codeSystem="2.16.840.1.113883.5.83"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Faiblement réactif"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

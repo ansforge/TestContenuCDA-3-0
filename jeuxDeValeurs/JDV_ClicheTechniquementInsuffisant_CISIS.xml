@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ClicheTechniquementInsuffisant_CISIS" id="1.2.250.1.213.1.1.5.648" version="test">
-        <ConceptList>
-            <Concept code="GEN-004" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Positionnement"/>
-            <Concept code="MED-006" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Qualité de l'image"/>
-            <Concept code="MED-007" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Mauvaise qualité de l'impression de la mammographie numérique, Réimpression du cliché"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ClicheTechniquementInsuffisant_CISIS"
+             id="1.2.250.1.213.1.1.5.648"
+             revisionDate="2021-09-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-004"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Positionnement"/>
+         <Concept code="MED-006"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Qualité de l'image"/>
+         <Concept code="MED-007"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Mauvaise qualité de l'impression de la mammographie numérique, Réimpression du cliché"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

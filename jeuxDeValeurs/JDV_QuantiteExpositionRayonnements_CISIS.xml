@@ -1,18 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_QuantiteExpositionRayonnements_CISIS" id="1.2.250.1.213.1.1.5.620" version="test">
-        <ConceptList>
-            <Concept code="111636" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Dose dans l'air à l'entrée du patient (Kerma dans l'air)"/>
-            <Concept code="111637" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="DGM total : Dose Glandulaire Moyenne Total"/>
-            <Concept code="113722" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="PDS Total : Produit Dose Surface Total"/>
-            <Concept code="113726" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="PDS de Scopie Total : Produit Dose Surface de Scopie Total"/>
-            <Concept code="113727" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="PDS de Graphie Total : Produit Dose Surface de Graphie Total"/>
-            <Concept code="113730" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Temps total de scopie"/>
-            <Concept code="113731" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Nombre total d’images radiographiques"/>
-            <Concept code="113507" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="Activité administrée"/>
-            <Concept code="113813" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="PDL Total : Produit Dose Longueur Total"/>
-            <Concept code="113830" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique"/>
-            <Concept code="113839" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210419000000" displayName="E : Dose efficace"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_QuantiteExpositionRayonnements_CISIS"
+             id="1.2.250.1.213.1.1.5.620"
+             revisionDate="2021-04-19T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="111636"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Dose dans l'air à l'entrée du patient (Kerma dans l'air)"/>
+         <Concept code="111637"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="DGM total : Dose Glandulaire Moyenne Total"/>
+         <Concept code="113722"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="PDS Total : Produit Dose Surface Total"/>
+         <Concept code="113726"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="PDS de Scopie Total : Produit Dose Surface de Scopie Total"/>
+         <Concept code="113727"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="PDS de Graphie Total : Produit Dose Surface de Graphie Total"/>
+         <Concept code="113730"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Temps total de scopie"/>
+         <Concept code="113731"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Nombre total d’images radiographiques"/>
+         <Concept code="113507"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="Activité administrée"/>
+         <Concept code="113813"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="PDL Total : Produit Dose Longueur Total"/>
+         <Concept code="113830"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="IDSV Moyen : Indice de Dose Scanographique Volumique"/>
+         <Concept code="113839"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210419000000"
+                  displayName="E : Dose efficace"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

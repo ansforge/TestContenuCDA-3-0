@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeRencontre_OBP_CISIS" id="1.2.250.1.213.1.1.5.697" version="test">
-        <ConceptList>
-            <Concept code="GEN-079" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220727000000" displayName="Entretien prénatal précoce"/>
-            <Concept code="MED-163" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220727000000" displayName="Préparation à la naissance"/>
-            <Concept code="ORG-193" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220727000000" displayName="Consultation auprès d'un centre de diagnostic prénatal"/>
-            <Concept code="ORG-077" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220727000000" displayName="Hospitalisation (y compris à domicile)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeRencontre_OBP_CISIS"
+             id="1.2.250.1.213.1.1.5.697"
+             revisionDate="2022-07-27T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-079"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220727000000"
+                  displayName="Entretien prénatal précoce"/>
+         <Concept code="MED-163"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220727000000"
+                  displayName="Préparation à la naissance"/>
+         <Concept code="ORG-193"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220727000000"
+                  displayName="Consultation auprès d'un centre de diagnostic prénatal"/>
+         <Concept code="ORG-077"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220727000000"
+                  displayName="Hospitalisation (y compris à domicile)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

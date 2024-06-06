@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ClassificationRingMessmer_CISIS" id="1.2.250.1.213.1.1.5.497" version="test">
-        <ConceptList>
-            <Concept code="MED-623" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200909000000" displayName="Grade I : Signes cutanés, érythème généralisé, urticaire, angiœdème"/>
-            <Concept code="MED-624" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200909000000" displayName="Grade II : Symptômes quantifiables mais ne menaçant pas la vie : signes cutanés, hypotension, tachycardie, difficultés ventilatoires, toux, difficultés à gonfler les poumons"/>
-            <Concept code="MED-625" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200909000000" displayName="Grade III : Symptômes menaçant la vie : collapsus, tachycardie ou bradycardie, arythmies, bronchospasme"/>
-            <Concept code="MED-626" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200909000000" displayName="Grade IV : Arrêt circulatoire et/ou respiratoire"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ClassificationRingMessmer_CISIS"
+             id="1.2.250.1.213.1.1.5.497"
+             revisionDate="2020-09-09T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-623"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200909000000"
+                  displayName="Grade I : Signes cutanés, érythème généralisé, urticaire, angiœdème"/>
+         <Concept code="MED-624"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200909000000"
+                  displayName="Grade II : Symptômes quantifiables mais ne menaçant pas la vie : signes cutanés, hypotension, tachycardie, difficultés ventilatoires, toux, difficultés à gonfler les poumons"/>
+         <Concept code="MED-625"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200909000000"
+                  displayName="Grade III : Symptômes menaçant la vie : collapsus, tachycardie ou bradycardie, arythmies, bronchospasme"/>
+         <Concept code="MED-626"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200909000000"
+                  displayName="Grade IV : Arrêt circulatoire et/ou respiratoire"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSDysInt_CISIS" id="1.2.250.1.213.1.1.5.191" version="test">
-        <ConceptList>
-            <Concept code="LA6626-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Normal"/>
-            <Concept code="LA18475-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Discrète à modérée; le patient n’articule pas bien au moins quelques mots et, au pire, peut être compris avec quelques difficultés."/>
-            <Concept code="LA18476-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Sévère: le discours du patient est tellement mal articulé qu'il devient inintelligible en l'absence ou hors de proportion avec toute éventuelle aphasie ou est mutique, anarthrique."/>
-            <Concept code="LA18477-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Intubation, autre obstacle mécanique (expliquer)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSDysInt_CISIS"
+             id="1.2.250.1.213.1.1.5.191"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA6626-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Normal"/>
+         <Concept code="LA18475-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Discrète à modérée; le patient n’articule pas bien au moins quelques mots et, au pire, peut être compris avec quelques difficultés."/>
+         <Concept code="LA18476-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Sévère: le discours du patient est tellement mal articulé qu'il devient inintelligible en l'absence ou hors de proportion avec toute éventuelle aphasie ou est mutique, anarthrique."/>
+         <Concept code="LA18477-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Intubation, autre obstacle mécanique (expliquer)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

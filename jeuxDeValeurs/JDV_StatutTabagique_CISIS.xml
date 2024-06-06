@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_StatutTabagique_CISIS" id="1.2.250.1.213.1.1.5.667" version="test">
-        <ConceptList>
-            <Concept code="449868002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="fumeur(-euse) quotidien(ne)"/>
-            <Concept code="428041000124106" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="fumeur(-euse) occasionnel(le)"/>
-            <Concept code="8517006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="ancien(ne) fumeur(-euse)"/>
-            <Concept code="266919005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="n'a jamais fumé"/>
-            <Concept code="266927001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="Tobacco smoking consumption unknown"/>
-            <Concept code="56771006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="gros(se) fumeur(-euse) (plus de 20 cigarettes par jour)"/>
-            <Concept code="56578002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="fumeur(-euse) modéré(e) (20 cigarettes ou moins par jour)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_StatutTabagique_CISIS"
+             id="1.2.250.1.213.1.1.5.667"
+             revisionDate="2023-04-28T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="449868002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="fumeur(-euse) quotidien(ne)"/>
+         <Concept code="428041000124106"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="fumeur(-euse) occasionnel(le)"/>
+         <Concept code="8517006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="ancien(ne) fumeur(-euse)"/>
+         <Concept code="266919005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="n'a jamais fumé"/>
+         <Concept code="266927001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="Tobacco smoking consumption unknown"/>
+         <Concept code="56771006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="gros(se) fumeur(-euse) (plus de 20 cigarettes par jour)"/>
+         <Concept code="56578002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="fumeur(-euse) modéré(e) (20 cigarettes ou moins par jour)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_PM_Melanome_CISIS" id="1.2.250.1.213.1.1.5.637" version="test">
-        <ConceptList>
-            <Concept code="MED-965" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases à distance (cutanées ou sous-cutanées ou ganglionnaires au-delà des ganglions loco-régionaux)"/>
-            <Concept code="MED-966" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases pulmonaires"/>
-            <Concept code="MED-968" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases dans le SNC"/>
-            <Concept code="GEN-092.01.19" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres métastases viscérales. Toutes métastases à distance (autres que SNC)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_PM_Melanome_CISIS"
+             id="1.2.250.1.213.1.1.5.637"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-965"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Métastases à distance (cutanées ou sous-cutanées ou ganglionnaires au-delà des ganglions loco-régionaux)"/>
+         <Concept code="MED-966"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Métastases pulmonaires"/>
+         <Concept code="MED-968"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Métastases dans le SNC"/>
+         <Concept code="GEN-092.01.19"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autres métastases viscérales. Toutes métastases à distance (autres que SNC)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

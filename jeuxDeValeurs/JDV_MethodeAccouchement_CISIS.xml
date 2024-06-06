@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MethodeAccouchement_CISIS" id="1.2.250.1.213.1.1.5.115" version="test">
-        <ConceptList>
-            <Concept code="700000006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="" displayName="voie basse spontanée"/>
-            <Concept code="MED-1273" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="" displayName="Césarienne programmée"/>
-            <Concept code="MED-1253" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="" displayName="Césarienne pendant travail"/>
-            <Concept code="236974004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="" displayName="voie basse instrumentale"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MethodeAccouchement_CISIS"
+             id="1.2.250.1.213.1.1.5.115"
+             revisionDate="2023-10-17T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="700000006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid=""
+                  displayName="voie basse spontanée"/>
+         <Concept code="MED-1273"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid=""
+                  displayName="Césarienne programmée"/>
+         <Concept code="MED-1253"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid=""
+                  displayName="Césarienne pendant travail"/>
+         <Concept code="236974004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid=""
+                  displayName="voie basse instrumentale"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

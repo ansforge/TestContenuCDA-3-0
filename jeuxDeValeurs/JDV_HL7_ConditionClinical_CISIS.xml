@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_ConditionClinical_CISIS" id="2.16.840.1.113883.4.642.3.164" version="test">
-        <ConceptList>
-            <Concept code="active" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="Actif"/>
-            <Concept code="recurrence" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="Récurrent"/>
-            <Concept code="relapse" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="Rechute"/>
-            <Concept code="inactive" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="Inactif"/>
-            <Concept code="remission" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="En rémission"/>
-            <Concept code="resolved" codeSystem="2.16.840.1.113883.4.642.1.1074" dateFin="" dateValid="20220101000000" displayName="Résolu"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_ConditionClinical_CISIS"
+             id="2.16.840.1.113883.4.642.3.164"
+             revisionDate="2022-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="active"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Actif"/>
+         <Concept code="recurrence"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Récurrent"/>
+         <Concept code="relapse"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Rechute"/>
+         <Concept code="inactive"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Inactif"/>
+         <Concept code="remission"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="En rémission"/>
+         <Concept code="resolved"
+                  codeSystem="2.16.840.1.113883.4.642.1.1074"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Résolu"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,115 +1,553 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_PersonalRelationshipRoleType_CISIS" id="2.16.840.1.113883.1.11.19563" version="test">
-        <ConceptList>
-            <Concept code="ADOPTF" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Père adoptif"/>
-            <Concept code="ADOPTM" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mère adoptive"/>
-            <Concept code="ADOPTP" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Parent adoptif, au sens père ou mère"/>
-            <Concept code="AUNT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Tante"/>
-            <Concept code="BRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère"/>
-            <Concept code="BROINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-frère"/>
-            <Concept code="CHILD" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant"/>
-            <Concept code="CHLDADOPT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant adopté"/>
-            <Concept code="CHLDFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant placé en famille d'accueil"/>
-            <Concept code="CHLDINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Gendre ou belle-fille"/>
-            <Concept code="COUSN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Cousin€"/>
-            <Concept code="DAU" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille biologique"/>
-            <Concept code="DAUADOPT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille adoptive"/>
-            <Concept code="DAUC" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille"/>
-            <Concept code="DAUFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille placée en famille d'accueil"/>
-            <Concept code="DAUINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Belle-fille"/>
-            <Concept code="DOMPART" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Concubin(e) ou partenaire PACS"/>
-            <Concept code="EXT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Autre membre de la famille sans lien génétique direct"/>
-            <Concept code="FAMMEMB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Autre membre de la famille"/>
-            <Concept code="FMRSPS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Ancien époux ou ancienne épouse"/>
-            <Concept code="FRND" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Autre proche"/>
-            <Concept code="FTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Père"/>
-            <Concept code="FTHFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Assistant familial - Famille d'accueil"/>
-            <Concept code="FTHINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-père"/>
-            <Concept code="FTWIN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau ou jumelle dizygote"/>
-            <Concept code="FTWINBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau dizygote"/>
-            <Concept code="FTWINSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumelle dizygote"/>
-            <Concept code="GESTM" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mère porteuse"/>
-            <Concept code="GGRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-père"/>
-            <Concept code="GGRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-mère"/>
-            <Concept code="GGRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-parent"/>
-            <Concept code="GRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-père"/>
-            <Concept code="GRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-mère"/>
-            <Concept code="GRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-parent"/>
-            <Concept code="GRNDCHILD" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Petit-enfant"/>
-            <Concept code="GRNDDAU" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Petite-fille"/>
-            <Concept code="GRNDSON" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Petit-fils"/>
-            <Concept code="HBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-frère"/>
-            <Concept code="HSIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-frère ou demi-sœur"/>
-            <Concept code="HSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Demi-sœur"/>
-            <Concept code="HUSB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Epoux"/>
-            <Concept code="ITWIN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau ou jumelle monozygote"/>
-            <Concept code="ITWINBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumeau monozygote"/>
-            <Concept code="ITWINSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Jumelle monozygote"/>
-            <Concept code="MAUNT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Tante maternelle"/>
-            <Concept code="MCOUSN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Cousin (maternel)"/>
-            <Concept code="MGGRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-père maternel"/>
-            <Concept code="MGGRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-mère maternelle"/>
-            <Concept code="MGGRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière grand parent maternel"/>
-            <Concept code="MGRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-père maternel"/>
-            <Concept code="MGRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-mère maternelle"/>
-            <Concept code="MGRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand parent maternel"/>
-            <Concept code="MTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mère"/>
-            <Concept code="MTHFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Assistante familiale - Famille d'accueil"/>
-            <Concept code="MTHINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Belle-mère"/>
-            <Concept code="MUNCLE" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Oncle maternel"/>
-            <Concept code="NBOR" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Voisin€"/>
-            <Concept code="NBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère biologique"/>
-            <Concept code="NCHILD" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant biologique"/>
-            <Concept code="NEPHEW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Neveu"/>
-            <Concept code="NFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Père biologique"/>
-            <Concept code="NFTHF" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Père biologique du fœtus"/>
-            <Concept code="NIECE" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Nièce"/>
-            <Concept code="NIENEPH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Neveu ou nièce"/>
-            <Concept code="NMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mère biologique"/>
-            <Concept code="NMTHF" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Mère biologique du fœtus"/>
-            <Concept code="NPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Parent biologique, au sens père ou mère"/>
-            <Concept code="NSIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère ou soeur biologique"/>
-            <Concept code="NSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Soeur biologique"/>
-            <Concept code="PAUNT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Tante paternelle"/>
-            <Concept code="PCOUSN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Cousin (paternel)"/>
-            <Concept code="PGGRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-père paternel"/>
-            <Concept code="PGGRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière-grand-mère paternelle"/>
-            <Concept code="PGGRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Arrière grand parent paternel"/>
-            <Concept code="PGRFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-père paternel"/>
-            <Concept code="PGRMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand-mère paternelle"/>
-            <Concept code="PGRPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Grand parent paternel"/>
-            <Concept code="PRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Parent, au sens père ou mère"/>
-            <Concept code="PRNINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-père ou belle-mère"/>
-            <Concept code="PRNFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Parent, au sens famille d'accueil"/>
-            <Concept code="PUNCLE" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Oncle paternel"/>
-            <Concept code="RESPRSN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Responsable légal non membre de la famille"/>
-            <Concept code="ROOM" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Personne vivant sous le même toit"/>
-            <Concept code="SIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère ou sœur"/>
-            <Concept code="SIBINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-frère ou belle-sœur"/>
-            <Concept code="SIGOTHR" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Conjoint"/>
-            <Concept code="SIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Sœur"/>
-            <Concept code="SISINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Belle-sœur"/>
-            <Concept code="SON" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils biologique"/>
-            <Concept code="SONADOPT" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils adoptif"/>
-            <Concept code="SONC" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils"/>
-            <Concept code="SONFOST" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Garçon placé en famille d'accueil"/>
-            <Concept code="SONINLAW" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Gendre"/>
-            <Concept code="SPS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Epoux ou épouse"/>
-            <Concept code="STPBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils du beau-père ou de la belle-mère"/>
-            <Concept code="STPFTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-père - époux du père ou de la mère"/>
-            <Concept code="STPMTH" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Belle-mère - épouse du père ou de la mère"/>
-            <Concept code="STPCHLD" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant du conjoint, issu d'un mariage précédent"/>
-            <Concept code="STPDAU" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille du conjoint, issue d'un mariage précédent"/>
-            <Concept code="STPPRN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Beau-père ou belle-mère - époux(se) du père ou de la mère"/>
-            <Concept code="STPSIB" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Enfant du beau-père ou de la belle-mère"/>
-            <Concept code="STPSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fille du beau-père ou de la belle-mère"/>
-            <Concept code="STPSON" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Fils du conjoint, issu d'un mariage précédent"/>
-            <Concept code="TWIN" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère jumeau ou soeur jumelle"/>
-            <Concept code="TWINBRO" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Frère jumeau"/>
-            <Concept code="TWINSIS" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Soeur jumelle"/>
-            <Concept code="UNCLE" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Oncle"/>
-            <Concept code="WIFE" codeSystem="2.16.840.1.113883.5.111" dateFin="" dateValid="20100101000000" displayName="Epouse"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_PersonalRelationshipRoleType_CISIS"
+             id="2.16.840.1.113883.1.11.19563"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="ADOPTF"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Père adoptif"/>
+         <Concept code="ADOPTM"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Mère adoptive"/>
+         <Concept code="ADOPTP"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Parent adoptif, au sens père ou mère"/>
+         <Concept code="AUNT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tante"/>
+         <Concept code="BRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère"/>
+         <Concept code="BROINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-frère"/>
+         <Concept code="CHILD"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant"/>
+         <Concept code="CHLDADOPT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant adopté"/>
+         <Concept code="CHLDFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant placé en famille d'accueil"/>
+         <Concept code="CHLDINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Gendre ou belle-fille"/>
+         <Concept code="COUSN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cousin€"/>
+         <Concept code="DAU"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille biologique"/>
+         <Concept code="DAUADOPT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille adoptive"/>
+         <Concept code="DAUC"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille"/>
+         <Concept code="DAUFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille placée en famille d'accueil"/>
+         <Concept code="DAUINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Belle-fille"/>
+         <Concept code="DOMPART"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Concubin(e) ou partenaire PACS"/>
+         <Concept code="EXT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autre membre de la famille sans lien génétique direct"/>
+         <Concept code="FAMMEMB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autre membre de la famille"/>
+         <Concept code="FMRSPS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ancien époux ou ancienne épouse"/>
+         <Concept code="FRND"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autre proche"/>
+         <Concept code="FTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Père"/>
+         <Concept code="FTHFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Assistant familial - Famille d'accueil"/>
+         <Concept code="FTHINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-père"/>
+         <Concept code="FTWIN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumeau ou jumelle dizygote"/>
+         <Concept code="FTWINBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumeau dizygote"/>
+         <Concept code="FTWINSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumelle dizygote"/>
+         <Concept code="GESTM"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Mère porteuse"/>
+         <Concept code="GGRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-père"/>
+         <Concept code="GGRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-mère"/>
+         <Concept code="GGRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-parent"/>
+         <Concept code="GRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-père"/>
+         <Concept code="GRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-mère"/>
+         <Concept code="GRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-parent"/>
+         <Concept code="GRNDCHILD"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Petit-enfant"/>
+         <Concept code="GRNDDAU"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Petite-fille"/>
+         <Concept code="GRNDSON"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Petit-fils"/>
+         <Concept code="HBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Demi-frère"/>
+         <Concept code="HSIB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Demi-frère ou demi-sœur"/>
+         <Concept code="HSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Demi-sœur"/>
+         <Concept code="HUSB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Epoux"/>
+         <Concept code="ITWIN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumeau ou jumelle monozygote"/>
+         <Concept code="ITWINBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumeau monozygote"/>
+         <Concept code="ITWINSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Jumelle monozygote"/>
+         <Concept code="MAUNT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tante maternelle"/>
+         <Concept code="MCOUSN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cousin (maternel)"/>
+         <Concept code="MGGRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-père maternel"/>
+         <Concept code="MGGRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-mère maternelle"/>
+         <Concept code="MGGRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière grand parent maternel"/>
+         <Concept code="MGRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-père maternel"/>
+         <Concept code="MGRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-mère maternelle"/>
+         <Concept code="MGRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand parent maternel"/>
+         <Concept code="MTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Mère"/>
+         <Concept code="MTHFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Assistante familiale - Famille d'accueil"/>
+         <Concept code="MTHINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Belle-mère"/>
+         <Concept code="MUNCLE"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Oncle maternel"/>
+         <Concept code="NBOR"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Voisin€"/>
+         <Concept code="NBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère biologique"/>
+         <Concept code="NCHILD"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant biologique"/>
+         <Concept code="NEPHEW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Neveu"/>
+         <Concept code="NFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Père biologique"/>
+         <Concept code="NFTHF"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Père biologique du fœtus"/>
+         <Concept code="NIECE"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Nièce"/>
+         <Concept code="NIENEPH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Neveu ou nièce"/>
+         <Concept code="NMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Mère biologique"/>
+         <Concept code="NMTHF"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Mère biologique du fœtus"/>
+         <Concept code="NPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Parent biologique, au sens père ou mère"/>
+         <Concept code="NSIB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère ou soeur biologique"/>
+         <Concept code="NSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Soeur biologique"/>
+         <Concept code="PAUNT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tante paternelle"/>
+         <Concept code="PCOUSN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cousin (paternel)"/>
+         <Concept code="PGGRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-père paternel"/>
+         <Concept code="PGGRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière-grand-mère paternelle"/>
+         <Concept code="PGGRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrière grand parent paternel"/>
+         <Concept code="PGRFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-père paternel"/>
+         <Concept code="PGRMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand-mère paternelle"/>
+         <Concept code="PGRPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grand parent paternel"/>
+         <Concept code="PRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Parent, au sens père ou mère"/>
+         <Concept code="PRNINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-père ou belle-mère"/>
+         <Concept code="PRNFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Parent, au sens famille d'accueil"/>
+         <Concept code="PUNCLE"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Oncle paternel"/>
+         <Concept code="RESPRSN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Responsable légal non membre de la famille"/>
+         <Concept code="ROOM"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Personne vivant sous le même toit"/>
+         <Concept code="SIB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère ou sœur"/>
+         <Concept code="SIBINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-frère ou belle-sœur"/>
+         <Concept code="SIGOTHR"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Conjoint"/>
+         <Concept code="SIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sœur"/>
+         <Concept code="SISINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Belle-sœur"/>
+         <Concept code="SON"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fils biologique"/>
+         <Concept code="SONADOPT"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fils adoptif"/>
+         <Concept code="SONC"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fils"/>
+         <Concept code="SONFOST"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Garçon placé en famille d'accueil"/>
+         <Concept code="SONINLAW"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Gendre"/>
+         <Concept code="SPS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Epoux ou épouse"/>
+         <Concept code="STPBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fils du beau-père ou de la belle-mère"/>
+         <Concept code="STPFTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-père - époux du père ou de la mère"/>
+         <Concept code="STPMTH"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Belle-mère - épouse du père ou de la mère"/>
+         <Concept code="STPCHLD"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant du conjoint, issu d'un mariage précédent"/>
+         <Concept code="STPDAU"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille du conjoint, issue d'un mariage précédent"/>
+         <Concept code="STPPRN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Beau-père ou belle-mère - époux(se) du père ou de la mère"/>
+         <Concept code="STPSIB"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enfant du beau-père ou de la belle-mère"/>
+         <Concept code="STPSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fille du beau-père ou de la belle-mère"/>
+         <Concept code="STPSON"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fils du conjoint, issu d'un mariage précédent"/>
+         <Concept code="TWIN"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère jumeau ou soeur jumelle"/>
+         <Concept code="TWINBRO"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Frère jumeau"/>
+         <Concept code="TWINSIS"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Soeur jumelle"/>
+         <Concept code="UNCLE"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Oncle"/>
+         <Concept code="WIFE"
+                  codeSystem="2.16.840.1.113883.5.111"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Epouse"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

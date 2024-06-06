@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Conditionnement_CISIS" id="1.2.250.1.213.1.1.5.149" version="test">
-        <ConceptList>
-            <Concept code="C" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="Cytologie par étalement"/>
-            <Concept code="H" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="Histologie et cytologie par inclusion"/>
-            <Concept code="K" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="Matériel congelé – tissuthèque"/>
-            <Concept code="X" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="Autres technique (Imagerie, radiologie, échographie,  tomodensitométrie, IRM…)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Conditionnement_CISIS"
+             id="1.2.250.1.213.1.1.5.149"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="C"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cytologie par étalement"/>
+         <Concept code="H"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Histologie et cytologie par inclusion"/>
+         <Concept code="K"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Matériel congelé – tissuthèque"/>
+         <Concept code="X"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autres technique (Imagerie, radiologie, échographie,  tomodensitométrie, IRM…)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

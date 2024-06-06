@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_AdministrableDrugForm_CISIS" id="2.16.840.1.113883.1.11.14570" version="test">
-        <ConceptList>
-            <Concept code="APPFUL" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Applicatorful"/>
-            <Concept code="PUFF" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Puff"/>
-            <Concept code="SCOOP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Scoops"/>
-            <Concept code="SPRY" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Sprays"/>
-            <Concept code="DROP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Drops"/>
-            <Concept code="NDROP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Nasal Drops"/>
-            <Concept code="OPDROP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Ophthalmic Drops"/>
-            <Concept code="ORDROP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Oral Drops"/>
-            <Concept code="OTDROP" codeSystem="2.16.840.1.113883.5.85" dateFin="" dateValid="20211029000000" displayName="Otic Drops"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_AdministrableDrugForm_CISIS"
+             id="2.16.840.1.113883.1.11.14570"
+             revisionDate="2021-10-29T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="APPFUL"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Applicatorful"/>
+         <Concept code="PUFF"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Puff"/>
+         <Concept code="SCOOP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Scoops"/>
+         <Concept code="SPRY"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Sprays"/>
+         <Concept code="DROP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Drops"/>
+         <Concept code="NDROP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Nasal Drops"/>
+         <Concept code="OPDROP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Ophthalmic Drops"/>
+         <Concept code="ORDROP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Oral Drops"/>
+         <Concept code="OTDROP"
+                  codeSystem="2.16.840.1.113883.5.85"
+                  dateFin=""
+                  dateValid="20211029000000"
+                  displayName="Otic Drops"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

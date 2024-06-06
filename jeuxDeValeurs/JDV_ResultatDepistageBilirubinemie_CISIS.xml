@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ResultatDepistageBilirubinemie_CISIS" id="1.2.250.1.213.1.1.5.773" version="test">
-        <ConceptList>
-            <Concept code="723505004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="Risque faible"/>
-            <Concept code="" codeSystem="" dateFin="" dateValid="20240307000000" displayName="Risque modéré"/>
-            <Concept code="723509005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="Risque élevé"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ResultatDepistageBilirubinemie_CISIS"
+             id="1.2.250.1.213.1.1.5.773"
+             revisionDate="2024-03-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="75976002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240307000000"
+                  displayName="risque faible de"/>
+         <Concept code="25594002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240307000000"
+                  displayName="risque modéré de"/>
+         <Concept code="15508007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240307000000"
+                  displayName="risque élevé de"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

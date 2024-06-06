@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreBradenNutrition_CISIS" id="1.2.250.1.213.1.1.5.509" version="test">
-        <ConceptList>
-            <Concept code="GEN-225" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Très pauvre"/>
-            <Concept code="GEN-226" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Probablement inadéquate"/>
-            <Concept code="GEN-227" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Adéquate"/>
-            <Concept code="GEN-228" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Excellente"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreBradenNutrition_CISIS"
+             id="1.2.250.1.213.1.1.5.509"
+             revisionDate="2020-07-09T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-225"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Très pauvre"/>
+         <Concept code="GEN-226"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Probablement inadéquate"/>
+         <Concept code="GEN-227"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Adéquate"/>
+         <Concept code="GEN-228"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Excellente"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

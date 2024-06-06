@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ImagerieObjectifsReference_CISIS" id="1.2.250.1.213.1.1.5.672" version="test">
-        <ConceptList>
-            <Concept code="121079" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20220217000000" displayName="préliminaire"/>
-            <Concept code="121080" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20220217000000" displayName="Meilleure illustration de résultat"/>
-            <Concept code="121112" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20220217000000" displayName="Source de mesure"/>
-            <Concept code="121200" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20220217000000" displayName="Illustration de la ROI"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ImagerieObjectifsReference_CISIS"
+             id="1.2.250.1.213.1.1.5.672"
+             revisionDate="2022-02-17T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="121079"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20220217000000"
+                  displayName="préliminaire"/>
+         <Concept code="121080"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20220217000000"
+                  displayName="Meilleure illustration de résultat"/>
+         <Concept code="121112"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20220217000000"
+                  displayName="Source de mesure"/>
+         <Concept code="121200"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20220217000000"
+                  displayName="Illustration de la ROI"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

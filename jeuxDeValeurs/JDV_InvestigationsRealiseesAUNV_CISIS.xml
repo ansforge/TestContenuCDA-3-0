@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_InvestigationsRealiseesAUNV_CISIS" id="1.2.250.1.213.1.1.5.195" version="test">
-        <ConceptList>
-            <Concept code="DEQP003" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20230803000000" displayName="ECG"/>
-            <Concept code="ACQK001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Scannographie du crâne et de son contenu"/>
-            <Concept code="ACQN001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Remnographie du crâne et de son contenu"/>
-            <Concept code="EAQH002" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Scanographie des vaisseaux encéphaliques"/>
-            <Concept code="EAQJ001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Remnographie des vaisseaux encéphaliques"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_InvestigationsRealiseesAUNV_CISIS"
+             id="1.2.250.1.213.1.1.5.195"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="DEQP003"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="ECG"/>
+         <Concept code="ACQK001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Scannographie du crâne et de son contenu"/>
+         <Concept code="ACQN001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Remnographie du crâne et de son contenu"/>
+         <Concept code="EAQH002"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Scanographie des vaisseaux encéphaliques"/>
+         <Concept code="EAQJ001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Remnographie des vaisseaux encéphaliques"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

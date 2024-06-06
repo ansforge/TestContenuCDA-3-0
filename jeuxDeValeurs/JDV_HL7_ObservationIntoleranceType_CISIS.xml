@@ -1,19 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_ObservationIntoleranceType_CISIS" id="2.16.840.1.113883.1.11.19700" version="test">
-        <ConceptList>
-            <Concept code="OINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie ou hypersensisiblité"/>
-            <Concept code="DINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie ou hypersensisiblité médicamenteuse"/>
-            <Concept code="EINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie ou hypersensisiblité à un agent environnemental (latex, pollen, etc.)"/>
-            <Concept code="FINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie ou hypersensisiblité alimentaire"/>
-            <Concept code="ALG" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie"/>
-            <Concept code="DALG" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie médicamenteuse"/>
-            <Concept code="EALG" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie à un agent environnemental (latex, pollen, etc.)"/>
-            <Concept code="FALG" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Allergie alimentaire"/>
-            <Concept code="NAINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hypersensibilité non allergique"/>
-            <Concept code="DNAINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hypersensibilité non allergique médicamenteuse"/>
-            <Concept code="ENAINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hypersensibilité non allergique à un agent environnemental (latex, pollen, etc.)"/>
-            <Concept code="FNAINT" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hypersensibilité non allergique alimentaire"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_ObservationIntoleranceType_CISIS"
+             id="2.16.840.1.113883.1.11.19700"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="OINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie ou hypersensisiblité"/>
+         <Concept code="DINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie ou hypersensisiblité médicamenteuse"/>
+         <Concept code="EINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie ou hypersensisiblité à un agent environnemental (latex, pollen, etc.)"/>
+         <Concept code="FINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie ou hypersensisiblité alimentaire"/>
+         <Concept code="ALG"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie"/>
+         <Concept code="DALG"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie médicamenteuse"/>
+         <Concept code="EALG"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie à un agent environnemental (latex, pollen, etc.)"/>
+         <Concept code="FALG"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Allergie alimentaire"/>
+         <Concept code="NAINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hypersensibilité non allergique"/>
+         <Concept code="DNAINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hypersensibilité non allergique médicamenteuse"/>
+         <Concept code="ENAINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hypersensibilité non allergique à un agent environnemental (latex, pollen, etc.)"/>
+         <Concept code="FNAINT"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hypersensibilité non allergique alimentaire"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

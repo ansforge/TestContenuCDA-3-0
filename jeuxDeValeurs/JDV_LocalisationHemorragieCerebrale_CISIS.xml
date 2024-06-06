@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_LocalisationHemorragieCerebrale_CISIS" id="1.2.250.1.213.1.1.5.206" version="test">
-        <ConceptList>
-            <Concept code="MED-446" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphère topographie profonde"/>
-            <Concept code="MED-447" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphère topographie lobaire"/>
-            <Concept code="MED-448" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Hémisphère topographie intraventriculaire pure"/>
-            <Concept code="113305005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="cervelet"/>
-            <Concept code="15926001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221208000000" displayName="tronc de l'encéphale"/>
-            <Concept code="35764002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="ventricule cérébral"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_LocalisationHemorragieCerebrale_CISIS"
+             id="1.2.250.1.213.1.1.5.206"
+             revisionDate="2023-07-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-446"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hémisphère topographie profonde"/>
+         <Concept code="MED-447"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hémisphère topographie lobaire"/>
+         <Concept code="MED-448"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hémisphère topographie intraventriculaire pure"/>
+         <Concept code="113305005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="cervelet"/>
+         <Concept code="15926001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221208000000"
+                  displayName="tronc de l'encéphale"/>
+         <Concept code="35764002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="ventricule cérébral"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ResultatDepistageProteinurie_CISIS" id="1.2.250.1.213.1.1.5.775" version="test">
-        <ConceptList>
-            <Concept code="260385009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240307000000" displayName="négatif"/>
-            <Concept code="" codeSystem="" dateFin="" dateValid="20240307000000" displayName="Résultat positif (30 mg/dL)"/>
-            <Concept code="" codeSystem="" dateFin="" dateValid="20240307000000" displayName="Résultat positif (100 mg/dL)"/>
-            <Concept code="" codeSystem="" dateFin="" dateValid="20240307000000" displayName="Résultat positif (500 mg/dL)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ResultatDepistageProteinurie_CISIS"
+             id="1.2.250.1.213.1.1.5.775"
+             revisionDate="2024-03-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="260385009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240307000000"
+                  displayName="négatif"/>
+         <Concept code="10828004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240307000000"
+                  displayName="positif"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,21 +1,83 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ChecklistDLU_CISIS" id="1.2.250.1.213.1.1.5.71" version="test">
-        <ConceptList>
-            <Concept code="DLU_006" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Attestation de la carte vitale"/>
-            <Concept code="DLU_007" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Attestation de mutuelle"/>
-            <Concept code="DLU_008" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Photocopie de la carte d’identité"/>
-            <Concept code="DLU_009" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Grille AGGIR (la plus récente)"/>
-            <Concept code="DLU_010" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Photocopie des directives anticipées"/>
-            <Concept code="DLU_011" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Photocopies des ordonnances en cours"/>
-            <Concept code="DLU_012" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Tableau d’administration des médicaments"/>
-            <Concept code="DLU_013" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Résultats récents de biologie (1 à 3 mois) avec clairance de la créatinine et INR (si AVK)"/>
-            <Concept code="DLU_014" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="CR de la dernière hospitalisation"/>
-            <Concept code="DLU_015" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Fiche BMR (bactérie multi-résistante)"/>
-            <Concept code="DLU_016" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Fiche ou carnet de suivi des soins (glycémie, pansements, perfusion, ventilation, nutrition, etc.)"/>
-            <Concept code="DLU_017" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Carnet de suivi du pacemaker ou du défibrilateur implentable"/>
-            <Concept code="DLU_018" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Carte de groupe sanguin (si à jour)"/>
-            <Concept code="DLU_019" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Liste des capacités en soins de l’EHPAD"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ChecklistDLU_CISIS"
+             id="1.2.250.1.213.1.1.5.71"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="DLU_006"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Attestation de la carte vitale"/>
+         <Concept code="DLU_007"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Attestation de mutuelle"/>
+         <Concept code="DLU_008"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Photocopie de la carte d’identité"/>
+         <Concept code="DLU_009"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Grille AGGIR (la plus récente)"/>
+         <Concept code="DLU_010"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Photocopie des directives anticipées"/>
+         <Concept code="DLU_011"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Photocopies des ordonnances en cours"/>
+         <Concept code="DLU_012"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tableau d’administration des médicaments"/>
+         <Concept code="DLU_013"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Résultats récents de biologie (1 à 3 mois) avec clairance de la créatinine et INR (si AVK)"/>
+         <Concept code="DLU_014"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CR de la dernière hospitalisation"/>
+         <Concept code="DLU_015"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fiche BMR (bactérie multi-résistante)"/>
+         <Concept code="DLU_016"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fiche ou carnet de suivi des soins (glycémie, pansements, perfusion, ventilation, nutrition, etc.)"/>
+         <Concept code="DLU_017"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Carnet de suivi du pacemaker ou du défibrilateur implentable"/>
+         <Concept code="DLU_018"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Carte de groupe sanguin (si à jour)"/>
+         <Concept code="DLU_019"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Liste des capacités en soins de l’EHPAD"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

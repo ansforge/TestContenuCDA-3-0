@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_CirconstancesDeces_CISIS" id="1.2.250.1.213.1.1.5.741" version="test">
-        <ConceptList>
-            <Concept code="17766007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="mort fœtale par asphyxie et/ou par anoxie, pas clair si noté avant ou après le début du travaile"/>
-            <Concept code="44174001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="mort fœtale par asphyxie et/ou par anoxie avant le début du travail"/>
-            <Concept code="1762004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="mort fœtale par asphyxie et/ou par anoxie pendant le travail"/>
-            <Concept code="67313008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="mort fœtale due à une interruption de grossesse"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_CirconstancesDeces_CISIS"
+             id="1.2.250.1.213.1.1.5.741"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="17766007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="mort fœtale par asphyxie et/ou par anoxie, pas clair si noté avant ou après le début du travaile"/>
+         <Concept code="44174001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="mort fœtale par asphyxie et/ou par anoxie avant le début du travail"/>
+         <Concept code="1762004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="mort fœtale par asphyxie et/ou par anoxie pendant le travail"/>
+         <Concept code="67313008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="mort fœtale due à une interruption de grossesse"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

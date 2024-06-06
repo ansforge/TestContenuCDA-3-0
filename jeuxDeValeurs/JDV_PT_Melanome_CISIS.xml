@@ -1,22 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_PT_Melanome_CISIS" id="1.2.250.1.213.1.1.5.635" version="test">
-        <ConceptList>
-            <Concept code="MED-942" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome primitif dont l'épaisseur ne peut être évaluée"/>
-            <Concept code="MED-943" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Pas de mélanome primitif évident (ex. mélanome entièrement régressif)"/>
-            <Concept code="8720/2" codeSystem="2.16.840.1.113883.6.43.1" dateFin="" dateValid="20210511000000" displayName="Mélanome in situ"/>
-            <Concept code="MED-945" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome d'épaisseur inférieure ou égale à 1,0 mm (statut ulcération inconnu)"/>
-            <Concept code="MED-946" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &lt; 0,8 mm d'épaisseur sans ulcération"/>
-            <Concept code="MED-947" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &lt; 0,8 mm d'épaisseur avec ulcération ou mélanome de 0,8 à 1,0 mm d'épaisseur avec ou sans ulcération"/>
-            <Concept code="MED-948" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur (statut ulcération inconnu)"/>
-            <Concept code="MED-949" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur sans ulcération"/>
-            <Concept code="MED-950" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur avec ulcération"/>
-            <Concept code="MED-951" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur (statut ulcération inconnu)"/>
-            <Concept code="MED-952" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur sans ulcération"/>
-            <Concept code="MED-953" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur avec ulcération"/>
-            <Concept code="MED-954" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 4,0 mm d'épaisseur (statut ulcération inconnu)"/>
-            <Concept code="MED-955" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 4,0 mm d'épaisseur sans ulcération"/>
-            <Concept code="MED-956" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Mélanome &gt; 4,0 mm d'épaisseur avec ulcération"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_PT_Melanome_CISIS"
+             id="1.2.250.1.213.1.1.5.635"
+             revisionDate="2021-05-11T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-942"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome primitif dont l'épaisseur ne peut être évaluée"/>
+         <Concept code="MED-943"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Pas de mélanome primitif évident (ex. mélanome entièrement régressif)"/>
+         <Concept code="8720/2"
+                  codeSystem="2.16.840.1.113883.6.43.1"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome in situ"/>
+         <Concept code="MED-945"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome d'épaisseur inférieure ou égale à 1,0 mm (statut ulcération inconnu)"/>
+         <Concept code="MED-946"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &lt; 0,8 mm d'épaisseur sans ulcération"/>
+         <Concept code="MED-947"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &lt; 0,8 mm d'épaisseur avec ulcération ou mélanome de 0,8 à 1,0 mm d'épaisseur avec ou sans ulcération"/>
+         <Concept code="MED-948"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur (statut ulcération inconnu)"/>
+         <Concept code="MED-949"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur sans ulcération"/>
+         <Concept code="MED-950"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur avec ulcération"/>
+         <Concept code="MED-951"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur (statut ulcération inconnu)"/>
+         <Concept code="MED-952"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur sans ulcération"/>
+         <Concept code="MED-953"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur avec ulcération"/>
+         <Concept code="MED-954"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 4,0 mm d'épaisseur (statut ulcération inconnu)"/>
+         <Concept code="MED-955"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 4,0 mm d'épaisseur sans ulcération"/>
+         <Concept code="MED-956"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Mélanome &gt; 4,0 mm d'épaisseur avec ulcération"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

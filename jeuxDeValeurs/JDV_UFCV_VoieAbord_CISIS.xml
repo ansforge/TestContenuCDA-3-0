@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_UFCV_VoieAbord_CISIS" id="1.2.250.1.213.1.1.4.2.8" version="test">
-        <ConceptList>
-            <Concept code="260597006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="par la veine céphalique"/>
-            <Concept code="260598001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="par la veine subclavière"/>
-            <Concept code="1290464007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="voie d'abord épicardique"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_VoieAbord_CISIS"
+             id="1.2.250.1.213.1.1.4.2.8"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="260597006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="par la veine céphalique"/>
+         <Concept code="260598001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="par la veine subclavière"/>
+         <Concept code="1290464007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="voie d'abord épicardique"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_AntecedentsPersonnels_CISIS" id="1.2.250.1.213.1.1.5.34" version="test">
-        <ConceptList>
-            <Concept code="443508001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="Pas d'antécédent personnel"/>
-            <Concept code="C81" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Lymphome de Hodgkin"/>
-            <Concept code="D48.6" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Tumeur à évolution imprévisible et inconnue du sein"/>
-            <Concept code="118445002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="ablation d'un néoplasme bénin"/>
-            <Concept code="370611004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="excision d'un néoplasme maligne"/>
-            <Concept code="56306000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230428000000" displayName="chirurgie esthétique"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_AntecedentsPersonnels_CISIS"
+             id="1.2.250.1.213.1.1.5.34"
+             revisionDate="2023-04-28T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="443508001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="Pas d'antécédent personnel"/>
+         <Concept code="C81"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Lymphome de Hodgkin"/>
+         <Concept code="D48.6"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tumeur à évolution imprévisible et inconnue du sein"/>
+         <Concept code="118445002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="ablation d'un néoplasme bénin"/>
+         <Concept code="370611004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="excision d'un néoplasme maligne"/>
+         <Concept code="56306000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230428000000"
+                  displayName="chirurgie esthétique"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

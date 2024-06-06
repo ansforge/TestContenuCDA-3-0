@@ -1,89 +1,423 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_RouteofAdministration_CISIS" id="1.2.250.1.213.1.1.5.677" version="test">
-        <ConceptList>
-            <Concept code="20001000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie auriculaire"/>
-            <Concept code="20002500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie buccogingivale"/>
-            <Concept code="20003000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie cutanée"/>
-            <Concept code="20004000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie dentaire"/>
-            <Concept code="20006000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie endocervicale"/>
-            <Concept code="20007000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie endosinusale"/>
-            <Concept code="20008000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie endotrachéobronchique"/>
-            <Concept code="20009000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie péridurale"/>
-            <Concept code="20010000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie épilésionnelle"/>
-            <Concept code="20011000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie extra-amniotique"/>
-            <Concept code="20011500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie extracorporelle"/>
-            <Concept code="20013000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie gastro-entérale"/>
-            <Concept code="20013500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie gastrique"/>
-            <Concept code="20014000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie gingivale"/>
-            <Concept code="20015000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Hémodialyse"/>
-            <Concept code="20015500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Implantation"/>
-            <Concept code="20019500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Infiltration"/>
-            <Concept code="20020000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie inhalée"/>
-            <Concept code="20021000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intestinale"/>
-            <Concept code="20022000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraamniotique"/>
-            <Concept code="20023000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraartérielle"/>
-            <Concept code="20024000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraarticulaire"/>
-            <Concept code="20025000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrabursale"/>
-            <Concept code="20025500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracamérulaire"/>
-            <Concept code="20026000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracardiaque"/>
-            <Concept code="20026500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracartilagineuse"/>
-            <Concept code="20027000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracaverneuse"/>
-            <Concept code="20027010" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracérébrale"/>
-            <Concept code="20028000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracervicale"/>
-            <Concept code="20028300" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracholangiopancréatique"/>
-            <Concept code="20028500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracisternale"/>
-            <Concept code="20029000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracoronaire"/>
-            <Concept code="20030000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intradermique"/>
-            <Concept code="20031000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intradiscale"/>
-            <Concept code="20031500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraépidermique"/>
-            <Concept code="20031700" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraglandulaire"/>
-            <Concept code="20032000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intralésionnelle"/>
-            <Concept code="20033000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intralymphatique"/>
-            <Concept code="20035000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intramusculaire"/>
-            <Concept code="20036000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraoculaire"/>
-            <Concept code="20036500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraosseuse"/>
-            <Concept code="20037000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrapéricardiaque"/>
-            <Concept code="20038000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrapéritonéale"/>
-            <Concept code="20039000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrapleurale"/>
-            <Concept code="20039200" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraportale"/>
-            <Concept code="20039500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraprostatique"/>
-            <Concept code="20041000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrasternale"/>
-            <Concept code="20042000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intrathécale"/>
-            <Concept code="20043000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intratumorale"/>
-            <Concept code="20044000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intra-utérine"/>
-            <Concept code="20045000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraveineuse"/>
-            <Concept code="20046000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intravésicale"/>
-            <Concept code="20047000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intravitréenne"/>
-            <Concept code="20047500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Iontophorèse"/>
-            <Concept code="20048000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie laryngopharyngée"/>
-            <Concept code="20049000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie nasale"/>
-            <Concept code="20051000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie ophtalmique"/>
-            <Concept code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie orale"/>
-            <Concept code="20054000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie buccale"/>
-            <Concept code="20055000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie oropharyngée"/>
-            <Concept code="20057000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie périarticulaire"/>
-            <Concept code="20058000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie périneurale"/>
-            <Concept code="20059000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie périodontale"/>
-            <Concept code="20059300" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie périosseuse"/>
-            <Concept code="20059400" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie péritumorale"/>
-            <Concept code="20059500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie juxta-sclérale postérieure"/>
-            <Concept code="20061000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie rectale"/>
-            <Concept code="20061500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie rétrobulbaire"/>
-            <Concept code="20062000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Autre(s)"/>
-            <Concept code="20063000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Scarification"/>
-            <Concept code="20065000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie sous-conjonctivale"/>
-            <Concept code="20066000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie sous-cutanée"/>
-            <Concept code="20067000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie sublinguale"/>
-            <Concept code="20067500" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie sous-muqueuse"/>
-            <Concept code="20070000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie transdermique"/>
-            <Concept code="20071000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie urétrale"/>
-            <Concept code="20072000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie vaginale"/>
-            <Concept code="20080000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracérébroventriculaire"/>
-            <Concept code="20081000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie subrétinale"/>
-            <Concept code="20084000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intracornéenne"/>
-            <Concept code="20086000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraputaminale"/>
-            <Concept code="420287000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20220331000000" displayName="Voie intraventriculaire cardiaque"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_RouteofAdministration_CISIS"
+             id="1.2.250.1.213.1.1.5.677"
+             revisionDate="2022-03-31T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="20001000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie auriculaire"/>
+         <Concept code="20002500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie buccogingivale"/>
+         <Concept code="20003000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie cutanée"/>
+         <Concept code="20004000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie dentaire"/>
+         <Concept code="20006000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie endocervicale"/>
+         <Concept code="20007000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie endosinusale"/>
+         <Concept code="20008000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie endotrachéobronchique"/>
+         <Concept code="20009000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie péridurale"/>
+         <Concept code="20010000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie épilésionnelle"/>
+         <Concept code="20011000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie extra-amniotique"/>
+         <Concept code="20011500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie extracorporelle"/>
+         <Concept code="20013000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie gastro-entérale"/>
+         <Concept code="20013500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie gastrique"/>
+         <Concept code="20014000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie gingivale"/>
+         <Concept code="20015000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Hémodialyse"/>
+         <Concept code="20015500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Implantation"/>
+         <Concept code="20019500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Infiltration"/>
+         <Concept code="20020000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie inhalée"/>
+         <Concept code="20021000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intestinale"/>
+         <Concept code="20022000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraamniotique"/>
+         <Concept code="20023000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraartérielle"/>
+         <Concept code="20024000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraarticulaire"/>
+         <Concept code="20025000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrabursale"/>
+         <Concept code="20025500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracamérulaire"/>
+         <Concept code="20026000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracardiaque"/>
+         <Concept code="20026500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracartilagineuse"/>
+         <Concept code="20027000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracaverneuse"/>
+         <Concept code="20027010"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracérébrale"/>
+         <Concept code="20028000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracervicale"/>
+         <Concept code="20028300"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracholangiopancréatique"/>
+         <Concept code="20028500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracisternale"/>
+         <Concept code="20029000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracoronaire"/>
+         <Concept code="20030000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intradermique"/>
+         <Concept code="20031000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intradiscale"/>
+         <Concept code="20031500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraépidermique"/>
+         <Concept code="20031700"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraglandulaire"/>
+         <Concept code="20032000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intralésionnelle"/>
+         <Concept code="20033000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intralymphatique"/>
+         <Concept code="20035000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intramusculaire"/>
+         <Concept code="20036000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraoculaire"/>
+         <Concept code="20036500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraosseuse"/>
+         <Concept code="20037000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrapéricardiaque"/>
+         <Concept code="20038000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrapéritonéale"/>
+         <Concept code="20039000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrapleurale"/>
+         <Concept code="20039200"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraportale"/>
+         <Concept code="20039500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraprostatique"/>
+         <Concept code="20041000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrasternale"/>
+         <Concept code="20042000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intrathécale"/>
+         <Concept code="20043000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intratumorale"/>
+         <Concept code="20044000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intra-utérine"/>
+         <Concept code="20045000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraveineuse"/>
+         <Concept code="20046000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intravésicale"/>
+         <Concept code="20047000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intravitréenne"/>
+         <Concept code="20047500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Iontophorèse"/>
+         <Concept code="20048000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie laryngopharyngée"/>
+         <Concept code="20049000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie nasale"/>
+         <Concept code="20051000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie ophtalmique"/>
+         <Concept code="20053000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie orale"/>
+         <Concept code="20054000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie buccale"/>
+         <Concept code="20055000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie oropharyngée"/>
+         <Concept code="20057000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie périarticulaire"/>
+         <Concept code="20058000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie périneurale"/>
+         <Concept code="20059000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie périodontale"/>
+         <Concept code="20059300"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie périosseuse"/>
+         <Concept code="20059400"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie péritumorale"/>
+         <Concept code="20059500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie juxta-sclérale postérieure"/>
+         <Concept code="20061000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie rectale"/>
+         <Concept code="20061500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie rétrobulbaire"/>
+         <Concept code="20062000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Autre(s)"/>
+         <Concept code="20063000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Scarification"/>
+         <Concept code="20065000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie sous-conjonctivale"/>
+         <Concept code="20066000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie sous-cutanée"/>
+         <Concept code="20067000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie sublinguale"/>
+         <Concept code="20067500"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie sous-muqueuse"/>
+         <Concept code="20070000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie transdermique"/>
+         <Concept code="20071000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie urétrale"/>
+         <Concept code="20072000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie vaginale"/>
+         <Concept code="20080000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracérébroventriculaire"/>
+         <Concept code="20081000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie subrétinale"/>
+         <Concept code="20084000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intracornéenne"/>
+         <Concept code="20086000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraputaminale"/>
+         <Concept code="420287000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20220331000000"
+                  displayName="Voie intraventriculaire cardiaque"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_Confidentiality_CISIS" id="2.16.840.1.113883.1.11.10228" version="test">
-        <ConceptList>
-            <Concept code="L" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20220928000000" displayName="Bas"/>
-            <Concept code="M" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20220928000000" displayName="Modéré"/>
-            <Concept code="N" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20100101000000" displayName="Normal"/>
-            <Concept code="R" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20100101000000" displayName="Restreint"/>
-            <Concept code="U" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20220928000000" displayName="Non restreint"/>
-            <Concept code="V" codeSystem="2.16.840.1.113883.5.25" dateFin="" dateValid="20100101000000" displayName="Très restreint"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_Confidentiality_CISIS"
+             id="2.16.840.1.113883.1.11.10228"
+             revisionDate="2022-09-28T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="L"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20220928000000"
+                  displayName="Bas"/>
+         <Concept code="M"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20220928000000"
+                  displayName="Modéré"/>
+         <Concept code="N"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Normal"/>
+         <Concept code="R"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Restreint"/>
+         <Concept code="U"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20220928000000"
+                  displayName="Non restreint"/>
+         <Concept code="V"
+                  codeSystem="2.16.840.1.113883.5.25"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Très restreint"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

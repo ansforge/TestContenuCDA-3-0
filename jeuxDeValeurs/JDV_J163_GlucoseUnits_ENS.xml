@@ -1,9 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20220128120000" dateValid="20210625120000" description="Liste fermée des unités utilisables pour la mesure du glucose avec le profil ENS_ObservationGlucose" displayName="JDV_J163_GlucoseUnits_ENS.tabs" id="1.2.250.1.213.1.1.5.639" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS">
-        <ConceptList>
-            <Concept code="mg/dL" codeSystem="2.16.840.1.113883.6.8" displayName="milligramme par décilitre"/>
-            <Concept code="%" codeSystem="2.16.840.1.113883.6.8" displayName="pourcentage"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20220128120000"
+             dateValid="20210625120000"
+             description="Liste fermée des unités utilisables pour la mesure du glucose avec le profil ENS_ObservationGlucose"
+             displayName="JDV_J163_GlucoseUnits_ENS.tabs"
+             id="1.2.250.1.213.1.1.5.639"
+             revisionDate="2022-01-28T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS">
+      <ConceptList>
+         <Concept code="mg/dL"
+                  codeSystem="2.16.840.1.113883.6.8"
+                  displayName="milligramme par décilitre"/>
+         <Concept code="%"
+                  codeSystem="2.16.840.1.113883.6.8"
+                  displayName="pourcentage"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

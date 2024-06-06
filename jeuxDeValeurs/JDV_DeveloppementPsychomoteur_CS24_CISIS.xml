@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_DeveloppementPsychomoteur_CS24_CISIS" id="1.2.250.1.213.1.1.5.712" version="test">
-        <ConceptList>
-            <Concept code="MED-200" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Marche acquise"/>
-            <Concept code="MED-201" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Age de la marche acquise (mois)"/>
-            <Concept code="MED-1274" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231030000000" displayName="Repérage troubles du neurodéveloppement"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_DeveloppementPsychomoteur_CS24_CISIS"
+             id="1.2.250.1.213.1.1.5.712"
+             revisionDate="2023-10-30T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-200"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Marche acquise"/>
+         <Concept code="MED-201"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Age de la marche acquise (mois)"/>
+         <Concept code="MED-1274"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231030000000"
+                  displayName="Repérage troubles du neurodéveloppement"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

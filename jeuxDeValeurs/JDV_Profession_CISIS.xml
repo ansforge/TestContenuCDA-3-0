@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Profession_CISIS" id="1.2.250.1.213.1.1.5.109" version="test">
-        <ConceptList>
-            <Concept code="1" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Agriculteur exploitant"/>
-            <Concept code="2" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Artisan, commerçant ou chef d'entreprise"/>
-            <Concept code="3" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Cadre ou profession intellectuelle supérieure"/>
-            <Concept code="4" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Profession intermédiaire"/>
-            <Concept code="5" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Employé"/>
-            <Concept code="6" codeSystem="1.2.250.1.213.2.13" dateFin="" dateValid="20100101000000" displayName="Ouvrier"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Profession_CISIS"
+             id="1.2.250.1.213.1.1.5.109"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="1"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agriculteur exploitant"/>
+         <Concept code="2"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Artisan, commerçant ou chef d'entreprise"/>
+         <Concept code="3"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cadre ou profession intellectuelle supérieure"/>
+         <Concept code="4"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Profession intermédiaire"/>
+         <Concept code="5"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Employé"/>
+         <Concept code="6"
+                  codeSystem="1.2.250.1.213.2.13"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ouvrier"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

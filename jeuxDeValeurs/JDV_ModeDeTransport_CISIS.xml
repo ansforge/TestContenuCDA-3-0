@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ModeDeTransport_CISIS" id="1.2.250.1.213.1.1.5.140" version="test">
-        <ConceptList>
-            <Concept code="ORG-152" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Police"/>
-            <Concept code="ORG-153" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SAMU, SMUR terrestre"/>
-            <Concept code="ORG-154" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Ambulance publique"/>
-            <Concept code="ORG-155" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Ambulance privée"/>
-            <Concept code="ORG-156" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Taxi"/>
-            <Concept code="ORG-157" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Moyens Personnels"/>
-            <Concept code="ORG-158" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SAMU, SMUR Hélicoptère"/>
-            <Concept code="ORG-159" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Pompier"/>
-            <Concept code="ORG-160" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="VSL"/>
-            <Concept code="GEN-092.06.08" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre mode de transport"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ModeDeTransport_CISIS"
+             id="1.2.250.1.213.1.1.5.140"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="ORG-152"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Police"/>
+         <Concept code="ORG-153"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SAMU, SMUR terrestre"/>
+         <Concept code="ORG-154"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ambulance publique"/>
+         <Concept code="ORG-155"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ambulance privée"/>
+         <Concept code="ORG-156"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Taxi"/>
+         <Concept code="ORG-157"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Moyens Personnels"/>
+         <Concept code="ORG-158"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SAMU, SMUR Hélicoptère"/>
+         <Concept code="ORG-159"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Pompier"/>
+         <Concept code="ORG-160"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="VSL"/>
+         <Concept code="GEN-092.06.08"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre mode de transport"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

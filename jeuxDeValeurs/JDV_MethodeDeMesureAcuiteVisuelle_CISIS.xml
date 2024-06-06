@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MethodeDeMesureAcuiteVisuelle_CISIS" id="1.2.250.1.213.1.1.5.715" version="test">
-        <ConceptList>
-            <Concept code="252973004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221219000000" displayName="échelle de Snellen"/>
-            <Concept code="C117877" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20221219000000" displayName="Tableau de l'Oeil ETDRS"/>
-            <Concept code="C130175" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20221219000000" displayName="Tableau optométrique de Jaeger"/>
-            <Concept code="MED-1177" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221219000000" displayName="Réfracteur"/>
-            <Concept code="C158246" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20221219000000" displayName="Tableau des yeux de Sloan"/>
-            <Concept code="252872008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221219000000" displayName="test du double prisme Maddox"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MethodeDeMesureAcuiteVisuelle_CISIS"
+             id="1.2.250.1.213.1.1.5.715"
+             revisionDate="2022-12-19T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="252973004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="échelle de Snellen"/>
+         <Concept code="C117877"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="Tableau de l'Oeil ETDRS"/>
+         <Concept code="C130175"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="Tableau optométrique de Jaeger"/>
+         <Concept code="MED-1177"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="Réfracteur"/>
+         <Concept code="C158246"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="Tableau des yeux de Sloan"/>
+         <Concept code="252872008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221219000000"
+                  displayName="test du double prisme Maddox"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

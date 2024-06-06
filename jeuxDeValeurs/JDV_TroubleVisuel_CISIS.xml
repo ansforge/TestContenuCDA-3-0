@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TroubleVisuel_CISIS" id="1.2.250.1.213.1.1.5.158" version="test">
-        <ConceptList>
-            <Concept code="MED-348" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Troubles visuels bilatéraux"/>
-            <Concept code="H53.2" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Diplopie"/>
-            <Concept code="H53.4" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Anomalies du champ visuel"/>
-            <Concept code="H54.5" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Déficience visuelle sévère, monoculaire"/>
-            <Concept code="H53.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres troubles de la vision"/>
-            <Concept code="H53.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Trouble de la vision, sans précision"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TroubleVisuel_CISIS"
+             id="1.2.250.1.213.1.1.5.158"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-348"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Troubles visuels bilatéraux"/>
+         <Concept code="H53.2"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Diplopie"/>
+         <Concept code="H53.4"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Anomalies du champ visuel"/>
+         <Concept code="H54.5"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Déficience visuelle sévère, monoculaire"/>
+         <Concept code="H53.8"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autres troubles de la vision"/>
+         <Concept code="H53.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Trouble de la vision, sans précision"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

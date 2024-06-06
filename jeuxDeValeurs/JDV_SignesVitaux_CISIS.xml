@@ -1,22 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_SignesVitaux_CISIS" id="1.2.250.1.213.1.1.5.171" version="test">
-        <ConceptList>
-            <Concept code="20564-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230403000000" displayName="Saturation en O2"/>
-            <Concept code="8280-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Périmètre abdominal (à l'ombilic)"/>
-            <Concept code="8287-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Périmètre crânien"/>
-            <Concept code="8302-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Taille"/>
-            <Concept code="8306-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Taille (couché)"/>
-            <Concept code="8310-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Température corporelle"/>
-            <Concept code="8867-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Fréquence cardiaque"/>
-            <Concept code="8462-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Pression artérielle diastolique"/>
-            <Concept code="8480-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Pression artérielle systolique"/>
-            <Concept code="9272-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="APGAR à 1mn"/>
-            <Concept code="9274-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="APGAR à 5mn"/>
-            <Concept code="9271-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210913000000" displayName="APGAR à 10mn"/>
-            <Concept code="9279-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Fréquence respiratoire"/>
-            <Concept code="29463-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20190403000000" displayName="Poids"/>
-            <Concept code="39156-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Index de masse corporelle (IMC)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_SignesVitaux_CISIS"
+             id="1.2.250.1.213.1.1.5.171"
+             revisionDate="2023-04-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="20564-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230403000000"
+                  displayName="Saturation en O2"/>
+         <Concept code="8280-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Périmètre abdominal (à l'ombilic)"/>
+         <Concept code="8287-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Périmètre crânien"/>
+         <Concept code="8302-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Taille"/>
+         <Concept code="8306-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Taille (couché)"/>
+         <Concept code="8310-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Température corporelle"/>
+         <Concept code="8867-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fréquence cardiaque"/>
+         <Concept code="8462-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Pression artérielle diastolique"/>
+         <Concept code="8480-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Pression artérielle systolique"/>
+         <Concept code="9272-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="APGAR à 1mn"/>
+         <Concept code="9274-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="APGAR à 5mn"/>
+         <Concept code="9271-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210913000000"
+                  displayName="APGAR à 10mn"/>
+         <Concept code="9279-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fréquence respiratoire"/>
+         <Concept code="29463-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20190403000000"
+                  displayName="Poids"/>
+         <Concept code="39156-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Index de masse corporelle (IMC)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

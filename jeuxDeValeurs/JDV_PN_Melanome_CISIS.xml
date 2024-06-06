@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_PN_Melanome_CISIS" id="1.2.250.1.213.1.1.5.636" version="test">
-        <ConceptList>
-            <Concept code="MED-957" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Ganglions non évaluables"/>
-            <Concept code="MED-958" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Pas de métastase ganglionnaire régionale"/>
-            <Concept code="MED-959" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Micrométastase dans 1 ganglion lymphatique"/>
-            <Concept code="MED-960" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Macrométastase dans 1 ganglion lymphatique"/>
-            <Concept code="MED-961" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Micrométastase dans 2 ou 3 ganglions lymphatiques"/>
-            <Concept code="MED-962" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Macrométastase dans 2 ou 3 ganglions lymphatiques"/>
-            <Concept code="MED-963" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastase(s) en transit / satellite(s) sans ganglion envahi"/>
-            <Concept code="MED-964" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210511000000" displayName="Métastases dans 4 ganglions lymphatiques ou plus, ou agglomérat de N+ ou métastase en transit avec ganglion(s) envahi(s)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_PN_Melanome_CISIS"
+             id="1.2.250.1.213.1.1.5.636"
+             revisionDate="2021-05-11T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-957"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Ganglions non évaluables"/>
+         <Concept code="MED-958"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Pas de métastase ganglionnaire régionale"/>
+         <Concept code="MED-959"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Micrométastase dans 1 ganglion lymphatique"/>
+         <Concept code="MED-960"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Macrométastase dans 1 ganglion lymphatique"/>
+         <Concept code="MED-961"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Micrométastase dans 2 ou 3 ganglions lymphatiques"/>
+         <Concept code="MED-962"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Macrométastase dans 2 ou 3 ganglions lymphatiques"/>
+         <Concept code="MED-963"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Métastase(s) en transit / satellite(s) sans ganglion envahi"/>
+         <Concept code="MED-964"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210511000000"
+                  displayName="Métastases dans 4 ganglions lymphatiques ou plus, ou agglomérat de N+ ou métastase en transit avec ganglion(s) envahi(s)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

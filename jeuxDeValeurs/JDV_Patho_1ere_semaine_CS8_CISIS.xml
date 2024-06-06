@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Patho_1ere_semaine_CS8_CISIS" id="1.2.250.1.213.1.1.5.704" version="test">
-        <ConceptList>
-            <Concept code="P22.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20221003000000" displayName="Détresse respiratoire du nouveau-né, sans précision"/>
-            <Concept code="MED-276" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Antibiothérapie (de plus de 48 heures)"/>
-            <Concept code="G96.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20221003000000" displayName="Affection du système nerveux central, sans précision"/>
-            <Concept code="MED-170" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20221003000000" displayName="Urgence chirurgicale"/>
-            <Concept code="GEN-092.01.11" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autres pathologies de la 1ère semaine"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Patho_1ere_semaine_CS8_CISIS"
+             id="1.2.250.1.213.1.1.5.704"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="P22.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Détresse respiratoire du nouveau-né, sans précision"/>
+         <Concept code="MED-276"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Antibiothérapie (de plus de 48 heures)"/>
+         <Concept code="G96.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Affection du système nerveux central, sans précision"/>
+         <Concept code="MED-170"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20221003000000"
+                  displayName="Urgence chirurgicale"/>
+         <Concept code="GEN-092.01.11"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autres pathologies de la 1ère semaine"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

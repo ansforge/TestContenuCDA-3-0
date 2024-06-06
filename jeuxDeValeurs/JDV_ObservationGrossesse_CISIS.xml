@@ -1,39 +1,173 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ObservationGrossesse_CISIS" id="1.2.250.1.213.1.1.5.500" version="test">
-        <ConceptList>
-            <Concept code="8339-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Poids à la naissance"/>
-            <Concept code="8665-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Date des dernières règles"/>
-            <Concept code="8678-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Statut de l'état menstruel"/>
-            <Concept code="11449-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Statut de grossesse"/>
-            <Concept code="11612-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'interruptions de grossesse"/>
-            <Concept code="11613-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'interruptions volontaires de grossesse"/>
-            <Concept code="11614-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'interruptions involontaires de grossesse"/>
-            <Concept code="MED-1184" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230403000000" displayName="Nombre d'enfants nés vivants et décédés avant 28 jours"/>
-            <Concept code="11636-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240408000000" displayName="Nombre d'enfants nés vivants"/>
-            <Concept code="11637-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants prématurés (nés avant 37 semaines)"/>
-            <Concept code="11638-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants vivants"/>
-            <Concept code="11639-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants nés à terme (premier jour (259e jour) de la 38e semaine suivant le début des dernières règles)"/>
-            <Concept code="11640-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre total de naissances, y compris les avortements, les mortinaissances et les naissances vivantes."/>
-            <Concept code="11778-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Date estimée de l'accouchement"/>
-            <Concept code="11779-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Date estimée de l'accouchement à partir de la dernière période menstruelle"/>
-            <Concept code="11780-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Date estimée de l'accouchement à partir de la date d'ovulation"/>
-            <Concept code="11884-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Age gestationnel du fœtus (estimation clinique)"/>
-            <Concept code="11885-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Age gestationnel (semaines d'amenorrhées révolues)"/>
-            <Concept code="11886-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Age gestationnel du fœtus à partir de la date d'ovulation"/>
-            <Concept code="11977-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Parité (nombre total d'accouchements y compris actuel)"/>
-            <Concept code="11996-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Gestité (nombre total de grossesses y compris actuelle)"/>
-            <Concept code="32396-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Durée de l'accouchement"/>
-            <Concept code="33065-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20240408000000" displayName="Nombre de grossesses extra-utérines"/>
-            <Concept code="MED-1185" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230403000000" displayName="Grossesse extra-utérine"/>
-            <Concept code="45371-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Grossesse multiple"/>
-            <Concept code="49051-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Age gestationnel en semaines"/>
-            <Concept code="57062-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Nombre d'enfants mort-nés"/>
-            <Concept code="63895-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20200327000000" displayName="Allaitement"/>
-            <Concept code="ORG-173" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200327000000" displayName="Projet de grossesse"/>
-            <Concept code="MED-280" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200327000000" displayName="Accouchement récent"/>
-            <Concept code="42797-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20221004000000" displayName="Age à la première grossesse"/>
-            <Concept code="55281-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230426000000" displayName="Nombre de fœtus"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ObservationGrossesse_CISIS"
+             id="1.2.250.1.213.1.1.5.500"
+             revisionDate="2024-04-08T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="8339-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Poids à la naissance"/>
+         <Concept code="8665-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Date des dernières règles"/>
+         <Concept code="8678-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Statut de l'état menstruel"/>
+         <Concept code="11449-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Statut de grossesse"/>
+         <Concept code="11612-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'interruptions de grossesse"/>
+         <Concept code="11613-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'interruptions volontaires de grossesse"/>
+         <Concept code="11614-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'interruptions involontaires de grossesse"/>
+         <Concept code="MED-1184"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230403000000"
+                  displayName="Nombre d'enfants nés vivants et décédés avant 28 jours"/>
+         <Concept code="11636-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240408000000"
+                  displayName="Nombre d'enfants nés vivants"/>
+         <Concept code="11637-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'enfants prématurés (nés avant 37 semaines)"/>
+         <Concept code="11638-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'enfants vivants"/>
+         <Concept code="11639-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'enfants nés à terme (premier jour (259e jour) de la 38e semaine suivant le début des dernières règles)"/>
+         <Concept code="11640-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre total de naissances, y compris les avortements, les mortinaissances et les naissances vivantes."/>
+         <Concept code="11778-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Date estimée de l'accouchement"/>
+         <Concept code="11779-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Date estimée de l'accouchement à partir de la dernière période menstruelle"/>
+         <Concept code="11780-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Date estimée de l'accouchement à partir de la date d'ovulation"/>
+         <Concept code="11884-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Age gestationnel du fœtus (estimation clinique)"/>
+         <Concept code="11885-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Age gestationnel (semaines d'amenorrhées révolues)"/>
+         <Concept code="11886-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Age gestationnel du fœtus à partir de la date d'ovulation"/>
+         <Concept code="11977-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Parité (nombre total d'accouchements y compris actuel)"/>
+         <Concept code="11996-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Gestité (nombre total de grossesses y compris actuelle)"/>
+         <Concept code="32396-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Durée de l'accouchement"/>
+         <Concept code="33065-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20240408000000"
+                  displayName="Nombre de grossesses extra-utérines"/>
+         <Concept code="MED-1185"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230403000000"
+                  displayName="Grossesse extra-utérine"/>
+         <Concept code="45371-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Grossesse multiple"/>
+         <Concept code="49051-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Age gestationnel en semaines"/>
+         <Concept code="57062-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Nombre d'enfants mort-nés"/>
+         <Concept code="63895-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Allaitement"/>
+         <Concept code="ORG-173"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Projet de grossesse"/>
+         <Concept code="MED-280"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200327000000"
+                  displayName="Accouchement récent"/>
+         <Concept code="42797-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20221004000000"
+                  displayName="Age à la première grossesse"/>
+         <Concept code="55281-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230426000000"
+                  displayName="Nombre de fœtus"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NiveauDependance_CISIS" id="1.2.250.1.213.1.1.5.483" version="test">
-        <ConceptList>
-            <Concept code="GEN-197" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200324000000" displayName="Pas de dépendance"/>
-            <Concept code="GEN-198" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200324000000" displayName="Dépendance faible"/>
-            <Concept code="GEN-199" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200324000000" displayName="Dépendance moyenne"/>
-            <Concept code="GEN-200" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200324000000" displayName="Dépendance forte ou très forte"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NiveauDependance_CISIS"
+             id="1.2.250.1.213.1.1.5.483"
+             revisionDate="2020-03-24T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-197"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200324000000"
+                  displayName="Pas de dépendance"/>
+         <Concept code="GEN-198"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200324000000"
+                  displayName="Dépendance faible"/>
+         <Concept code="GEN-199"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200324000000"
+                  displayName="Dépendance moyenne"/>
+         <Concept code="GEN-200"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200324000000"
+                  displayName="Dépendance forte ou très forte"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

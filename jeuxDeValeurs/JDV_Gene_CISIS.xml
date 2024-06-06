@@ -1,32 +1,138 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Gene_CISIS" id="1.2.250.1.213.1.1.5.150" version="test">
-        <ConceptList>
-            <Concept code="HGNC:391" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="AKT1"/>
-            <Concept code="HGNC:427" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="ALK"/>
-            <Concept code="HGNC:1097" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="BRAF"/>
-            <Concept code="HGNC:3236" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="EGFR"/>
-            <Concept code="HGNC:3430" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="ERBB2"/>
-            <Concept code="HGNC:3432" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="ERBB4"/>
-            <Concept code="HGNC:3689" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="FGFR2"/>
-            <Concept code="HGNC:3690" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="FGFR3"/>
-            <Concept code="HGNC:5173" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="HRAS"/>
-            <Concept code="HGNC:6342" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="KIT"/>
-            <Concept code="HGNC:6407" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="KRAS"/>
-            <Concept code="HGNC:6840" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="MAP2K1"/>
-            <Concept code="HGNC:7029" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="MET"/>
-            <Concept code="HGNC:7989" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="NRAS"/>
-            <Concept code="HGNC:8803" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="PDGFRA"/>
-            <Concept code="HGNC:8975" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="PIK3CA"/>
-            <Concept code="HGNC:1787" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="CDKN2A"/>
-            <Concept code="HGNC:2514" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="CTNNB1"/>
-            <Concept code="HGNC:2731" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="DDR2"/>
-            <Concept code="HGNC:4764" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="H3-3A"/>
-            <Concept code="HGNC:4776" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="H3C2"/>
-            <Concept code="HGNC:5382" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="IDH1"/>
-            <Concept code="HGNC:5383" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="IDH2"/>
-            <Concept code="HGNC:8979" codeSystem="2.16.840.1.113883.6.281" dateFin="" dateValid="20230316000000" displayName="PIK3R1"/>
-            <Concept code="GEN-092.07.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre gène"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Gene_CISIS"
+             id="1.2.250.1.213.1.1.5.150"
+             revisionDate="2023-03-16T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="HGNC:391"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="AKT1"/>
+         <Concept code="HGNC:427"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="ALK"/>
+         <Concept code="HGNC:1097"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="BRAF"/>
+         <Concept code="HGNC:3236"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="EGFR"/>
+         <Concept code="HGNC:3430"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="ERBB2"/>
+         <Concept code="HGNC:3432"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="ERBB4"/>
+         <Concept code="HGNC:3689"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="FGFR2"/>
+         <Concept code="HGNC:3690"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="FGFR3"/>
+         <Concept code="HGNC:5173"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="HRAS"/>
+         <Concept code="HGNC:6342"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="KIT"/>
+         <Concept code="HGNC:6407"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="KRAS"/>
+         <Concept code="HGNC:6840"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="MAP2K1"/>
+         <Concept code="HGNC:7029"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="MET"/>
+         <Concept code="HGNC:7989"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="NRAS"/>
+         <Concept code="HGNC:8803"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="PDGFRA"/>
+         <Concept code="HGNC:8975"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="PIK3CA"/>
+         <Concept code="HGNC:1787"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="CDKN2A"/>
+         <Concept code="HGNC:2514"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="CTNNB1"/>
+         <Concept code="HGNC:2731"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="DDR2"/>
+         <Concept code="HGNC:4764"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="H3-3A"/>
+         <Concept code="HGNC:4776"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="H3C2"/>
+         <Concept code="HGNC:5382"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="IDH1"/>
+         <Concept code="HGNC:5383"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="IDH2"/>
+         <Concept code="HGNC:8979"
+                  codeSystem="2.16.840.1.113883.6.281"
+                  dateFin=""
+                  dateValid="20230316000000"
+                  displayName="PIK3R1"/>
+         <Concept code="GEN-092.07.02"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre gène"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

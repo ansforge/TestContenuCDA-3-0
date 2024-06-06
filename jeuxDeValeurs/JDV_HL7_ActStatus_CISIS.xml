@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_ActStatus_CISIS" id="2.16.840.1.113883.1.11.15933" version="test">
-        <ConceptList>
-            <Concept code="aborted" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="Arrêté (après son lancement)"/>
-            <Concept code="active" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="Actif (en cours ou à venir)"/>
-            <Concept code="cancelled" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="Annulé (avant son lancement)"/>
-            <Concept code="completed" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="Terminé"/>
-            <Concept code="held" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="En attente (avant son lancement)"/>
-            <Concept code="new" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="En préparation"/>
-            <Concept code="suspended" codeSystem="2.16.840.1.113883.5.14" dateFin="" dateValid="20100101000000" displayName="Suspendu (au cours de sa réalisation)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_ActStatus_CISIS"
+             id="2.16.840.1.113883.1.11.15933"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="aborted"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Arrêté (après son lancement)"/>
+         <Concept code="active"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Actif (en cours ou à venir)"/>
+         <Concept code="cancelled"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Annulé (avant son lancement)"/>
+         <Concept code="completed"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Terminé"/>
+         <Concept code="held"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="En attente (avant son lancement)"/>
+         <Concept code="new"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="En préparation"/>
+         <Concept code="suspended"
+                  codeSystem="2.16.840.1.113883.5.14"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Suspendu (au cours de sa réalisation)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

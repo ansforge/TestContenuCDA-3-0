@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeDeVerresPrescrits_CISIS" id="1.2.250.1.213.1.1.5.625" version="test">
-        <ConceptList>
-            <Concept code="MED-905" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres de près (X)"/>
-            <Concept code="MED-906" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres de loin"/>
-            <Concept code="MED-907" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres progressifs"/>
-            <Concept code="MED-908" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres dégressifs"/>
-            <Concept code="MED-909" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres bi-focaux"/>
-            <Concept code="MED-910" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="Verres tri-focaux"/>
-            <Concept code="MED-911" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210507000000" displayName="2 paires (de près et de loin)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeDeVerresPrescrits_CISIS"
+             id="1.2.250.1.213.1.1.5.625"
+             revisionDate="2021-05-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-905"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres de près (X)"/>
+         <Concept code="MED-906"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres de loin"/>
+         <Concept code="MED-907"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres progressifs"/>
+         <Concept code="MED-908"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres dégressifs"/>
+         <Concept code="MED-909"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres bi-focaux"/>
+         <Concept code="MED-910"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="Verres tri-focaux"/>
+         <Concept code="MED-911"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210507000000"
+                  displayName="2 paires (de près et de loin)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

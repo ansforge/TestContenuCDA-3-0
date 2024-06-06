@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_EvaluationDouleur_CISIS" id="1.2.250.1.213.1.1.5.499" version="test">
-        <ConceptList>
-            <Concept code="MED-601" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="Douleur nulle (0)"/>
-            <Concept code="MED-602" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="Douleur faible (1-3)"/>
-            <Concept code="MED-603" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="Douleur modérée (4-6)"/>
-            <Concept code="MED-604" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="Douleur forte (7-9)"/>
-            <Concept code="MED-605" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="Douleur atroce (10)"/>
-            <Concept code="MED-659" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200511000000" displayName="Non évaluable"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_EvaluationDouleur_CISIS"
+             id="1.2.250.1.213.1.1.5.499"
+             revisionDate="2020-05-11T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-601"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="Douleur nulle (0)"/>
+         <Concept code="MED-602"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="Douleur faible (1-3)"/>
+         <Concept code="MED-603"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="Douleur modérée (4-6)"/>
+         <Concept code="MED-604"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="Douleur forte (7-9)"/>
+         <Concept code="MED-605"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="Douleur atroce (10)"/>
+         <Concept code="MED-659"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200511000000"
+                  displayName="Non évaluable"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

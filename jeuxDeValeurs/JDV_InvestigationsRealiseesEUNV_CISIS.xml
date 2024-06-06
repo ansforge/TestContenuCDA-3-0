@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_InvestigationsRealiseesEUNV_CISIS" id="1.2.250.1.213.1.1.5.227" version="test">
-        <ConceptList>
-            <Concept code="DEQP003" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="ECG"/>
-            <Concept code="DEQP004" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Scope"/>
-            <Concept code="DEQP005" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Holter"/>
-            <Concept code="DZQM006" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Echographie transthoracique"/>
-            <Concept code="DZQJ001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Echographie transoesophagienne"/>
-            <Concept code="ACQN001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="ARM Cervicale"/>
-            <Concept code="EBQH006" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Angiographie cervicale"/>
-            <Concept code="EAQM004" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Echo-Doppler cervical"/>
-            <Concept code="EAQM002" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="DTC"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_InvestigationsRealiseesEUNV_CISIS"
+             id="1.2.250.1.213.1.1.5.227"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="DEQP003"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ECG"/>
+         <Concept code="DEQP004"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Scope"/>
+         <Concept code="DEQP005"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Holter"/>
+         <Concept code="DZQM006"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Echographie transthoracique"/>
+         <Concept code="DZQJ001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Echographie transoesophagienne"/>
+         <Concept code="ACQN001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ARM Cervicale"/>
+         <Concept code="EBQH006"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Angiographie cervicale"/>
+         <Concept code="EAQM004"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Echo-Doppler cervical"/>
+         <Concept code="EAQM002"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="DTC"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeActePostPartum_CISIS" id="1.2.250.1.213.1.1.5.739" version="test">
-        <ConceptList>
-            <Concept code="JNFA001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Hystérectomie pour complications obstétricales, par laparotomie"/>
-            <Concept code="JPGD001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20100101000000" displayName="Délivrance artificielle (+ révision utérine)"/>
-            <Concept code="49149002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="exploration manuelle post-partum de l'utérus"/>
-            <Concept code="57238002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="embolisation artérielle sélective"/>
-            <Concept code="JNED001" codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20230803000000" displayName="Réduction manuelle d’inversion utérine"/>
-            <Concept code="JNBD002 " codeSystem="1.2.250.1.213.2.5" dateFin="" dateValid="20220804000000" displayName="Ballonnets intra-utérin"/>
-            <Concept code="GEN-092.04.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre acte réalisé en postpartum immédiat"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeActePostPartum_CISIS"
+             id="1.2.250.1.213.1.1.5.739"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="JNFA001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hystérectomie pour complications obstétricales, par laparotomie"/>
+         <Concept code="JPGD001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Délivrance artificielle (+ révision utérine)"/>
+         <Concept code="49149002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="exploration manuelle post-partum de l'utérus"/>
+         <Concept code="57238002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="embolisation artérielle sélective"/>
+         <Concept code="JNED001"
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Réduction manuelle d’inversion utérine"/>
+         <Concept code="JNBD002 "
+                  codeSystem="1.2.250.1.213.2.5"
+                  dateFin=""
+                  dateValid="20220804000000"
+                  displayName="Ballonnets intra-utérin"/>
+         <Concept code="GEN-092.04.02"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre acte réalisé en postpartum immédiat"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

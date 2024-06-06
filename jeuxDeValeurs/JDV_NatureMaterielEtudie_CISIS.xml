@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NatureMaterielEtudie_CISIS" id="1.2.250.1.213.1.1.5.141" version="test">
-        <ConceptList>
-            <Concept code="MED-310" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Bloc tissulaire parafiné"/>
-            <Concept code="MED-311" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Lame"/>
-            <Concept code="MED-312" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Copeaux"/>
-            <Concept code="MED-313" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Punch"/>
-            <Concept code="MED-314" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Tissu congelé"/>
-            <Concept code="MED-315" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="ADN"/>
-            <Concept code="MED-316" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="ARN"/>
-            <Concept code="GEN-092.07.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre nature du matériel étudié"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NatureMaterielEtudie_CISIS"
+             id="1.2.250.1.213.1.1.5.141"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-310"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Bloc tissulaire parafiné"/>
+         <Concept code="MED-311"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Lame"/>
+         <Concept code="MED-312"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Copeaux"/>
+         <Concept code="MED-313"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Punch"/>
+         <Concept code="MED-314"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tissu congelé"/>
+         <Concept code="MED-315"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADN"/>
+         <Concept code="MED-316"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ARN"/>
+         <Concept code="GEN-092.07.01"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre nature du matériel étudié"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

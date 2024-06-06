@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_DeficiencePhysique_CISIS" id="1.2.250.1.213.1.1.5.62" version="test">
-        <ConceptList>
-            <Concept code="44695005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="paralysie"/>
-            <Concept code="33653009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="absence de sensation"/>
-            <Concept code="R47.02" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Aphasie, autre et sans précision"/>
-            <Concept code="MED-329" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Spasticité gênante"/>
-            <Concept code="MED-330" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Négligence visuospatiale"/>
-            <Concept code="MED-331" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="HLH – QLH"/>
-            <Concept code="MED-332" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Trouble de la déglutition"/>
-            <Concept code="MED-333" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Trouble de l’élimination urinaire"/>
-            <Concept code="MED-334" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Trouble de l’élimination fécale"/>
-            <Concept code="MED-335" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Trouble de la sexualité"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_DeficiencePhysique_CISIS"
+             id="1.2.250.1.213.1.1.5.62"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="44695005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="paralysie"/>
+         <Concept code="33653009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="absence de sensation"/>
+         <Concept code="R47.02"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Aphasie, autre et sans précision"/>
+         <Concept code="MED-329"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Spasticité gênante"/>
+         <Concept code="MED-330"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Négligence visuospatiale"/>
+         <Concept code="MED-331"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="HLH – QLH"/>
+         <Concept code="MED-332"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Trouble de la déglutition"/>
+         <Concept code="MED-333"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Trouble de l’élimination urinaire"/>
+         <Concept code="MED-334"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Trouble de l’élimination fécale"/>
+         <Concept code="MED-335"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Trouble de la sexualité"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,275 +1,1353 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_ObservationMethod_CISIS" id="2.16.840.1.113883.1.11.14079" version="test">
-        <ConceptList>
-            <Concept code="1" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Fixation complément"/>
-            <Concept code="2" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Tomographie axiale"/>
-            <Concept code="3" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Test de haut niveau de résistance aux aminosides sur gélose"/>
-            <Concept code="4" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Examen macroscopique"/>
-            <Concept code="5" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Résonnance magnétique"/>
-            <Concept code="6" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Morphométrie"/>
-            <Concept code="7" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Tomographie par émission de positrons"/>
-            <Concept code="8" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="SAMHSA confirmation"/>
-            <Concept code="9" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="SAMHSA dépistage"/>
-            <Concept code="10" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Neutralisation sérum"/>
-            <Concept code="11" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Titrimétrie"/>
-            <Concept code="12" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Ultrasonographie"/>
-            <Concept code="13" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Cristallographie Rayon X"/>
-            <Concept code="14" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination"/>
-            <Concept code="15" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination sur plaque tampon acidifié"/>
-            <Concept code="16" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination sur carte"/>
-            <Concept code="17" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Hémagglutination"/>
-            <Concept code="18" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Inhibition hémagglutination"/>
-            <Concept code="19" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination latex"/>
-            <Concept code="20" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination plaque"/>
-            <Concept code="21" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination rapide"/>
-            <Concept code="22" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination érythrocytes"/>
-            <Concept code="23" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination,rivanol"/>
-            <Concept code="24" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agglutination en tube"/>
-            <Concept code="25" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Bioanalyse"/>
-            <Concept code="26" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Inoculation animal"/>
-            <Concept code="27" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Cytotoxicité"/>
-            <Concept code="30" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Inoculation intracérébrale à la souris"/>
-            <Concept code="31" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Analyse qualitative"/>
-            <Concept code="32" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Analyse quantitative"/>
-            <Concept code="33" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Méthode chimique"/>
-            <Concept code="34" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Test chimique d'absorption de lumière différentielle"/>
-            <Concept code="37" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Test sur bandelette"/>
-            <Concept code="38" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie"/>
-            <Concept code="39" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie d'affinité"/>
-            <Concept code="40" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie phase gazeuse liquide"/>
-            <Concept code="41" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie liquide haute pression"/>
-            <Concept code="42" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie liquide"/>
-            <Concept code="43" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie d'affinité à la protéine A"/>
-            <Concept code="44" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coagulation"/>
-            <Concept code="45" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Temps de coagulation en tube"/>
-            <Concept code="46" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coagulation induite par reptilase en tube"/>
-            <Concept code="47" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Comptage automatisé"/>
-            <Concept code="48" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Comptage manuel"/>
-            <Concept code="49" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Comptage plaquettaire de Rees-Ecker"/>
-            <Concept code="50" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Culture aérobie"/>
-            <Concept code="51" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Culture anaérobie"/>
-            <Concept code="52" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Culture sur embryon de poulet"/>
-            <Concept code="53" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Enrichissement secondaire retardé"/>
-            <Concept code="54" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Culture microaérophile"/>
-            <Concept code="61" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Culture cellulaire somatique"/>
-            <Concept code="62" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Diffusion gel Agar"/>
-            <Concept code="63" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunodiffusion"/>
-            <Concept code="64" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Électrophorèse"/>
-            <Concept code="65" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Électrophorèse gel agarose"/>
-            <Concept code="66" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Électrophorèse citrate agar"/>
-            <Concept code="67" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoélectrophorèse"/>
-            <Concept code="68" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Électrophorèse sur gel de polyacrylamide"/>
-            <Concept code="69" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Électrophorèse sur gel d'amidon"/>
-            <Concept code="70" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA"/>
-            <Concept code="71" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA avec captude d'antigène"/>
-            <Concept code="72" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA avec complexe avidine biotine péroxydase"/>
-            <Concept code="73" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA avec cinétique"/>
-            <Concept code="74" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ELISA avec péroxydase-anti-péroxydase"/>
-            <Concept code="75" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20 Strep"/>
-            <Concept code="76" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20A"/>
-            <Concept code="77" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20C AUX"/>
-            <Concept code="78" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20E"/>
-            <Concept code="79" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20NE"/>
-            <Concept code="80" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 50 CH"/>
-            <Concept code="81" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API An-IDENT"/>
-            <Concept code="82" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API Coryne"/>
-            <Concept code="83" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API Rapid 20E"/>
-            <Concept code="84" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API Staph"/>
-            <Concept code="85" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie API 20 Strep"/>
-            <Concept code="86" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification bactérienne"/>
-            <Concept code="87" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par mini VIDAS"/>
-            <Concept code="88" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par lysotypie"/>
-            <Concept code="89" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie QuadFERM+"/>
-            <Concept code="90" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par galerie RAPIDEC Staph"/>
-            <Concept code="91" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par agglutination latex Staphaurex"/>
-            <Concept code="92" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par VIDAS"/>
-            <Concept code="93" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par VITEK"/>
-            <Concept code="94" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Identification par VITEK 2"/>
-            <Concept code="95" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration immune"/>
-            <Concept code="96" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunofluorescence directe"/>
-            <Concept code="97" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunofluorescence indirecte"/>
-            <Concept code="98" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunopéroxydase (complexe avidine-Biotine)"/>
-            <Concept code="99" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunopéroxydase (complexe péroxydase-antipéroxydase)"/>
-            <Concept code="100" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunopéroxydase (complexe Protéine A-péroxydase)"/>
-            <Concept code="101" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoanalyse"/>
-            <Concept code="102" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoanalyse qualitative à plusieurs étapes"/>
-            <Concept code="103" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoanalyse qualitative à une étape"/>
-            <Concept code="104" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Radioimmunologie"/>
-            <Concept code="105" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoanalyse semi-quantitative à plusieurs étapes"/>
-            <Concept code="106" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoanalyse semi-quantitative à une étape"/>
-            <Concept code="107" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie"/>
-            <Concept code="108" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie fond noir"/>
-            <Concept code="109" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique"/>
-            <Concept code="110" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique, Tomographie numérique"/>
-            <Concept code="111" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique en contraste de phase"/>
-            <Concept code="112" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique sur section épaisse"/>
-            <Concept code="113" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique sur section fine"/>
-            <Concept code="114" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscvopie en lumière directe"/>
-            <Concept code="115" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie à polarisation"/>
-            <Concept code="116" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique à balayage"/>
-            <Concept code="117" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Microscopie électronique à transmission"/>
-            <Concept code="120" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="ADN branché"/>
-            <Concept code="122" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoblot"/>
-            <Concept code="123" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Hybridation moléculaire in situ"/>
-            <Concept code="127" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Sonde acide nucléique"/>
-            <Concept code="128" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Sonde acide nucléique avec amplification"/>
-            <Concept code="129" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Sonde acide nucléique avec amplification ciblée"/>
-            <Concept code="130" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Transcription inverse"/>
-            <Concept code="131" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Séquençage d'acides nucléiques"/>
-            <Concept code="132" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="PCR"/>
-            <Concept code="134" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="RFLP"/>
-            <Concept code="135" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Southern-blot"/>
-            <Concept code="138" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Western-Blot"/>
-            <Concept code="139" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Floculation"/>
-            <Concept code="140" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunoprécipitation"/>
-            <Concept code="141" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Test à l'anneau de lait"/>
-            <Concept code="142" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Précipitine"/>
-            <Concept code="143" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration acide rapide"/>
-            <Concept code="144" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration acide rapide/fluorochrome"/>
-            <Concept code="145" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration acide rapide Kinyoun"/>
-            <Concept code="146" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration acide Ziehl-Neelsen"/>
-            <Concept code="147" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration phosphatase acide"/>
-            <Concept code="148" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration acridine orange"/>
-            <Concept code="149" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration orange brillant KH"/>
-            <Concept code="150" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration rouge alizarine"/>
-            <Concept code="151" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu alcian"/>
-            <Concept code="152" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu alcian+acide périodique-Schiff"/>
-            <Concept code="153" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration argentaffine"/>
-            <Concept code="154" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration argent argentaffine"/>
-            <Concept code="155" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration azur-éosine"/>
-            <Concept code="156" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration fuchsine basique"/>
-            <Concept code="157" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Bennhold"/>
-            <Concept code="158" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration rouge Congo/Bennhold"/>
-            <Concept code="159" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Bielschowsky"/>
-            <Concept code="160" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Argent/Bielschowsky"/>
-            <Concept code="161" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Décoloration"/>
-            <Concept code="162" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Bodian"/>
-            <Concept code="163" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Brown et Brenn"/>
-            <Concept code="164" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration butyrate estérase"/>
-            <Concept code="165" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Préparation calcofluor blanc"/>
-            <Concept code="166" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration carbol fuchsine"/>
-            <Concept code="167" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration carmin"/>
-            <Concept code="168" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Churukian-Schenk"/>
-            <Concept code="169" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration rouge Congo"/>
-            <Concept code="170" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration violet de crésyl acétate"/>
-            <Concept code="171" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration crystal violet"/>
-            <Concept code="172" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration de Galantha"/>
-            <Concept code="173" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration de Dieterle par imprégnation argentique"/>
-            <Concept code="174" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Fite-Faraco"/>
-            <Concept code="175" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Fontana-Masson"/>
-            <Concept code="176" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Fouchet"/>
-            <Concept code="177" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Gomori"/>
-            <Concept code="178" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration méthénamine argent Gomori"/>
-            <Concept code="179" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration trichrome Gomori-Wheatly"/>
-            <Concept code="180" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Gridley"/>
-            <Concept code="181" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration argent Grimelius"/>
-            <Concept code="182" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration de Grocott"/>
-            <Concept code="183" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration méthénamine argent Grocott"/>
-            <Concept code="184" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration à l'oxyde ferrique colloïdale de Hale"/>
-            <Concept code="185" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration au fer colloïdale de Hale"/>
-            <Concept code="186" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Hansel"/>
-            <Concept code="187" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration hématoxylline Harris+éosine"/>
-            <Concept code="188" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration hématoxylline+éosine"/>
-            <Concept code="189" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Highman"/>
-            <Concept code="190" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Holzer"/>
-            <Concept code="191" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration fer hématoxylline"/>
-            <Concept code="192" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Jones"/>
-            <Concept code="193" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration méthénamine argent Jones"/>
-            <Concept code="194" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Kossa"/>
-            <Concept code="195" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Lawson-Van Gieson"/>
-            <Concept code="196" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu de méthylène Loeffler"/>
-            <Concept code="197" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Luxol bleu au violet crésyl"/>
-            <Concept code="198" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Luxol bleu à l'acide périodique-Schiff"/>
-            <Concept code="199" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration tétrachrome MacNeal"/>
-            <Concept code="200" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Mallory-Heidenhain"/>
-            <Concept code="201" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration trichrome Masson"/>
-            <Concept code="202" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Mayer mucicarmine"/>
-            <Concept code="203" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Mayer hématoxyline éosine"/>
-            <Concept code="204" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration May-Grunwald Giemsa"/>
-            <Concept code="205" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration au vert de méthyl"/>
-            <Concept code="206" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration au vert de méthyl pyronine"/>
-            <Concept code="207" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration trichrome Gomori-Wheatley"/>
-            <Concept code="208" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration trichrome Masson modifié"/>
-            <Concept code="209" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration trichrome modifié"/>
-            <Concept code="210" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration pentachrome Movat"/>
-            <Concept code="211" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration mucicarmine"/>
-            <Concept code="212" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration rouge neutre"/>
-            <Concept code="213" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu nuit"/>
-            <Concept code="214" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration estérase non spécifique"/>
-            <Concept code="215" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration huile rouge O"/>
-            <Concept code="216" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration orcéine"/>
-            <Concept code="217" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration de Perls"/>
-            <Concept code="218" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration hématoxyline phosphotungstique"/>
-            <Concept code="219" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration ferrocyanure de potassium"/>
-            <Concept code="220" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu de Prusse"/>
-            <Concept code="221" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Bennhold modifiée"/>
-            <Concept code="222" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration quinacrine fluorescente"/>
-            <Concept code="223" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration réticuline"/>
-            <Concept code="224" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration rhodamine"/>
-            <Concept code="225" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration safranée"/>
-            <Concept code="226" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Schmorl"/>
-            <Concept code="227" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Sevier-Munger"/>
-            <Concept code="228" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration argentique"/>
-            <Concept code="229" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration estérase spécifique (Butyrate estérase)"/>
-            <Concept code="230" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Steiner"/>
-            <Concept code="231" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Soudan III"/>
-            <Concept code="232" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Soudan IV"/>
-            <Concept code="233" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration bleu alcian sulfaté"/>
-            <Concept code="234" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration supravitale"/>
-            <Concept code="235" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration thioflavine-S"/>
-            <Concept code="236" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Giemsa 3µ"/>
-            <Concept code="237" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Vassar-Culling"/>
-            <Concept code="238" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration vitale"/>
-            <Concept code="239" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coloration Von Kossa"/>
-            <Concept code="240" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Antibiogramme méthode par diffusion"/>
-            <Concept code="241" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Antibiogramme méthode par automate BACTEC"/>
-            <Concept code="242" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Antibiogramme méthode par dilution"/>
-            <Concept code="243" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Concentration minimale bactéricide (CMB) par macrodilution (tube)"/>
-            <Concept code="244" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Concentration minimale bactéricide (CMB) par microdilution (plaque)"/>
-            <Concept code="245" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Concentration minimale inhibitrice (CMI) par macrodilution (tube)"/>
-            <Concept code="246" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Concentration minimale inhibitrice (CMI) par microdilution (plaque)"/>
-            <Concept code="247" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Turbidimétrie"/>
-            <Concept code="248" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Réfractométrie"/>
-            <Concept code="249" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie couche mince"/>
-            <Concept code="250" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="EMIT"/>
-            <Concept code="251" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Cytométrie de flux"/>
-            <Concept code="252" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunodiffusion radiale (RID)"/>
-            <Concept code="253" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="PFIA"/>
-            <Concept code="254" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunofixation"/>
-            <Concept code="255" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Dialyse à l'équilibre"/>
-            <Concept code="256" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Elution acide de Kleihauer-Betke"/>
-            <Concept code="257" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Immunofluorescence anti-complément (ACIF)"/>
-            <Concept code="258" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie phase gazeuse/Spectroscopie de masse (GC/MS)"/>
-            <Concept code="259" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Néphélométrie"/>
-            <Concept code="261" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Test de micro-lymphocytotoxicité"/>
-            <Concept code="262" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Spectrophotométrie"/>
-            <Concept code="263" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Spectrophotométrie d'absorption atomique (SAA)"/>
-            <Concept code="264" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Electrode ionique sélective"/>
-            <Concept code="265" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chromatographie phase gazeuse (CG)"/>
-            <Concept code="266" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Isoélectrofocalisation (IEF)"/>
-            <Concept code="267" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Chimioluminescence"/>
-            <Concept code="268" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="MEIA"/>
-            <Concept code="269" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Spectrométrie de masse à plasma à couplage inductif (ICP/MS)"/>
-            <Concept code="270" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="IRMA"/>
-            <Concept code="271" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Coagulation par détection optique du caillot"/>
-            <Concept code="272" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Minimum Inhibitory Concentration"/>
-            <Concept code="273" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Viral Genotype Susceptibility"/>
-            <Concept code="274" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Viral Phenotype Susceptibility"/>
-            <Concept code="275" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Gradient Strip"/>
-            <Concept code="275a" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Minimum Lethal Concentration (MLC)"/>
-            <Concept code="276" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Slow Mycobacteria Susceptibility"/>
-            <Concept code="277" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Serum bactericidal titer"/>
-            <Concept code="278" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Agar screen"/>
-            <Concept code="279" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Disk induction"/>
-            <Concept code="280" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Susceptibility Testing"/>
-            <Concept code="ALGM" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Algorythme"/>
-            <Concept code="BYCL" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Analyse stastistique Bayésienne"/>
-            <Concept code="PCR" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="PCR"/>
-            <Concept code="VDOC" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Vérification à partir d'un document"/>
-            <Concept code="VREG" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Vérification par requête électronique"/>
-            <Concept code="VTOKEN" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Vérification au moyen d'un jeton électronique"/>
-            <Concept code="VVOICE" codeSystem="2.16.840.1.113883.5.84" dateFin="" dateValid="20100101000000" displayName="Vérification par voie orale"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_ObservationMethod_CISIS"
+             id="2.16.840.1.113883.1.11.14079"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="1"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fixation complément"/>
+         <Concept code="2"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tomographie axiale"/>
+         <Concept code="3"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Test de haut niveau de résistance aux aminosides sur gélose"/>
+         <Concept code="4"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Examen macroscopique"/>
+         <Concept code="5"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Résonnance magnétique"/>
+         <Concept code="6"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Morphométrie"/>
+         <Concept code="7"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Tomographie par émission de positrons"/>
+         <Concept code="8"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SAMHSA confirmation"/>
+         <Concept code="9"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SAMHSA dépistage"/>
+         <Concept code="10"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Neutralisation sérum"/>
+         <Concept code="11"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Titrimétrie"/>
+         <Concept code="12"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ultrasonographie"/>
+         <Concept code="13"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cristallographie Rayon X"/>
+         <Concept code="14"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination"/>
+         <Concept code="15"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination sur plaque tampon acidifié"/>
+         <Concept code="16"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination sur carte"/>
+         <Concept code="17"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hémagglutination"/>
+         <Concept code="18"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inhibition hémagglutination"/>
+         <Concept code="19"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination latex"/>
+         <Concept code="20"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination plaque"/>
+         <Concept code="21"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination rapide"/>
+         <Concept code="22"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination érythrocytes"/>
+         <Concept code="23"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination,rivanol"/>
+         <Concept code="24"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agglutination en tube"/>
+         <Concept code="25"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Bioanalyse"/>
+         <Concept code="26"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inoculation animal"/>
+         <Concept code="27"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cytotoxicité"/>
+         <Concept code="30"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inoculation intracérébrale à la souris"/>
+         <Concept code="31"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Analyse qualitative"/>
+         <Concept code="32"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Analyse quantitative"/>
+         <Concept code="33"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Méthode chimique"/>
+         <Concept code="34"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Test chimique d'absorption de lumière différentielle"/>
+         <Concept code="37"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Test sur bandelette"/>
+         <Concept code="38"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie"/>
+         <Concept code="39"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie d'affinité"/>
+         <Concept code="40"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie phase gazeuse liquide"/>
+         <Concept code="41"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie liquide haute pression"/>
+         <Concept code="42"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie liquide"/>
+         <Concept code="43"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie d'affinité à la protéine A"/>
+         <Concept code="44"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coagulation"/>
+         <Concept code="45"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Temps de coagulation en tube"/>
+         <Concept code="46"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coagulation induite par reptilase en tube"/>
+         <Concept code="47"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Comptage automatisé"/>
+         <Concept code="48"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Comptage manuel"/>
+         <Concept code="49"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Comptage plaquettaire de Rees-Ecker"/>
+         <Concept code="50"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Culture aérobie"/>
+         <Concept code="51"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Culture anaérobie"/>
+         <Concept code="52"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Culture sur embryon de poulet"/>
+         <Concept code="53"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Enrichissement secondaire retardé"/>
+         <Concept code="54"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Culture microaérophile"/>
+         <Concept code="61"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Culture cellulaire somatique"/>
+         <Concept code="62"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Diffusion gel Agar"/>
+         <Concept code="63"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunodiffusion"/>
+         <Concept code="64"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Électrophorèse"/>
+         <Concept code="65"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Électrophorèse gel agarose"/>
+         <Concept code="66"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Électrophorèse citrate agar"/>
+         <Concept code="67"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoélectrophorèse"/>
+         <Concept code="68"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Électrophorèse sur gel de polyacrylamide"/>
+         <Concept code="69"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Électrophorèse sur gel d'amidon"/>
+         <Concept code="70"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ELISA"/>
+         <Concept code="71"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ELISA avec captude d'antigène"/>
+         <Concept code="72"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ELISA avec complexe avidine biotine péroxydase"/>
+         <Concept code="73"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ELISA avec cinétique"/>
+         <Concept code="74"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ELISA avec péroxydase-anti-péroxydase"/>
+         <Concept code="75"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20 Strep"/>
+         <Concept code="76"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20A"/>
+         <Concept code="77"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20C AUX"/>
+         <Concept code="78"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20E"/>
+         <Concept code="79"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20NE"/>
+         <Concept code="80"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 50 CH"/>
+         <Concept code="81"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API An-IDENT"/>
+         <Concept code="82"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API Coryne"/>
+         <Concept code="83"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API Rapid 20E"/>
+         <Concept code="84"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API Staph"/>
+         <Concept code="85"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie API 20 Strep"/>
+         <Concept code="86"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification bactérienne"/>
+         <Concept code="87"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par mini VIDAS"/>
+         <Concept code="88"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par lysotypie"/>
+         <Concept code="89"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie QuadFERM+"/>
+         <Concept code="90"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par galerie RAPIDEC Staph"/>
+         <Concept code="91"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par agglutination latex Staphaurex"/>
+         <Concept code="92"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par VIDAS"/>
+         <Concept code="93"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par VITEK"/>
+         <Concept code="94"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Identification par VITEK 2"/>
+         <Concept code="95"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration immune"/>
+         <Concept code="96"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunofluorescence directe"/>
+         <Concept code="97"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunofluorescence indirecte"/>
+         <Concept code="98"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunopéroxydase (complexe avidine-Biotine)"/>
+         <Concept code="99"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunopéroxydase (complexe péroxydase-antipéroxydase)"/>
+         <Concept code="100"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunopéroxydase (complexe Protéine A-péroxydase)"/>
+         <Concept code="101"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoanalyse"/>
+         <Concept code="102"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoanalyse qualitative à plusieurs étapes"/>
+         <Concept code="103"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoanalyse qualitative à une étape"/>
+         <Concept code="104"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Radioimmunologie"/>
+         <Concept code="105"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoanalyse semi-quantitative à plusieurs étapes"/>
+         <Concept code="106"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoanalyse semi-quantitative à une étape"/>
+         <Concept code="107"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie"/>
+         <Concept code="108"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie fond noir"/>
+         <Concept code="109"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique"/>
+         <Concept code="110"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique, Tomographie numérique"/>
+         <Concept code="111"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique en contraste de phase"/>
+         <Concept code="112"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique sur section épaisse"/>
+         <Concept code="113"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique sur section fine"/>
+         <Concept code="114"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscvopie en lumière directe"/>
+         <Concept code="115"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie à polarisation"/>
+         <Concept code="116"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique à balayage"/>
+         <Concept code="117"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Microscopie électronique à transmission"/>
+         <Concept code="120"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADN branché"/>
+         <Concept code="122"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoblot"/>
+         <Concept code="123"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hybridation moléculaire in situ"/>
+         <Concept code="127"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sonde acide nucléique"/>
+         <Concept code="128"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sonde acide nucléique avec amplification"/>
+         <Concept code="129"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Sonde acide nucléique avec amplification ciblée"/>
+         <Concept code="130"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Transcription inverse"/>
+         <Concept code="131"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Séquençage d'acides nucléiques"/>
+         <Concept code="132"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="PCR"/>
+         <Concept code="134"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="RFLP"/>
+         <Concept code="135"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Southern-blot"/>
+         <Concept code="138"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Western-Blot"/>
+         <Concept code="139"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Floculation"/>
+         <Concept code="140"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunoprécipitation"/>
+         <Concept code="141"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Test à l'anneau de lait"/>
+         <Concept code="142"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Précipitine"/>
+         <Concept code="143"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration acide rapide"/>
+         <Concept code="144"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration acide rapide/fluorochrome"/>
+         <Concept code="145"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration acide rapide Kinyoun"/>
+         <Concept code="146"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration acide Ziehl-Neelsen"/>
+         <Concept code="147"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration phosphatase acide"/>
+         <Concept code="148"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration acridine orange"/>
+         <Concept code="149"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration orange brillant KH"/>
+         <Concept code="150"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration rouge alizarine"/>
+         <Concept code="151"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu alcian"/>
+         <Concept code="152"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu alcian+acide périodique-Schiff"/>
+         <Concept code="153"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration argentaffine"/>
+         <Concept code="154"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration argent argentaffine"/>
+         <Concept code="155"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration azur-éosine"/>
+         <Concept code="156"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration fuchsine basique"/>
+         <Concept code="157"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Bennhold"/>
+         <Concept code="158"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration rouge Congo/Bennhold"/>
+         <Concept code="159"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Bielschowsky"/>
+         <Concept code="160"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Argent/Bielschowsky"/>
+         <Concept code="161"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Décoloration"/>
+         <Concept code="162"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Bodian"/>
+         <Concept code="163"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Brown et Brenn"/>
+         <Concept code="164"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration butyrate estérase"/>
+         <Concept code="165"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Préparation calcofluor blanc"/>
+         <Concept code="166"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration carbol fuchsine"/>
+         <Concept code="167"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration carmin"/>
+         <Concept code="168"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Churukian-Schenk"/>
+         <Concept code="169"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration rouge Congo"/>
+         <Concept code="170"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration violet de crésyl acétate"/>
+         <Concept code="171"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration crystal violet"/>
+         <Concept code="172"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration de Galantha"/>
+         <Concept code="173"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration de Dieterle par imprégnation argentique"/>
+         <Concept code="174"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Fite-Faraco"/>
+         <Concept code="175"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Fontana-Masson"/>
+         <Concept code="176"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Fouchet"/>
+         <Concept code="177"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Gomori"/>
+         <Concept code="178"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration méthénamine argent Gomori"/>
+         <Concept code="179"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration trichrome Gomori-Wheatly"/>
+         <Concept code="180"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Gridley"/>
+         <Concept code="181"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration argent Grimelius"/>
+         <Concept code="182"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration de Grocott"/>
+         <Concept code="183"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration méthénamine argent Grocott"/>
+         <Concept code="184"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration à l'oxyde ferrique colloïdale de Hale"/>
+         <Concept code="185"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration au fer colloïdale de Hale"/>
+         <Concept code="186"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Hansel"/>
+         <Concept code="187"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration hématoxylline Harris+éosine"/>
+         <Concept code="188"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration hématoxylline+éosine"/>
+         <Concept code="189"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Highman"/>
+         <Concept code="190"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Holzer"/>
+         <Concept code="191"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration fer hématoxylline"/>
+         <Concept code="192"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Jones"/>
+         <Concept code="193"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration méthénamine argent Jones"/>
+         <Concept code="194"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Kossa"/>
+         <Concept code="195"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Lawson-Van Gieson"/>
+         <Concept code="196"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu de méthylène Loeffler"/>
+         <Concept code="197"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Luxol bleu au violet crésyl"/>
+         <Concept code="198"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Luxol bleu à l'acide périodique-Schiff"/>
+         <Concept code="199"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration tétrachrome MacNeal"/>
+         <Concept code="200"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Mallory-Heidenhain"/>
+         <Concept code="201"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration trichrome Masson"/>
+         <Concept code="202"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Mayer mucicarmine"/>
+         <Concept code="203"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Mayer hématoxyline éosine"/>
+         <Concept code="204"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration May-Grunwald Giemsa"/>
+         <Concept code="205"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration au vert de méthyl"/>
+         <Concept code="206"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration au vert de méthyl pyronine"/>
+         <Concept code="207"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration trichrome Gomori-Wheatley"/>
+         <Concept code="208"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration trichrome Masson modifié"/>
+         <Concept code="209"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration trichrome modifié"/>
+         <Concept code="210"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration pentachrome Movat"/>
+         <Concept code="211"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration mucicarmine"/>
+         <Concept code="212"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration rouge neutre"/>
+         <Concept code="213"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu nuit"/>
+         <Concept code="214"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration estérase non spécifique"/>
+         <Concept code="215"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration huile rouge O"/>
+         <Concept code="216"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration orcéine"/>
+         <Concept code="217"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration de Perls"/>
+         <Concept code="218"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration hématoxyline phosphotungstique"/>
+         <Concept code="219"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration ferrocyanure de potassium"/>
+         <Concept code="220"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu de Prusse"/>
+         <Concept code="221"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Bennhold modifiée"/>
+         <Concept code="222"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration quinacrine fluorescente"/>
+         <Concept code="223"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration réticuline"/>
+         <Concept code="224"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration rhodamine"/>
+         <Concept code="225"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration safranée"/>
+         <Concept code="226"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Schmorl"/>
+         <Concept code="227"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Sevier-Munger"/>
+         <Concept code="228"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration argentique"/>
+         <Concept code="229"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration estérase spécifique (Butyrate estérase)"/>
+         <Concept code="230"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Steiner"/>
+         <Concept code="231"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Soudan III"/>
+         <Concept code="232"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Soudan IV"/>
+         <Concept code="233"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration bleu alcian sulfaté"/>
+         <Concept code="234"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration supravitale"/>
+         <Concept code="235"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration thioflavine-S"/>
+         <Concept code="236"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Giemsa 3µ"/>
+         <Concept code="237"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Vassar-Culling"/>
+         <Concept code="238"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration vitale"/>
+         <Concept code="239"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coloration Von Kossa"/>
+         <Concept code="240"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Antibiogramme méthode par diffusion"/>
+         <Concept code="241"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Antibiogramme méthode par automate BACTEC"/>
+         <Concept code="242"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Antibiogramme méthode par dilution"/>
+         <Concept code="243"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Concentration minimale bactéricide (CMB) par macrodilution (tube)"/>
+         <Concept code="244"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Concentration minimale bactéricide (CMB) par microdilution (plaque)"/>
+         <Concept code="245"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Concentration minimale inhibitrice (CMI) par macrodilution (tube)"/>
+         <Concept code="246"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Concentration minimale inhibitrice (CMI) par microdilution (plaque)"/>
+         <Concept code="247"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Turbidimétrie"/>
+         <Concept code="248"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Réfractométrie"/>
+         <Concept code="249"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie couche mince"/>
+         <Concept code="250"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="EMIT"/>
+         <Concept code="251"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Cytométrie de flux"/>
+         <Concept code="252"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunodiffusion radiale (RID)"/>
+         <Concept code="253"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="PFIA"/>
+         <Concept code="254"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunofixation"/>
+         <Concept code="255"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Dialyse à l'équilibre"/>
+         <Concept code="256"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Elution acide de Kleihauer-Betke"/>
+         <Concept code="257"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Immunofluorescence anti-complément (ACIF)"/>
+         <Concept code="258"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie phase gazeuse/Spectroscopie de masse (GC/MS)"/>
+         <Concept code="259"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Néphélométrie"/>
+         <Concept code="261"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Test de micro-lymphocytotoxicité"/>
+         <Concept code="262"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Spectrophotométrie"/>
+         <Concept code="263"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Spectrophotométrie d'absorption atomique (SAA)"/>
+         <Concept code="264"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Electrode ionique sélective"/>
+         <Concept code="265"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chromatographie phase gazeuse (CG)"/>
+         <Concept code="266"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Isoélectrofocalisation (IEF)"/>
+         <Concept code="267"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Chimioluminescence"/>
+         <Concept code="268"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="MEIA"/>
+         <Concept code="269"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Spectrométrie de masse à plasma à couplage inductif (ICP/MS)"/>
+         <Concept code="270"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="IRMA"/>
+         <Concept code="271"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Coagulation par détection optique du caillot"/>
+         <Concept code="272"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Minimum Inhibitory Concentration"/>
+         <Concept code="273"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Viral Genotype Susceptibility"/>
+         <Concept code="274"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Viral Phenotype Susceptibility"/>
+         <Concept code="275"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Gradient Strip"/>
+         <Concept code="275a"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Minimum Lethal Concentration (MLC)"/>
+         <Concept code="276"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Slow Mycobacteria Susceptibility"/>
+         <Concept code="277"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Serum bactericidal titer"/>
+         <Concept code="278"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Agar screen"/>
+         <Concept code="279"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Disk induction"/>
+         <Concept code="280"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Susceptibility Testing"/>
+         <Concept code="ALGM"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Algorythme"/>
+         <Concept code="BYCL"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Analyse stastistique Bayésienne"/>
+         <Concept code="PCR"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="PCR"/>
+         <Concept code="VDOC"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Vérification à partir d'un document"/>
+         <Concept code="VREG"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Vérification par requête électronique"/>
+         <Concept code="VTOKEN"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Vérification au moyen d'un jeton électronique"/>
+         <Concept code="VVOICE"
+                  codeSystem="2.16.840.1.113883.5.84"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Vérification par voie orale"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

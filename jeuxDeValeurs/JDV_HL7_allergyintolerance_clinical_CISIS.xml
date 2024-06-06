@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_allergyintolerance_clinical_CISIS" id="2.16.840.1.113883.4.642.3.1372" version="test">
-        <ConceptList>
-            <Concept code="active" codeSystem="2.16.840.1.113883.4.642.4.1373" dateFin="" dateValid="20220101000000" displayName="Actif"/>
-            <Concept code="inactive" codeSystem="2.16.840.1.113883.4.642.4.1373" dateFin="" dateValid="20220101000000" displayName="Inactif"/>
-            <Concept code="resolved" codeSystem="2.16.840.1.113883.4.642.4.1373" dateFin="" dateValid="20220101000000" displayName="Résolu"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_allergyintolerance_clinical_CISIS"
+             id="2.16.840.1.113883.4.642.3.1372"
+             revisionDate="2022-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="active"
+                  codeSystem="2.16.840.1.113883.4.642.4.1373"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Actif"/>
+         <Concept code="inactive"
+                  codeSystem="2.16.840.1.113883.4.642.4.1373"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Inactif"/>
+         <Concept code="resolved"
+                  codeSystem="2.16.840.1.113883.4.642.4.1373"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Résolu"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

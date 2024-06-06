@@ -1,10 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230331120000" dateValid="20210430120000" description="JDV pour le champ d'application de l'intervalle de référence" displayName="JDV_J148_ReferenceRangeAppliesTo_CISIS.tabs" id="1.2.250.1.213.1.1.5.603" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS">
-        <ConceptList>
-            <Concept code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Féminin"/>
-            <Concept code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Masculin"/>
-            <Concept code="77386006" codeSystem="2.16.840.1.113883.6.96" displayName="enceinte"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20230331120000"
+             dateValid="20210430120000"
+             description="JDV pour le champ d'application de l'intervalle de référence"
+             displayName="JDV_J148_ReferenceRangeAppliesTo_CISIS.tabs"
+             id="1.2.250.1.213.1.1.5.603"
+             revisionDate="2023-03-31T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS">
+      <ConceptList>
+         <Concept code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Féminin"/>
+         <Concept code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Masculin"/>
+         <Concept code="77386006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="enceinte"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

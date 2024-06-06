@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_SiteIntervention_CISIS" id="1.2.250.1.213.1.1.5.169" version="test">
-        <ConceptList>
-            <Concept code="15825003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="aorte"/>
-            <Concept code="41801008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère coronaire"/>
-            <Concept code="22286001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère carotide externe"/>
-            <Concept code="85234005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère vertébrale"/>
-            <Concept code="36765005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère subclavière"/>
-            <Concept code="10293006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère iliaque"/>
-            <Concept code="127955005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="artère intracrânienne"/>
-            <Concept code="61685007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221206000000" displayName="membre inférieur"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_SiteIntervention_CISIS"
+             id="1.2.250.1.213.1.1.5.169"
+             revisionDate="2023-07-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="15825003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="aorte"/>
+         <Concept code="41801008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère coronaire"/>
+         <Concept code="22286001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère carotide externe"/>
+         <Concept code="85234005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère vertébrale"/>
+         <Concept code="36765005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère subclavière"/>
+         <Concept code="10293006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère iliaque"/>
+         <Concept code="127955005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="artère intracrânienne"/>
+         <Concept code="61685007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221206000000"
+                  displayName="membre inférieur"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

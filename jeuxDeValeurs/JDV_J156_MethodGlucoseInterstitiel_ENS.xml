@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20231215120000" dateValid="20210430120000" description="JDV pour la méthode de mesure du glucose interstitiel" displayName="JDV_J156_MethodGlucoseInterstitiel_ENS.tabs" id="1.2.250.1.213.1.1.5.611" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS">
-        <ConceptList>
-            <Concept code="J0601" codeSystem="1.2.250.1.213.2.68" displayName="CAPTEURS IMPLANTABLES DE SURVEILLANCE CONTINUE DU GLUCOSE"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20231215120000"
+             dateValid="20210430120000"
+             description="JDV pour la méthode de mesure du glucose interstitiel"
+             displayName="JDV_J156_MethodGlucoseInterstitiel_ENS.tabs"
+             id="1.2.250.1.213.1.1.5.611"
+             revisionDate="2023-12-15T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS">
+      <ConceptList>
+         <Concept code="J0601"
+                  codeSystem="1.2.250.1.213.2.68"
+                  displayName="CAPTEURS IMPLANTABLES DE SURVEILLANCE CONTINUE DU GLUCOSE"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV pour la méthode de la mesure du niveau de douleur" displayName="JDV_J159_MethodPainSeverity_ENS.tabs" id="1.2.250.1.213.1.1.5.614" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS">
-        <ConceptList>
-            <Concept code="C21082" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="échelle numérique de la douleur"/>
-            <Concept code="C121547" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="échelle visuelle analogique"/>
-            <Concept code="C21133" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="échelle d'évaluation verbale"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20230922120000"
+             dateValid="20210430120000"
+             description="JDV pour la méthode de la mesure du niveau de douleur"
+             displayName="JDV_J159_MethodPainSeverity_ENS.tabs"
+             id="1.2.250.1.213.1.1.5.614"
+             revisionDate="2023-09-22T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS">
+      <ConceptList>
+         <Concept code="C21082"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  displayName="échelle numérique de la douleur"/>
+         <Concept code="C121547"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  displayName="échelle visuelle analogique"/>
+         <Concept code="C21133"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  displayName="échelle d'évaluation verbale"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

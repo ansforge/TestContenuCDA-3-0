@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreASA_CISIS" id="1.2.250.1.213.1.1.5.501" version="test">
-        <ConceptList>
-            <Concept code="MED-613" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="1 - Patient normal"/>
-            <Concept code="MED-614" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="2 - Patient avec anomalie systémique modérée"/>
-            <Concept code="MED-615" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="3 - Patient avec anomalie systémique sévère"/>
-            <Concept code="MED-616" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="4 - Patient avec anomalie systémique sévère représentant une menace vitale constante"/>
-            <Concept code="MED-617" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="5 - Patient moribond dont la survie est improbable sans l'intervention"/>
-            <Concept code="MED-618" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200507000000" displayName="6 - Patient déclaré en état de mort cérébrale dont on prélève les organes pour greffe"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreASA_CISIS"
+             id="1.2.250.1.213.1.1.5.501"
+             revisionDate="2020-05-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-613"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="1 - Patient normal"/>
+         <Concept code="MED-614"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="2 - Patient avec anomalie systémique modérée"/>
+         <Concept code="MED-615"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="3 - Patient avec anomalie systémique sévère"/>
+         <Concept code="MED-616"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="4 - Patient avec anomalie systémique sévère représentant une menace vitale constante"/>
+         <Concept code="MED-617"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="5 - Patient moribond dont la survie est improbable sans l'intervention"/>
+         <Concept code="MED-618"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200507000000"
+                  displayName="6 - Patient déclaré en état de mort cérébrale dont on prélève les organes pour greffe"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

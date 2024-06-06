@@ -1,26 +1,108 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ResultatExamenCytologiqueCCU_CISIS" id="1.2.250.1.213.1.1.5.721" version="test">
-        <ConceptList>
-            <Concept code="MED-1192" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="non satisfaisant pour l’évaluation"/>
-            <Concept code="MED-1193" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="négatif pour une lésion intra-épithéliale ou maligne"/>
-            <Concept code="MED-1194" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="adénocarcinome SAP"/>
-            <Concept code="MED-1195" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="adénocarcinome in situ de l’endocol"/>
-            <Concept code="MED-1196" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="adénocarcinome endocervical"/>
-            <Concept code="MED-1197" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="adénocarcinome endométrial"/>
-            <Concept code="MED-1198" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="adénocarcinome d’origine extra-utérine"/>
-            <Concept code="MED-1199" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules malpighiennes atypiques de signification indéterminée (ASC-US)"/>
-            <Concept code="MED-1200" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules malpighiennes atypiques ne permettant pas d’éliminer une lésion malpighienne intra-épithéliale de haut grade (ASC-H)"/>
-            <Concept code="MED-1201" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules malpighiennes intra-épithéliale de haut grade (HSIL)"/>
-            <Concept code="MED-1202" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules glandulaires atypiques SAP"/>
-            <Concept code="MED-1203" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules endocervicales atypiques SAP"/>
-            <Concept code="MED-1204" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules endométriales atypiques SAP"/>
-            <Concept code="MED-1205" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules glandulaires en faveur d’une néoplasie"/>
-            <Concept code="MED-1206" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="cellules endocervicales atypiques en faveur d’une néoplasie"/>
-            <Concept code="MED-1207" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="carcinome epidermoïde"/>
-            <Concept code="MED-1208" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="lésion malpighienne intra-épithéliale de bas grade (LSIL)"/>
-            <Concept code="MED-1209" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="lésion malpighienne intra-épithéliale de haut grade avec des aspects faisant suspecter une invasion"/>
-            <Concept code="GEN-092.01.12" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231017000000" displayName="Autre tumeur maligne"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ResultatExamenCytologiqueCCU_CISIS"
+             id="1.2.250.1.213.1.1.5.721"
+             revisionDate="2023-10-17T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1192"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="non satisfaisant pour l’évaluation"/>
+         <Concept code="MED-1193"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="négatif pour une lésion intra-épithéliale ou maligne"/>
+         <Concept code="MED-1194"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="adénocarcinome SAP"/>
+         <Concept code="MED-1195"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="adénocarcinome in situ de l’endocol"/>
+         <Concept code="MED-1196"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="adénocarcinome endocervical"/>
+         <Concept code="MED-1197"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="adénocarcinome endométrial"/>
+         <Concept code="MED-1198"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="adénocarcinome d’origine extra-utérine"/>
+         <Concept code="MED-1199"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules malpighiennes atypiques de signification indéterminée (ASC-US)"/>
+         <Concept code="MED-1200"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules malpighiennes atypiques ne permettant pas d’éliminer une lésion malpighienne intra-épithéliale de haut grade (ASC-H)"/>
+         <Concept code="MED-1201"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules malpighiennes intra-épithéliale de haut grade (HSIL)"/>
+         <Concept code="MED-1202"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules glandulaires atypiques SAP"/>
+         <Concept code="MED-1203"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules endocervicales atypiques SAP"/>
+         <Concept code="MED-1204"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules endométriales atypiques SAP"/>
+         <Concept code="MED-1205"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules glandulaires en faveur d’une néoplasie"/>
+         <Concept code="MED-1206"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="cellules endocervicales atypiques en faveur d’une néoplasie"/>
+         <Concept code="MED-1207"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="carcinome epidermoïde"/>
+         <Concept code="MED-1208"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="lésion malpighienne intra-épithéliale de bas grade (LSIL)"/>
+         <Concept code="MED-1209"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="lésion malpighienne intra-épithéliale de haut grade avec des aspects faisant suspecter une invasion"/>
+         <Concept code="GEN-092.01.12"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231017000000"
+                  displayName="Autre tumeur maligne"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

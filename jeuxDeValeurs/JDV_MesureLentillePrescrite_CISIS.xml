@@ -1,30 +1,128 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MesureLentillePrescrite_CISIS" id="1.2.250.1.213.1.1.5.655" version="test">
-        <ConceptList>
-            <Concept code="MED-897" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prise en charge LPP"/>
-            <Concept code="MED-1083" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prescription pour primo porteur de lentille de contact"/>
-            <Concept code="MED-1182" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Date de fin d'adapation de la prescription"/>
-            <Concept code="74712-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Date de fin de validité"/>
-            <Concept code="MED-1183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Produit d'entretien"/>
-            <Concept code="69730-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Consignes et conseils"/>
-            <Concept code="MED-1180" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Type de lentille"/>
-            <Concept code="GEN-292" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Commentaire"/>
-            <Concept code="C53610" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="Renouvellement"/>
-            <Concept code="C43383" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="modèle"/>
-            <Concept code="GEN-309" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230725000000" displayName="matériau"/>
-            <Concept code="MED-1084" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Diamètre lentille – lentille prescrite"/>
-            <Concept code="MED-1085" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 1 lentille – lentille prescrite"/>
-            <Concept code="MED-1086" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 2 lentille – lentille prescrite"/>
-            <Concept code="GEN-092.08.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230210000000" displayName="Autre(s) paramètre(s)"/>
-            <Concept code="MED-1065" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Valeur de la kératométrie dans l'axe le plus plat"/>
-            <Concept code="MED-1066" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Valeur de la kératométrie dans l'axe le plus cambré"/>
-            <Concept code="95300-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Axe du K"/>
-            <Concept code="MED-1087" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère – lentille prescrite"/>
-            <Concept code="MED-1088" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre – lentille prescrite"/>
-            <Concept code="95325-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Axe en degrés des lentilles"/>
-            <Concept code="28814-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Addition – grandeur"/>
-            <Concept code="28815-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Addition – valeur"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MesureLentillePrescrite_CISIS"
+             id="1.2.250.1.213.1.1.5.655"
+             revisionDate="2023-07-25T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-897"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Prise en charge LPP"/>
+         <Concept code="MED-1083"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Prescription pour primo porteur de lentille de contact"/>
+         <Concept code="MED-1182"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Date de fin d'adapation de la prescription"/>
+         <Concept code="74712-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Date de fin de validité"/>
+         <Concept code="MED-1183"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Produit d'entretien"/>
+         <Concept code="69730-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Consignes et conseils"/>
+         <Concept code="MED-1180"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Type de lentille"/>
+         <Concept code="GEN-292"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Commentaire"/>
+         <Concept code="C53610"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Renouvellement"/>
+         <Concept code="C43383"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="modèle"/>
+         <Concept code="GEN-309"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230725000000"
+                  displayName="matériau"/>
+         <Concept code="MED-1084"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Diamètre lentille – lentille prescrite"/>
+         <Concept code="MED-1085"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Rayon 1 lentille – lentille prescrite"/>
+         <Concept code="MED-1086"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Rayon 2 lentille – lentille prescrite"/>
+         <Concept code="GEN-092.08.04"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230210000000"
+                  displayName="Autre(s) paramètre(s)"/>
+         <Concept code="MED-1065"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Valeur de la kératométrie dans l'axe le plus plat"/>
+         <Concept code="MED-1066"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Valeur de la kératométrie dans l'axe le plus cambré"/>
+         <Concept code="95300-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Axe du K"/>
+         <Concept code="MED-1087"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance de la sphère – lentille prescrite"/>
+         <Concept code="MED-1088"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance du cylindre – lentille prescrite"/>
+         <Concept code="95325-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Axe en degrés des lentilles"/>
+         <Concept code="28814-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Addition – grandeur"/>
+         <Concept code="28815-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Addition – valeur"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

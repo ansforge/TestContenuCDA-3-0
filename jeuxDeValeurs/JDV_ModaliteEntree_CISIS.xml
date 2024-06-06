@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ModaliteEntree_CISIS" id="1.2.250.1.213.1.1.5.73" version="test">
-        <ConceptList>
-            <Concept code="183452005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation en urgence"/>
-            <Concept code="8715000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation programmée"/>
-            <Concept code="4563007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="hospitalisation, transfert d'un autre hôpital ou établissement de santé"/>
-            <Concept code="GEN-092.06.07" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre modalité d'entrée"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ModaliteEntree_CISIS"
+             id="1.2.250.1.213.1.1.5.73"
+             revisionDate="2024-03-15T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="183452005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="hospitalisation en urgence"/>
+         <Concept code="8715000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="hospitalisation programmée"/>
+         <Concept code="4563007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="hospitalisation, transfert d'un autre hôpital ou établissement de santé"/>
+         <Concept code="GEN-092.06.07"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre modalité d'entrée"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

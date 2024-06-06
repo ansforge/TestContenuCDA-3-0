@@ -1,21 +1,83 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_RCP_Appareil_CISIS" id="1.2.250.1.213.1.1.5.597" version="test">
-        <ConceptList>
-            <Concept code="387910009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="glande endocrine"/>
-            <Concept code="57171008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="structure du système hématopoïétique"/>
-            <Concept code="81745001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="œil"/>
-            <Concept code="272673000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="os"/>
-            <Concept code="39937001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="peau"/>
-            <Concept code="76752008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="sein"/>
-            <Concept code="86762007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système digestif"/>
-            <Concept code="53065001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil génital féminin"/>
-            <Concept code="90264002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil génital masculin"/>
-            <Concept code="25087005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système nerveux"/>
-            <Concept code="122489005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="système urinaire"/>
-            <Concept code="312419003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="appareil respiratoire et/ou cavité thoracique"/>
-            <Concept code="87784001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="tissus mous"/>
-            <Concept code="119253004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230707000000" displayName="voie aérodigestive supérieure"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_RCP_Appareil_CISIS"
+             id="1.2.250.1.213.1.1.5.597"
+             revisionDate="2023-07-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="387910009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="glande endocrine"/>
+         <Concept code="57171008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="structure du système hématopoïétique"/>
+         <Concept code="81745001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="œil"/>
+         <Concept code="272673000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="os"/>
+         <Concept code="39937001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="peau"/>
+         <Concept code="76752008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="sein"/>
+         <Concept code="86762007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système digestif"/>
+         <Concept code="53065001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil génital féminin"/>
+         <Concept code="90264002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil génital masculin"/>
+         <Concept code="25087005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système nerveux"/>
+         <Concept code="122489005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="système urinaire"/>
+         <Concept code="312419003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="appareil respiratoire et/ou cavité thoracique"/>
+         <Concept code="87784001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="tissus mous"/>
+         <Concept code="119253004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230707000000"
+                  displayName="voie aérodigestive supérieure"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

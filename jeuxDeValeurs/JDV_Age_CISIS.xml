@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Age_CISIS" id="1.2.250.1.213.1.1.5.43" version="test">
-        <ConceptList>
-            <Concept code="255407002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="néonatal"/>
-            <Concept code="767023003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période de la vie entre la naissance et la mort"/>
-            <Concept code="373068000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="indéterminé(e)"/>
-            <Concept code="303112003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période fœtale"/>
-            <Concept code="303113008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230427000000" displayName="période postmortem"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Age_CISIS"
+             id="1.2.250.1.213.1.1.5.43"
+             revisionDate="2023-04-27T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="255407002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="néonatal"/>
+         <Concept code="767023003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="période de la vie entre la naissance et la mort"/>
+         <Concept code="373068000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="indéterminé(e)"/>
+         <Concept code="303112003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="période fœtale"/>
+         <Concept code="303113008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="période postmortem"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

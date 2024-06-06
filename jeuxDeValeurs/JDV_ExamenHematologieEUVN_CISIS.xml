@@ -1,20 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ExamenHematologieEUVN_CISIS" id="1.2.250.1.213.1.1.5.225" version="test">
-        <ConceptList>
-            <Concept code="789-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Érythrocytes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
-            <Concept code="718-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Hémoglobine [Masse/Volume] Sang ; Numérique"/>
-            <Concept code="4544-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Hématocrite:Fraction volumique:Ponctuel:Sang:Numérique:Comptage automate"/>
-            <Concept code="30428-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Volume globulaire moyen [Volume d'entité] Érythrocytes ; Numérique"/>
-            <Concept code="28540-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Concentration corpusculaire moyenne en hémoglobine [Masse/Volume] Érythrocytes ; Numérique"/>
-            <Concept code="28539-5" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Teneur corpusculaire moyenne en hémoglobine [Masse d'entité] Érythrocytes ; Numérique"/>
-            <Concept code="777-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Plaquettes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
-            <Concept code="6690-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Leucocytes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
-            <Concept code="26511-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Polynucléaires neutrophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
-            <Concept code="26450-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Polynucléaires éosinophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
-            <Concept code="30180-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Polynucléaires basophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
-            <Concept code="26478-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Lymphocytes totaux/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
-            <Concept code="26485-3" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230803000000" displayName="Monocytes/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ExamenHematologieEUVN_CISIS"
+             id="1.2.250.1.213.1.1.5.225"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="789-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Érythrocytes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
+         <Concept code="718-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Hémoglobine [Masse/Volume] Sang ; Numérique"/>
+         <Concept code="4544-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hématocrite:Fraction volumique:Ponctuel:Sang:Numérique:Comptage automate"/>
+         <Concept code="30428-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Volume globulaire moyen [Volume d'entité] Érythrocytes ; Numérique"/>
+         <Concept code="28540-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Concentration corpusculaire moyenne en hémoglobine [Masse/Volume] Érythrocytes ; Numérique"/>
+         <Concept code="28539-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Teneur corpusculaire moyenne en hémoglobine [Masse d'entité] Érythrocytes ; Numérique"/>
+         <Concept code="777-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Plaquettes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
+         <Concept code="6690-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Leucocytes:Nombre/Volume:Ponctuel:Sang:Numérique:Comptage automate"/>
+         <Concept code="26511-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Polynucléaires neutrophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
+         <Concept code="26450-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Polynucléaires éosinophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
+         <Concept code="30180-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Polynucléaires basophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
+         <Concept code="26478-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Lymphocytes totaux/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
+         <Concept code="26485-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Monocytes/100 leucocytes [Fraction de nombres] Sang ; Numérique"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_RealisationActivites_CISIS" id="1.2.250.1.213.1.1.5.54" version="test">
-        <ConceptList>
-            <Concept code="385670004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="partiellement réussi"/>
-            <Concept code="371152001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="assisté"/>
-            <Concept code="373067005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="non"/>
-            <Concept code="371153006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="indépendant(e)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_RealisationActivites_CISIS"
+             id="1.2.250.1.213.1.1.5.54"
+             revisionDate="2024-03-15T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="385670004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="partiellement réussi"/>
+         <Concept code="371152001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="assisté"/>
+         <Concept code="373067005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="non"/>
+         <Concept code="371153006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="indépendant(e)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

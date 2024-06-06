@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ProblemCodes_CISIS" id="1.2.250.1.213.1.1.5.172" version="test">
-        <ConceptList>
-            <Concept code="404684003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="constatation clinique"/>
-            <Concept code="55607006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="problème"/>
-            <Concept code="64572001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="maladie"/>
-            <Concept code="248536006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="constatation à propos de la performance fonctionnelle et l'activité"/>
-            <Concept code="409586006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="plainte"/>
-            <Concept code="418799008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="symptôme rapporté par le patient ou le répondant"/>
-            <Concept code="282291009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221130000000" displayName="interprétation diagnostique"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ProblemCodes_CISIS"
+             id="1.2.250.1.213.1.1.5.172"
+             revisionDate="2024-06-04T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="404684003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="constatation clinique"/>
+         <Concept code="55607006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="problème"/>
+         <Concept code="64572001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="maladie"/>
+         <Concept code="248536006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="constatation à propos de la performance fonctionnelle et l'activité"/>
+         <Concept code="1269496002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240604000000"
+                  displayName="plainte"/>
+         <Concept code="418799008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="symptôme rapporté par le patient ou le répondant"/>
+         <Concept code="282291009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221130000000"
+                  displayName="interprétation diagnostique"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

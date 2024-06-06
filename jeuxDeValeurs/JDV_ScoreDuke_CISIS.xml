@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreDuke_CISIS" id="1.2.250.1.213.1.1.5.493" version="test">
-        <ConceptList>
-            <Concept code="MED-589" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Aptitude physique excellente (Score de Duke sup. à 10 MET)"/>
-            <Concept code="MED-590" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Aptitude physique bonne (Score de Duke 7-10 MET)"/>
-            <Concept code="MED-591" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Aptitude physique modérée (Score de Duke 4-7 MET)"/>
-            <Concept code="MED-592" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200331000000" displayName="Aptitude physique faible (Score de Duke inf. à 4 MET)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreDuke_CISIS"
+             id="1.2.250.1.213.1.1.5.493"
+             revisionDate="2020-03-31T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-589"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200331000000"
+                  displayName="Aptitude physique excellente (Score de Duke sup. à 10 MET)"/>
+         <Concept code="MED-590"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200331000000"
+                  displayName="Aptitude physique bonne (Score de Duke 7-10 MET)"/>
+         <Concept code="MED-591"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200331000000"
+                  displayName="Aptitude physique modérée (Score de Duke 4-7 MET)"/>
+         <Concept code="MED-592"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200331000000"
+                  displayName="Aptitude physique faible (Score de Duke inf. à 4 MET)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

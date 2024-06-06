@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_AvisMedicalComplementaire_CISIS" id="1.2.250.1.213.1.1.5.63" version="test">
-        <ConceptList>
-            <Concept code="G15_10/SM29" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20231114000000" displayName="Médecin - Médecine physique et réadaptation (SM)"/>
-            <Concept code="G15_10/SM04" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Cardiologie et maladies vasculaires (SM)"/>
-            <Concept code="G15_10/SM32" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Neurologie (SM)"/>
-            <Concept code="G15_10/SM18" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin - Gériatrie (SM)&quot;"/>
-            <Concept code="GEN-092.04.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre avis médical"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_AvisMedicalComplementaire_CISIS"
+             id="1.2.250.1.213.1.1.5.63"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="G15_10/SM29"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Médecin - Médecine physique et réadaptation (SM)"/>
+         <Concept code="G15_10/SM04"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Médecin - Cardiologie et maladies vasculaires (SM)"/>
+         <Concept code="G15_10/SM32"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Médecin - Neurologie (SM)"/>
+         <Concept code="G15_10/SM18"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Médecin - Gériatrie (SM)&#34;"/>
+         <Concept code="GEN-092.04.04"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre avis médical"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

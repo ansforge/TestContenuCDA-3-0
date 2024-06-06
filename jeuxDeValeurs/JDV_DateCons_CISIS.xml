@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_DateCons_CISIS" id="1.2.250.1.213.1.1.5.111" version="test">
-        <ConceptList>
-            <Concept code="GEN-109" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Non suivie"/>
-            <Concept code="57630001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="premier trimestre de la grossesse"/>
-            <Concept code="59466002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="deuxième trimestre de la grossesse"/>
-            <Concept code="41587001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230206000000" displayName="troisième trimestre de la grossesse"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_DateCons_CISIS"
+             id="1.2.250.1.213.1.1.5.111"
+             revisionDate="2023-02-06T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-109"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Non suivie"/>
+         <Concept code="57630001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230206000000"
+                  displayName="premier trimestre de la grossesse"/>
+         <Concept code="59466002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230206000000"
+                  displayName="deuxième trimestre de la grossesse"/>
+         <Concept code="41587001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230206000000"
+                  displayName="troisième trimestre de la grossesse"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

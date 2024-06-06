@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MotifHospitalisationCSE_CISIS" id="1.2.250.1.213.1.1.5.681" version="test">
-        <ConceptList>
-            <Concept code="P05.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Faible poids pour l'âge gestationnel"/>
-            <Concept code="O13" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Hypertension gestationnelle [liée à la grossesse]"/>
-            <Concept code="O47.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20220404000000" displayName="Faux travail avant 37 semaines révolues de gestation"/>
-            <Concept code="GEN-092.01.08" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif d'hospitalisation"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MotifHospitalisationCSE_CISIS"
+             id="1.2.250.1.213.1.1.5.681"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="P05.0"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20220404000000"
+                  displayName="Faible poids pour l'âge gestationnel"/>
+         <Concept code="O13"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20220404000000"
+                  displayName="Hypertension gestationnelle [liée à la grossesse]"/>
+         <Concept code="O47.0"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20220404000000"
+                  displayName="Faux travail avant 37 semaines révolues de gestation"/>
+         <Concept code="GEN-092.01.08"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre motif d'hospitalisation"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

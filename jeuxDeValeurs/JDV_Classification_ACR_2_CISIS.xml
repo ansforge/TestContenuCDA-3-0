@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Classification_ACR_2_CISIS" id="1.2.250.1.213.1.1.5.650" version="test">
-        <ConceptList>
-            <Concept code="MED-1064" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="En attente BI-RADS ACR 0"/>
-            <Concept code="MED-129" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Normal BI-RADS ACR 1"/>
-            <Concept code="MED-130" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Bénin BI-RADS ACR 2"/>
-            <Concept code="MED-131" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Anormal BI-RADS ACR 3"/>
-            <Concept code="MED-132" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Anormal BI-RADS ACR 4"/>
-            <Concept code="MED-133" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210907000000" displayName="Anormal BI-RADS ACR 5"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Classification_ACR_2_CISIS"
+             id="1.2.250.1.213.1.1.5.650"
+             revisionDate="2021-09-07T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1064"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="En attente BI-RADS ACR 0"/>
+         <Concept code="MED-129"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Normal BI-RADS ACR 1"/>
+         <Concept code="MED-130"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Bénin BI-RADS ACR 2"/>
+         <Concept code="MED-131"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Anormal BI-RADS ACR 3"/>
+         <Concept code="MED-132"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Anormal BI-RADS ACR 4"/>
+         <Concept code="MED-133"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210907000000"
+                  displayName="Anormal BI-RADS ACR 5"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

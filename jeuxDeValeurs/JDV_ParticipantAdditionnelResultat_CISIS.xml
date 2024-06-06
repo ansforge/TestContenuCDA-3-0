@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ParticipantAdditionnelResultat_CISIS" id="1.2.250.1.213.1.1.5.138" version="test">
-        <ConceptList>
-            <Concept code="DEV" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Dispositif automatique impliqué dans la production des résultats"/>
-            <Concept code="AUTHEN" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Valideur des résultats (ex : un biologiste ou un système expert)"/>
-            <Concept code="RESP" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Responsable de l'acte"/>
-            <Concept code="ENT" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Transcripteur du contenu à partir d'une autre forme"/>
-            <Concept code="PRF" codeSystem="2.16.840.1.113883.5.90" dateFin="" dateValid="20100101000000" displayName="Exécutant"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ParticipantAdditionnelResultat_CISIS"
+             id="1.2.250.1.213.1.1.5.138"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="DEV"
+                  codeSystem="2.16.840.1.113883.5.90"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Dispositif automatique impliqué dans la production des résultats"/>
+         <Concept code="AUTHEN"
+                  codeSystem="2.16.840.1.113883.5.90"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Valideur des résultats (ex : un biologiste ou un système expert)"/>
+         <Concept code="RESP"
+                  codeSystem="2.16.840.1.113883.5.90"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Responsable de l'acte"/>
+         <Concept code="ENT"
+                  codeSystem="2.16.840.1.113883.5.90"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Transcripteur du contenu à partir d'une autre forme"/>
+         <Concept code="PRF"
+                  codeSystem="2.16.840.1.113883.5.90"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Exécutant"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

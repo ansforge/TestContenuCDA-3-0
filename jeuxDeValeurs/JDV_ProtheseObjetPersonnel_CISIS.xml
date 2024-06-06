@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ProtheseObjetPersonnel_CISIS" id="1.2.250.1.213.1.1.5.515" version="test">
-        <ConceptList>
-            <Concept code="Q021003" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)"/>
-            <Concept code="P0102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="PROTHÈSES DENTAIRES"/>
-            <Concept code="Y2145" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20221205000000" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"/>
-            <Concept code="GEN-092.02.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre prothèse et objet personnel"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ProtheseObjetPersonnel_CISIS"
+             id="1.2.250.1.213.1.1.5.515"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="Q021003"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20221205000000"
+                  displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)"/>
+         <Concept code="P0102"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20221205000000"
+                  displayName="PROTHÈSES DENTAIRES"/>
+         <Concept code="Y2145"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20221205000000"
+                  displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION"/>
+         <Concept code="GEN-092.02.01"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre prothèse et objet personnel"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

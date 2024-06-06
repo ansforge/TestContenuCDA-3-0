@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_InvestigationsRealiseesSUNV_CISIS" id="1.2.250.1.213.1.1.5.229" version="test">
-        <ConceptList>
-            <Concept code="MED-381" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Score de Rankin"/>
-            <Concept code="72089-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20100101000000" displayName="Score NIH Stroke Scale"/>
-            <Concept code="MED-513" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Evaluation en kinésithérapie"/>
-            <Concept code="MED-514" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Evaluation en orthophonie"/>
-            <Concept code="MED-515" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Evaluation en ergothérapie"/>
-            <Concept code="MED-516" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Evaluation de l'assistance sociale"/>
-            <Concept code="MED-517" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Evaluation en neuropsychologie"/>
-            <Concept code="MED-218" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Rééducation en cours d'hospitalisation"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_InvestigationsRealiseesSUNV_CISIS"
+             id="1.2.250.1.213.1.1.5.229"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-381"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Score de Rankin"/>
+         <Concept code="72089-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Score NIH Stroke Scale"/>
+         <Concept code="MED-513"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Evaluation en kinésithérapie"/>
+         <Concept code="MED-514"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Evaluation en orthophonie"/>
+         <Concept code="MED-515"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Evaluation en ergothérapie"/>
+         <Concept code="MED-516"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Evaluation de l'assistance sociale"/>
+         <Concept code="MED-517"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Evaluation en neuropsychologie"/>
+         <Concept code="MED-218"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Rééducation en cours d'hospitalisation"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_OrientationBaseDuPrisme_CISIS" id="1.2.250.1.213.1.1.5.623" version="test">
-        <ConceptList>
-            <Concept code="260521003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240108000000" displayName="interne"/>
-            <Concept code="261074009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240108000000" displayName="externe"/>
-            <Concept code="264217000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221209000000" displayName="supérieure"/>
-            <Concept code="261089000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20221209000000" displayName="inférieure"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_OrientationBaseDuPrisme_CISIS"
+             id="1.2.250.1.213.1.1.5.623"
+             revisionDate="2024-01-08T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="260521003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240108000000"
+                  displayName="interne"/>
+         <Concept code="261074009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240108000000"
+                  displayName="externe"/>
+         <Concept code="264217000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221209000000"
+                  displayName="supérieure"/>
+         <Concept code="261089000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20221209000000"
+                  displayName="inférieure"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

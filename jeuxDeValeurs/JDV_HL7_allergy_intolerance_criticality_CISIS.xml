@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_HL7_allergy_intolerance_criticality_CISIS" id="2.16.840.1.113883.4.642.3.129" version="test">
-        <ConceptList>
-            <Concept code="low" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Bas"/>
-            <Concept code="high" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Elevé"/>
-            <Concept code="unable-to-assess" codeSystem="2.16.840.1.113883.4.642.4.130" dateFin="" dateValid="20220101000000" displayName="Impossible à évaluer"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_allergy_intolerance_criticality_CISIS"
+             id="2.16.840.1.113883.4.642.3.129"
+             revisionDate="2022-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="low"
+                  codeSystem="2.16.840.1.113883.4.642.4.130"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Bas"/>
+         <Concept code="high"
+                  codeSystem="2.16.840.1.113883.4.642.4.130"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Elevé"/>
+         <Concept code="unable-to-assess"
+                  codeSystem="2.16.840.1.113883.4.642.4.130"
+                  dateFin=""
+                  dateValid="20220101000000"
+                  displayName="Impossible à évaluer"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

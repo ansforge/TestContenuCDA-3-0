@@ -1,19 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ProfessionPersonnelActivite_CISIS" id="1.2.250.1.213.1.1.5.42" version="test">
-        <ConceptList>
-            <Concept code="G15_10" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Médecin"/>
-            <Concept code="G15_60" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Infirmier"/>
-            <Concept code="G15_70" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Masseur-Kinésithérapeute"/>
-            <Concept code="G15_91" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Orthophoniste"/>
-            <Concept code="G15_94" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Ergothérapeute"/>
-            <Concept code="G15_95" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Diététicien"/>
-            <Concept code="G15_96" codeSystem="1.2.250.1.213.1.1.4.5" dateFin="" dateValid="20100101000000" displayName="Psychomotricien"/>
-            <Concept code="GEN-092.05.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre professionnel(le)"/>
-            <Concept code="41" codeSystem="1.2.250.1.213.1.6.1.4" dateFin="" dateValid="20210826000000" displayName="Assistant de service social"/>
-            <Concept code="93" codeSystem="1.2.250.1.213.1.6.1.109" dateFin="" dateValid="20210826000000" displayName="Psychologue"/>
-            <Concept code="97" codeSystem="1.2.250.1.213.1.6.1.109" dateFin="" dateValid="20210826000000" displayName="Conseiller en génétique"/>
-            <Concept code="51" codeSystem="1.2.250.1.213.1.6.1.4" dateFin="" dateValid="20210826000000" displayName="Educateur spécialisé"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ProfessionPersonnelActivite_CISIS"
+             id="1.2.250.1.213.1.1.5.42"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="G15_10"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Médecin"/>
+         <Concept code="G15_60"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Infirmier"/>
+         <Concept code="G15_70"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Masseur-Kinésithérapeute"/>
+         <Concept code="G15_91"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Orthophoniste"/>
+         <Concept code="G15_94"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ergothérapeute"/>
+         <Concept code="G15_95"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Diététicien"/>
+         <Concept code="G15_96"
+                  codeSystem="1.2.250.1.213.1.1.4.5"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Psychomotricien"/>
+         <Concept code="GEN-092.05.03"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre professionnel(le)"/>
+         <Concept code="41"
+                  codeSystem="1.2.250.1.213.1.6.1.4"
+                  dateFin=""
+                  dateValid="20210826000000"
+                  displayName="Assistant de service social"/>
+         <Concept code="93"
+                  codeSystem="1.2.250.1.213.1.6.1.109"
+                  dateFin=""
+                  dateValid="20210826000000"
+                  displayName="Psychologue"/>
+         <Concept code="97"
+                  codeSystem="1.2.250.1.213.1.6.1.109"
+                  dateFin=""
+                  dateValid="20210826000000"
+                  displayName="Conseiller en génétique"/>
+         <Concept code="51"
+                  codeSystem="1.2.250.1.213.1.6.1.4"
+                  dateFin=""
+                  dateValid="20210826000000"
+                  displayName="Educateur spécialisé"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

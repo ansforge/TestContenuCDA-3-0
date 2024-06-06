@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_EncompassingEncounterCode_CISIS" id="1.2.250.1.213.1.1.5.18" version="test">
-        <ConceptList>
-            <Concept code="AMB" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Ambulatoire (hors établissement)"/>
-            <Concept code="EMER" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Passage aux urgences (établissement)"/>
-            <Concept code="FLD" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Terrain (voie publique, hélicoptère, ambulance, etc.)"/>
-            <Concept code="HH" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Soins à domicile (hors établissement)"/>
-            <Concept code="IMP" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Hospitalisation (établissement, y compris HAD"/>
-            <Concept code="SS" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Consultation en hôpital de jour ou court séjour"/>
-            <Concept code="VR" codeSystem="2.16.840.1.113883.5.4" dateFin="" dateValid="20100101000000" displayName="Virtuelle (exemple : RCP en l'absence du patient)"/>
-            <Concept code="EXTERNE" codeSystem="1.2.250.1.213.1.1.4.2.291" dateFin="" dateValid="20100101000000" displayName="Acte et consultation externe (établissement)"/>
-            <Concept code="SEANCE" codeSystem="1.2.250.1.213.1.1.4.2.291" dateFin="" dateValid="20100101000000" displayName="Séance (établissement ou libéral)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_EncompassingEncounterCode_CISIS"
+             id="1.2.250.1.213.1.1.5.18"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="AMB"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Ambulatoire (hors établissement)"/>
+         <Concept code="EMER"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Passage aux urgences (établissement)"/>
+         <Concept code="FLD"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Terrain (voie publique, hélicoptère, ambulance, etc.)"/>
+         <Concept code="HH"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Soins à domicile (hors établissement)"/>
+         <Concept code="IMP"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Hospitalisation (établissement, y compris HAD"/>
+         <Concept code="SS"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Consultation en hôpital de jour ou court séjour"/>
+         <Concept code="VR"
+                  codeSystem="2.16.840.1.113883.5.4"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Virtuelle (exemple : RCP en l'absence du patient)"/>
+         <Concept code="EXTERNE"
+                  codeSystem="1.2.250.1.213.1.1.4.2.291"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Acte et consultation externe (établissement)"/>
+         <Concept code="SEANCE"
+                  codeSystem="1.2.250.1.213.1.1.4.2.291"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Séance (établissement ou libéral)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

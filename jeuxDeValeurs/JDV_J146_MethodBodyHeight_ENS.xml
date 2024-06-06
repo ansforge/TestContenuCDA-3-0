@@ -1,10 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20231215120000" dateValid="20210430120000" description="JDV pour la méthode de mesure de la taille" displayName="JDV_J146_MethodBodyHeight_ENS.tabs" id="1.2.250.1.213.1.1.5.601" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS">
-        <ConceptList>
-            <Concept code="C81261" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ruban à mesurer"/>
-            <Concept code="V030201" codeSystem="1.2.250.1.213.2.68" displayName="TOISES"/>
-            <Concept code="V030209" codeSystem="1.2.250.1.213.2.68" displayName="TOISES À USAGE CLINIQUE"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20231215120000"
+             dateValid="20210430120000"
+             description="JDV pour la méthode de mesure de la taille"
+             displayName="JDV_J146_MethodBodyHeight_ENS.tabs"
+             id="1.2.250.1.213.1.1.5.601"
+             revisionDate="2023-12-15T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS">
+      <ConceptList>
+         <Concept code="C81261"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  displayName="ruban à mesurer"/>
+         <Concept code="V030201" codeSystem="1.2.250.1.213.2.68" displayName="TOISES"/>
+         <Concept code="V030209"
+                  codeSystem="1.2.250.1.213.2.68"
+                  displayName="TOISES À USAGE CLINIQUE"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

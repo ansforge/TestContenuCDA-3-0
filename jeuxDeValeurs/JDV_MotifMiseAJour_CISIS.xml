@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MotifMiseAJour_CISIS" id="1.2.250.1.213.1.1.5.83" version="test">
-        <ConceptList>
-            <Concept code="263855007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20240315000000" displayName="rechute"/>
-            <Concept code="MED-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Non réponse ou évolution sous traitement"/>
-            <Concept code="MED-104" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Refus de traitement"/>
-            <Concept code="MED-105" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Décision de prise en soins palliatifs"/>
-            <Concept code="MED-556" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Fenêtre thérapeutique"/>
-            <Concept code="MED-560" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Réajustement du programme thérapeutique et de suivi"/>
-            <Concept code="MED-561" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Réajustement des soins de support et accompagnements"/>
-            <Concept code="GEN-175" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Modification d’informations administratives"/>
-            <Concept code="GEN-176" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Modification de calendrier"/>
-            <Concept code="GEN-092.08.02" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre motif de mise à jour"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MotifMiseAJour_CISIS"
+             id="1.2.250.1.213.1.1.5.83"
+             revisionDate="2024-03-15T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="263855007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="rechute"/>
+         <Concept code="MED-103"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Non réponse ou évolution sous traitement"/>
+         <Concept code="MED-104"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Refus de traitement"/>
+         <Concept code="MED-105"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Décision de prise en soins palliatifs"/>
+         <Concept code="MED-556"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Fenêtre thérapeutique"/>
+         <Concept code="MED-560"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Réajustement du programme thérapeutique et de suivi"/>
+         <Concept code="MED-561"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Réajustement des soins de support et accompagnements"/>
+         <Concept code="GEN-175"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Modification d’informations administratives"/>
+         <Concept code="GEN-176"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Modification de calendrier"/>
+         <Concept code="GEN-092.08.02"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre motif de mise à jour"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

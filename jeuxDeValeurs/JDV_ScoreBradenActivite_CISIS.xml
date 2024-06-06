@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreBradenActivite_CISIS" id="1.2.250.1.213.1.1.5.507" version="test">
-        <ConceptList>
-            <Concept code="GEN-217" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Alité"/>
-            <Concept code="GEN-218" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Confiné au fauteuil"/>
-            <Concept code="GEN-219" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Marche occasionnellement"/>
-            <Concept code="GEN-220" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200709000000" displayName="Marche fréquemment"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreBradenActivite_CISIS"
+             id="1.2.250.1.213.1.1.5.507"
+             revisionDate="2020-07-09T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-217"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Alité"/>
+         <Concept code="GEN-218"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Confiné au fauteuil"/>
+         <Concept code="GEN-219"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Marche occasionnellement"/>
+         <Concept code="GEN-220"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200709000000"
+                  displayName="Marche fréquemment"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

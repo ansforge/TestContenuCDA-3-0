@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSMsInt_CISIS" id="1.2.250.1.213.1.1.5.185" version="test">
-        <ConceptList>
-            <Concept code="LA18456-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes."/>
-            <Concept code="LA18457-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Chute; le membre supérieur chute en moins de 10 secondes mais sans atteindre le plan du lit ou un autre support."/>
-            <Concept code="LA18458-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Le membre supérieur ne peut pas atteindre ou maintenir 90° (ou 45°), tombe sur le lit mais peut faire un certain mouvement contre la pesanteur."/>
-            <Concept code="LA18459-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Aucun mouvement contre la pesanteur; le membre supérieur tombe."/>
-            <Concept code="LA18460-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Absence de mouvement."/>
-            <Concept code="LA18461-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Amputation, blocage articulaire (expliquer)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSMsInt_CISIS"
+             id="1.2.250.1.213.1.1.5.185"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA18456-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes."/>
+         <Concept code="LA18457-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Chute; le membre supérieur chute en moins de 10 secondes mais sans atteindre le plan du lit ou un autre support."/>
+         <Concept code="LA18458-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Le membre supérieur ne peut pas atteindre ou maintenir 90° (ou 45°), tombe sur le lit mais peut faire un certain mouvement contre la pesanteur."/>
+         <Concept code="LA18459-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Aucun mouvement contre la pesanteur; le membre supérieur tombe."/>
+         <Concept code="LA18460-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Absence de mouvement."/>
+         <Concept code="LA18461-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Amputation, blocage articulaire (expliquer)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

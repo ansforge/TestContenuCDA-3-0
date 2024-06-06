@@ -1,13 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20230922120000" dateValid="20210430120000" description="JDV de localisation de la mesure de la température" displayName="JDV_J151_BodySiteBodyTemperature_ENS.tabs" id="1.2.250.1.213.1.1.5.606" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS">
-        <ConceptList>
-            <Concept code="34402009" codeSystem="2.16.840.1.113883.6.96" displayName="rectum"/>
-            <Concept code="52795006" codeSystem="2.16.840.1.113883.6.96" displayName="front"/>
-            <Concept code="91470000" codeSystem="2.16.840.1.113883.6.96" displayName="région axillaire"/>
-            <Concept code="117590005" codeSystem="2.16.840.1.113883.6.96" displayName="oreille"/>
-            <Concept code="123851003" codeSystem="2.16.840.1.113883.6.96" displayName="bouche"/>
-            <Concept code="450721000" codeSystem="2.16.840.1.113883.6.96" displayName="région temporale"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20230922120000"
+             dateValid="20210430120000"
+             description="JDV de localisation de la mesure de la température"
+             displayName="JDV_J151_BodySiteBodyTemperature_ENS.tabs"
+             id="1.2.250.1.213.1.1.5.606"
+             revisionDate="2023-09-22T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS">
+      <ConceptList>
+         <Concept code="34402009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="rectum"/>
+         <Concept code="52795006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="front"/>
+         <Concept code="91470000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="région axillaire"/>
+         <Concept code="117590005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="oreille"/>
+         <Concept code="123851003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="bouche"/>
+         <Concept code="450721000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="région temporale"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

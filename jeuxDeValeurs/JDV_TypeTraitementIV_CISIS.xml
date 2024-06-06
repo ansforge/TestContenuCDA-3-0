@@ -1,9 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeTraitementIV_CISIS" id="1.2.250.1.213.1.1.5.173" version="test">
-        <ConceptList>
-            <Concept code="233428003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
-            <Concept code="397028007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombectomie d'une veine"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeTraitementIV_CISIS"
+             id="1.2.250.1.213.1.1.5.173"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="233428003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="thrombolyse d'une veine"/>
+         <Concept code="397028007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="thrombectomie d'une veine"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

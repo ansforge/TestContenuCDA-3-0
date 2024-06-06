@@ -1,13 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20240126120000" dateValid="20230331120000" description="Civilités CI-SIS" displayName="JDV_J246_Titre_CISIS.tabs" id="1.2.250.1.213.1.1.5.719" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J246-Titre-CISIS">
-        <ConceptList>
-            <Concept code="DR" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Docteur"/>
-            <Concept code="MC" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Médecin chef"/>
-            <Concept code="MG" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Médecin général"/>
-            <Concept code="PC" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Pharmacien chef"/>
-            <Concept code="PG" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Pharmacien général"/>
-            <Concept code="PR" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Professeur"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20240126120000"
+             dateValid="20230331120000"
+             description="Civilités CI-SIS"
+             displayName="JDV_J246_Titre_CISIS.tabs"
+             id="1.2.250.1.213.1.1.5.719"
+             revisionDate="2024-01-26T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J246-Titre-CISIS">
+      <ConceptList>
+         <Concept code="DR" codeSystem="1.2.250.1.213.1.6.1.11" displayName="Docteur"/>
+         <Concept code="MC"
+                  codeSystem="1.2.250.1.213.1.6.1.11"
+                  displayName="Médecin chef"/>
+         <Concept code="MG"
+                  codeSystem="1.2.250.1.213.1.6.1.11"
+                  displayName="Médecin général"/>
+         <Concept code="PC"
+                  codeSystem="1.2.250.1.213.1.6.1.11"
+                  displayName="Pharmacien chef"/>
+         <Concept code="PG"
+                  codeSystem="1.2.250.1.213.1.6.1.11"
+                  displayName="Pharmacien général"/>
+         <Concept code="PR"
+                  codeSystem="1.2.250.1.213.1.6.1.11"
+                  displayName="Professeur"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

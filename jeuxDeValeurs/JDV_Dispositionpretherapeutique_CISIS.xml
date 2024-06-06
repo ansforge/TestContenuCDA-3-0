@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Dispositionpretherapeutique_CISIS" id="1.2.250.1.213.1.1.5.216" version="test">
-        <ConceptList>
-            <Concept code="MED-495" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Aspirine dans les 24h d'hospitalisation"/>
-            <Concept code="MED-496" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Posologie aspirine entre 160 et 300 mg"/>
-            <Concept code="MED-497" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Contre-indication aspirine"/>
-            <Concept code="B01AC04" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20240315000000" displayName="clopidogrel"/>
-            <Concept code="B01AB01" codeSystem="2.16.840.1.113883.6.73" dateFin="" dateValid="20240315000000" displayName="héparine"/>
-            <Concept code="MED-500" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Inclusion dans protocole"/>
-            <Concept code="MED-501" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Date de consentement au protocole"/>
-            <Concept code="MED-502" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Nom du protocole"/>
-            <Concept code="233428003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombolyse d'une veine"/>
-            <Concept code="43810009" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="thrombectomie"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Dispositionpretherapeutique_CISIS"
+             id="1.2.250.1.213.1.1.5.216"
+             revisionDate="2024-03-15T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-495"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Aspirine dans les 24h d'hospitalisation"/>
+         <Concept code="MED-496"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Posologie aspirine entre 160 et 300 mg"/>
+         <Concept code="MED-497"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Contre-indication aspirine"/>
+         <Concept code="B01AC04"
+                  codeSystem="2.16.840.1.113883.6.73"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="clopidogrel"/>
+         <Concept code="B01AB01"
+                  codeSystem="2.16.840.1.113883.6.73"
+                  dateFin=""
+                  dateValid="20240315000000"
+                  displayName="héparine"/>
+         <Concept code="MED-500"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Inclusion dans protocole"/>
+         <Concept code="MED-501"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Date de consentement au protocole"/>
+         <Concept code="MED-502"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Nom du protocole"/>
+         <Concept code="233428003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="thrombolyse d'une veine"/>
+         <Concept code="43810009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="thrombectomie"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

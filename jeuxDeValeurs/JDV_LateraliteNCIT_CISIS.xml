@@ -1,44 +1,198 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_LateraliteNCIT_CISIS" id="1.2.250.1.213.1.1.5.586" version="test">
-        <ConceptList>
-            <Concept code="C25228" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="Droit"/>
-            <Concept code="C25229" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="gauche"/>
-            <Concept code="C13332" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="bilatéral"/>
-            <Concept code="C68598" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="unilatéral"/>
-            <Concept code="C25230" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="latéral"/>
-            <Concept code="C25231" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="antérieur"/>
-            <Concept code="C90393" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="postérieur"/>
-            <Concept code="C60645" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="céphalique"/>
-            <Concept code="C73851" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="caudal"/>
-            <Concept code="C25232" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="médial"/>
-            <Concept code="C25445" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="centre"/>
-            <Concept code="C25233" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="périphérique"/>
-            <Concept code="C44280" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="externe"/>
-            <Concept code="C25234" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="interne"/>
-            <Concept code="C73705" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="intermédiaire"/>
-            <Concept code="C25353" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="inférieur (anatomie)"/>
-            <Concept code="C25235" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="supérieur"/>
-            <Concept code="C73849" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="Plan transverse"/>
-            <Concept code="C25236" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="proximal"/>
-            <Concept code="C25237" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="distal"/>
-            <Concept code="C25423" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="apical"/>
-            <Concept code="C90067" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="basal"/>
-            <Concept code="C161325" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="frontal"/>
-            <Concept code="C25239" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="superficiel"/>
-            <Concept code="C25240" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="profond"/>
-            <Concept code="C25241" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="horizontal"/>
-            <Concept code="C25242" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="longitudinal"/>
-            <Concept code="C25243" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="vertical"/>
-            <Concept code="C94973" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="plan sagittal"/>
-            <Concept code="C73439" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="axial"/>
-            <Concept code="C70636" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="extraarticulaire"/>
-            <Concept code="C25245" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="surface"/>
-            <Concept code="C89787" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="gouttière parcolique"/>
-            <Concept code="C25724" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="hilaire"/>
-            <Concept code="C25422" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="antérolatéral"/>
-            <Concept code="C38223" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="intra-articulaire"/>
-            <Concept code="C67037" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210301000000" displayName="marginal"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_LateraliteNCIT_CISIS"
+             id="1.2.250.1.213.1.1.5.586"
+             revisionDate="2021-03-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="C25228"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="Droit"/>
+         <Concept code="C25229"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="gauche"/>
+         <Concept code="C13332"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="bilatéral"/>
+         <Concept code="C68598"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="unilatéral"/>
+         <Concept code="C25230"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="latéral"/>
+         <Concept code="C25231"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="antérieur"/>
+         <Concept code="C90393"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="postérieur"/>
+         <Concept code="C60645"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="céphalique"/>
+         <Concept code="C73851"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="caudal"/>
+         <Concept code="C25232"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="médial"/>
+         <Concept code="C25445"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="centre"/>
+         <Concept code="C25233"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="périphérique"/>
+         <Concept code="C44280"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="externe"/>
+         <Concept code="C25234"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="interne"/>
+         <Concept code="C73705"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="intermédiaire"/>
+         <Concept code="C25353"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="inférieur (anatomie)"/>
+         <Concept code="C25235"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="supérieur"/>
+         <Concept code="C73849"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="Plan transverse"/>
+         <Concept code="C25236"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="proximal"/>
+         <Concept code="C25237"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="distal"/>
+         <Concept code="C25423"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="apical"/>
+         <Concept code="C90067"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="basal"/>
+         <Concept code="C161325"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="frontal"/>
+         <Concept code="C25239"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="superficiel"/>
+         <Concept code="C25240"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="profond"/>
+         <Concept code="C25241"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="horizontal"/>
+         <Concept code="C25242"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="longitudinal"/>
+         <Concept code="C25243"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="vertical"/>
+         <Concept code="C94973"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="plan sagittal"/>
+         <Concept code="C73439"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="axial"/>
+         <Concept code="C70636"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="extraarticulaire"/>
+         <Concept code="C25245"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="surface"/>
+         <Concept code="C89787"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="gouttière parcolique"/>
+         <Concept code="C25724"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="hilaire"/>
+         <Concept code="C25422"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="antérolatéral"/>
+         <Concept code="C38223"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="intra-articulaire"/>
+         <Concept code="C67037"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210301000000"
+                  displayName="marginal"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TNM_pTNM_pT_3_CISIS" id="1.2.250.1.213.1.1.5.523" version="test">
-        <ConceptList>
-            <Concept code="MED-787" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Évaluation impossible"/>
-            <Concept code="MED-788" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Pas de tumeur retrouvée"/>
-            <Concept code="MED-820" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur confinée à l'organe"/>
-            <Concept code="MED-793" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement de la séreuse"/>
-            <Concept code="MED-821" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement microscopique au-delà de la séreuse"/>
-            <Concept code="MED-822" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Envahissement macroscopique au-delà de la séreuse ou envahissement d'un autre organe"/>
-            <Concept code="MED-823" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale n'occupant pas plus de 2 sites dans un organe"/>
-            <Concept code="MED-824" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale occupant plus de 2 sites et pas plus de 5 sites"/>
-            <Concept code="MED-825" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210101000000" displayName="Tumeur multifocale occupant  plus de 5 sites"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TNM_pTNM_pT_3_CISIS"
+             id="1.2.250.1.213.1.1.5.523"
+             revisionDate="2021-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-787"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Évaluation impossible"/>
+         <Concept code="MED-788"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Pas de tumeur retrouvée"/>
+         <Concept code="MED-820"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur confinée à l'organe"/>
+         <Concept code="MED-793"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Envahissement de la séreuse"/>
+         <Concept code="MED-821"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Envahissement microscopique au-delà de la séreuse"/>
+         <Concept code="MED-822"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Envahissement macroscopique au-delà de la séreuse ou envahissement d'un autre organe"/>
+         <Concept code="MED-823"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur multifocale n'occupant pas plus de 2 sites dans un organe"/>
+         <Concept code="MED-824"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur multifocale occupant plus de 2 sites et pas plus de 5 sites"/>
+         <Concept code="MED-825"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210101000000"
+                  displayName="Tumeur multifocale occupant  plus de 5 sites"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

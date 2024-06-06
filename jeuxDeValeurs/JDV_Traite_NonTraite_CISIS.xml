@@ -1,9 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Traite_NonTraite_CISIS" id="1.2.250.1.213.1.1.5.682" version="test">
-        <ConceptList>
-            <Concept code="MED-1155" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220405000000" displayName="traité"/>
-            <Concept code="MED-1156" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220405000000" displayName="non traité"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Traite_NonTraite_CISIS"
+             id="1.2.250.1.213.1.1.5.682"
+             revisionDate="2022-04-05T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1155"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220405000000"
+                  displayName="traité"/>
+         <Concept code="MED-1156"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220405000000"
+                  displayName="non traité"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

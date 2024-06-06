@@ -1,16 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_GesteReanimationNouveauNe_CISIS" id="1.2.250.1.213.1.1.5.754" version="test">
-        <ConceptList>
-            <Concept code="MED-1259" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="PPC nasale"/>
-            <Concept code="MED-1260" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230803000000" displayName="Ventilation sur tube endotrachéal"/>
-            <Concept code="112798008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="insertion d'un tube endotrachéal"/>
-            <Concept code="83099006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="massage cardiaque externe manuel à thorax fermé"/>
-            <Concept code="1217591002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="injection de médicament"/>
-            <Concept code="MED-174" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="Geste technique spécialisé"/>
-            <Concept code="427391006" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="clairance des sécrétions des voies respiratoires"/>
-            <Concept code="425696007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="assistance respiratoire manuelle par un ballon et un masque"/>
-            <Concept code="5447007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="transfusion"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_GesteReanimationNouveauNe_CISIS"
+             id="1.2.250.1.213.1.1.5.754"
+             revisionDate="2023-08-03T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1259"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="PPC nasale"/>
+         <Concept code="MED-1260"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="Ventilation sur tube endotrachéal"/>
+         <Concept code="112798008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="insertion d'un tube endotrachéal"/>
+         <Concept code="83099006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="massage cardiaque externe manuel à thorax fermé"/>
+         <Concept code="1217591002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="injection de médicament"/>
+         <Concept code="MED-174"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Geste technique spécialisé"/>
+         <Concept code="427391006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="clairance des sécrétions des voies respiratoires"/>
+         <Concept code="425696007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="assistance respiratoire manuelle par un ballon et un masque"/>
+         <Concept code="5447007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="transfusion"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ScoreBradenResultat_CISIS" id="1.2.250.1.213.1.1.5.513" version="test">
-        <ConceptList>
-            <Concept code="MED-609" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200720000000" displayName="Risque faible (18 à 23)"/>
-            <Concept code="MED-610" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200720000000" displayName="Risque modéré (14 à 17)"/>
-            <Concept code="MED-611" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200720000000" displayName="Risque élevé (9 à 13)"/>
-            <Concept code="MED-612" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20200720000000" displayName="Risque très élevé (6 à 8)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ScoreBradenResultat_CISIS"
+             id="1.2.250.1.213.1.1.5.513"
+             revisionDate="2020-07-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-609"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200720000000"
+                  displayName="Risque faible (18 à 23)"/>
+         <Concept code="MED-610"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200720000000"
+                  displayName="Risque modéré (14 à 17)"/>
+         <Concept code="MED-611"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200720000000"
+                  displayName="Risque élevé (9 à 13)"/>
+         <Concept code="MED-612"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20200720000000"
+                  displayName="Risque très élevé (6 à 8)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

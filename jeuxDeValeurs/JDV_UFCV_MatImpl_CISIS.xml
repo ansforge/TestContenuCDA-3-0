@@ -1,14 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_UFCV_MatImpl_CISIS" id="1.2.250.1.213.1.1.4.2.1" version="test">
-        <ConceptList>
-            <Concept code="J0105" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DÉFIBRILLATEURS IMPLANTABLES"/>
-            <Concept code="P0703" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES"/>
-            <Concept code="P0704" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"/>
-            <Concept code="J0101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="STIMULATEURS CARDIAQUES IMPLANTABLES"/>
-            <Concept code="J019001010101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE"/>
-            <Concept code="J01030101" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)"/>
-            <Concept code="J01030102" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE (LVAD)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_MatImpl_CISIS"
+             id="1.2.250.1.213.1.1.4.2.1"
+             revisionDate="2023-04-27T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="J0105"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="DÉFIBRILLATEURS IMPLANTABLES"/>
+         <Concept code="P0703"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="VALVES CARDIAQUES"/>
+         <Concept code="P0704"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="ENDOPROTHÈSES VASCULAIRES ET CARDIAQUES"/>
+         <Concept code="J0101"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="STIMULATEURS CARDIAQUES IMPLANTABLES"/>
+         <Concept code="J019001010101"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="SONDES DE STIMULATION CARDIAQUE AURICULAIRE À FIXATION PASSIVE"/>
+         <Concept code="J01030101"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE DROITE (RVAD)"/>
+         <Concept code="J01030102"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="DISPOSITIFS IMPLANTABLES D'ASSISTANCE VENTRICULAIRE GAUCHE (LVAD)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

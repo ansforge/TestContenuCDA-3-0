@@ -1,22 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ObservationEtatPatient_CISIS" id="1.2.250.1.213.1.1.5.514" version="test">
-        <ConceptList>
-            <Concept code="288575003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="capable de communiquer"/>
-            <Concept code="247663003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="bien orienté"/>
-            <Concept code="62476001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="désorienté(e)"/>
-            <Concept code="24199005" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="sensation d'agitation"/>
-            <Concept code="248043008" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="comportement non-conciliant"/>
-            <Concept code="425104003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="comportement suicidaire"/>
-            <Concept code="397540003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="malvoyance"/>
-            <Concept code="15188001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="perte auditive"/>
-            <Concept code="62305002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="trouble du langage"/>
-            <Concept code="161898004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="chutes"/>
-            <Concept code="50239007" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="errance"/>
-            <Concept code="248046000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fugue"/>
-            <Concept code="386423001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="contention physique"/>
-            <Concept code="285304000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="à risque d'escarre"/>
-            <Concept code="249492002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="fausse route alimentaire"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ObservationEtatPatient_CISIS"
+             id="1.2.250.1.213.1.1.5.514"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="288575003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="capable de communiquer"/>
+         <Concept code="247663003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="bien orienté"/>
+         <Concept code="62476001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="désorienté(e)"/>
+         <Concept code="24199005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="sensation d'agitation"/>
+         <Concept code="248043008"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="comportement non-conciliant"/>
+         <Concept code="425104003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="comportement suicidaire"/>
+         <Concept code="397540003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="malvoyance"/>
+         <Concept code="15188001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="perte auditive"/>
+         <Concept code="62305002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="trouble du langage"/>
+         <Concept code="161898004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="chutes"/>
+         <Concept code="50239007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="errance"/>
+         <Concept code="248046000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="fugue"/>
+         <Concept code="386423001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="contention physique"/>
+         <Concept code="285304000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="à risque d'escarre"/>
+         <Concept code="249492002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="fausse route alimentaire"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

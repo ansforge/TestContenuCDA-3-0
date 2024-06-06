@@ -1,18 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MesureVerrePrescrit_CISIS" id="1.2.250.1.213.1.1.5.651" version="test">
-        <ConceptList>
-            <Concept code="MED-1070" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Pathologie listée dans arrété du 3 décembre 2018 publié le 13 décembre 2018"/>
-            <Concept code="MED-1182" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Date de fin d'adapation de la prescription"/>
-            <Concept code="74712-1" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20230330000000" displayName="Date de fin de validité"/>
-            <Concept code="MED-1071" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère - verre prescrit"/>
-            <Concept code="MED-1072" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre - verre prescrit"/>
-            <Concept code="MED-1076" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Axe en degrés - verre prescrit"/>
-            <Concept code="MED-886" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Addition"/>
-            <Concept code="MED-1073" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - puissance - verre prescrit"/>
-            <Concept code="MED-1074" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - orientation base - verre prescrit"/>
-            <Concept code="MED-1075" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Prisme - axe en degrés - verre prescrit"/>
-            <Concept code="95324-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Type de prisme"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MesureVerrePrescrit_CISIS"
+             id="1.2.250.1.213.1.1.5.651"
+             revisionDate="2023-03-30T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1070"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Pathologie listée dans arrété du 3 décembre 2018 publié le 13 décembre 2018"/>
+         <Concept code="MED-1182"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Date de fin d'adapation de la prescription"/>
+         <Concept code="74712-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Date de fin de validité"/>
+         <Concept code="MED-1071"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance de la sphère - verre prescrit"/>
+         <Concept code="MED-1072"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance du cylindre - verre prescrit"/>
+         <Concept code="MED-1076"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Axe en degrés - verre prescrit"/>
+         <Concept code="MED-886"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Addition"/>
+         <Concept code="MED-1073"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Prisme - puissance - verre prescrit"/>
+         <Concept code="MED-1074"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Prisme - orientation base - verre prescrit"/>
+         <Concept code="MED-1075"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Prisme - axe en degrés - verre prescrit"/>
+         <Concept code="95324-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Type de prisme"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

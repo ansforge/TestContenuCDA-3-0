@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_AutresSymptomesAVC_CISIS" id="1.2.250.1.213.1.1.5.159" version="test">
-        <ConceptList>
-            <Concept code="Y06.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Délaissement et abandon par une personne non précisée"/>
-            <Concept code="61683000" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="drop attack"/>
-            <Concept code="G44" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Autres syndromes d'algies céphaliques"/>
-            <Concept code="R41.8" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Symptômes et signes relatifs aux fonctions cognitives et à la conscience, autres et non précisés"/>
-            <Concept code="R41.0" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Désorientation, sans précision"/>
-            <Concept code="R47.02" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Aphasie, autre et sans précision"/>
-            <Concept code="R47.1" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20231114000000" displayName="Dysarthrie et anarthrie"/>
-            <Concept code="399090003" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="vertige subjectif"/>
-            <Concept code="88052002" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20231114000000" displayName="mutisme"/>
-            <Concept code="G90.9" codeSystem="2.16.840.1.113883.6.3" dateFin="" dateValid="20100101000000" displayName="Affection du système nerveux autonome, sans précision"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_AutresSymptomesAVC_CISIS"
+             id="1.2.250.1.213.1.1.5.159"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="Y06.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Délaissement et abandon par une personne non précisée"/>
+         <Concept code="61683000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="drop attack"/>
+         <Concept code="G44"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Autres syndromes d'algies céphaliques"/>
+         <Concept code="R41.8"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Symptômes et signes relatifs aux fonctions cognitives et à la conscience, autres et non précisés"/>
+         <Concept code="R41.0"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Désorientation, sans précision"/>
+         <Concept code="R47.02"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Aphasie, autre et sans précision"/>
+         <Concept code="R47.1"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Dysarthrie et anarthrie"/>
+         <Concept code="399090003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="vertige subjectif"/>
+         <Concept code="88052002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="mutisme"/>
+         <Concept code="G90.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="Affection du système nerveux autonome, sans précision"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

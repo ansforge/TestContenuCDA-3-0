@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeDeMesureAcuiteVisuelle_CISIS" id="1.2.250.1.213.1.1.5.642" version="test">
-        <ConceptList>
-            <Concept code="28711-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - vision de loin"/>
-            <Concept code="64841-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - ETDRS"/>
-            <Concept code="98475-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Acuité visuelle - vision de près"/>
-            <Concept code="95320-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Puissance de la sphère – acuité visuelle"/>
-            <Concept code="95322-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Puissance du cylindre – acuité visuelle"/>
-            <Concept code="95321-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210622000000" displayName="Axe en degrés – acuité visuelle"/>
-            <Concept code="MED-886" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Addition"/>
-            <Concept code="MED-990" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme – puissance – acuité visuelle"/>
-            <Concept code="MED-887" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme - orientation base – acuité visuelle"/>
-            <Concept code="MED-1047" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Prisme - axe en degrés – acuité visuelle"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeDeMesureAcuiteVisuelle_CISIS"
+             id="1.2.250.1.213.1.1.5.642"
+             revisionDate="2023-03-30T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="28711-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Acuité visuelle - vision de loin"/>
+         <Concept code="64841-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Acuité visuelle - ETDRS"/>
+         <Concept code="98475-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Acuité visuelle - vision de près"/>
+         <Concept code="95320-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Puissance de la sphère – acuité visuelle"/>
+         <Concept code="95322-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Puissance du cylindre – acuité visuelle"/>
+         <Concept code="95321-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210622000000"
+                  displayName="Axe en degrés – acuité visuelle"/>
+         <Concept code="MED-886"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Addition"/>
+         <Concept code="MED-990"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Prisme – puissance – acuité visuelle"/>
+         <Concept code="MED-887"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Prisme - orientation base – acuité visuelle"/>
+         <Concept code="MED-1047"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Prisme - axe en degrés – acuité visuelle"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

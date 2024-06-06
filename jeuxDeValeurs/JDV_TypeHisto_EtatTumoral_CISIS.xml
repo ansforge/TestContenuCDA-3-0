@@ -1,177 +1,863 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_TypeHisto_EtatTumoral_CISIS" id="1.2.250.1.213.1.1.5.39" version="test">
-        <ConceptList>
-            <Concept code="A7A0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME INVASIF (SAI)"/>
-            <Concept code="A7A1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME BIEN DIFFERENCIE (SAI)"/>
-            <Concept code="A7A2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME MOYENNEMENT DIFFERENCIE (SAI)"/>
-            <Concept code="A7A3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PEU DIFFERENCIE (SAI)"/>
-            <Concept code="A7A4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME ACINEUX ET MICROACINEUX"/>
-            <Concept code="A7A5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME MACRO ACINEUX - CYSTADENOCARCINOME MACROACINEUX"/>
-            <Concept code="A7A6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME MASSIF"/>
-            <Concept code="A7A7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME ALVEOLAIRE"/>
-            <Concept code="A7A8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME BRONCHIOLO-ALVEOLAIRE"/>
-            <Concept code="A7A9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME ENDOMETRIOIDE (AUTRE QU'OVARIEN)"/>
-            <Concept code="A7B0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME LOBULAIRE ET CANALAIRE INFILTRANT (SAI)"/>
-            <Concept code="A7B1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME LOBULAIRE INFILTRANT"/>
-            <Concept code="A7B2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME CANALAIRE INFILTRANT (SAI)"/>
-            <Concept code="A7B3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME CANALAIRE INFILTRANT DE TYPE MASSIF"/>
-            <Concept code="A7B4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME CANALAIRE A TYPE DE COMEDOCARCINOME"/>
-            <Concept code="A7B5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME CANALAIRE DE TYPE PAPILLAIRE"/>
-            <Concept code="A7B6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME CANALAIRE DE TYPE CRIBRIFORME"/>
-            <Concept code="A7B7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="PAGET  MALADIE DE - ADENOCARCINOME AVEC MALADIE DE PAGET"/>
-            <Concept code="A7B8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME LOBULAIRE PLEIOMORPHE"/>
-            <Concept code="A7C4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME KYSTIQUE - CYSTADENOCARCINOME"/>
-            <Concept code="A7C6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME KYSTIQUE ET PAPILLAIRE - CYSTADENOCARCINOME PAPILLAIRE"/>
-            <Concept code="A7C7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME SOLIDE PAPILLAIRE INFILTRANT (PANCREAS ET FOIE)"/>
-            <Concept code="A7D0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE (SAI)"/>
-            <Concept code="A7D1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE ENCAPSULE"/>
-            <Concept code="A7D2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLOVESICULAIRE"/>
-            <Concept code="A7D3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE VARIANTE FOLLICULAIRE"/>
-            <Concept code="A7D4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLOTRABECULAIRE"/>
-            <Concept code="A7D6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLOTRABECULOVESICULAIRE"/>
-            <Concept code="A7D7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE A CELLULES OXYPHILES"/>
-            <Concept code="A7D8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE A TYPE D'EPITHELIOMA SCLEROSANT OCCULTE - MICROCARCINOME PAPILLAIRE"/>
-            <Concept code="A7D9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME PAPILLAIRE A FORME SCLEROSANTE DIFFUSE"/>
-            <Concept code="A7E0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME TRABECULAIRE (SAI)"/>
-            <Concept code="A7E2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME TRABECULOVESICULAIRE"/>
-            <Concept code="A7F0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME TUBULEUX (SAI)"/>
-            <Concept code="A7F2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME TUBULOPAPILLAIRE"/>
-            <Concept code="A7G0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE (SAI)"/>
-            <Concept code="A7G1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE AVEC INVASION MINIME"/>
-            <Concept code="A7G2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE LARGEMENT INVASIF"/>
-            <Concept code="A7G3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE A CELLULES OXYPHILES"/>
-            <Concept code="A7G4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE A CELLULES CLAIRES"/>
-            <Concept code="A7G6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE BIEN DIFFERENCIE"/>
-            <Concept code="A7G8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE MOYENNEMENT DIFFERENCIE"/>
-            <Concept code="A7G9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME VESICULAIRE DE TYPE INSULAIRE"/>
-            <Concept code="A7H4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES BASALES"/>
-            <Concept code="A7H5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME HEPATOCYTAIRE - HEPATOCARCINOME"/>
-            <Concept code="A7H6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES BASOPHILES"/>
-            <Concept code="A7H7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES BILIAIRES - CHOLANGIOCARCINOME"/>
-            <Concept code="A7H8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES CHROMOPHOBES"/>
-            <Concept code="A7K0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME HISTIOCYTOIDE"/>
-            <Concept code="A7K2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES CLAIRES"/>
-            <Concept code="A7K3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES CILIEES"/>
-            <Concept code="A7K4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES EAU DE ROCHE"/>
-            <Concept code="A7K6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES EOSINOPHILES - ADENOCARCINOME IDROSADENOIDE"/>
-            <Concept code="A7K7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME BRUNNERIEN"/>
-            <Concept code="A7K8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME MYOEPITHELIAL - MYOEPITHELIOME MALIN"/>
-            <Concept code="A7L1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES LIPIDIQUES"/>
-            <Concept code="A7L2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES ONCOCYTAIRES"/>
-            <Concept code="A7L4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES POLYMORPHES - ADENOCARCINOME A CELLULES PLEOMORPHES"/>
-            <Concept code="A7L6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A CELLULES PRINCIPALES"/>
-            <Concept code="A7M0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME AVEC ACTIVITE FONCTIONNELLE - ADENOCARCINOME SECRETANT (SAI)"/>
-            <Concept code="A7M3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME DE TYPE LIEBERKUHNIEN"/>
-            <Concept code="A7M4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME MUCOSECRETANT - ADENOCARCINOME MUCINEUX"/>
-            <Concept code="A7M5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CYSTADENOCARCINOME MUCOSECRETANT OU MUCINEUX (AUTRE QU'OVARIEN)"/>
-            <Concept code="A7N2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME SOLIDE A CONTENU MUCOIDE"/>
-            <Concept code="A7N4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME COLLOIDE"/>
-            <Concept code="A7N6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME A CELLULES INDEPENDANTES MUCIPARES - LINITE PLASTIQUE - CANCER A CELLULES EN BAGUES A CHATON"/>
-            <Concept code="A7N7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME SECRETANT JUVENILE"/>
-            <Concept code="A7P0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR ADENOMATEUSE COMPOSITE CANCERISEE"/>
-            <Concept code="A7P6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR PHYLLODE MALIGNE OU CANCERISEE - SARCOME PHYLLODE"/>
-            <Concept code="A7R4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME SUR CYSTADENOLYMPHOME"/>
-            <Concept code="A7R8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME SUR ADENOME PLEOMORPHE"/>
-            <Concept code="A7R9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOME PLEOMORPHE METASTASIANT DES GLANDES - TUMEUR MIXTE MALIGNE VRAIE - SYRINGOME CHONDROIDE MALIN"/>
-            <Concept code="A7S0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOMES MULTIPLES (SAI)"/>
-            <Concept code="A7S2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME NON ENDOCRINE AU COURS D'UNE POLYONCOSE"/>
-            <Concept code="A7V0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME COMPOSITE ( SAI)"/>
-            <Concept code="A7V2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME ADENOSQUAMEUX"/>
-            <Concept code="A7V4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME MUCO-EPIDERMOIDE"/>
-            <Concept code="A7V5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME EPITHELIAL-MYOEPITHELIAL"/>
-            <Concept code="A7V6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="HEPATOCHOLANGIOME MALIN"/>
-            <Concept code="A7V7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME POLYMORPHE DE FAIBLE MALIGNITE - ADENOCARCINOME CANALAIRE TERMINAL"/>
-            <Concept code="A7V8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME POLYMORPHE"/>
-            <Concept code="A7W0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME METAPLASIQUE (SAI)"/>
-            <Concept code="A7W2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME AVEC METAPLASIE MALPIGHIENNE - ADENO-ACANTHOME"/>
-            <Concept code="A7W3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME MULLERIEN"/>
-            <Concept code="A7W4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME AVEC METAPLASIE SEBACEE"/>
-            <Concept code="A7W6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME METAPLASIQUE A CELLULES FUSIFORMES"/>
-            <Concept code="A7X0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A STROMA PARTICULIER (SAI)"/>
-            <Concept code="A7X1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A STROMA FIBREUX SCLEROSANT"/>
-            <Concept code="A7X2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A STROMA LYMPHOIDE (SAI) - CARCINOME MEDULLAIRE LYMPHOIDE (SAI)"/>
-            <Concept code="A7X3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME AVEC CALCOSPHERITE OU CORPS PSAMMOMATEUX"/>
-            <Concept code="A7X4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A STROMA CHONDROIDE OU OSTEOIDE OU OSTEOCARTILAGINEUX"/>
-            <Concept code="A7X5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME FIBROLAMELLAIRE - HEPATOCARCINOME FIBROLAMELLAIRE"/>
-            <Concept code="A7X6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CYLINDROME MALIN (SAI) - CARCINOME ADENOIDE KYSTIQUE (SAI)"/>
-            <Concept code="A7X7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CYLINDROME MALIN A STROMA HYALIN - CARCINOME ADENOIDE KYSTIQUE A STROMA HYALIN"/>
-            <Concept code="A7X8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CYLINDROME MALIN A STROMA MUCOIDE - CARCINOME ADENOIDE KYSTIQUE A STROMA MUCOIDE"/>
-            <Concept code="A7Y0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME D'UN TYPE PARTICULIER (SAI)"/>
-            <Concept code="A7Y1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME DE TYPE BELLINIEN"/>
-            <Concept code="A7Y4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME DES GLANDES ANALES"/>
-            <Concept code="A7Y5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOCARCINOME A DEVIATION MINIME"/>
-            <Concept code="A7Y7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME SECRETANT DES LIPIDES - CARCINOME RICHE EN LIPIDES"/>
-            <Concept code="A7Y8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME A CELLULES GEANTES OSTEOCLASTIQUES"/>
-            <Concept code="X7A0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN"/>
-            <Concept code="X7A1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR CONGENITALE MALIGNE (SAI)"/>
-            <Concept code="X7A2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR FAMILIALE MALIGNE (SAI)"/>
-            <Concept code="X7A3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN STERILISE PAR LA RADIOTHERAPIE"/>
-            <Concept code="X7A4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN STERILISE PAR LA CHIMIOTHERAPIE"/>
-            <Concept code="X7A5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN STERILISE PAR LA RADIO ET LA CHIMIOTHERAPIE"/>
-            <Concept code="X7A6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN NON STERILISE PAR LA RADIOTHERAPIE"/>
-            <Concept code="X7A7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN NON STERILISE PAR LA CHIMIOTHERAPIE"/>
-            <Concept code="X7A8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN NON STERILISE PAR LA RADIO ET LA CHIMIOTHERAPIE"/>
-            <Concept code="X7A9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NEOPLASME MALIN MODIFIE PAR LA THERAPEUTIQUE"/>
-            <Concept code="X7B0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR EPITHELIALE MALIGNE - CARCINOME INVASIF (SAI)"/>
-            <Concept code="X7C0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME ANAPLASIQUE - CARCINOME A CELLULES INDEPENDANTES NON MUCOSECRETANTES"/>
-            <Concept code="X7D0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME COMPOSITE (SAI)"/>
-            <Concept code="X7E0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE (SAI)"/>
-            <Concept code="X7E1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A CELLULES CLAIRES"/>
-            <Concept code="X7E2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A CELLULES FUSIFORMES - CARCINOME SARCOMATOIDE"/>
-            <Concept code="X7E3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A CELLULES GEANTES"/>
-            <Concept code="X7E4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A CELLULES FUSIFORMES ET GEANTES"/>
-            <Concept code="X7E6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A GRANDES CELLULES"/>
-            <Concept code="X7E8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE A CELLULES DE RESERVE"/>
-            <Concept code="X7E9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME INDIFFERENCIE NASOPHARYNGIEN"/>
-            <Concept code="X7F0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOME A PETITES CELLULES (SAI) UTILISER DE PREFERENCE S7Z4"/>
-            <Concept code="X7F1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NE PLUS UTILISER  - EX-CARCINOME A PETITES CELLULES EN GRAINS D'AVOINE Cf S7Z4"/>
-            <Concept code="X7F2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES DE TYPE INTERMEDIAIRE"/>
-            <Concept code="X7F3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES DE TYPE COMPOSITE"/>
-            <Concept code="X7F5" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES AVEC CELLULES DE GRANDE TAILLE Cf S7Z6"/>
-            <Concept code="X7H0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MESENCHYMATEUSE MALIGNE (SAI)"/>
-            <Concept code="X7H2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE A CELLULES GEANTES"/>
-            <Concept code="X7H4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE A CELLULES GRANULEUSES - NE PLUS UTILISER - CF N7A8"/>
-            <Concept code="X7J0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR STROMALE DU TRACTUS GASTRO-INTESTINAL A HAUTE MALIGNITE (GIST)"/>
-            <Concept code="X7K0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME (SAI)"/>
-            <Concept code="X7K1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME A CELLULES CLAIRES - NE PLUS UTILISER - CF N7H5"/>
-            <Concept code="X7K2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME A CELLULES EPITHELIOIDES PROXIMAL OU DISTAL"/>
-            <Concept code="X7K3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME A CELLULES FUSIFORMES"/>
-            <Concept code="X7K4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME A CELLULES GEANTES (AUTRE QUE LES TUMEURS MALIGNES A CELLULES GEANTES)"/>
-            <Concept code="X7K6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME A CELLULES POLYMORPHES"/>
-            <Concept code="X7K8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME ALVEOLAIRE DES PARTIES MOLLES"/>
-            <Concept code="X7K9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOMATOSE"/>
-            <Concept code="X7L0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME D'EWING (SAI)"/>
-            <Concept code="X7L1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME D'EWING SQUELETTIQUE CLASSIQUE"/>
-            <Concept code="X7L2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME D'EWING SQUELETTIQUE ATYPIQUE A GRANDES CELLULES"/>
-            <Concept code="X7L3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME D'EWING SQUELETTIQUE DE TYPE VASCULAIRE"/>
-            <Concept code="X7L4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME D'EWING EXTRASQUELETTIQUE"/>
-            <Concept code="X7N0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME STROMAL (SAI)"/>
-            <Concept code="X7N2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME STROMAL A TYPE DE MYOSE STROMALE ENDOLYMPHATIQUE"/>
-            <Concept code="X7N4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME STROMAL DE HAUT GRADE"/>
-            <Concept code="X7N6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME STROMAL A TYPE DE STROMOMYOME"/>
-            <Concept code="X7N8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="SARCOME STROMAL RESSEMBLANT AUX TUMEURS DES CORDONS SEXUELS"/>
-            <Concept code="X7P0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MIXTE MALIGNE (SAI)"/>
-            <Concept code="X7P1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MIXTE MESODERMIQUE MALIGNE (SAI)"/>
-            <Concept code="X7P2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="ADENOSARCOME"/>
-            <Concept code="X7P3" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOFIBROME"/>
-            <Concept code="X7P4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CARCINOSARCOME (SAI)"/>
-            <Concept code="X7P6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MIXTE MALIGNE OU CARCINOSARCOME MULLERIEN DE TYPE HOMOLOGUE"/>
-            <Concept code="X7P7" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MIXTE MALIGNE OU CARCINOSARCOME MULLERIEN DE TYPE HETEROLOGUE"/>
-            <Concept code="X7P8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR DE RIOPELLE"/>
-            <Concept code="X7P9" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE DESMOPLASTIQUE MULTIPHENOTYPIQUE A PETITES CELLULES"/>
-            <Concept code="X7R0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE D'ORIGINE INDETERMINEE (SAI)"/>
-            <Concept code="X7R2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE A CELLULES FUSIFORMES D'ORIGINE INDETERMINEE"/>
-            <Concept code="X7R4" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE A CELLULES INDIFFERENCIEES POLYMORPHES D'ORIGINE INDETERMINEE"/>
-            <Concept code="X7R6" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE A PETITES CELLULES D'ORIGINE INDETERMINEE"/>
-            <Concept code="X7R8" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR RHABDOIDE MALIGNE"/>
-            <Concept code="X7T0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="TUMEUR MALIGNE INCLASSABLE (SAI)"/>
-            <Concept code="X7V0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CANCER SUR CICATRICE - CANCER SUR ANASTOMOSE"/>
-            <Concept code="X7V2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CANCER EN TERRITOIRE IRRADIE - DOUBLE CODAGE AVEC LE TYPE DE LA TUMEUR"/>
-            <Concept code="X7W0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CANCERS MULTIPLES"/>
-            <Concept code="X7W1" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="CANCERS MULTIPLES DANS LE CADRE DU SYNDROME GENIQUE DE LI-FRAUMENI"/>
-            <Concept code="X7X0" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="GREFFE CANCEREUSE (SAI)"/>
-            <Concept code="X7X2" codeSystem="1.2.250.1.213.2.11" dateFin="" dateValid="20100101000000" displayName="GREFFE CANCEREUSE SUR TRAJET DE PONCTION"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_TypeHisto_EtatTumoral_CISIS"
+             id="1.2.250.1.213.1.1.5.39"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="A7A0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME INVASIF (SAI)"/>
+         <Concept code="A7A1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME BIEN DIFFERENCIE (SAI)"/>
+         <Concept code="A7A2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME MOYENNEMENT DIFFERENCIE (SAI)"/>
+         <Concept code="A7A3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PEU DIFFERENCIE (SAI)"/>
+         <Concept code="A7A4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME ACINEUX ET MICROACINEUX"/>
+         <Concept code="A7A5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME MACRO ACINEUX - CYSTADENOCARCINOME MACROACINEUX"/>
+         <Concept code="A7A6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME MASSIF"/>
+         <Concept code="A7A7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME ALVEOLAIRE"/>
+         <Concept code="A7A8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME BRONCHIOLO-ALVEOLAIRE"/>
+         <Concept code="A7A9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME ENDOMETRIOIDE (AUTRE QU'OVARIEN)"/>
+         <Concept code="A7B0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME LOBULAIRE ET CANALAIRE INFILTRANT (SAI)"/>
+         <Concept code="A7B1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME LOBULAIRE INFILTRANT"/>
+         <Concept code="A7B2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME CANALAIRE INFILTRANT (SAI)"/>
+         <Concept code="A7B3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME CANALAIRE INFILTRANT DE TYPE MASSIF"/>
+         <Concept code="A7B4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME CANALAIRE A TYPE DE COMEDOCARCINOME"/>
+         <Concept code="A7B5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME CANALAIRE DE TYPE PAPILLAIRE"/>
+         <Concept code="A7B6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME CANALAIRE DE TYPE CRIBRIFORME"/>
+         <Concept code="A7B7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="PAGET  MALADIE DE - ADENOCARCINOME AVEC MALADIE DE PAGET"/>
+         <Concept code="A7B8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME LOBULAIRE PLEIOMORPHE"/>
+         <Concept code="A7C4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME KYSTIQUE - CYSTADENOCARCINOME"/>
+         <Concept code="A7C6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME KYSTIQUE ET PAPILLAIRE - CYSTADENOCARCINOME PAPILLAIRE"/>
+         <Concept code="A7C7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME SOLIDE PAPILLAIRE INFILTRANT (PANCREAS ET FOIE)"/>
+         <Concept code="A7D0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE (SAI)"/>
+         <Concept code="A7D1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE ENCAPSULE"/>
+         <Concept code="A7D2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLOVESICULAIRE"/>
+         <Concept code="A7D3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE VARIANTE FOLLICULAIRE"/>
+         <Concept code="A7D4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLOTRABECULAIRE"/>
+         <Concept code="A7D6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLOTRABECULOVESICULAIRE"/>
+         <Concept code="A7D7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE A CELLULES OXYPHILES"/>
+         <Concept code="A7D8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE A TYPE D'EPITHELIOMA SCLEROSANT OCCULTE - MICROCARCINOME PAPILLAIRE"/>
+         <Concept code="A7D9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME PAPILLAIRE A FORME SCLEROSANTE DIFFUSE"/>
+         <Concept code="A7E0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME TRABECULAIRE (SAI)"/>
+         <Concept code="A7E2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME TRABECULOVESICULAIRE"/>
+         <Concept code="A7F0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME TUBULEUX (SAI)"/>
+         <Concept code="A7F2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME TUBULOPAPILLAIRE"/>
+         <Concept code="A7G0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE (SAI)"/>
+         <Concept code="A7G1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE AVEC INVASION MINIME"/>
+         <Concept code="A7G2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE LARGEMENT INVASIF"/>
+         <Concept code="A7G3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE A CELLULES OXYPHILES"/>
+         <Concept code="A7G4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE A CELLULES CLAIRES"/>
+         <Concept code="A7G6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE BIEN DIFFERENCIE"/>
+         <Concept code="A7G8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE MOYENNEMENT DIFFERENCIE"/>
+         <Concept code="A7G9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME VESICULAIRE DE TYPE INSULAIRE"/>
+         <Concept code="A7H4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES BASALES"/>
+         <Concept code="A7H5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME HEPATOCYTAIRE - HEPATOCARCINOME"/>
+         <Concept code="A7H6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES BASOPHILES"/>
+         <Concept code="A7H7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES BILIAIRES - CHOLANGIOCARCINOME"/>
+         <Concept code="A7H8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES CHROMOPHOBES"/>
+         <Concept code="A7K0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME HISTIOCYTOIDE"/>
+         <Concept code="A7K2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES CLAIRES"/>
+         <Concept code="A7K3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES CILIEES"/>
+         <Concept code="A7K4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES EAU DE ROCHE"/>
+         <Concept code="A7K6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES EOSINOPHILES - ADENOCARCINOME IDROSADENOIDE"/>
+         <Concept code="A7K7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME BRUNNERIEN"/>
+         <Concept code="A7K8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME MYOEPITHELIAL - MYOEPITHELIOME MALIN"/>
+         <Concept code="A7L1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES LIPIDIQUES"/>
+         <Concept code="A7L2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES ONCOCYTAIRES"/>
+         <Concept code="A7L4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES POLYMORPHES - ADENOCARCINOME A CELLULES PLEOMORPHES"/>
+         <Concept code="A7L6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A CELLULES PRINCIPALES"/>
+         <Concept code="A7M0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME AVEC ACTIVITE FONCTIONNELLE - ADENOCARCINOME SECRETANT (SAI)"/>
+         <Concept code="A7M3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME DE TYPE LIEBERKUHNIEN"/>
+         <Concept code="A7M4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME MUCOSECRETANT - ADENOCARCINOME MUCINEUX"/>
+         <Concept code="A7M5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CYSTADENOCARCINOME MUCOSECRETANT OU MUCINEUX (AUTRE QU'OVARIEN)"/>
+         <Concept code="A7N2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME SOLIDE A CONTENU MUCOIDE"/>
+         <Concept code="A7N4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME COLLOIDE"/>
+         <Concept code="A7N6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME A CELLULES INDEPENDANTES MUCIPARES - LINITE PLASTIQUE - CANCER A CELLULES EN BAGUES A CHATON"/>
+         <Concept code="A7N7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME SECRETANT JUVENILE"/>
+         <Concept code="A7P0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR ADENOMATEUSE COMPOSITE CANCERISEE"/>
+         <Concept code="A7P6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR PHYLLODE MALIGNE OU CANCERISEE - SARCOME PHYLLODE"/>
+         <Concept code="A7R4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME SUR CYSTADENOLYMPHOME"/>
+         <Concept code="A7R8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME SUR ADENOME PLEOMORPHE"/>
+         <Concept code="A7R9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOME PLEOMORPHE METASTASIANT DES GLANDES - TUMEUR MIXTE MALIGNE VRAIE - SYRINGOME CHONDROIDE MALIN"/>
+         <Concept code="A7S0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOMES MULTIPLES (SAI)"/>
+         <Concept code="A7S2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME NON ENDOCRINE AU COURS D'UNE POLYONCOSE"/>
+         <Concept code="A7V0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME COMPOSITE ( SAI)"/>
+         <Concept code="A7V2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME ADENOSQUAMEUX"/>
+         <Concept code="A7V4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME MUCO-EPIDERMOIDE"/>
+         <Concept code="A7V5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME EPITHELIAL-MYOEPITHELIAL"/>
+         <Concept code="A7V6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="HEPATOCHOLANGIOME MALIN"/>
+         <Concept code="A7V7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME POLYMORPHE DE FAIBLE MALIGNITE - ADENOCARCINOME CANALAIRE TERMINAL"/>
+         <Concept code="A7V8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME POLYMORPHE"/>
+         <Concept code="A7W0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME METAPLASIQUE (SAI)"/>
+         <Concept code="A7W2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME AVEC METAPLASIE MALPIGHIENNE - ADENO-ACANTHOME"/>
+         <Concept code="A7W3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME MULLERIEN"/>
+         <Concept code="A7W4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME AVEC METAPLASIE SEBACEE"/>
+         <Concept code="A7W6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME METAPLASIQUE A CELLULES FUSIFORMES"/>
+         <Concept code="A7X0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A STROMA PARTICULIER (SAI)"/>
+         <Concept code="A7X1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A STROMA FIBREUX SCLEROSANT"/>
+         <Concept code="A7X2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A STROMA LYMPHOIDE (SAI) - CARCINOME MEDULLAIRE LYMPHOIDE (SAI)"/>
+         <Concept code="A7X3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME AVEC CALCOSPHERITE OU CORPS PSAMMOMATEUX"/>
+         <Concept code="A7X4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A STROMA CHONDROIDE OU OSTEOIDE OU OSTEOCARTILAGINEUX"/>
+         <Concept code="A7X5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME FIBROLAMELLAIRE - HEPATOCARCINOME FIBROLAMELLAIRE"/>
+         <Concept code="A7X6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CYLINDROME MALIN (SAI) - CARCINOME ADENOIDE KYSTIQUE (SAI)"/>
+         <Concept code="A7X7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CYLINDROME MALIN A STROMA HYALIN - CARCINOME ADENOIDE KYSTIQUE A STROMA HYALIN"/>
+         <Concept code="A7X8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CYLINDROME MALIN A STROMA MUCOIDE - CARCINOME ADENOIDE KYSTIQUE A STROMA MUCOIDE"/>
+         <Concept code="A7Y0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME D'UN TYPE PARTICULIER (SAI)"/>
+         <Concept code="A7Y1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME DE TYPE BELLINIEN"/>
+         <Concept code="A7Y4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME DES GLANDES ANALES"/>
+         <Concept code="A7Y5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOCARCINOME A DEVIATION MINIME"/>
+         <Concept code="A7Y7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME SECRETANT DES LIPIDES - CARCINOME RICHE EN LIPIDES"/>
+         <Concept code="A7Y8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME A CELLULES GEANTES OSTEOCLASTIQUES"/>
+         <Concept code="X7A0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN"/>
+         <Concept code="X7A1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR CONGENITALE MALIGNE (SAI)"/>
+         <Concept code="X7A2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR FAMILIALE MALIGNE (SAI)"/>
+         <Concept code="X7A3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN STERILISE PAR LA RADIOTHERAPIE"/>
+         <Concept code="X7A4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN STERILISE PAR LA CHIMIOTHERAPIE"/>
+         <Concept code="X7A5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN STERILISE PAR LA RADIO ET LA CHIMIOTHERAPIE"/>
+         <Concept code="X7A6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN NON STERILISE PAR LA RADIOTHERAPIE"/>
+         <Concept code="X7A7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN NON STERILISE PAR LA CHIMIOTHERAPIE"/>
+         <Concept code="X7A8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN NON STERILISE PAR LA RADIO ET LA CHIMIOTHERAPIE"/>
+         <Concept code="X7A9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NEOPLASME MALIN MODIFIE PAR LA THERAPEUTIQUE"/>
+         <Concept code="X7B0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR EPITHELIALE MALIGNE - CARCINOME INVASIF (SAI)"/>
+         <Concept code="X7C0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME ANAPLASIQUE - CARCINOME A CELLULES INDEPENDANTES NON MUCOSECRETANTES"/>
+         <Concept code="X7D0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME COMPOSITE (SAI)"/>
+         <Concept code="X7E0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE (SAI)"/>
+         <Concept code="X7E1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A CELLULES CLAIRES"/>
+         <Concept code="X7E2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A CELLULES FUSIFORMES - CARCINOME SARCOMATOIDE"/>
+         <Concept code="X7E3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A CELLULES GEANTES"/>
+         <Concept code="X7E4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A CELLULES FUSIFORMES ET GEANTES"/>
+         <Concept code="X7E6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A GRANDES CELLULES"/>
+         <Concept code="X7E8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE A CELLULES DE RESERVE"/>
+         <Concept code="X7E9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME INDIFFERENCIE NASOPHARYNGIEN"/>
+         <Concept code="X7F0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOME A PETITES CELLULES (SAI) UTILISER DE PREFERENCE S7Z4"/>
+         <Concept code="X7F1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NE PLUS UTILISER  - EX-CARCINOME A PETITES CELLULES EN GRAINS D'AVOINE Cf S7Z4"/>
+         <Concept code="X7F2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES DE TYPE INTERMEDIAIRE"/>
+         <Concept code="X7F3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES DE TYPE COMPOSITE"/>
+         <Concept code="X7F5"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="NE PLUS UTILISER - EX-CARCINOME A PETITES CELLULES AVEC CELLULES DE GRANDE TAILLE Cf S7Z6"/>
+         <Concept code="X7H0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MESENCHYMATEUSE MALIGNE (SAI)"/>
+         <Concept code="X7H2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE A CELLULES GEANTES"/>
+         <Concept code="X7H4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE A CELLULES GRANULEUSES - NE PLUS UTILISER - CF N7A8"/>
+         <Concept code="X7J0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR STROMALE DU TRACTUS GASTRO-INTESTINAL A HAUTE MALIGNITE (GIST)"/>
+         <Concept code="X7K0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME (SAI)"/>
+         <Concept code="X7K1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME A CELLULES CLAIRES - NE PLUS UTILISER - CF N7H5"/>
+         <Concept code="X7K2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME A CELLULES EPITHELIOIDES PROXIMAL OU DISTAL"/>
+         <Concept code="X7K3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME A CELLULES FUSIFORMES"/>
+         <Concept code="X7K4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME A CELLULES GEANTES (AUTRE QUE LES TUMEURS MALIGNES A CELLULES GEANTES)"/>
+         <Concept code="X7K6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME A CELLULES POLYMORPHES"/>
+         <Concept code="X7K8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME ALVEOLAIRE DES PARTIES MOLLES"/>
+         <Concept code="X7K9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOMATOSE"/>
+         <Concept code="X7L0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME D'EWING (SAI)"/>
+         <Concept code="X7L1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME D'EWING SQUELETTIQUE CLASSIQUE"/>
+         <Concept code="X7L2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME D'EWING SQUELETTIQUE ATYPIQUE A GRANDES CELLULES"/>
+         <Concept code="X7L3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME D'EWING SQUELETTIQUE DE TYPE VASCULAIRE"/>
+         <Concept code="X7L4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME D'EWING EXTRASQUELETTIQUE"/>
+         <Concept code="X7N0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME STROMAL (SAI)"/>
+         <Concept code="X7N2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME STROMAL A TYPE DE MYOSE STROMALE ENDOLYMPHATIQUE"/>
+         <Concept code="X7N4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME STROMAL DE HAUT GRADE"/>
+         <Concept code="X7N6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME STROMAL A TYPE DE STROMOMYOME"/>
+         <Concept code="X7N8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SARCOME STROMAL RESSEMBLANT AUX TUMEURS DES CORDONS SEXUELS"/>
+         <Concept code="X7P0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MIXTE MALIGNE (SAI)"/>
+         <Concept code="X7P1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MIXTE MESODERMIQUE MALIGNE (SAI)"/>
+         <Concept code="X7P2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="ADENOSARCOME"/>
+         <Concept code="X7P3"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOFIBROME"/>
+         <Concept code="X7P4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CARCINOSARCOME (SAI)"/>
+         <Concept code="X7P6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MIXTE MALIGNE OU CARCINOSARCOME MULLERIEN DE TYPE HOMOLOGUE"/>
+         <Concept code="X7P7"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MIXTE MALIGNE OU CARCINOSARCOME MULLERIEN DE TYPE HETEROLOGUE"/>
+         <Concept code="X7P8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR DE RIOPELLE"/>
+         <Concept code="X7P9"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE DESMOPLASTIQUE MULTIPHENOTYPIQUE A PETITES CELLULES"/>
+         <Concept code="X7R0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE D'ORIGINE INDETERMINEE (SAI)"/>
+         <Concept code="X7R2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE A CELLULES FUSIFORMES D'ORIGINE INDETERMINEE"/>
+         <Concept code="X7R4"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE A CELLULES INDIFFERENCIEES POLYMORPHES D'ORIGINE INDETERMINEE"/>
+         <Concept code="X7R6"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE A PETITES CELLULES D'ORIGINE INDETERMINEE"/>
+         <Concept code="X7R8"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR RHABDOIDE MALIGNE"/>
+         <Concept code="X7T0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="TUMEUR MALIGNE INCLASSABLE (SAI)"/>
+         <Concept code="X7V0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CANCER SUR CICATRICE - CANCER SUR ANASTOMOSE"/>
+         <Concept code="X7V2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CANCER EN TERRITOIRE IRRADIE - DOUBLE CODAGE AVEC LE TYPE DE LA TUMEUR"/>
+         <Concept code="X7W0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CANCERS MULTIPLES"/>
+         <Concept code="X7W1"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="CANCERS MULTIPLES DANS LE CADRE DU SYNDROME GENIQUE DE LI-FRAUMENI"/>
+         <Concept code="X7X0"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="GREFFE CANCEREUSE (SAI)"/>
+         <Concept code="X7X2"
+                  codeSystem="1.2.250.1.213.2.11"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="GREFFE CANCEREUSE SUR TRAJET DE PONCTION"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

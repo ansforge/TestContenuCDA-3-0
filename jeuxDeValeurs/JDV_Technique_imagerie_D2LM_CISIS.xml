@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_Technique_imagerie_D2LM_CISIS" id="1.2.250.1.213.1.1.5.645" version="test">
-        <ConceptList>
-            <Concept code="MG" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210727000000" displayName="Mammographie"/>
-            <Concept code="US" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20210727000000" displayName="Échographie"/>
-            <Concept code="OT" codeSystem="1.2.840.10008.2.16.4" dateFin="" dateValid="20230202000000" displayName="Autre technique d'imagerie"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_Technique_imagerie_D2LM_CISIS"
+             id="1.2.250.1.213.1.1.5.645"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MG"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210727000000"
+                  displayName="Mammographie"/>
+         <Concept code="US"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20210727000000"
+                  displayName="Échographie"/>
+         <Concept code="OT"
+                  codeSystem="1.2.840.10008.2.16.4"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre technique d'imagerie"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

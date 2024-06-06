@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSLoccInt_CISIS" id="1.2.250.1.213.1.1.5.181" version="test">
-        <ConceptList>
-            <Concept code="LA18443-4" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Exécute les deux ordres correctement."/>
-            <Concept code="LA18444-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Exécute un seul ordre sur les deux."/>
-            <Concept code="LA18445-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="N'exécute aucun des deux ordres."/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSLoccInt_CISIS"
+             id="1.2.250.1.213.1.1.5.181"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA18443-4"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Exécute les deux ordres correctement."/>
+         <Concept code="LA18444-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Exécute un seul ordre sur les deux."/>
+         <Concept code="LA18445-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="N'exécute aucun des deux ordres."/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

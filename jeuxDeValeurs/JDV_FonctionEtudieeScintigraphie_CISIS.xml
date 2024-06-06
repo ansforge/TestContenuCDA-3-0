@@ -1,19 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_FonctionEtudieeScintigraphie_CISIS" id="1.2.250.1.213.1.1.5.669" version="test">
-        <ConceptList>
-            <Concept code="MED-1141" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Cardiaque : Perfusion myocardique"/>
-            <Concept code="MED-1142" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Cardiaque : FEVG"/>
-            <Concept code="MED-1143" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Osseuse"/>
-            <Concept code="MED-1144" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Pulmonaire"/>
-            <Concept code="MED-1145" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Endocrinienne"/>
-            <Concept code="MED-1146" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Uro-Néphrologie"/>
-            <Concept code="MED-1147" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Digestive"/>
-            <Concept code="MED-1148" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Neurologique"/>
-            <Concept code="MED-1149" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Hématologie"/>
-            <Concept code="MED-1150" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Lymphoscintigraphie"/>
-            <Concept code="MED-1151" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20220126000000" displayName="Scintigraphie aux leucocytes marqués"/>
-            <Concept code="GEN-092.04.19" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230202000000" displayName="Autre fonction étudiée"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_FonctionEtudieeScintigraphie_CISIS"
+             id="1.2.250.1.213.1.1.5.669"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1141"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Cardiaque : Perfusion myocardique"/>
+         <Concept code="MED-1142"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Cardiaque : FEVG"/>
+         <Concept code="MED-1143"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Osseuse"/>
+         <Concept code="MED-1144"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Pulmonaire"/>
+         <Concept code="MED-1145"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Endocrinienne"/>
+         <Concept code="MED-1146"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Uro-Néphrologie"/>
+         <Concept code="MED-1147"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Digestive"/>
+         <Concept code="MED-1148"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Neurologique"/>
+         <Concept code="MED-1149"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Hématologie"/>
+         <Concept code="MED-1150"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Lymphoscintigraphie"/>
+         <Concept code="MED-1151"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220126000000"
+                  displayName="Scintigraphie aux leucocytes marqués"/>
+         <Concept code="GEN-092.04.19"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre fonction étudiée"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

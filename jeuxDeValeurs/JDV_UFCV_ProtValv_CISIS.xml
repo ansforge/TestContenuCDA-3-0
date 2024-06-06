@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_UFCV_ProtValv_CISIS" id="1.2.250.1.213.1.1.4.2.9" version="test">
-        <ConceptList>
-            <Concept code="P070302" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES MÉCANIQUES"/>
-            <Concept code="P070301" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES CARDIAQUES BIOLOGIQUES"/>
-            <Concept code="P0703020302" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES MITRALES MÉCANIQUES, À DOUBLE AILETTE"/>
-            <Concept code="P070301010204" codeSystem="1.2.250.1.213.2.68" dateFin="" dateValid="20230427000000" displayName="VALVES TRICUSPIDES BIOLOGIQUES CHIRURGICALES MONTÉES SUR ARMATURE - VALVE D'ORIGINE NON ANIMALE"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_ProtValv_CISIS"
+             id="1.2.250.1.213.1.1.4.2.9"
+             revisionDate="2023-04-27T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="P070302"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="VALVES CARDIAQUES MÉCANIQUES"/>
+         <Concept code="P070301"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="VALVES CARDIAQUES BIOLOGIQUES"/>
+         <Concept code="P0703020302"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="VALVES MITRALES MÉCANIQUES, À DOUBLE AILETTE"/>
+         <Concept code="P070301010204"
+                  codeSystem="1.2.250.1.213.2.68"
+                  dateFin=""
+                  dateValid="20230427000000"
+                  displayName="VALVES TRICUSPIDES BIOLOGIQUES CHIRURGICALES MONTÉES SUR ARMATURE - VALVE D'ORIGINE NON ANIMALE"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

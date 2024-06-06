@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_NIHSSNeglInt_CISIS" id="1.2.250.1.213.1.1.5.189" version="test">
-        <ConceptList>
-            <Concept code="LA18478-0" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Normal"/>
-            <Concept code="LA18479-8" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Extinction ou négligence visuelle, tactile, auditive, spatiale ou personnelle à la stimulation bilatérale simultanée dans une des modalités."/>
-            <Concept code="LA18480-6" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20220420000000" displayName="Héminégligence sévère ou portant sur plus d’une modalité sensorielle. Ne reconnaît pas sa propre main ou ne s’oriente que vers un côté de l’espace."/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_NIHSSNeglInt_CISIS"
+             id="1.2.250.1.213.1.1.5.189"
+             revisionDate="2022-04-20T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="LA18478-0"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Normal"/>
+         <Concept code="LA18479-8"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Extinction ou négligence visuelle, tactile, auditive, spatiale ou personnelle à la stimulation bilatérale simultanée dans une des modalités."/>
+         <Concept code="LA18480-6"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20220420000000"
+                  displayName="Héminégligence sévère ou portant sur plus d’une modalité sensorielle. Ne reconnaît pas sa propre main ou ne s’oriente que vers un côté de l’espace."/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

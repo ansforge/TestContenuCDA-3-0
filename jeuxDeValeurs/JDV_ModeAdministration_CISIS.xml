@@ -1,13 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ModeAdministration_CISIS" id="1.2.250.1.213.1.1.5.75" version="test">
-        <ConceptList>
-            <Concept code="20035000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Voie intramusculaire"/>
-            <Concept code="20030000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Voie intradermique"/>
-            <Concept code="20045000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Voie intraveineuse"/>
-            <Concept code="20066000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Voie sous-cutanée"/>
-            <Concept code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Voie orale"/>
-            <Concept code="20062000" codeSystem="0.4.0.127.0.16.1.1.2.1" dateFin="" dateValid="20230202000000" displayName="Autre(s)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ModeAdministration_CISIS"
+             id="1.2.250.1.213.1.1.5.75"
+             revisionDate="2023-02-02T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="20035000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Voie intramusculaire"/>
+         <Concept code="20030000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Voie intradermique"/>
+         <Concept code="20045000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Voie intraveineuse"/>
+         <Concept code="20066000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Voie sous-cutanée"/>
+         <Concept code="20053000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Voie orale"/>
+         <Concept code="20062000"
+                  codeSystem="0.4.0.127.0.16.1.1.2.1"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="Autre(s)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

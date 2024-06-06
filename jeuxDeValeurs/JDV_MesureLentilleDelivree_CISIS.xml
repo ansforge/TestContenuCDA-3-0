@@ -1,22 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_MesureLentilleDelivree_CISIS" id="1.2.250.1.213.1.1.5.656" version="test">
-        <ConceptList>
-            <Concept code="MED-1181" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Date de délivrance"/>
-            <Concept code="MED-1183" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Produit d'entretien"/>
-            <Concept code="MED-1180" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230330000000" displayName="Type de lentille"/>
-            <Concept code="GEN-292" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Commentaire"/>
-            <Concept code="C53610" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="Renouvellement"/>
-            <Concept code="C43383" codeSystem="2.16.840.1.113883.3.26.1.1" dateFin="" dateValid="20210924000000" displayName="modèle"/>
-            <Concept code="MED-1089" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Diamètre lentille – lentille délivrée"/>
-            <Concept code="MED-1090" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 1 lentille – lentille délivrée"/>
-            <Concept code="MED-1091" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Rayon 2 lentille – lentille délivrée"/>
-            <Concept code="GEN-092.08.04" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20230210000000" displayName="Autre(s) paramètre(s)"/>
-            <Concept code="MED-1092" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance de la sphère – lentille délivrée"/>
-            <Concept code="MED-1093" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20210924000000" displayName="Puissance du cylindre – lentille délivrée"/>
-            <Concept code="95325-7" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Axe en degrés des lentilles"/>
-            <Concept code="28814-2" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Addition – grandeur"/>
-            <Concept code="28815-9" codeSystem="2.16.840.1.113883.6.1" dateFin="" dateValid="20210924000000" displayName="Addition – valeur"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_MesureLentilleDelivree_CISIS"
+             id="1.2.250.1.213.1.1.5.656"
+             revisionDate="2023-03-30T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1181"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Date de délivrance"/>
+         <Concept code="MED-1183"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Produit d'entretien"/>
+         <Concept code="MED-1180"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230330000000"
+                  displayName="Type de lentille"/>
+         <Concept code="GEN-292"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Commentaire"/>
+         <Concept code="C53610"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Renouvellement"/>
+         <Concept code="C43383"
+                  codeSystem="2.16.840.1.113883.3.26.1.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="modèle"/>
+         <Concept code="MED-1089"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Diamètre lentille – lentille délivrée"/>
+         <Concept code="MED-1090"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Rayon 1 lentille – lentille délivrée"/>
+         <Concept code="MED-1091"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Rayon 2 lentille – lentille délivrée"/>
+         <Concept code="GEN-092.08.04"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20230210000000"
+                  displayName="Autre(s) paramètre(s)"/>
+         <Concept code="MED-1092"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance de la sphère – lentille délivrée"/>
+         <Concept code="MED-1093"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Puissance du cylindre – lentille délivrée"/>
+         <Concept code="95325-7"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Axe en degrés des lentilles"/>
+         <Concept code="28814-2"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Addition – grandeur"/>
+         <Concept code="28815-9"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  dateFin=""
+                  dateValid="20210924000000"
+                  displayName="Addition – valeur"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

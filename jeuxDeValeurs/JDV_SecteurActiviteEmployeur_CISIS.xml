@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_SecteurActiviteEmployeur_CISIS" id="1.2.250.1.213.1.1.5.475" version="test">
-        <ConceptList>
-            <Concept code="EMPLOYER" codeSystem="1.3.6.1.4.1.19376.1.5.3.3" dateFin="" dateValid="20191023000000" displayName="Employeur"/>
-            <Concept code="SCHOOL" codeSystem="1.3.6.1.4.1.19376.1.5.3.3" dateFin="" dateValid="20191023000000" displayName="Ecole"/>
-            <Concept code="AFFILIATED" codeSystem="1.3.6.1.4.1.19376.1.5.3.3" dateFin="" dateValid="20191023000000" displayName="Organisation (par ex. ONG)."/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_SecteurActiviteEmployeur_CISIS"
+             id="1.2.250.1.213.1.1.5.475"
+             revisionDate="2019-10-23T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="EMPLOYER"
+                  codeSystem="1.3.6.1.4.1.19376.1.5.3.3"
+                  dateFin=""
+                  dateValid="20191023000000"
+                  displayName="Employeur"/>
+         <Concept code="SCHOOL"
+                  codeSystem="1.3.6.1.4.1.19376.1.5.3.3"
+                  dateFin=""
+                  dateValid="20191023000000"
+                  displayName="Ecole"/>
+         <Concept code="AFFILIATED"
+                  codeSystem="1.3.6.1.4.1.19376.1.5.3.3"
+                  dateFin=""
+                  dateValid="20191023000000"
+                  displayName="Organisation (par ex. ONG)."/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

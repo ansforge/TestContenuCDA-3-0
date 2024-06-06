@@ -1,11 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_UFCV_MotImplEndoC_CISIS" id="1.2.250.1.213.1.1.4.2.12" version="test">
-        <ConceptList>
-            <Concept code="D0014-1" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="S+T+ (Segment ST sus-décalé avec augmentation des troponines)"/>
-            <Concept code="D0014-2" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="S+T- (Segment ST sus-décalé sans augmentation des troponines)"/>
-            <Concept code="D0014-3" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="S-T- (Segment ST non sus-décalé sans augmentation des troponines)"/>
-            <Concept code="D0014-4" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="IMS (Ischémie Myocardique Silencieuse)"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_MotImplEndoC_CISIS"
+             id="1.2.250.1.213.1.1.4.2.12"
+             revisionDate="2010-01-01T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="D0014-1"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="S+T+ (Segment ST sus-décalé avec augmentation des troponines)"/>
+         <Concept code="D0014-2"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="S+T- (Segment ST sus-décalé sans augmentation des troponines)"/>
+         <Concept code="D0014-3"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="S-T- (Segment ST non sus-décalé sans augmentation des troponines)"/>
+         <Concept code="D0014-4"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="IMS (Ischémie Myocardique Silencieuse)"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>

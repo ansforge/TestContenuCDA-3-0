@@ -1,17 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
-    <ValueSet displayName="JDV_ModeSortie_CISIS" id="1.2.250.1.213.1.1.5.204" version="test">
-        <ConceptList>
-            <Concept code="160849004" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230803000000" displayName="retour au domicile"/>
-            <Concept code="127" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Hospitalisation à Domicile"/>
-            <Concept code="500" codeSystem="1.2.250.1.213.1.6.1.8" dateFin="" dateValid="20231114000000" displayName="Etablissement d'hébergement pour personnes âgées dépendantes"/>
-            <Concept code="ORG-102" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SSR spécialisé neuro"/>
-            <Concept code="ORG-103" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SSR spécialisé gériatrie"/>
-            <Concept code="ORG-104" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="SSR polyvalent"/>
-            <Concept code="ORG-162" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20100101000000" displayName="MCO"/>
-            <Concept code="GEN-092.06.01" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Autre établissement de santé"/>
-            <Concept code="GEN-092.06.03" codeSystem="1.2.250.1.213.1.1.4.322" dateFin="" dateValid="20231114000000" displayName="Autre destination"/>
-            <Concept code="419620001" codeSystem="2.16.840.1.113883.6.96" dateFin="" dateValid="20230202000000" displayName="mort"/>
-        </ConceptList>
-    </ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_ModeSortie_CISIS"
+             id="1.2.250.1.213.1.1.5.204"
+             revisionDate="2023-11-14T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="160849004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230803000000"
+                  displayName="retour au domicile"/>
+         <Concept code="127"
+                  codeSystem="1.2.250.1.213.1.6.1.8"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Hospitalisation à Domicile"/>
+         <Concept code="500"
+                  codeSystem="1.2.250.1.213.1.6.1.8"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Etablissement d'hébergement pour personnes âgées dépendantes"/>
+         <Concept code="ORG-102"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SSR spécialisé neuro"/>
+         <Concept code="ORG-103"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SSR spécialisé gériatrie"/>
+         <Concept code="ORG-104"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="SSR polyvalent"/>
+         <Concept code="ORG-162"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20100101000000"
+                  displayName="MCO"/>
+         <Concept code="GEN-092.06.01"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Autre établissement de santé"/>
+         <Concept code="GEN-092.06.03"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20231114000000"
+                  displayName="Autre destination"/>
+         <Concept code="419620001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230202000000"
+                  displayName="mort"/>
+      </ConceptList>
+   </ValueSet>
 </RetrieveValueSetResponse>
