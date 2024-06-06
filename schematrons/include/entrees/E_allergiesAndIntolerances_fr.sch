@@ -24,9 +24,9 @@
         <assert test="cda:templateId/@root='2.16.840.1.113883.10.20.1.18'">
             [E_AllergiesAndIntolerances_fr] : Erreur de conformité CI-SIS : L'élément de templatId de conformité CCD '2.16.840.1.113883.10.20.1.18' doit être présent
         </assert>
-        <assert test='cda:code[@codeSystem="2.16.840.1.113883.5.4"]'>
+        <assert test='cda:code[@codeSystem="2.16.840.1.113883.6.96"]'>
             [E_AllergiesAndIntolerances_fr] Erreur de Conformité CI-SIS:
-            L'élément 'codeSystem' doit obligatoirement être issu de l'ObservationIntoleranceType (2.16.840.1.113883.5.4).</assert>
+            L'élément 'codeSystem' doit obligatoirement être issu de SNOMED CT (2.16.840.1.113883.6.96).</assert>
         
         <report test="cda:effectiveTime/cda:width or cda:effectiveTime/cda:center"> 
             [E_allergiesAndIntolerances_fr] Erreur de conformité CI-SIS: Bien que CDA permette de nombreuses modalités pour exprimer un intervalle de 
