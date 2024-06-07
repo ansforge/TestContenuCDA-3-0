@@ -1741,8 +1741,8 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.41"/>
                   <id root="53AD4ED4-9966-4BAC-BFB6-7DE12FECF84E" />
-                  <!-- ALG = Allergy -->
-                  <code code="ALG" displayName="Allergie" codeSystem="2.16.840.1.113883.5.4">
+                  <!-- Allergy -->
+                  <code code="609328004" displayName="allergie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#tap0029" /></originalText>
                   </code>
                   <text><reference value="#tap0029" /></text>
