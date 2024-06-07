@@ -75,6 +75,8 @@
     <include href="../include/sections/S_documentPDFCopie_ANS.sch"/>
     <include href="../include/sections/S_resultats_ANS.sch"/>
     <include href="../include/sections/S_pointsDeVigilances-non-code_ANS.sch"/>
+    <include href="../include/sections/S_effetsIndesirables_ANS.sch"/>
+    
     
     <!-- Entrées créées par l'ANS -->
     
@@ -95,7 +97,14 @@
     <include href="../include/entrees/E_transfusionProduitsSanguins_ANS.sch"/>
     <include href="../include/entrees/E_syntheseMedicaleSejour_ANS.sch"/>
     <include href="../include/entrees/E_resultats_ANS.sch"/>
-
+    <include href="../include/entrees/E_effetIndesirable_ANS.sch"/>
+    <include href="../include/entrees/E_imputabiliteEffetIndesirable_ANS.sch"/>
+    <include href="../include/entrees/E_graviteEffetIndesirable_ANS.sch"/>
+    <include href="../include/entrees/E_evolutionEffetIndesirable_ANS.sch"/>
+    
+    
+    
+    
 
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->
@@ -152,6 +161,8 @@
         <active pattern="S_documentPDFCopie_ANS"></active>
         <active pattern="S_resultats_ANS"></active>
         <active pattern="S_pointsDeVigilances-non-code_ANS"/>
+        <active pattern="S_effetsIndesirables_ANS"/>
+        
  
         <!-- Activation des entrées  -->
         <active pattern="E_dispositifMedical-2_ANS"/>
@@ -171,6 +182,13 @@
         <active pattern="E_transfusionProduitsSanguins_ANS"/>
         <active pattern="E_syntheseMedicaleSejour_ANS"/>
         <active pattern="E_resultats_ANS"/>
+        <active pattern="E_effetIndesirable_ANS"></active> 
+        <active pattern="E_imputabiliteEffetIndesirable_ANS"></active> 
+        <active pattern="E_graviteEffetIndesirable_ANS"></active> 
+        <active pattern="E_evolutionEffetIndesirable_ANS"></active> 
+        
+        
+        
 
     </phase>
 </schema>
