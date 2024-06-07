@@ -34,7 +34,6 @@
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_FacteursDeRisqueProfessionnels-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_GIR-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_NiveauDependance-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_HL7_ObservationIntoleranceType-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_ScoreDuke-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_ScoreMallampati-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_Sedentarite-CISIS.sch"/>
@@ -67,7 +66,6 @@
         <active pattern="JDV_FacteursDeRisqueProfessionnels-CISIS"/>
         <active pattern="JDV_GIR-CISIS"/>
         <active pattern="JDV_NiveauDependance-CISIS"/>
-        <active pattern="JDV_HL7_ObservationIntoleranceType-CISIS"/>
         <active pattern="JDV_ScoreDuke-CISIS"/>
         <active pattern="JDV_ScoreMallampati-CISIS"/>
         <active pattern="JDV_Sedentarite-CISIS"/>
@@ -98,7 +96,6 @@
         <let name="jdv_ANEST-CR-CPA_FacteursDeRisqueProfessionnels" value="'../jeuxDeValeurs/JDV_FacteursDeRisqueProfessionnels_CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_GIR" value="'../jeuxDeValeurs/JDV_GIR_CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_NiveauDependance" value="'../jeuxDeValeurs/JDV_NiveauDependance_CISIS.xml'"/>
-        <let name="jdv_HL7_ObservationIntoleranceType-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationIntoleranceType_CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_ScoreDuke" value="'../jeuxDeValeurs/JDV_ScoreDuke_CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_ScoreMallampati" value="'../jeuxDeValeurs/JDV_ScoreMallampati_CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_Sedentarite" value="'../jeuxDeValeurs/JDV_Sedentarite_CISIS.xml'"/>
