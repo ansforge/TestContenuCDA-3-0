@@ -1871,9 +1871,9 @@
                   <templateId root="1.2.250.1.213.1.1.3.41"/>
                   <id root="C64C6013-C8AF-4938-AD10-1B7D26DEE2A0"/>
                   <!-- Type d'allergie / hypersensibilité -->
-                  <!-- valeur issue du JDV_HL7_ObservationIntoleranceType-CISIS (2.16.840.1.113883.1.11.19700) -->
-                  <code code="DALG" displayName="Allergie médicamenteuse"
-                    codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
+                  <!-- valeur issue du JDV_TypeEffetIndesirablePrevisible_CISIS (1.2.250.1.213.1.1.5.794). -->
+                  <code code="416098002" displayName="allergie médicamenteuse"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <text>
                     <reference value="#allergie-01-type"/>
                   </text>
