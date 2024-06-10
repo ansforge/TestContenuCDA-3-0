@@ -2,26 +2,26 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_EvaluationDepressionGeriatriqueResultat_CISIS"
-             id="1.2.250.1.213.1.1.5.512"
+   <ValueSet displayName="JDV_Handicap_Deficit_CISIS"
+             id="1.2.250.1.213.1.1.5.791"
              revisionDate="2023-11-14T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="17621005"
+         <Concept code="397540003"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20231114000000"
-                  displayName="normal"/>
-         <Concept code="310495003"
+                  displayName="malvoyance"/>
+         <Concept code="15188001"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20231114000000"
-                  displayName="légère dépression"/>
-         <Concept code="310497006"
+                  displayName="perte auditive"/>
+         <Concept code="62305002"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20231114000000"
-                  displayName="dépression sévère"/>
+                  displayName="trouble du langage"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

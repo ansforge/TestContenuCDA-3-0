@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_Evolution_CISIS"
+             id="1.2.250.1.213.1.1.5.788"
+             revisionDate="2024-05-22T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Guérison sans séquelle"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Guérison avec séquelles"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Guérison en cours"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Sujet non encore rétabli"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Décès dû à l’évènement"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Décès auquel l’effet a pu contribuer"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Décès sans rapport avec l’effet"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="Evolution inconnue"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>
