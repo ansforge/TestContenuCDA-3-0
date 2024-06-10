@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_TypeEffetIndesirable_CISIS"
+             id="1.2.250.1.213.1.1.5.785"
+             revisionDate="2024-05-22T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="usage normal du médicament"/>
+         <Concept code="1149222004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="surdosage"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="mésusage ou d’un usage détourné"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="abus"/>
+         <Concept code="398240004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="erreur médicamenteuse"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition professionnelle"/>
+         <Concept code="79899007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="interaction médicamenteuse"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="défaut de qualité d’un médicament ou de médicaments falsifiés"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition en cours de grossesse (maternelle ou génération précédente ou via le sperme)"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition paternelle (altération potentielle des spermatozoïdes)"/>
+         <Concept code=""
+                  codeSystem=""
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition au cours de l’allaitement"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>
