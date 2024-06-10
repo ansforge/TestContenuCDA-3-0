@@ -2,8 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet xmlns=""
-             displayName="JDV_ConduiteATenir_1_CISIS"
+   <ValueSet displayName="JDV_ConduiteATenir_1_CISIS"
              id="1.2.250.1.213.1.1.5.85"
              revisionDate="2021-09-06T00:00:00"
              version="test">
