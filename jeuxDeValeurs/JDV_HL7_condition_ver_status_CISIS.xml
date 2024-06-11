@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
-                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_HL7_condition_ver_status_CISIS"
-             id="2.16.840.1.113883.4.642.3.166"
-             revisionDate="2022-01-01T00:00:00"
-             version="test">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_HL7_condition_ver_status_CISIS" id="2.16.840.1.113883.4.642.3.166"
+      revisionDate="2022-01-01T00:00:00" version="test">
       <ConceptList>
-         <Concept code="unconfirmed"
-                  codeSystem="2.16.840.1.113883.4.642.4.1075"
-                  dateFin=""
-                  dateValid="20220101000000"
-                  displayName="Non confirmé"/>
-         <Concept code="confirmed"
-                  codeSystem="2.16.840.1.113883.4.642.4.1075"
-                  dateFin=""
-                  dateValid="20220101000000"
-                  displayName="Confirmé"/>
-         <Concept code="refuted"
-                  codeSystem="2.16.840.1.113883.4.642.4.1075"
-                  dateFin=""
-                  dateValid="20220101000000"
-                  displayName="Réfuté"/>
+         <Concept code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.1.1075" dateFin=""
+            dateValid="20220101000000" displayName="Non confirmé"/>
+         <Concept code="confirmed" codeSystem="2.16.840.1.113883.4.642.1.1075" dateFin=""
+            dateValid="20220101000000" displayName="Confirmé"/>
+         <Concept code="refuted" codeSystem="2.16.840.1.113883.4.642.1.1075" dateFin=""
+            dateValid="20220101000000" displayName="Réfuté"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>
