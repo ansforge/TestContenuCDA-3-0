@@ -1628,28 +1628,75 @@
               </thead>
               <tbody>
                 <tr>
+                  <td>06/12/2024</td>
+                  <td>
+                    <content ID="acte-01">Soins palliatifs</content></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><content ID="acte-01-motif">-</content></td>
+                  <td><content ID="acte-01-commentaire">(texte libre)</content></td>
+                </tr>
+                <tr>
                   <td>14/01/2018</td>
                   <td>
-                    <content ID="acte-01">Dilatation intraluminale de 2 vaisseaux coronaires avec
+                    <content ID="acte-02">Dilatation intraluminale de 2 vaisseaux coronaires avec
                       pose d'endoprothèse, par voie artérielle transcutanée</content></td>
                   <td>Voie intraartérielle</td>
                   <td>artère coronaire</td>
-                  <td><content ID="acte-01-motif">Infarctus inférieur transmural</content></td>
-                  <td><content ID="acte-01-commentaire">(texte libre)</content></td>
+                  <td><content ID="acte-02-motif">Infarctus inférieur transmural</content></td>
+                  <td><content ID="acte-02-commentaire">(texte libre)</content></td>
                 </tr>
                 <tr>
                   <td>08/12/2016</td>
                   <td>
-                    <content ID="acte-02">Autre acte (texte libre)</content></td>
+                    <content ID="acte-03">Autre acte (texte libre)</content></td>
                   <td>-</td>
                   <td>-</td>
-                  <td><content ID="acte-02-motif">-</content></td>
-                  <td><content ID="acte-02-commentaire">(texte libre)</content></td>
+                  <td><content ID="acte-03-motif">-</content></td>
+                  <td><content ID="acte-03-commentaire">(texte libre)</content></td>
                 </tr>
               </tbody>
             </table>
           </text>
-
+          
+          <!-- [0..*] Entrée FR-Acte (codé) : soins palliatifs (oui) -->
+          <entry>
+            <procedure classCode="PROC" moodCode="INT" negationInd="false">
+              <!-- Conformité Procedure Entry (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+              <!-- Conformité Plan of care activity (CCD) = acte prévu -->
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <!-- Conformité FR-Acte (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.62"/>
+              <id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D3L"/>
+              <!-- Code de l'acte -->
+              <code code="103735009" displayName="Soins palliatifs"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                <originalText><reference value="#acte-01"/></originalText>
+              </code>
+              <text><reference value="#acte-01"/></text>
+              <!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
+              <statusCode code="active"/>
+              <!-- Date de l'acte -->
+              <effectiveTime value="20241206"/>                       
+              <!-- Entrée FR-Commentaire-ER -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="EVN">
+                  <!-- Conformité Comment (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                  <!-- Conformité Comment Entry (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                  <!-- Conformité FR-Commentaire-ER (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.32"/>
+                  <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
+                    codeSystemName="LOINC"/>
+                  <text><reference value="#acte-01-commentaire"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          
           <!-- [1..*] Entrée FR-Acte (Dilatation intraluminale de 2 vaisseaux coronaires) -->
           <entry>
             <procedure classCode="PROC" moodCode="EVN">
@@ -1664,11 +1711,9 @@
               <code code="DDAF004"
                 displayName="Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
                 codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
-                <originalText><reference value="acte-01"/></originalText>
+                <originalText><reference value="acte-02"/></originalText>
               </code>
-              <text>
-                <reference value="#acte-01"/>
-              </text>
+              <text><reference value="#acte-02"/></text>
               <statusCode code="completed"/>
               <!-- Date de l'acte -->
               <effectiveTime value="20180114"/>
@@ -1710,7 +1755,7 @@
                   <code code="I21.1" displayName="Infarctus transmural inférieur"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
-                      <reference value="#acte-01-motif"/>
+                      <reference value="#acte-02-motif"/>
                     </originalText>
                   </code>
                 </act>
@@ -1727,7 +1772,7 @@
                   <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
                   <text>
-                    <reference value="#acte-01-commentaire"/>
+                    <reference value="#acte-02-commentaire"/>
                   </text>
                   <statusCode code="completed"/>
                 </act>
@@ -1748,10 +1793,10 @@
               <!-- Code de l'acte -->
               <code code="GEN-092.04.13" displayName="Autre acte"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText><reference value="acte-02"/></originalText>
+                <originalText><reference value="acte-03"/></originalText>
               </code>
               <text>
-                <reference value="#acte-02"/>
+                <reference value="#acte-03"/>
               </text>
               <statusCode code="completed"/>
               <!-- Date de l'acte -->
@@ -1771,13 +1816,14 @@
                   <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
                   <text>
-                    <reference value="#acte-02-commentaire"/>
+                    <reference value="#acte-03-commentaire"/>
                   </text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
             </procedure>
           </entry>
+                   
         </section>
       </component>
 
@@ -4995,16 +5041,22 @@
               <tbody>
                 <tr>
                   <td>01/12/2024</td>
-                  <td>Bénéfique pour le patient mais pas essentiel pour sa survie</td>
-                  <td><content ID="plan-acte-01-code">Pose d'une prothèse auditive implantable dans
-                      l'oreille moyenne</content></td>
+                  <td>Aussi vite que possible</td>
+                  <td><content ID="plan-acte-01-code">Soins pallatifs</content></td>
                   <td><content ID="plan-acte-01-commentaire">(Texte libre)</content></td>
                 </tr>
                 <tr>
                   <td>01/12/2024</td>
-                  <td>Aussi vite que possible</td>
-                  <td><content ID="plan-acte-02-code">Autre acte (texte libre)</content></td>
+                  <td>Bénéfique pour le patient mais pas essentiel pour sa survie</td>
+                  <td><content ID="plan-acte-02-code">Pose d'une prothèse auditive implantable dans
+                      l'oreille moyenne</content></td>
                   <td><content ID="plan-acte-02-commentaire">(Texte libre)</content></td>
+                </tr>
+                <tr>
+                  <td>01/12/2024</td>
+                  <td>Aussi vite que possible</td>
+                  <td><content ID="plan-acte-03-code">Autre acte (texte libre)</content></td>
+                  <td><content ID="plan-acte-03-commentaire">(Texte libre)</content></td>
                 </tr>
               </tbody>
             </table>
@@ -5250,6 +5302,48 @@
             </observation>
           </entry>
 
+          <!-- [0..*] Entrée FR-Acte (codé) : soins palliatifs prévus "Aussi vite que possible" -->
+          <entry>
+            <procedure classCode="PROC" moodCode="INT" negationInd="false">
+              <!-- Conformité Procedure Entry (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+              <!-- Conformité Plan of care activity (CCD) = acte prévu -->
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <!-- Conformité FR-Acte (CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.62"/>
+              <id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D9B"/>
+              <!-- Code de l'acte -->
+              <code code="103735009"
+                displayName="Soins palliatifs"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                <originalText><reference value="#plan-acte-01-code"/></originalText>
+              </code>
+              <text><reference value="#plan-acte-01-code"/></text>
+              <!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
+              <statusCode code="active"/>
+              <!-- Date de l'acte -->
+              <effectiveTime value="20241201"/>         
+              <!-- Priorité -->
+              <priorityCode code="A" displayName="Aussi vite que possible" 
+                codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7:ActPriority"/>
+              <!-- Entrée FR-Commentaire-ER -->
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="EVN">
+                  <!-- Conformité Comment (CCD) -->
+                  <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                  <!-- Conformité Comment Entry (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                  <!-- Conformité FR-Commentaire-ER (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.32"/>
+                  <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
+                    codeSystemName="LOINC"/>
+                  <text><reference value="#plan-acte-01-commentaire"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          
           <!-- [0..*] Entrée FR-Acte (codé) -->
           <entry>
             <procedure classCode="PROC" moodCode="INT">
@@ -5263,8 +5357,10 @@
               <!-- Code de l'acte -->
               <code code="CBLA001"
                 displayName="Pose d'une prothèse auditive implantable dans l'oreille moyenne"
-                codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-              <text><reference value="#plan-acte-01-code"/></text>
+                codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM">
+                <originalText><reference value="#plan-acte-02-code"/></originalText>
+              </code>
+              <text><reference value="#plan-acte-02-code"/></text>
               <!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
               <statusCode code="active"/>
               <!-- Date de l'acte -->
@@ -5283,9 +5379,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#plan-acte-01-commentaire"/>
-                  </text>
+                  <text><reference value="#plan-acte-02-commentaire"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -5305,11 +5399,9 @@
               <!-- Code de l'acte -->
               <code code="GEN-092.04.13" displayName="Autre acte"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
-                <originalText>
-                  <reference value="#plan-acte-02-code"/>
-                </originalText>
+                <originalText><reference value="#plan-acte-03-code"/></originalText>
               </code>
-              <text><reference value="#plan-acte-02-code"/></text>
+              <text><reference value="#plan-acte-03-code"/></text>
               <!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
               <statusCode code="active"/>
               <!-- Date de l'acte -->
@@ -5328,9 +5420,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.32"/>
                   <code code="48767-8" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <text>
-                    <reference value="#plan-acte-02-commentaire"/>
-                  </text>
+                  <text><reference value="#plan-acte-03-commentaire"/></text>
                   <statusCode code="completed"/>
                 </act>
               </entryRelationship>
@@ -6000,10 +6090,11 @@
               <tbody>
                 <tr>
                   <td>29/03/2024</td>
-                  <td><content ID="resultat-biologie-01">CRP</content></td>
-                  <td> &lt;1.0 mg/L </td>
-                  <td>Normal</td>
-                  <td>&lt;6.0 mg/L </td>
+                  <td><content ID="resultat-biologie-01">Le patient porte-t-il une bactérie
+                    multirésistante ?</content></td>
+                  <td>Oui</td>
+                  <td></td>
+                  <td></td>
                   <td><content ID="resultat-biologie-01-commentaire">(Texte libre)</content></td>
                 </tr>
               </tbody>
@@ -6042,7 +6133,7 @@
                 codeSystem="2.16.840.1.113883.6.1"/>
               <statusCode code="completed"/>
               <effectiveTime value="20240329"/>
-              <!-- Laboratoire exécutant -->
+              <!-- [0..*] Laboratoire exécutant -->
               <performer typeCode="PRF">
                 <templateId root="1.3.6.1.4.1.19376.1.3.3.1.7"/>
                 <time>
@@ -6088,7 +6179,7 @@
                   </representedOrganization>
                 </assignedEntity>
               </performer>
-              <!-- Auteur -->
+              <!-- [0..*] Auteur -->
               <author>
                 <time value="20210104160527+0100"/>
                 <assignedAuthor>
@@ -6137,13 +6228,12 @@
                   <!-- Conformité FR-Resultat (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.209"/>
                   <id root="8D40D39D-3574-496A-91EA-B7BE236ABD1A"/>
-                  <code code="1988-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                    displayName="C Réactive protéine [Masse/Volume] Sérum/Plasma ; Numérique"/>
+                  <code code="U83.71" displayName="Bactérie Multi Résistante"
+                    codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                   <text><reference value="#resultat-biologie-01"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20240329"/>
-                  <value xsi:type="ED">&lt;1.0 mg/L</value>
-                  
+                  <value xsi:type="BL" value="false"/>                  
                   <!-- Entrée FR-Commentaire-ER -->
                   <entryRelationship typeCode="SUBJ" inversionInd="true">
                     <act classCode="ACT" moodCode="EVN">
@@ -6160,16 +6250,7 @@
                       </text>
                       <statusCode code="completed"/>
                     </act>
-                  </entryRelationship>
-                  <referenceRange typeCode="REFV">
-                    <observationRange>
-                      <value xsi:type="IVL_PQ">
-                        <low value="0.0" unit="mg/L" />
-                        <high value="6.0" unit="mg/L" />
-                      </value>
-                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
-                    </observationRange>
-                  </referenceRange>
+                  </entryRelationship>                  
                 </observation>
               </component>
             </organizer>
