@@ -8,6 +8,7 @@
         10/03/2022 : Création 
         27/02/2023 : Mise à jour de la version
         14/03/2024 : Mise à jour de la version et ajout du contrôle sur l'entete du CDA
+        12/06/2024 : Mise à jour : Ajout de schematrons des JDVs
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_IPS-FR_2024.01"
         xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
@@ -24,19 +25,41 @@
         <include href="abstract/dansJeuDeValeurs.sch"/>
         <include href="abstract/IVL_TS.sch"/>
         
+        <!-- JDV --> 
+        
+        <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_AutreRisque_IPS.sch"/>
+        <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_Deplacement_IPS.sch"/>
+        <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_EtatPsychique_IPS.sch"/>
+        <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_HandicapDeficit_IPS.sch"/>
+        
         <!-- schématron entete -->
+        
         <include href="include/specificationsVolets/IPS-FR_2024.01/Entete/Entete_IPS-FR.sch"/>
+        
+
 
         <phase id="CI-SIS_IPS-FR_2024.01">
                 <active pattern="variables"/>
-                <active pattern="Entete_IPS-FR"/>                
+                <active pattern="Entete_IPS-FR"/> 
+                
+                <!-- JDV -->        
+                <active pattern="JDV_AutreRisque_CISIS"/>
+                <active pattern="JDV_Deplacement_CISIS"/>
+                <active pattern="JDV_EtatPsychique_CISIS"/>
+                <active pattern="JDV_HandicapDeficit_CISIS"/>
+                
         </phase>
-
+        
         <pattern id="variables">
-
-                <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
-                        
+                <let name="JDV_AutreRisque_CISIS" value="'../jeuxDeValeurs/JDV_Autre_Risque_CISIS.xml'"/>
+                <let name="JDV_Deplacement_CISIS" value="'../jeuxDeValeurs/JDV_Deplacement_CISIS.xml'"/>
+                <let name="JDV_EtatPsychique_CISIS" value="'../jeuxDeValeurs/JDV_Etat psychique_CISIS.xml'"/>
+                <let name="JDV_HandicapDeficit_CISIS" value="'../jeuxDeValeurs/JDV_Handicap_Deficit_CISIS.xml'"/>
+                
+                
                         <!--  Verifier la présence de la section FR-Traitements -->
+                
+                <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
                         <assert test="cda:component/cda:section/cda:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.3.19']"> 
                                 [IPS-FR_2024.01] Erreur de conformité : La section FR-Traitements (1.3.6.1.4.1.19376.1.5.3.1.3.19) doit être présente.
                         </assert>
@@ -61,6 +84,6 @@
                                 [IPS-FR_2024.01] Erreur de conformité : La section FR-Dispositifs-medicaux (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.5) doit être présente. 
                         </assert>
 
-                </rule>
+                </rule>   
         </pattern>
 </schema>
