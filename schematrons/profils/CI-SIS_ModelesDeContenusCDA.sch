@@ -186,6 +186,11 @@
     <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_ImmunizationCode.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_TypeEffetIndesirable.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_Imputabilite.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_Gravite.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_Evolution.sch"/>
+    
     
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -336,6 +341,11 @@
         <active pattern="JDV_TypeDirectiveAnticipee"/>
         <active pattern="immunizationCode"/>
         <active pattern="JDV_HL7_PersonalRelationshipRoleType"/>
+        <active pattern="JDV_TypeEffetIndesirable"/> 
+        <active pattern="JDV_Imputabilite"/> 
+        <active pattern="JDV_Gravite"/> 
+        <active pattern="JDV_Evolution"/> 
+        
     </phase>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -360,6 +370,10 @@
         <let name="jdv_immunization_1" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS.xml'"/>
         <let name="jdv_immunization_2" value="'../../jeuxDeValeurs/JDV_AbsentOrUnknownImmunization_CISIS.xml'"/>
         <let name="jdv_HL7_PersonalRelationshipRoleType_CISIS" value="'../../jeuxDeValeurs/JDV_HL7_PersonalRelationshipRoleType_CISIS.xml'"/>
+        <let name="jdv_typeEffetIndesirable" value="'../../jeuxDeValeurs/JDV_TypeEffetIndesirable_CISIS.xml'"/>
+        <let name="jdv_imputabilite" value="'../../jeuxDeValeurs/JDV_Imputabilite_CISIS.xml'"/>
+        <let name="jdv_gravite" value="'../../jeuxDeValeurs/JDV_Gravite_CISIS.xml'"/>
+        <let name="jdv_evolution" value="'../../jeuxDeValeurs/JDV_Evolution_CISIS.xml'"/>
     </pattern>
 
 </schema>
