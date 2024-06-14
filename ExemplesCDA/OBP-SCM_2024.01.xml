@@ -40,7 +40,7 @@
   <!-- Conformité au Volet Synthèse Postpartum Mère (OBP-SCM_2024.01)-->
   <templateId root="1.2.250.1.213.1.1.1.12.4" extension="2024.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.12.4.1"/>
+  <id root="1.2.250.1.213.1.1.1.12.4.12345.1"/>
   <!-- Type de document -->
   <code code="89235-6" displayName="Synthèse Suites de Couches Mère" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
@@ -52,7 +52,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR" />
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="1.2.250.1.213.1.1.9"/>
+  <setId root="1.2.250.1.213.1.1.1.12.4.12345"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1" />
 
