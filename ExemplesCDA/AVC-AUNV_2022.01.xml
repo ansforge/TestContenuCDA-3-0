@@ -36,7 +36,7 @@
   <!-- Admission en UNV (AUNV)-->
   <templateId root="1.2.250.1.213.1.1.1.15" extension="2022.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.15.1"/>
+  <id root="1.2.250.1.213.1.1.1.15.12345"/>
   <!-- Type de document -->
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Synthèse d'épisode de soins" />
   <!-- Titre du document -->
