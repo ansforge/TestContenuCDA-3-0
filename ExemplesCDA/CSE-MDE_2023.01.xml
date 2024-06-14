@@ -37,7 +37,7 @@
    <!-- Conformité spécifications du CSE -->
    <templateId root="1.2.250.1.213.1.1.1.5"/>
    <!-- Conformité spécifications CSE-MDE_2023.01 -->
-   <templateId root="1.2.250.1.213.1.1.1.5.4" extension="2023.01"/>
+   <templateId root="1.2.250.1.213.1.1.1.5.12345.4" extension="2023.01"/>
    <!-- Identifiant du document -->
    <id root="1.2.250.1.213.1.1.1.5.4.1.1"/>
    <!-- Code du document -->
@@ -51,7 +51,7 @@
    <!-- Langage utilisé dans le document -->
    <languageCode code="fr-FR"/>
    <!-- Identifiant commun à toutes les versions successives du document -->
-   <setId root="1.2.250.1.213.1.1.1.5.4.1"/>
+   <setId root="1.2.250.1.213.1.1.1.5.12345"/>
    <!-- Numéro de la version du présent document (entier positif) -->
    <versionNumber value="1"/>
    
