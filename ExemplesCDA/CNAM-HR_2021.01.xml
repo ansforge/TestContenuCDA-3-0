@@ -44,7 +44,7 @@
   <!-- Conformité au modèle du document CNAM-HR -->
   <templateId root="1.2.250.1.213.1.1.1.36" extension="2021.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.36.1"/>
+  <id root="1.2.250.1.213.1.1.1.36.12345.1"/>
   <!-- Type du document -->
   <code code="REMB" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Données de remboursement"/>
   <!-- Titre du document -->
@@ -57,7 +57,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant du lot de version d'un même document -->
-  <setId root="06068847-7B66-4A0E-86CB-B7580377F221"/>
+  <setId root="1.2.250.1.213.1.1.1.36.12345"/>
   <!-- Identifiant de la version du document -->
   <versionNumber value="1"/>
 
