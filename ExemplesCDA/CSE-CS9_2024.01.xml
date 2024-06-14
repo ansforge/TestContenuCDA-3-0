@@ -47,7 +47,7 @@
    <!-- Conformité spécifications au CSE -->
    <templateId root="1.2.250.1.213.1.1.1.5"/>
    <!-- Conformité au CS9 -->
-   <templateId root="1.2.250.1.213.1.1.1.5.2" extension="2024.01"/>
+   <templateId root="1.2.250.1.213.1.1.1.5.12345.2" extension="2024.01"/>
    <!-- Identifiant du document -->
    <id root="1.2.250.1.213.1.1.1.5.2.101"/>
    <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode_CISIS) -->
@@ -61,7 +61,7 @@
    <!-- Langage utilisé dans le document -->
    <languageCode code="fr-FR"/>
    <!-- Identifiant du lot de version d'un même document -->
-   <setId root="1.2.250.1.213.1.1.1.5.2.100"/>
+   <setId root="1.2.250.1.213.1.1.1.5.12345"/>
    <!-- Identifiant du lot de version d'un même document -->
    <versionNumber value="1"/>
 
