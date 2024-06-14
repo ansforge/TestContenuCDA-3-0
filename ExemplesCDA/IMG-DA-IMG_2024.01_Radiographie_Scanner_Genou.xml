@@ -36,7 +36,7 @@
     <!-- Conformité Modèle IMG-DA-IMG du CI-SIS -->
     <templateId root="1.2.250.1.213.1.1.1.47" extension="2024.01"/>
     <!-- Identifiant du document -->
-    <id root="1.2.250.1.213.1.1.1.47.2"/>
+    <id root="1.2.250.1.213.1.1.1.47.12345.2"/>
     <!-- Type de document -->
     <code code="55115-0" displayName="Demande d'acte d'imagerie" codeSystem="2.16.840.1.113883.6.1"
         codeSystemName="LOINC"> </code>
@@ -49,7 +49,7 @@
     <!-- Langue du document -->
     <languageCode code="fr-FR"/>
     <!-- Identifiant du lot de version d'un même document -->
-    <setId root="348BCD24-273E-4CEF-B5B2-F06A7DB45A07"/>
+    <setId root="1.2.250.1.213.1.1.1.47.12345"/>
     <!-- Numéro de version d'un même document -->
     <versionNumber value="1"/>
 
