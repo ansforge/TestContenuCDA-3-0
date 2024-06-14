@@ -374,7 +374,7 @@
                      <participant typeCode="DEV">
                         <participantRole classCode="MANU">                                 
                            <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                              <code nullFlavor="UNK"><originalText><reference value="#kit-1"/></originalText></code>
+                              <code nullFlavor="NA"><originalText><reference value="#kit-1"/></originalText></code>
                            </playingDevice>
                         </participantRole>
                      </participant>
