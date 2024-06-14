@@ -33,7 +33,7 @@
   <!-- Déclaration de conformité IHE XDS-SD -->
   <templateId root="1.3.6.1.4.1.19376.1.2.20"/>
   <!-- Identifiant du document -->
-  <id root="1.3.6.1.4.1.19376.1.2.20.1"/>
+  <id root="1.3.6.1.4.1.19376.1.2.20.12345.1"/>
   <!-- Type de document -->
   <code code="11502-2" displayName="CR d'examens biologiques" codeSystem="2.16.840.1.113883.6.1"
     codeSystemName="LOINC"/>
@@ -47,7 +47,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="F5CAAF6A-8047-46F1-89B8-A500B3161CB7"/>
+  <setId root="1.3.6.1.4.1.19376.1.2.20.12345"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1"/>
   
