@@ -5,7 +5,7 @@
     Teste la conformité de l'entete de l'IPS-FR au CI-SIS
     
     Historique :
-    10/11/2022 : Création    
+    10/11/2022 : Création 
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_IPS-FR">
@@ -22,14 +22,20 @@
             > [Entete_IPS-FR] Le code LOINC du document est soit "60591-5" soit "74207-2"
             (2.16.840.1.113883.6.1).
         </assert>
-        <!-- Verifier la présence d'un participant pour le médecin traitant -->
-        <assert test="count(cda:participant[@typeCode = 'INF']/cda:functionCode[@code = 'PCP']) = 1
-            and count(cda:participant[@typeCode = 'INF']/cda:functionCode[@displayName = 'Médecin Traitant']) = 1
-            and count(cda:participant[@typeCode = 'INF']/cda:functionCode[@codeSystem = '2.16.840.1.113883.5.88']) = 1"
-            > [Entete_IPS-FR] Un participant pour le médecin traitant est
-            obligatoire avec @typeCode='INF' et functionCode@code='PCP',
+        
+        <!-- Verifier l'élément participant pour le médecin traitant et l'établissement de santé de préférence [DLU]  -->
+        
+        <assert test="not(cda:participant[@typeCode ='INF']) or (cda:participant[@typeCode ='INF']/cda:functionCode[(@code='ES-PREF' or  @code='PCP' ) and (@displayName= 'Etablissement de santé de préférence' or @displayName='Médecin Traitant') and (@codeSystem='1.2.250.1.213.1.1.4.2.280' or @codeSystem='2.16.840.1.113883.5.88')])"> 
+            [Entete_IPS-FR]  :
+            - Un participant pour le médecin traitant doit être présent maximum une fois [0..1]
+            avec @typeCode='INF' et functionCode@code='PCP',
             functionCode@displayName='Médecin Traitant' et
             functionCode@codeSystem='2.16.840.1.113883.5.88'.
+            - Un participant pour l'établissement de santé de préférence [DLU] doit être présent maximum une fois [0..1]
+            avec @typeCode='INF' et functionCode@code='ES-REF',
+            functionCode@displayName='Etablissement de santé de préférence' et
+            functionCode@codeSystem='1.2.250.1.213.1.1.4.2.280'.
         </assert>
+        
     </rule>
 </pattern>
