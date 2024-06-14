@@ -31,7 +31,7 @@
   <!-- Conformité au modèle du document CR de Consultation pré-anéstesique -->
   <templateId root="1.2.250.1.213.1.1.1.41" extension="2022.01" />
   <!-- Identifiant unique du document -->
-  <id root="1.2.250.1.213.1.1.1.41.1"/>
+  <id root="1.2.250.1.213.1.1.1.41.12345.1"/>
   <!-- Type de document -->
   <code code="34749-2" displayName="CR de consultation pré-anesthésique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
