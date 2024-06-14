@@ -29,7 +29,7 @@
   <!-- Evaluation Pluri Professionnelle Post AVC (PostAVC)-->
   <templateId root="1.2.250.1.213.1.1.1.25" extension="2022.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.25.1"/>
+  <id root="1.2.250.1.213.1.1.1.25.12345.1"/>
   <!-- Type de document -->
   <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CR ou fiche de consultation ou de visite" />
   <!-- Titre du document -->
