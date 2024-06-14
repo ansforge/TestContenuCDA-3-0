@@ -40,7 +40,7 @@
   <!--  Synthèse Salle de Naissance Mère (OBP-SNM_2024.01)-->
   <templateId root="1.2.250.1.213.1.1.1.12.2" extension="2024.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.12.2.1"/>
+  <id root="1.2.250.1.213.1.1.1.12.2.12345.1"/>
   <!-- Type de document -->
   <code code="57057-2" displayName="Synthèse Salle de Naissance Mère" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
@@ -52,7 +52,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR" />
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="1.2.250.1.213.1.1.9"/>
+  <setId root="1.2.250.1.213.1.1.1.12.2.12345"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1" />
 
