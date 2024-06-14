@@ -38,7 +38,7 @@
         </assert>
         
         <!-- Vérifier que l'entrée supply est présente -->
-        <assert test='.//cda:templateId[@root = "1.3.6.1.4.1.19376.1.9.1.3.4"]'>
+        <assert test='count(.//cda:templateId[@root = "1.3.6.1.4.1.19376.1.9.1.3.4"])&gt;=1'>
             [S_dispense.sch] : La section Dispense
             doit contenir une entrée Dispense Item.
         </assert>
