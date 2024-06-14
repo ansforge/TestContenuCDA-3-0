@@ -47,7 +47,7 @@
    <!-- Conformité au CS24 -->
    <templateId root="1.2.250.1.213.1.1.1.5.3" extension="2024.01"/>
    <!-- Identifiant du document -->
-   <id root="1.2.250.1.213.1.1.1.5.3.101"/>
+   <id root="1.2.250.1.213.1.1.1.5.3.12345.1"/>
    <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode_CISIS) -->
    <code code="CERT_DECL" displayName="Certificat, déclaration" codeSystem="1.2.250.1.213.1.1.4.12"/>
    <!-- Titre du document -->
@@ -59,7 +59,7 @@
    <!-- Langage utilisé dans le document -->
    <languageCode code="fr-FR"/>
    <!-- Identifiant commun à toutes les versions successives du document -->
-   <setId root="1.2.250.1.213.1.1.1.5.3.100"/>
+   <setId root="1.2.250.1.213.1.1.1.5.3.12345"/>
    <!-- Numéro de la version du présent document (entier positif) -->
    <versionNumber value="1"/>
    
