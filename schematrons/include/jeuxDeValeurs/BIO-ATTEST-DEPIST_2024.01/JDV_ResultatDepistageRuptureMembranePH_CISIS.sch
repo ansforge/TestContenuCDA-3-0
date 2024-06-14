@@ -15,7 +15,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_ResultatDepistageRuptureMembranePH_CISIS" is-a="dansJeuDeValeurs">
     <p>Conformité du résultat du test de dépistage</p>
     <param name="path_jdv" value="$JDV_ResultatDepistageRuptureMembranePH_CISIS"/>
-    <param name="vue_elt" value="'ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/interpretationCod'"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:act/cda:entryRelationship/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.3.1.6'and cda:code/@code='48421-2']/cda:interpretationCode"/>
+    <param name="vue_elt" value="'ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/interpretationCode'"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:act/cda:entryRelationship/cda:observation[cda:templateId/@root='1.3.6.1.4.1.19376.1.3.1.6'and cda:code/@code='72269-4']/cda:interpretationCode"/>
     <param name="nullFlavor" value="0"/>
 </pattern>  
