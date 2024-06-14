@@ -34,7 +34,7 @@
   <!-- Conformité au Volet Episode de soin en UNV (EUNV) -->
   <templateId root="1.2.250.1.213.1.1.1.16" extension="2022.01"/>
   <!-- Unique ID obligatoire -->
-  <id root="1.2.250.1.213.1.1.1.16.1" />
+  <id root="1.2.250.1.213.1.1.1.16.12345.1" />
   <!-- Type de document -->
   <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
