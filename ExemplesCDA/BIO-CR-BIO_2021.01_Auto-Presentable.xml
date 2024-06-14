@@ -45,7 +45,7 @@
 			<!-- Déclarations de conformité au modèle CR-BIO du CI-SIS -->
 			<c:templateId root="1.2.250.1.213.1.1.1.55"/>
 			<!-- Unique ID obligatoire -->
-			<c:id root="1.2.250.1.213.1.1.1.55.1"/>
+			<c:id root="1.2.250.1.213.1.1.1.55.12345.1"/>
 			<!-- Type de document -->
 			<c:code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
 				displayName="CR d'examens biologiques"/>
