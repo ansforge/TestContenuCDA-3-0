@@ -9,7 +9,7 @@
         03/06/2024 : MAJ : 
                     - Ajout des schematrons des JDVs
                     - MAJ des schematrons des entrées 
-                              
+      17/06/2024 : Suppression du sch JDV_ResultatDepistageTcPO2_CISIS.sch                        
     ......................................................................................................................................................               
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_BIO-ATTEST-DEPIST_2024.01"
@@ -46,7 +46,6 @@
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCRP_CISIS.sch"/>
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageRuptureMembranePH_CISIS.sch"/>
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageBilirubinemie_CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageTcPO2_CISIS.sch"/>
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageProteinurie_CISIS.sch"/>
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageCorpsCetoniques_CISIS.sch"/>
     <include href="include/jeuxDeValeurs/BIO-ATTEST-DEPIST_2024.01/JDV_ResultatDepistageGlucose_CISIS.sch"/>
@@ -87,7 +86,6 @@
         <active pattern="JDV_ResultatDepistageCRP_CISIS"/>
         <active pattern="JDV_ResultatDepistageRuptureMembranePH_CISIS"/>
         <active pattern="JDV_ResultatDepistageBilirubinemie_CISIS"/>
-        <active pattern="JDV_ResultatDepistageTcPO2_CISIS"/>
         <active pattern="JDV_ResultatDepistageProteinurie_CISIS"/>
         <active pattern="JDV_ResultatDepistageCorpsCetoniques_CISIS"/>
         <active pattern="JDV_ResultatDepistageGlucose_CISIS"/>
@@ -115,7 +113,6 @@
         <let name="JDV_ResultatDepistageCRP_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCRP_CISIS.xml'"/>
         <let name="JDV_ResultatDepistageRuptureMembranePH_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageRuptureMembranePH_CISIS.xml'"/>
         <let name="JDV_ResultatDepistageBilirubinemie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageBilirubinemie_CISIS.xml'"/>
-        <let name="JDV_ResultatDepistageTcPO2_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageTcPO2_CISIS.xml'"/>
         <let name="JDV_ResultatDepistageProteinurie_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageProteinurie_CISIS.xml'"/>
         <let name="JDV_ResultatDepistageCorpsCetoniques_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageCorpsCetoniques_CISIS.xml'"/>
         <let name="JDV_ResultatDepistageGlucose_CISIS" value="'../jeuxDeValeurs/JDV_ResultatDepistageGlucose_CISIS.xml'"/>
