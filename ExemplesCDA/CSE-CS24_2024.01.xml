@@ -1311,6 +1311,7 @@
                            <!-- Conformité FR-Allergie-ou-hypersensibilite (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.41"/>
                            <id root="FD850158-7CCD-11EB-9439-0242AC130083"/>
+                           <!-- Valeur issue du JDV_TypeEvenementIndesirablePrevisible_CISIS(1.2.250.1.213.1.1.5.794)-->
                            <code code="414285001" codeSystem="2.16.840.1.113883.6.96"
                               codeSystemName="SNOMED CT" displayName="allergie alimentaire"/>
                            <text><reference value="#allergieAlimentaire"/></text>
