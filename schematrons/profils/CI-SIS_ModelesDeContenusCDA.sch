@@ -178,7 +178,7 @@
     <include href="../include/jeuxDeValeurs/JDV_problemCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_conditionClinical.sch"/>
-    <include href="../include/jeuxDeValeurs/JDV_TypeEffetIndesirablePrevisible.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_TypeEvenementIndesirablePrevisible.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_ImmunizationRouteCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_vitalSignCode.sch"/>   
     <include href="../include/jeuxDeValeurs/JDV_administrativeGenderCode.sch"/>
@@ -331,7 +331,7 @@
         <active pattern="JDV_HL7_allergyintolerance_clinical"/>
         <active pattern="JDV_HL7_conditionclinical"/>
         <active pattern="JDV_healthStatusCodes"/>        
-        <active pattern="JDV_TypeEffetIndesirablePrevisible"/>  
+        <active pattern="JDV_TypeEvenementIndesirablePrevisible"/>  
         <active pattern="JDV_problemCodes"/>          
         <active pattern="JDV_substanceAdministration_approachSiteCode"/>         
         <active pattern="JDV_substanceAdministration_ImmunizationRouteCodes"/>
@@ -357,7 +357,7 @@
         <let name="jdv_actSubstanceAdministrationImmunizationCode" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode_CISIS.xml'"/>        
         <let name="jdv_clinicalStatusCodes" value="'../../jeuxDeValeurs/JDV_ClinicalStatusCodes_CISIS.xml'"/>
         <let name="jdv_healthStatusCodes" value="'../../jeuxDeValeurs/JDV_HealthStatusCodes_CISIS.xml'"/>        
-        <let name="jdv_typeEffetIndesirablePrevisible" value="'../../jeuxDeValeurs/JDV_TypeEffetIndesirablePrevisible_CISIS.xml'"/>
+        <let name="jdv_typeEvenementIndesirablePrevisible" value="'../../jeuxDeValeurs/JDV_TypeEvenementIndesirablePrevisible_CISIS.xml'"/>
         <let name="jdv_problemCodes" value="'../../jeuxDeValeurs/JDV_ProblemCodes_CISIS.xml'"/>
         <let name="jdv_HL7_allergyintolerance_clinical" value="'../../jeuxDeValeurs/JDV_HL7_allergyintolerance_clinical_CISIS.xml'"/>
         <let name="jdv_HL7_conditionclinical" value="'../../jeuxDeValeurs/JDV_HL7_ConditionClinical_CISIS.xml'"/>
