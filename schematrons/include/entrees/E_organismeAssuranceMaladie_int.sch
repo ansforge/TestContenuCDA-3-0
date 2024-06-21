@@ -71,8 +71,8 @@
             [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : L'entrée "IHE Payer Entry " peut comporter un élément "participant"avec l'attribut @typeCode est fixé à 'HLD'.
         </assert>
         
-        <assert test="cda:participantRole[@classCode='IND']"> 
-            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : Le composant "participant" doit comporter un élément "participantRole"avec l'attribut @classCode est fixé à 'IND'.
+        <assert test="cda:participantRole[@classCode='INDIV']"> 
+            [E_organismeAssuranceMaladie_int.sch] : Erreur de conformité CI-SIS : Le composant "participant" doit comporter un élément "participantRole"avec l'attribut @classCode est fixé à 'INDIV'.
         </assert>
     </rule>
 </pattern>
