@@ -1668,7 +1668,7 @@
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
               <!-- Conformité FR-Acte (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.62"/>
-              <id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D3L"/>
+              <id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D9B"/>
               <!-- Code de l'acte -->
               <code code="103735009" displayName="Soins palliatifs"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
@@ -1727,7 +1727,8 @@
               <author>
                 <time value="20180114"/>
                 <assignedAuthor>
-                  <id nullFlavor="UNK"/>
+                  <!-- PS identifié par son N°RPPS -->
+                  <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                   <addr nullFlavor="NAV"/>
                   <telecom nullFlavor="NAV"/>
                   <assignedPerson>
@@ -3647,7 +3648,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFG"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130012"/>
                   <code xsi:type="CD" code="425104003" displayName="comportement suicidaire"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -3709,7 +3710,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFH"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130007"/>
                   <code xsi:type="CD" code="397540003" displayName="malvoyance"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -3752,7 +3753,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFI"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130006"/>
                   <code xsi:type="CD" code="15188001" displayName="perte auditive"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -3795,7 +3796,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFJ"/>
+                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFD"/>
                   <code xsi:type="CD" code="62305002" displayName="trouble du langage"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -3857,7 +3858,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFK"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130008"/>
                   <code xsi:type="CD" code="161898004" displayName="chutes" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT">
                     <originalText>
@@ -3900,7 +3901,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFL"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130009"/>
                   <code xsi:type="CD" code="50239007" displayName="errance"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -3943,7 +3944,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFM"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130003"/>
                   <code xsi:type="CD" code="248046000" displayName="fugue" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT">
                     <originalText>
@@ -3986,7 +3987,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFN"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130003"/>
                   <code xsi:type="CD" code="386423001" displayName="contention physique"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -4048,7 +4049,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFO"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130003"/>
                   <code xsi:type="CD" code="285304000" displayName="à risque d'escarre"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -4091,7 +4092,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- FR-Evaluation (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.25"/>
-                  <id root="FB97F8B7-7D3D-474A-B6A6-7D55D4DA3AFP"/>
+                  <id root="582BB12C-7B63-11EB-9439-0242AC130011"/>
                   <code xsi:type="CD" code="249492002" displayName="fausse route alimentaire"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -6025,7 +6026,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.7"/>
               <!-- Conformité FR-Directive-Anticipee (FR CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.54"/>
-              <id root="4FD525FD-8712-40F9-BF31-EF9A25069Q76"/>
+              <id root="4FD525FD-8712-40F9-BF31-EF9A25069C25"/>
               <!-- valeur issue du JDV_TypeDirectiveAnticipee-CISIS (1.2.250.1.213.1.1.5.136) -->
               <code code="42348-3" displayName="Directives anticipées"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -6071,7 +6072,7 @@
           <!-- Conformité FR-Resultats (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.244"/>
           <id root="770B0DC2-A6B8-468E-8432-632B18D35F68"/>
-          <code code="30954-2" displayName="Résultats d'examens" codeSystem="2.16.840.1.113883.6.1"
+          <code code="30954-2" displayName="Résultats d’examens" codeSystem="2.16.840.1.113883.6.1"
             codeSystemName="LOINC"/>
           <title>Résultats</title>
           <text>            
@@ -6235,7 +6236,7 @@
                   <effectiveTime value="20240329"/>
                   <value xsi:type="BL" value="false"/>                  
                   <!-- Entrée FR-Commentaire-ER -->
-                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                  <entryRelationship typeCode="COMP" inversionInd="true">
                     <act classCode="ACT" moodCode="EVN">
                       <!-- Conformité Comment (CCD) -->
                       <templateId root="2.16.840.1.113883.10.20.1.40"/>
@@ -6382,7 +6383,7 @@
                     </originalText>                
                   </targetSiteCode>                  
                   <!-- Entrée FR-Commentaire-ER -->
-                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                  <entryRelationship typeCode="COMP" inversionInd="true">
                     <act classCode="ACT" moodCode="EVN">
                       <!-- Conformité Comment (CCD) -->
                       <templateId root="2.16.840.1.113883.10.20.1.40"/>
