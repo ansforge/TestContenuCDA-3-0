@@ -2,8 +2,7 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet xmlns=""
-             displayName="JDV_HL7_allergyintolerance_clinical_CISIS"
+   <ValueSet displayName="JDV_HL7_allergyintolerance_clinical_CISIS"
              id="2.16.840.1.113883.4.642.3.1372"
              revisionDate="2022-01-01T00:00:00"
              version="test">
