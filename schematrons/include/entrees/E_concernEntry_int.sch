@@ -13,7 +13,7 @@
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_concernEntry_int">
     <title>IHE PCC v3.0 Concern Entry</title>
-        <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"]'>
+    <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" and not(cda:templateId/@root="1.2.250.1.213.1.1.3.39.1")]'>
             
             <let name="count_templateId" value="count(cda:templateId)"/>
             
