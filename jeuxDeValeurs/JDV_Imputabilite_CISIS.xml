@@ -2,31 +2,32 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_Imputabilite_CISIS"
+   <ValueSet xmlns=""
+             displayName="JDV_Imputabilite_CISIS"
              id="1.2.250.1.213.1.1.5.786"
              revisionDate="2024-05-22T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="255545003"
+         <Concept code="17162000"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240522000000"
-                  displayName="certain"/>
-         <Concept code="2931005"
+                  displayName="certain(e)"/>
+         <Concept code="371930009"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240522000000"
-                  displayName="probable"/>
-         <Concept code="385434005"
+                  displayName="possible"/>
+         <Concept code="64957009"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240522000000"
-                  displayName="douteuse"/>
-         <Concept code=""
+                  displayName="incertain(e)"/>
+         <Concept code="373068000"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240522000000"
-                  displayName="à investiguer"/>
+                  displayName="indéterminé(e)"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

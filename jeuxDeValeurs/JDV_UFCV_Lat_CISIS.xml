@@ -2,7 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_UFCV_Lat_CISIS"
+   <ValueSet xmlns=""
+             displayName="JDV_UFCV_Lat_CISIS"
              id="1.2.250.1.213.1.1.4.2.4"
              revisionDate="2023-06-06T00:00:00"
              version="test">

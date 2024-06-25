@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_LocalisationPrelevement_CISIS"
+             id="1.2.250.1.213.1.1.5.717"
+             revisionDate="2023-05-25T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="76784001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230525000000"
+                  displayName="vagin"/>
+         <Concept code="36973007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230525000000"
+                  displayName="endocol utérin"/>
+         <Concept code="28349006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20230525000000"
+                  displayName="exocol utérin"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

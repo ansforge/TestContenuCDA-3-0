@@ -2,7 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_HL7_AdministrableDrugForm_CISIS"
+   <ValueSet xmlns=""
+             displayName="JDV_HL7_AdministrableDrugForm_CISIS"
              id="2.16.840.1.113883.1.11.14570"
              revisionDate="2021-10-29T00:00:00"
              version="test">

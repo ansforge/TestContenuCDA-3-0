@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet xmlns=""
+             displayName="JDV_OrigineEffetIndesirable_CISIS"
+             id="1.2.250.1.213.1.1.5.785"
+             revisionDate="2024-05-22T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="1156699004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="respecte le traitement médicamenteux"/>
+         <Concept code="1149222004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="surdosage"/>
+         <Concept code="1.2.250.1.213.1.1.5.785.1"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="mésusage ou d’un usage détourné (Demande de création SNOMED CT en cours)"/>
+         <Concept code="398240004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="erreur médicamenteuse"/>
+         <Concept code="16090731000119102"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition professionnelle à un facteur de risque"/>
+         <Concept code="79899007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="interaction médicamenteuse"/>
+         <Concept code="MED-1279"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="défaut de qualité d’un médicament ou de médicaments falsifiés"/>
+         <Concept code="95606005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition maternelle à un médicament"/>
+         <Concept code="MED-1280"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="exposition paternelle (altération potentielle des spermatozoïdes)"/>
+         <Concept code="1260078007"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240522000000"
+                  displayName="allaitement maternel"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

@@ -2,7 +2,8 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_ResultatDepistageAcideAscorbique_CISIS"
+   <ValueSet xmlns=""
+             displayName="JDV_ResultatDepistageAcideAscorbique_CISIS"
              id="1.2.250.1.213.1.1.5.783"
              revisionDate="2024-03-07T00:00:00"
              version="test">
@@ -12,16 +13,16 @@
                   dateFin=""
                   dateValid="20240307000000"
                   displayName="négatif"/>
-         <Concept code=""
+         <Concept code="1.2.250.1.213.1.1.5.783.1"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240307000000"
-                  displayName="présence + sur ++"/>
-         <Concept code=""
+                  displayName="présence + sur ++  (Demande de création SNOMED CT en cours)"/>
+         <Concept code="1.2.250.1.213.1.1.5.783.2"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240307000000"
-                  displayName="présence ++ sur ++"/>
+                  displayName="présence ++ sur ++  (Demande de création SNOMED CT en cours)"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>
