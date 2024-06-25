@@ -51,8 +51,8 @@
             [S_cancerDiagnosisSection.sch] Erreur de conformité : La section FR-Diagnostic-du-cancer doit contenir un élément "text"
         </assert>
         
-        <assert test="cda:entry/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2']">
-            [S_cancerDiagnosisSection.sch] Erreur de conformité : La section FR-Diagnostic-du-cancer doit contenir au moins une entrée FR-Liste-des-problemes (1.3.6.1.4.1.19376.1.5.3.1.4.5.2)
+        <assert test="cda:entry/cda:act/(cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'] and cda:templateId[@root='1.2.250.1.213.1.1.3.39.1'])">
+            [S_cancerDiagnosisSection.sch] Erreur de conformité : La section FR-Diagnostic-du-cancer doit contenir au moins une entrée FR-Liste-des-problemes-cancer (1.3.6.1.4.1.19376.1.5.3.1.4.5.2)
         </assert>
         
         <assert test="cda:entry/cda:act/cda:entryRelationship/cda:observation/cda:templateId[@root='1.3.6.1.4.1.19376.1.7.3.1.4.14.1']">
