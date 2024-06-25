@@ -1155,7 +1155,7 @@
               </tbody>
             </table>
           </text>
-          <!-- [1..*] Entrée FR-Liste-des-problemes : Tumeur 1 -->
+          <!-- [1..*] Entrée FR-Liste-des-problemes-cancer : Tumeur 1 -->
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <!-- Conformité CCD -->
@@ -1164,8 +1164,10 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
               <!-- Conformité IHE PCC -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-              <!-- Conformité CI-SIS FR-Probleme -->
+              <!-- Conformité FR-Liste-des-problemes CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.39"/>
+              <!-- Conformité CI-SIS -->
+              <templateId root="1.2.250.1.213.1.1.3.39.1"/>
               <id root="015B3222-62B8-4A27-801F-A414B285D58B" />
               <code nullFlavor="NA" />
               <statusCode code="active" />
