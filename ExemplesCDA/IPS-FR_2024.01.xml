@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
 
 <?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
-<?oxygen SCHSchema="../schematrons/profils/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
+<!--<?oxygen SCHSchema="../schematrons/profils/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>-->
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?> 
@@ -1757,7 +1757,7 @@
                   <templateId root="1.2.250.1.213.1.1.3.41"/>
                   <id root="C64C6013-C8AF-4938-AD10-1B7D26DEE2A0"/>
                   <!-- Type d'allergie / hypersensibilité -->
-                  <!-- valeur issue du JDV_TypeEffetIndesirablePrevisible_CISIS (1.2.250.1.213.1.1.5.794). -->
+                  <!-- valeur issue de JDV_TypeEvenementIndesirablePrevisible_CISIS  (1.2.250.1.213.1.1.5.794). -->
                   <code code="416098002" displayName="allergie médicamenteuse"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <text>
@@ -2029,7 +2029,7 @@
               <templateId root="1.2.250.1.213.1.1.3.210"/>
               <id root="C64C6013-C8AF-4938-AD10-1B7D26DEE3B1"/>
               <!-- Type d'effet indésirable -->
-              <!-- valeur issue du JDV_TypeEffetIndesirable_CISIS (1.2.250.1.213.1.1.5.785) -->
+              <!-- valeur issue de JDV_OrigineEffetIndesirable_CISIS (1.2.250.1.213.1.1.5.785) -->
               <code code="79899007" displayName="interaction médicamenteuse"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
               <text>
@@ -2173,7 +2173,7 @@
                   <text><reference value="#effet-indesirable-01-imputabilite"/></text>
                   <statusCode code="completed"/>
                   <!-- valeur du JDV_Imputabilite_CISIS (1.2.250.1.213.1.1.5.786) -->
-                  <value xsi:type="CD" code="255545003" displayName="certain"
+                  <value xsi:type="CD" code="17162000" displayName="certain(e)"
                          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#effet-indesirable-01-imputabilite"/></originalText>
                   </value>
@@ -2192,7 +2192,7 @@
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
                   <!-- valeur du JDV_Gravite_CISIS (1.2.250.1.213.1.1.5.787) -->
-                  <value xsi:type="CD" code="451771000124108" displayName="Non grave"
+                  <value xsi:type="CD" code="255604002" displayName="gravité légère"
                          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#effet-indesirable-01-gravite"/></originalText>
                   </value>
@@ -2210,7 +2210,7 @@
                   <text><reference value="#effet-indesirable-01-evolution"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
-                  <!-- valeur du JDV_Evolution_CISIS (1.2.250.1.213.1.1.5.788) -->
+                  <!-- valeur du JDV_Evolution_CISIS (1.2.250.1.213.1.1.5.788) code : (Demande de création SNOMED CT en cours)-->
                   <value xsi:type="CD" code="XXXXXX" displayName="Guérison sans séquelle"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#effet-indesirable-01-evolution"/></originalText>
