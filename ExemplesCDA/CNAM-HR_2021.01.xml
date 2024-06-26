@@ -1197,7 +1197,8 @@
               <author>
                 <time value="20190528"/>
                 <assignedAuthor>
-                  <id nullFlavor="UNK"/>
+                  <!-- Identifiant du prescripteur -->
+                  <id root="1.2.250.1.71.4.2.1" extension="10100997245" />
                   <!-- Etablissement du prescripteur -->
                   <representedOrganization>
                     <id root="1.2.250.1.71.4.2.2" extension="1750300550"/>

@@ -37,9 +37,9 @@
    <!-- Conformité spécifications du CSE -->
    <templateId root="1.2.250.1.213.1.1.1.5"/>
    <!-- Conformité spécifications CSE-MDE_2023.01 -->
-   <templateId root="1.2.250.1.213.1.1.1.5.12345.4" extension="2023.01"/>
+   <templateId root="1.2.250.1.213.1.1.1.5.4" extension="2023.01"/>
    <!-- Identifiant du document -->
-   <id root="1.2.250.1.213.1.1.1.5.4.1.1"/>
+   <id root="1.2.250.1.213.1.1.1.5.12345.4"/>
    <!-- Code du document -->
    <code code="29274-8" displayName="Mesures de signes vitaux" codeSystem="2.16.840.1.113883.6.1"/>
    <!-- Titre du document -->
