@@ -824,7 +824,8 @@
                       <author>
                         <time value="19990812"/>
                         <assignedAuthor>
-                          <id nullFlavor="UNK"/>
+                          <!-- PS identifié par son N°RPPS -->
+                          <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
                           <addr nullFlavor="NAV"/>
                           <telecom nullFlavor="NAV"/>
                           <assignedPerson>
