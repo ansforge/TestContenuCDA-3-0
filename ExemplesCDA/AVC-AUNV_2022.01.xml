@@ -40,7 +40,7 @@
   <!-- Type de document -->
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Synthèse d'épisode de soins" />
   <!-- Titre du document -->
-  <title>Fiche d'admission en unité neuro-vasculaire (AVC-AUNV)</title>
+  <title>Fiche d'admission en unité neuro-vasculaire</title>
   <!-- Date de création du document -->
   <effectiveTime value="20180923232000+0100" />
   <!-- Niveau de confidentialité du document -->

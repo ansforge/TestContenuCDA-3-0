@@ -33,7 +33,7 @@
   <!-- Type de document -->
   <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
-  <title>Fiche de suivi en unité neuro-vasculaire (AVC-SUNV)</title>
+  <title>Fiche de sortie d'unité neuro-vasculaire</title>
   <!-- Date de création du document -->
   <effectiveTime value="20181003111700+0100" />
   <!-- Niveau de confidentialité du document -->

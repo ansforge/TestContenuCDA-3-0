@@ -413,7 +413,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="MSK"/>
                       <!-- valeur issue du JDV_HL7_condition-ver-status_CISIS (2.16.840.1.113883.4.642.3.166) -->
-                      <value xsi:type="CD" code="confirmed" displayName="Confirmé" codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status" >
+                      <value xsi:type="CD" code="confirmed" displayName="Confirmé" codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status" >
                       </value>
                     </observation>
                   </entryRelationship>

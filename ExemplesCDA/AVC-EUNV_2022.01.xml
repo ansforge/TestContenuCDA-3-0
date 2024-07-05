@@ -38,7 +38,7 @@
   <!-- Type de document -->
   <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
-  <title>Fiche d'épisode de soin en unité neuro-vasculaire (AVC-EUNV)</title>
+  <title>Fiche d'épisode de soin en unité neuro-vasculaire</title>
   <!-- Date de création du document -->
   <effectiveTime value="20181001111700+0100" />
   <!-- Niveau de confidentialité du document -->

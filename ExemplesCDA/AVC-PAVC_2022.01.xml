@@ -33,7 +33,7 @@
   <!-- Type de document -->
   <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CR ou fiche de consultation ou de visite" />
   <!-- Titre du document -->
-  <title>Compte-rendu de consultation d'évaluation pluri-professionnelle post AVC (AVC-PAVC)</title>
+  <title>Compte-rendu de consultation d'évaluation pluri-professionnelle post AVC</title>
   <!-- Date de création du document -->
   <effectiveTime value="20181201110000+0100" />
   <!-- Niveau de confidentialité du document -->
