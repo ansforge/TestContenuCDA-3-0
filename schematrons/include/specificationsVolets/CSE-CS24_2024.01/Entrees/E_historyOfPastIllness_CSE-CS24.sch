@@ -31,7 +31,7 @@
             [E_historyOfPastIllness_CSE-SC24] Erreur de conformité :
             L'entrée FR-Probleme 'Accidents domestiques depuis le 9ème mois' est obligatoire.
         </assert>       
-        <assert test="cda:entry/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2']/cda:entryRelationship/cda:observation[cda:value/@code='MED-185']/cda:entryRelationship/@typeCode='CAUS'"> 
+        <assert test="not(cda:entry/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2']/cda:entryRelationship/cda:observation[@negationInd='false' and cda:value/@code='MED-185']) or cda:entry/cda:act[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2']/cda:entryRelationship/cda:observation[cda:value/@code='MED-185']/cda:entryRelationship/@typeCode='CAUS'"> 
             [E_historyOfPastIllness_CSE-SC24] Erreur de conformité : 
             La cause de l'accident domestique doit être indiquée dans un élément entryRelationship d'attribut typeCode='CAUS'
         </assert>

@@ -15,8 +15,8 @@
     <rule context='cda:ClinicalDocument/cda:recordTarget/cda:patientRole'>
          
         <!-- Teste la présence de la representedOrganisation -->
-        <assert test="cda:patient/cda:birthTime and cda:patient/cda:birthplace">
-            [Entete_CSE-CS9] La date et lieu de naissance du patient sont oblgatoirement présents dans le volet CSE
+        <assert test="cda:patient/cda:birthTime">
+            [Entete_CSE-CS9] La date de naissance du patient est oblgatoirement présente dans le volet CSE
         </assert>
         <assert test="not(cda:patient/cda:guardian/cda:guardianPerson) or cda:patient/cda:guardian/cda:guardianPerson/cda:name/cda:family">
             [Entete_CSE-CS9] Le nom de famille du représentant est obligatoirement présent
@@ -40,10 +40,10 @@
             [Entete_CSE-CS9] Erreur de conformité :
             L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
         </assert>
-        <assert test="./cda:informant/cda:relatedEntity/cda:code/@code='MTH'"> 
+        <!--<assert test="./cda:informant/cda:relatedEntity/cda:code/@code='MTH'"> 
             [Entete_CSE-CS9] Erreur de conformité : 
             La présence de la mère est obligatoire dans le volet CS9
-        </assert>
+        </assert>-->
         <assert test="./cda:documentationOf/cda:serviceEvent/cda:code/@code='11429006'"> 
             [Entete_CSE-CS9] Erreur de conformité : 
             Le code de l'acte documenté est obligatoire et est fixé à "11429006" dans le volet CS9

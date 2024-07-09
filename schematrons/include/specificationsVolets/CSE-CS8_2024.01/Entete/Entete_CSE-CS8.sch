@@ -44,8 +44,8 @@
     <rule context='cda:ClinicalDocument/cda:recordTarget/cda:patientRole'>
          
         <!-- Teste la présence de la representedOrganisation -->
-        <assert test="cda:patient/cda:birthTime and cda:patient/cda:birthplace">
-            [Entete_CSE-CS8] La date et lieu de naissance du patient sont oblgatoirement présents dans le volet CSE
+        <assert test="cda:patient/cda:birthTime">
+            [Entete_CSE-CS8] La date de naissance du patient est oblgatoirement présente dans le volet CSE
         </assert>
         <assert test="not(cda:patient/cda:guardian/cda:guardianPerson) or cda:patient/cda:guardian/cda:guardianPerson/cda:name/cda:family">
             [Entete_CSE-CS8] Le nom de famille du représentant est obligatoirement présent
