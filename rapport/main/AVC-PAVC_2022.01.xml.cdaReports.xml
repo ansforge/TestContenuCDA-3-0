@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="5bcebc4e-b436-4292-8edf-3a7047899ee2">
-    <gvr:validationOverview validationDateTime="2024-02-07T08:37:41.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="8d6d0376-2443-47aa-9934-cab4baaab691">
+    <gvr:validationOverview validationDateTime="2024-11-07T15:02:49.000Z" validationOverallResult="FAILED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
@@ -11,7 +11,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:validatorVersion>2023-06</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="16522" numberOfErrors="5" numberOfWarnings="15"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="16522" numberOfErrors="6" numberOfWarnings="15"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
@@ -19,7 +19,7 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="16520" numberOfErrors="5" numberOfWarnings="15"/>
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="16520" numberOfErrors="6" numberOfWarnings="15"/>
         <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
             <gvr:constraintDescription>(AVC-PAVC): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId/@root='1.2.250.1.213.1.1.2.85']/hl7:entry/hl7:observation[hl7:templateId/@root='1.2.250.1.213.1.1.3.37']/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-PAVC_2022/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.62-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
@@ -44,6 +44,11 @@ This disclaimer is by default added to any report stored or transformed by EVSCl
             <gvr:constraintDescription>(AVC-PAVC): Cette valeur n'est pas présente dans le JDV associé</gvr:constraintDescription>
             <gvr:formalExpression>every $a in (//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:entry/hl7:observation[hl7:code[hl7:translation/@code='MED-347']]/hl7:value/@code) satisfies $a = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-PAVC_2022/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.54-DYNAMIC.xml')//valueSet[1]/conceptList/concept/@code</gvr:formalExpression>
             <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
+            <gvr:constraintDescription>(AVC-PAVC): the element content of hl7:title SHALL be ''Compte-rendu de consultation d'évaluation pluri-professionnelle post AVC (AVC-PAVC)''. Found: "Compte-rendu de consultation d'évaluation pluri-professionnelle post AVC"</gvr:constraintDescription>
+            <gvr:formalExpression>text()='Compte-rendu de consultation d''évaluation pluri-professionnelle post AVC (AVC-PAVC)'</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/ClinicalDocument/title</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
             <gvr:constraintDescription>(FR-Problemes-actifs)/d67797e7-true-d67917e0: this element 'entryRelationship' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:templateId[@root = '2.16.840.1.113883.10.20.1.27'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.1'] | hl7:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.2'] | hl7:templateId[@root = '1.2.250.1.213.1.1.3.39'] | hl7:id[not(@nullFlavor)] | hl7:statusCode[@code = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/AVC-PAVC_2022/_pre_compilation/include/voc-2.16.840.1.113883.1.11.15933-DYNAMIC.xml')//valueSet[1]/conceptList/*/@code or @nullFlavor] | hl7:code[@nullFlavor = 'NA'] | hl7:effectiveTime[hl7:low] | hl7:entryRelationship[hl7:observation[hl7:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.5']]] (rule-reference: d67797e7-true-d67917e0)</gvr:constraintDescription>
