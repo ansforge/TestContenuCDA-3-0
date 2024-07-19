@@ -4,34 +4,34 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_OMSEchPerf_CISIS"
              id="1.2.250.1.213.1.1.4.2.281.1"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-240"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Stade 0"/>
+                  dateValid="20240718000000"
+                  displayName="Echelle de Performance OMS Stade 0"/>
          <Concept code="MED-264"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Stade 1"/>
+                  dateValid="20240718000000"
+                  displayName="Echelle de Performance OMS Stade 1"/>
          <Concept code="MED-265"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Stade 2"/>
+                  dateValid="20240718000000"
+                  displayName="Echelle de Performance OMS Stade 2"/>
          <Concept code="MED-266"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Stade 3"/>
+                  dateValid="20240718000000"
+                  displayName="Echelle de Performance OMS Stade 3"/>
          <Concept code="MED-267"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Stade 4"/>
+                  dateValid="20240718000000"
+                  displayName="Echelle de Performance OMS Stade 4"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

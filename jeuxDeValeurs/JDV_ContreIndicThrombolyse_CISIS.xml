@@ -4,14 +4,14 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ContreIndicThrombolyse_CISIS"
              id="1.2.250.1.213.1.1.5.170"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="PAT-056"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Age &lt; 18 ans &gt; 80 ans"/>
+                  dateValid="20240719000000"
+                  displayName="Age &lt; 18 ans et &gt; 80 ans"/>
          <Concept code="MED-353"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
@@ -101,7 +101,7 @@
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Massage cardiaque externe traumatique &lt;10 jours"/>
+                  displayName="Massage cardiaque externe traumatique &lt; 10 jours"/>
          <Concept code="MED-371"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""

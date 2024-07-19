@@ -1212,8 +1212,8 @@
                     <!-- Latéralité -->
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                      <!-- code latéralité : JDV_LateraliteNCIT_CISIS (1.2.250.1.213.1.1.5.586) -->
-                      <value code="C25228" displayName="droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT">
+                      <!-- code latéralité : JDV_ModificateurTopographique_CISIS (1.2.250.1.213.1.1.5.688) -->
+                      <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                         <originalText><reference value="#lateralite-1" /></originalText>
                       </value>
                     </qualifier>
@@ -3044,7 +3044,7 @@
       <component>
         <section>
           <!-- Conformité CI-SIS FR-Cadre-de-la-proposition-therapeutique -->
-          <templateId root="1.2.250.1.213.1.1.2.45" />
+          <templateId root="1.2.250.1.213.1.1.2.175" />
           <id root="F52D9DC1-4FD7-4AE9-AC2C-6976BADB1658" />
           <code code="35510-7" displayName="Essais cliniques - Informations générales" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>CADRE DE LA PROPOSITION THÉRAPEUTIQUE</title>

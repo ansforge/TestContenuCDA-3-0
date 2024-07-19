@@ -171,7 +171,7 @@
                   codeSystem="2.16.840.1.113883.5.83"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Sensible à la dose dépendante"/>
+                  displayName="Sensible à forte dose"/>
          <Concept code="SYN-R"
                   codeSystem="2.16.840.1.113883.5.83"
                   dateFin=""

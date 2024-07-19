@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ArtereCervelet_CISIS"
              id="1.2.250.1.213.1.1.5.210"
-             revisionDate="2023-07-07T00:00:00"
+             revisionDate="2024-07-16T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="17232002"
@@ -12,10 +12,10 @@
                   dateFin=""
                   dateValid="20230707000000"
                   displayName="artère cérébrale moyenne"/>
-         <Concept code="AVC-130"
+         <Concept code="MED-489"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
+                  dateValid="20240716000000"
                   displayName="Artère cérébelleuse inférieure (ACI)"/>
          <Concept code="51691006"
                   codeSystem="2.16.840.1.113883.6.96"

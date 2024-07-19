@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TNM_pTNM_pT_3_CISIS"
              id="1.2.250.1.213.1.1.5.523"
-             revisionDate="2021-01-01T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-787"
@@ -25,8 +25,8 @@
          <Concept code="MED-793"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210101000000"
-                  displayName="Envahissement de la séreuse"/>
+                  dateValid="20240718000000"
+                  displayName="Envahissement de la séreuse (revêtement mésothélial)"/>
          <Concept code="MED-821"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""

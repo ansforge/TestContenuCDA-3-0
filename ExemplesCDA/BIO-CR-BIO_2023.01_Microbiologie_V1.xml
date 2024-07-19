@@ -822,6 +822,8 @@
                       <value xsi:type="CD">
                         <originalText><reference value="#CBU-couleur-resultat" /></originalText>
                       </value>
+                      <methodCode code="MA" displayName="Observation macroscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Aspect -->
@@ -839,6 +841,8 @@
                       <value xsi:type="CD">
                         <originalText><reference value="#CBU-aspect-resultat" /></originalText>
                       </value>
+                      <methodCode code="MA" displayName="Observation macroscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                 </organizer>
@@ -868,6 +872,8 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20230104131933+0100" />
                       <value xsi:type="PQ" value="500" unit="/mL" />
+                      <methodCode code="DC" displayName="Cytométrie en flux" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Érythrocytes -->
@@ -883,6 +889,8 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20230104131933+0100" />
                       <value xsi:type="PQ" value="200" unit="/mL" />
+                      <methodCode code="DC" displayName="Cytométrie en flux" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Cellules épithéliales -->
@@ -900,6 +908,8 @@
                       <value xsi:type="CD">
                         <originalText><reference value="#CBU-epitheliales-resultat" /></originalText>
                       </value>
+                      <methodCode code="MI" displayName="Observation microscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Coloration Gram -->
@@ -917,6 +927,8 @@
                       <value xsi:type="CD">
                         <originalText><reference value="#CBU-gram-resultat" /></originalText>
                       </value>
+                      <methodCode code="MI" displayName="Observation microscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                 </organizer>
@@ -958,6 +970,8 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20230104155000+0100" />
                       <value xsi:type="PQ" value="100000" unit="/mL" />
+                      <methodCode code="DC" displayName="Cytométrie en flux" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- Entrée FR-Batterie-examens-de-biologie : Résultats de l’antibiogramme -->

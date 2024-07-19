@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_MotifDiagnostic_CISIS"
              id="1.2.250.1.213.1.1.5.35"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-1056"
@@ -20,8 +20,8 @@
          <Concept code="MED-111"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Clinique et Mammographique"/>
+                  dateValid="20240719000000"
+                  displayName="Clinique et mammographique"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_UFCV_TypEndoPt_CISIS"
              id="1.2.250.1.213.1.1.4.2.20"
-             revisionDate="2024-04-23T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="P07040201"
@@ -20,8 +20,8 @@
          <Concept code="P07040202"
                   codeSystem="1.2.250.1.213.2.68"
                   dateFin=""
-                  dateValid="20240423000000"
-                  displayName="NDOPROTHÈSES VASCULAIRES PÉRIPHÉRIQUES DITES &#34;STENTS PÉRIPHÉRIQUES&#34;"/>
+                  dateValid="20240719000000"
+                  displayName="ENDOPROTHÈSES VASCULAIRES PÉRIPHÉRIQUES DITES &#34;STENTS PÉRIPHÉRIQUES&#34;"/>
          <Concept code="P07040199"
                   codeSystem="1.2.250.1.213.2.68"
                   dateFin=""

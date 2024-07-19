@@ -112,7 +112,7 @@
             <assert test='.//cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.36"]'>
                 [CI-SIS_CANCER-FRCP_2022.01] : Erreur de conformité : La section FR-Plan-de-soins doit être présente dans le document.
             </assert>
-            <assert test='.//cda:templateId[@root = "1.2.250.1.213.1.1.2.45"]'>
+            <assert test='.//cda:templateId[@root = "1.2.250.1.213.1.1.2.175"]'>
                 [CI-SIS_CANCER-FRCP_2022.01] : Erreur de conformité : La section FR-Cadre-de-la-proposition-therapeutique doit être présente dans le document.
             </assert>            
             <assert test='.//cda:templateId[@root = "1.2.250.1.213.1.1.2.33"]'>

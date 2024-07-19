@@ -4,14 +4,14 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ScoreDuke_CISIS"
              id="1.2.250.1.213.1.1.5.493"
-             revisionDate="2020-03-31T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-589"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20200331000000"
-                  displayName="Aptitude physique excellente (Score de Duke sup. à 10 MET)"/>
+                  dateValid="20240719000000"
+                  displayName="Aptitude physique excellente (Score de Duke &gt; 10 MET)"/>
          <Concept code="MED-590"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
@@ -26,7 +26,7 @@
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20200331000000"
-                  displayName="Aptitude physique faible (Score de Duke inf. à 4 MET)"/>
+                  displayName="Aptitude physique faible (Score de Duke &lt; 4 MET)"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ComplicationPulmonaire_CISIS"
              id="1.2.250.1.213.1.1.5.219"
-             revisionDate="2023-11-14T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="J22"
@@ -15,8 +15,8 @@
          <Concept code="MED-511"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Troubles respiratoires justifiant une ventilation"/>
+                  dateValid="20240718000000"
+                  displayName="Troubles respiratoires justifiant une ventilation assistée"/>
          <Concept code="MED-505"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""

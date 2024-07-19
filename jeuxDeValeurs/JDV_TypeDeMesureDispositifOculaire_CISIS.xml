@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeDeMesureDispositifOculaire_CISIS"
              id="1.2.250.1.213.1.1.5.643"
-             revisionDate="2023-03-30T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-1179"
@@ -15,8 +15,8 @@
          <Concept code="28818-3"
                   codeSystem="2.16.840.1.113883.6.1"
                   dateFin=""
-                  dateValid="20210622000000"
-                  displayName="Types de verres prescrits "/>
+                  dateValid="20240718000000"
+                  displayName="Types de verres prescrits"/>
          <Concept code="MED-1067"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
@@ -26,17 +26,17 @@
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20210622000000"
-                  displayName="Types de verres délivrés "/>
+                  displayName="Types de verres délivrés"/>
          <Concept code="28866-2"
                   codeSystem="2.16.840.1.113883.6.1"
                   dateFin=""
                   dateValid="20210622000000"
-                  displayName="Lentilles prescrites "/>
+                  displayName="Lentilles prescrites"/>
          <Concept code="28868-8"
                   codeSystem="2.16.840.1.113883.6.1"
                   dateFin=""
                   dateValid="20230330000000"
-                  displayName="Lentilles délivrées "/>
+                  displayName="Lentilles délivrées"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

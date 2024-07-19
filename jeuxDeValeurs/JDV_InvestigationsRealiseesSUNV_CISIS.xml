@@ -4,13 +4,13 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_InvestigationsRealiseesSUNV_CISIS"
              id="1.2.250.1.213.1.1.5.229"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-07-16T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="MED-381"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+         <Concept code="75859-9"
+                  codeSystem="2.16.840.1.113883.6.1"
                   dateFin=""
-                  dateValid="20100101000000"
+                  dateValid="20240716000000"
                   displayName="Score de Rankin"/>
          <Concept code="72089-6"
                   codeSystem="2.16.840.1.113883.6.1"

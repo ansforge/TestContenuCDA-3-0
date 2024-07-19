@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_MotifDeclenchementTravail_CISIS"
              id="1.2.250.1.213.1.1.5.745"
-             revisionDate="2023-08-03T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="O48"
@@ -27,10 +27,10 @@
                   dateFin=""
                   dateValid="20230201000000"
                   displayName="Avortement médical"/>
-         <Concept code="MED-1242"
+         <Concept code="MED-1283"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20230803000000"
+                  dateValid="20240718000000"
                   displayName="Sans indication médicale"/>
          <Concept code="MED-219"
                   codeSystem="1.2.250.1.213.1.1.4.322"

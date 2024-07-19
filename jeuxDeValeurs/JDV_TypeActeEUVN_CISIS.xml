@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeActeEUVN_CISIS"
              id="1.2.250.1.213.1.1.5.228"
-             revisionDate="2023-08-03T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="392031002"
@@ -30,8 +30,8 @@
          <Concept code="MED-512"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Pose Valve / Dérivation externe"/>
+                  dateValid="20240719000000"
+                  displayName="Pose d'une valve / d'une dérivation externe"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

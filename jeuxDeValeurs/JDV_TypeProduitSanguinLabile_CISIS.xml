@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeProduitSanguinLabile_CISIS"
              id="1.2.250.1.213.1.1.5.592"
-             revisionDate="2023-02-02T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="C15409"
@@ -25,8 +25,8 @@
          <Concept code="GEN-092.03.06"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20230202000000"
-                  displayName="Autre"/>
+                  dateValid="20240719000000"
+                  displayName="Autre type de produit sanguin labile"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

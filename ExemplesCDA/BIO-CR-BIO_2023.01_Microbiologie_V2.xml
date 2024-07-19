@@ -924,6 +924,8 @@
                       <value xsi:type="CD">
                         <originalText><reference value="#CBU-gram-resultat" /></originalText>
                       </value>
+                      <methodCode code="MI" displayName="Observation microscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                 </organizer>
@@ -995,6 +997,8 @@
                           </value>
                           <!-- Interprétation : valeur issue du JDV_HL7_ObservationInterpretation-CISIS (2.16.840.1.113883.1.11.78) -->
                           <interpretationCode code="R" displayName="Résistant" codeSystem="2.16.840.1.113883.5.83" />
+                          <methodCode code="BDB" displayName="Antibiogramme - bandette gradient" 
+                            codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                         </observation>
                       </component>
                       <!-- entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Ampicilline -->
@@ -1014,6 +1018,8 @@
                           </value>
                           <!-- Interprétation : valeur issue du JDV_HL7_ObservationInterpretation-CISIS (2.16.840.1.113883.1.11.78) -->
                           <interpretationCode code="I" displayName="Intermédiaire" codeSystem="2.16.840.1.113883.5.83" />
+                          <methodCode code="BDB" displayName="Antibiogramme - bandette gradient" 
+                            codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                         </observation>
                       </component>
                       <!-- entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent : Gentamicine -->
@@ -1033,6 +1039,8 @@
                           </value>
                           <!-- Interprétation : valeur issue du JDV_HL7_ObservationInterpretation-CISIS (2.16.840.1.113883.1.11.78) -->
                           <interpretationCode code="S" displayName="Sensible" codeSystem="2.16.840.1.113883.5.83" />
+                          <methodCode code="BDB" displayName="Antibiogramme - bandette gradient" 
+                            codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                         </observation>
                       </component>
                     </organizer>
@@ -1076,6 +1084,8 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20230104155000+0100" />
                       <value xsi:type="PQ" value="200000" unit="/mL" />
+                      <methodCode code="DC" displayName="Cytométrie en flux" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                   <!-- Entrée FR-Batterie-examens-de-biologie : Résultats de l’antibiogramme -->

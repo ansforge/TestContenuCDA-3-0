@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_UFCV_CodEntree_CISIS"
              id="1.2.250.1.213.1.1.4.2.19"
-             revisionDate="2024-03-15T00:00:00"
+             revisionDate="2024-07-16T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="L0001"
@@ -197,10 +197,10 @@
                   dateFin=""
                   dateValid="20100101000000"
                   displayName="Dispositif"/>
-         <Concept code="L0059"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+         <Concept code="74715-4"
+                  codeSystem="2.16.840.1.113883.6.1"
                   dateFin=""
-                  dateValid="20100101000000"
+                  dateValid="20240716000000"
                   displayName="Numéro de Série"/>
          <Concept code="L0060"
                   codeSystem="1.2.250.1.213.1.1.4.322"

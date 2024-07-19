@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_EncompassingEncounterCode_CISIS"
              id="1.2.250.1.213.1.1.5.18"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-07-19T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="AMB"
@@ -30,8 +30,8 @@
          <Concept code="IMP"
                   codeSystem="2.16.840.1.113883.5.4"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Hospitalisation (établissement, y compris HAD"/>
+                  dateValid="20240719000000"
+                  displayName="Hospitalisation (établissement, y compris HAD)"/>
          <Concept code="SS"
                   codeSystem="2.16.840.1.113883.5.4"
                   dateFin=""

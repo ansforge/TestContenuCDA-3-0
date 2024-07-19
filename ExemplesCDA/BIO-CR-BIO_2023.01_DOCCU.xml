@@ -755,7 +755,7 @@
             <!-- Conformité FR-Resultats-examens-de-biologie-medicale (CI-SIS) -->
             <templateId root="1.2.250.1.213.1.1.3.21"/>
             <act classCode="ACT" moodCode="EVN">
-              <code code="26438-2" displayName="Cytologie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <code code="18725-2" displayName="Microbiologie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <statusCode code="completed" />              
               <!-- Laboratoire executant -->
               <performer typeCode="PRF">
@@ -896,7 +896,9 @@
                       <value xsi:type="CD" code="1269497006" displayName="ADN d'HPV-HR détecté"
                             codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                         <originalText><reference value="#examen-01-resultat"/></originalText>
-                      </value>     
+                      </value>
+                      <methodCode code="GUF" displayName="PCR/RT PCR - Point final" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                       
                       <!-- [0..1] Trousse de détection HPV -->
                       <participant typeCode="DEV">
@@ -1089,6 +1091,8 @@
                             codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                         <originalText><reference value="#examen-02-resultat"/></originalText>
                       </value>
+                      <methodCode code="MI" displayName="Observation microscopique" 
+                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                       <!-- Résultat antérieur : Dernier test cytologique réalisé -->
                       <entryRelationship typeCode="REFR">
                         <observation classCode="OBS" moodCode="EVN">

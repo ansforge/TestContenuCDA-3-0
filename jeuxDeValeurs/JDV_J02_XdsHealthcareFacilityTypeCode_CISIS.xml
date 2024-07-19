@@ -2,12 +2,12 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240531120000"
+             dateMaj="20240628120000"
              dateValid="20141008000000"
              description="XDS healthcareFacilityTypeCode CI-SIS"
              displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS.tabs"
              id="1.2.250.1.213.1.1.5.466"
-             revisionDate="2024-05-31T12:00:00"
+             revisionDate="2024-06-28T12:00:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS">
       <ConceptList>
@@ -201,6 +201,9 @@
          <Concept code="SA64"
                   codeSystem="1.2.250.1.71.4.2.4"
                   displayName="Société de téléconsultation"/>
+         <Concept code="SA65"
+                  codeSystem="1.2.250.1.71.4.2.4"
+                  displayName="Antenne de pharmacie"/>
          <Concept code="SA66"
                   codeSystem="1.2.250.1.71.4.2.4"
                   displayName="Services de Prévention et de Santé au Travail (SPST)"/>

@@ -33,7 +33,7 @@
                   dateValid="20100101000000"
                   displayName="Hospitalisation traditionnelle"/>
          <Concept code="11429006"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20231114000000"
                   displayName="Consultation"/>

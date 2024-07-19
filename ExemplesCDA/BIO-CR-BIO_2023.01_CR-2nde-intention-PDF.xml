@@ -680,6 +680,8 @@
 											<value xsi:type="REAL" value="2.0"/>
 											<interpretationCode code="N" displayName="Normal"
 												codeSystem="2.16.840.1.113883.5.83"/>
+											<methodCode code="HPX" displayName="Chronométrie - Chronométrie" 
+												codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
 										</observation>
 									</entryRelationship>
 								</act>

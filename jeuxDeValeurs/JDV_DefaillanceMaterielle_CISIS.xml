@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_DefaillanceMaterielle_CISIS"
              id="1.2.250.1.213.1.1.5.526"
-             revisionDate="2023-04-27T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="A090000"
@@ -46,12 +46,12 @@
                   codeSystem="1.2.250.1.213.2.68"
                   dateFin=""
                   dateValid="20210604000000"
-                  displayName="ÉQUIPEMENTS DE PERFUSION "/>
+                  displayName="ÉQUIPEMENTS DE PERFUSION"/>
          <Concept code="Z1203"
                   codeSystem="1.2.250.1.213.2.68"
                   dateFin=""
-                  dateValid="20210604000000"
-                  displayName="MONITORAGE"/>
+                  dateValid="20240718000000"
+                  displayName="ÉQUIPEMENTS DE SURVEILLANCE DES SIGNAUX VITAUX ET DE MAINTIEN DES FONCTIONS VITALES"/>
          <Concept code="Z1203019001"
                   codeSystem="1.2.250.1.213.2.68"
                   dateFin=""

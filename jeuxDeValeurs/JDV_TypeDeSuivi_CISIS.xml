@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeDeSuivi_CISIS"
              id="1.2.250.1.213.1.1.5.76"
-             revisionDate="2023-11-14T00:00:00"
+             revisionDate="2024-07-18T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="MED-091"
@@ -15,10 +15,10 @@
          <Concept code="MED-092"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20100101000000"
-                  displayName="Examen d’imagerie Médicale"/>
+                  dateValid="20240718000000"
+                  displayName="Examen d’imagerie médicale"/>
          <Concept code="11429006"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20231114000000"
                   displayName="Consultation"/>
