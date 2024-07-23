@@ -1718,8 +1718,8 @@
               <!-- Date de l'acte -->
               <effectiveTime value="20180114"/>
               <!-- Voie d’abord -->
-              <approachSiteCode code="20023000" displayName="Voie intraartérielle"
-                codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
+              <approachSiteCode code="229801003" displayName="intra-arterial"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
               <!-- Localisation anatomique -->
               <targetSiteCode code="41801008" displayName="artère coronaire"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
@@ -1803,8 +1803,8 @@
               <!-- Date de l'acte -->
               <effectiveTime value="20161208"/>
               <!-- Voie d’abord -->
-              <approachSiteCode code="20023000" displayName="Voie intraartérielle"
-                codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/>
+              <approachSiteCode code="229801003" displayName="intra-arterial"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
               <!-- Entrée FR-Commentaire-ER -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <act classCode="ACT" moodCode="EVN">
