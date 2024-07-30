@@ -36,9 +36,9 @@
             [Entete_CSE-CS9] Erreur de conformité : 
             L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>.
         </assert>  
-        <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
+        <assert test="not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS9] Erreur de conformité :
-            L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
+            Seule l'utilisation des composants élémentaires de l’adresse est autorisée.
         </assert>
         <!--<assert test="./cda:informant/cda:relatedEntity/cda:code/@code='MTH'"> 
             [Entete_CSE-CS9] Erreur de conformité : 
@@ -88,10 +88,9 @@
             [Entete_CSE-CS9] Erreur de conformité :
             Le nom de la structure est obligatoire.
         </assert>
-        <assert test="cda:representedOrganization/cda:addr/cda:postalCode"> 
+        <assert test="not(cda:representedOrganization/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS9] Erreur de conformité :
-            L'adresse de la structure est obligatoire. 
-            L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
+            Seule l'utilisation des composants élémentaires de l’adresse est autorisée.
         </assert>
         
     </rule>

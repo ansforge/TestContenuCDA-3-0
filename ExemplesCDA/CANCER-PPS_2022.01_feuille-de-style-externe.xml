@@ -2495,7 +2495,7 @@
                     codeSystemName="TA_ASIP">
                     <qualifier>
                       <value code="11429006" displayName="consultation"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="SNOMED CT"/>
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </code>
                   <text><reference value="#suivi-actif-consultation"/></text>

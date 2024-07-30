@@ -4024,7 +4024,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.20.3.1"/>
               <!-- Conformité FR-Demande-d-examen-ou-de-suivi (FR CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.27"/>
-              <id root="f83d3db2-c511-4cfa-b216-773f6deadb4d"/>
+              <id root="F83D3DB2-C511-4CFA-B216-773F6DEADB4D"/>
               <!-- Type d’examen -->
               <code code="22748-8" displayName="Cholestérol LDL [Moles/Volume] Sérum/Plasma ; Numérique" 
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -4061,7 +4061,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.20.3.1"/>
               <!-- Conformité FR-Demande-d-examen-ou-de-suivi (FR CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.27"/>
-              <id root="f83d3db2-c511-4cfa-b216-773f6deadb4E"/>
+              <id root="F83D3DB2-C511-4CFA-B216-773F6DEADB4E"/>
               <!-- Autre demande d’examen ou de suivi -->
               <code code="GEN-092.04.20" displayName="Autre demande d’examen ou de suivi"
                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
@@ -4187,7 +4187,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
               <!-- Conformité FR-Rencontre (FR CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.58"/>
-              <id root="4AA6dcfc-6628-42e7-8d6f-68621568f584"/>
+              <id root="4AA6DCFC-6628-42E7-8D6F-68621568F584"/>
               <!-- Type de Rencontre : Valeur issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) -->
               <code code="AMB" displayName="Ambulatoire"
                 codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode"/>

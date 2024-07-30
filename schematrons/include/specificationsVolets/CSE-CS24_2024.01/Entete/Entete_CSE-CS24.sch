@@ -41,9 +41,9 @@
             L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>. 
         </assert>
         
-        <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
+        <assert test="not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS24] Erreur de conformité :
-            L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
+            Seule l'utilisation des composants élémentaires de l’adresse est autorisée.
         </assert>
         
     </rule>
@@ -62,9 +62,9 @@
             [Entete_CSE-CS24] Erreur de conformité :
             Le nom de l’organisation est obligatoire.
         </assert>
-        <assert test="cda:representedOrganization/cda:addr/cda:postalCode"> 
+        <assert test="not(cda:representedOrganization/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS24] Erreur de conformité :
-            L'adresse de l’organisation est obligatoire. L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
+            Seule l'utilisation des composants élémentaires de l’adresse est autorisée.
         </assert>
         
     </rule>
