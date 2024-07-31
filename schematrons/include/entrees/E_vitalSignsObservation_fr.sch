@@ -26,7 +26,7 @@
             [E_vitalSignsObservation_fr.sch] Erreur de conformité CI-SIS : L'élément 'text' doit être présent et contenir un élément 'reference'
         </assert>
         <assert test="cda:statusCode[@code='completed']">
-            [E_vitalSignsObservation_fr.sch] Erreur de conformité CI-SIS : L'élément 'statusCode' est obligatoir et l'attribut @code est fixé à 'Completed'
+            [E_vitalSignsObservation_fr.sch] Erreur de conformité CI-SIS : L'élément 'statusCode' est obligatoir et l'attribut @code est fixé à 'completed'
         </assert>
         
         <assert test="$count_interpretationCode &lt;=1">

@@ -53,64 +53,64 @@
         </assert>-->
         
         <!-- Fréquence respiratoire -->
-        <assert test='not(cda:code[@code="9279-1"]) or (cda:code[@code="9279-1"] and cda:value[@unit="/min"])'>
+        <assert test='not(cda:code[@code="9279-1"]) or (cda:code[@code="9279-1"] and cda:value[@unit="/min"]) or (cda:code[@code="9279-1"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la fréquence respiratoire (9279-1) 
             est un nombre indénombrable s'exprimant en min-1 (/min).
         </assert>
         
         <!-- Fréquence cardiaque -->
-        <assert test='not(cda:code[@code="8867-4"]) or (cda:code[@code="8867-4"] and cda:value[@unit="/min"])'>
+        <assert test='not(cda:code[@code="8867-4"]) or (cda:code[@code="8867-4"] and cda:value[@unit="/min"]) or (cda:code[@code="8867-4"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la fréquence cardiaque (8867-4) 
             est un nombre indénombrable s'exprimant en min-1 (/min).
         </assert>
         
         <!-- Saturation en oxygène -->
-        <assert test='not(cda:code[@code="2708-6"]) or (cda:code[@code="2708-6"] and cda:value[@unit="%"])'>
+        <assert test='not(cda:code[@code="2708-6"]) or (cda:code[@code="2708-6"] and cda:value[@unit="%"]) or (cda:code[@code="2708-6"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la saturation en oxygène (2708-6)
             est un nombre indénombrable s'exprimant en pourçentage (%).
         </assert>
         
         <!-- Pression artérielle systolique -->
-        <assert test='not(cda:code[@code="8480-6"]) or (cda:code[@code="8480-6"] and cda:value[@unit="mm[Hg]"])'>
+        <assert test='not(cda:code[@code="8480-6"]) or (cda:code[@code="8480-6"] and cda:value[@unit="mm[Hg]"]) or (cda:code[@code="8480-6"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la pression artérielle systolique (8480-6)
             est un nombre indénombrable s'exprimant en millimètres de mercure (mm[Hg]).
         </assert>
         
         <!-- Pression artérielle diastolique -->
-        <assert test='not(cda:code[@code="8462-4"]) or (cda:code[@code="8462-4"] and cda:value[@unit="mm[Hg]"])'>
+        <assert test='not(cda:code[@code="8462-4"]) or (cda:code[@code="8462-4"] and cda:value[@unit="mm[Hg]"]) or (cda:code[@code="8462-4"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la pression artérielle diastolique (8462-4)
             est un nombre indénombrable s'exprimant en millimètres de mercure (mm[Hg]).
         </assert>
         
         <!-- Température corporelle -->
-        <assert test='not(cda:code[@code="8310-5"]) or (cda:code[@code="8310-5"] and cda:value[@unit="Cel" or @unit="[degF]"])'>
+        <assert test='not(cda:code[@code="8310-5"]) or (cda:code[@code="8310-5"] and cda:value[@unit="Cel" or @unit="[degF]"]) or (cda:code[@code="8310-5"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la Température corporelle (8310-5)
             est un nombre indénombrable s'exprimant en degrés Celsius (Cel) ou en degré Fahrenheit ([degF]).
         </assert>
         
         <!-- Taille -->
-        <assert test='not(cda:code[@code="8302-2"]) or (cda:code[@code="8302-2"] and cda:value[@unit="m" or  @unit="cm" or @unit="[in_us]" or @unit="[in_uk]"])'>
+        <assert test='not(cda:code[@code="8302-2"]) or (cda:code[@code="8302-2"] and cda:value[@unit="m" or  @unit="cm" or @unit="[in_us]" or @unit="[in_uk]"]) or (cda:code[@code="8302-2"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure de la Taille (8302-2)
             est un nombre indénombrable s'exprimant en degrés mètres (m), en centimètres (cm),
             en inches US ([in_us]) ou en inches UK [in_uk].
         </assert>
         
         <!-- Périmètre crânien (Mesuré) -->
-        <assert test='not(cda:code[@code="8287-5"]) or (cda:code[@code="8287-5"] and cda:value[@unit="m" or  @unit="cm" or @unit="[in_us]" or @unit="[in_uk]"])'>
+        <assert test='not(cda:code[@code="8287-5"]) or (cda:code[@code="8287-5"] and cda:value[@unit="m" or  @unit="cm" or @unit="[in_us]" or @unit="[in_uk]"]) or (cda:code[@code="8287-5"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure du Périmètre crânien (8287-5)
             est un nombre indénombrable s'exprimant en degrés mètres (m), en centimètres (cm),
             en inches US ([in_us]) ou en inches UK [in_uk].
         </assert>
         
         <!-- Poids -->
-        <assert test='not(cda:code[@code="29463-7"]) or (cda:code[@code="29463-7"] and cda:value[@unit="kg" or @unit="g" or @unit="[lb_av]" or @unit="[oz_av]"])'>
+        <assert test='not(cda:code[@code="29463-7"]) or (cda:code[@code="29463-7"] and cda:value[@unit="kg" or @unit="g" or @unit="[lb_av]" or @unit="[oz_av]"]) or (cda:code[@code="29463-7"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : la mesure du Poids corporel (29463-7)
             est un nombre indénombrable s'exprimant en kilogrammes (kg), en grammes (g),
             en livres avoirdupois ([lb_av]) ou en onces avoirdupois [oz_av].
         </assert>
         
         <!-- IMC -->
-        <assert test='not(cda:code[@code="39156-5"]) or (cda:code[@code="39156-5"] and cda:value[@unit="kg/m2"])'>
+        <assert test='not(cda:code[@code="39156-5"]) or (cda:code[@code="39156-5"] and cda:value[@unit="kg/m2"]) or (cda:code[@code="39156-5"] and cda:value[@nullFlavor])'>
             [E_vitalSignsObservation_int.sch] Erreur de conformité PCC : L'indice de masse corporelle (39156-5)
             est un nombre indénombrable s'exprimant en kilogrammes par m carré (kg/m2)
         </assert>
