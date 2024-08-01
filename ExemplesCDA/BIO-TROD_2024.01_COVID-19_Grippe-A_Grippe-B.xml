@@ -11,7 +11,7 @@
    xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
    <!-- 
       **********************************************************************************************************
-      Document : Biologie - Attestation de dépistage (BIO-TROD_2024.01)
+      Document : Biologie - Test rapide d'orientation diagnostique (BIO-TROD_2024.01)
       Auteur : ANS
       **********************************************************************************************************
       format HL7 - CDA Release 2 N3
