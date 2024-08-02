@@ -1010,7 +1010,7 @@
                           <c:name code="20228-3" displayName="Latéralité"
                             codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <!-- code latéralité : JDV_ModificateurTopographique_CISIS  (1.2.250.1.213.1.1.5.688) -->
-                          <c:value xsi:type="c:CD" code="24028007" displayName="droit"
+                          <c:value xsi:type="c:CE" code="24028007" displayName="droit"
                             codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                             <c:originalText><c:reference value="#lateralite-1"/></c:originalText>
                           </c:value>
