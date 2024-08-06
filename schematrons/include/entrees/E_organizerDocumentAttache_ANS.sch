@@ -33,7 +33,7 @@
             [E_organizerDocumentAttache_ANS.sch] Erreur de conformité CI-SIS : Dansl'entrée FR-Document-attache,il doit y avoir au moins une simple observation
             (templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13')
         </assert>
-        <assert test="cda:component/cda:observationMedia[@classCode = 'OBS' and @moodCode = 'EVN']/cda:value[@mediaType and @representation = 'B64']">
+        <assert test="(cda:component/cda:observationMedia[@classCode = 'OBS' and @moodCode = 'EVN']/cda:value[@mediaType and @representation = 'B64']) or cda:component/cda:observationMedia[@classCode = 'OBS' and @moodCode = 'EVN']/cda:value[@nullFlavor]">
             [E_organizerDocumentAttache_ANS.sch] Erreur de conformité CI-SIS : Dansl'entrée FR-Document-attache, il doit y avoir au moins un observation media, contenant
             une value dont le XPath est le suivant :
             cda:component/cda:observationMedia[@classCode='OBS' and

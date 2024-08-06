@@ -2,12 +2,12 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240426120000"
+             dateMaj="20240726120000"
              dateValid="20130123000000"
              description="XDS typeCode CI-SIS"
              displayName="JDV_J07_XdsTypeCode_CISIS.tabs"
              id="1.2.250.1.213.1.1.5.471"
-             revisionDate="2024-04-26T12:00:00"
+             revisionDate="2024-07-26T12:00:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS">
       <ConceptList>
@@ -250,7 +250,7 @@
                   displayName="Fiche de transfert vers le service des urgences"/>
          <Concept code="74207-2"
                   codeSystem="2.16.840.1.113883.6.1"
-                  displayName="Dossier de liaison d'urgence"/>
+                  displayName="Document de liaison d'urgence"/>
          <Concept code="74465-6"
                   codeSystem="2.16.840.1.113883.6.1"
                   displayName="Questionnaire patient"/>
@@ -328,7 +328,7 @@
                   displayName="COVID-19 Attestation de vaccination"/>
          <Concept code="96173-0"
                   codeSystem="2.16.840.1.113883.6.1"
-                  displayName="Attestation de dépistage"/>
+                  displayName="Test rapide d'orientation diagnostique"/>
          <Concept code="E1762" codeSystem="ASTM" displayName="Full Document"/>
          <Concept code="57055-6"
                   codeSystem="2.16.840.1.113883.6.1"

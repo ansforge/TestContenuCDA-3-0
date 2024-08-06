@@ -596,7 +596,7 @@
                   codeSystem="1.2.250.1.213.2.3.5"
                   dateFin=""
                   dateValid="20240524000000"
-                  displayName="Observation macroscopique "/>
+                  displayName="Observation macroscopique"/>
          <Concept code="MFD"
                   codeSystem="1.2.250.1.213.2.3.5"
                   dateFin=""
