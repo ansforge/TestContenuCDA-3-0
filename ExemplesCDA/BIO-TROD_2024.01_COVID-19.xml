@@ -363,14 +363,14 @@
                   <table border="0">
                      <thead>
                         <tr>
-                           <th>Code UDI-DI du dispositif utilisé</th>
-                           <th>Fabricant | Référence | N° de lot</th>
+                           <th>Code UDI du dispositif utilisé</th>
+                           <th>Fabricant | Référence | N° de lot | Date de péremption</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>00686597200018</td>
-                           <td><content ID="dispositif-nom-reference">bioLytical Laboratories Inc. | 90-1112 | A12345</content></td>
+                           <td>(01)00686597200018(17)260930(10)A12345</td>
+                           <td><content ID="dispositif-nom-reference">bioLytical Laboratories Inc. | 90-1112 | A12345 | 30/09/2026</content></td>
                         </tr>
                      </tbody>
                   </table>
@@ -392,7 +392,7 @@
                            <id root="2.51.1.1" extension="(01)00686597200018(17)260930(10)A12345"/>
                            <playingDevice classCode="DEV" determinerCode="INSTANCE">
                               <code nullFlavor="UNK">
-                                 <!-- Nom du fabricant / référence / N° de lot -->
+                                 <!-- Nom du fabricant | Référence | N° de lot | Date de péremption -->
                                  <originalText><reference value="#dispositif-nom-reference"/></originalText>
                               </code>
                            </playingDevice>
