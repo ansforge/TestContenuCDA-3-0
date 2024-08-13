@@ -16,7 +16,7 @@
             [Entete_BIO-TROD] L'élément code est obligatoire et doit être fixé à @code="96173-0" @displayName="Test rapide d'orientation diagnostique" @codeSystem="2.16.840.1.113883.6.1".
         </assert>
         <assert test='cda:title'>
-            [Entete_BIO-TROD] L'élément title est obligatoire et doit être fixé à "Attestation de dépistage [Pathologie]".
+            [Entete_BIO-TROD] L'élément title est obligatoire et doit être fixé à "Test rapide d'orientation diagnostique : [Type de dépistage]".
         </assert>
         <assert test='cda:templateId[@root="1.2.250.1.213.1.1.1.59"]'>
             [Entete_BIO-TROD] L'élément templateId fixé à @root="1.2.250.1.213.1.1.1.59" est obligatoire
