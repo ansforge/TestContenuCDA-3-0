@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions" queryBinding="xslt2">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
    <title>Scenario: StrucMin - StrucMinDoc (1.2.250.1.213.1.1.1.1.4.2)</title>
    <ns uri="urn:hl7-org:v3" prefix="hl7"/>
    <ns uri="urn:hl7-org:v3" prefix="cda"/>
@@ -147,6 +147,5 @@
    </pattern>
    <include href="include/1.2.250.1.213.1.1.1.1-2017-12-13T103531.sch"/>
    <include href="include/1.2.250.1.213.1.1.1.1-2017-12-13T103531-closed.sch"/>
-   <!-- Create phases for more targeted validation on large instances -->
    <!-- Include schematrons from templates with explicit * or ** context (but no representing templates), only those used in scenario template -->
 </schema>
