@@ -668,9 +668,9 @@
 									<!-- FR-Allergie-ou-hypersensibilite (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.41" />
 									<id root="19815241-10CD-47C4-9B32-CD98D2B01B2A"/>
-									<code code="FALG" codeSystem="2.16.840.1.113883.5.4"
-										codeSystemName="HL7:ObservationIntoleranceType"
-										displayName="Allergie alimentaire"/>
+									<code code="414285001" codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT"
+										displayName="allergie alimentaire"/>
 									<text><reference value="#allergie-001"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime>
@@ -709,9 +709,9 @@
 									<!-- FR-Allergie-ou-hypersensibilite (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.41" />
 									<id root="C0BE19DC-4445-4B40-8355-A6564EB3813C"/>
-									<code code="DALG" codeSystem="2.16.840.1.113883.5.4"
-										codeSystemName="HL7:ObservationIntoleranceType"
-										displayName="Allergie médicamenteuse"/>
+									<code code="416098002" codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT"
+										displayName="allergie médicamenteuse"/>
 									<text><reference value="#allergie-002"/></text>
 									<statusCode code="completed"/>
 									<effectiveTime>
