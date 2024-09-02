@@ -9,5 +9,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="TS.DATE">
    <extends rule="TS"/>
-   <assert role="error" test="@nullFlavor or matches(@value, '^[0-9]{4,8}$')" see="https://art-decor.org/mediawiki/index.php?title=DTr1_TS.DATE">dtr1-1-TS.DATE: null or date precision of time stamp shall be YYYYMMDD.</assert>
+   <assert role="error" test="@nullFlavor or matches(@value, '^[0-9]{4,8}$')" see="https://docs.art-decor.org/documentation/datatypes/DTr1_TS.DATE">dtr1-1-TS.DATE: null or date precision of time stamp shall be YYYYMMDD.</assert>
 </rule>

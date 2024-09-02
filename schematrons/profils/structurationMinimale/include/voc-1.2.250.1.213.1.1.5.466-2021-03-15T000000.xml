@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
-   <valueSet xmlns="" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.466" name="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
-      <sourceCodeSystem id="1.2.250.1.213.1.1.4.6" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.6"/>
-      <sourceCodeSystem id="1.2.250.1.71.4.2.4" identifierName="" canonicalUri="urn:oid:1.2.250.1.71.4.2.4" canonicalUriDSTU2="urn:oid:1.2.250.1.71.4.2.4" canonicalUriSTU3="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4="urn:oid:1.2.250.1.71.4.2.4"/>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.466" name="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" revisionDate="2024-06-28T12:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+      <sourceCodeSystem id="1.2.250.1.71.4.2.4" identifierName="" canonicalUri="urn:oid:1.2.250.1.71.4.2.4" canonicalUriDSTU2="urn:oid:1.2.250.1.71.4.2.4" canonicalUriSTU3="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4B="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR5="urn:oid:1.2.250.1.71.4.2.4"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.6" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4B="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR5="urn:oid:1.2.250.1.213.1.1.4.6"/>
       <publishingAuthority name="ASIP Santé" inherited="project"/>
       <conceptList>
          <concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Expression personnelle du patient" level="0" type="L"/>
@@ -68,6 +68,10 @@
          <concept code="SA60" codeSystem="1.2.250.1.71.4.2.4" displayName="Centres médicaux SNCF" level="0" type="L"/>
          <concept code="SA61" codeSystem="1.2.250.1.71.4.2.4" displayName="Structure Dispensatrice à domicile d'Oxygène à usage médical" level="0" type="L"/>
          <concept code="SA63" codeSystem="1.2.250.1.71.4.2.4" displayName="Communauté Professionnelle Territoriale de Santé" level="0" type="L"/>
+         <concept code="SA64" codeSystem="1.2.250.1.71.4.2.4" displayName="Société de téléconsultation" level="0" type="L"/>
+         <concept code="SA65" codeSystem="1.2.250.1.71.4.2.4" displayName="Antenne de pharmacie" level="0" type="L"/>
+         <concept code="SA66" codeSystem="1.2.250.1.71.4.2.4" displayName="Services de Prévention et de Santé au Travail (SPST)" level="0" type="L"/>
+         <concept code="SA67" codeSystem="1.2.250.1.71.4.2.4" displayName="Maisons médicales de garde (MMG)" level="0" type="L"/>
       </conceptList>
    </valueSet>
 </valueSets>

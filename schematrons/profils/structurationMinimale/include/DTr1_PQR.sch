@@ -5,5 +5,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="PQR">
    <extends rule="CV"/>
-   <assert role="error" test="not(@nullFlavor and @value)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_PQR">dtr1-1-PQR: not null and value</assert>
+   <assert role="error" test="not(@nullFlavor and @value)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_PQR">dtr1-1-PQR: not null and value</assert>
 </rule>

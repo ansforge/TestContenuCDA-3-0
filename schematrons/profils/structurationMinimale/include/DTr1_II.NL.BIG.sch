@@ -6,5 +6,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="II.NL.BIG">
    <extends rule="II"/>
-   <assert role="error" test="@nullFlavor or @root='2.16.528.1.1007.5.1'" see="https://art-decor.org/mediawiki/index.php?title=DTr1_II.NL.BIG">dtr1-1-II.NL.BIG: BIG-nummer @root MOET 2.16.528.1.1007.5.1 zijn indien niet null. Gevonden: "<value-of select="@root"/>"</assert>
+   <assert role="error" test="@nullFlavor or @root='2.16.528.1.1007.5.1'" see="https://docs.art-decor.org/documentation/datatypes/DTr1_II.NL.BIG">dtr1-1-II.NL.BIG: BIG-nummer @root MOET 2.16.528.1.1007.5.1 zijn indien niet null. Gevonden: "<value-of select="@root"/>"</assert>
 </rule>

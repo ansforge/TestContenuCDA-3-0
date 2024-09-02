@@ -3,6 +3,6 @@
     DTR1 CV.IPS - Coded Value
     Status: draft
 -->
-<rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="CV.IPS" see="https://art-decor.org/mediawiki/index.php?title=DTr1_CV.IPS">
+<rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="CV.IPS" see="https://docs.art-decor.org/documentation/datatypes/DTr1_CV.IPS">
    <extends rule="CE.IPS"/>
 </rule>

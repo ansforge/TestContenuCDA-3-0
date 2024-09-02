@@ -5,5 +5,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="SXCM_TS">
    <extends rule="TS"/>
-   <assert role="error" test="not(@nullFlavor and @operator) or @operator = 'I'" see="https://art-decor.org/mediawiki/index.php?title=DTr1_SXCM_TS">dtr1-1-SXCM_TS: not operator if null</assert>
+   <assert role="error" test="not(@nullFlavor and @operator) or @operator = 'I'" see="https://docs.art-decor.org/documentation/datatypes/DTr1_SXCM_TS">dtr1-1-SXCM_TS: not operator if null</assert>
 </rule>

@@ -5,7 +5,7 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema" abstract="true" id="hl7nl-TS">
    <extends rule="QTY"/>
-   <assert role="error" test="(@nullFlavor or @value or *) and not(@nullFlavor and @value)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:TS">dtr1-1-hl7nl-TS: null or value or child element in case of extension</assert>
+   <assert role="error" test="(@nullFlavor or @value or *) and not(@nullFlavor and @value)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:TS">dtr1-1-hl7nl-TS: null or value or child element in case of extension</assert>
    <let name="theTS" value="@value"/>
    <let name="theBC" value="if (starts-with($theTS,'-')) then '-' else ()"/>
    <let name="theTZ" value="replace($theTS,'-?[^+-]+([+-].*)?$','$1')"/>
@@ -30,5 +30,5 @@
    <let name="cTZ" value="string-join(($theTZh,$theTZm),':')"/>
    <let name="theTSString" value="string-join(($theBC,$theCentury,$theYear,$theMonth,$theDay,$theHour,$theMinute,$theSecond,$theSubSecond,$theTZ),'')"/>
    <let name="theDateTime" value="concat($theBC,$cCentury,$cYear,'-',$cMonth,'-',$cDay,'T',$cHour,':',$cMinute,':',$cSecond,$theSubSecond,$cTZ)"/>
-   <assert role="error" test="empty($theTS) or ($theTS=$theTSString and $theDateTime castable as xs:dateTime)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:TS">dtr1-2-hl7nl-TS: <value-of select="local-name()"/> "<value-of select="$theTS"/>" is not a valid timestamp.</assert>
+   <assert role="error" test="empty($theTS) or ($theTS=$theTSString and $theDateTime castable as xs:dateTime)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:TS">dtr1-2-hl7nl-TS: <value-of select="local-name()"/> "<value-of select="$theTS"/>" is not a valid timestamp.</assert>
 </rule>

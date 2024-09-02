@@ -6,5 +6,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="CD.IPS">
    <extends rule="CD"/>
-   <assert role="error" test="descendant-or-self::*[not(@code) or @displayName]" see="https://art-decor.org/mediawiki/index.php?title=DTr1_CD.IPS">dtr1-1-CD.IPS: attribute @displayName is required on all codes and translations thereof</assert>
+   <assert role="error" test="descendant-or-self::*[not(@code) or @displayName]" see="https://docs.art-decor.org/documentation/datatypes/DTr1_CD.IPS">dtr1-1-CD.IPS: attribute @displayName is required on all codes and translations thereof</assert>
 </rule>

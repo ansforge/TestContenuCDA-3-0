@@ -5,5 +5,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="REAL.NONNEG">
    <extends rule="REAL"/>
-   <assert role="error" test="@nullFlavor or @value &gt;= 0" see="https://art-decor.org/mediawiki/index.php?title=DTr1_REAL.NONNEG">dtr1-1-REAL.NONNEG: null or value &gt;= 0</assert>
+   <assert role="error" test="@nullFlavor or @value &gt;= 0" see="https://docs.art-decor.org/documentation/datatypes/DTr1_REAL.NONNEG">dtr1-1-REAL.NONNEG: null or value &gt;= 0</assert>
 </rule>

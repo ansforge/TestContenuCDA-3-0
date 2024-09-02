@@ -5,28 +5,28 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema" abstract="true" id="hl7nl-IVL_TS">
    <extends rule="SXCM_TS"/>
-   <!--<assert role="error" test="(@nullFlavor and not(@value|@unit|hl7:*)) or (not(@nullFlavor) and (@value|hl7:*))" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS"
+   <!--<assert role="error" test="(@nullFlavor and not(@value|@unit|hl7:*)) or (not(@nullFlavor) and (@value|hl7:*))" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS"
         >DTr2-1-hl7nl-IVL_TS: null violation. Cannot have @nullFlavor and @value or child elements, or the other way around</assert>-->
-   <assert role="error" test="not(descendant-or-self::*[@nullFlavor and (@value|@unit|hl7:low|hl7:center|hl7:high|hl7:width)])" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-2-hl7nl-IVL_TS: null violation. Cannot have @nullFlavor and @value or other child elements</assert>
-   <assert role="error" test="not(@value and hl7:*)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-3-hl7nl-IVL_TS: co-occurence violation. Cannot have @value and other child elements</assert>
+   <assert role="error" test="not(descendant-or-self::*[@nullFlavor and (@value|@unit|hl7:low|hl7:center|hl7:high|hl7:width)])" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-2-hl7nl-IVL_TS: null violation. Cannot have @nullFlavor and @value or other child elements</assert>
+   <assert role="error" test="not(@value and hl7:*)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-3-hl7nl-IVL_TS: co-occurence violation. Cannot have @value and other child elements</assert>
    <!-- unsure where this rule comes from KH 2016-07-22
-    <assert role="error" test="@nullFlavor or descendant-or-self::*[@value]" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS"
+    <assert role="error" test="@nullFlavor or descendant-or-self::*[@value]" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS"
         >dtr1-4-1-IVL_TS: co-occurence violation. Must have @nullFlavor or @value or child elements with @value</assert>
         -->
-   <assert role="error" test="not(@value and (hl7:low|hl7:center|hl7:high|hl7:width))" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-4-2-IVL_TS: co-occurence violation. Cannot have @value and child elements</assert>
-   <assert role="error" test="not(hl7:center and (hl7:low|hl7:high|hl7:width))" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-4-3-IVL_TS: co-occurence violation. Cannot have center and other elements</assert>
-   <assert role="error" test="not(hl7:width and hl7:low and hl7:high)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-4-4-IVL_TS: co-occurence violation. Cannot have width and have both low and high elements</assert>
-   <assert role="error" test="not(hl7:*[@updateMode])" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-5-hl7nl-IVL_TS: no updateMode on IVL attributes</assert>
-   <assert role="error" test="not(hl7:low/@value = hl7:high/@value)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-6-hl7nl-IVL_TS: low/@value must not be equal to high/@value</assert>
+   <assert role="error" test="not(@value and (hl7:low|hl7:center|hl7:high|hl7:width))" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-4-2-IVL_TS: co-occurence violation. Cannot have @value and child elements</assert>
+   <assert role="error" test="not(hl7:center and (hl7:low|hl7:high|hl7:width))" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-4-3-IVL_TS: co-occurence violation. Cannot have center and other elements</assert>
+   <assert role="error" test="not(hl7:width and hl7:low and hl7:high)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-4-4-IVL_TS: co-occurence violation. Cannot have width and have both low and high elements</assert>
+   <assert role="error" test="not(hl7:*[@updateMode])" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-5-hl7nl-IVL_TS: no updateMode on IVL attributes</assert>
+   <assert role="error" test="not(hl7:low/@value = hl7:high/@value)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-6-hl7nl-IVL_TS: low/@value must not be equal to high/@value</assert>
    <!-- width has datatype PQR, which extends CV ((){1}(((0[1-9])|([12]\d)|(3[01]))?)?)? -->
-   <assert role="error" test="not(hl7:width[@unit][not(@value)])" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-1-PQR: width element: no unit without value</assert>
-   <assert role="error" test="not(hl7:width/hl7:translation)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-2-PQR: width element: no translation</assert>
-   <assert role="error" test="not(hl7:low[@nullFlavor='PINF'])" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-7-1-IVL_TS: low must be lower than or equal to high. Found low boundary PINF (Positive Infinity)</assert>
-   <assert role="error" test="not(hl7:high[@nullFlavor='NINF'])" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">dtr1-7-2-IVL_TS: low must be lower than or equal to high. Found high boundary NINF (Negative Infinity)</assert>
+   <assert role="error" test="not(hl7:width[@unit][not(@value)])" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-1-PQR: width element: no unit without value</assert>
+   <assert role="error" test="not(hl7:width/hl7:translation)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-2-PQR: width element: no translation</assert>
+   <assert role="error" test="not(hl7:low[@nullFlavor='PINF'])" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-7-1-IVL_TS: low must be lower than or equal to high. Found low boundary PINF (Positive Infinity)</assert>
+   <assert role="error" test="not(hl7:high[@nullFlavor='NINF'])" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">dtr1-7-2-IVL_TS: low must be lower than or equal to high. Found high boundary NINF (Negative Infinity)</assert>
    <!-- for width only us (microseconds),	ms (milliseconds),	s (seconds), min (minute), h (hours), d (day), wk (week), mo (month) and a (year) are allowed.
     -->
    <let name="tum" value="'^(us|ms|s|min|h|d|wk|mo|a|)$'"/>
-   <assert role="error" test="matches(hl7:width/@unit, $tum)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-8-hl7nl-IVL_TS: for width only us (microseconds), ms (milliseconds), s (seconds), min (minute), h (hours), d (day), wk (week), mo (month) or a (year) are allowed</assert>
+   <assert role="error" test="matches(hl7:width/@unit, $tum)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-8-hl7nl-IVL_TS: for width only us (microseconds), ms (milliseconds), s (seconds), min (minute), h (hours), d (day), wk (week), mo (month) or a (year) are allowed</assert>
    <let name="theTSLow" value="hl7:low/@value"/>
    <let name="theBCLow" value="if (starts-with($theTSLow,'-')) then '-' else ()"/>
    <let name="theTZLow" value="replace($theTSLow,'-?[^+-]+([+-].*)?$','$1')"/>
@@ -51,7 +51,7 @@
    <let name="cTZLow" value="string-join(($theTZhLow,$theTZmLow),':')"/>
    <let name="theTSStringLow" value="string-join(($theBCLow,$theCenturyLow,$theYearLow,$theMonthLow,$theDayLow,$theHourLow,$theMinuteLow,$theSecondLow,$theSubSecondLow,$theTZLow),'')"/>
    <let name="theLowDateTime" value="concat($theBCLow,$cCenturyLow,$cYearLow,'-',$cMonthLow,'-',$cDayLow,'T',$cHourLow,':',$cMinuteLow,':',$cSecondLow,$theSubSecondLow,$cTZLow)"/>
-   <assert role="error" test="empty($theTSLow) or ($theTSLow=$theTSStringLow and $theLowDateTime castable as xs:dateTime)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/low "<value-of select="$theTSLow"/>" is not a valid timestamp.</assert>
+   <assert role="error" test="empty($theTSLow) or ($theTSLow=$theTSStringLow and $theLowDateTime castable as xs:dateTime)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/low "<value-of select="$theTSLow"/>" is not a valid timestamp.</assert>
    <let name="theTSCenter" value="hl7:center/@value"/>
    <let name="theBCCenter" value="if (starts-with($theTSCenter,'-')) then '-' else ()"/>
    <let name="theTZCenter" value="replace($theTSCenter,'-?[^+-]+([+-].*)?$','$1')"/>
@@ -76,7 +76,7 @@
    <let name="cTZCenter" value="string-join(($theTZhCenter,$theTZmCenter),':')"/>
    <let name="theTSStringCenter" value="string-join(($theBCCenter,$theCenturyCenter,$theYearCenter,$theMonthCenter,$theDayCenter,$theHourCenter,$theMinuteCenter,$theSecondCenter,$theSubSecondCenter,$theTZCenter),'')"/>
    <let name="theCenterDateTime" value="concat($theBCCenter,$cCenturyCenter,$cYearCenter,'-',$cMonthCenter,'-',$cDayCenter,'T',$cHourCenter,':',$cMinuteCenter,':',$cSecondCenter,$theSubSecondCenter,$cTZCenter)"/>
-   <assert role="error" test="empty($theTSCenter) or ($theTS=$theTSStringCenter and $theCenterDateTime castable as xs:dateTime)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/center "<value-of select="$theTSCenter"/>" is not a valid timestamp.</assert>
+   <assert role="error" test="empty($theTSCenter) or ($theTS=$theTSStringCenter and $theCenterDateTime castable as xs:dateTime)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/center "<value-of select="$theTSCenter"/>" is not a valid timestamp.</assert>
    <let name="theTSHigh" value="hl7:high/@value"/>
    <let name="theBCHigh" value="if (starts-with($theTSHigh,'-')) then '-' else ()"/>
    <let name="theTZHigh" value="replace($theTSHigh,'-?[^+-]+([+-].*)?$','$1')"/>
@@ -101,5 +101,5 @@
    <let name="cTZHigh" value="string-join(($theTZhHigh,$theTZmHigh),':')"/>
    <let name="theTSStringHigh" value="string-join(($theBCHigh,$theCenturyHigh,$theYearHigh,$theMonthHigh,$theDayHigh,$theHourHigh,$theMinuteHigh,$theSecondHigh,$theSubSecondHigh,$theTZHigh),'')"/>
    <let name="theHighDateTime" value="concat($theBCHigh,$cCenturyHigh,$cYearHigh,'-',$cMonthHigh,'-',$cDayHigh,'T',$cHourHigh,':',$cMinuteHigh,':',$cSecondHigh,$theSubSecondHigh,$cTZHigh)"/>
-   <assert role="error" test="empty($theTSHigh) or ($theTSHigh=$theTSStringHigh and $theHighDateTime castable as xs:dateTime)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/high "<value-of select="$theTSHigh"/>" is not a valid timestamp.</assert>
+   <assert role="error" test="empty($theTSHigh) or ($theTSHigh=$theTSStringHigh and $theHighDateTime castable as xs:dateTime)" see="https://docs.art-decor.org/documentation/datatypes/DTr1_hl7nl:IVL_TS">DTr2-9-hl7nl-IVL_TS: <value-of select="local-name()"/>/high "<value-of select="$theTSHigh"/>" is not a valid timestamp.</assert>
 </rule>
