@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../FeuilleDeStyle/CDA-FO.xsl"?>
+<?oxygen SCHSchema="../schematrons/profils/IHE.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
+<?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_BIO-CR-BIO_2024.01.sch"?>
+<!-- 
+	**********************************************************************************************************
+    Document : Compte-rendu d’examens de biologie médicale autoprésentable (BIO-CR-BIO_Glycémie mole_1_2021.01)      
+    Auteur : ANS
+    **********************************************************************************************************
+    format HL7 - CDA Release 2 niveau 3
+    **********************************************************************************************************
+    Historique :
+    13/10/2022 : version 2022.01
+    10/04/2024 : version 2024.01
+    **********************************************************************************************************
+-->
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
+			<!--
+    		********************************************************
+    		En-tête du document
+    		********************************************************
+			-->
+			<realmCode code="FR"/>
+			<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+			<!-- Déclarations de conformité HL7 France -->
+			<templateId root="2.16.840.1.113883.2.8.2.1"/>
+			<!-- Déclarations de conformité CI-SIS -->
+			<templateId root="1.2.250.1.213.1.1.1.1"/>
+			<!-- Déclarations de conformité IHE PALM -->
+			<templateId root="1.3.6.1.4.1.19376.1.3.3"/>
+			<!-- Déclarations de conformité au modèle CR-BIO du CI-SIS -->
+			<templateId root="1.2.250.1.213.1.1.1.55"/>
+			<!-- Unique ID obligatoire -->
+			<id root="1.3.6.1.4.1.19376.1.3.3.6.7"/>
+			<!-- Type de document -->
+			<code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+				displayName="CR d'examens biologiques"/>
+			<!-- Titre du document -->
+			<title>Compte rendu d'examens biologiques</title>
+			<!-- Date et heure de création du document -->
+			<effectiveTime value="20210401171000+0200"/>
+			<!-- Niveau de confidentialité du document -->
+			<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+			<!-- Langue du document -->
+			<languageCode code="fr-FR"/>
+			<!-- identifiant commun à toutes les versions successives du comtpe rendu -->
+        	<setId root="4635A090-4A80-4FD7-B9E5-4943E9A994EE"/>
+			<!-- numéro de la version courante (entier positif): la première version -->
+			<versionNumber value="1"/>
+			<!-- Patient -->
+			<recordTarget>
+				<patientRole>
+					<!-- INS-NIR de test : 1.2.250.1.213.1.4.10 -->
+					<id extension="279035121518989" root="1.2.250.1.213.1.4.10"/>
+					<!-- IPP du patient dans l'établissement avec root = l'OID de l'ES -->
+					<id extension="1234567890121" root="1.2.3.4.567.8.9.10"/>
+					<!-- Adresse -->
+					<addr use="H">
+						<houseNumber>28</houseNumber>
+						<streetName>Avenue de Breteuil</streetName>
+						<unitID>Escalier A</unitID>
+						<postalCode>75007</postalCode>
+						<city>Paris</city>
+						<country>FRANCE</country>
+					</addr>
+					<!-- Télécom -->
+					<telecom value="tel:0144534551" use="H"/>
+					<telecom value="tel:0647151010" use="MC"/>
+					<telecom value="mailto:279035121518989@patient.mssante.fr"/>
+					<!-- Identité du patient -->
+					<patient classCode="PSN">
+						<name>
+							<!-- Nom et prénom(s) de naissance -->
+							<family qualifier="BR">PAT-TROIS</family>
+							<given>DOMINIQUE</given>
+							<!-- Nom et prénom utilisés -->
+							<family qualifier="CL">PAT-TROIS</family>
+							<given qualifier="CL">DOMINIQUE</given>
+						</name>
+						<administrativeGenderCode code="F" displayName="Féminin"
+							codeSystem="2.16.840.1.113883.5.1"/>
+						<!-- date du décès (obligatoire si le patient est décédé) -->
+						<birthTime value="19790328"/>
+						<!-- Représentant du patient -->
+						<guardian>
+							<addr use="H">
+								<houseNumber>28</houseNumber>
+								<streetName>Avenue de Breteuil</streetName>
+								<postalCode>75007</postalCode>
+								<city>PARIS</city>
+								<country>FRANCE</country>
+							</addr>
+							<telecom value="tel:0147150000" use="H"/>
+							<guardianPerson>
+								<name>
+									<prefix>MME</prefix>
+									<family>NESSI</family>
+									<given>Jeanne</given>
+								</name>
+							</guardianPerson>
+						</guardian>
+						<!-- Lieu de naissance du patient -->
+						<birthplace>
+							<place>
+								<addr>
+									<county>63220</county>
+									<city>MAZOIRES</city>
+								</addr>
+							</place>
+						</birthplace>
+					</patient>
+				</patientRole>
+			</recordTarget>
+
+			<!-- Auteur -->
+			<author>
+				<time value="20210104160527+0100"/>
+				<assignedAuthor>
+					<id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
+					<code code="G15_10/SM03" displayName="Médecin - Biologie médicale (SM)"
+						codeSystem="1.2.250.1.213.1.1.4.5"/>
+					<addr>
+						<houseNumber>8</houseNumber>
+						<streetName>Rue Frédéric Bastia</streetName>
+						<postalCode>92100</postalCode>
+						<city>BOULOGNE-BILLANCOURT</city>
+					</addr>
+					<telecom value="tel:0174589607" use="WP"/>
+					<assignedPerson>
+						<name>
+							<prefix>M</prefix>
+							<given>Marcel</given>
+							<family>CAMPARINI</family>
+							<suffix>DR</suffix>
+						</name>
+					</assignedPerson>
+					<representedOrganization>
+						<!-- Identifiant de l'organisation -->
+						<id root="1.2.250.1.71.4.2.2" extension="1120459876"/>
+						<!-- Nom de l'organisation -->
+						<name>Laboratoire des charmes</name>
+						<!-- Coordonnées télécom de l'organisation -->
+						<telecom value="tel:0174589607" use="WP"/>
+						<!-- Adresse de l'organisation -->
+						<addr>
+							<houseNumber>8</houseNumber>
+							<streetName>Rue Frédéric Bastia</streetName>
+							<postalCode>92100</postalCode>
+							<city>BOULOGNE-BILLANCOURT</city>
+						</addr>
+					</representedOrganization>
+				</assignedAuthor>
+			</author>
+
+			<!-- Organisation chargée de la conservation du document -->
+			<custodian>
+				<assignedCustodian>
+					<representedCustodianOrganization>
+						<!-- Identifiant de l'organisation -->
+						<id root="1.2.250.1.71.4.2.2" extension="1120459876"/>
+						<!-- Nom de l'organisation -->
+						<name>Laboratoire des charmes</name>
+						<!-- Coordonnées télécom de l'organisation -->
+						<telecom value="tel:0174589607" use="WP"/>
+						<!-- Adresse de l'organisation -->
+						<addr>
+							<houseNumber>8</houseNumber>
+							<streetName>Rue Frédéric Bastia</streetName>
+							<postalCode>92100</postalCode>
+							<city>BOULOGNE-BILLANCOURT</city>
+						</addr>
+					</representedCustodianOrganization>
+				</assignedCustodian>
+			</custodian>
+
+			<!-- Responsable du document -->
+			<legalAuthenticator>
+				<!-- Date et heure de la prise de responsabilité -->
+				<time value="20210104160527+0100"/>
+				<signatureCode code="S"/>
+				<assignedEntity>
+					<!-- PS identifié par son N°RPPS -->
+					<id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
+					<!-- Profession / spécialité du PS -->
+					<code code="G15_10/SM03" displayName="Médecin - Biologie médicale (SM)"
+						codeSystem="1.2.250.1.213.1.1.4.5"/>
+					<!-- Adresse du PS-->
+					<addr>
+						<houseNumber>8</houseNumber>
+						<streetName>Rue Frédéric Bastia</streetName>
+						<postalCode>92100</postalCode>
+						<city>BOULOGNE-BILLANCOURT</city>
+					</addr>
+					<!-- Coordonnées télécom du PS-->
+					<telecom value="tel:0174589607" use="WP"/>
+					<!-- Identité du PS -->
+					<assignedPerson>
+						<name>
+							<prefix>M</prefix>
+							<given>Marcel</given>
+							<family>CAMPARINI</family>
+							<suffix>DR</suffix>
+						</name>
+					</assignedPerson>
+					<!-- Etablissement de rattachement du PS -->
+					<representedOrganization>
+						<!-- Identifiant de l'organisation -->
+						<id root="1.2.250.1.71.4.2.2" extension="1120459876"/>
+						<!-- Nom de l'organisation -->
+						<name>Laboratoire des charmes</name>
+						<!-- Coordonnées télécom de l'organisation -->
+						<telecom value="tel:0174589607" use="WP"/>
+						<!-- Adresse de l'organisation -->
+						<addr>
+							<houseNumber>8</houseNumber>
+							<streetName>Rue Frédéric Bastia</streetName>
+							<postalCode>92100</postalCode>
+							<city>BOULOGNE-BILLANCOURT</city>
+						</addr>
+						<standardIndustryClassCode code="ETABLISSEMENT"
+							displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+							codeSystemName="practiceSettingCode"/>
+					</representedOrganization>
+				</assignedEntity>
+			</legalAuthenticator>
+
+			<!-- Médecin prescripteur des examens de biologie -->
+			<participant typeCode="REF">
+				<templateId root="1.3.6.1.4.1.19376.1.3.3.1.6"/>
+				<!-- Date de la prescription -->
+				<time xsi:type="IVL_TS">
+					<high value="20210101"/>
+				</time>
+				<associatedEntity classCode="PROV">
+					<id root="1.2.250.1.71.4.2.1" extension="810002422979"/>
+					<code code="G15_10/SM41" displayName="Médecin - Pneumologie (SM)"
+						codeSystem="1.2.250.1.213.1.1.4.5"/>
+					<addr>
+						<streetAddressLine>5 rue du chêne</streetAddressLine>
+						<streetAddressLine>92100 BOULOGNE-BILLANCOURT</streetAddressLine>
+					</addr>
+					<telecom nullFlavor="NASK"/>
+					<associatedPerson>
+						<name>
+							<suffix>DR</suffix>
+							<given>Pascal</given>
+							<family>CHARLES</family>
+						</name>
+					</associatedPerson>
+				</associatedEntity>
+			</participant>
+
+			<!-- Préleveur : une infirmière libérale -->
+			<participant typeCode="PRF">
+				<functionCode code="PRELV" displayName="Préleveur"
+					codeSystem="1.2.250.1.213.1.1.4.2.280"/>
+				<!-- Date et heure de prélèvement -->
+				<time xsi:type="IVL_TS">
+					<high value="202101040735+0100"/>
+				</time>
+				<associatedEntity classCode="PROV">
+					<id root="1.2.250.1.71.4.2.1" extension="801234567893"/>
+					<code code="G15_60" displayName="Infirmier" codeSystem="1.2.250.1.213.1.1.4.5"/>
+					<addr>
+						<houseNumber>12</houseNumber>
+						<streetName>Rue du renard</streetName>
+						<postalCode>92100</postalCode>
+						<city>BOULOGNE-BILLANCOURT</city>
+					</addr>
+					<telecom value="tel:0149154578" use="EC"/>
+					<associatedPerson>
+						<name>
+							<prefix>MME</prefix>
+							<given>Roberta</given>
+							<family>BLEEDER</family>
+						</name>
+					</associatedPerson>
+					<scopingOrganization>
+						<!-- Identifiant de l'organisation -->
+						<id root="1.2.250.1.71.4.2.2" extension="1120452948"/>
+						<!-- Nom de l'organisation -->
+						<name>Cabinet d'infirmières de BB</name>
+						<!-- Coordonnées télécom de l'organisation -->
+						<telecom value="tel:0138475439" use="WP"/>
+						<!-- Adresse de l'organisation -->
+						<addr>
+							<houseNumber>12</houseNumber>
+							<streetName>Rue du renard</streetName>
+							<postalCode>92100</postalCode>
+							<city>BOULOGNE-BILLANCOURT</city>
+						</addr>
+					</scopingOrganization>
+				</associatedEntity>
+			</participant>
+
+			<!-- Médecin traitant -->
+			<participant typeCode="INF">
+				<functionCode code="PCP" displayName="Médecin traitant"
+					codeSystem="2.16.840.1.113883.5.88"/>
+				<time nullFlavor="NA"/>
+				<associatedEntity classCode="PROV">
+					<id root="1.2.250.1.71.4.2.1" extension="00B1057294"/>
+					<code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5"
+						displayName="Médecin - Qualifié en Médecine Générale (SM)"/>
+					<addr>
+						<streetAddressLine>8 rue de Lyon</streetAddressLine>
+						<streetAddressLine>92100 Boulogne</streetAddressLine>
+					</addr>
+					<telecom value="tel:+33-1-42-00-00-01" use="WP"/>
+					<telecom value="mailto:paul.medecin5729@medecin.formation.mssante.fr" use="WP"/>
+					<associatedPerson>
+						<name>
+							<given>Paul</given>
+							<family>MEDECIN5729</family>
+							<suffix>DR</suffix>
+						</name>
+					</associatedPerson>
+					<scopingOrganization>
+						<id root="1.2.250.1.71.4.2.2" extension="00B105729400"/>
+						<name>CABINET M. MEDECIN5729</name>
+						<telecom value="tel:+33-1-42-00-00-00" use="WP"/>
+						<telecom value="mailto:cabinet.medecin5729@medecin.formation.mssante.fr"
+							use="WP"/>
+						<addr>
+							<streetAddressLine>8 rue de Lyon</streetAddressLine>
+							<streetAddressLine>92100 Boulogne</streetAddressLine>
+						</addr>
+						<standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire"
+							codeSystem="1.2.250.1.213.1.1.4.9"/>
+					</scopingOrganization>
+				</associatedEntity>
+			</participant>
+
+			<!-- Identifiant de la prescription d'examens de biologie reçue par le SIL  -->
+			<inFulfillmentOf>
+				<order>
+					<id root="1.2.250.1.213.1.1.9" extension="2014123456789"/>
+				</order>
+			</inFulfillmentOf>
+
+			<!--  Acte principal : La demande d'examens enregistrée dans le SI du laboratoire (SGL) et le 1er chapitre du compte rendu -->
+			<documentationOf>
+				<serviceEvent>
+					<id root="1.2.250.1.213.1.1.9" extension="202111111123"/>
+					<code code="18719-5" displayName="Biochimie"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<lab:statusCode code="completed"/>
+					<effectiveTime>
+						<!-- Date de réception de la demande et des échantillons -->
+						<low value="20210104092200+0100"/>
+						<!-- Date de fin de traitement = date et heure de libération du compte rendu final -->
+						<high value="20210104160500+0100"/>
+					</effectiveTime>
+					<!-- Laboratoire exécutant -->
+					<performer typeCode="PRF">
+						<templateId root="1.3.6.1.4.1.19376.1.3.3.1.7"/>
+						<time>
+							<high value="20210104152530+0100"/>
+						</time>
+						<assignedEntity>
+							<!-- Identifiant du directeur du laboratoire -->
+							<id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
+							<code code="G15_10/SM03"
+								displayName="Médecin - Biologie médicale (SM)"
+								codeSystem="1.2.250.1.213.1.1.4.5"/>
+							<addr>
+								<houseNumber>8</houseNumber>
+								<streetName>Rue Frédéric Bastia</streetName>
+								<postalCode>92100</postalCode>
+								<city>BOULOGNE-BILLANCOURT</city>
+							</addr>
+							<telecom value="tel:0174589607" use="WP"/>
+							<assignedPerson>
+								<name>
+									<prefix>M</prefix>
+									<given>Marcel</given>
+									<family>CAMPARINI</family>
+									<suffix>DR</suffix>
+								</name>
+							</assignedPerson>
+							<representedOrganization>
+								<!-- Identifiant de l'organisation -->
+								<id root="1.2.250.1.71.4.2.2" extension="1120459876"/>
+								<!-- Nom de l'organisation -->
+								<name>Laboratoire des charmes</name>
+								<!-- Coordonnées télécom de l'organisation -->
+								<telecom value="tel:0174589607" use="WP"/>
+								<!-- Adresse de l'organisation -->
+								<addr>
+									<houseNumber>8</houseNumber>
+									<streetName>Rue Frédéric Bastia</streetName>
+									<postalCode>92100</postalCode>
+									<city>BOULOGNE-BILLANCOURT</city>
+								</addr>
+								<!-- Cadre d'exercice : Laboratoire de ville -->
+								<standardIndustryClassCode code="AMBULATOIRE"
+									displayName="Ambulatoire" codeSystem="1.2.250.1.213.1.1.4.9"/>
+							</representedOrganization>
+						</assignedEntity>
+					</performer>
+				</serviceEvent>
+			</documentationOf>
+
+			<!--  Acte secondaire : Chapitres de biologie du compte rendu -->
+			<documentationOf>
+				<serviceEvent>
+					<code code="18727-8" displayName="Sérologie"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+				</serviceEvent>
+			</documentationOf>
+
+			<!--  Acte secondaire : Chapitres de biologie du compte rendu -->
+			<documentationOf>
+				<serviceEvent>
+					<code code="18718-7" displayName="Protéines, marqueurs tumoraux, vitamines"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+				</serviceEvent>
+			</documentationOf>
+
+			<!-- Contexte de la prise en charge -->
+			<componentOf>
+				<encompassingEncounter>
+					<id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
+					<code code="AMB" displayName="ambulatoire" codeSystem="2.16.840.1.113883.5.4"/>
+					<effectiveTime>
+						<low value="202101040735+0100"/>
+					</effectiveTime>
+					<!-- Biologiste et laboratoire responsable -->
+					<responsibleParty>
+						<assignedEntity>
+							<!-- Identifiant du biologiste responsable -->
+							<id root="1.2.250.1.71.4.2.1" extension="801234534765"/>
+							<!-- Profession / Spécialité du biologiste responsable -->
+							<code code="G15_10/SM03"
+								displayName="Médecin - Biologie médicale (SM)"
+								codeSystem="1.2.250.1.213.1.1.4.5"/>
+							<!-- Adresse du biologiste responsable -->
+							<addr>
+								<houseNumber>8</houseNumber>
+								<streetName>Rue Frédéric Bastia</streetName>
+								<postalCode>92100</postalCode>
+								<city>BOULOGNE-BILLANCOURT</city>
+							</addr>
+							<!-- Coordonnées télécom du biologiste responsable -->
+							<telecom value="tel:0174589607" use="WP"/>
+							<!-- Identité du biologiste responsable -->
+							<assignedPerson>
+								<name>
+									<prefix>M</prefix>
+									<given>Marcel</given>
+									<family>CAMPARINI</family>
+									<suffix>DR</suffix>
+								</name>
+							</assignedPerson>
+							<!-- Laboratoire du biologiste responsable -->
+							<representedOrganization>
+								<!-- Identifiant du laboratoire responsable -->
+								<id root="1.2.250.1.71.4.2.2" extension="1120459876"/>
+								<!-- Numéro d'accréditation du laboratoire responsable  -->
+								<id root="1.2.250.1.213.6.3.1" extension="8-WXYZ"
+									assigningAuthorityName="COFRAC"/>
+								<!-- Nom du laboratoire responsable -->
+								<name>Laboratoire des charmes</name>
+								<!-- Coordonnées télécom du laboratoire responsable -->
+								<telecom value="tel:0174589607" use="WP"/>
+								<!-- Adresse du laboratoire responsable -->
+								<addr>
+									<houseNumber>8</houseNumber>
+									<streetName>Rue Frédéric Bastia</streetName>
+									<postalCode>92100</postalCode>
+									<city>BOULOGNE-BILLANCOURT</city>
+								</addr>
+							</representedOrganization>
+						</assignedEntity>
+					</responsibleParty>
+					<!-- Laboratoire où s’est déroulée la prise en charge -->
+					<location>
+						<healthCareFacility>
+							<!-- Modalité d’exercice -->
+							<code code="SA25" displayName="Laboratoire de biologie médicale"
+								codeSystem="1.2.250.1.71.4.2.4"> </code>
+							<!-- Localisation du laboratoire -->
+							<location>
+								<!-- Nom du laboratoire responsable -->
+								<name>Laboratoire des charmes</name>
+								<!-- Adresse du laboratoire responsable -->
+								<addr>
+									<houseNumber>8</houseNumber>
+									<streetName>Rue Frédéric Bastia</streetName>
+									<postalCode>92100</postalCode>
+									<city>BOULOGNE-BILLANCOURT</city>
+								</addr>
+							</location>
+						</healthCareFacility>
+					</location>
+				</encompassingEncounter>
+			</componentOf>
+
+			<!--
+    		********************************************************
+    		Corps du document
+    		********************************************************
+    		-->
+			<component>
+				<structuredBody>
+					<!-- Section FR-CR-BIO-Chapitre : chapitre "Biochimie" -->
+					<component>
+						<section>
+							<!-- Conformité Laboratory Specialty Section (IHE PALM) -->
+							<templateId root="1.3.6.1.4.1.19376.1.3.3.2.1"/>
+							<!-- Conformité FR-CR-BIO-Chapitre (CI-SIS) -->
+							<templateId root="1.2.250.1.213.1.1.2.70"/>
+							<code code="18719-5" displayName="Biochimie"
+								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<title>BIOCHIMIE</title>
+
+							<!-- Section FR-CR-BIO-Sous-Chapitre : "Bilan lipidique" -->
+							
+
+							<!-- Section FR-CR-BIO-Sous-Chapitre : "Biochimie" -->
+							<component>
+								<section>
+									<!-- Conformité Laboratory Report Item Section (IHE PALM) -->
+									<templateId root="1.3.6.1.4.1.19376.1.3.3.2.2"/>
+									<!-- Conformité FR-CR-BIO-Sous-Chapitre (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.2.71"/>
+									<!-- Code générique de biochimie, faute de code spécialisé pour biochimie sanguine -->
+									<code code="18719-5" displayName="Biochimie"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<table border="0">
+											<thead align="center">
+												<tr align="left">
+													<th styleCode="Bold">AUTRES EXAMENS DE BIOCHIMIE SANGUINE</th>
+													<th>Résultats</th>
+													<th>Valeurs de référence</th>
+												</tr>
+											</thead>
+											<tbody align="center">
+												<tr>
+													<td align="left" rowspan="2">Glycémie à jeun<content ID="glucose"></content>
+														<br/>
+														<content ID="ABS0001">(Spectrophotométrie enzyme/vis Glucose oxydase)</content>
+													</td>
+													<td align="left">4.89 mmol/L</td>
+													<td align="left">(3.89 - 6.00)</td>
+												</tr>
+												<tr>
+													<td align="left"> 0.88 g/L</td>
+													<td align="left">(0.70 - 1.08)</td>
+												</tr>
+											</tbody>
+										</table>
+										<br/>
+									</text>
+
+									<!-- Entrée FR-Resultats-examens-de-biologie-medicale : "Biochimie" -->
+									<entry typeCode="DRIV">
+										<!-- Conformité Laboratory Report Data Processing Entry (IHE PALM) -->
+										<templateId root="1.3.6.1.4.1.19376.1.3.1"/>
+										<!-- Conformité FR-Resultats-examens-de-biologie-medicale (CI-SIS) -->
+										<templateId root="1.2.250.1.213.1.1.3.21"/>
+										<act classCode="ACT" moodCode="EVN">
+											<!-- Code générique de biochimie, faute de code spécialisé pour biochimie sanguine -->
+											<code code="18719-5" displayName="Biochimie"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+											<statusCode code="completed"/>
+
+											<!-- Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent -->
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- Conformité Laboratory Observation (IHE PALM) -->
+												<templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
+												<!-- Conformité FR-Resultat-examens-de-biologie-element-clinique-pertinent (CI-SIS) -->
+												<templateId root="1.2.250.1.213.1.1.3.80"/>
+												<code code="40193-5"
+												displayName="Glucose à jeun [Moles/Volume] Sérum/Plasma ; Numérique"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC">
+												<originalText>
+												<reference value="#glucose"/>
+												</originalText>
+												</code>
+												<statusCode code="completed"/>
+												<effectiveTime value="20140402145521+0200"/>
+												<value xsi:type="PQ" value="4.89" unit="mmol/L">
+												</value> 
+												<interpretationCode code="N"
+												displayName="Normal"
+												codeSystem="2.16.840.1.113883.5.83"/> 
+													<methodCode code="DEG" displayName="Spectrophotométrie enzyme/vis Glucose oxydase" codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs">
+												<originalText>
+												<reference value="#ABS0001"/>
+												</originalText>
+												</methodCode>
+												<!-- Intervalle de valeurs de référence -->
+												<referenceRange typeCode="REFV">
+												<observationRange classCode="OBS"
+												moodCode="EVN.CRT">
+												<value xsi:type="IVL_PQ">
+												<low value="3.89" unit="mmol/L">
+												</low>
+												<high value="3.89" unit="mmol/L">
+												</high>
+												</value>
+												<interpretationCode code="N"
+												displayName="Normal"
+												codeSystem="2.16.840.1.113883.5.83"/>
+												</observationRange>
+												</referenceRange>
+												</observation>
+											</entryRelationship>
+
+										</act>	
+									</entry>
+								</section>
+							</component>
+
+						</section>
+					</component>
+				</structuredBody>
+			</component>
+</ClinicalDocument>
+	
