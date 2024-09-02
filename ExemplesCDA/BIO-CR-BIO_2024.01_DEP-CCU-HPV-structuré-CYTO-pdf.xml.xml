@@ -419,7 +419,7 @@
     </associatedEntity>
   </participant>
   
-  <!-- Préleveur (ici, une infirmière) -->
+  <!-- Préleveur (ici, un médecin en biologie médicale) -->
   <participant typeCode="PRF">
     <functionCode code="PRELV" displayName="Préleveur" codeSystem="1.2.250.1.213.1.1.4.2.280" />
     <!-- Date et heure de prélèvement -->
@@ -428,7 +428,7 @@
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567893" />
-      <code code="G15_60" displayName="Infirmier" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <code code="G15_10/SM03" displayName="Médecin - Biologie médicale (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
       <addr>
         <houseNumber>12</houseNumber>
         <streetName>Rue du renard</streetName>
