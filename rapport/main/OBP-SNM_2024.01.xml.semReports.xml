@@ -1,1 +1,52 @@
-Echec :  OBP-SNM_2024.01.xml(.Structuration minimale des documents de santé v1.15)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="d2f1b158-96da-4f4d-8c49-2c8d6f54a3b6">
+    <gvr:validationOverview validationDateTime="2024-09-09T12:40:00.000Z" validationOverallResult="PASSED">
+        <gvr:disclaimer>This report comes without licensing. 
+Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
+        <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
+        <gvr:validationServiceVersion>2.6.1-SAXONEE</gvr:validationServiceVersion>
+        <gvr:validatorID>Validation FTS(Beta)</gvr:validatorID>
+        <gvr:validatorVersion>Validation FTS(Beta)</gvr:validatorVersion>
+        <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
+    </gvr:validationOverview>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4" numberOfErrors="0" numberOfWarnings="2"/>
+    <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Schema validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
+    </gvr:subReport>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="2" numberOfErrors="0" numberOfWarnings="2"/>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.1.1.4.322" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "TA_ASIP" &lt;br /&gt; 
+	  Code  : "MED-1251"&lt;br /&gt; 
+	  DisplayName : "Actes associés pratiqués en post partum"&lt;br /&gt; 
+	  Valeur dans le FTS: "Acte pratiqué en post-partum"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/fhir/CodeSystem/1.2.250.1.213.1.1.4.322"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][6]/*:procedure[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>
+	  -Validation  sémantique : libellé incorrecte  &lt;br /&gt; 
+	  CodeSystem : "1.2.250.1.213.1.1.4.322" &lt;br /&gt; 
+	  CodeFile  : " "&lt;br /&gt; 
+	  CodeSystemName : "TA_ASIP" &lt;br /&gt; 
+	  Code  : "ORG-074"&lt;br /&gt; 
+	  DisplayName : "Mode de sortie"&lt;br /&gt; 
+	  Valeur dans le FTS: "Modalité de sortie"&lt;br /&gt; 
+  	  system (SMT) : "https://smt.esante.gouv.fr/fhir/CodeSystem/1.2.250.1.213.1.1.4.322"	         
+	 </gvr:constraintDescription>
+            <gvr:formalExpression>not(($system !="") and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:structuredBody[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][1]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:component[namespace-uri()='urn:hl7-org:v3'][2]/*:section[namespace-uri()='urn:hl7-org:v3'][1]/*:entry[namespace-uri()='urn:hl7-org:v3'][6]/*:observation[namespace-uri()='urn:hl7-org:v3'][1]/*:code[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
+        </gvr:constraint>
+    </gvr:subReport>
+</gvr:validationReport>
