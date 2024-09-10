@@ -4,24 +4,24 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeDeLentilles_CISIS"
              id="1.2.250.1.213.1.1.5.626"
-             revisionDate="2021-05-07T00:00:00"
+             revisionDate="2024-09-02T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="GEN-267"
+         <Concept code="MED-1218"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210507000000"
-                  displayName="Souple"/>
-         <Concept code="GEN-268"
+                  dateValid="20240902000000"
+                  displayName="Lentille souple"/>
+         <Concept code="MED-1219"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210507000000"
-                  displayName="Rigide"/>
-         <Concept code="GEN-269"
+                  dateValid="20240902000000"
+                  displayName="Lentille rigide"/>
+         <Concept code="MED-1220"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210507000000"
-                  displayName="Hybride"/>
+                  dateValid="20240902000000"
+                  displayName="Lentille hybride"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

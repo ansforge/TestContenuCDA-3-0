@@ -4,19 +4,19 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_TypeDePrisme_CISIS"
              id="1.2.250.1.213.1.1.5.624"
-             revisionDate="2021-05-07T00:00:00"
+             revisionDate="2024-09-02T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="GEN-266"
+         <Concept code="MED-1216"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210507000000"
-                  displayName="Intégré"/>
-         <Concept code="GEN-267"
+                  dateValid="20240902000000"
+                  displayName="Prisme intégré"/>
+         <Concept code="MED-1217"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20210507000000"
-                  displayName="Souple"/>
+                  dateValid="20240902000000"
+                  displayName="Prisme souple"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

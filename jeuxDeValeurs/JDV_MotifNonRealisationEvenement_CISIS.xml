@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_MotifNonRealisationEvenement_CISIS"
+             id="1.2.250.1.213.1.1.5.803"
+             revisionDate="2024-09-06T00:00:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-357"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Motif lié à la structure"/>
+         <Concept code="ORG-077"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Hospitalisation (y compris à domicile)"/>
+         <Concept code="GEN-358"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Motif lié à l'usager"/>
+         <Concept code="GEN-359"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Motif lié aux professionnels"/>
+         <Concept code="GEN-360"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Motif lié à des facteurs externes"/>
+         <Concept code="GEN-361"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Motif administratif ou légal"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

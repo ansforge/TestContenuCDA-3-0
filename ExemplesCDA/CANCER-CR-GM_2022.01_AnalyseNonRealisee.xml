@@ -123,7 +123,8 @@
   
   <!-- 1er auteur du CR-GM : Pathologiste responsable du diagnostic -->
   <author>
-    <functionCode nullFlavor="NA">
+    <functionCode code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" codeSystemName="Participation Function" 
+      displayName="Référent - Responsable du patient dans la structure de soins"> 
       <!-- Commentaire sur l'auteur -->
       <originalText>Pathologiste responsable du diagnostic</originalText>
     </functionCode>
@@ -163,7 +164,6 @@
   
   <!-- 2eme auteur du CR-GM : Pathologiste responsable de la qualification -->
   <author>
-    <!-- <functionCode nullFlavor="NA"> -->
     <functionCode code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" codeSystemName="Participation Function" 
       displayName="Référent - Responsable du patient dans la structure de soins"> 
 

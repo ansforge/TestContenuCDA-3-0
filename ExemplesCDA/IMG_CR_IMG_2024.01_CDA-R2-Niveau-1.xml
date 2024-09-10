@@ -31,9 +31,9 @@
   <!-- Conformité spécifications CI-SIS -->
   <templateId root="1.2.250.1.213.1.1.1.1"/>
   <!-- Conformité au CDA R2 Niveau 1 (CDA non structuré) -->
-  <templateId root="1.3.6.1.4.1.19376.1.2.20"/>
-  <!-- Conformité Modèle IMG-CR-IMG du CI-SIS -->
-  <templateId root="1.2.250.1.213.1.1.1.45" extension="2024.01"/>
+  <templateId root="1.3.6.1.4.1.19376.1.2.20"/><!--
+  <!-\- Conformité Modèle IMG-CR-IMG du CI-SIS -\->
+  <templateId root="1.2.250.1.213.1.1.1.45" extension="2024.01"/>-->
   <!-- Unique ID obligatoire -->
   <id root="1.2.250.1.213.1.1.1.45.12345.2"/>
   <!-- Type de document -->  

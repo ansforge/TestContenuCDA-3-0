@@ -257,7 +257,7 @@
                   dateFin=""
                   dateValid="20240524000000"
                   displayName="Spectrophotométrie enzyme/UV   estérase-oxydase-peroxydase/chromogène"/>
-         <Concept code="DEO"
+         <Concept code="DE"
                   codeSystem="1.2.250.1.213.2.3.5"
                   dateFin=""
                   dateValid="20240524000000"

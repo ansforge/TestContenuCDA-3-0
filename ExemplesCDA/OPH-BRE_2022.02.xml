@@ -2536,7 +2536,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur proveant de JDV_TypeDePrisme_CISIS(1.2.250.1.213.1.1.5.624) -->
-                          <value xsi:type="CD" code="GEN-266" displayName="Intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1216" displayName="Prisme intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -2563,7 +2563,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur proveant de JDV_TypeDePrisme_CISIS(1.2.250.1.213.1.1.5.624) -->
-                          <value xsi:type="CD" code="GEN-266" displayName="Intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1216" displayName="Prisme intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -3199,7 +3199,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur issue du JDV_TypeDePrisme_CISIS (1.2.250.1.213.1.1.5.624) -->
-                          <value xsi:type="CD" code="GEN-266" displayName="Intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1216" displayName="Prisme intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -3226,7 +3226,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur issue du JDV_TypeDePrisme_CISIS (1.2.250.1.213.1.1.5.624) -->
-                          <value xsi:type="CD" code="GEN-266" displayName="Intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1216" displayName="Prisme intégré" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="421591000" displayName="verre de lunettes" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -3847,7 +3847,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_TypeDeLentilles_CISIS(1.2.250.1.213.1.1.5.626) -->
-                          <value xsi:type="CD" code="GEN-267" displayName="Souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1217" displayName="Prisme souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -3874,7 +3874,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_TypeDeLentilles_CISIS(1.2.250.1.213.1.1.5.626) -->
-                          <value xsi:type="CD" code="GEN-267" displayName="Souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1217" displayName="Prisme souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           
                           <methodCode code="C25209" displayName="Mesure Automatique" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
@@ -4876,7 +4876,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur issue du JDV_TypeDeLentilles_CISIS (1.2.250.1.213.1.1.5.626) -->
-                          <value xsi:type="CD" code="GEN-267" displayName="Souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1217" displayName="Prisme souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->
                           <targetSiteCode code="57368009" displayName="lentille de contact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -4903,7 +4903,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur provenant de JDV_TypeDeLentilles_CISIS(1.2.250.1.213.1.1.5.626) -->
-                          <value xsi:type="CD" code="GEN-267" displayName="Souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                          <value xsi:type="CD" code="MED-1217" displayName="Prisme souple" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                           
                           <methodCode nullFlavor="NA"/>
                           <!-- targetSiteCode provenant du JDV_TypeDispositifOcculaire_CISIS(1.2.250.1.213.1.1.5.716) -->

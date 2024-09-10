@@ -2211,7 +2211,7 @@
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NA"/>
                   <!-- valeur du JDV_Evolution_CISIS (1.2.250.1.213.1.1.5.788) code : (Demande de création SNOMED CT en cours)-->
-                  <value xsi:type="CD" code="XXXXXX" displayName="Guérison sans séquelle"
+                  <value xsi:type="CD" code="1.2.250.1.213.1.1.5.788.1" displayName="Guérison sans séquelle"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#effet-indesirable-01-evolution"/></originalText>
                   </value>

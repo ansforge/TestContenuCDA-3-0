@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
          xmlns:edg="http://edg.topbraid.solutions/model/"
-         xmlns:j.0="http://topbraid.org/swa#"
          xmlns:metadata="http://topbraid.org/metadata#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,7 +8,7 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:teamwork="http://topbraid.org/teamwork#"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-         xml:base="urn:x-evn-master:medicabase_0623">
+         xml:base="urn:x-evn-master:medicabase">
    <rdf:Description>
       <skos:notation>MV00004702</skos:notation>
    </rdf:Description>
@@ -348,9 +347,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000654</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00000787</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003506</skos:notation>
@@ -1079,9 +1075,6 @@
       <skos:notation>MV00001493</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00003890</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00002919</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -1128,9 +1121,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001492</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003891</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000958</skos:notation>
@@ -1307,6 +1297,9 @@
       <skos:notation>MV00004470</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005232</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00002603</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -1358,6 +1351,9 @@
       <skos:notation>MV00004471</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005231</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00001844</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -1395,6 +1391,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001408</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005230</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001843</skos:notation>
@@ -1674,9 +1673,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001119</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00000224</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003649</skos:notation>
@@ -2343,9 +2339,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004408</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00001683</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001114</skos:notation>
@@ -3080,9 +3073,6 @@
       <skos:notation>MV00003288</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00003022</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00003591</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -3270,9 +3260,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00005043</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00002850</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004944</skos:notation>
@@ -3881,9 +3868,6 @@
       <skos:notation>MV00004630</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00000278</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00002540</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4199,6 +4183,9 @@
       <skos:notation>MV00000931</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005218</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00004890</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4236,6 +4223,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004891</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005217</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002056</skos:notation>
@@ -4281,6 +4271,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004452</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005216</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002362</skos:notation>
@@ -4332,6 +4325,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004453</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005215</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004586</skos:notation>
@@ -4502,9 +4498,6 @@
       <skos:notation>MV00000272</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00002366</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00002233</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4548,6 +4541,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002232</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005219</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000140</skos:notation>
@@ -4787,6 +4783,9 @@
       <skos:notation>MV00004148</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005213</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00001291</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4823,6 +4822,9 @@
       <skos:notation>MV00002186</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005214</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00004583</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4833,6 +4835,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004149</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005212</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003253</skos:notation>
@@ -5238,9 +5243,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000337</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003629</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004296</skos:notation>
@@ -5915,6 +5917,9 @@
       <skos:notation>MV00000942</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005229</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00001707</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -5961,6 +5966,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004331</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005228</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002374</skos:notation>
@@ -6012,6 +6020,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004332</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005227</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002373</skos:notation>
@@ -6227,6 +6238,9 @@
       <skos:notation>MV00002680</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005221</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00004819</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -6243,9 +6257,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003260</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003393</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004022</skos:notation>
@@ -6273,6 +6284,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004591</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005220</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001659</skos:notation>
@@ -6458,6 +6472,9 @@
       <skos:notation>MV00000636</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005226</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00002065</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -6471,6 +6488,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001966</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005224</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001833</skos:notation>
@@ -6509,6 +6529,9 @@
       <skos:notation>MV00002197</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MV00005225</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>MV00004330</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -6525,6 +6548,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004158</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005223</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002901</skos:notation>
@@ -6570,6 +6596,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001968</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MV00005222</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004159</skos:notation>
@@ -6786,9 +6815,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002657</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00001762</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001895</skos:notation>
@@ -7736,9 +7762,6 @@
       <skos:notation>MV00004569</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00001938</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00004303</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -7992,9 +8015,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004120</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003719</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001759</skos:notation>
@@ -8379,9 +8399,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000006</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00002534</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000139</skos:notation>
@@ -9179,9 +9196,6 @@
       <skos:notation>MV00003680</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00001150</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00003244</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -9555,9 +9569,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001819</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00000393</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002354</skos:notation>
@@ -9978,9 +9989,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002175</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00000083</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003903</skos:notation>
@@ -10886,9 +10894,6 @@
       <skos:notation>MV00000713</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00003039</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00000979</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -11015,9 +11020,6 @@
       <skos:notation>MV00002807</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00003038</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00000847</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -11061,9 +11063,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001251</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003781</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00001384</skos:notation>
@@ -11283,9 +11282,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00004058</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00002097</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00000402</skos:notation>
@@ -12014,9 +12010,6 @@
       <skos:notation>MV00000860</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00005141</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00004911</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -12323,9 +12316,6 @@
       <skos:notation>MV00001575</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>MV00003972</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>MV00001139</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -12567,9 +12557,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003354</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00001391</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002817</skos:notation>
@@ -13047,9 +13034,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00002509</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>MV00003040</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MV00003173</skos:notation>

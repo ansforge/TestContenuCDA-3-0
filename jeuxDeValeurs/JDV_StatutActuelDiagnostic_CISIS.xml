@@ -4,14 +4,9 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_StatutActuelDiagnostic_CISIS"
              id="1.2.250.1.213.1.1.5.45"
-             revisionDate="2024-02-07T00:00:00"
+             revisionDate="2024-08-06T00:00:00"
              version="test">
       <ConceptList>
-         <Concept code="385651009"
-                  codeSystem="2.16.840.1.113883.6.96"
-                  dateFin=""
-                  dateValid="20230131000000"
-                  displayName="en cours d'exécution"/>
          <Concept code="2931005"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
@@ -27,6 +22,11 @@
                   dateFin=""
                   dateValid="20230131000000"
                   displayName="diagnostic définitif"/>
+         <Concept code="24800002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  dateFin=""
+                  dateValid="20240806000000"
+                  displayName="porteur(-euse) sain(e)"/>
          <Concept code="723511001"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""

@@ -147,5 +147,6 @@
    </pattern>
    <include href="include/1.2.250.1.213.1.1.1.1-2017-12-13T103531.sch"/>
    <include href="include/1.2.250.1.213.1.1.1.1-2017-12-13T103531-closed.sch"/>
+   <!-- Create phases for more targeted validation on large instances -->
    <!-- Include schematrons from templates with explicit * or ** context (but no representing templates), only those used in scenario template -->
 </schema>

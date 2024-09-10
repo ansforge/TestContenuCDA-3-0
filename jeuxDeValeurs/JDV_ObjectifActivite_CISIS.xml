@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ObjectifActivite_CISIS"
              id="1.2.250.1.213.1.1.5.41"
-             revisionDate="2010-01-01T00:00:00"
+             revisionDate="2024-08-06T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="ORG-164"
@@ -62,6 +62,11 @@
                   dateFin=""
                   dateValid="20100101000000"
                   displayName="Consultation de transition enfant/adulte"/>
+         <Concept code="MED-1289"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240806000000"
+                  displayName="Rendu de résultat diagnostic génétique"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

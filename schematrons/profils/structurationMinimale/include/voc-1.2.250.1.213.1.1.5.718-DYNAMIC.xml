@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" displayName="JDV_J245_Civilite_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.718" name="JDV_J245_Civilite_CISIS" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.69" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.69" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.69" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.69" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.69"/>
+      <publishingAuthority name="ASIP Santé" inherited="project"/>
+      <conceptList>
+         <concept code="M" codeSystem="1.2.250.1.213.1.6.1.69" displayName="Monsieur" level="0" type="L"/>
+         <concept code="MME" codeSystem="1.2.250.1.213.1.6.1.69" displayName="Madame" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>
