@@ -26,10 +26,10 @@ jobs:
         uses: actions/checkout@v3
         with:      
           path: testContenuCDA
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'oracle'
-          java-version: '17'    
+      #- uses: actions/setup-java@v3
+      #  with:
+      #    distribution: 'oracle'
+      #    java-version: '17'    
       - name: Validate        
         run: |
           cd validateCDA
