@@ -11,8 +11,8 @@ on:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
   publish:
-    #runs-on: windows-latest
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+    #runs-on: ubuntu-latest
     steps:
       - name: Get soft to validate
         uses: actions/checkout@main
