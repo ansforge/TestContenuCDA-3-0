@@ -1,75 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="FAILED" uuid="c2c31285-30f8-45ac-9001-2fd83c5f3f8f">
-    <gvr:validationOverview validationDateTime="2024-09-09T12:32:40.000Z" validationOverallResult="FAILED">
+<gvr:validationReport xmlns:gvr="http://validationreport.gazelle.ihe.net/" result="PASSED" uuid="0c950814-b0bf-4e01-883d-a4a6b24b5731">
+    <gvr:validationOverview validationDateTime="2025-02-09T07:58:01.000Z" validationOverallResult="PASSED">
         <gvr:disclaimer>This report comes without licensing. 
 Unless required by applicable law or agreed to in writing, this report is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 This disclaimer is by default added to any report stored or transformed by EVSClient if no other is provided by the Validation Service.</gvr:disclaimer>
         <gvr:validationServiceName>Gazelle Schematron Validator</gvr:validationServiceName>
         <gvr:validationServiceVersion>2.6.1-SAXONEE</gvr:validationServiceVersion>
-        <gvr:validatorID>BIO-CR-BIO-2021.01</gvr:validatorID>
-        <gvr:validatorVersion>2022-10-05</gvr:validatorVersion>
+        <gvr:validatorID>.Structuration minimale des documents de santé v1.15</gvr:validatorID>
+        <gvr:validatorVersion>2024-02-28</gvr:validatorVersion>
         <gvr:additionalMetadata name="filtered-report-disclaimer">This report is a partial report ; only constraints of severity higher or equals to WARNING are included. The full report can be requested using severity parameter at INFO level.</gvr:additionalMetadata>
     </gvr:validationOverview>
-    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4699" numberOfErrors="7" numberOfWarnings="3"/>
+    <gvr:counters failedWithInfoNumber="0" numberOfConstraints="4596" numberOfErrors="0" numberOfWarnings="4"/>
     <gvr:subReport name="Syntactic validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
     <gvr:subReport name="Schema validation" subReportResult="PASSED">
         <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="1" numberOfErrors="0" numberOfWarnings="0"/>
     </gvr:subReport>
-    <gvr:subReport name="Object Checker validation" subReportResult="FAILED">
-        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="4697" numberOfErrors="7" numberOfWarnings="3"/>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : un élément entry d'un CR de biologie doit comporter l'attribut typeCode. </gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:entry[@typeCode]/hl7:templateId[@root = "1.3.6.1.4.1.19376.1.3.1"])</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Un élément entry doit avoir un élément fils act et le code de cet act s'il existe, doit appartenir à la terminologie LOINC. </gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:entry[@typeCode]/hl7:templateId[@root = "1.3.6.1.4.1.19376.1.3.1"]) and (//*[hl7:templateId/@root = "1.3.6.1.4.1.19376.1.3.1"]/hl7:act) and (//*[hl7:templateId/@root = "1.3.6.1.4.1.19376.1.3.1"]/hl7:act/hl7:code[@codeSystem = '2.16.840.1.113883.6.1'] or not(//*[hl7:templateId/@root = "1.3.6.1.4.1.19376.1.3.1"]/hl7:act/hl7:code/@code))</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Un élément entry doit avoir un élément fils act avec un statusCode@code valant 'completed', 'active' ou 'aborted'.</gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:entry[@typeCode]/hl7:templateId[@root = "1.3.6.1.4.1.19376.1.3.1"]) and (//hl7:act/hl7:statusCode[@code = 'completed']) or (//hl7:act/hl7:statusCode[@code = 'active']) or (//hl7:act/hl7:statusCode[@code = 'aborted'])</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Un élément entry doit avoir au moins un petit fils act/entryRelationship avec un attribut typeCode valant 'COMP'. </gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:entry[@typeCode]/hl7:templateId[@root = "1.3.6.1.4.1.19376.1.3.1"]) and (//hl7:act/hl7:entryRelationship[@typeCode = 'COMP'])</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): [E_FR-Resultat-examens-de-biologie-element-clinique-pertinent] Erreur de conformité : Un résultat dans une entry (avec templateId '1.3.6.1.4.1.19376.1.3.1.6') doit avoir un @moodCode 'EVN'.</gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:observation[@moodCode = 'EVN']/hl7:templateId[@root = '1.3.6.1.4.1.19376.1.3.1.6'])</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01):  [E_FR-Resultat-examens-de-biologie-element-clinique-pertinent] Erreur de conformité :
-Un résultat doit avoir un statusCode@code valant 'completed' ou 'aborted'. </gvr:constraintDescription>
-            <gvr:formalExpression>(//hl7:observation[hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.1.6']/hl7:statusCode[@code = 'completed']) or (//hl7:observation[hl7:templateId/@root = '1.3.6.1.4.1.19376.1.3.1.6']/hl7:statusCode[@code = 'aborted'])</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
-        </gvr:constraint>
-        <gvr:constraint priority="MANDATORY" severity="ERROR" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01): element hl7:component[hl7:structuredBody] is required [min 1x].</gvr:constraintDescription>
-            <gvr:formalExpression>count(hl7:component[hl7:structuredBody]) &gt;= 1</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument</gvr:locationInValidatedObject>
+    <gvr:subReport name="Object Checker validation" subReportResult="PASSED">
+        <gvr:subCounters failedWithInfoNumber="0" numberOfConstraints="4594" numberOfErrors="0" numberOfWarnings="4"/>
+        <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
+            <gvr:constraintDescription>(CI-SISParticipant)/d22754e19-true-d22799e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:functionCode[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/STRUCT-MIN-1.15/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.124-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor] | hl7:time | hl7:associatedEntity[@classCode] (rule-reference: d22754e19-true-d22799e0)</gvr:constraintDescription>
+            <gvr:formalExpression>not(.)</gvr:formalExpression>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:participant[namespace-uri()='urn:hl7-org:v3'][1]/*:templateId[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(CI-SISParticipant)/d161433e19-true-d161478e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:functionCode[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/BIO-CR-BIO_2021.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.124-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem) or @nullFlavor] | hl7:time | hl7:associatedEntity[@classCode] (rule-reference: d161433e19-true-d161478e0)</gvr:constraintDescription>
+            <gvr:constraintDescription>(CI-SISDocumentationOf)/d23463e22-true-d23543e0: this element 'lab:statusCode' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:id | hl7:code | hl7:effectiveTime | hl7:performer[@typeCode = 'PRF'][hl7:assignedEntity] (rule-reference: d23463e22-true-d23543e0)</gvr:constraintDescription>
             <gvr:formalExpression>not(.)</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument/participant/templateId</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:documentationOf[namespace-uri()='urn:hl7-org:v3'][1]/*:serviceEvent[namespace-uri()='urn:hl7-org:v3'][1]/*:statusCode[namespace-uri()='urn:oid:1.3.6.1.4.1.19376.1.3.2'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(CI-SISComponentOf)/d162935e207-true-d163494e0: this element 'id' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:id[@root = '1.2.250.1.71.4.2.2'] | hl7:name | hl7:addr[not(hl7:streetAddressLine)] | hl7:addr[hl7:streetAddressLine] | hl7:telecom | hl7:standardIndustryClassCode[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/BIO-CR-BIO_2021.01/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.467-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] (rule-reference: d162935e207-true-d163494e0)</gvr:constraintDescription>
+            <gvr:constraintDescription>(CI-SISDocumentationOf)/d23463e161-true-d23674e0: this element 'templateId' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:functionCode | hl7:time | hl7:assignedEntity[hl7:representedOrganization] (rule-reference: d23463e161-true-d23674e0)</gvr:constraintDescription>
             <gvr:formalExpression>not(.)</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument/componentOf/encompassingEncounter/responsibleParty/assignedEntity/representedOrganization/id[2]</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:documentationOf[namespace-uri()='urn:hl7-org:v3'][1]/*:serviceEvent[namespace-uri()='urn:hl7-org:v3'][1]/*:performer[namespace-uri()='urn:hl7-org:v3'][1]/*:templateId[namespace-uri()='urn:hl7-org:v3'][1]</gvr:locationInValidatedObject>
         </gvr:constraint>
         <gvr:constraint priority="RECOMMENDED" severity="WARNING" testResult="FAILED">
-            <gvr:constraintDescription>(CR-BIO_2021.01)/d152e24867-true-d156512e0: this element 'component' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:realmCode[not(@nullFlavor)] | hl7:typeId[@root = '2.16.840.1.113883.1.3'][@extension = 'POCD_HD000040'] | hl7:templateId[@root='2.16.840.1.113883.2.8.2.1'][not(@nullFlavor)] | hl7:templateId[@root='1.2.250.1.213.1.1.1.1'][not(@nullFlavor)] | hl7:templateId[@root='1.3.6.1.4.1.19376.1.3.3'][not(@nullFlavor)] | hl7:templateId[@root='1.2.250.1.213.1.1.1.55'][not(@nullFlavor)] | hl7:id | hl7:code[(@code = '11502-2' and @codeSystem = '2.16.840.1.113883.6.1')] | hl7:title[not(@nullFlavor)] | hl7:effectiveTime[not(@nullFlavor)] | hl7:confidentialityCode[not(@nullFlavor)] | hl7:languageCode[@code = 'fr-FR'] | hl7:setId | hl7:versionNumber[not(@nullFlavor)] | hl7:recordTarget | hl7:author[hl7:assignedAuthor] | hl7:dataEnterer | hl7:informant | hl7:custodian[not(@nullFlavor)][hl7:assignedCustodian] | hl7:informationRecipient[hl7:intendedRecipient] | hl7:legalAuthenticator[hl7:signatureCode[@code = 'S']] | hl7:authenticator[hl7:signatureCode[@code = 'S']] | hl7:participant[@typeCode][hl7:associatedEntity[@classCode]] | hl7:inFulfillmentOf[hl7:order] | hl7:documentationOf[hl7:serviceEvent] | hl7:relatedDocument[@typeCode = 'RPLC'][hl7:parentDocument] | hl7:componentOf[hl7:encompassingEncounter] | hl7:component[hl7:structuredBody] (rule-reference: d152e24867-true-d156512e0)</gvr:constraintDescription>
+            <gvr:constraintDescription>(CI-SISComponentOf)/d24260e207-true-d24819e0: this element 'id' is not defined, or not defined with this content. This may concern the templateId, code or id. Expected in this context:  hl7:id[@root = '1.2.250.1.71.4.2.2'] | hl7:name | hl7:addr[not(hl7:streetAddressLine)] | hl7:addr[hl7:streetAddressLine] | hl7:telecom | hl7:standardIndustryClassCode[concat(@code, @codeSystem) = doc('/opt/SchematronValidator_prod/bin/schematron/cda_asip/COURANT/STRUCT-MIN-1.15/_pre_compilation/include/voc-1.2.250.1.213.1.1.5.467-DYNAMIC.xml')//valueSet[1]/conceptList/concept/concat(@code, @codeSystem)] (rule-reference: d24260e207-true-d24819e0)</gvr:constraintDescription>
             <gvr:formalExpression>not(.)</gvr:formalExpression>
-            <gvr:locationInValidatedObject>/ClinicalDocument/component</gvr:locationInValidatedObject>
+            <gvr:locationInValidatedObject>/*:ClinicalDocument[namespace-uri()='urn:hl7-org:v3'][1]/*:componentOf[namespace-uri()='urn:hl7-org:v3'][1]/*:encompassingEncounter[namespace-uri()='urn:hl7-org:v3'][1]/*:responsibleParty[namespace-uri()='urn:hl7-org:v3'][1]/*:assignedEntity[namespace-uri()='urn:hl7-org:v3'][1]/*:representedOrganization[namespace-uri()='urn:hl7-org:v3'][1]/*:id[namespace-uri()='urn:hl7-org:v3'][2]</gvr:locationInValidatedObject>
         </gvr:constraint>
     </gvr:subReport>
 </gvr:validationReport>
