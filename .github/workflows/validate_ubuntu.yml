@@ -17,7 +17,8 @@ jobs:
         uses: actions/checkout@main
         with:
           persist-credentials: false
-          repository: M-Priour/validateCDA@ubuntu
+          repository: M-Priour/validateCDA
+          ref: ubuntu
           path: validateCDA
 
       # Get REPO
