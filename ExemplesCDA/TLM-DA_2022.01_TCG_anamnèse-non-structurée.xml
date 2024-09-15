@@ -784,7 +784,7 @@
               </performer>
               <!-- Prescripteur -->
               <author>
-                <time value="20190711" />
+                <time value="20190711153500+0100" />
                 <assignedAuthor>
                   <!-- Identifiant du prescripteur -->
                   <id root="1.2.250.1.71.4.2.1" extension="10100997245" />

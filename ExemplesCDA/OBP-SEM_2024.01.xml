@@ -218,7 +218,7 @@
 
   <!-- Responsable de la validation de la synthèse -->
   <legalAuthenticator>
-    <time value="20210329094914-0100" />
+    <time value="20210329094914+0100" />
     <signatureCode code="S" />
     <assignedEntity>
       <!-- PS identifié par son N°RPPS -->

@@ -40,7 +40,7 @@
   <!-- Titre du document -->
   <title>Compte rendu d'examens biologiques</title>
   <!-- Date de création du document -->
-  <effectiveTime value="20210401134745+0200"/>
+  <effectiveTime value="20210401134745+0100"/>
   <!-- Niveau de confidentialité du document -->
   <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"
     codeSystemName="Confidentiality"/>
@@ -178,7 +178,7 @@
 
   <!-- Responsable du document -->
   <legalAuthenticator>
-    <time value="20200701134745+0200"/>
+    <time value="20200701134745+0100"/>
     <signatureCode code="S"/>
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="807505123456"/>

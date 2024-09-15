@@ -1956,7 +1956,8 @@
           <!-- Auteur de cette conclution du CRO [1..1] (dans cet exemple, auteur de la FRCP car ressaisie manuelle) -->
           <author>
             <!-- Date du CRO -->
-            <time value="20190218" />
+           <!-- <time value="20190218+0100" />-->
+            <time value="20110929094914+0100" />
             <assignedAuthor>
               <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
               <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" codeSystemName="RPPS" displayName="Médecin - Oncologie, opt médicale (SM)" />
@@ -2044,7 +2045,7 @@
               </performer>
               <!-- Auteur de la conclusion d'origine -->
               <author>
-                <time value="20190115" />
+                <time value="20190115094914+0100" />
                 <assignedAuthor>
                   <id root="1.2.250.1.71.4.2.1" extension="801234568875" />
                   <code code="G15_10/SCH10" displayName="Médecin - Chirurgie générale (SCH)" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2161,7 +2162,7 @@
           </text>
           <!-- Auteur de cette conclution du CR-ACP (dans cet exemple, auteur de la FRCP car ressaisie manuelle) -->
           <author>
-            <time value="20190218" />
+            <time value="20190218094914+0100" />
             <assignedAuthor>
               <!-- PS identifié par son N°RPPS -->
               <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
@@ -2253,7 +2254,7 @@
               </performer>
               <!-- Auteur de la conclusion d'origine -->
               <author>
-                <time value="20190115" />
+                <time value="20190115094914+0100" />
                 <assignedAuthor>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
                   <code code="G15_10/SM01" displayName="Médecin - Anatomie et Cytologie pathologiques (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
@@ -2397,7 +2398,7 @@
           </text>
           <!-- Auteur de cette conclution du CR-GM (dans cet exemple, auteur de la FRCP car ressaisie manuelle) -->
           <author>
-            <time value="20190218" />
+            <time value="20190218094914+0100" />
             <assignedAuthor>
               <!-- PS identifié par son N°RPPS -->
               <id root="1.2.250.1.71.4.2.1" extension="801234567897" />

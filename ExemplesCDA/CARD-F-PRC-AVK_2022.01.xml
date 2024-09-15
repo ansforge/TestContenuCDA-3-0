@@ -188,7 +188,7 @@
 
   <!-- Responsable (signataire) du document -->
   <legalAuthenticator>
-    <time value="20060922" />
+    <time value="20060922094914+0100" />
     <signatureCode code="S" />
     <assignedEntity>
       <id root="1.2.250.1.71" extension="801234567897" />

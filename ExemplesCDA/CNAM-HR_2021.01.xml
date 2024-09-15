@@ -403,7 +403,7 @@
                   </performer> 
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190526"/>
+                    <time value="20190526094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="697121458706"/>
@@ -524,7 +524,7 @@
                   </performer>
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190311"/>
+                    <time value="20190311094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -646,7 +646,7 @@
                   </performer>
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190308"/>
+                    <time value="20190308094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -820,7 +820,7 @@
                   </performer>
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190711"/>
+                    <time value="20190711094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -912,7 +912,7 @@
                   </performer>
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190708"/>
+                    <time value="20190708094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -1003,7 +1003,7 @@
                   </performer>
                   <!-- Prescripteur -->
                   <author>
-                    <time value="20190626"/>
+                    <time value="20190626094914+0100"/>
                     <assignedAuthor>
                       <!-- Identifiant du prescripteur -->
                       <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -1121,7 +1121,7 @@
               </performer>      
               <!-- Prescripteur -->
               <author>
-                <time value="20190711"/>
+                <time value="20190711094914+0100"/>
                 <assignedAuthor>
                   <!-- Identifiant du prescripteur -->
                   <id root="1.2.250.1.71.4.2.1" extension="10100997245"/>
@@ -1195,7 +1195,7 @@
               </performer>              
               <!-- Prescripteur -->
               <author>
-                <time value="20190528"/>
+                <time value="20190528094914+0100"/>
                 <assignedAuthor>
                   <!-- Identifiant du prescripteur -->
                   <id root="1.2.250.1.71.4.2.1" extension="10100997245" />

@@ -255,7 +255,7 @@
     
     <!-- Responsable du document -->
     <legalAuthenticator>
-        <time value="20191203133000-0100"/>
+        <time value="20191203133000+0100"/>
         <signatureCode code="S"/>
         <assignedEntity>            
             <!-- Identifiant RPPS du PS -->

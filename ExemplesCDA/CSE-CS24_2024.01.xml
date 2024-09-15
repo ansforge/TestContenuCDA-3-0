@@ -264,7 +264,7 @@
 
    <!-- Signataire du document : Praticien signataire du CS24 -->
    <legalAuthenticator>
-      <time value="20210803113623+100"/>
+      <time value="20210803113623+0100"/>
       <signatureCode code="S"/>
       <assignedEntity>
          <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>

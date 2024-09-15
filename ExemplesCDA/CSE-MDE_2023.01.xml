@@ -242,7 +242,7 @@
 
    <!-- Responsable du document -->
    <legalAuthenticator>
-      <time value="20230106113623+100"/>
+      <time value="20230106113623+0100"/>
       <signatureCode code="S"/>
       <assignedEntity>
          <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
