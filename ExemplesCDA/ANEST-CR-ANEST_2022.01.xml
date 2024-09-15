@@ -204,7 +204,7 @@
   </custodian>
   <!-- Responsable du document -->
   <legalAuthenticator>
-    <time value="20200319111700-0100"/>
+    <time value="20200319111700+0100"/>
     <signatureCode code="S"/>
     <assignedEntity>
       <!-- PS identifié par son N°RPPS -->

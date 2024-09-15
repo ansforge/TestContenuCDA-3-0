@@ -2467,7 +2467,7 @@
 								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
 							<!-- Auteur -->
 							<author>
-								<time value="20190812"/>
+								<time value="20190812091130+0100"/>
 								<assignedAuthor>
 									<id nullFlavor="UNK"/>
 									<addr nullFlavor="NAV"/>
@@ -3724,7 +3724,7 @@
 							</performer>      
 							<!-- Prescripteur -->
 							<author>
-								<time value="20190711"/>
+								<time value="20190711091130+0100"/>
 								<assignedAuthor>
 									<!-- Identifiant du prescripteur -->
 									<id root="1.2.250.1.71.4.2.1" extension="10100997245"/>

@@ -45,7 +45,7 @@
 			<!-- Titre du document -->
 			<title>Compte rendu d'examens biologiques</title>
 			<!-- Date et heure de création du document -->
-			<effectiveTime value="20240401171000+0200"/>
+			<effectiveTime value="20240401171000+0100"/>
 			<!-- Niveau de confidentialité du document -->
 			<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
 			<!-- Langue du document -->
