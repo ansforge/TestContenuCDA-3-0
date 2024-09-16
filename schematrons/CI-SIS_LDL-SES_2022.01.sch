@@ -28,7 +28,6 @@
 
     <!-- JDV -->
     <include href="include/jeuxDeValeurs/LDL-SES_2022.01/JDV_ModaliteEntree_LDL-SES.sch"/>
-    <include href="include/jeuxDeValeurs/LDL-SES_2022.01/JDV_ModaliteSortie_LDL-SES.sch"/>
 
     <!-- Entete -->
     <include href="include/specificationsVolets/LDL-SES_2022.01/Entete/Entete_LDL-SES.sch"/>
@@ -42,7 +41,6 @@
 
         <!-- Activation JDV -->
         <active pattern="JDV_ModaliteEntree_LDL-SES"/>
-        <active pattern="JDV_ModaliteSortie_LDL-SES"/>
 
         <!--Entete-->
         <active pattern="Entete_LDL-SES"/>
@@ -53,7 +51,6 @@
     <pattern id="variables">
  
         <let name="JDV_ModaliteEntree_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteEntree_CISIS.xml'"/>
-        <let name="JDV_ModaliteSortie_LDL-SES" value="'../jeuxDeValeurs/JDV_ModaliteSortie_CISIS.xml'"/>
         
         <!-- Vérifier que toutes les sections obligatoires du document sont présentes -->
         <rule context='*[cda:templateId/@root="1.2.250.1.213.1.1.1.29"]'>
