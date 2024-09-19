@@ -42,6 +42,11 @@
                   dateFin=""
                   dateValid="20240906000000"
                   displayName="Prise en charge IDE du diabète insulinotraité"/>
+         <Concept code="GEN-365"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240906000000"
+                  displayName="Aucun de ces motifs"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

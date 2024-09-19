@@ -4,7 +4,7 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ResultatDepistageAcideAscorbique_CISIS"
              id="1.2.250.1.213.1.1.5.783"
-             revisionDate="2024-03-07T00:00:00"
+             revisionDate="2024-09-11T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="260385009"
@@ -12,16 +12,16 @@
                   dateFin=""
                   dateValid="20240307000000"
                   displayName="négatif"/>
-         <Concept code="1.2.250.1.213.1.1.5.783.1"
+         <Concept code="1345200000"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
-                  dateValid="20240307000000"
-                  displayName="présence + sur ++  (Demande de création SNOMED CT en cours)"/>
-         <Concept code="1.2.250.1.213.1.1.5.783.2"
+                  dateValid="20240911000000"
+                  displayName="présence + sur ++"/>
+         <Concept code="1345201001"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
-                  dateValid="20240307000000"
-                  displayName="présence ++ sur ++  (Demande de création SNOMED CT en cours)"/>
+                  dateValid="20240911000000"
+                  displayName="présence ++ sur ++"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

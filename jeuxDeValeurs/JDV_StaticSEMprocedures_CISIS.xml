@@ -4,13 +4,13 @@
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_StaticSEMprocedures_CISIS"
              id="1.2.250.1.213.1.1.5.756"
-             revisionDate="2023-08-28T00:00:00"
+             revisionDate="2024-09-17T00:00:00"
              version="test">
       <ConceptList>
          <Concept code="JQQP003"
-                  codeSystem="1.2.250.1.213.2.5"
+                  codeSystem="1.2.250.1.215.300.1"
                   dateFin=""
-                  dateValid="20100101000000"
+                  dateValid="20240917000000"
                   displayName="Autopsie médicale d'un fœtus ou d'un nouveau-né de moins de 4 jours de vie, avec examen de l'encéphale"/>
          <Concept code="275977009"
                   codeSystem="2.16.840.1.113883.6.96"

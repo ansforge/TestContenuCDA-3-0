@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20200424120000"
+             dateValid="20171013120000"
+             description="Temporalité accueil - ROR"
+             displayName="JDV_J30_TemporaliteAccueil_ROR.tabs"
+             id="1.2.250.1.213.3.3.32"
+             revisionDate="2020-04-24T12:00:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR">
+      <ConceptList>
+         <Concept code="01"
+                  codeSystem="1.2.250.1.213.3.3.31"
+                  displayName="Temporaire"/>
+         <Concept code="02" codeSystem="1.2.250.1.213.3.3.31" displayName="Permanent"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>
