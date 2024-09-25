@@ -11459,6 +11459,24 @@
 					<fo:block line-height="0.1cm">&#160;</fo:block>
 				</xsl:if>
 			</xsl:if>
+			<xsl:if
+				test="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
+				<xsl:variable name="name"
+					select="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName"/>
+				<xsl:value-of select="$name"/>
+				<xsl:if test="hl7:assignedAuthor/hl7:representedOrganization/hl7:name">
+					<xsl:text> (</xsl:text>
+					<xsl:value-of
+						select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"/>
+					<xsl:text>)</xsl:text>
+				</xsl:if>
+				<xsl:if test="not(contains($vendor, 'Saxonica'))">
+					<br/>
+				</xsl:if>
+				<xsl:if test="(contains($vendor, 'Saxonica'))">
+					<fo:block line-height="0.1cm">&#160;</fo:block>
+				</xsl:if>
+			</xsl:if>
 			<xsl:if test="hl7:time">
 				<xsl:variable name="time" select="hl7:time"/>
 				<xsl:call-template name="show-timestamp">
