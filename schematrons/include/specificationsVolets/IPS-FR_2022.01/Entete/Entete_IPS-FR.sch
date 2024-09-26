@@ -5,7 +5,8 @@
     Teste la conformité de l'entete de l'IPS-FR au CI-SIS
     
     Historique :
-    10/11/2022 : Création    
+    10/11/2022 : Création
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"    
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_IPS-FR">
@@ -21,6 +22,14 @@
             test="cda:code[@code = '60591-5' and @codeSystem = '2.16.840.1.113883.6.1']"
             > [Entete_IPS-FR] Le code LOINC du document est "60591-5"
             (2.16.840.1.113883.6.1).
+        </assert>
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_IPS-FR]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_IPS-FR] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
         <!-- Verifier la présence d'un participant pour le médecin traitant -->
         <assert test="count(cda:participant[@typeCode = 'INF']/cda:functionCode[@code = 'PCP']) = 1
