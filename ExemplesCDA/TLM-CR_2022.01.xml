@@ -448,7 +448,7 @@
             <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4"/>
             <!-- Date de la PRC -->
             <effectiveTime>
-                <low value="20200327"/>
+                <low value="20200327153500+0100"/>
             </effectiveTime>
             
             <!-- Responsable de la prise en charge (identifié par son N°RPPS) -->

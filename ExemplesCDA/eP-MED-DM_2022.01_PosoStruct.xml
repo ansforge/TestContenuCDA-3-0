@@ -318,7 +318,7 @@
   <participant typeCode="PRF">
     <!-- Date d'exécution souhaitée -->
     <time xsi:type="IVL_TS">
-      <high value="20211202"/>
+      <high value="20211202093000+0100"/>
     </time>
     <!-- Exécutant (obligatoire si prescription de TSO sur ordonnance sécurisée, nullFlavor possible dans les autres cas) -->
     <associatedEntity classCode="PROV">

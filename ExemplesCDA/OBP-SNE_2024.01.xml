@@ -238,7 +238,7 @@
   <!-- Médecin ou Sage-femme responsable de l'accouchement -->
   <participant typeCode="RESP">
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
@@ -277,7 +277,7 @@
       <originalText>Anesthésiste</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234562121" />
@@ -313,7 +313,7 @@
   <participant typeCode="INF">
     <functionCode code="PCP" displayName="Médecin traitant" codeSystem="2.16.840.1.113883.5.88" />
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
@@ -341,7 +341,7 @@
       <originalText>Sage-femme referente</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
@@ -379,7 +379,7 @@
       <originalText>Praticien ayant suivi la patiente</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
@@ -407,7 +407,7 @@
       <originalText>Pédiatre</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20230425" />
+      <low value="20230425080000+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234566565" />

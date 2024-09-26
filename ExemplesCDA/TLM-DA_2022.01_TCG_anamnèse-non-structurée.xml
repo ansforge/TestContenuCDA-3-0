@@ -419,7 +419,7 @@
       <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4" />
       <!-- Date de la PEC -->
       <effectiveTime>
-        <low value="20210327" />
+        <low value="20210327153500+0100" />
       </effectiveTime>
       <!-- Responsable de la prise en charge (identifié par son N°RPPS) -->
       <responsibleParty>
