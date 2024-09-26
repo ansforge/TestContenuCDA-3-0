@@ -35,7 +35,14 @@
         <assert test="./cda:code[@code='CERT_DECL' and @codeSystem='1.2.250.1.213.1.1.4.12']"> 
             [Entete_CSE-CS9] Erreur de conformité : 
             L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>.
-        </assert>  
+        </assert> 
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_CSE-CS9] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_CSE-CS9]  Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
+        </assert>
+        
         <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS9] Erreur de conformité :
             L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
