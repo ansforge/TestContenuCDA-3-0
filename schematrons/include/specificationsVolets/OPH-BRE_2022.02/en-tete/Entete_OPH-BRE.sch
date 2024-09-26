@@ -2,6 +2,10 @@
 
 <!-- 
     Contrôle la conformité de l'auteur dans l'entête du volet OPH_BRE 
+     
+     Historique :
+   
+     25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 
 -->
 
@@ -16,7 +20,15 @@
         </assert>
         <assert test="./cda:code[@code='78513-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [OPH-BRE_2021.02] Erreur de conformité : L'élément "code" doit avoir les attributs @code="78513-9" et @codeSystem="2.16.840.1.113883.6.1". 
-        </assert>                        
+        </assert> 
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [OPH-BRE_2021.02]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [OPH-BRE_2021.02] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
+        </assert>
     </rule>
     <!--     Ophtalmologue, Orthoptiste, Opticien	 -->
     <rule context="cda:ClinicalDocument/cda:author/cda:assignedAuthor">

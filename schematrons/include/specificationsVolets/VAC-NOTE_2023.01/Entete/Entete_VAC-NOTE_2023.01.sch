@@ -6,6 +6,7 @@
     
     Historique :
     15/04/2021 : Création
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 
@@ -30,6 +31,14 @@
         
         <assert test="./cda:code[@code = '87273-9' and @codeSystem = '2.16.840.1.113883.6.1']">
             [Entete_VAC-NOTE] Erreur de conformité : L'élément code doit avoir les attributs @code="87273-9" et @codeSystem="2.16.840.1.113883.6.1".
+        </assert>
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_VAC-NOTE]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_VAC-NOTE] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     

@@ -7,6 +7,7 @@
     Historique :
     07/02/2018 : Création    
     03/05/2021 : Modification des msg d'erreur
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_LDL-EES">
@@ -17,6 +18,14 @@
             [Entete_LDL-EES] Erreur de conformité : L'élément
             "code" de la LDL-SES doit avoir les attributs @code="18761-7" et
             @codeSystem="2.16.840.1.113883.6.1".
+        </assert>
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_LDL-EES]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_LDL-EES] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
         
         <assert test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime">

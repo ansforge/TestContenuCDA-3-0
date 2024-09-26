@@ -9,6 +9,7 @@
     19/12/2019 : Corrections
     05/05/2020 : Mise à jour de la liste des codes possibles pour cda:documentationOf/cda:serviceEvent/cda:code
     10/11/2022 : Mises à jour sui à la migration des terminologies
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_TLM-DA">
@@ -20,6 +21,15 @@
         <assert test="cda:code[@code='75496-0']">
             [Entete_TLM-DA] Le code du document TLM-DA doit être égal à '75496-0'
         </assert>
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_TLM-DA]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_TLM-DA] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
+        </assert>
+        
     </rule>
     
     <!-- contrôle de la valeur du code -->    

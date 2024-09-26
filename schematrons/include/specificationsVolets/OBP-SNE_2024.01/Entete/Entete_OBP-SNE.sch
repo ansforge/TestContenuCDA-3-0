@@ -6,6 +6,7 @@
     
     Historique :
     30/11/2023 : Création
+     25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 
@@ -19,6 +20,15 @@
         
         <assert test="cda:code[@code='57075-4' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_OBP-SNE] L'élément code doit avoir @code="57075-4" et @codeSystem="2.16.840.1.113883.6.1"/>. 
+        </assert>
+        
+        <!-- Verifier le setId du modèle -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_OBP-SNE]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- Verifier le versionNumber du modèle -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_OBP-SNE] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
         
         <assert test="cda:participant">
