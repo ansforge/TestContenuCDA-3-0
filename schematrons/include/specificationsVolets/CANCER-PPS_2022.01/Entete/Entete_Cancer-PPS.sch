@@ -6,7 +6,7 @@
     
     Historique :
     10/11/2022 : Création
-    
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 
@@ -18,7 +18,13 @@
         </assert>
         <assert test="./cda:code[@code='18776-5' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_Cancer-PPS] L'élément code doit avoir @code="18776-5" et @codeSystem="2.16.840.1.113883.6.1". 
-        </assert>    
+        </assert> 
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_Cancer-PPS] Erreur de conformité : L'élément "setId" doit être présent. 
+        </assert>
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_Cancer-PPS] Erreur de conformité : L'élément "versionNumber" doit être présent. 
+        </assert>
     </rule>
     
 </pattern>
