@@ -7,11 +7,22 @@
     Historique :
     21/12/2022 : NBE : Création
     09/04/2024 : APE : Suppression du contrôle du format des adresses
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
     
 -->
 
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CSE-MDE">
+    
+    <rule context="cda:ClinicalDocument">
+        
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_CSE-MDE]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_CSE-MDE] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
+        </assert>
+    </rule>
     
     <rule context="cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer/cda:assignedEntity">
         
