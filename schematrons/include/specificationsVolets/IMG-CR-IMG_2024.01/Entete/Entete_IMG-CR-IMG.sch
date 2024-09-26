@@ -7,6 +7,7 @@
     Historique :
     24/03/2021 : ANS : Création
     29/04/2021 : ANS : Suppression du controle sur la balise title
+    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
     
 -->
 
@@ -35,7 +36,14 @@
         <assert test="cda:code[@code='18748-4' and @codeSystem='2.16.840.1.113883.6.1']">
             [Entete_IMG-CR-IMG] L'élément "code" du document IMG-CR-IMG doit avoir les attributs @code="18748-4" et @codeSystem="2.16.840.1.113883.6.1". 
         </assert>
-        
+        <!-- setId -->
+        <assert test="./count(cda:setId[@root])=1"> 
+            [Entete_IMG-CR-IMG] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
+        </assert>
+        <!-- versionNumber -->
+        <assert test="./count(cda:versionNumber[@value])=1"> 
+            [Entete_IMG-CR-IMG] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
+        </assert>
         <!-- Acte documenté -->
         <assert test="count(cda:documentationOf)&gt;=1">
             [Entete_IMG-CR-IMG] L'élément "documentationOf" du document IMG-CR-IMG est obligatoire [1..*].
