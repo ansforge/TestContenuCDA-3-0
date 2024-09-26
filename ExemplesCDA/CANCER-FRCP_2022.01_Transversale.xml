@@ -687,7 +687,7 @@
       <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4" />
       <!-- Date de la RCP -->
       <effectiveTime>
-        <low value="20190218" />
+        <low value="20190218171100+0100" />
       </effectiveTime>
       <!-- [1..1] Etablissement de santé au sein duquel la RCP est organisée - pas forcément présent si visioconférence  -->
       <location>

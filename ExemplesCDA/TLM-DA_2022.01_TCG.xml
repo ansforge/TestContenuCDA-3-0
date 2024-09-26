@@ -58,7 +58,7 @@
   <!-- Identifiant commun à toutes les versions successives du document -->
   <setId root="1.2.250.1.213.1.1.1.38.12345"/>
   <!-- Numéro de la version du présent document (entier positif) -->
-  <versionNumber value="1"/>
+  <versionNumber value="2"/>
 
   <!-- Patient -->
   <recordTarget>
@@ -435,7 +435,7 @@
       <code code="VR" displayName="Virtuelle (exemple : RCP en l'absence du patient)" codeSystem="2.16.840.1.113883.5.4"/>
       <!-- Date de la prise en charge -->
       <effectiveTime>
-        <low value="20191219"/>
+        <low value="20191219175045+0100"/>
       </effectiveTime>
       <!-- Responsable de la prise en charge (identifié par son N°RPPS) -->
       <responsibleParty>

@@ -418,8 +418,8 @@
             <code code="EXTERNE" displayName="Acte et consultation externe (établissement)"
                 codeSystem="1.2.250.1.213.1.1.4.2.291"/>
             <effectiveTime>
-                <low value="20210112102500"/>
-                <high value="20210112111700"/>
+                <low value="20210112102500+0100"/>
+                <high value="20210112111700+0100"/>
             </effectiveTime>
             <location>
                 <healthCareFacility>

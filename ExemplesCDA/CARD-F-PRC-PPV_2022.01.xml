@@ -58,7 +58,7 @@
   <!-- Identifiant commun à toutes les versions successives du document -->
   <setId root="1.2.250.1.213.1.1.1.2.1.5.12345"/>
   <!-- Numéro de la version du présent document (entier positif) -->
-  <versionNumber value="1" />
+  <versionNumber value="2" />
 
   <!-- Patient -->
   <recordTarget>
@@ -219,8 +219,8 @@
   <participant typeCode="INF">
     <functionCode code="ATTPHYS" displayName="Référent - Responsable du patient dans la structure de soins" codeSystem="2.16.840.1.113883.5.88" />
     <time xsi:type="IVL_TS">
-      <low value="20060922" />
-      <high value="20061022" />
+      <low value="20060922094914+0100" />
+      <high value="20061022094914+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="802926406900" />
@@ -244,8 +244,8 @@
   <participant typeCode="INF">
     <functionCode code="PCP" displayName="Médecin traitant" codeSystem="2.16.840.1.113883.5.88" />
     <time xsi:type="IVL_TS">
-      <low value="20060922" />
-      <high value="20061022" />
+      <low value="20060922094914+0100" />
+      <high value="20061022094914+0100" />
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="802926406900" />

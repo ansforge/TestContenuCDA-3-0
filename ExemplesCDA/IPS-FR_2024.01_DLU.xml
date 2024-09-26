@@ -263,7 +263,7 @@
   <participant typeCode="INF">
     <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin Traitant"/>
     <time xsi:type="IVL_TS">
-      <low value="20240402"/>
+      <low value="20240402111700+0100"/>
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
@@ -308,7 +308,7 @@
       <originalText>Contact 24h/24h en EHPAD</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20240402"/>
+      <low value="20240402111700+0100"/>
     </time>
     <!-- EHPAD -->
     <associatedEntity classCode="PROV">   
@@ -333,7 +333,7 @@
   <participant typeCode="INF">
     <functionCode code="ES-PREF" codeSystem="1.2.250.1.213.1.1.4.2.280" displayName="Etablissement de santé de préférence"/>
     <time xsi:type="IVL_TS">
-      <low value="20240402"/>
+      <low value="20240402111700+0100"/>
     </time>
     <!-- Établissement de santé de préférence -->
     <associatedEntity classCode="PROV">   
@@ -358,7 +358,7 @@
       <originalText>Masseur-Kinésithérapeute</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20240402"/>
+      <low value="20240402111700+0100"/>
     </time>
     <!-- Masseur-Kinésithérapeute -->
     <associatedEntity classCode="PROV">
@@ -403,7 +403,7 @@
       <originalText>Centre de référence pour la maladie rare (texte libre)</originalText>
     </functionCode>
     <time xsi:type="IVL_TS">
-      <low value="20240402"/>
+      <low value="20240402111700+0100"/>
     </time>
     <!-- Établissement de santé de préférence -->
     <associatedEntity classCode="PROV">   

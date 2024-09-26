@@ -374,8 +374,8 @@
 			<code code="IMP" displayName="Hospitalisation (établissement, y compris HAD)"
 				codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActEncounterCode"/>
 			<effectiveTime>
-				<low value="20200327153500"/>
-				<high value="20200328175500"/>
+				<low value="20200327153500+0100"/>
+				<high value="20200328175500+0100"/>
 			</effectiveTime>
 			<responsibleParty>
 				<assignedEntity>

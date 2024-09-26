@@ -480,8 +480,8 @@
             <code code="AMB" displayName="Ambulatoire (hors établissement)"
                 codeSystem="2.16.840.1.113883.5.4"/>
             <effectiveTime>
-                <low value="20210112102500"/>
-                <high value="20210112111700"/>
+                <low value="20210112102500+0100"/>
+                <high value="20210112111700+0100"/>
             </effectiveTime>
             <location>
                 <healthCareFacility>

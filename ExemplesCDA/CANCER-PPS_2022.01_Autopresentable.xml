@@ -272,8 +272,8 @@
             codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"> </c:translation>
         </c:functionCode>
         <c:time xsi:type="c:IVL_TS">
-          <c:low value="20190930"/>
-          <c:high value="20191230"/>
+          <c:low value="20190930121700+0100"/>
+          <c:high value="20191230121700+0100"/>
         </c:time>
         <!-- ES -->
         <c:associatedEntity classCode="PROV">

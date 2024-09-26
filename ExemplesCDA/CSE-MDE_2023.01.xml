@@ -53,7 +53,7 @@
    <!-- Identifiant commun à toutes les versions successives du document -->
    <setId root="1.2.250.1.213.1.1.1.5.12345"/>
    <!-- Numéro de la version du présent document (entier positif) -->
-   <versionNumber value="1"/>
+   <versionNumber value="4"/>
    
    <!-- Patient -->
    <recordTarget>
@@ -365,8 +365,8 @@
       <encompassingEncounter>
          <code code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatoire (hors établissement)"/>
          <effectiveTime>
-            <low value="20230106111510"/>
-            <high value="20230106113623"/>
+            <low value="20230106111510+0100"/>
+            <high value="20230106113623+0100"/>
          </effectiveTime>
          <location>
             <healthCareFacility>

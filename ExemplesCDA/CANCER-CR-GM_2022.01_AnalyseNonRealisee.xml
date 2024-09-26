@@ -705,8 +705,8 @@
       <!-- Type de prise en charge -->
       <code code="AMB" displayName= "Ambulatoire (hors établissement)" codeSystem="2.16.840.1.113883.5.4" />
       <effectiveTime>
-        <low value="201801230730" />
-        <high value="201801230930" />
+        <low value="20180117121700+0100" />
+        <high value="20180123121700+0100" />
       </effectiveTime>
       <!-- Biologiste et laboratoire responsables -->
       <responsibleParty>
