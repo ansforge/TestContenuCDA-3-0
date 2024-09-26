@@ -53,7 +53,7 @@
    <!-- Conformité CSE-CS8 -->
    <templateId root="1.2.250.1.213.1.1.1.5.1" extension="2024.01"/>   
    <!-- Identifiant du document -->
-   <id root="1.2.250.1.213.1.1.1.5.1.12345.1"/>
+   <id root="1.2.250.1.213.1.1.1.5.1.12345.2"/>
    <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode-CISIS) -->
    <code code="CERT_DECL" displayName="Certificat, déclaration" codeSystem="1.2.250.1.213.1.1.4.12"/>
    <!-- Titre du document -->
