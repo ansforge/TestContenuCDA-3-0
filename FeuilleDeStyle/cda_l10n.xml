@@ -4591,7 +4591,7 @@
         <comment>Label: ParticipationType Information Recipient</comment>
         <value lang="en-us">Information Recipient</value>
         <value lang="nl-nl">Ontvanger</value>
-        <value lang="fr-fr">Destinataire(s) prévu</value>
+        <value lang="fr-fr">Destinataire(s) prévu(s)</value>
     </translation>
     <translation key="typeCode-PRF">
         <comment>Label: ServiceEventPerformer Performer</comment>
