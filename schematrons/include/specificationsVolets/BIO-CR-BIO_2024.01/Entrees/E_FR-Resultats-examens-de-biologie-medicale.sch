@@ -47,10 +47,10 @@
     </rule>
     
     <rule context="cda:entry[cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1']]/cda:act/cda:entryRelationship/cda:observation/cda:code">
-        <assert test="(cda:translation and cda:translation/@code and cda:translation/@codeSystem='1.2.250.1.213.1.1.5.130' and cda:translation/@displayName and cda:translation/@codeSystemName) or 
-            (cda:translation and not(cda:translation/@codeSystem='1.2.250.1.213.1.1.5.130') and cda:translation/@code and cda:translation/@displayName and cda:translation/@codeSystemName) or
+        <assert test="(cda:translation and cda:translation/@code and cda:translation/@codeSystem='1.2.250.1.213.1.1.5.130' and cda:translation/@displayName) or 
+            (cda:translation and not(cda:translation/@codeSystem='1.2.250.1.213.1.1.5.130') and cda:translation/@code and cda:translation/@displayName) or
             not(cda:translation)">
-            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName, @codeSystemName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code, @displayName et @codeSystemName sont obligatoires.
+            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code et @displayName sont obligatoires.
         </assert>
     </rule>
     
@@ -61,8 +61,8 @@
     </rule>
     
     <rule context="cda:entry[cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1']]/cda:act/cda:entryRelationship/cda:organizer/cda:component/cda:observation/cda:code/cda:translation">
-        <assert test="(@code and @codeSystem='1.2.250.1.213.1.1.5.130' and @displayName and @codeSystemName) or (not(@codeSystem='1.2.250.1.213.1.1.5.130') and @code and @displayName and @codeSystemName)">
-            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName, @codeSystemName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code, @displayName et @codeSystemName sont obligatoires.
+        <assert test="(@code and @codeSystem='1.2.250.1.213.1.1.5.130' and @displayName) or (not(@codeSystem='1.2.250.1.213.1.1.5.130') and @code and @displayName)">
+            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code et @displayName sont obligatoires.
         </assert>
     </rule>
     
@@ -73,8 +73,8 @@
     </rule>
     
     <rule context="cda:entry[cda:templateId[@root='1.3.6.1.4.1.19376.1.3.1']]/cda:act/cda:entryRelationship/cda:organizer/cda:component/cda:organizer/cda:component/cda:observation/cda:code/cda:translation">
-        <assert test="(@code and @codeSystem='1.2.250.1.213.1.1.5.130' and @displayName and @codeSystemName) or (not(@codeSystem='1.2.250.1.213.1.1.5.130') and @code and @displayName and @codeSystemName)">
-            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName, @codeSystemName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code, @displayName et @codeSystemName sont obligatoires.
+        <assert test="(@code and @codeSystem='1.2.250.1.213.1.1.5.130' and @displayName) or (not(@codeSystem='1.2.250.1.213.1.1.5.130') and @code and @displayName)">
+            [E_FR-Resultats-examens-de-biologie-medicale] Erreur de conformité : Si le code d'identification est un code d'attente LOINC, les attributs @code, @displayName et @codeSystem sont obligatoires. Si le code d'identification est un code de portée locale, les attributs @code et @displayName sont obligatoires.
         </assert>
     </rule>
     
