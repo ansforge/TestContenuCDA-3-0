@@ -6,7 +6,6 @@
     
     Historique :
     05/01/2022 : ANS : Création
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
     
 -->
 
@@ -29,14 +28,7 @@
         <assert test="cda:code[@code='55115-0' and @codeSystem='2.16.840.1.113883.6.1']">
             [Entete_IMG-DA-IMG] L'élément "code" du document IMG-DA-IMG doit avoir les attributs @code="55115-0" et @codeSystem="2.16.840.1.113883.6.1". 
         </assert>
-        <!-- versionNumber -->
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_IMG-DA-IMG] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
-        </assert>
-        <!-- Acte documenté -->
-        <assert test="count(cda:documentationOf)&gt;=1">
-            [Entete_IMG-DA-IMG] L'élément "documentationOf" du document IMG-CR-IMG est obligatoire [1..*].
-        </assert>
+
         <assert test="count(cda:documentationOf[cda:serviceEvent/cda:code/@code='55115-0' and cda:serviceEvent/cda:code/@codeSystem='2.16.840.1.113883.6.1'])=1">
             [Entete_IMG-DA-IMG] l'acte principal documenté est obligatoire [1..1] et doit avoir le code/@code="55115-0" et code/@codeSystem="2.16.840.1.113883.6.1".     
         </assert>

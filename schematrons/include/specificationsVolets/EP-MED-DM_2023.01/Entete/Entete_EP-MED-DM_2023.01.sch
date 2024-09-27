@@ -8,7 +8,6 @@
         - 05/06/2020 : Création
         - 30/11/2020 : Mise à jour
         - 15/09/2023 : Nouvelle version 2023.01 suite à l'ajout de la nouvelle section FR-Document-PDF-copie [1..1]
-        - 25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_EP-MED-DM_2023.01">
@@ -37,12 +36,6 @@
         
         <assert test="./cda:code[@code='57833-6' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [EP-MED-DM_2023.01] Erreur de conformité : L'élément "code" doit avoir les attributs @code="57833-6" et @codeSystem="2.16.840.1.113883.6.1"/>. 
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [EP-MED-DM_2023.01] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [EP-MED-DM_2023.01] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
         
         <!-- Ajout Nizar-->
