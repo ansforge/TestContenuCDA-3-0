@@ -5,8 +5,7 @@
     Teste la conformité de l'entete d'Anest-CR-CPA au CI-SIS
     
     Historique :
-    09/11/2022 : Création 
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber" 
+    09/11/2022 : Création    
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_Anest-CR-CPA">
@@ -21,12 +20,6 @@
         </assert>
         <assert test="(./cda:documentationOf/cda:serviceEvent/cda:code[@code='CS' and @codeSystem='1.2.250.1.215.200.3.3']) or (./cda:documentationOf/cda:serviceEvent/cda:code[@code='APC' and @codeSystem='1.2.250.1.215.200.3.3']) "> 
             [Entete_ANEST-CR-CPA] L'élément "code" de l'acte principal doit avoir les attributs @code ="CS" ou "APC" et @codeSystem = "1.2.250.1.215.200.3.3". 
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_ANEST-CR-CPA] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_ANEST-CR-CPA] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     

@@ -7,7 +7,7 @@
     Historique :
     01/02/2018 : Création
     10/11/2022 : Mise à jour suite à la migration des terminologies
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber" 
+    
 -->
 
 
@@ -27,12 +27,6 @@
         
         <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_AVC-SUNV] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_AVC-SUNV] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_AVC-SUNV] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     
