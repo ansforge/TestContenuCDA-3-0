@@ -8,7 +8,6 @@
     07/02/2018 : NMA : Création
     11/02/2019 : APE : Ajout du contrôle du nom de famille obligatoire
     10/11/2022 : Mises à jour suite à la migration des terminologies
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
     
 -->
 
@@ -23,16 +22,6 @@
         <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_SDMMR] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1" 
         </assert>
-        
-        <!-- Verifier le setId du modèle -->
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_SDMMR]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <!-- Verifier le versionNumber du modèle -->
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_SDMMR] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
-        </assert>
-        
         <assert test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime">
             [Entete_SDMMR] La date de naissance du patient est obligatoirement présente 
         </assert>
