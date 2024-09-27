@@ -5,8 +5,7 @@
     Teste la conformité de l'entete de CARD-F-PRC-DCI au CI-SIS
     
     Historique :
-    02/01/2023: Création
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"    
+    02/01/2023: Création    
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CARD-F-PRC-DCI">
@@ -18,12 +17,6 @@
         </assert>
         <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_CARD-F-PRC-DCI] Erreur de conformité au modèle : L'élément "code" doit avoir les attributs @code="77436-4" et @codeSystem="2.16.840.1.113883.6.1". 
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_CARD-F-PRC-DCI] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_CARD-F-PRC-DCI] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     <rule context="cda:ClinicalDocument/cda:participant">

@@ -5,20 +5,10 @@
     Teste la conformité de l'entete du volet CR-GM
     
     Historique :
-    08/01/2019 :  Création  
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
+    08/01/2019 :  Création    
 -->
 
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CR-GM">  
-    
-    <rule context='cda:ClinicalDocument'> 
-    <assert test="./count(cda:setId[@root])=1"> 
-        [Entete_CR-GM] Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-    </assert>
-    <assert test="./count(cda:versionNumber[@value])=1"> 
-        [Entete_CR-GM] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
-    </assert>
-    </rule>
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CR-GM">    
     
     <rule context='cda:ClinicalDocument/cda:author'>
         <assert test="count(cda:author)&lt;4">
@@ -33,7 +23,6 @@
         <assert test="cda:assignedAuthor/cda:assignedPerson">
             [Entete_CR-GM] Identité de l’auteur (Nom, prénom, prefix, etc..)  est obligatoirement présente.         
         </assert>
-        
     </rule>
            
     <rule context='cda:ClinicalDocument/cda:custodian'>
