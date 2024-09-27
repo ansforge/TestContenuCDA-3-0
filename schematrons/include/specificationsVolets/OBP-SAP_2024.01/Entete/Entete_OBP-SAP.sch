@@ -8,7 +8,6 @@
     07/02/2018 : Création
     25/10/2022 : Version 2022.01
     11/05/2023 : Version 2023.01
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_OBP-SAP">
@@ -21,14 +20,6 @@
         
         <assert test="./cda:code[@code='57055-6' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_OBP-SAP] L'élément code doit avoir @code ="57055-6" et @codeSystem = "2.16.840.1.113883.6.1". 
-        </assert>
-        <!-- Verifier le setId du modèle -->
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_OBP-SAP]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <!-- Verifier le versionNumber du modèle -->
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_OBP-SAP] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
         
         <assert test="cda:participant">

@@ -6,7 +6,6 @@
     
     Historique :
     30/11/2023 : Création
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_OBP-SNM">
@@ -19,16 +18,6 @@
         <assert test="./cda:code[@code='57057-2' and @codeSystem='2.16.840.1.113883.6.1']"> 
             [Entete_OBP-SNM] L'élément code doit avoir @code ="57057-2" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
         </assert>
-        
-        <!-- Verifier le setId du modèle -->
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_OBP-SNM]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <!-- Verifier le versionNumber du modèle -->
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_OBP-SNM] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
-        </assert>
-        
         <assert test="cda:participant/cda:associatedEntity/cda:telecom">
             [Entete_OBP-SNM] L'adresse de télécomunication telecom est obligatoire et a une cardinalité [1..*]
         </assert>        

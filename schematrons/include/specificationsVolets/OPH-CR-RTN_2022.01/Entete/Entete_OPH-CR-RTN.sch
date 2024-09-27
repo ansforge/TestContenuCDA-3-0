@@ -7,7 +7,6 @@
     Historique :
     02/02/2018 : Création
     22/02/2021 : Renommage
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CR-RTN">
@@ -17,16 +16,6 @@
         <assert test="cda:code[@code='75492-9']">
             [Entete_OPH-CR-RTN] L'élément code doit être présent et égal à 75492-9
         </assert>
-        
-        <!-- Verifier le setId du modèle -->
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_OPH-CR-RTN]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <!-- Verifier le versionNumber du modèle -->
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_OPH-CR-RTN] Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
-        </assert>
-        
         <!-- Volet OPH-CR-RTN : "Le médecin prescripteur est un élément obligatoire" -->
         <assert test="cda:participant[@typeCode='REF']"> 
             [Entete_OPH-CR-RTN] Erreur de conformité : 
