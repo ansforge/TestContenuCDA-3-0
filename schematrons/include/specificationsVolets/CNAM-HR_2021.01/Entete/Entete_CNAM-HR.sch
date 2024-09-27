@@ -5,8 +5,7 @@
     Teste la conformité de l'entete du CNAM-HR au CI-SIS
     
     Historique :
-    07/11/2022 : Création 
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
+    07/11/2022 : Création    
 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Entete_CNAM-HR">
@@ -20,12 +19,6 @@
         </assert>
         <assert test='cda:templateId[@root="1.2.250.1.213.1.1.1.36" and @extension="2021.01"]'>
             [Entete_CNAM-HR] L'élément templateId fixé à @root="1.2.250.1.213.1.1.1.36" et @extension="2021.01" est obligatoire
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_CNAM-HR]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_CNAM-HR]  Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     

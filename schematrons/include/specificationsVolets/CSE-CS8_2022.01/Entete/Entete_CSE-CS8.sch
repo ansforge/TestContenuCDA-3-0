@@ -7,7 +7,7 @@
     Historique :
     02/02/2018 : NMA : Création
     10/11/2022 : Mises à jour suite à la migration des terminologies
-    25/09/2024 : Ajout des tests sur les deux éléments "setId" et "versionNumber"
+    
 -->
 
 
@@ -17,12 +17,6 @@
         <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
             [Entete_CSE-CS8] Erreur de conformité : 
             L'utilisation des composants élémentaires de l’adresse est obligatoire. Le code postal est aussi obligatoire.
-        </assert>
-        <assert test="./count(cda:setId[@root])=1"> 
-            [Entete_CSE-CS8]  Erreur de conformité au modèle : L'élément "setId" doit être présent. 
-        </assert>
-        <assert test="./count(cda:versionNumber[@value])=1"> 
-            [Entete_CSE-CS8]  Erreur de conformité au modèle : L'élément "versionNumber" doit être présent. 
         </assert>
     </rule>
     
