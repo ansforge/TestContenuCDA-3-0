@@ -925,7 +925,7 @@
 							<id root="EB45376A-18AF-4D64-AE2D-592C04302205"/>
 							<code code="42348-3" codeSystem="2.16.840.1.113883.6.1"
 								displayName="Directives anticipées" codeSystemName="LOINC"/>
-							<text><reference value="a definir"/></text>
+							<text><reference value="ftp://ftp.ihe.net/advancedirectives/durand#124/"/></text>
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="20180221100000"/>
