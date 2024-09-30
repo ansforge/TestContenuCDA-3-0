@@ -11,7 +11,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="E_produitDeSante_fr">
         <title>CI-SIS Entrée "FR-Produit-de-sante-prescrit"</title>
     
-        <rule context="//cda:entry/cda:substanceAdministration/cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial">
+        <rule context="//cda:substanceAdministration/cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial">
             
             <!-- Test des templateId pour l'entrée "FR-Produit-de-sante" -->
             <assert test="not(cda:code[@codeSystem]) or cda:code[@codeSystem='1.2.250.1.213.2.3.1']">
