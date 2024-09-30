@@ -525,6 +525,9 @@
       <skos:notation>GEN-092.06.09</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>GEN-092.06.10</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>GEN-092.07</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -1225,6 +1228,12 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-364</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-365</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-366</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>image/bm</skos:notation>
@@ -4509,6 +4518,18 @@
       <skos:notation>MED-1295</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MED-1296</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1297</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1298</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1299</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>ORG-001</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -4963,6 +4984,24 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ORG-205</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-206</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-207</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-208</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-209</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-210</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-211</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PAT-001</skos:notation>

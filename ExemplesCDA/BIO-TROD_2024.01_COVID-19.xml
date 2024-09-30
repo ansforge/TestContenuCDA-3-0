@@ -19,6 +19,7 @@
       Historique :    
       16/05/2024 : Création du document
       29/07/2024 : renommage du document en BIO-TROD et ajout du code UID du kit utilisé pour le test
+      26/09/2024 : ajout du consentement
       ********************************************************************************************************** -->
 
    <!-- ************************************************************
@@ -53,7 +54,7 @@
    <!-- Numéro de la version du présent document (entier positif) -->
    <versionNumber value="1"/>
 
-   <!-- Patient -->
+   <!-- [1..1] Patient -->
    <recordTarget>
       <patientRole>
          <!-- INS-NIR de test : 1.2.250.1.213.1.4.10 -->
@@ -119,11 +120,11 @@
       </patientRole>
    </recordTarget>
 
-   <!-- Auteur du document -->
+   <!-- [1..*] Auteur du document -->
    <author>
       <time value="20240106113623+0100"/>
       <assignedAuthor>
-         <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+         <id root="1.2.250.1.71.4.2.1" extension="807655473259"/>
          <!-- Valeur issue du JDV_J01-XdsAuthorSpecialty-CISIS (1.2.250.1.213.1.1.5.461) -->
          <code code="G15_21/A" displayName="Pharmacien titulaire d'officine"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
@@ -156,7 +157,7 @@
       </assignedAuthor>
    </author>
 
-   <!-- Structure chargée de la conservation du document -->
+   <!-- [1..1] Structure chargée de la conservation du document -->
    <custodian>
       <assignedCustodian>
          <representedCustodianOrganization>
@@ -173,12 +174,49 @@
       </assignedCustodian>
    </custodian>
 
-   <!-- Responsable du document -->
+   <!-- [0..*] Destinataire prévu du document -->
+   <informationRecipient>      
+      <intendedRecipient>
+         <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+         <!-- Adresse du PS-->
+         <addr>
+            <houseNumber>3</houseNumber>
+            <streetName>Rue Petit Pont</streetName>
+            <postalCode>75005</postalCode>
+            <city>PARIS</city>
+         </addr>
+         <!-- Coordonnées télécom du PS-->
+         <telecom value="tel:0147150000" use="WP"/>
+         <telecom value="mailto:stephane.medioni@mssante.fr"/>
+         <!-- Identité du PS -->
+         <informationRecipient>
+            <name>
+               <prefix>M</prefix>
+               <given>Stéphane</given>
+               <family>MEDIONI</family>
+               <suffix>DR</suffix>
+            </name>
+         </informationRecipient>
+         <!-- Etablissement de rattachement du PS -->
+         <receivedOrganization>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <name>Centre de soins le Belvédère</name>
+            <addr>
+               <houseNumber>3</houseNumber>
+               <streetName>Rue Petit Pont</streetName>
+               <postalCode>75005</postalCode>
+               <city>PARIS</city>
+            </addr>
+         </receivedOrganization>
+      </intendedRecipient>
+   </informationRecipient>   
+   
+   <!-- [1..1] Responsable du document -->
    <legalAuthenticator>
       <time value="20240106113623+100"/>
       <signatureCode code="S"/>
       <assignedEntity>
-         <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+         <id root="1.2.250.1.71.4.2.1" extension="807655473259"/>
          <!-- Valeur issue du JDV_J01-XdsAuthorSpecialty-CISIS (1.2.250.1.213.1.1.5.461) -->
          <code code="G15_21/A" displayName="Pharmacien titulaire d'officine"
             codeSystem="1.2.250.1.213.1.1.4.5"/>
@@ -213,7 +251,50 @@
       </assignedEntity>
    </legalAuthenticator>
 
-   <!-- Évènement documenté : Pathologie / substance dépistée : COVID-19-->
+   <!-- [0..1] Médecin traitant -->
+   <participant typeCode="INF">
+      <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin Traitant"/>
+      <time xsi:type="IVL_TS">
+         <low value="20240402"/>
+      </time>
+      <associatedEntity classCode="PROV">
+         <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+         <!-- Adresse du PS-->
+         <addr>
+            <houseNumber>3</houseNumber>
+            <streetName>Rue Petit Pont</streetName>
+            <postalCode>75005</postalCode>
+            <city>PARIS</city>
+         </addr>
+         <!-- Coordonnées télécom du PS-->
+         <telecom value="tel:0147150000" use="WP"/>
+         <telecom value="mailto:stephane.medioni@mssante.fr"/>
+         <!-- Identité du PS -->
+         <associatedPerson>
+            <name>
+               <prefix>M</prefix>
+               <given>Stéphane</given>
+               <family>MEDIONI</family>
+               <suffix>DR</suffix>
+            </name>
+         </associatedPerson>
+         <!-- Etablissement de rattachement du PS -->
+         <scopingOrganization>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <name>Centre de soins le Belvédère</name>
+            <addr>
+               <houseNumber>3</houseNumber>
+               <streetName>Rue Petit Pont</streetName>
+               <postalCode>75005</postalCode>
+               <city>PARIS</city>
+            </addr>
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé"
+               codeSystem="1.2.250.1.213.1.1.4.9"/>
+         </scopingOrganization>
+      </associatedEntity>
+   </participant>
+   
+   <!-- [1..*] Évènement documenté : Pathologie / substance dépistée : COVID-19-->
    <documentationOf>
       <serviceEvent classCode="ACT">
          <!-- Pathologie ou substance dépistée -->
@@ -225,7 +306,7 @@
          <!-- Professionnel de santé ayant réalisé le test de dépistage -->
          <performer typeCode="PRF">
             <assignedEntity>
-               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+               <id root="1.2.250.1.71.4.2.1" extension="807655473259"/>
                <!-- Valeur issue du JDV_J01-XdsAuthorSpecialty-CISIS (1.2.250.1.213.1.1.5.461) -->
                <code code="G15_21/A" displayName="Pharmacien titulaire d'officine"
                   codeSystem="1.2.250.1.213.1.1.4.5"/>
@@ -263,18 +344,28 @@
       </serviceEvent>
    </documentationOf>
 
-   <!-- Association du document à une prise en charge -->
+   <!-- [0..*] Consentement du patient -->
+   <authorization typeCode="AUTH">
+      <consent classCode="CONS" moodCode="EVN">
+         <code code="GEN-366"
+            displayName="Le patient (ou son représentant légal) a donné son consentement pour la réalisation du test."
+            codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+         <statusCode code="completed"/>
+      </consent>
+   </authorization>
+   
+   <!-- [1..1] Association du document à une prise en charge -->
    <componentOf>
       <encompassingEncounter>
          <!-- Valeur issue du JDV_J142-TypeRencontre-CISIS (1.2.250.1.213.1.1.5.589) -->
          <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
             displayName="Ambulatoire (hors établissement)"/>
          <effectiveTime>
-            <low value="20240106113623+0100"/>
+            <low value="20240106113623"/>
          </effectiveTime>
          <responsibleParty>
             <assignedEntity>
-               <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
+               <id root="1.2.250.1.71.4.2.1" extension="807655473259"/>
                <!-- Valeur issue du JDV_J01-XdsAuthorSpecialty-CISIS (1.2.250.1.213.1.1.5.461) -->
                <code code="G15_21/A" displayName="Pharmacien titulaire d'officine"
                   codeSystem="1.2.250.1.213.1.1.4.5"/>
