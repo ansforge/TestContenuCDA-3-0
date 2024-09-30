@@ -255,7 +255,7 @@
    <participant typeCode="INF">
       <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin Traitant"/>
       <time xsi:type="IVL_TS">
-         <low value="20240402"/>
+         <low value="20240402113623+0100"/>
       </time>
       <associatedEntity classCode="PROV">
          <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
@@ -361,7 +361,7 @@
          <code code="AMB" codeSystem="2.16.840.1.113883.5.4"
             displayName="Ambulatoire (hors établissement)"/>
          <effectiveTime>
-            <low value="20240106113623"/>
+            <low value="20240106113623+0100"/>
          </effectiveTime>
          <responsibleParty>
             <assignedEntity>
