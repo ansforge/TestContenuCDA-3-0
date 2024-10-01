@@ -424,6 +424,41 @@
     </xd:doc>
     <xsl:param name="dohtmlheader">true</xsl:param>
 
+    <xsl:variable name="ins" select="
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+            translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+    <xsl:variable name="countP"
+        select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
+    <xsl:variable name="name">
+        <xsl:for-each
+            select="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
+            <xsl:value-of
+                select="translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+            <xsl:if test="$countP > 1">
+                <xsl:if test="(position() != last()) and (position() >= 1)">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:variable>
+    <xsl:variable name="given"
+        select="translate(hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR'], 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+    <xsl:variable name="sex" select="hl7:patient/hl7:administrativeGenderCode/@code"/>
+    <xsl:variable name="datebirth">
+        <xsl:if test="hl7:patient/hl7:birthTime">
+            <xsl:call-template name="show-timestamp-matrix">
+                <xsl:with-param name="in" select="hl7:patient/hl7:birthTime"/>
+            </xsl:call-template>
+        </xsl:if>
+    </xsl:variable>
+    <xsl:variable name="country"
+        select="translate(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+
     <xd:doc>
         <xd:desc>
             <xd:p>Determines if the document footer containing a listing of everything in the CDA
@@ -841,49 +876,49 @@
                                         <xsl:choose>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-NIR]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-NIA]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-NIR de test]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-NIR de démonstration]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
                                             </xsl:when>
                                             <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
                                                 <xsl:call-template name="show-identifiant">
-                                                    <xsl:with-param name="id" select="."/>
+                                                  <xsl:with-param name="id" select="."/>
                                                 </xsl:call-template>
                                                 <xsl:text>&#160;</xsl:text>
                                                 <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
@@ -1382,8 +1417,8 @@
                     <script src="../FeuilleDeStyle/JS/datamatrix.min.js" type="text/javascript"/>
                     <script type="text/javascript">
                         if (document.getElementById('element') !== null) {
-                            var div = document.getElementById('element');
-                            var cookieValue = document.getElementById('element').getAttribute('value');
+                            var div = document.getElementsByClassName('barcodeStyle')[0];
+                            var cookieValue = div.getAttribute('value');
                             var svgNode = DATAMatrix
                             ({
                                 dim: 256,
@@ -2900,116 +2935,118 @@
                     </span>
                 </xsl:if>
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
-                <table class="header_table">
-                    <tbody>
-                        <xsl:variable name="number"
-                            select="count(hl7:informant/hl7:relatedEntity[@classCode = 'NOK'])"/>
-                        <xsl:for-each select="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
-                            <xsl:if test="hl7:relatedPerson/hl7:name or /hl7:code or ./hl7:addr">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label">
-                                        <xsl:if test="hl7:relatedPerson/hl7:name">
-                                            <xsl:call-template name="show-name-set">
-                                                <xsl:with-param name="in"
+                    <table class="header_table">
+                        <tbody>
+                            <xsl:variable name="number"
+                                select="count(hl7:informant/hl7:relatedEntity[@classCode = 'NOK'])"/>
+                            <xsl:for-each
+                                select="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
+                                <xsl:if test="hl7:relatedPerson/hl7:name or /hl7:code or ./hl7:addr">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label">
+                                            <xsl:if test="hl7:relatedPerson/hl7:name">
+                                                <xsl:call-template name="show-name-set">
+                                                  <xsl:with-param name="in"
                                                   select="hl7:relatedPerson/hl7:name"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                        <xsl:if test="hl7:code/@displayName">
-                                            <xsl:text> (</xsl:text>
-                                            <xsl:value-of select="hl7:code/@displayName"/>
-                                            <xsl:text>)</xsl:text>
-                                        </xsl:if>
-                                    </td>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:addr">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
-                                                  <xsl:with-param name="pre" select="''"/>
-                                                  <xsl:with-param name="key" select="'addr'"/>
-                                                  <xsl:with-param name="post" select="''"/>
                                                 </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="show-contactInfo-patient">
-                                                <xsl:with-param name="contact" select="."/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="./hl7:telecom">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:telecom">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
-                                                  <xsl:with-param name="pre" select="''"/>
-                                                  <xsl:with-param name="key" select="'telecom'"/>
-                                                  <xsl:with-param name="post" select="''"/>
-                                                </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:telecom">
-                                            <xsl:for-each select="./hl7:telecom">
-                                                <xsl:call-template name="show-telInfo-patient">
-                                                  <xsl:with-param name="contact" select="."/>
-                                                </xsl:call-template>
-                                                <br/>
-                                            </xsl:for-each>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <xsl:if test=".">
+                                            </xsl:if>
+                                            <xsl:if test="hl7:code/@displayName">
+                                                <xsl:text> (</xsl:text>
+                                                <xsl:value-of select="hl7:code/@displayName"/>
+                                                <xsl:text>)</xsl:text>
+                                            </xsl:if>
+                                        </td>
                                         <td class="td_header_label td_label_width">
-                                            <xsl:if
-                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                            <xsl:if test="./hl7:addr">
                                                 <span class="span_label">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
-                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="key" select="'addr'"/>
                                                   <xsl:with-param name="post" select="''"/>
                                                   </xsl:call-template>
                                                 </span>
                                             </xsl:if>
                                         </td>
                                         <td style="width: 30%;background-color: white;">
-                                            <xsl:if
-                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                                <xsl:call-template name="show-telInfo-patient-email">
-                                                  <xsl:with-param name="contact"
-                                                  select="./hl7:telecom"/>
+                                            <xsl:if test="./hl7:addr">
+                                                <xsl:call-template name="show-contactInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
                                                 </xsl:call-template>
                                             </xsl:if>
                                         </td>
-                                    </xsl:if>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="position() &lt; ($number)">
-                                <tr>
-                                    <td colspan="3" style="background-color: white;"
-                                        class="span_label">
-                                        <hr width="100%" size="1"/>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </tbody>
-                </table>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="./hl7:telecom">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <td class="td_header_label td_label_width">
+                                            <xsl:if test="./hl7:telecom">
+                                                <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'telecom'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
+                                                </span>
+                                            </xsl:if>
+                                        </td>
+                                        <td style="width: 30%;background-color: white;">
+                                            <xsl:if test="./hl7:telecom">
+                                                <xsl:for-each select="./hl7:telecom">
+                                                  <xsl:call-template name="show-telInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
+                                                  </xsl:call-template>
+                                                  <br/>
+                                                </xsl:for-each>
+                                            </xsl:if>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <xsl:if test=".">
+                                            <td class="td_header_label td_label_width">
+                                                <xsl:if
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
+                                                  </span>
+                                                </xsl:if>
+                                            </td>
+                                            <td style="width: 30%;background-color: white;">
+                                                <xsl:if
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <xsl:call-template
+                                                  name="show-telInfo-patient-email">
+                                                  <xsl:with-param name="contact"
+                                                  select="./hl7:telecom"/>
+                                                  </xsl:call-template>
+                                                </xsl:if>
+                                            </td>
+                                        </xsl:if>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="position() &lt; ($number)">
+                                    <tr>
+                                        <td colspan="3" style="background-color: white;"
+                                            class="span_label">
+                                            <hr width="100%" size="1"/>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </tbody>
+                    </table>
                 </xsl:if>
-                </xsl:if>
+            </xsl:if>
             <xsl:if test="contains($vendor, 'Saxonica')">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'NOK']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
@@ -3145,7 +3182,7 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Handle section informant confiance</xd:p>
@@ -3166,116 +3203,118 @@
                     </span>
                 </xsl:if>
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'CON']">
-                <table class="header_table">
-                    <tbody>
-                        <xsl:variable name="number"
-                            select="count(hl7:informant/hl7:relatedEntity[@classCode = 'CON'])"/>
-                        <xsl:for-each select="hl7:informant/hl7:relatedEntity[@classCode = 'CON']">
-                            <xsl:if test="hl7:relatedPerson/hl7:name or /hl7:code or ./hl7:addr">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label">
-                                        <xsl:if test="hl7:relatedPerson/hl7:name">
-                                            <xsl:call-template name="show-name-set">
-                                                <xsl:with-param name="in"
-                                                    select="hl7:relatedPerson/hl7:name"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                        <xsl:if test="hl7:code/@displayName">
-                                            <xsl:text> (</xsl:text>
-                                            <xsl:value-of select="hl7:code/@displayName"/>
-                                            <xsl:text>)</xsl:text>
-                                        </xsl:if>
-                                    </td>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:addr">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
-                                                    <xsl:with-param name="pre" select="''"/>
-                                                    <xsl:with-param name="key" select="'addr'"/>
-                                                    <xsl:with-param name="post" select="''"/>
+                    <table class="header_table">
+                        <tbody>
+                            <xsl:variable name="number"
+                                select="count(hl7:informant/hl7:relatedEntity[@classCode = 'CON'])"/>
+                            <xsl:for-each
+                                select="hl7:informant/hl7:relatedEntity[@classCode = 'CON']">
+                                <xsl:if test="hl7:relatedPerson/hl7:name or /hl7:code or ./hl7:addr">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label">
+                                            <xsl:if test="hl7:relatedPerson/hl7:name">
+                                                <xsl:call-template name="show-name-set">
+                                                  <xsl:with-param name="in"
+                                                  select="hl7:relatedPerson/hl7:name"/>
                                                 </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="show-contactInfo-patient">
-                                                <xsl:with-param name="contact" select="."/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="./hl7:telecom">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:telecom">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
-                                                    <xsl:with-param name="pre" select="''"/>
-                                                    <xsl:with-param name="key" select="'telecom'"/>
-                                                    <xsl:with-param name="post" select="''"/>
-                                                </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:telecom">
-                                            <xsl:for-each select="./hl7:telecom">
-                                                <xsl:call-template name="show-telInfo-patient">
-                                                    <xsl:with-param name="contact" select="."/>
-                                                </xsl:call-template>
-                                                <br/>
-                                            </xsl:for-each>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <xsl:if test=".">
+                                            </xsl:if>
+                                            <xsl:if test="hl7:code/@displayName">
+                                                <xsl:text> (</xsl:text>
+                                                <xsl:value-of select="hl7:code/@displayName"/>
+                                                <xsl:text>)</xsl:text>
+                                            </xsl:if>
+                                        </td>
                                         <td class="td_header_label td_label_width">
-                                            <xsl:if
-                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                            <xsl:if test="./hl7:addr">
                                                 <span class="span_label">
-                                                    <xsl:call-template name="getLocalizedString">
-                                                        <xsl:with-param name="pre" select="''"/>
-                                                        <xsl:with-param name="key" select="'emailSecure'"/>
-                                                        <xsl:with-param name="post" select="''"/>
-                                                    </xsl:call-template>
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
                                                 </span>
                                             </xsl:if>
                                         </td>
                                         <td style="width: 30%;background-color: white;">
-                                            <xsl:if
-                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                                <xsl:call-template name="show-telInfo-patient-email">
-                                                    <xsl:with-param name="contact"
-                                                        select="./hl7:telecom"/>
+                                            <xsl:if test="./hl7:addr">
+                                                <xsl:call-template name="show-contactInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
                                                 </xsl:call-template>
                                             </xsl:if>
                                         </td>
-                                    </xsl:if>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="position() &lt; ($number)">
-                                <tr>
-                                    <td colspan="3" style="background-color: white;"
-                                        class="span_label">
-                                        <hr width="100%" size="1"/>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </tbody>
-                </table>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="./hl7:telecom">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <td class="td_header_label td_label_width">
+                                            <xsl:if test="./hl7:telecom">
+                                                <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'telecom'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
+                                                </span>
+                                            </xsl:if>
+                                        </td>
+                                        <td style="width: 30%;background-color: white;">
+                                            <xsl:if test="./hl7:telecom">
+                                                <xsl:for-each select="./hl7:telecom">
+                                                  <xsl:call-template name="show-telInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
+                                                  </xsl:call-template>
+                                                  <br/>
+                                                </xsl:for-each>
+                                            </xsl:if>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <xsl:if test=".">
+                                            <td class="td_header_label td_label_width">
+                                                <xsl:if
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
+                                                  </span>
+                                                </xsl:if>
+                                            </td>
+                                            <td style="width: 30%;background-color: white;">
+                                                <xsl:if
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <xsl:call-template
+                                                  name="show-telInfo-patient-email">
+                                                  <xsl:with-param name="contact"
+                                                  select="./hl7:telecom"/>
+                                                  </xsl:call-template>
+                                                </xsl:if>
+                                            </td>
+                                        </xsl:if>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="position() &lt; ($number)">
+                                    <tr>
+                                        <td colspan="3" style="background-color: white;"
+                                            class="span_label">
+                                            <hr width="100%" size="1"/>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </tbody>
+                    </table>
                 </xsl:if>
-                </xsl:if>
+            </xsl:if>
             <xsl:if test="contains($vendor, 'Saxonica')">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'CON']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
@@ -3300,36 +3339,36 @@
                                         <fo:table-cell xsl:use-attribute-sets="myBlock9">
                                             <fo:block>
                                                 <xsl:if test="hl7:relatedPerson/hl7:name">
-                                                    <xsl:call-template name="show-name-set">
-                                                        <xsl:with-param name="in"
-                                                            select="hl7:relatedPerson/hl7:name"/>
-                                                    </xsl:call-template>
+                                                  <xsl:call-template name="show-name-set">
+                                                  <xsl:with-param name="in"
+                                                  select="hl7:relatedPerson/hl7:name"/>
+                                                  </xsl:call-template>
                                                 </xsl:if>
                                                 <xsl:if test="hl7:code">
-                                                    <xsl:text> (</xsl:text>
-                                                    <xsl:value-of select="hl7:code/@displayName"/>
-                                                    <xsl:text>)</xsl:text>
+                                                  <xsl:text> (</xsl:text>
+                                                  <xsl:value-of select="hl7:code/@displayName"/>
+                                                  <xsl:text>)</xsl:text>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                             <fo:block>
                                                 <xsl:if test="./hl7:addr">
-                                                    <xsl:call-template name="getLocalizedString">
-                                                        <xsl:with-param name="pre" select="''"/>
-                                                        <xsl:with-param name="key" select="'addr'"/>
-                                                        <xsl:with-param name="post" select="''"/>
-                                                    </xsl:call-template>
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'addr'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
                                                 <xsl:if test="./hl7:addr">
-                                                    <xsl:call-template name="show-contactInfo-patient">
-                                                        <xsl:with-param name="contact" select="."/>
-                                                    </xsl:call-template>
-                                                    <fo:block line-height="0.4cm">&#160;</fo:block>
+                                                  <xsl:call-template name="show-contactInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
+                                                  </xsl:call-template>
+                                                  <fo:block line-height="0.4cm">&#160;</fo:block>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
@@ -3341,23 +3380,23 @@
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                             <fo:block>
                                                 <xsl:if test="./hl7:telecom">
-                                                    <xsl:call-template name="getLocalizedString">
-                                                        <xsl:with-param name="pre" select="''"/>
-                                                        <xsl:with-param name="key" select="'telecom'"/>
-                                                        <xsl:with-param name="post" select="''"/>
-                                                    </xsl:call-template>
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'telecom'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
                                                 <xsl:if test="./hl7:telecom">
-                                                    <xsl:for-each select="./hl7:telecom">
-                                                        <xsl:call-template name="show-telInfo-patient">
-                                                            <xsl:with-param name="contact" select="."/>
-                                                        </xsl:call-template>
-                                                        <fo:block line-height="0.1cm">&#160;</fo:block>
-                                                    </xsl:for-each>
+                                                  <xsl:for-each select="./hl7:telecom">
+                                                  <xsl:call-template name="show-telInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
+                                                  </xsl:call-template>
+                                                  <fo:block line-height="0.1cm">&#160;</fo:block>
+                                                  </xsl:for-each>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
@@ -3369,24 +3408,24 @@
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                             <fo:block>
                                                 <xsl:if
-                                                    test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                                    <xsl:call-template name="getLocalizedString">
-                                                        <xsl:with-param name="pre" select="''"/>
-                                                        <xsl:with-param name="key" select="'emailSecure'"/>
-                                                        <xsl:with-param name="post" select="''"/>
-                                                    </xsl:call-template>
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <xsl:call-template name="getLocalizedString">
+                                                  <xsl:with-param name="pre" select="''"/>
+                                                  <xsl:with-param name="key" select="'emailSecure'"/>
+                                                  <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
                                                 <xsl:if
-                                                    test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                                    <xsl:call-template
-                                                        name="show-telInfo-patient-email">
-                                                        <xsl:with-param name="contact"
-                                                            select="./hl7:telecom"/>
-                                                    </xsl:call-template>
+                                                  test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                  <xsl:call-template
+                                                  name="show-telInfo-patient-email">
+                                                  <xsl:with-param name="contact"
+                                                  select="./hl7:telecom"/>
+                                                  </xsl:call-template>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
@@ -3395,10 +3434,10 @@
                                         <fo:table-row>
                                             <fo:table-cell number-columns-spanned="3">
                                                 <fo:block>
-                                                    <fo:leader leader-pattern="rule"
-                                                        font-weight="normal" leader-length="100%"
-                                                        rule-thickness="0.1pt" text-align="center"
-                                                        color="black"/>
+                                                  <fo:leader leader-pattern="rule"
+                                                  font-weight="normal" leader-length="100%"
+                                                  rule-thickness="0.1pt" text-align="center"
+                                                  color="black"/>
                                                 </fo:block>
                                             </fo:table-cell>
                                         </fo:table-row>
@@ -3433,113 +3472,116 @@
                     </span>
                 </xsl:if>
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
-                <table class="header_table">
-                    <tbody>
-                        <xsl:variable name="number"
-                            select="count(hl7:informant/hl7:relatedEntity[@classCode = 'ECON'])"/>
-                        <xsl:for-each select="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
-                            <xsl:if test="hl7:relatedPerson/hl7:name or hl7:code or ./hl7:addr">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label">
-                                        <xsl:if test="hl7:relatedPerson/hl7:name">
-                                            <xsl:call-template name="show-name-set">
-                                                <xsl:with-param name="in"
+                    <table class="header_table">
+                        <tbody>
+                            <xsl:variable name="number"
+                                select="count(hl7:informant/hl7:relatedEntity[@classCode = 'ECON'])"/>
+                            <xsl:for-each
+                                select="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
+                                <xsl:if test="hl7:relatedPerson/hl7:name or hl7:code or ./hl7:addr">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label">
+                                            <xsl:if test="hl7:relatedPerson/hl7:name">
+                                                <xsl:call-template name="show-name-set">
+                                                  <xsl:with-param name="in"
                                                   select="hl7:relatedPerson/hl7:name"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                        <xsl:if test="hl7:code/@displayName">
-                                            <xsl:text> (</xsl:text>
-                                            <xsl:value-of select="hl7:code/@displayName"/>
-                                            <xsl:text>)</xsl:text>
-                                        </xsl:if>
-                                    </td>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:addr">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                            <xsl:if test="hl7:code/@displayName">
+                                                <xsl:text> (</xsl:text>
+                                                <xsl:value-of select="hl7:code/@displayName"/>
+                                                <xsl:text>)</xsl:text>
+                                            </xsl:if>
+                                        </td>
+                                        <td class="td_header_label td_label_width">
+                                            <xsl:if test="./hl7:addr">
+                                                <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
                                                   <xsl:with-param name="key" select="'addr'"/>
                                                   <xsl:with-param name="post" select="''"/>
+                                                  </xsl:call-template>
+                                                </span>
+                                            </xsl:if>
+                                        </td>
+                                        <td style="width: 30%;background-color: white;">
+                                            <xsl:if test="./hl7:addr">
+                                                <xsl:call-template name="show-contactInfo-patient">
+                                                  <xsl:with-param name="contact" select="."/>
                                                 </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:addr">
-                                            <xsl:call-template name="show-contactInfo-patient">
-                                                <xsl:with-param name="contact" select="."/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
+                                            </xsl:if>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
 
-                            <xsl:if test="./hl7:telecom/@use = 'H'">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:telecom">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
+                                <xsl:if test="./hl7:telecom/@use = 'H'">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <td class="td_header_label td_label_width">
+                                            <xsl:if test="./hl7:telecom">
+                                                <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
                                                   <xsl:with-param name="key" select="'telecom'"/>
                                                   <xsl:with-param name="post" select="''"/>
-                                                </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:telecom">
-                                            <xsl:for-each select="./hl7:telecom">
-                                                <xsl:call-template name="show-telInfo-patient">
+                                                  </xsl:call-template>
+                                                </span>
+                                            </xsl:if>
+                                        </td>
+                                        <td style="width: 30%;background-color: white;">
+                                            <xsl:if test="./hl7:telecom">
+                                                <xsl:for-each select="./hl7:telecom">
+                                                  <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
-                                                </xsl:call-template>
-                                                <br/>
-                                            </xsl:for-each>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                <tr>
-                                    <td style="width: 50%;background-color: white;"
-                                        class="span_label"/>
-                                    <td class="td_header_label td_label_width">
-                                        <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                            <span class="span_label">
-                                                <xsl:call-template name="getLocalizedString">
+                                                  </xsl:call-template>
+                                                  <br/>
+                                                </xsl:for-each>
+                                            </xsl:if>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                    <tr>
+                                        <td style="width: 50%;background-color: white;"
+                                            class="span_label"/>
+                                        <td class="td_header_label td_label_width">
+                                            <xsl:if
+                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                <span class="span_label">
+                                                  <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
                                                   <xsl:with-param name="key" select="'emailSecure'"/>
                                                   <xsl:with-param name="post" select="''"/>
-                                                </xsl:call-template>
-                                            </span>
-                                        </xsl:if>
-                                    </td>
-                                    <td style="width: 30%;background-color: white;">
-                                        <xsl:if test="./hl7:telecom[starts-with(@value, 'mailto')]">
-                                            <xsl:call-template name="show-telInfo-patient-email">
-                                                <xsl:with-param name="contact"
+                                                  </xsl:call-template>
+                                                </span>
+                                            </xsl:if>
+                                        </td>
+                                        <td style="width: 30%;background-color: white;">
+                                            <xsl:if
+                                                test="./hl7:telecom[starts-with(@value, 'mailto')]">
+                                                <xsl:call-template name="show-telInfo-patient-email">
+                                                  <xsl:with-param name="contact"
                                                   select="./hl7:telecom"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                            <xsl:if test="position() &lt; ($number)">
-                                <tr>
-                                    <td colspan="3" style="background-color: white;"
-                                        class="span_label">
-                                        <hr width="100%" size="1"/>
-                                    </td>
-                                </tr>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </tbody>
-                </table>
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                                <xsl:if test="position() &lt; ($number)">
+                                    <tr>
+                                        <td colspan="3" style="background-color: white;"
+                                            class="span_label">
+                                            <hr width="100%" size="1"/>
+                                        </td>
+                                    </tr>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </tbody>
+                    </table>
                 </xsl:if>
-                </xsl:if>
+            </xsl:if>
             <xsl:if test="contains($vendor, 'Saxonica')">
                 <xsl:if test="hl7:informant/hl7:relatedEntity[@classCode = 'ECON']">
                     <fo:block line-height="0.4cm">&#160;</fo:block>
@@ -3734,8 +3776,8 @@
                                     </xsl:call-template>
                                 </xsl:if>
                                 <xsl:if test="
-                                    hl7:relatedSubject/hl7:subject/hl7:raceCode |
-                                    hl7:relatedSubject/hl7:subject/sdtc:raceCode">
+                                        hl7:relatedSubject/hl7:subject/hl7:raceCode |
+                                        hl7:relatedSubject/hl7:subject/sdtc:raceCode">
                                     <xsl:text>, </xsl:text>
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Race'"/>
@@ -3748,8 +3790,8 @@
                                     </xsl:call-template>
                                 </xsl:if>
                                 <xsl:if test="
-                                    hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode |
-                                    hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode">
+                                        hl7:relatedSubject/hl7:subject/hl7:ethnicGroupCode |
+                                        hl7:relatedSubject/hl7:subject/sdtc:ethnicGroupCode">
                                     <xsl:text>, </xsl:text>
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Ethnicity'"/>
@@ -5260,14 +5302,14 @@
                                 </span>
                             </td>
                             <td rowspan="{$row}" class="td_third">
-                                <xsl:variable name="ins"
-                                    select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                    translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                                <xsl:variable name="ins" select="
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+                                        translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
                                 <xsl:variable name="countP"
                                     select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
                                 <xsl:variable name="name">
@@ -5504,7 +5546,7 @@
                                             test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:city and not(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county)">
                                             <span>
                                                 <span class="span_value">
-                                                    <xsl:value-of select="$city"/>
+                                                  <xsl:value-of select="$city"/>
                                                 </span>
                                             </span>
                                         </xsl:if>
@@ -5527,53 +5569,53 @@
                                         <xsl:for-each select="hl7:id">
                                             <xsl:choose>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-NIR]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-NIA]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIA]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-NIR de test]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de test]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-NIR de démonstration]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de démonstration]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
                                                 </xsl:when>
                                                 <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-                                                    <xsl:call-template name="show-identifiant">
-                                                        <xsl:with-param name="id" select="."/>
-                                                    </xsl:call-template>
-                                                    <xsl:text>&#160;</xsl:text>
-                                                    <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
                                                 </xsl:when>
                                             </xsl:choose>
                                             <br/>
@@ -5812,99 +5854,14 @@
                                         select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
                                     <fo:table-cell number-rows-spanned="{$row}">
                                         <fo:block>
-                                            <xsl:variable name="ins"
-                                                select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-                                                translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-                                            <xsl:variable name="countP"
-                                                select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
-                                            <xsl:variable name="name">
-                                                <xsl:for-each
-                                                  select="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
-                                                  <xsl:value-of
-                                                  select="translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-                                                  <xsl:if test="$countP > 1">
-                                                  <xsl:if
-                                                  test="(position() != last()) and (position() >= 1)">
-                                                  <xsl:text> </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:if>
-                                                </xsl:for-each>
-                                            </xsl:variable>
-                                            <xsl:variable name="given"
-                                                select="translate(hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR'], 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-                                            <xsl:variable name="sex"
-                                                select="hl7:patient/hl7:administrativeGenderCode/@code"/>
-                                            <xsl:variable name="datebirth">
-                                                <xsl:if test="hl7:patient/hl7:birthTime">
-                                                  <xsl:call-template name="show-timestamp-matrix">
-                                                  <xsl:with-param name="in"
-                                                  select="hl7:patient/hl7:birthTime"/>
-                                                  </xsl:call-template>
-                                                </xsl:if>
-                                            </xsl:variable>
-                                            <xsl:variable name="country"
-                                                select="translate(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-                                            <xsl:if test="
-                                                    string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0
-                                                    and string-length($sex) > 0 and string-length($datebirth) > 0 and string-length($country) > 0">
-                                                <xsl:variable name="matrix" select="
-                                                        concat('IS010000000000000000000000', 'S1',
-                                                        $ins, 'S2', '1.2.250.1.213.1.4.8', 'GS', 'S3',
-                                                        $name, 'GS', 'S4', $given, 'GS', 'S5', $sex, 'S6', $datebirth, 'S7', $country)"/>
-                                                <fo:block text-align="center">
-                                                  <fo:instream-foreign-object>
-                                                  <j4lbarcode mode="inline"
-                                                  xmlns="http://java4less.com/j4lbarcode/fop">
-                                                  <datamatrix>
-                                                  <code>
-                                                  <xsl:value-of select="$matrix"/>
-                                                  </code>
-                                                  <moduleSize>2</moduleSize>
-                                                  <processTilde>true</processTilde>
-                                                  <encoding>C40</encoding>
-                                                  <format>C24X24</format>
-                                                  </datamatrix>
-                                                  </j4lbarcode>
-                                                  </fo:instream-foreign-object>
-                                                  <fo:block line-height="0.01cm">&#160;</fo:block>
-                                                  <fo:block text-align="center" font-size="4">
+                                            <fo:block text-align="center">
+                                                <fo:external-graphic content-width="80pt"
+                                                  content-height="80pt" id="datamatrixId"/>
+                                                <fo:block line-height="0.01cm">&#160;</fo:block>
+                                                <fo:block text-align="center" font-size="4">
                                                   <xsl:text>INS à scanner</xsl:text>
-                                                  </fo:block>
                                                 </fo:block>
-                                            </xsl:if>
-                                            <xsl:if test="
-                                                    string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0 and string-length($sex) > 0
-                                                    and string-length($datebirth) > 0 and not($country)">
-                                                <xsl:variable name="matrixOpt" select="
-                                                        concat('IS010000000000000000000000', 'S1',
-                                                        $ins, 'S2', '1.2.250.1.213.1.4.8', 'GS', 'S3',
-                                                        $name, 'GS', 'S4', $given, 'GS', 'S5', $sex, 'S6', $datebirth)"/>
-                                                <fo:block text-align="center">
-                                                  <fo:instream-foreign-object>
-                                                  <j4lbarcode mode="inline"
-                                                  xmlns="http://java4less.com/j4lbarcode/fop">
-                                                  <datamatrix>
-                                                  <code>
-                                                  <xsl:value-of select="$matrixOpt"/>
-                                                  </code>
-                                                  <moduleSize>2</moduleSize>
-                                                  <processTilde>true</processTilde>
-                                                  <encoding>C40</encoding>
-                                                  <format>C24X24</format>
-                                                  </datamatrix>
-                                                  </j4lbarcode>
-                                                  </fo:instream-foreign-object>
-                                                  <fo:block line-height="0.01cm">&#160;</fo:block>
-                                                  <fo:block text-align="center" font-size="4">
-                                                  <xsl:text>INS à scanner</xsl:text>
-                                                  </fo:block>
-                                                </fo:block>
-                                            </xsl:if>
+                                            </fo:block>
                                             <xsl:if
                                                 test="string-length($ins) = 0 or string-length($name) = 0 or string-length($given) = 0 or string-length($sex) = 0 or string-length($datebirth) = 0">
                                                 <fo:block text-align="center"/>
@@ -6075,13 +6032,13 @@
                                                   <xsl:value-of select="$country"/>
                                                 </xsl:if>
                                                 <xsl:if
-                                                    test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:city and hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county">
+                                                  test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:city and hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county">
                                                   <xsl:text> | </xsl:text>
                                                   <xsl:value-of select="$city"/>
                                                 </xsl:if>
                                                 <xsl:if
-                                                    test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:city and not(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county)">
-                                                    <xsl:value-of select="$city"/>
+                                                  test="hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:city and not(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county)">
+                                                  <xsl:value-of select="$city"/>
                                                 </xsl:if>
                                             </fo:block>
                                         </fo:table-cell>
@@ -6101,58 +6058,58 @@
                                         <fo:table-cell xsl:use-attribute-sets="myBlock7">
                                             <fo:block>
                                                 <xsl:for-each select="hl7:id">
-                                                    <xsl:choose>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIA]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                    </xsl:choose>
-                                                    <fo:block line-height="0.1cm">&#160;</fo:block>
+                                                  <xsl:choose>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIA]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  </xsl:choose>
+                                                  <fo:block line-height="0.1cm">&#160;</fo:block>
                                                 </xsl:for-each>
                                             </fo:block>
                                         </fo:table-cell>
@@ -6649,15 +6606,13 @@
                     <fo:block line-height="0.1cm">&#160;</fo:block>
                 </xsl:if>
             </xsl:if>
-            <xsl:if
-                test="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
+            <xsl:if test="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
                 <xsl:variable name="name"
                     select="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName"/>
                 <xsl:value-of select="$name"/>
                 <xsl:if test="hl7:assignedAuthor/hl7:representedOrganization/hl7:name">
                     <xsl:text> (</xsl:text>
-                    <xsl:value-of
-                        select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"/>
+                    <xsl:value-of select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"/>
                     <xsl:text>)</xsl:text>
                 </xsl:if>
                 <xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -8349,9 +8304,7 @@
                                 </span>
                             </td>
                             <td class="td_label_footer">
-                                <span style="font-weight:bold; color:black;">
-                                   
-                                </span>
+                                <span style="font-weight:bold; color:black;"> </span>
                             </td>
                             <td class="td_label_footer">
                                 <span style="font-weight:bold; color:black;">
@@ -8619,9 +8572,7 @@
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">
-                                        <fo:block>
-                                          
-                                        </fo:block>
+                                        <fo:block> </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                         <fo:block>
@@ -11572,13 +11523,15 @@
                                         </td>
                                         <td style="width: 30%;background-color: white;">
                                             <span class="span_value">
-                                                <xsl:value-of select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
+                                                <xsl:value-of
+                                                  select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
                                                 <br/>
                                                 <xsl:call-template
-                                                    name="show-contactInfo-patient-recordTarget-not-county">
-                                                    <xsl:with-param name="contact"
-                                                        select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"/>
-                                                </xsl:call-template>      
+                                                  name="show-contactInfo-patient-recordTarget-not-county">
+                                                  <xsl:with-param name="contact"
+                                                  select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"
+                                                  />
+                                                </xsl:call-template>
                                             </span>
                                         </td>
                                         <td colspan="2" class="td_header_label"/>
@@ -11642,58 +11595,58 @@
                                         <td style="width: 30%; background-color: white;">
                                             <span class="span_value">
                                                 <xsl:for-each select="hl7:id">
-                                                    <xsl:choose>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIA]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                    </xsl:choose>
-                                                    <br/>
+                                                  <xsl:choose>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIA]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  </xsl:choose>
+                                                  <br/>
                                                 </xsl:for-each>
                                             </span>
                                         </td>
@@ -12034,8 +11987,7 @@
                                     <fo:table-row>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock10">
                                             <fo:block>
-                                                <xsl:if
-                                                  test="hl7:patient/hl7:birthplace/hl7:place">
+                                                <xsl:if test="hl7:patient/hl7:birthplace/hl7:place">
                                                   <xsl:call-template name="getLocalizedString">
                                                   <xsl:with-param name="pre" select="''"/>
                                                   <xsl:with-param name="key" select="'birthPlace'"/>
@@ -12046,13 +11998,15 @@
                                         </fo:table-cell>
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
-                                                <xsl:value-of select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
-                                                <fo:block line-height="0.1cm">&#160;</fo:block>     
+                                                <xsl:value-of
+                                                  select="hl7:patient/hl7:birthplace/hl7:place/hl7:name"/>
+                                                <fo:block line-height="0.1cm">&#160;</fo:block>
                                                 <xsl:call-template
-                                                    name="show-contactInfo-patient-recordTarget-not-county">
-                                                    <xsl:with-param name="contact"
-                                                        select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"/>
-                                                </xsl:call-template>      
+                                                  name="show-contactInfo-patient-recordTarget-not-county">
+                                                  <xsl:with-param name="contact"
+                                                  select="hl7:patient/hl7:birthplace/hl7:place/hl7:addr"
+                                                  />
+                                                </xsl:call-template>
                                             </fo:block>
                                         </fo:table-cell>
                                         <fo:table-cell number-columns-spanned="2">
@@ -12127,58 +12081,58 @@
                                         <fo:table-cell xsl:use-attribute-sets="myBlock11">
                                             <fo:block>
                                                 <xsl:for-each select="hl7:id">
-                                                    <xsl:choose>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIA]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-NIR de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
-                                                        </xsl:when>
-                                                        <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
-                                                            <xsl:call-template name="show-identifiant">
-                                                                <xsl:with-param name="id" select="."/>
-                                                            </xsl:call-template>
-                                                            <xsl:text>&#160;</xsl:text>
-                                                            <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
-                                                        </xsl:when>
-                                                    </xsl:choose>
-                                                    <fo:block line-height="0.1cm">&#160;</fo:block>
+                                                  <xsl:choose>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.8'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.9'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIA]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.10'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.11'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-NIR de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.2'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de production]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.6'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de test]</xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:when test="@root = '1.2.250.1.213.1.4.7'">
+                                                  <xsl:call-template name="show-identifiant">
+                                                  <xsl:with-param name="id" select="."/>
+                                                  </xsl:call-template>
+                                                  <xsl:text>&#160;</xsl:text>
+                                                  <xsl:text>[INS-C calculés à partir de cartes Vitale de démonstration]</xsl:text>
+                                                  </xsl:when>
+                                                  </xsl:choose>
+                                                  <fo:block line-height="0.1cm">&#160;</fo:block>
                                                 </xsl:for-each>
                                             </fo:block>
                                         </fo:table-cell>
@@ -12847,7 +12801,8 @@
         <xsl:if test="$typeCode != 'REF'">
             <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
                 <xsl:call-template name="getLocalizedString">
-                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"
+                    />
                 </xsl:call-template>
             </xsl:if>
             <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0">
@@ -12860,18 +12815,22 @@
         <xsl:if test="$typeCode = 'REF'">
             <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) = 0">
                 <xsl:call-template name="getLocalizedString">
-                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"
+                    />
                 </xsl:call-template>
             </xsl:if>
-            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode = 353">
+            <xsl:if
+                test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode = 353">
                 <xsl:call-template name="getLocalizedString">
                     <xsl:with-param name="key"
                         select="concat('2.16.840.1.113883.5.90-', $typeCode, '-', $funcionCode)"/>
                 </xsl:call-template>
             </xsl:if>
-            <xsl:if test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode != 353">
+            <xsl:if
+                test="string-length($typeCode) > 0 and string-length($funcionCode) > 0 and $funcionCode != 353">
                 <xsl:call-template name="getLocalizedString">
-                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"/>
+                    <xsl:with-param name="key" select="concat('2.16.840.1.113883.5.90-', $typeCode)"
+                    />
                 </xsl:call-template>
             </xsl:if>
         </xsl:if>
@@ -13045,9 +13004,10 @@
                 </xsl:choose>
             </xsl:if>
         </xsl:variable>
-        <xsl:if test="not(contains($in/@root, '1.2.250.1.213.1.4.8')) and not(contains($in/@root, '1.2.250.1.213.1.4.9')) and not(contains($in/@root, '1.2.250.1.213.1.4.10')) 
-            and not(contains($in/@root, '1.2.250.1.213.1.4.11')) and not(contains($in/@root, '1.2.250.1.213.1.4.2')) and not(contains($in/@root, '1.2.250.1.213.1.4.6')) and 
-            not(contains($in/@root, '1.2.250.1.213.1.4.7'))">
+        <xsl:if test="
+                not(contains($in/@root, '1.2.250.1.213.1.4.8')) and not(contains($in/@root, '1.2.250.1.213.1.4.9')) and not(contains($in/@root, '1.2.250.1.213.1.4.10'))
+                and not(contains($in/@root, '1.2.250.1.213.1.4.11')) and not(contains($in/@root, '1.2.250.1.213.1.4.2')) and not(contains($in/@root, '1.2.250.1.213.1.4.6')) and
+                not(contains($in/@root, '1.2.250.1.213.1.4.7'))">
             <xsl:if test="not(contains($vendor, 'Saxonica'))">
                 <span>
                     <xsl:choose>
@@ -13720,11 +13680,11 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Show elements with datatype AD separated with the value in 'sep'. Calls <xd:ref
-                name="show-address" type="template">show-address</xd:ref></xd:p>
+                    name="show-address" type="template">show-address</xd:ref></xd:p>
         </xd:desc>
         <xd:param name="in">Set of 0 to * elements</xd:param>
         <xd:param name="sep">Separator between output of different elements. Default ', ' and
@@ -13932,9 +13892,9 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
-    
-    
-        <xd:doc>
+
+
+    <xd:doc>
         <xd:desc>
             <xd:p>Show element with datatype AD</xd:p>
         </xd:desc>
@@ -14022,7 +13982,7 @@
                                 </xsl:if>
                             </xsl:if>
                         </xsl:if>
-                        
+
                     </xsl:when>
                     <!-- DTr2 only if not streetAddressLine -->
                     <xsl:when test="self::hl7:part[@type = 'STR']">
@@ -14347,7 +14307,7 @@
                         </xsl:if>
                     </xsl:when>
                     <!-- DTr1 -->
-                    <xsl:when test="string-length(text()) > 0 and not(../hl7:county) ">
+                    <xsl:when test="string-length(text()) > 0 and not(../hl7:county)">
                         <xsl:value-of select="."/>
                         <xsl:if
                             test="(string-length(following-sibling::hl7:*[1]) > 0 or following-sibling::hl7:*/@code)">
@@ -14503,7 +14463,7 @@
                                 </xsl:if>
                             </xsl:if>
                         </xsl:if>
-                        
+
                     </xsl:when>
                     <!-- DTr2 only if not streetAddressLine -->
                     <xsl:when test="self::hl7:part[@type = 'STR']">
@@ -14894,7 +14854,7 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    
+
 
 
     <xd:doc>
@@ -18541,7 +18501,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Handle contactInfo. Address and telecom</xd:p>
@@ -18555,8 +18515,8 @@
             <xsl:with-param name="sep" select="'br'"/>
         </xsl:call-template>
     </xsl:template>
-    
-    
+
+
     <xd:doc>
         <xd:desc>
             <xd:p>Handle contactInfo. Address and telecom</xd:p>
@@ -18570,6 +18530,6 @@
             <xsl:with-param name="sep" select="'br'"/>
         </xsl:call-template>
     </xsl:template>
-    
-    
+
+
 </xsl:stylesheet>
