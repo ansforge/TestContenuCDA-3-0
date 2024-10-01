@@ -606,6 +606,41 @@
 	</xd:doc>
 	<xsl:variable name="simple-sanitizer-replace" select="'***************'"/>
 
+	<xsl:variable name="ins" select="
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
+			translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+	<xsl:variable name="countP"
+		select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
+	<xsl:variable name="name">
+		<xsl:for-each
+			select="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
+			<xsl:value-of
+				select="translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+			<xsl:if test="$countP > 1">
+				<xsl:if test="(position() != last()) and (position() >= 1)">
+					<xsl:text> </xsl:text>
+				</xsl:if>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:variable>
+	<xsl:variable name="given"
+		select="translate(hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR'], 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+	<xsl:variable name="sex" select="hl7:patient/hl7:administrativeGenderCode/@code"/>
+	<xsl:variable name="datebirth">
+		<xsl:if test="hl7:patient/hl7:birthTime">
+			<xsl:call-template name="show-timestamp-matrix">
+				<xsl:with-param name="in" select="hl7:patient/hl7:birthTime"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:variable>
+	<xsl:variable name="country"
+		select="translate(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+
 	<xd:doc>
 		<xd:desc>
 			<xd:p>Use XHTML 1.0 Strict with UTF-8 encoding. CDAr3 specifies an XHTML subset of tags
@@ -1396,8 +1431,8 @@
 					<script src="../FeuilleDeStyle/JS/datamatrix.min.js" type="text/javascript"/>
 					<script type="text/javascript">
                         if (document.getElementById('element') !== null) {
-                            var div = document.getElementById('element');
-                            var cookieValue = document.getElementById('element').getAttribute('value');
+                            var div = document.getElementsByClassName('barcodeStyle')[0];
+                            var cookieValue = div.getAttribute('value');
                             var svgNode = DATAMatrix
                             ({
                                 dim: 256,
@@ -10609,99 +10644,14 @@
 										select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
 									<fo:table-cell number-rows-spanned="{$row}">
 										<fo:block>
-											<xsl:variable name="ins" select="
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.9']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.10']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.11']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.2']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.6']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') or
-													translate(hl7:id[@root = '1.2.250.1.213.1.4.7']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-											<xsl:variable name="countP"
-												select="count(hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)])"/>
-											<xsl:variable name="name">
-												<xsl:for-each
-												select="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
-												<xsl:value-of
-												select="translate(., 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-												<xsl:if test="$countP > 1">
-												<xsl:if
-												test="(position() != last()) and (position() >= 1)">
-												<xsl:text> </xsl:text>
-												</xsl:if>
-												</xsl:if>
-												</xsl:for-each>
-											</xsl:variable>
-											<xsl:variable name="given"
-												select="translate(hl7:patient/hl7:name[1]/hl7:family[@qualifier = 'BR'], 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-											<xsl:variable name="sex"
-												select="hl7:patient/hl7:administrativeGenderCode/@code"/>
-											<xsl:variable name="datebirth">
-												<xsl:if test="hl7:patient/hl7:birthTime">
-												<xsl:call-template name="show-timestamp-matrix">
-												<xsl:with-param name="in"
-												select="hl7:patient/hl7:birthTime"/>
-												</xsl:call-template>
-												</xsl:if>
-											</xsl:variable>
-											<xsl:variable name="country"
-												select="translate(hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:county, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-											<xsl:if test="
-													string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0
-													and string-length($sex) > 0 and string-length($datebirth) > 0 and string-length($country) > 0">
-												<xsl:variable name="matrix" select="
-														concat('IS010000000000000000000000', 'S1',
-														$ins, 'S2', '1.2.250.1.213.1.4.8', 'GS', 'S3',
-														$name, 'GS', 'S4', $given, 'GS', 'S5', $sex, 'S6', $datebirth, 'S7', $country)"/>
-												<fo:block text-align="center">
-												<fo:instream-foreign-object>
-												<j4lbarcode mode="inline"
-												xmlns="http://java4less.com/j4lbarcode/fop">
-												<datamatrix>
-												<code>
-												<xsl:value-of select="$matrix"/>
-												</code>
-												<moduleSize>2</moduleSize>
-												<processTilde>true</processTilde>
-												<encoding>C40</encoding>
-												<format>C24X24</format>
-												</datamatrix>
-												</j4lbarcode>
-												</fo:instream-foreign-object>
+											<fo:block text-align="center">
+												<fo:external-graphic content-width="80pt"
+												content-height="80pt" id="datamatrixId"/>
 												<fo:block line-height="0.01cm">&#160;</fo:block>
 												<fo:block text-align="center" font-size="4">
 												<xsl:text>INS à scanner</xsl:text>
 												</fo:block>
-												</fo:block>
-											</xsl:if>
-											<xsl:if test="
-													string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0 and string-length($sex) > 0
-													and string-length($datebirth) > 0 and not($country)">
-												<xsl:variable name="matrixOpt" select="
-														concat('IS010000000000000000000000', 'S1',
-														$ins, 'S2', '1.2.250.1.213.1.4.8', 'GS', 'S3',
-														$name, 'GS', 'S4', $given, 'GS', 'S5', $sex, 'S6', $datebirth)"/>
-												<fo:block text-align="center">
-												<fo:instream-foreign-object>
-												<j4lbarcode mode="inline"
-												xmlns="http://java4less.com/j4lbarcode/fop">
-												<datamatrix>
-												<code>
-												<xsl:value-of select="$matrixOpt"/>
-												</code>
-												<moduleSize>2</moduleSize>
-												<processTilde>true</processTilde>
-												<encoding>C40</encoding>
-												<format>C24X24</format>
-												</datamatrix>
-												</j4lbarcode>
-												</fo:instream-foreign-object>
-												<fo:block line-height="0.01cm">&#160;</fo:block>
-												<fo:block text-align="center" font-size="4">
-												<xsl:text>INS à scanner</xsl:text>
-												</fo:block>
-												</fo:block>
-											</xsl:if>
+											</fo:block>
 											<xsl:if
 												test="string-length($ins) = 0 or string-length($name) = 0 or string-length($given) = 0 or string-length($sex) = 0 or string-length($datebirth) = 0">
 												<fo:block text-align="center"/>
@@ -11459,15 +11409,13 @@
 					<fo:block line-height="0.1cm">&#160;</fo:block>
 				</xsl:if>
 			</xsl:if>
-			<xsl:if
-				test="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
+			<xsl:if test="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName">
 				<xsl:variable name="name"
 					select="hl7:assignedAuthor/hl7:assignedAuthoringDevice/hl7:softwareName"/>
 				<xsl:value-of select="$name"/>
 				<xsl:if test="hl7:assignedAuthor/hl7:representedOrganization/hl7:name">
 					<xsl:text> (</xsl:text>
-					<xsl:value-of
-						select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"/>
+					<xsl:value-of select="hl7:assignedAuthor/hl7:representedOrganization/hl7:name"/>
 					<xsl:text>)</xsl:text>
 				</xsl:if>
 				<xsl:if test="not(contains($vendor, 'Saxonica'))">
@@ -11738,7 +11686,8 @@
 	</xd:doc>
 	<!-- Extension FR -->
 	<xsl:template name="componentOf">
-		<xsl:if test="hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:location">
+		<xsl:if
+			test="hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:location">
 			<xsl:if test="not(contains($vendor, 'Saxonica'))">
 				<br/>
 				<br/>
