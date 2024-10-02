@@ -36,8 +36,8 @@
             L'élément participant/participantRole/id s'il est présent, doit avoir un attribut @root="2.51.1.1" or @root="1.0.15961.10.816" or @root="1.0.15961.10.816" or @root="2.16.840.1.113883.6.18.1.34". 
         </assert>
         <!-- Nom du fabricant / référence / N° de lot -->
-        <assert test='not (..//cda:participant/cda:participantRole/cda:playingDevice/cda:code) or (..//cda:participant/cda:participantRole/cda:playingDevice/cda:code/@code) or  (..//cda:participant/cda:participantRole/cda:playingDevice/cda:code[@nullFlavor]/cda:originalText/cda:reference)'> 
-            [E_laboratoryReportDataProcessing_BIO-TROD] Erreur de conformité : Si l'élément participant/participantRole/playingDevice/code n'est pas disponible (Code UDI du dispositif utilisé pour le test), l'élément participant/participantRole/playingDevice/code[@nullFlavor="UNK"]/originalText/reference (Nom du fabricant, référence et n° de lot du dispositif utilisé pour le test) est obligatoire.
+        <assert test='not (..//cda:participant/cda:participantRole/cda:playingDevice/cda:code) or  (..//cda:participant/cda:participantRole/cda:playingDevice/cda:code/cda:originalText/cda:reference)'> 
+            [E_laboratoryReportDataProcessing_BIO-TROD] Erreur de conformité : Si l'élément participant/participantRole/playingDevice/code n'est pas disponible (Code UDI du dispositif utilisé pour le test), l'élément participant/participantRole/playingDevice/code/originalText/reference (Nom du fabricant, référence et n° de lot du dispositif utilisé pour le test) est obligatoire.
            </assert>
         
     </rule>
