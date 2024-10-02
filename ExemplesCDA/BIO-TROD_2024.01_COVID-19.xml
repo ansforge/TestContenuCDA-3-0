@@ -482,7 +482,7 @@
                            <!-- UDI du dispositif de test utilisé -->
                            <id root="2.51.1.1" extension="(01)00686597200018(17)260930(10)A12345"/>
                            <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                              <code nullFlavor="UNK">
+                              <code>
                                  <!-- Nom du fabricant | Référence | N° de lot | Date de péremption -->
                                  <originalText><reference value="#dispositif-nom-reference"/></originalText>
                               </code>
