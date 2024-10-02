@@ -268,7 +268,7 @@
   <participant typeCode="INF">
     <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin Traitant"/>
     <time xsi:type="IVL_TS">
-      <low value="20240402111700+0100"/>
+      <low value="20240402"/>
     </time>
     <associatedEntity classCode="PROV">
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
@@ -604,7 +604,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20220211"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -731,7 +731,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20230705"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -858,7 +858,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20230521"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -986,7 +986,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20220211"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -1126,7 +1126,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20220211"/>
                       <value xsi:type="CD" code="unconfirmed" displayName="Non confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -1329,7 +1329,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20180422"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -1457,7 +1457,7 @@
                       <statusCode code="completed"/>
                       <effectiveTime value="20180114"/>
                       <value xsi:type="CD" code="confirmed" displayName="Confirmé"
-                        codeSystem="2.16.840.1.113883.4.642.4.1075" codeSystemName="HL7:condition-ver-status"/>
+                        codeSystem="2.16.840.1.113883.4.642.1.1075" codeSystemName="HL7:condition-ver-status"/>
                     </observation>
                   </entryRelationship>
                   <!-- [0..1] Entrée FR-Commentaire-ER -->
@@ -4204,9 +4204,10 @@
                   <telecom nullFlavor="NAV"/>
                   <assignedPerson>
                     <name>
-                      <prefix>PR</prefix>
+                      <prefix>M</prefix>
                       <given>Jacques</given>
                       <family>PETITJEAN</family>
+                      <suffix>DR</suffix>
                     </name>
                   </assignedPerson>
                   <representedOrganization>
