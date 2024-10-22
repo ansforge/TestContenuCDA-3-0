@@ -2,12 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240726120000"
+             dateMaj="20240927120000"
              dateValid="20130123000000"
              description="XDS typeCode CI-SIS"
              displayName="JDV_J07_XdsTypeCode_CISIS.tabs"
+             effectiveDate="2013-01-23T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.471"
-             revisionDate="2024-07-26T12:00:00"
+             revisionDate="2024-09-27T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS">
       <ConceptList>
@@ -163,7 +164,7 @@
                   displayName="Mesures de signes vitaux"/>
          <Concept code="34120-6"
                   codeSystem="2.16.840.1.113883.6.1"
-                  displayName="Bilan par auxiliaire médical"/>
+                  displayName="Bilan par professionnel de santé"/>
          <Concept code="34133-9"
                   codeSystem="2.16.840.1.113883.6.1"
                   displayName="Synthèse d'épisode de soins"/>
@@ -329,7 +330,6 @@
          <Concept code="96173-0"
                   codeSystem="2.16.840.1.113883.6.1"
                   displayName="Test rapide d'orientation diagnostique"/>
-         <Concept code="E1762" codeSystem="ASTM" displayName="Full Document"/>
          <Concept code="57055-6"
                   codeSystem="2.16.840.1.113883.6.1"
                   displayName="Synthèse antepartum"/>
@@ -348,6 +348,10 @@
          <Concept code="89233-1"
                   codeSystem="2.16.840.1.113883.6.1"
                   displayName="CR de grossesse"/>
+         <Concept code="101881-1"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  displayName="Carte d'implant"/>
+         <Concept code="E1762" codeSystem="ASTM" displayName="Full Document"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

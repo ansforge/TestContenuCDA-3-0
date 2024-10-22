@@ -9,6 +9,7 @@
    ......................................................................................................................................................    
     Historique :
     20/02/2024 : SBM : Création
+    21/10/2024 : Remplacement du code GEN-162 par GEN-368
    ......................................................................................................................................................    
 -->
 
@@ -57,9 +58,9 @@
     </assert>
     
     <!-- Vérifier l'indicateur hors labélisation -->
-    <assert test='./cda:entryRelationship/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]/cda:code/@code="GEN-162"'>
+        <assert test='./cda:entryRelationship/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]/cda:code/@code="GEN-368"'>
         [S_PlanDeSoinsMR-CISIS] Erreur de conformité au modèle SDM-MR : L'entrée FR-Rencontre(1.3.6.1.4.1.19376.1.5.3.1.4.14) doit obligatoirement contenir une entrée FR-Simple-Observation(1.3.6.1.4.1.19376.1.5.3.1.4.13)
-        précisant l'indicateur hors labélisation ayant comme code @code="GEN-162".
+        précisant l'indicateur hors labélisation ayant comme code @code="GEN-368".
     </assert>
 </rule>
 </pattern>

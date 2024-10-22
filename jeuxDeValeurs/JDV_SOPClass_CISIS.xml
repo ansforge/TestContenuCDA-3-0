@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_SOPClass_CISIS"
+             effectiveDate="2022-05-14T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.689"
-             revisionDate="2022-05-14T00:00:00"
+             revisionDate="2022-05-14T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="1.2.840.10008.5.1.4.1.1.1"

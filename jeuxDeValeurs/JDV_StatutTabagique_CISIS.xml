@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_StatutTabagique_CISIS"
+             effectiveDate="2022-01-10T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.667"
-             revisionDate="2023-04-28T00:00:00"
+             revisionDate="2023-04-28T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="449868002"

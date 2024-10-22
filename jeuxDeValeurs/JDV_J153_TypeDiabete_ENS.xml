@@ -6,8 +6,9 @@
              dateValid="20210430120000"
              description="JDV pour caractériser le type de diabète dans l'extension DiabetisType"
              displayName="JDV_J153_TypeDiabete_ENS.tabs"
+             effectiveDate="2021-04-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.608"
-             revisionDate="2023-06-30T12:00:00"
+             revisionDate="2023-06-30T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS">
       <ConceptList>

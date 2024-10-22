@@ -6,8 +6,9 @@
              dateValid="20221216120000"
              description="Types d'identifiants utilisés dans la métadonnée XDS referenceIdList de la fiche du document dans le cadre du DMP"
              displayName="JDV_J231_XdsTypesIdentifiantsReferenceId_DMP.tabs"
+             effectiveDate="2022-12-16T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.693"
-             revisionDate="2022-12-16T12:00:00"
+             revisionDate="2022-12-16T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J231-XdsTypesIdentifiantsReferenceId-DMP">
       <ConceptList>

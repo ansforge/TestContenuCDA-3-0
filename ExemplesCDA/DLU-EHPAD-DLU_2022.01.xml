@@ -438,6 +438,40 @@
 									</playingEntity>
 								</participantRole>
 							</participant>
+							<participant typeCode="ORG">
+								<time nullFlavor="NAV"/>
+								<participantRole classCode="ROL">
+									<!-- Numéro FINESS de l'ES  -->
+									<id root="1.2.250.1.71.4.2.2" extension="101765376"/>
+									<addr>
+										<houseNumber>22</houseNumber>
+										<streetName>Rue du Paradis</streetName>
+										<postalCode>92100</postalCode>
+										<city>Boulogne-Billancourt</city>
+									</addr>
+									<telecom value="tel:0131931902" use="EC"/>
+									<playingEntity>
+										<name>EHPAD DE BOULOGNE-BILLANCOURT</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<participant typeCode="DST">
+								<time nullFlavor="NAV"/>
+								<participantRole classCode="ROL">
+									<!-- Numéro FINESS de l'ES  -->
+									<id root="1.2.250.1.71.4.2.2" extension="101765376"/>
+									<addr>
+										<houseNumber>22</houseNumber>
+										<streetName>Rue du Paradis</streetName>
+										<postalCode>92100</postalCode>
+										<city>Boulogne-Billancourt</city>
+									</addr>
+									<telecom value="tel:0131931902" use="EC"/>
+									<playingEntity>
+										<name>EHPAD DE BOULOGNE-BILLANCOURT</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
 						</act>
 					</entry>
 				</section>

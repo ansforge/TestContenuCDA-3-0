@@ -6,8 +6,9 @@
              dateValid="20160901000000"
              description="Relation par rapport au patient - CI-SIS"
              displayName="JDV_J11_RelationPatient_CISIS.tabs"
+             effectiveDate="2016-09-01T00:00:00+01:00"
              id="1.2.250.1.213.3.3.16"
-             revisionDate="2020-04-24T12:00:00"
+             revisionDate="2020-04-24T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS">
       <ConceptList>

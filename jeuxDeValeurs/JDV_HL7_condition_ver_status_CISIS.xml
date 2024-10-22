@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_HL7_condition_ver_status_CISIS"
+             effectiveDate="2022-01-01T00:00:00+01:00"
              id="2.16.840.1.113883.4.642.3.166"
-             revisionDate="2024-06-06T00:00:00"
+             revisionDate="2024-06-06T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="unconfirmed"

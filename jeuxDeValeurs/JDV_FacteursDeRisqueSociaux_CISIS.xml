@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_FacteursDeRisqueSociaux_CISIS"
+             effectiveDate="2020-03-31T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.488"
-             revisionDate="2023-11-14T00:00:00"
+             revisionDate="2024-10-10T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="422650009"
@@ -12,16 +13,16 @@
                   dateFin=""
                   dateValid="20231114000000"
                   displayName="isolement social"/>
-         <Concept code="GEN-189"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+         <Concept code="224226001"
+                  codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
-                  dateValid="20200331000000"
-                  displayName="SDF"/>
-         <Concept code="GEN-190"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateValid="20241010000000"
+                  displayName="sans domicile fixe"/>
+         <Concept code="424860001"
+                  codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
-                  dateValid="20200331000000"
-                  displayName="Revenus insuffisants"/>
+                  dateValid="20241010000000"
+                  displayName="faible revenu"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

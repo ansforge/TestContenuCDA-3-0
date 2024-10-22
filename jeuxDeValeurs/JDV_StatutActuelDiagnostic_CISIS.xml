@@ -3,15 +3,16 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_StatutActuelDiagnostic_CISIS"
+             effectiveDate="2010-01-01T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.45"
-             revisionDate="2024-08-06T00:00:00"
+             revisionDate="2024-10-11T00:00:00+01:00"
              version="test">
       <ConceptList>
-         <Concept code="2931005"
+         <Concept code="385651009"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20230131000000"
-                  displayName="diagnostic probable"/>
+                  displayName="en cours d'exécution"/>
          <Concept code="42425007"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""

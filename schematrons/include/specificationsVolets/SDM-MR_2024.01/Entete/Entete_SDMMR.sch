@@ -8,6 +8,7 @@
     07/02/2018 : NMA : Création
     11/02/2019 : APE : Ajout du contrôle du nom de famille obligatoire
     10/11/2022 : Mises à jour suite à la migration des terminologies
+    21/10/2024 : Suppression des tests sur le consentement
     
 -->
 
@@ -34,7 +35,7 @@
         <assert test="cda:documentationOf/cda:serviceEvent/cda:code[@code='11429006']">
             [Entete_SDMMR] L'attribut code de l'élément documentationOf/serviceEvent/Code est fixé à '11429006'
         </assert>
-        <assert test="cda:authorization/cda:consent/cda:code[@code='GEN-315' or @code='GEN-317']">
+        <!--<assert test="cda:authorization/cda:consent/cda:code[@code='GEN-315' or @code='GEN-317']">
             [Entete_SDMMR] L'attribut code de l'élément authorization/consent/Code est fixé à 
             - 'GEN-315' pour exprimer l'opposition du patient à l'utilisation de ses données dans le cadre d'analyses de santé publique
             ou
@@ -44,7 +45,7 @@
             or (cda:authorization/cda:consent/cda:code[@code='GEN-317'] and not(cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.66']/cda:entry/cda:observation/cda:code[@code='GEN-316']))
             ">
             [Entete_SDMMR] Si l'attribut code de l'élément authorization/consent/Code est fixé à 'GEN-315', il faut préciser la date d'opposition du patient dans la section FR-Dossier (1.2.250.1.213.1.1.2.66).
-        </assert>
+        </assert>-->
           
     </rule>
     

@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ExamenHemostaseEUVN_CISIS"
+             effectiveDate="2010-01-01T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.226"
-             revisionDate="2023-08-03T00:00:00"
+             revisionDate="2023-08-03T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="14979-9"

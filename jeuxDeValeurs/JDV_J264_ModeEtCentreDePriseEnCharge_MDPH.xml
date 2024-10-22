@@ -6,8 +6,9 @@
              dateValid="20240628120000"
              description="Les modes de prise en charge en établissements ESMS qui sont possibles pour l'usager est validées en commission par la CDAPH"
              displayName="JDV_J264_ModeEtCentreDePriseEnCharge_MDPH.tabs"
+             effectiveDate="2024-06-28T12:00:00+01:00"
              id="1.2.250.1.213.3.4.105"
-             revisionDate="2024-06-28T12:00:00"
+             revisionDate="2024-06-28T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH">
       <ConceptList>

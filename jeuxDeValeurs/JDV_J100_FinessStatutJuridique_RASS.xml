@@ -6,8 +6,9 @@
              dateValid="20190830120000"
              description="Statut juridique FINESS dans le RASS"
              displayName="JDV_J100_FinessStatutJuridique_RASS.tabs"
+             effectiveDate="2019-08-30T12:00:00+01:00"
              id="1.2.250.1.213.1.6.1.168"
-             revisionDate="2020-04-24T12:00:00"
+             revisionDate="2020-04-24T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J100-FinessStatutJuridique-RASS">
       <ConceptList>

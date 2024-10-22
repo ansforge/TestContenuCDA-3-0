@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_LieuAccouchement_CISIS"
+             effectiveDate="2023-02-01T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.743"
-             revisionDate="2023-08-03T00:00:00"
+             revisionDate="2024-10-10T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="GEN-310"
@@ -12,11 +13,11 @@
                   dateFin=""
                   dateValid="20230803000000"
                   displayName="Maternité"/>
-         <Concept code="GEN-117"
-                  codeSystem="1.2.250.1.213.1.1.4.322"
+         <Concept code="169813005"
+                  codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
-                  dateValid="20230201000000"
-                  displayName="Domicile"/>
+                  dateValid="20241010000000"
+                  displayName="naissance à domicile"/>
          <Concept code="GEN-092.06.04"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""

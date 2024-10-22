@@ -2,12 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240628120000"
+             dateMaj="20240927120000"
              dateValid="20171013120000"
              description="Catégorie d'organisation - ROR"
              displayName="JDV_J34_CategorieOrganisation_ROR.tabs"
+             effectiveDate="2017-10-13T12:00:00+01:00"
              id="1.2.250.1.213.3.3.40"
-             revisionDate="2024-06-28T12:00:00"
+             revisionDate="2024-09-27T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR">
       <ConceptList>
@@ -98,7 +99,7 @@
                   displayName="Equipe spécialisée Alzheimer (ESA)"/>
          <Concept code="30"
                   codeSystem="1.2.250.1.213.3.3.39"
-                  displayName="Service d'aide et d'Accompagnement à Domicile (SAAD)"/>
+                  displayName="Service autonomie à domicile (SAD) aide"/>
          <Concept code="31"
                   codeSystem="1.2.250.1.213.3.3.39"
                   displayName="Service d'Accompagnement à la Vie Sociale (SAVS)"/>
@@ -402,9 +403,6 @@
          <Concept code="132"
                   codeSystem="1.2.250.1.213.3.3.39"
                   displayName="Service autonomie à domicile (SAD) aide et soins"/>
-         <Concept code="133"
-                  codeSystem="1.2.250.1.213.3.3.39"
-                  displayName="Service autonomie à domicile (SAD) aide"/>
          <Concept code="134"
                   codeSystem="1.2.250.1.213.3.3.39"
                   displayName="Maison des adolescents (MDA)"/>
@@ -417,6 +415,15 @@
          <Concept code="137"
                   codeSystem="1.2.250.1.213.3.3.39"
                   displayName="Maison sport-santé"/>
+         <Concept code="138"
+                  codeSystem="1.2.250.1.213.3.3.39"
+                  displayName="Centre de Soins Non-Programmés (CSNP)"/>
+         <Concept code="139"
+                  codeSystem="1.2.250.1.213.3.3.39"
+                  displayName="Unité de soins intensifs polyvalents (USIP) non contiguë"/>
+         <Concept code="140"
+                  codeSystem="1.2.250.1.213.3.3.39"
+                  displayName="Equipe Mobile d'Appui à la Scolarisation (EMAS)"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

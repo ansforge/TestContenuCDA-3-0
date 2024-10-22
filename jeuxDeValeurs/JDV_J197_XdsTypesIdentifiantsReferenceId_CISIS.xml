@@ -6,8 +6,9 @@
              dateValid="20220624120000"
              description="Types d'identifiants utilisés dans la métadonnée XDS referenceIdList de la fiche du document dans le cadre du CISIS"
              displayName="JDV_J197_XdsTypesIdentifiantsReferenceId_CISIS.tabs"
+             effectiveDate="2022-06-24T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.692"
-             revisionDate="2022-06-24T12:00:00"
+             revisionDate="2022-06-24T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS">
       <ConceptList>

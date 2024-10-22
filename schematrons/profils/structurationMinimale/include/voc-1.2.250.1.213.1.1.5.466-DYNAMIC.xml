@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <valueSet xmlns="" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" effectiveDate="2021-03-15T00:00:00" id="1.2.250.1.213.1.1.5.466" name="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" revisionDate="2024-07-26T12:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.466" name="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" effectiveDate="2024-10-11T21:04:32" statusCode="final" versionLabel="1.1" lastModifiedDate="2024-10-18T10:41:23" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
       <sourceCodeSystem id="1.2.250.1.71.4.2.4" identifierName="" canonicalUri="urn:oid:1.2.250.1.71.4.2.4" canonicalUriDSTU2="urn:oid:1.2.250.1.71.4.2.4" canonicalUriSTU3="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4B="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR5="urn:oid:1.2.250.1.71.4.2.4"/>
       <sourceCodeSystem id="1.2.250.1.213.1.1.4.6" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4B="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR5="urn:oid:1.2.250.1.213.1.1.4.6"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.8" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR4B="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR5="urn:oid:1.2.250.1.213.1.6.1.8"/>
       <publishingAuthority name="ASIP Santé" inherited="project"/>
       <conceptList>
          <concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Expression personnelle du patient" level="0" type="L"/>
@@ -74,6 +75,29 @@
          <concept code="SA67" codeSystem="1.2.250.1.71.4.2.4" displayName="Maisons médicales de garde (MMG)" level="0" type="L"/>
          <concept code="SA68" codeSystem="1.2.250.1.71.4.2.4" displayName="Services départementaux d'incendie et de secours" level="0" type="L"/>
          <concept code="SA69" codeSystem="1.2.250.1.71.4.2.4" displayName="Maisons de naissance" level="0" type="L"/>
+         <concept code="182" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'Éducation Spéciale et de Soins à Domicile" level="0" type="L"/>
+         <concept code="183" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut Médico-Educatif (I.M.E.)" level="0" type="L"/>
+         <concept code="186" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut Thérapeutique Éducatif et Pédagogique (I.T.E.P.)" level="0" type="L"/>
+         <concept code="188" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement pour Enfants ou Adolescents Polyhandicapés" level="0" type="L"/>
+         <concept code="189" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Centre Médico-Psycho-Pédagogique (C.M.P.P.)" level="0" type="L"/>
+         <concept code="192" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut d'éducation motrice" level="0" type="L"/>
+         <concept code="194" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut pour Déficients Visuels" level="0" type="L"/>
+         <concept code="195" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut pour Déficients Auditifs" level="0" type="L"/>
+         <concept code="196" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut d'Education Sensorielle Sourd-Aveugle" level="0" type="L"/>
+         <concept code="209" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service autonomie aide et soins (SAAS)" level="0" type="L"/>
+         <concept code="221" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Bureau d'Aide Psychologique Universitaire (B.A.P.U.)" level="0" type="L"/>
+         <concept code="238" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Centre d'Accueil Familial Spécialisé" level="0" type="L"/>
+         <concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Maison d'Accueil Spécialisée (M.A.S.)" level="0" type="L"/>
+         <concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service de Soins Infirmiers A Domicile (S.S.I.A.D)" level="0" type="L"/>
+         <concept code="390" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement d'Accueil Temporaire d'Enfants Handicapés" level="0" type="L"/>
+         <concept code="395" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement d'Accueil Temporaire pour Adultes Handicapés" level="0" type="L"/>
+         <concept code="396" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Foyer Hébergement Enfants et Adolescents Handicapés" level="0" type="L"/>
+         <concept code="445" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'accompagnement médico-social adultes handicapés" level="0" type="L"/>
+         <concept code="446" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'Accompagnement à la Vie Sociale (S.A.V.S.)" level="0" type="L"/>
+         <concept code="448" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etab.Acc.Médicalisé en tout ou partie personnes handicapées" level="0" type="L"/>
+         <concept code="449" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etab.Accueil Non Médicalisé pour personnes handicapées" level="0" type="L"/>
+         <concept code="460" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service autonomie aide (SAA)" level="0" type="L"/>
+         <concept code="640" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'aide et d'accompagnement à domicile aux familles (SAADF)" level="0" type="L"/>
       </conceptList>
    </valueSet>
 </valueSets>

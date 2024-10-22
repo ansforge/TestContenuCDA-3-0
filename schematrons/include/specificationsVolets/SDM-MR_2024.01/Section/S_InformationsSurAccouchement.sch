@@ -9,6 +9,7 @@
    ......................................................................................................................................................    
     Historique :
     20/02/2024 : SBM : Création
+    21/10/2024 : Suppression du contrôle de la donnée "Présence de malformations anténatales"
    ......................................................................................................................................................    
 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="S_InformationsSurAccouchement">
@@ -32,18 +33,18 @@
         </assert>
     </rule>
     
-    <!-- Sous-section FR-Resultats-evenements : la présence ou pas de malformation(s) anténatale(s) / l'âge gestationnel si le patient n’est pas né à terme --> 
+    <!-- Sous-section FR-Resultats-evenements : l'âge gestationnel du foetus --> 
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.1.21.2.4"]/cda:component/cda:section[cda:templateId/@root="1.3.6.1.4.1.19376.1.7.3.1.1.13.7"]'>
         <!-- Vérifier l'entrée FR-Simple-Observation : Présence de malformations anténatales -->
-        <assert test='not(./cda:entry/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]) or 
+        <!--<assert test='not(./cda:entry/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]) or 
             ./cda:entry/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]/cda:code/@code="MED-078"'>
             [S_InformationsSurAccouchement-CISIS] Erreur de conformité au modèle SDM-MR : L'entrée FR-Simple-Observation (Présence de malformations anténatales) doit obligatoirement contenir le code/@code="MED-078".
-        </assert>
+        </assert>-->
         
-        <!-- Vérifier l'entrée FR-Simple-Observation : l'âge gestationnel si le patient n’est pas né à terme -->
+        <!-- Vérifier l'entrée FR-Simple-Observation : l'âge gestationnel du foetus -->
         <assert test='not(./cda:entry/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]) or 
             ./cda:entry/cda:observation[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13"]/cda:code/@code="11884-4"'>
-            [S_InformationsSurAccouchement-CISIS] Erreur de conformité au modèle SDM-MR : L'entrée FR-Simple-Observation (l'âge gestationnel si le patient n’est pas né à terme) doit obligatoirement contenir le code/@code="11884-4".
+            [S_InformationsSurAccouchement-CISIS] Erreur de conformité au modèle SDM-MR : L'entrée FR-Simple-Observation (l'âge gestationnel du foetus) doit obligatoirement contenir le code/@code="11884-4".
         </assert>
     </rule>
     

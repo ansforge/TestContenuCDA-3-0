@@ -6,8 +6,9 @@
              dateValid="20210430120000"
              description="JDV pour la méthode de mesure de la pression artérielle"
              displayName="JDV_J150_MethodBP_ENS.tabs"
+             effectiveDate="2021-04-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.605"
-             revisionDate="2024-07-26T12:00:00"
+             revisionDate="2024-07-26T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS">
       <ConceptList>

@@ -6,8 +6,9 @@
              dateValid="20171013120000"
              description="Spécialisation de prise en charge - ROR"
              displayName="JDV_J35_SpecialisationDePriseEnCharge_ROR.tabs"
+             effectiveDate="2017-10-13T12:00:00+01:00"
              id="1.2.250.1.213.3.3.42"
-             revisionDate="2024-06-28T12:00:00"
+             revisionDate="2024-06-28T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J35-SpecialisationDePriseEnCharge-ROR">
       <ConceptList>

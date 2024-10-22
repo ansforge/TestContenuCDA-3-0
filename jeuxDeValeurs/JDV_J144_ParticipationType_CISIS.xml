@@ -6,8 +6,9 @@
              dateValid="20210326120000"
              description="Type de participation CI-SIS"
              displayName="JDV_J144_ParticipationType_CISIS.tabs"
+             effectiveDate="2021-03-26T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.591"
-             revisionDate="2021-03-26T12:00:00"
+             revisionDate="2021-03-26T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J144-ParticipationType-CISIS">
       <ConceptList>

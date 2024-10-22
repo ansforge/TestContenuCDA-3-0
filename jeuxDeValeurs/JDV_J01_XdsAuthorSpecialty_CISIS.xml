@@ -6,8 +6,9 @@
              dateValid="20121112000000"
              description="XDS authorSpecialty CI-SIS"
              displayName="JDV_J01_XdsAuthorSpecialty_CISIS.tabs"
+             effectiveDate="2012-11-12T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.461"
-             revisionDate="2024-03-29T12:00:00"
+             revisionDate="2024-03-29T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS">
       <ConceptList>

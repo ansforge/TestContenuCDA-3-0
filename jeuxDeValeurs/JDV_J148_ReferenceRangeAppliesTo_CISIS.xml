@@ -2,12 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20230331120000"
+             dateMaj="20240927120000"
              dateValid="20210430120000"
              description="JDV pour le champ d'application de l'intervalle de référence"
              displayName="JDV_J148_ReferenceRangeAppliesTo_CISIS.tabs"
+             effectiveDate="2021-04-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.603"
-             revisionDate="2023-03-31T12:00:00"
+             revisionDate="2024-09-27T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS">
       <ConceptList>

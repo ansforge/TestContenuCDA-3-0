@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_DefaillanceMaterielle_CISIS"
+             effectiveDate="2020-12-16T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.526"
-             revisionDate="2024-07-18T00:00:00"
+             revisionDate="2024-07-18T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="A090000"

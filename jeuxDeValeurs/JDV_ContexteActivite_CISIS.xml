@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ContexteActivite_CISIS"
+             effectiveDate="2010-01-01T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.40"
-             revisionDate="2023-11-14T00:00:00"
+             revisionDate="2024-10-11T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="GEN-092.05.04"
@@ -52,11 +53,16 @@
                   dateFin=""
                   dateValid="20100101000000"
                   displayName="Avis en salle"/>
-         <Concept code="39"
-                  codeSystem="1.2.250.1.213.3.3.13"
+         <Concept code="ORG-198"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20231114000000"
-                  displayName="Réunion de Concertation Pluridisciplinaire (RCP)"/>
+                  dateValid="20241011000000"
+                  displayName="RCP régionale ou locale - centre organisateur"/>
+         <Concept code="ORG-199"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20241011000000"
+                  displayName="RCP nationale ou européenne - centre participatif"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

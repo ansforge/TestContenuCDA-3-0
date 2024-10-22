@@ -3,8 +3,9 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="urn:ihe:iti:svs:2008">
    <ValueSet displayName="JDV_ReferenceRangeAppliesTo_CISIS"
+             effectiveDate="2020-02-03T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.517"
-             revisionDate="2022-11-14T00:00:00"
+             revisionDate="2022-11-14T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="F"
@@ -21,7 +22,7 @@
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20221114000000"
-                  displayName="Enceinte"/>
+                  displayName="enceinte"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

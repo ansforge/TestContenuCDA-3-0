@@ -486,9 +486,6 @@
       <skos:notation>GEN-092.05.02</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>GEN-092.05.03</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>GEN-092.05.04</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -619,9 +616,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-116</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>GEN-117</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-118</skos:notation>
@@ -784,12 +778,6 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-185</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>GEN-189</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
-      <skos:notation>GEN-190</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-191</skos:notation>
@@ -1234,6 +1222,15 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-366</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-367</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-368</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-369</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>image/bm</skos:notation>
@@ -5002,6 +4999,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ORG-211</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-212</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PAT-001</skos:notation>

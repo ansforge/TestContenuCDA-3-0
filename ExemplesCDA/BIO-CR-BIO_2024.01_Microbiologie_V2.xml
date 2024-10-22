@@ -438,7 +438,7 @@
   <!-- Documenté à remplacer -->
   <relatedDocument typeCode="RPLC">
     <parentDocument>
-      <id root="1.2.250.1.213.1.1.9" extension="CR-BIO_2024.01_20240104_006_1" />
+      <id root="1.2.250.1.213.1.1.1.55.12345.13"/>
     </parentDocument>
   </relatedDocument>
   <!-- Contexte de la prise en charge -->

@@ -6,8 +6,9 @@
              dateValid="20230331120000"
              description="Civilités CI-SIS"
              displayName="JDV_J245_Civilite_CISIS.tabs"
+             effectiveDate="2023-03-31T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.718"
-             revisionDate="2023-03-31T12:00:00"
+             revisionDate="2023-03-31T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS">
       <ConceptList>

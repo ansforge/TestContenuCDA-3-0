@@ -6,8 +6,9 @@
              dateValid="20160901000000"
              description="Mode de la prise en charge - ROR"
              displayName="JDV_J19_ModePriseEnCharge_ROR.tabs"
+             effectiveDate="2016-09-01T00:00:00+01:00"
              id="1.2.250.1.213.3.4.1"
-             revisionDate="2023-01-27T12:00:00"
+             revisionDate="2023-01-27T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J19-ModePriseEnCharge-ROR">
       <ConceptList>

@@ -2,12 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240726120000"
+             dateMaj="20240927120000"
              dateValid="20210430120000"
              description="JDV pour la méthode de mesure de fréquence cardiaque"
              displayName="JDV_J147_MethodHeartrate_ENS.tabs"
+             effectiveDate="2021-04-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.602"
-             revisionDate="2024-07-26T12:00:00"
+             revisionDate="2024-09-27T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS">
       <ConceptList>
