@@ -1816,6 +1816,10 @@
                     <observation classCode="OBS" moodCode="EVN" negationInd="false">
                       <!-- Conformité FR-Criticite (FR CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.172"/>
+                      <!-- Simple Observation (IHE PCC) -->
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                      <!-- Conformité Simple Observation (CI-SIS) -->
+                      <templateId root="1.2.250.1.213.1.1.3.48"/>
                       <id root="B6B00F3F-40A0-419F-847F-FDA1E0908EC8"/>
                       <code code="82606-5" displayName="Criticité"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -1833,6 +1837,10 @@
                     <observation classCode="OBS" moodCode="EVN" negationInd="false">
                       <!-- Conformité FR-Certitude (FR CI-SIS) -->
                       <templateId root="1.2.250.1.213.1.1.3.171"/>
+                      <!-- Simple Observation (IHE PCC) -->
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                      <!-- Conformité Simple Observation (CI-SIS) -->
+                      <templateId root="1.2.250.1.213.1.1.3.48"/>
                       <id root="BC6A2067-884F-4D55-8B27-E8C2BE276F29"/>
                       <code code="66455-7" displayName="Certitude"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -2661,7 +2669,7 @@
                 <low value="20180114"/>
               </effectiveTime>
               <!-- [1..*] Entrée FR-Evaluation (LOINC : Score de performance ECOG) -->
-              <component>
+              <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Result Observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
@@ -2708,7 +2716,7 @@
                 </observation>
               </component>
               <!-- [1..*] Entrée FR-Evaluation (ICF : Marcher) -->
-              <component>
+              <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Result Observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
@@ -2753,7 +2761,7 @@
                 </observation>
               </component>
               <!-- [1..*] Entrée FR-Evaluation (texte libre) -->
-              <component>
+              <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Result Observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
