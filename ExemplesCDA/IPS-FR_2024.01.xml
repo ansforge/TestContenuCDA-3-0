@@ -1823,6 +1823,9 @@
                       <id root="B6B00F3F-40A0-419F-847F-FDA1E0908EC8"/>
                       <code code="82606-5" displayName="Criticité"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <text>
+                        <reference value="#"/>
+                      </text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- valeur du JDV_HL7_allergy-intolerance-criticality-CISIS (2.16.840.1.113883.4.642.3.129) -->
@@ -1844,6 +1847,9 @@
                       <id root="BC6A2067-884F-4D55-8B27-E8C2BE276F29"/>
                       <code code="66455-7" displayName="Certitude"
                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <text>
+                        <reference value="#"/>
+                      </text>
                       <statusCode code="completed"/>
                       <effectiveTime nullFlavor="NA"/>
                       <!-- valeur du JDV_HL7_condition-ver-status-CISIS (2.16.840.1.113883.4.642.3.166) -->
@@ -1933,8 +1939,6 @@
                       <!-- [0..1] Entrée FR-Severite : Sévérité de la réaction -->
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
                         <observation classCode="OBS" moodCode="EVN">
-                          <!-- Conformité Severity Observation (IPS) -->
-                          <templateId root="2.16.840.1.113883.10.22.4.25"/>
                           <!-- Conformité Severity observation (CCD) -->
                           <templateId root="2.16.840.1.113883.10.20.1.55"/>
                           <!-- Conformité Severity Entry (IHE PCC) -->
@@ -2067,7 +2071,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
                   <!-- Conformité Traitement aigu -->
                   <templateId root="1.2.250.1.213.1.1.3.42.4"/>
-                  <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B7LK8"/>
+                  <id root="55915ED6-0682-4588-9F4A-FB71210F7015"/>
                   <code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4"
                     codeSystemName="HL7:ActCode"/>
                   <text><reference value="#effet-indesirable-01-medicament"/></text>
@@ -2193,12 +2197,10 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <!-- Conformité FR-Gravite-effet-indesirable (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.212"/>
-                  <id root="B6B00F3F-40A0-419F-847F-FDA1E0908DE5"/>
                   <code code="94030-4" displayName="Gravité de l'effet indésirable"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>                  
                   <text><reference value="#effet-indesirable-01-gravite"/></text>
                   <statusCode code="completed"/>
-                  <effectiveTime nullFlavor="NA"/>
                   <!-- valeur du JDV_Gravite_CISIS (1.2.250.1.213.1.1.5.787) -->
                   <value xsi:type="CD" code="255604002" displayName="gravité légère"
                          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -2212,12 +2214,10 @@
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité FR-Evolution-effet-indesirable (FR CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.213"/>
-                  <id root="BC6A2067-884F-4D55-8B27-E8C2BE275H76"/>
                   <code code="GEN-319" displayName="Evolution de l'effet indésirable"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text><reference value="#effet-indesirable-01-evolution"/></text>
                   <statusCode code="completed"/>
-                  <effectiveTime nullFlavor="NA"/>
                   <!-- valeur du JDV_Evolution_CISIS (1.2.250.1.213.1.1.5.788) code : (Demande de création SNOMED CT en cours)-->
                   <value xsi:type="CD" code="1.2.250.1.213.1.1.5.788.1" displayName="Guérison sans séquelle"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -2416,10 +2416,6 @@
                       <reference value="#med-01-motif"/>
                     </originalText>
                   </code>
-                  <statusCode code="completed"/>
-                  <effectiveTime xsi:type="IVL_TS">
-                    <low value="20240111"/>
-                  </effectiveTime>
                 </act>
               </entryRelationship>
               <!-- Entrée FR-Commentaire-ER -->
@@ -2610,7 +2606,6 @@
       <!-- [0..1] Section FR-Statut-fonctionnel -->
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.5"/>
           <!-- Functional Status Section (HL7 IPS) -->
           <templateId root="2.16.840.1.113883.10.22.3.8"/>          
           <!-- FR-Statut-fonctionnel (CI-SIS) -->
@@ -5041,6 +5036,8 @@
               <effectiveTime value="20240329"/>
               <!-- Laboratoire exécutant -->
               <performer typeCode="PRF">
+                <templateId root="1.3.6.1.4.1.19376.1.3.3.1.7"/>
+                <time value="20210108111700+0100"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234560801"/>
                   <code code="G15_10/SM44" displayName="Médecin - Radio-diagnostic (SM)"
