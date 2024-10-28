@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_DetailRessourceImmobiliereUtilisee_CISIS"
+             effectiveDate="2024-09-18T00:00:00+01:00"
+             id="1.2.250.1.213.1.1.5.809"
+             revisionDate="2024-09-18T00:00:00+01:00"
+             version="test">
+      <ConceptList>
+         <Concept code="ORG-210"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240918000000"
+                  displayName="Salle"/>
+         <Concept code="ORG-211"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240918000000"
+                  displayName="Chambre"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

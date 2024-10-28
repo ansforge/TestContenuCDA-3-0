@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_TypeEvenementSSIAD_CISIS"
+             effectiveDate="2024-09-24T00:00:00+01:00"
+             id="1.2.250.1.213.1.1.5.811"
+             revisionDate="2024-09-24T00:00:00+01:00"
+             version="test">
+      <ConceptList>
+         <Concept code="MED-1296"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240924000000"
+                  displayName="Intervention d'un aide soignant"/>
+         <Concept code="MED-1297"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240924000000"
+                  displayName="Intervention d'un infirmier libéral"/>
+         <Concept code="MED-1298"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240924000000"
+                  displayName="Intervention d'un infirmer salarié"/>
+         <Concept code="MED-1299"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20240924000000"
+                  displayName="Intervention conjointe"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

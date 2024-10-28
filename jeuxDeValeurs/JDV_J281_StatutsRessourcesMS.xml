@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20240927120000"
+             dateValid="20240927120000"
+             description="Statut de l'évaluation et des événements"
+             displayName="JDV_J281_StatutsRessourcesMS.tabs"
+             effectiveDate="2024-09-27T12:00:00+01:00"
+             id="1.2.250.1.213.3.4.219"
+             revisionDate="2024-09-27T12:00:00+01:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J281-StatutsRessourcesMS">
+      <ConceptList>
+         <Concept code="TERMINE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Terminé"/>
+         <Concept code="VALIDE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Validé"/>
+         <Concept code="APPROUVE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Approuvé"/>
+         <Concept code="PLANIFIE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Planifié"/>
+         <Concept code="REALISE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Réalisé"/>
+         <Concept code="ANNULE"
+                  codeSystem="1.2.250.1.213.3.3.250"
+                  displayName="Annulé"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

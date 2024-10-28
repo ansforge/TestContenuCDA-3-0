@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.466" name="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS" effectiveDate="2024-10-11T21:04:32" statusCode="final" versionLabel="1.1" lastModifiedDate="2024-10-18T10:41:23" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+      <sourceCodeSystem id="1.2.250.1.71.4.2.4" identifierName="" canonicalUri="urn:oid:1.2.250.1.71.4.2.4" canonicalUriDSTU2="urn:oid:1.2.250.1.71.4.2.4" canonicalUriSTU3="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR4B="urn:oid:1.2.250.1.71.4.2.4" canonicalUriR5="urn:oid:1.2.250.1.71.4.2.4"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.6" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR4B="urn:oid:1.2.250.1.213.1.1.4.6" canonicalUriR5="urn:oid:1.2.250.1.213.1.1.4.6"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.8" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR4B="urn:oid:1.2.250.1.213.1.6.1.8" canonicalUriR5="urn:oid:1.2.250.1.213.1.6.1.8"/>
+      <publishingAuthority name="ASIP Santé" inherited="project"/>
+      <conceptList>
+         <concept code="EXP_PATIENT" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Expression personnelle du patient" level="0" type="L"/>
+         <concept code="SNR" codeSystem="1.2.250.1.213.1.1.4.6" displayName="Service numérique référencé" level="0" type="L"/>
+         <concept code="SA01" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement public de santé" level="0" type="L"/>
+         <concept code="SA02" codeSystem="1.2.250.1.71.4.2.4" displayName="Hôpital militaire du Service de santé des armées" level="0" type="L"/>
+         <concept code="SA03" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement privé PSPH" level="0" type="L"/>
+         <concept code="SA04" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement privé non PSPH" level="0" type="L"/>
+         <concept code="SA05" codeSystem="1.2.250.1.71.4.2.4" displayName="Centre de santé" level="0" type="L"/>
+         <concept code="SA06" codeSystem="1.2.250.1.71.4.2.4" displayName="Autre structure du Service de santé des armées" level="0" type="L"/>
+         <concept code="SA07" codeSystem="1.2.250.1.71.4.2.4" displayName="Cabinet individuel" level="0" type="L"/>
+         <concept code="SA08" codeSystem="1.2.250.1.71.4.2.4" displayName="Cabinet de groupe" level="0" type="L"/>
+         <concept code="SA09" codeSystem="1.2.250.1.71.4.2.4" displayName="Exercice en société" level="0" type="L"/>
+         <concept code="SA10" codeSystem="1.2.250.1.71.4.2.4" displayName="Transporteur sanitaire" level="0" type="L"/>
+         <concept code="SA12" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement de soins et prévention" level="0" type="L"/>
+         <concept code="SA13" codeSystem="1.2.250.1.71.4.2.4" displayName="Prévention et soins en entreprise" level="0" type="L"/>
+         <concept code="SA14" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissements scolaires, universitaires et de formation hors champ FINESS" level="0" type="L"/>
+         <concept code="SA15" codeSystem="1.2.250.1.71.4.2.4" displayName="PMI et Planification familiale" level="0" type="L"/>
+         <concept code="SA16" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement pour personnes handicapées" level="0" type="L"/>
+         <concept code="SA17" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement pour personnes âgées" level="0" type="L"/>
+         <concept code="SA18" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement aide à la famille" level="0" type="L"/>
+         <concept code="SA19" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissements FINESS de formation aux professions sanitaires et sociales" level="0" type="L"/>
+         <concept code="SA20" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement pour la protection de l'enfance" level="0" type="L"/>
+         <concept code="SA21" codeSystem="1.2.250.1.71.4.2.4" displayName="Etablissement d'hébergement et de réadaptation" level="0" type="L"/>
+         <concept code="SA22" codeSystem="1.2.250.1.71.4.2.4" displayName="Recherche" level="0" type="L"/>
+         <concept code="SA23" codeSystem="1.2.250.1.71.4.2.4" displayName="Assurance privée" level="0" type="L"/>
+         <concept code="SA24" codeSystem="1.2.250.1.71.4.2.4" displayName="Organisme de sécurité sociale" level="0" type="L"/>
+         <concept code="SA25" codeSystem="1.2.250.1.71.4.2.4" displayName="Laboratoire de biologie médicale" level="0" type="L"/>
+         <concept code="SA26" codeSystem="1.2.250.1.71.4.2.4" displayName="Ministère ou Service déconcentré" level="0" type="L"/>
+         <concept code="SA27" codeSystem="1.2.250.1.71.4.2.4" displayName="Collectivité territoriale" level="0" type="L"/>
+         <concept code="SA28" codeSystem="1.2.250.1.71.4.2.4" displayName="Association ou organisme humanitaire" level="0" type="L"/>
+         <concept code="SA29" codeSystem="1.2.250.1.71.4.2.4" displayName="Laboratoire d'analyses et de biologie médicale" level="0" type="L"/>
+         <concept code="SA30" codeSystem="1.2.250.1.71.4.2.4" displayName="Autre établissement sanitaire" level="0" type="L"/>
+         <concept code="SA31" codeSystem="1.2.250.1.71.4.2.4" displayName="Répartition et Distribution de médicaments et dispositifs médicaux" level="0" type="L"/>
+         <concept code="SA32" codeSystem="1.2.250.1.71.4.2.4" displayName="Fabrication, Exploitation et Importation de médicaments et dispositifs médicaux" level="0" type="L"/>
+         <concept code="SA33" codeSystem="1.2.250.1.71.4.2.4" displayName="Pharmacie d'officine" level="0" type="L"/>
+         <concept code="SA34" codeSystem="1.2.250.1.71.4.2.4" displayName="Centre de dialyse" level="0" type="L"/>
+         <concept code="SA35" codeSystem="1.2.250.1.71.4.2.4" displayName="Para-pharmacie" level="0" type="L"/>
+         <concept code="SA36" codeSystem="1.2.250.1.71.4.2.4" displayName="Centre anti-cancer" level="0" type="L"/>
+         <concept code="SA37" codeSystem="1.2.250.1.71.4.2.4" displayName="Centre de transfusion sanguine" level="0" type="L"/>
+         <concept code="SA38" codeSystem="1.2.250.1.71.4.2.4" displayName="Pharmacie minière" level="0" type="L"/>
+         <concept code="SA39" codeSystem="1.2.250.1.71.4.2.4" displayName="Pharmacie mutualiste" level="0" type="L"/>
+         <concept code="SA40" codeSystem="1.2.250.1.71.4.2.4" displayName="Secteur privé, praticien hospitalier temps plein" level="0" type="L"/>
+         <concept code="SA41" codeSystem="1.2.250.1.71.4.2.4" displayName="Autre établissement du domaine social ou médico-social" level="0" type="L"/>
+         <concept code="SA42" codeSystem="1.2.250.1.71.4.2.4" displayName="Appareillage médical" level="0" type="L"/>
+         <concept code="SA43" codeSystem="1.2.250.1.71.4.2.4" displayName="Secteur non défini" level="0" type="L"/>
+         <concept code="SA44" codeSystem="1.2.250.1.71.4.2.4" displayName="Recrutement ou Gestion RH" level="0" type="L"/>
+         <concept code="SA45" codeSystem="1.2.250.1.71.4.2.4" displayName="Communication, Marketing, Consulting, Média" level="0" type="L"/>
+         <concept code="SA46" codeSystem="1.2.250.1.71.4.2.4" displayName="Fabrication, Exploitation, Importation, Répartition, Distribution médicaments et dispositifs médicaux" level="0" type="L"/>
+         <concept code="SA47" codeSystem="1.2.250.1.71.4.2.4" displayName="Incendie et secours" level="0" type="L"/>
+         <concept code="SA48" codeSystem="1.2.250.1.71.4.2.4" displayName="Entreprise industrielle et tertiaire hors industrie pharmaceutique" level="0" type="L"/>
+         <concept code="SA49" codeSystem="1.2.250.1.71.4.2.4" displayName="Entité Outre-Mer" level="0" type="L"/>
+         <concept code="SA50" codeSystem="1.2.250.1.71.4.2.4" displayName="Permanence des soins ambulatoires hors cabinet" level="0" type="L"/>
+         <concept code="SA51" codeSystem="1.2.250.1.71.4.2.4" displayName="Structure de coopération avec autorisation de soins" level="0" type="L"/>
+         <concept code="SA52" codeSystem="1.2.250.1.71.4.2.4" displayName="Maison de santé ou Pôle de santé" level="0" type="L"/>
+         <concept code="SA53" codeSystem="1.2.250.1.71.4.2.4" displayName="Siège administratif d'un établissement de santé" level="0" type="L"/>
+         <concept code="SA54" codeSystem="1.2.250.1.71.4.2.4" displayName="Centre de dépistage et de prévention" level="0" type="L"/>
+         <concept code="SA55" codeSystem="1.2.250.1.71.4.2.4" displayName="Laboratoire pharmaceutique préparant et délivrant des allergènes" level="0" type="L"/>
+         <concept code="SA56" codeSystem="1.2.250.1.71.4.2.4" displayName="Propharmacie" level="0" type="L"/>
+         <concept code="SA57" codeSystem="1.2.250.1.71.4.2.4" displayName="Structure de coopération avec mission de coordination de soins" level="0" type="L"/>
+         <concept code="SA58" codeSystem="1.2.250.1.71.4.2.4" displayName="Entreprise de taxis" level="0" type="L"/>
+         <concept code="SA59" codeSystem="1.2.250.1.71.4.2.4" displayName="Laboratoire de biologie médicale hors catégorie standard" level="0" type="L"/>
+         <concept code="SA60" codeSystem="1.2.250.1.71.4.2.4" displayName="Centres médicaux SNCF" level="0" type="L"/>
+         <concept code="SA61" codeSystem="1.2.250.1.71.4.2.4" displayName="Structure Dispensatrice à domicile d'Oxygène à usage médical" level="0" type="L"/>
+         <concept code="SA63" codeSystem="1.2.250.1.71.4.2.4" displayName="Communauté Professionnelle Territoriale de Santé" level="0" type="L"/>
+         <concept code="SA64" codeSystem="1.2.250.1.71.4.2.4" displayName="Société de téléconsultation" level="0" type="L"/>
+         <concept code="SA65" codeSystem="1.2.250.1.71.4.2.4" displayName="Antenne de pharmacie" level="0" type="L"/>
+         <concept code="SA66" codeSystem="1.2.250.1.71.4.2.4" displayName="Services de Prévention et de Santé au Travail (SPST)" level="0" type="L"/>
+         <concept code="SA67" codeSystem="1.2.250.1.71.4.2.4" displayName="Maisons médicales de garde (MMG)" level="0" type="L"/>
+         <concept code="SA68" codeSystem="1.2.250.1.71.4.2.4" displayName="Services départementaux d'incendie et de secours" level="0" type="L"/>
+         <concept code="SA69" codeSystem="1.2.250.1.71.4.2.4" displayName="Maisons de naissance" level="0" type="L"/>
+         <concept code="182" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'Éducation Spéciale et de Soins à Domicile" level="0" type="L"/>
+         <concept code="183" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut Médico-Educatif (I.M.E.)" level="0" type="L"/>
+         <concept code="186" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut Thérapeutique Éducatif et Pédagogique (I.T.E.P.)" level="0" type="L"/>
+         <concept code="188" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement pour Enfants ou Adolescents Polyhandicapés" level="0" type="L"/>
+         <concept code="189" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Centre Médico-Psycho-Pédagogique (C.M.P.P.)" level="0" type="L"/>
+         <concept code="192" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut d'éducation motrice" level="0" type="L"/>
+         <concept code="194" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut pour Déficients Visuels" level="0" type="L"/>
+         <concept code="195" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut pour Déficients Auditifs" level="0" type="L"/>
+         <concept code="196" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Institut d'Education Sensorielle Sourd-Aveugle" level="0" type="L"/>
+         <concept code="209" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service autonomie aide et soins (SAAS)" level="0" type="L"/>
+         <concept code="221" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Bureau d'Aide Psychologique Universitaire (B.A.P.U.)" level="0" type="L"/>
+         <concept code="238" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Centre d'Accueil Familial Spécialisé" level="0" type="L"/>
+         <concept code="255" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Maison d'Accueil Spécialisée (M.A.S.)" level="0" type="L"/>
+         <concept code="354" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service de Soins Infirmiers A Domicile (S.S.I.A.D)" level="0" type="L"/>
+         <concept code="390" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement d'Accueil Temporaire d'Enfants Handicapés" level="0" type="L"/>
+         <concept code="395" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etablissement d'Accueil Temporaire pour Adultes Handicapés" level="0" type="L"/>
+         <concept code="396" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Foyer Hébergement Enfants et Adolescents Handicapés" level="0" type="L"/>
+         <concept code="445" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'accompagnement médico-social adultes handicapés" level="0" type="L"/>
+         <concept code="446" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'Accompagnement à la Vie Sociale (S.A.V.S.)" level="0" type="L"/>
+         <concept code="448" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etab.Acc.Médicalisé en tout ou partie personnes handicapées" level="0" type="L"/>
+         <concept code="449" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Etab.Accueil Non Médicalisé pour personnes handicapées" level="0" type="L"/>
+         <concept code="460" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service autonomie aide (SAA)" level="0" type="L"/>
+         <concept code="640" codeSystem="1.2.250.1.213.1.6.1.8" displayName="Service d'aide et d'accompagnement à domicile aux familles (SAADF)" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>
