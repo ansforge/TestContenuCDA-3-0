@@ -937,8 +937,6 @@
                       </value>
                       <methodCode code="MI" displayName="Observation microscopique" 
                         codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
-                      <methodCode code="MI" displayName="Observation microscopique" 
-                        codeSystem="1.2.250.1.213.2.3.5" codeSystemName="ANSM – Table de codage commune des réactifs"/>
                     </observation>
                   </component>
                 </organizer>

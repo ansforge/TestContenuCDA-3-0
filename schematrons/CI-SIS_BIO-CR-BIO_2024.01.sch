@@ -74,6 +74,10 @@
 			<assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.3.3.2.1'])&gt; 0"> 
 				[CI-SIS_BIO-CR-BIO] Erreur de conformité au modèle : La section FR-CR-BIO-Chapitre (1.3.6.1.4.1.19376.1.3.3.2.1) doit être présente.
 			</assert>
+			<assert test="count(cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.243'])&gt; 0"> 
+				[CI-SIS_BIO-CR-BIO] Erreur de conformité au modèle : La section FR-Document-PDF-copie (1.2.250.1.213.1.1.2.243) doit être présente.
+			</assert>
+			
 		</rule>
 	</pattern>
 	

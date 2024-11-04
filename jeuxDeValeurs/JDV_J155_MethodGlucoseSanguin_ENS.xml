@@ -2,13 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240927120000"
+             dateMaj="20241025120000"
              dateValid="20210430120000"
              description="JDV pour la méthode de mesure du glucose sanguin"
              displayName="JDV_J155_MethodGlucoseSanguin_ENS.tabs"
              effectiveDate="2021-04-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.610"
-             revisionDate="2024-09-27T12:00:00+01:00"
+             revisionDate="2024-10-25T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS">
       <ConceptList>
@@ -17,7 +17,7 @@
                   displayName="SYSTÈMES DE SURVEILLANCE NON INVASIVE DE LA GLYCÉMIE"/>
          <Concept code="82078001"
                   codeSystem="2.16.840.1.113883.6.96"
-                  displayName="prélèvement d'un échantillon sanguin pour le laboratoire"/>
+                  displayName="prélèvement de sang pour le laboratoire"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

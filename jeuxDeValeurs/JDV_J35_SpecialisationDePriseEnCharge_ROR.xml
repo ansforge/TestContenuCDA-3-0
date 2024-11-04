@@ -2,13 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240628120000"
+             dateMaj="20241025120000"
              dateValid="20171013120000"
              description="Spécialisation de prise en charge - ROR"
              displayName="JDV_J35_SpecialisationDePriseEnCharge_ROR.tabs"
              effectiveDate="2017-10-13T12:00:00+01:00"
              id="1.2.250.1.213.3.3.42"
-             revisionDate="2024-06-28T12:00:00+01:00"
+             revisionDate="2024-10-25T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J35-SpecialisationDePriseEnCharge-ROR">
       <ConceptList>
@@ -205,6 +205,9 @@
          <Concept code="67"
                   codeSystem="1.2.250.1.213.3.3.41"
                   displayName="Trouble psychotraumatique (dont Troubles Stress Post-Traumatique)"/>
+         <Concept code="068"
+                  codeSystem="1.2.250.1.213.3.3.12"
+                  displayName="Troubles cognitifs ou du comportement et de la relation affective dus à une lésion cérébrale acquise"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>
