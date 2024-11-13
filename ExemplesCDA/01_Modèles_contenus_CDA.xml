@@ -458,7 +458,7 @@
 			<telecom value="mailto:isabelle.decourcy@mail.fr"/>
 			<relatedPerson>
 				<name>
-					<prefix>MLLE</prefix>
+					<prefix>MME</prefix>
 					<family>DECOURCY</family>
 					<given>Isabelle</given>
 				</name>
@@ -1236,7 +1236,7 @@
 			<telecom value="tel:0147150045" use="WP"/>
 			<associatedPerson>
 				<name>
-					<prefix>MLLE</prefix>
+					<prefix>MME</prefix>
 					<given>Delphine</given>
 					<family>VAN</family>
 				</name>
@@ -3710,8 +3710,12 @@
 							<effectiveTime value="20191201"/>
 							<!-- Dispensateur -->
 							<performer typeCode="PRF">
+								<sdtc:functionCode>
+									
+								</sdtc:functionCode>
 								<!-- Date de délivrance -->
 								<time value="20190711"/>
+								<modeCode ></modeCode>
 								<assignedEntity>
 									<!--Identifiant du PS exécutant-->
 									<id nullFlavor="UNK"/>
