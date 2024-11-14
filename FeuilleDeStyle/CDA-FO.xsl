@@ -1687,80 +1687,85 @@
         <xsl:param name="level" select="3"/>
         <xsl:param name="margin" select="0"/>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
-            <div style="margin-left: {$margin}em;" class="section">
-                <div>
-                    <xsl:if test="string($useJavascript) = 'true'">
-                        <div class="button expandCollapse" onclick="collapseSection(this)">
-                            <xsl:attribute name="title">
-                                <xsl:call-template name="getLocalizedString">
-                                    <xsl:with-param name="key" select="'Collapse'"/>
+            <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.223'])">
+                <div style="margin-left: {$margin}em;" class="section">
+                    <div>
+                        <xsl:if test="string($useJavascript) = 'true'">
+                            <div class="button expandCollapse" onclick="collapseSection(this)">
+                                <xsl:attribute name="title">
+                                    <xsl:call-template name="getLocalizedString">
+                                        <xsl:with-param name="key" select="'Collapse'"/>
+                                    </xsl:call-template>
+                                </xsl:attribute>
+                                <xsl:text>▼</xsl:text>
+                            </div>
+                        </xsl:if>
+                        <xsl:call-template name="section-title">
+                            <xsl:with-param name="level" select="$level"/>
+                        </xsl:call-template>
+                    </div>
+
+                    <div class="section-content">
+                        <xsl:if test="hl7:author | hl7:informant | hl7:subject">
+                            <div class="section-meta">
+                                <xsl:call-template name="section-author"/>
+                                <xsl:call-template name="section-informant"/>
+                                <xsl:call-template name="section-subject"/>
+                            </div>
+                        </xsl:if>
+                        <div class="section-body">
+                            <xsl:if test="hl7:text">
+                                <xsl:call-template name="section-text"/>
+                            </xsl:if>
+                            <xsl:for-each select="hl7:component/hl7:section">
+                                <xsl:call-template name="section">
+                                    <xsl:with-param name="margin" select="$margin + 2"/>
                                 </xsl:call-template>
-                            </xsl:attribute>
-                            <xsl:text>▼</xsl:text>
+                            </xsl:for-each>
+                            <xsl:if test="not(hl7:text | hl7:component/hl7:section)">
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:if>
                         </div>
-                    </xsl:if>
-                    <xsl:call-template name="section-title">
-                        <xsl:with-param name="level" select="$level"/>
-                    </xsl:call-template>
-                </div>
-                <div class="section-content">
-                    <xsl:if test="hl7:author | hl7:informant | hl7:subject">
-                        <div class="section-meta">
-                            <xsl:call-template name="section-author"/>
-                            <xsl:call-template name="section-informant"/>
-                            <xsl:call-template name="section-subject"/>
-                        </div>
-                    </xsl:if>
-                    <div class="section-body">
-                        <xsl:if test="hl7:text">
-                            <xsl:call-template name="section-text"/>
-                        </xsl:if>
-                        <xsl:for-each select="hl7:component/hl7:section">
-                            <xsl:call-template name="section">
-                                <xsl:with-param name="margin" select="$margin + 2"/>
-                            </xsl:call-template>
-                        </xsl:for-each>
-                        <xsl:if test="not(hl7:text | hl7:component/hl7:section)">
-                            <xsl:text>&#160;</xsl:text>
-                        </xsl:if>
                     </div>
                 </div>
-            </div>
+            </xsl:if>
         </xsl:if>
         <xsl:if test="(contains($vendor, 'Saxonica'))">
-            <fo:block xsl:use-attribute-sets="myMargin">
-                <fo:block xsl:use-attribute-sets="myBlock9">
-                    <xsl:call-template name="section-title">
-                        <xsl:with-param name="level" select="$level"/>
-                    </xsl:call-template>
-                </fo:block>
-                <fo:block line-height="0.1cm">&#160;</fo:block>
-                <fo:block>
-                    <xsl:if test="hl7:author | hl7:informant | hl7:subject">
-                        <fo:block xsl:use-attribute-sets="myBlock12">
-                            <xsl:call-template name="section-author"/>
-                            <xsl:call-template name="section-informant"/>
-                            <xsl:call-template name="section-subject"/>
+            <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.223'])">
+                <fo:block xsl:use-attribute-sets="myMargin">
+                    <fo:block xsl:use-attribute-sets="myBlock9">
+                        <xsl:call-template name="section-title">
+                            <xsl:with-param name="level" select="$level"/>
+                        </xsl:call-template>
+                    </fo:block>
+                    <fo:block line-height="0.1cm">&#160;</fo:block>
+                    <fo:block>
+                        <xsl:if test="hl7:author | hl7:informant | hl7:subject">
+                            <fo:block xsl:use-attribute-sets="myBlock12">
+                                <xsl:call-template name="section-author"/>
+                                <xsl:call-template name="section-informant"/>
+                                <xsl:call-template name="section-subject"/>
+                            </fo:block>
+                            <fo:block line-height="0.1cm">&#160;</fo:block>
+                        </xsl:if>
+                        <fo:block xsl:use-attribute-sets="myBlock15">
+                            <xsl:if test="hl7:text">
+                                <xsl:call-template name="section-text"/>
+                            </xsl:if>
+                            <fo:block line-height="0.1cm">&#160;</fo:block>
+                            <xsl:for-each select="hl7:component/hl7:section">
+                                <xsl:call-template name="section">
+                                    <xsl:with-param name="margin" select="$margin + 2"/>
+                                </xsl:call-template>
+                            </xsl:for-each>
+                            <xsl:if test="not(hl7:text | hl7:component/hl7:section)">
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:if>
+                            <fo:block line-height="0.1cm">&#160;</fo:block>
                         </fo:block>
-                        <fo:block line-height="0.1cm">&#160;</fo:block>
-                    </xsl:if>
-                    <fo:block xsl:use-attribute-sets="myBlock15">
-                        <xsl:if test="hl7:text">
-                            <xsl:call-template name="section-text"/>
-                        </xsl:if>
-                        <fo:block line-height="0.1cm">&#160;</fo:block>
-                        <xsl:for-each select="hl7:component/hl7:section">
-                            <xsl:call-template name="section">
-                                <xsl:with-param name="margin" select="$margin + 2"/>
-                            </xsl:call-template>
-                        </xsl:for-each>
-                        <xsl:if test="not(hl7:text | hl7:component/hl7:section)">
-                            <xsl:text>&#160;</xsl:text>
-                        </xsl:if>
-                        <fo:block line-height="0.1cm">&#160;</fo:block>
                     </fo:block>
                 </fo:block>
-            </fo:block>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
 
@@ -1973,13 +1978,13 @@
                         <!-- Add link to go back to top if the document has more than one section, otherwise superfluous -->
                         <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
                             <fo:basic-link internal-destination="#_toc">
-                                <xsl:apply-templates select="." mode="getTitleName"/>
+                                <xsl:apply-templates select="hl7:title" mode="getTitleName"/>
                             </fo:basic-link>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
-                            <xsl:apply-templates select="." mode="getTitleName"/>
+                            <xsl:apply-templates select="hl7:title" mode="getTitleName"/>
                         </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -6783,32 +6788,45 @@
                                         concat('IS010000000000000000000000', 'S1',
                                         $ins, 'S2', '1.2.250.1.213.1.4.8', 'GS', 'S3',
                                         $name, 'GS', 'S4', $given, 'GS', 'S5', $sex, 'S6', $datebirth)"/>
-
-                                <xsl:if test="
-                                        string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0
-                                        and string-length($sex) > 0 and string-length($datebirth) > 0 and string-length($country) > 0">
-                                    <div id="element" value="{$matrix}" class="barcodeStyle"/>
-                                    <br/>
-                                    <div class="container">
-                                        <div class="centered-element"> INS à scanner </div>
-                                    </div>
-                                </xsl:if>
-
-                                <xsl:if test="
-                                        string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0 and string-length($sex) > 0
-                                        and string-length($datebirth) > 0 and not($country)">
-                                    <div id="element" value="{$matrix}" class="barcodeStyle"/>
-
-                                    <div class="container">
-                                        <div class="centered-element"> INS à scanner </div>
-                                    </div>
-                                </xsl:if>
-
                                 <xsl:if
-                                    test="string-length($ins) = 0 or string-length($name) = 0 or string-length($given) = 0 or string-length($sex) = 0 or string-length($datebirth) = 0">
-                                    <xsl:value-of select="string-length($ins)"/>
+                                    test="not(ancestor::hl7:ClinicalDocument//hl7:templateId[@root = '1.2.250.1.213.1.1.2.223'])">
+                                    <xsl:if test="
+                                            string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0
+                                            and string-length($sex) > 0 and string-length($datebirth) > 0 and string-length($country) > 0">
+                                        <div id="element" value="{$matrix}" class="barcodeStyle"/>
+                                        <br/>
+                                        <div class="container">
+                                            <div class="centered-element"> INS à scanner </div>
+                                        </div>
+                                    </xsl:if>
 
-                                    <div class="barcodeStyle"/>
+                                    <xsl:if test="
+                                            string-length($ins) > 0 and string-length($name) > 0 and string-length($given) > 0 and string-length($sex) > 0
+                                            and string-length($datebirth) > 0 and not($country)">
+                                        <div id="element" value="{$matrix}" class="barcodeStyle"/>
+
+                                        <div class="container">
+                                            <div class="centered-element"> INS à scanner </div>
+                                        </div>
+                                    </xsl:if>
+
+                                    <xsl:if
+                                        test="string-length($ins) = 0 or string-length($name) = 0 or string-length($given) = 0 or string-length($sex) = 0 or string-length($datebirth) = 0">
+                                        <xsl:value-of select="string-length($ins)"/>
+                                        <div class="barcodeStyle"/>
+                                    </xsl:if>
+                                </xsl:if>
+                                <xsl:if
+                                    test="ancestor::hl7:ClinicalDocument//hl7:templateId[@root = '1.2.250.1.213.1.1.2.223']">
+                                    <div>
+                                        <img>
+                                            <xsl:attribute name="src">
+                                                <xsl:value-of
+                                                  select="concat('data:', 'image/jpeg', ';base64,', ancestor::hl7:ClinicalDocument//hl7:entry/hl7:observationMedia/hl7:value/text())"
+                                                />
+                                            </xsl:attribute>
+                                        </img>
+                                    </div>
                                 </xsl:if>
                             </td>
                         </tr>
@@ -7302,6 +7320,8 @@
                                     </xsl:variable>
                                     <xsl:variable name="row"
                                         select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
+                                    <xsl:if
+                                        test="not(ancestor::hl7:ClinicalDocument//hl7:templateId[@root = '1.2.250.1.213.1.1.2.223'])">
                                     <fo:table-cell number-rows-spanned="{$row}">
                                         <fo:block>
                                             <fo:block text-align="center">
@@ -7318,7 +7338,22 @@
                                             </xsl:if>
                                         </fo:block>
                                     </fo:table-cell>
-
+                                    </xsl:if>
+                                    <xsl:if
+                                        test="ancestor::hl7:ClinicalDocument//hl7:templateId[@root = '1.2.250.1.213.1.1.2.223']">
+                                        <fo:table-cell number-rows-spanned="{$row}">
+                                            <fo:block text-align="center">
+                                                <fo:external-graphic content-width="80pt" content-height="80pt"
+                                                    id="datamatrixId">
+                                                    <xsl:attribute name="src">
+                                                        <xsl:value-of
+                                                            select="normalize-space(concat('data:', 'image/jpeg', ';base64,', ancestor::hl7:ClinicalDocument//hl7:entry/hl7:observationMedia/hl7:value/text()))"
+                                                        />
+                                                    </xsl:attribute>
+                                                </fo:external-graphic>
+                                            </fo:block>
+                                        </fo:table-cell>
+                                    </xsl:if>
                                 </fo:table-row>
 
                                 <xsl:if
