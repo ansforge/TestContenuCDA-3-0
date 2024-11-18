@@ -1111,7 +1111,7 @@
                           <text><reference value="#patho004"/></text>
                           <statusCode code="completed"/>
                           <effectiveTime nullFlavor="NAV"/>
-                          <value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire"
+                          <value xsi:type="CD" code="D57.1" displayName="Anémie à hématies falciformes sans crises"
                             codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
                             <originalText><reference value="#antécédent-fam-001"/></originalText>
                           </value>

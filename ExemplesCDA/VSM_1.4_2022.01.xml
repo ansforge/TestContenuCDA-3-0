@@ -1155,7 +1155,7 @@
 													<text><reference value="#antecedent-familial-001-probleme"/></text>
 													<statusCode code="completed"/>
 													<effectiveTime nullFlavor="UNK"/>
-													<value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire"
+													<value xsi:type="CD" code="D57.1" displayName="Anémie à hématies falciformes sans crises"
 														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
 														<originalText><reference value="#antecedent-familial-001-probleme"/></originalText>
 													</value>

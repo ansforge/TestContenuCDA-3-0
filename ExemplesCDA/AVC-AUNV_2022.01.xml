@@ -1373,7 +1373,7 @@
                   <effectiveTime>
                     <low value="2006" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="I74.3" displayName="AOMI" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+                  <value xsi:type="CD" code="I74.3" displayName="Embolie et thrombose des artères des membres inférieurs" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText><reference value="#aomi" /></originalText>
                   </value>
                 </observation>

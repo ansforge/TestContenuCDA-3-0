@@ -3226,7 +3226,7 @@
               <tbody>
                 <tr>
                   <td><content ID="antecedent-familial-001-sujet">Mère</content></td>
-                  <td><content ID="antecedent-familial-001-probleme">Anémie drépanocytaire (CIM-10 : D57.1)</content></td>
+                  <td><content ID="antecedent-familial-001-probleme">Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</content></td>
                   <td><content ID="antecedent-familial-001-commentaire">(texte libre)</content></td>
                 </tr>
               </tbody>
@@ -3279,7 +3279,7 @@
                   <text><reference value="#antecedent-familial-001-probleme"/></text>
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="UNK"/>
-                  <value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire"
+                  <value xsi:type="CD" code="D57.1" displayName="Anémie à hématies falciformes sans crises"
                     codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#antecedent-familial-001-probleme"/>
