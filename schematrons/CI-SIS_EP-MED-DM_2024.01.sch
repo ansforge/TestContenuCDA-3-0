@@ -75,6 +75,10 @@
                 et/ou  une seule section FR-Prescription-dispositifs-medicaux (1.2.250.1.213.1.1.2.222).
             </assert>
             
+            <!-- Verifier la présence d'une Section FR-Document-PDF-copie -->
+            <assert test="count(cda:component/cda:section/cda:templateId[@root='1.2.250.1.213.1.1.2.243']) =1">
+                [EP-MED-DM_2024.01] Erreur de conformité : La e-Prescription doit contenir une seule section FR-Document-PDF-copie (1.2.250.1.213.1.1.2.243).            </assert>
+            
         </rule>
         
     </pattern>
