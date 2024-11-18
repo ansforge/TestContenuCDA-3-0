@@ -43,11 +43,11 @@
                   dateFin=""
                   dateValid="20100101000000"
                   displayName="Embolie et thrombose des artères distales, sans précision"/>
-         <Concept code="K55.0"
+         <Concept code="K55"
                   codeSystem="2.16.840.1.113883.6.3"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Infarctus mésentérique (artère) (veine)"/>
+                  displayName="Troubles vasculaires de l'intestin"/>
          <Concept code="N28.0"
                   codeSystem="2.16.840.1.113883.6.3"
                   dateFin=""
