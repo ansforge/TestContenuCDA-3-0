@@ -30,7 +30,6 @@
         <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_AutreRisque_IPS.sch"/>
         <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_Deplacement_IPS.sch"/>
         <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_EtatPsychique_IPS.sch"/>
-        <include href="include/jeuxDeValeurs/IPS-FR_2024.01/JDV_HandicapDeficit_IPS.sch"/>
         
         <!-- schématron entete -->
         
@@ -46,15 +45,13 @@
                 <active pattern="JDV_AutreRisque_CISIS"/>
                 <active pattern="JDV_Deplacement_CISIS"/>
                 <active pattern="JDV_EtatPsychique_CISIS"/>
-                <active pattern="JDV_HandicapDeficit_CISIS"/>
                 
         </phase>
         
         <pattern id="variables">
-                <let name="JDV_AutreRisque_CISIS" value="'../jeuxDeValeurs/JDV_Autre_Risque_CISIS.xml'"/>
+                <let name="JDV_AutreRisque_CISIS" value="'../jeuxDeValeurs/JDV_AutreRisque_CISIS.xml'"/>
                 <let name="JDV_Deplacement_CISIS" value="'../jeuxDeValeurs/JDV_Deplacement_CISIS.xml'"/>
-                <let name="JDV_EtatPsychique_CISIS" value="'../jeuxDeValeurs/JDV_Etat psychique_CISIS.xml'"/>
-                <let name="JDV_HandicapDeficit_CISIS" value="'../jeuxDeValeurs/JDV_Handicap_Deficit_CISIS.xml'"/>
+                <let name="JDV_EtatPsychique_CISIS" value="'../jeuxDeValeurs/JDV_EtatPsychique_CISIS.xml'"/>
                 
                 
                         <!--  Verifier la présence de la section FR-Traitements -->
