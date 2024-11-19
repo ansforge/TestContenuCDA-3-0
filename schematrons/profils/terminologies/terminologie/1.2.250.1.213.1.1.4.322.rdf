@@ -90,9 +90,6 @@
       <skos:notation>DLU_004</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>DLU_005</skos:notation>
-   </rdf:Description>
-   <rdf:Description>
       <skos:notation>DLU_006</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -366,6 +363,12 @@
       <skos:notation>GEN-092.01.22</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>GEN-092.01.23</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-092.01.24</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>GEN-092.02</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -556,6 +559,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-092.08.07</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-092.08.08</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-092.09</skos:notation>
@@ -1231,6 +1237,15 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GEN-369</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-370</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-371</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>GEN-372</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>image/bm</skos:notation>
@@ -4527,6 +4542,18 @@
       <skos:notation>MED-1299</skos:notation>
    </rdf:Description>
    <rdf:Description>
+      <skos:notation>MED-1300</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1301</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1302</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>MED-1303</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
       <skos:notation>ORG-001</skos:notation>
    </rdf:Description>
    <rdf:Description>
@@ -5002,6 +5029,24 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ORG-212</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-213</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-214</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-215</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-216</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-217</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>ORG-218</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PAT-001</skos:notation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_DocumentAnnexeFLUDR_CISIS"
+             effectiveDate="2024-11-13T00:00:00+01:00"
+             id="1.2.250.1.213.1.1.5.813"
+             revisionDate="2024-11-13T00:00:00+01:00"
+             version="test">
+      <ConceptList>
+         <Concept code="GEN-371"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20241113000000"
+                  displayName="Ordonnance de sortie"/>
+         <Concept code="GEN-372"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20241113000000"
+                  displayName="Copie du résumé du passage aux urgences"/>
+         <Concept code="GEN-092.08.08"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20241113000000"
+                  displayName="Autre document"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

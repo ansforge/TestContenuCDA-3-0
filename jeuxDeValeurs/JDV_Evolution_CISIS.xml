@@ -8,11 +8,11 @@
              revisionDate="2024-05-22T00:00:00+01:00"
              version="test">
       <ConceptList>
-         <Concept code="1.2.250.1.213.1.1.5.788.1"
+         <Concept code="1352007006"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240522000000"
-                  displayName="guérison sans séquelle (Demande de création SNOMED CT en cours)"/>
+                  displayName="guérison sans séquelle"/>
          <Concept code="1335890004"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""

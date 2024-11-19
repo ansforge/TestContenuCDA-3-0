@@ -27,7 +27,7 @@
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20230202000000"
-                  displayName="Autre prothèse et objet personnel"/>
+                  displayName="Autre dispositif ou objet personnel"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

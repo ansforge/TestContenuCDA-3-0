@@ -12,12 +12,12 @@
                   codeSystem="1.2.250.1.213.1.1.4.5"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Médecin - Gynécologie médicale et Obstétrique ©"/>
+                  displayName="Médecin - Gynécologie médicale et Obstétrique (C)"/>
          <Concept code="G15_10/C72"
                   codeSystem="1.2.250.1.213.1.1.4.5"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Médecin - Génétique médicale ©"/>
+                  displayName="Médecin - Génétique médicale (C) "/>
          <Concept code="G15_10/SM54"
                   codeSystem="1.2.250.1.213.1.1.4.5"
                   dateFin=""
