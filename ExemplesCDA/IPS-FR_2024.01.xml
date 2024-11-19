@@ -39,7 +39,7 @@
   <!-- Identifiant unique du document -->
   <id root="1.2.250.1.213.1.1.1.51.12345.2"/>
   <!-- Type de document -->
-  <code code="60591-5" displayName="Synthèse du dossier médical" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <code code="60591-5" displayName="Synthèse médicale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <!-- Titre du document -->
   <title>SYNTHESE MEDICALE</title>
   <!-- Date de création du document -->
