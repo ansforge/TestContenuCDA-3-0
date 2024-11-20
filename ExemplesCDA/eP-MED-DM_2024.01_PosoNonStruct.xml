@@ -506,7 +506,7 @@
   <component>
     <structuredBody>
       
-      <!-- [1..1] Section FR-Code-a-barres -->
+      <!-- [0..1] Section FR-Code-a-barres -->
       <component>
         <section classCode="DOCSECT" moodCode="EVN">
           <!-- Conformité FR-Code-a-barres (CI-SIS) -->
