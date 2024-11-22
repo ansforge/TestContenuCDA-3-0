@@ -45,7 +45,7 @@
   <!-- Conformité au modèle SDM-MR (Set de Données Minimum Maladies Rares) + numéro de version -->
   <templateId root="1.2.250.1.213.1.1.1.30" extension="2024.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.30.2"/>
+  <id root="1.2.250.1.213.1.1.1.30.2024.3.1"/>
   <!-- Type de document -->
   <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1"/>
   <!-- Titre du document -->
@@ -57,7 +57,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="4DD890B3-9978-4943-AA14-67756C5A5ECB"/>
+  <setId root="1.2.250.1.213.1.1.1.30.2024.3"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="2"/>
 

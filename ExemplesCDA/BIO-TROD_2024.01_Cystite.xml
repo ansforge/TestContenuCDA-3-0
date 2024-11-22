@@ -37,7 +37,7 @@
    <!-- Conformité spécifications BIO-TROD_2024.01 -->
    <templateId root="1.2.250.1.213.1.1.1.59" extension="2024.01"/>
    <!-- Identifiant du document -->
-   <id root="1.2.250.1.213.1.1.1.59.12345.2"/>
+   <id root="1.2.250.1.213.1.1.1.59.2024.4.1"/>
    <!-- Code du document -->
    <code code="96173-0" displayName="Test rapide d'orientation diagnostique" codeSystem="2.16.840.1.113883.6.1"/>
    <!-- Titre du document -->
@@ -49,7 +49,7 @@
    <!-- Langage utilisé dans le document -->
    <languageCode code="fr-FR"/>
    <!-- Identifiant commun à toutes les versions successives du document -->
-   <setId root="1.2.250.1.213.1.1.1.59.12345"/>
+   <setId root="1.2.250.1.213.1.1.1.59.2024.4"/>
    <!-- Numéro de la version du présent document (entier positif) -->
    <versionNumber value="1"/>
 
