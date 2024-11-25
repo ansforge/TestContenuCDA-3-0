@@ -136,7 +136,7 @@
     <time value="20240112120000+0100"/>
     <assignedAuthor>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)"
+      <code code="G15_10" displayName="Médecin"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <addr>
         <houseNumber>48</houseNumber>
@@ -178,7 +178,7 @@
     <signatureCode code="S"/>
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-      <code code="G15_10" displayName="Médecin - Médecine interne (SCH)"
+      <code code="G15_10" displayName="Médecin"
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <addr>
         <houseNumber>48</houseNumber>
@@ -204,7 +204,7 @@
           <postalCode>75019</postalCode>
           <city>PARIS</city>
         </addr>
-        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé"
+        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé"
           codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
       </representedOrganization>
     </assignedEntity>
@@ -283,7 +283,7 @@
               <postalCode>75019</postalCode>
               <city>PARIS</city>
             </addr>
-            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Établissement de santé"
+            <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé"
               codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
           </representedOrganization>
         </assignedEntity>
@@ -705,7 +705,7 @@
                 <time nullFlavor="NA"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)"
+                  <code code="G15_10" displayName="Médecin"
                     codeSystem="1.2.250.1.213.1.1.4.5"/>
                   <addr nullFlavor="NASK"/>
                   <telecom nullFlavor="NASK"/>
@@ -727,7 +727,7 @@
                       <city>PARIS</city>
                     </addr>
                     <standardIndustryClassCode code="ETABLISSEMENT"
-                      displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+                      displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
                       codeSystemName="practiceSettingCode"/>
                   </representedOrganization>
                 </assignedEntity>
@@ -876,7 +876,7 @@
                 <time nullFlavor="NA"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)"
+                  <code code="G15_10" displayName="Médecin"
                     codeSystem="1.2.250.1.213.1.1.4.5"/>
                   <addr>
                     <houseNumber>48</houseNumber>
@@ -903,7 +903,7 @@
                       <city>PARIS</city>
                     </addr>
                     <standardIndustryClassCode code="ETABLISSEMENT"
-                      displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+                      displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
                       codeSystemName="practiceSettingCode"/>
                   </representedOrganization>
                 </assignedEntity>
@@ -1017,7 +1017,7 @@
                 <time nullFlavor="NA"/>
                 <assignedEntity>
                   <id root="1.2.250.1.71.4.2.1" extension="801234567897"/>
-                  <code code="G15_10" displayName="Médecin - Médecine interne (SCH)"
+                  <code code="G15_10" displayName="Médecin"
                     codeSystem="1.2.250.1.213.1.1.4.5"/>
                   <addr>
                     <houseNumber>48</houseNumber>
@@ -1044,7 +1044,7 @@
                       <city>PARIS</city>
                     </addr>
                     <standardIndustryClassCode code="ETABLISSEMENT"
-                      displayName="Établissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
+                      displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
                       codeSystemName="practiceSettingCode"/>
                   </representedOrganization>
                 </assignedEntity>
