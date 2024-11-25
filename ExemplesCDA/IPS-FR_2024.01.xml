@@ -37,9 +37,9 @@
   <!-- Conformité au Volet International Patient Summary - France (IPS-FR_2024.01)-->
   <templateId root="1.2.250.1.213.1.1.1.51" extension="2024.01"/>
   <!-- Identifiant unique du document -->
-  <id root="1.2.250.1.213.1.1.1.51.12345.2"/>
+  <id root="1.2.250.1.213.1.1.1.51.2024.1.1"/>
   <!-- Type de document -->
-  <code code="60591-5" displayName="Synthèse du dossier médical" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <code code="60591-5" displayName="Synthèse médicale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <!-- Titre du document -->
   <title>SYNTHESE MEDICALE</title>
   <!-- Date de création du document -->
@@ -50,7 +50,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="1.2.250.1.213.1.1.1.51.12345"/>
+  <setId root="1.2.250.1.213.1.1.1.51.2024.1"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="2"/>
 
@@ -2219,7 +2219,7 @@
                   <text><reference value="#effet-indesirable-01-evolution"/></text>
                   <statusCode code="completed"/>
                   <!-- valeur du JDV_Evolution_CISIS (1.2.250.1.213.1.1.5.788) code : (Demande de création SNOMED CT en cours)-->
-                  <value xsi:type="CD" code="1.2.250.1.213.1.1.5.788.1" displayName="Guérison sans séquelle"
+                  <value xsi:type="CD" code="1352007006" displayName="Guérison sans séquelle"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText><reference value="#effet-indesirable-01-evolution"/></originalText>
                   </value>
@@ -2606,6 +2606,7 @@
       <!-- [0..1] Section FR-Statut-fonctionnel -->
       <component>
         <section>
+          <templateId root="2.16.840.1.113883.10.20.1.5"/>
           <!-- Functional Status Section (HL7 IPS) -->
           <templateId root="2.16.840.1.113883.10.22.3.8"/>          
           <!-- FR-Statut-fonctionnel (CI-SIS) -->

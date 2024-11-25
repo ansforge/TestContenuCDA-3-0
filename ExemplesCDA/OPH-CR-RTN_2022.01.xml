@@ -33,7 +33,7 @@
   <!-- Conformité spécifications au modèle OPH-CR-RTN_2022.01 -->
   <templateId root="1.2.250.1.213.1.1.1.18" extension="2022.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.18.12345.1"/>
+  <id root="1.2.250.1.213.1.1.1.18.2022.1.1"/>
   <!-- Type de document -->
   <code code="75492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CR d'acte diagnostique à visée préventive ou de dépistage" />
   <!-- Titre du document -->
@@ -45,7 +45,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR" />
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="1.2.250.1.213.1.1.1.18.12345"/>
+  <setId root="1.2.250.1.213.1.1.1.18.2022.1"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1" />
 

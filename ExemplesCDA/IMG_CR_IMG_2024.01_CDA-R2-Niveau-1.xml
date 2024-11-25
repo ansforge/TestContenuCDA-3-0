@@ -35,7 +35,7 @@
   <!-\- Conformité Modèle IMG-CR-IMG du CI-SIS -\->
   <templateId root="1.2.250.1.213.1.1.1.45" extension="2024.01"/>-->
   <!-- Unique ID obligatoire -->
-  <id root="1.2.250.1.213.1.1.1.45.12345.2"/>
+  <id root="1.2.250.1.213.1.1.1.45.2024.2.1"/>
   <!-- Type de document -->  
   <code code="18748-4" displayName="CR d’imagerie médicale" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
     <!-- valeur issue du JDV_CodesDocumentImagerie_CISIS (1.2.250.1.213.1.1.5.687) -->
@@ -55,7 +55,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant du lot de version d'un même document -->
-  <setId root="1.2.250.1.213.1.1.1.45.12345"/>
+  <setId root="1.2.250.1.213.1.1.1.45.2024.2"/>
   <!-- Numéro de version d'un même document -->
   <versionNumber value="2"/>
   

@@ -62,11 +62,7 @@
         <!--<let name="jdv_SeverityObservation" value="'../jeuxDeValeurs/JDV_HL7_SeverityObservation-CISIS.xml'"/> -->
         
         <!-- présence des sections obligatoires -->    
-        <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
-            <!-- [1..1] Section FR-Code-a-barres-ins : Code à barres INS (obligatoire) -->
-            <assert test="cda:component/cda:section/cda:templateId[@root='1.2.250.1.213.1.1.2.223']"> 
-                [EP-MED-DM_2024.01] Erreur de conformité : La section "FR-Code-a-barres-ins" (1.2.250.1.213.1.1.2.223) doit être présente.
-            </assert>                        
+        <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">                      
             
             <!-- Verifier la présence d'une Section FR-Prescription-medicaments et/ou  d'une Section FR-Prescription-dispositifs-medicaux-->
             <assert test="count(cda:component/cda:section/cda:templateId[@root='1.2.250.1.213.1.1.2.171']) =1 

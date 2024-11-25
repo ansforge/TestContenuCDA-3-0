@@ -29,7 +29,7 @@
   <!-- Sortie de l'UNV (SUNV)-->
   <templateId root="1.2.250.1.213.1.1.1.17" extension="2022.01"/>
   <!-- Unique ID obligatoire -->
-  <id root="1.2.250.1.213.1.1.1.17.12345.1"/>
+  <id root="1.2.250.1.213.1.1.1.17.2022.1.1"/>
   <!-- Type de document -->
   <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
@@ -41,7 +41,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR" />
   <!-- Identifiant du lot de version d'un même document -->
-  <setId root="1.2.250.1.213.1.1.1.17.12345" />
+  <setId root="1.2.250.1.213.1.1.1.17.2022.1" />
   <!-- Version du document -->
   <versionNumber value="1" />
 
