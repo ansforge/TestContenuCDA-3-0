@@ -1065,6 +1065,30 @@
         <value lang="nl-nl">INS-nummer</value>
         <value lang="fr-fr">Matricule INS</value>
     </translation>
+    <translation key="INSC">
+        <comment>Label: INS-C</comment>
+        <value lang="en-us">INS-C</value>
+        <value lang="de-ch">INS-C</value>
+        <value lang="fr-ch">INS-C</value>
+        <value lang="nl-nl">INS-C</value>
+        <value lang="fr-fr">INS-C</value>
+    </translation>	
+    <translation key="SISAMU">
+        <comment>Label: Identifiant SI-SAMU</comment>
+        <value lang="en-us">SI-SAMU identifier</value>
+        <value lang="de-ch">SI-SAMU-Kennung</value>
+        <value lang="fr-ch">Identifiant SI-SAMU</value>
+        <value lang="nl-nl">SI-SAMU-identificatie</value>
+        <value lang="fr-fr">Identifiant SI-SAMU</value>
+    </translation>
+    <translation key="SECSOCIAL">
+        <comment>Label: N° de Sécurité Sociale</comment>
+        <value lang="en-us">Social Security Number</value>
+        <value lang="de-ch">Sozialversicherungsnummer</value>
+        <value lang="fr-ch">N° de Sécurité Sociale</value>
+        <value lang="nl-nl">Burgerservicenummer</value>
+        <value lang="fr-fr">N° de Sécurité Sociale</value>
+    </translation>
     <translation key="Insurance_Company">
         <comment>Label: Insurance Company</comment>
         <value lang="en-us">Insurance Company</value>
@@ -9687,22 +9711,25 @@
         <value lang="fr-fr">ATTENTION : En raison des paramètres de sécurité, il n'est pas possible
             d'afficher le pdf.</value>
     </translation>
-    
+
     <translation key="iframe-warning-display-pdf">
         <comment>Label: unsupported browser for iframe with pdf (limit-pdf = yes)</comment>
         <value lang="en-us">Please click on this link to view the document</value>
         <value lang="nl-nl">Klik op deze link om het document te bekijken</value>
         <value lang="fr-fr">Veuillez cliquer sur ce lien pour afficher le document</value>
     </translation>
-    
+
     <translation key="iframe-warning-display-pdf-non-xml">
         <comment>Label: unsupported browser for iframe with pdf (limit-pdf = yes)</comment>
-        <value lang="en-us">Unstructured document: please click on this link to view the document</value>
-        <value lang="nl-nl">Ongestructureerd document: klik op deze link om het document te bekijken</value>
-        <value lang="fr-fr">Document non structuré: veuillez cliquer sur ce lien pour afficher le document</value>
+        <value lang="en-us">Unstructured document: please click on this link to view the
+            document</value>
+        <value lang="nl-nl">Ongestructureerd document: klik op deze link om het document te
+            bekijken</value>
+        <value lang="fr-fr">Document non structuré: veuillez cliquer sur ce lien pour afficher le
+            document</value>
     </translation>
-    
-    
+
+
     <translation key="javascript-injection-warning">
         <comment>Label: security warning text</comment>
         <value lang="en-us">WARNING: Javascript injection attempt detected in source CDA document.
