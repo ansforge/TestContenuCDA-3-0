@@ -5,7 +5,7 @@
    <ValueSet displayName="JDV_Actes_CS8_CISIS"
              effectiveDate="2022-10-03T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.705"
-             revisionDate="2022-10-03T00:00:00+01:00"
+             revisionDate="2024-11-26T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="MED-174"
@@ -13,11 +13,11 @@
                   dateFin=""
                   dateValid="20221003000000"
                   displayName="Gestes techniques spécialisés"/>
-         <Concept code="GEN-085"
+         <Concept code="MED-1304"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
-                  dateValid="20221003000000"
-                  displayName="Dépistage néonatal"/>
+                  dateValid="20241126000000"
+                  displayName="Dépistage de la surdité"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>
