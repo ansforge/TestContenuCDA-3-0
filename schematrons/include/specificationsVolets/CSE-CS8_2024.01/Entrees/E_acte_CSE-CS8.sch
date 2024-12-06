@@ -22,8 +22,8 @@
         </assert>
         
         <!-- Vérifier que l'entrée 'Dépistage néonatal' est présente -->
-        <assert test='.//cda:procedure[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.19"]/cda:code/@code="GEN-085"'>
-            [E_acte_CSE-CS8] Erreur de conformité : L'entrée FR-act de code "GEN-085" est obligatoire pour indiquer la présence de Dépistage néonatal.
+        <assert test='.//cda:procedure[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.19"]/cda:code/@code="60151004"'>
+            [E_acte_CSE-CS8] Erreur de conformité : L'entrée FR-acte de code "60151004" est obligatoire pour indiquer la présence de Dépistage néonatal.
         </assert>
         
     </rule>

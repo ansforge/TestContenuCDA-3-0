@@ -37,10 +37,10 @@
             [S_FunctionnalStatusIPS_fr] Erreur de Conformité PCC : L'élément 'codeSystem' doit être codé dans la nomenclature LOINC (2.16.840.1.113883.6.1). 
         </assert>
         
-        <!-- Verifier que le templateId parent est présent. --> 
+        <!--<!-\- Verifier que le templateId parent est présent. -\-> 
         <assert test='cda:templateId[@root="2.16.840.1.113883.10.20.1.5"]'> 
             [S_FunctionnalStatusIPS_fr] Erreur de Conformité PCC : L'identifiant du template de conformité CCD est absent. 
-        </assert>
+        </assert>-->
         
         <assert test='count(cda:entry/cda:organizer[cda:templateId/@root = "1.3.6.1.4.1.19376.1.5.3.1.1.12.3.7"])&gt;=0'> 
             [S_FunctionnalStatusIPS_fr] Erreur de Conformité PCC : L'élément 'codeSystem' doit être codé dans la nomenclature LOINC (2.16.840.1.113883.6.1). 

@@ -38,7 +38,7 @@
   <!-- Déclarations de conformité au modèle CR-BIO_2024.01 du CI-SIS -->
   <templateId root="1.2.250.1.213.1.1.1.55" extension="2024.01"/>
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.1.55..2024.5.1"/>
+  <id root="1.2.250.1.213.1.1.1.55.2024.5.1"/>
   <!-- Type de document -->
   <code code="11502-2" displayName="CR d'examens biologiques" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->

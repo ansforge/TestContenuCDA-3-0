@@ -2606,7 +2606,6 @@
       <!-- [0..1] Section FR-Statut-fonctionnel -->
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.5"/>
           <!-- Functional Status Section (HL7 IPS) -->
           <templateId root="2.16.840.1.113883.10.22.3.8"/>          
           <!-- FR-Statut-fonctionnel (CI-SIS) -->

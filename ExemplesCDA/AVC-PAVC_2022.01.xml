@@ -2137,7 +2137,7 @@
               <text><reference value="#lieuDeVie"/></text>
               <statusCode code="active" />
               <effectiveTime nullFlavor="MSK" />
-              <value xsi:type="CD" code="GEN-117" displayName="Domicile" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="264362003" displayName="Domicile" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- Mode de vie -->

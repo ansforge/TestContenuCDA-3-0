@@ -59,7 +59,6 @@
   <setId root="1.2.250.1.213.1.1.1.2.1.1.2022.1" />
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="2" />
-0
   <!-- Patient -->
   <recordTarget>
     <patientRole>

@@ -50,7 +50,7 @@
     <!-- Identifiant du lot de version d'un même document -->
     <setId root="1.2.250.1.213.1.1.1.47.2024.4"/>
     <!-- Numéro de version d'un même document -->
-    <versionNumber value="1"/
+    <versionNumber value="1"/>
 
     <!-- Patient -->
     <recordTarget>
