@@ -27,12 +27,7 @@
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20241105000000"
-                  displayName="trouble mental"/>
-         <Concept code="1.2.250.1.213.1.1.5.812.1"
-                  codeSystem="2.16.840.1.113883.6.96"
-                  dateFin=""
-                  dateValid="20241105000000"
-                  displayName="trouble psychique (Demande de précisions en cours)"/>
+                  displayName="trouble psychique"/>
          <Concept code="700364009"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""

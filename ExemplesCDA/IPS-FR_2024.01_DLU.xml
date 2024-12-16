@@ -889,7 +889,7 @@
                     <low value="20230521"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="114" displayName="epilepsie"
-                    codeSystem="1.2.250.1.213.2.78" codeSystemName="DRC">
+                    codeSystem="1.2.250.1.213.2.9" codeSystemName="DRC">
                     <originalText>
                       <reference value="#probleme-03"/>
                     </originalText>

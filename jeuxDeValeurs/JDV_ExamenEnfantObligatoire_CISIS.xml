@@ -5,7 +5,7 @@
    <ValueSet displayName="JDV_ExamenEnfantObligatoire_CISIS"
              effectiveDate="2023-07-18T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.730"
-             revisionDate="2023-07-18T00:00:00+01:00"
+             revisionDate="2024-12-12T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="MED-1224"
@@ -93,6 +93,11 @@
                   dateFin=""
                   dateValid="20230718000000"
                   displayName="CSE - Examen médical obligatoire au cours de la 6ème année"/>
+         <Concept code="MED-1306"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20241212000000"
+                  displayName="CSE - Examen médical obligatoire au cours de la 7ème année"/>
          <Concept code="MED-1241"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
