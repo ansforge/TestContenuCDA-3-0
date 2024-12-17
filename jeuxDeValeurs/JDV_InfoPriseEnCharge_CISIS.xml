@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_InfoPriseEnCharge_CISIS"
+             effectiveDate="2022-04-12T00:00:00+01:00"
+             id="1.2.250.1.213.1.1.5.685"
+             revisionDate="2022-04-12T00:00:00+01:00"
+             version="test">
+      <ConceptList>
+         <Concept code="U83.71"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20220412000000"
+                  displayName="Bactérie multirésistante [BMR]"/>
+         <Concept code="MED-1124"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220412000000"
+                  displayName="Patient nécessitant un accompagnement par un tiers"/>
+         <Concept code="Z74.0"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  dateFin=""
+                  dateValid="20220412000000"
+                  displayName="Besoin d'assistance du fait de mobilité restreinte"/>
+         <Concept code="MED-1125"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220412000000"
+                  displayName="Patient potentiellement non-coopérant (déficience mentale, etc.)"/>
+         <Concept code="MED-1123"
+                  codeSystem="1.2.250.1.213.1.1.4.322"
+                  dateFin=""
+                  dateValid="20220412000000"
+                  displayName="Patient porteur d'un germe à transmission aérienne"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>
