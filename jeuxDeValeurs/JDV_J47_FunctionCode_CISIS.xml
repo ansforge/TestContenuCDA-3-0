@@ -2,13 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240126120000"
+             dateMaj="20241213120000"
              dateValid="20180330120000"
              description="Jeux de valeurs des Rôles fonctionnels HL7 et CI-SIS"
              displayName="JDV_J47_FunctionCode_CISIS.tabs"
              effectiveDate="2018-03-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.124"
-             revisionDate="2024-01-26T12:00:00+01:00"
+             revisionDate="2024-12-13T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS">
       <ConceptList>
@@ -36,6 +36,9 @@
          <Concept code="PCP"
                   codeSystem="2.16.840.1.113883.5.88"
                   displayName="Médecin traitant"/>
+         <Concept code="330"
+                  codeSystem="1.2.250.1.213.1.6.1.107"
+                  displayName="Coordonnateur de parcours"/>
          <Concept code="353"
                   codeSystem="1.2.250.1.213.1.6.1.107"
                   displayName="Membre de l'équipe de soins"/>

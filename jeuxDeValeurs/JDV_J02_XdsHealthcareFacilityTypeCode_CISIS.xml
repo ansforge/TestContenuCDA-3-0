@@ -2,13 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20240726120000"
+             dateMaj="20241213120000"
              dateValid="20141008000000"
              description="XDS healthcareFacilityTypeCode CI-SIS"
              displayName="JDV_J02_XdsHealthcareFacilityTypeCode_CISIS.tabs"
              effectiveDate="2014-10-08T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.466"
-             revisionDate="2024-07-26T12:00:00+01:00"
+             revisionDate="2024-12-13T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS">
       <ConceptList>
@@ -198,7 +198,7 @@
                   displayName="Structure Dispensatrice à domicile d'Oxygène à usage médical"/>
          <Concept code="SA63"
                   codeSystem="1.2.250.1.71.4.2.4"
-                  displayName="Communauté Professionnelle Territoriale de Santé"/>
+                  displayName="Communauté professionnelle territoriale de santé et équipe de soins spécialisés"/>
          <Concept code="SA64"
                   codeSystem="1.2.250.1.71.4.2.4"
                   displayName="Société de téléconsultation"/>

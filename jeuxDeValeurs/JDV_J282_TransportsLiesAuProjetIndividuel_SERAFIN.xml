@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ValueSet dateFin=""
+             dateMaj="20241025120000"
+             dateValid="20241025120000"
+             description="Liste les natures des transports liés au projet individuel provenant de la terminologie SERAFIN"
+             displayName="JDV_J282_TransportsLiesAuProjetIndividuel_SERAFIN.tabs"
+             effectiveDate="2024-10-25T12:00:00+01:00"
+             id="1.2.250.1.213.3.3.251"
+             revisionDate="2024-10-25T12:00:00+01:00"
+             typeFichier="JDV"
+             urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J282-TransportsLiesAuProjetIndividuel_SERAFIN">
+      <ConceptList>
+         <Concept code="3.2.4"
+                  codeSystem="1.2.250.1.213.3.3.60"
+                  displayName="Transports liés au projet individuel"/>
+         <Concept code="3.2.4.1"
+                  codeSystem="1.2.250.1.213.3.3.60"
+                  displayName="Transports liés à accueillir (domicile-structure)"/>
+         <Concept code="3.2.4.2"
+                  codeSystem="1.2.250.1.213.3.3.60"
+                  displayName="Transports liés aux prestations de soins, de maintien et de developpement des capacités fonctionnelles"/>
+         <Concept code="3.2.4.3"
+                  codeSystem="1.2.250.1.213.3.3.60"
+                  displayName="Transports liés à l’autonomie et la participation sociale"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_HL7_employmentStatusODH_CISIS"
+             effectiveDate="2019-01-01T00:00:00+01:00"
+             id="2.16.840.1.113883.1.11.20562"
+             revisionDate="2019-01-01T00:00:00+01:00"
+             version="test">
+      <ConceptList>
+         <Concept code="Employed"
+                  codeSystem="2.16.840.1.113883.5.1063"
+                  dateFin=""
+                  dateValid="20190101000000"
+                  displayName="En activité"/>
+         <Concept code="NotInLaborForce"
+                  codeSystem="2.16.840.1.113883.5.1063"
+                  dateFin=""
+                  dateValid="20190101000000"
+                  displayName="Inactif"/>
+         <Concept code="Unemployed"
+                  codeSystem="2.16.840.1.113883.5.1063"
+                  dateFin=""
+                  dateValid="20190101000000"
+                  displayName="Sans activité"/>
+      </ConceptList>
+   </ValueSet>
+</RetrieveValueSetResponse>

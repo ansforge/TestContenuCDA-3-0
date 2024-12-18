@@ -2,13 +2,13 @@
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <ValueSet dateFin=""
-             dateMaj="20241025120000"
+             dateMaj="20241213120000"
              dateValid="20171013120000"
              description="Catégorie d'organisation - ROR"
              displayName="JDV_J34_CategorieOrganisation_ROR.tabs"
              effectiveDate="2017-10-13T12:00:00+01:00"
              id="1.2.250.1.213.3.3.40"
-             revisionDate="2024-10-25T12:00:00+01:00"
+             revisionDate="2024-12-13T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR">
       <ConceptList>
@@ -529,6 +529,9 @@
          <Concept code="175"
                   codeSystem="1.2.250.1.213.3.3.39"
                   displayName="Unités de soins palliatifs"/>
+         <Concept code="176"
+                  codeSystem="1.2.250.1.213.3.3.39"
+                  displayName="Unité hospitalière de médecine interne"/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>

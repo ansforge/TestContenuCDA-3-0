@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <ValueSet dateFin=""
-             dateMaj="20240426120000"
+   <ValueSet dateFin="20241213120000"
+             dateMaj="20241213120000"
              dateValid="20180330120000"
              description="Jeux de Valeurs des professions/spécialités des Non Ps"
              displayName="JDV_J48_ProfessionNonPS_CISIS.tabs"
              effectiveDate="2018-03-30T12:00:00+01:00"
              id="1.2.250.1.213.1.1.5.123"
-             revisionDate="2024-04-26T12:00:00+01:00"
+             revisionDate="2024-12-13T12:00:00+01:00"
              typeFichier="JDV"
              urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J48-ProfessionNonPS-CISIS">
       <ConceptList>
