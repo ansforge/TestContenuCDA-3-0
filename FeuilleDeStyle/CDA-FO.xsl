@@ -1157,6 +1157,21 @@
                     * html ul ul li{
                         border-top: 0;
                     }
+                    
+                    .iframe-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    }
+                    iframe {
+                    width: 100%;
+                    max-width: 2000px;
+                    height: 100%;
+                    max-height: 600px;
+                    }
                     /* End IE only hack */
                 </style>
                     <xsl:if test="string-length($externalCss) > 0">
@@ -1288,57 +1303,69 @@
                 </head>
 
                 <body>
-                    <div id="documentheader">
-                        <a id="_toc">&#160;</a>
-                        <xsl:if test="$dohtmlheader = 'true'">
-                            <h1 class="title">
-                                <xsl:call-template name="show-title"/>
-                            </h1>
-                            <xsl:call-template name="show-header"/>
-                        </xsl:if>
-                        <!-- START TOC and Revision toggle -->
-                        <xsl:if test="string($useJavascript) = 'true'">
-                            <xsl:if
-                                test="//hl7:content[@revised] or count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
-                                <div id="buttontable">
-                                    <table border="0" cellpadding="0" cellspacing="0">
-                                        <tbody>
-                                            <tr>
-                                                <xsl:call-template name="make-tableofcontents"/>
-                                                <xsl:call-template name="make-revisiontoggle"/>
-                                                <xsl:call-template name="make-sectiontoggle"/>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                    <xsl:choose>
+                        <xsl:when
+                            test="count(//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component[hl7:section[hl7:templateId[@root = '1.2.250.1.213.1.1.2.243']]]) = 1">
+                            <div id="documentbody">
+                                <xsl:apply-templates
+                                    select="hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId[@root = '1.2.250.1.213.1.1.2.243']]"
+                                />
+                            </div>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <div id="documentheader">
+                                <a id="_toc">&#160;</a>
+                                <xsl:if test="$dohtmlheader = 'true'">
+                                    <h1 class="title">
+                                        <xsl:call-template name="show-title"/>
+                                    </h1>
+                                    <xsl:call-template name="show-header"/>
+                                </xsl:if>
+                                <!-- START TOC and Revision toggle -->
+                                <xsl:if test="string($useJavascript) = 'true'">
+                                    <xsl:if
+                                        test="//hl7:content[@revised] or count(hl7:component/hl7:structuredBody/hl7:component[hl7:section]) &gt; 1">
+                                        <div id="buttontable">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr>
+                                                  <xsl:call-template name="make-tableofcontents"/>
+                                                  <xsl:call-template name="make-revisiontoggle"/>
+                                                  <xsl:call-template name="make-sectiontoggle"/>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
+                                    </xsl:if>
+                                </xsl:if>
+                                <!-- END TOC and Revision toggle -->
+                            </div>
+                            <div id="documentbody">
+                                <xsl:apply-templates
+                                    select="hl7:component/hl7:structuredBody | hl7:component/hl7:nonXMLBody"
+                                />
+                            </div>
+                            <xsl:if test="$dohtmlfooter = 'true'">
+                                <!-- Extension FR -->
+                                <div id="documentfooter">
+                                    <xsl:call-template name="recordTarget"/>
+                                    <xsl:call-template name="authorization"/>
+                                    <xsl:call-template name="guardian"/>
+                                    <xsl:call-template name="section-informant"/>
+                                    <xsl:call-template name="section-informant-informateur"/>
+                                    <xsl:call-template name="section-informant-confiance"/>
+                                    <xsl:call-template name="section-informant-aidant"/>
+                                    <xsl:call-template name="section-informant-aide"/>
+                                    <xsl:call-template name="documentGeneral"/>
+                                    <xsl:call-template name="documentationOf"/>
+                                    <xsl:call-template name="componentOf"/>
+                                    <xsl:call-template name="inFulfillmentOf"/>
+                                    <xsl:call-template name="participant"/>
+                                </div>
                             </xsl:if>
-                        </xsl:if>
-                        <!-- END TOC and Revision toggle -->
-                    </div>
-                    <div id="documentbody">
-                        <xsl:apply-templates
-                            select="hl7:component/hl7:structuredBody | hl7:component/hl7:nonXMLBody"
-                        />
-                    </div>
-                    <xsl:if test="$dohtmlfooter = 'true'">
-                        <!-- Extension FR -->
-                        <div id="documentfooter">
-                            <xsl:call-template name="recordTarget"/>
-                            <xsl:call-template name="authorization"/>
-                            <xsl:call-template name="guardian"/>
-                            <xsl:call-template name="section-informant"/>
-                            <xsl:call-template name="section-informant-informateur"/>
-                            <xsl:call-template name="section-informant-confiance"/>
-                            <xsl:call-template name="section-informant-aidant"/>
-                            <xsl:call-template name="section-informant-aide"/>
-                            <xsl:call-template name="documentGeneral"/>
-                            <xsl:call-template name="documentationOf"/>
-                            <xsl:call-template name="componentOf"/>
-                            <xsl:call-template name="inFulfillmentOf"/>
-                            <xsl:call-template name="participant"/>
-                        </div>
-                    </xsl:if>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </body>
             </html>
         </xsl:if>
@@ -1573,13 +1600,8 @@
                             <xsl:variable name="frameID">
                                 <xsl:value-of select="concat('iframeId', '_', generate-id(.))"/>
                             </xsl:variable>
-                            <div id="{$frameID}" style=" text-align: center;
-                                                        width: 100%;
-                                                        height: 600px;
-                                                        overflow-x: hidden;
-                                                        overflow-y: auto;
-                                                        ">
-                                <iframe name="{$renderID}" id="{$renderID}" width="100%"
+                            <div id="{$frameID}" class="iframe-container">
+                                <iframe name="{$renderID}" id="{$renderID}" width="2000"
                                     height="600" title="{$renderAltText}">
                                     <xsl:if
                                         test="$renderElement/@mediaType != 'application/pdf' or $limit-pdf = 'yes'">
@@ -1684,7 +1706,8 @@
         <xsl:param name="level" select="3"/>
         <xsl:param name="margin" select="0"/>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
-            <xsl:if test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.223'])">
+            <xsl:if
+                test="not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.223']) and not(hl7:templateId[@root = '1.2.250.1.213.1.1.2.243'])">
                 <div style="margin-left: {$margin}em;" class="section">
                     <div>
                         <xsl:if test="string($useJavascript) = 'true'">
@@ -1701,7 +1724,6 @@
                             <xsl:with-param name="level" select="$level"/>
                         </xsl:call-template>
                     </div>
-
                     <div class="section-content">
                         <xsl:if test="hl7:author | hl7:informant | hl7:subject">
                             <div class="section-meta">
@@ -1765,150 +1787,6 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
-
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-    <!-- <xsl:template name="tableau-sectionsPremierNiveau">
-        <xsl:if test="not(contains($vendor, 'Saxonica'))">
-        <br/>
-        <table border="1">
-            <tr>
-                <td width="10%">
-                    <xsl:text>Section: </xsl:text>
-                    <xsl:value-of select="hl7:code/@code"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="hl7:code/@displayName"/>
-                </td>
-                <td width="90%">
-                    <xsl:if test="hl7:component/hl7:section">
-                        <xsl:for-each select="hl7:component/hl7:section">
-                            <xsl:call-template name="tableau-sectionsDeuxiemeNiveau">
-                                <xsl:with-param name="sectionSecond" select="."/>
-                            </xsl:call-template>
-                        </xsl:for-each>
-                    </xsl:if>
-                    <xsl:if test="hl7:entry">
-                        <xsl:call-template name="tableau-entrees">
-                            <xsl:with-param name="entree" select="hl7:entry/*"/>
-                        </xsl:call-template>
-                    </xsl:if>
-                </td>
-            </tr>
-        </table>
-        </xsl:if>
-        <xsl:if test="(contains($vendor, 'Saxonica'))">
-            <fo:block line-height="0.1cm">&#160;</fo:block>
-            <fo:block keep-together.within-page="always">
-                <fo:table xsl:use-attribute-sets="myBorder" margin-left="0.1">
-                    <fo:table-column column-number="1" />
-                    <fo:table-column column-number="2" />
-                    <fo:table-body>
-                        <xsl:for-each
-                            select="hl7:informant/hl7:relatedEntity[@classCode = 'CAREGIVER']">
-                            <fo:table-row>
-                                <fo:table-cell xsl:use-attribute-sets="myBlock9">
-                                    <fo:block>
-                                        
-                                        
-                                    </fo:block>
-                                </fo:table-cell>
-                            </fo:table-row>
-                        </xsl:for-each>
-                    </fo:table-body>
-                </fo:table>
-            </fo:block>
-        </xsl:if>
-    </xsl:template>
-
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="sectionSecond"/>
-    </xd:doc>
-    <xsl:template name="tableau-sectionsDeuxiemeNiveau">
-        <xsl:param name="sectionSecond"/>
-        <table border="1" width="40%">
-            <tr>
-                <td width="20%">
-                    <xsl:text>Section: </xsl:text>
-                    <xsl:value-of select="$sectionSecond/hl7:code/@code"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="$sectionSecond/hl7:code/@displayName"/>
-                </td>
-                <td width="80%">
-                    <xsl:call-template name="tableau-entrees">
-                        <xsl:with-param name="entree" select="$sectionSecond/hl7:entry/*"/>
-                    </xsl:call-template>
-                </td>
-            </tr>
-        </table>
-    </xsl:template>
-
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="entree"/>
-    </xd:doc>
-    <xsl:template name="tableau-entrees">
-        <xsl:param name="entree"/>
-        <table border="1" width="40%">
-            <tr>
-                <td width="20%">
-                    <xsl:text>Entrée: </xsl:text>
-                    <xsl:value-of select="$entree/hl7:code/@code"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="$entree/hl7:code/@displayName"/>
-                </td>
-                <td width="80%">
-                    <xsl:for-each
-                        select="$entree/hl7:entryRelationship/*/hl7:code | $entree/hl7:entryRelationship/*/hl7:component/*/hl7:code">
-                        <xsl:call-template name="tableau-entryRelationship">
-                            <xsl:with-param name="relation" select="."/>
-                        </xsl:call-template>
-                    </xsl:for-each>
-                </td>
-            </tr>
-        </table>
-    </xsl:template>
-
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="relation"/>
-    </xd:doc>
-    <xsl:template name="tableau-entryRelationship">
-        <xsl:param name="relation"/>
-        <table border="1" width="40%" class="table_contours">
-            <tr>
-                <td width="80%">
-                    <xsl:text>Entrée : </xsl:text>
-                    <xsl:value-of select="$relation/@code"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="$relation/@displayName"/>
-                </td>
-                <xsl:if test="$relation/../hl7:value">
-                    <td width="20%">
-                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'PQ'">
-                            <xsl:value-of select="$relation/../hl7:value/@value"/>
-                            <xsl:value-of select="$relation/../hl7:value/@unit"/>
-                        </xsl:if>
-                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'INT'">
-                            <xsl:value-of select="$relation/../hl7:value/@value"/>
-                        </xsl:if>
-                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'ST'">
-                            <xsl:value-of select="$relation/../hl7:value"/>
-                        </xsl:if>
-                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'TS'">
-                            <xsl:value-of select="$relation/../hl7:value/@value"/>
-                        </xsl:if>
-                        <xsl:if test="$relation/../hl7:value/@xsi:type = 'CD'">
-                            <xsl:value-of select="$relation/../hl7:value/@code"/>
-                            <xsl:text> - </xsl:text>
-                            <xsl:value-of select="$relation/../hl7:value/@displayName"/>
-                        </xsl:if>
-                    </td>
-                </xsl:if>
-            </tr>
-        </table>
-    </xsl:template>-->
 
     <xd:doc>
         <xd:desc>
@@ -5889,7 +5767,8 @@
         <xsl:variable name="imageRefs" select="@referencedObject"/>
         <xsl:variable name="referencedObjects"
             select="ancestor::hl7:ClinicalDocument//hl7:regionOfInterest[@ID = $imageRefs] | ancestor::hl7:ClinicalDocument//hl7:observationMedia[@ID = $imageRefs]"/>
-        <xsl:if test="not(contains($vendor, 'Saxonica'))">
+        <xsl:if
+            test="not(contains($vendor, 'Saxonica')) and not(//hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:templateId[@root = '1.2.250.1.213.1.1.2.243']])">
             <div>
                 <xsl:apply-templates select="hl7:caption"/>
                 <xsl:for-each select="$referencedObjects">
@@ -7824,9 +7703,9 @@
                                                   <xsl:with-param name="id" select="."/>
                                                   </xsl:call-template>
                                                   <xsl:text>&#160;</xsl:text>
-                                                  <xsl:text> [</xsl:text>  
-                                                    <xsl:value-of select="@root"/>
-                                                   <xsl:text>]</xsl:text> 
+                                                  <xsl:text> [</xsl:text>
+                                                  <xsl:value-of select="@root"/>
+                                                  <xsl:text>]</xsl:text>
                                                   <fo:block line-height="0.1cm">&#160;</fo:block>
                                                 </xsl:for-each>
                                             </fo:block>
