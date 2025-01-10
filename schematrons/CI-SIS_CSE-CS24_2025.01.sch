@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Schématron du CSE-CS24 : CI-SIS_CSE-CS24_2024.02.sch
+    Schématron du CSE-CS24 : CI-SIS_CSE-CS24_2025.01.sch
     ANS
     Vérification de la conformité au Certificats de Santé de l'Enfant - CS24 du CI-SIS.
     ......................................................................................................................................................
@@ -25,12 +25,13 @@
         28/08/2023 : Migration des terminologies et JDV
         04/12/2023 : Nouvelle version 2024.01
         27/11/2024 : Nouvelle version 2024.02
+        10/01/2025 : Mise à jour de la version en 2025.01
     ......................................................................................................................................................               
 -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS24_2024.02"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS24_2025.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS24_2024.02.sch">
-    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS24_2024.02</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS24_2025.01.sch">
+    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS24_2025.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -41,32 +42,32 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/CSE-CS24_2024.02/Entete/Entete_CSE-CS24.sch"/>
+    <include href="include/specificationsVolets/CSE-CS24_2025.01/Entete/Entete_CSE-CS24.sch"/>
     
     <!-- Sections spécifiques au volet -->    
-    <include href="../schematrons/include/specificationsVolets/CSE-CS24_2024.02/Sections/S_codedPhysicalExam_CSE-CS24.sch"/>
+    <include href="../schematrons/include/specificationsVolets/CSE-CS24_2025.01/Sections/S_codedPhysicalExam_CSE-CS24.sch"/>
     
     <!--= Entrées spécifiques au volet -->    
-    <include href="include/specificationsVolets/CSE-CS24_2024.02/Entrees/E_codedSocialHistory_CSE-CS24.sch"/>
-    <include href="include/specificationsVolets/CSE-CS24_2024.02/Entrees/E_historyOfPastIllness_CSE-CS24.sch"/>
-    <include href="include/specificationsVolets/CSE-CS24_2024.02/Entrees/E_developpementPsychomoteur_CSE-CS24.sch"/>
+    <include href="include/specificationsVolets/CSE-CS24_2025.01/Entrees/E_codedSocialHistory_CSE-CS24.sch"/>
+    <include href="include/specificationsVolets/CSE-CS24_2025.01/Entrees/E_historyOfPastIllness_CSE-CS24.sch"/>
+    <include href="include/specificationsVolets/CSE-CS24_2025.01/Entrees/E_developpementPsychomoteur_CSE-CS24.sch"/>
     
     <!-- JDV -->    
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_Activite-CISIS.sch"/>    
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_CauseAccidentDom-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_Profession-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_TypeGarde-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_VaccinCSE24-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_AntecedentsCSE24-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_ReperageTroubleNeurodeveloppement-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_Rencontre_CS9_CS24-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_EnfantExposeAuxEcrans_CS24-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS24_2024.02/JDV_DeveloppementPsychomoteur_CS24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_Activite-CISIS.sch"/>    
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_CauseAccidentDom-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_Profession-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_TypeGarde-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_VaccinCSE24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_AntecedentsCSE24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_ReperageTroubleNeurodeveloppement-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_Rencontre_CS9_CS24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_EnfantExposeAuxEcrans_CS24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS24_2025.01/JDV_DeveloppementPsychomoteur_CS24-CISIS.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
-    <phase id="CI-SIS_CSE-CS24_2024.02">
+    <phase id="CI-SIS_CSE-CS24_2025.01">
         <active pattern="variables"/>
         <p>Vérification complète de la conformité au CI-SIS</p>
         
@@ -117,37 +118,37 @@
             
             <!-- Présence obligatoire de la section FR-Habitus-mode-de-vie (1.3.6.1.4.1.19376.1.5.3.1.3.16.1) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.16.1"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Habitus-mode-de-vie (1.3.6.1.4.1.19376.1.5.3.1.3.16.1) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Habitus-mode-de-vie (1.3.6.1.4.1.19376.1.5.3.1.3.16.1) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Antecedents-medicaux (1.3.6.1.4.1.19376.1.5.3.1.3.8) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.8"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Antecedents-medicaux (1.3.6.1.4.1.19376.1.5.3.1.3.8) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Antecedents-medicaux (1.3.6.1.4.1.19376.1.5.3.1.3.8) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Signes-vitaux (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Signes-vitaux (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Signes-vitaux (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Developpement-psychomoteur (1.3.6.1.4.1.19376.1.7.3.1.1.13.4) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.7.3.1.1.13.4"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Developpement-psychomoteur (1.3.6.1.4.1.19376.1.7.3.1.1.13.4) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Developpement-psychomoteur (1.3.6.1.4.1.19376.1.7.3.1.1.13.4) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Allergies-et-hypersensibilites (1.3.6.1.4.1.19376.1.5.3.1.3.13) -->
             <assert test='count(cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.13"])&lt;=1'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Allergies-et-hypersensibilites (1.3.6.1.4.1.19376.1.5.3.1.3.13) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Allergies-et-hypersensibilites (1.3.6.1.4.1.19376.1.5.3.1.3.13) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Vaccinations (1.3.6.1.4.1.19376.1.5.3.1.3.23) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.23"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Vaccinations (1.3.6.1.4.1.19376.1.5.3.1.3.23) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Vaccinations (1.3.6.1.4.1.19376.1.5.3.1.3.23) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section FR-Plan-de-soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.36"]'>
-                [CI-SIS_CSE-CS24_2024.02.sch] Erreur de conformité : La section FR-Plan-de-soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) est obligatoire.  
+                [CI-SIS_CSE-CS24_2025.01.sch] Erreur de conformité : La section FR-Plan-de-soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) est obligatoire.  
             </assert>
             
         </rule>

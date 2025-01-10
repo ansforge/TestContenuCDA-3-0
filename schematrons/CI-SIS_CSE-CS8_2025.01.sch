@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Schématron du CS8 : CI-SIS_CSE-CS8_2024.02.sch
+    Schématron du CS8 : CI-SIS_CSE-CS8_2025.01.sch
     ANS
-    Vérification de la conformité au Certificats de Santé de l'Enfant - CSE-CS8_2024.02 du CI-SIS.   
+    Vérification de la conformité au Certificats de Santé de l'Enfant - CSE-CS8_2025.01 du CI-SIS.   
     ......................................................................................................................................................
     Historique :
         24/06/2011 : Adaptation du module initial CI-SIS_StructurationCommuneCDAr2.sch pour le volet "Certificats de Santé de l'Enfant" (composant CS8) du CI-SIS de l'ASIP
@@ -31,13 +31,14 @@
       28/08/2023 : Migration des terminologies et JDV
       04/12/2023 : Nouvelle version 2024.01
       29/11/2024 : Nouvelle version 2024.02
+      10/01/2025 : Mise à jour de la version en 2025.01
     ......................................................................................................................................................           .
 -->
 
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS8_2024.02"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS8_2025.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS8_2024.02.sch">
-    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS8_2024.02</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS8_2025.01.sch">
+    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS8_2025.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -48,44 +49,44 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!-- Entete -->
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entete/Entete_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entete/Entete_CSE-CS8.sch"/>
     
     <!-- Sections spécifiques au volet -->
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Sections/S_codedPhysicalExam-CSE-CS8.sch"/>
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Sections/S_laborAndDelivery_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Sections/S_codedPhysicalExam-CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Sections/S_laborAndDelivery_CSE-CS8.sch"/>
     
     <!-- Entrées spécifiques au volet -->
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entrees/E_codedAntenatalTestingAndSurveillance_CSE-CS8.sch"/>
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entrees/E_codedSocialHistory_CSE-CS8.sch"/>
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entrees/E_pregnancyHistory_CSE-CS8.sch"/>
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entrees/E_rechHbs_CSE-CS8.sch"/>
-    <include href="include/specificationsVolets/CSE-CS8_2024.02/Entrees/E_acte_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entrees/E_codedAntenatalTestingAndSurveillance_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entrees/E_codedSocialHistory_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entrees/E_pregnancyHistory_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entrees/E_rechHbs_CSE-CS8.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2025.01/Entrees/E_acte_CSE-CS8.sch"/>
     
     <!-- JDV -->
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_Activite-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_AntecedentsObstetricaux-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_DateCons-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_EvenementsAccouchement-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_NiveauEtude-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_Profession-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_TypePres-CISIS.sch"/>  
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_CouvertureSociale-CISIS.sch"/>  
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_RechAgHbS-CISIS.sch"/>  
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_ModeDebutTravail-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_MethodeAccouchement-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_CauseCesarienne-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_TypeService-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_VaccinCSE8-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_Traite-NonTraite-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_MotifHospitalisationCSE-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_TypeAllaitementNouveauNe_CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS8_2024.02/JDV_ResultatDepistageSurdite_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_Activite-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_AntecedentsObstetricaux-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_DateCons-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_EvenementsAccouchement-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_NiveauEtude-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_Profession-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_TypePres-CISIS.sch"/>  
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_CouvertureSociale-CISIS.sch"/>  
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_RechAgHbS-CISIS.sch"/>  
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_ModeDebutTravail-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_MethodeAccouchement-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_CauseCesarienne-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_TypeService-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_VaccinCSE8-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_Traite-NonTraite-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_MotifHospitalisationCSE-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_TypeAllaitementNouveauNe_CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS8_2025.01/JDV_ResultatDepistageSurdite_CISIS.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     
-    <phase id="CI-SIS_CSE-CS8_2024.02">
+    <phase id="CI-SIS_CSE-CS8_2025.01">
         <active pattern="variables"/>
         
         <!-- Entete -->
@@ -152,20 +153,20 @@
         
         <rule context="cda:ClinicalDocument">
             <assert test="./cda:templateId[@root='1.2.250.1.213.1.1.1.5.1']"> 
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité :
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité :
                 L'élément ClinicalDocument/templateId doit être présent avec @root="1.2.250.1.213.1.1.1.5.1".
             </assert>
             <assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.1']"> 
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 Le template parent "QRPH Health birth summary" (1.3.6.1.4.1.19376.1.7.3.1.1.13.1) doit être présent.
             </assert>
             <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.5']"> 
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 Le template parent "Certificat de Santé de l'Enfant" (1.2.250.1.213.1.1.1.5) doit être présent.
             </assert>
             
             <assert test="./cda:code[@code='CERT_DECL' and @codeSystem='1.2.250.1.213.1.1.4.12']"> 
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>.
             </assert>
             
@@ -175,49 +176,49 @@
             
             <!-- Présence obligatoire de la section Habitus, Mode de vie (1.3.6.1.4.1.19376.1.5.3.1.3.16.1) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.16.1"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Habitus, Mode de vie (1.3.6.1.4.1.19376.1.5.3.1.3.16.1) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Couverture sociale (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Couverture sociale (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Historique des grossesses (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Historique des grossesses (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Examens et surveillance prénataux (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.5.1) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.21.2.5.1"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Examens et surveillance prénataux (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.5.1) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Travail et Accouchement (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.3) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.21.2.3"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Travail et Accouchement (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.3) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Information sur l'accouchement (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.4) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.1.21.2.4"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Information sur l'accouchement (1.3.6.1.4.1.19376.1.5.3.1.1.21.2.4) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Vaccinations (1.3.6.1.4.1.19376.1.5.3.1.3.23) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.23"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Vaccinations (1.3.6.1.4.1.19376.1.5.3.1.3.23) est obligatoire.  
             </assert>
             
             <!-- Présence obligatoire de la section Plan de soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) -->
             <assert test='cda:component/cda:section/cda:templateId[@root = "1.3.6.1.4.1.19376.1.5.3.1.3.36"]'>
-                [CI-SIS_CSE-CS8_2024.02] Erreur de conformité : 
+                [CI-SIS_CSE-CS8_2025.01] Erreur de conformité : 
                 La section Plan de soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) est obligatoire.  
             </assert>
             

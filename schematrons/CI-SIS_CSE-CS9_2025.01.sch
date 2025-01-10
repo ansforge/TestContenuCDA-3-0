@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    Schématron du CSE-CS9 : CI-SIS_CSE-CS9_2024.02.sch
+    Schématron du CSE-CS9 : CI-SIS_CSE-CS9_2025.01.sch
     ANS
-    Vérification de la conformité au Certificats de Santé de l'Enfant - CSE-CS9_2024.02 du CI-SIS.
+    Vérification de la conformité au Certificats de Santé de l'Enfant - CSE-CS9_2025.01 du CI-SIS.
     ......................................................................................................................................................  
     Historique :
         27/05/2011 : Création
@@ -29,12 +29,13 @@
         28/08/2023 : Migration des terminologies et JDV
         04/12/2023 : Nouvelle version 2024.01
         03/12/2024 : Nouvelle version 2024.02
+        10/01/2025 : Mise à jour de la version en 2025.01
     ......................................................................................................................................................                           
 -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS9_2024.02"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" defaultPhase="CI-SIS_CSE-CS9_2025.01"
     xmlns:cda="urn:hl7-org:v3" queryBinding="xslt2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS9_2024.02.sch">
-    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS9_2024.02</title>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="CI-SIS_CSE-CS9_2025.01.sch">
+    <title>Vérification de conformité du document aux spécifications du modèle CSE-CS9_2025.01</title>
     <ns prefix="cda" uri="urn:hl7-org:v3"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
     <ns prefix="jdv" uri="http://esante.gouv.fr"/>
@@ -45,30 +46,30 @@
     <include href="abstract/IVL_TS.sch"/> 
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/CSE-CS9_2024.02/Entete/Entete_CSE-CS9.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2025.01/Entete/Entete_CSE-CS9.sch"/>
     
     <!-- Sections spécifiques au volet -->    
-    <include href="include/specificationsVolets/CSE-CS9_2024.02/Sections/S_codedPhysicalExam_CSE-CS9.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2025.01/Sections/S_codedPhysicalExam_CSE-CS9.sch"/>
     
     <!-- Entrées spécifiques au volet -->
-    <include href="include/specificationsVolets/CSE-CS9_2024.02/Entrees/E_codedSocialHistory_CSE-CS9.sch"/>
-    <include href="include/specificationsVolets/CSE-CS9_2024.02/Entrees/E_historyOfPastIllness_CSE-CS9.sch"/>
-    <include href="include/specificationsVolets/CSE-CS9_2024.02/Entrees/E_developpementPsychomoteur_CSE-CS9.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2025.01/Entrees/E_codedSocialHistory_CSE-CS9.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2025.01/Entrees/E_historyOfPastIllness_CSE-CS9.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2025.01/Entrees/E_developpementPsychomoteur_CSE-CS9.sch"/>
     
     <!-- JDV -->
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_Activite-CISIS.sch"/>    
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_CauseAccidentDom-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_Profession-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_TypeGarde-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_VaccinCSE9-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_AntecedentsCSE9-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_ReperageTroubleNeurodeveloppement-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/CSE-CS9_2024.02/JDV_Rencontre_CS9_CS24-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_Activite-CISIS.sch"/>    
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_CauseAccidentDom-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_Profession-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_TypeGarde-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_VaccinCSE9-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_AntecedentsCSE9-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_ReperageTroubleNeurodeveloppement-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/CSE-CS9_2025.01/JDV_Rencontre_CS9_CS24-CISIS.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
     <!-- ::::::::::::::::::::::::::::::::::::: -->
-    <phase id="CI-SIS_CSE-CS9_2024.02">
+    <phase id="CI-SIS_CSE-CS9_2025.01">
         <active pattern="variables"/>
         <p>Vérification complète de la conformité au CI-SIS</p>
         

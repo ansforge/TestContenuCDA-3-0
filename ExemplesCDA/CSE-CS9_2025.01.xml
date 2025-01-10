@@ -6,14 +6,14 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_CSE-CS9_2024.02.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_CSE-CS9_2025.01.sch"?>
 
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
 
    <!-- 
       **********************************************************************************************************
-      Document : Certificat de Santé de l"Enfant du 9ème mois (CSE-CS9_2024.02)
+      Document : Certificat de Santé de l"Enfant du 9ème mois (CSE-CS9_2025.01)
       Auteur : ANS
       **********************************************************************************************************
       format HL7 - CDA Release 2
@@ -32,6 +32,7 @@
       25/08/2023 : Migration des terminologies et JDVs après validation
       04/12/2023 : Nouvelle version 2024.01
       26/11/2024 : Nouvelle version 2024.02
+      10/01/2025 : Mise à jour de la version en 2025.01
       ********************************************************************************************************** -->
    
    <!-- ************************************************************
@@ -48,7 +49,7 @@
    <!-- Conformité spécifications au CSE -->
    <templateId root="1.2.250.1.213.1.1.1.5"/>
    <!-- Conformité au CS9 -->
-   <templateId root="1.2.250.1.213.1.1.1.5.2" extension="2024.02"/>
+   <templateId root="1.2.250.1.213.1.1.1.5.2" extension="2025.01"/>
    <!-- Identifiant du document -->
    <id root="1.2.250.1.213.1.1.1.5.2.12345.2"/>
    <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode_CISIS) -->

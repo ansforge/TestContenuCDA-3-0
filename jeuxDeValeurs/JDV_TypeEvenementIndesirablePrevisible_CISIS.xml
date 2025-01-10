@@ -42,7 +42,7 @@
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240604000000"
-                  displayName="hypersensibilité non allergique médicamenteuse"/>
+                  displayName="hypersensibilité non allergique à une drogue ou un médicament"/>
          <Concept code="735449006"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
@@ -62,7 +62,7 @@
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""
                   dateValid="20240604000000"
-                  displayName="intolérance médicamenteuse"/>
+                  displayName="intolérance aux drogues et/ou médicaments"/>
          <Concept code="235719002"
                   codeSystem="2.16.840.1.113883.6.96"
                   dateFin=""

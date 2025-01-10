@@ -12,12 +12,12 @@
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Cause Maternelle"/>
+                  displayName="Cause maternelle"/>
          <Concept code="MED-210"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""
                   dateValid="20100101000000"
-                  displayName="Cause Fœtale"/>
+                  displayName="Cause fœtale"/>
          <Concept code="MED-1272"
                   codeSystem="1.2.250.1.213.1.1.4.322"
                   dateFin=""

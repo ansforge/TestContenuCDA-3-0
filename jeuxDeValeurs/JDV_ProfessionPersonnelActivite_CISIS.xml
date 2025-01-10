@@ -5,7 +5,7 @@
    <ValueSet displayName="JDV_ProfessionPersonnelActivite_CISIS"
              effectiveDate="2010-01-01T00:00:00+01:00"
              id="1.2.250.1.213.1.1.5.42"
-             revisionDate="2024-10-18T00:00:00+01:00"
+             revisionDate="2024-12-30T00:00:00+01:00"
              version="test">
       <ConceptList>
          <Concept code="G15_10"
@@ -53,20 +53,20 @@
                   dateFin=""
                   dateValid="20210826000000"
                   displayName="Assistant de service social"/>
-         <Concept code="51"
-                  codeSystem="1.2.250.1.213.1.6.1.4"
+         <Concept code="326"
+                  codeSystem="1.2.250.1.213.1.6.1.107"
                   dateFin=""
-                  dateValid="20210826000000"
+                  dateValid="20241230000000"
                   displayName="Educateur spécialisé"/>
          <Concept code="93"
                   codeSystem="1.2.250.1.213.1.6.1.109"
                   dateFin=""
                   dateValid="20210826000000"
                   displayName="Psychologue"/>
-         <Concept code="97"
-                  codeSystem="1.2.250.1.213.1.6.1.109"
+         <Concept code="329"
+                  codeSystem="1.2.250.1.213.1.6.1.107"
                   dateFin=""
-                  dateValid="20210826000000"
+                  dateValid="20241230000000"
                   displayName="Conseiller en génétique"/>
       </ConceptList>
    </ValueSet>
