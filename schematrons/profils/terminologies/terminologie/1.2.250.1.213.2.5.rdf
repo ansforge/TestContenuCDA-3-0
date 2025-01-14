@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ccam="http://data.esante.gouv.fr/cnam/ccam/"
+         xmlns:dct="http://purl.org/dc/terms/"
          xmlns:edg="http://edg.topbraid.solutions/model/"
          xmlns:metadata="http://topbraid.org/metadata#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -7,7 +8,6 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:teamwork="http://topbraid.org/teamwork#"
-         xmlns:terms="http://purl.org/dc/terms/"
          xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xml:base="http://data.esante.gouv.fr/cnam/ccam">
@@ -3429,7 +3429,7 @@
       <skos:notation>GDQX00810</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Evacuer</skos:notation>
+      <skos:notation>Evacuer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GFQL0041</skos:notation>
@@ -3456,7 +3456,7 @@
       <skos:notation>ADPA0081</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Retrecir</skos:notation>
+      <skos:notation>Retrecir</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MAFA00140</skos:notation>
@@ -3642,7 +3642,7 @@
       <skos:notation>QZFA012</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Remplacer</skos:notation>
+      <skos:notation>Remplacer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LJGA00110</skos:notation>
@@ -5997,7 +5997,7 @@
       <skos:notation>ZZQP103</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Devier</skos:notation>
+      <skos:notation>Devier</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>BLQP016</skos:notation>
@@ -7392,7 +7392,7 @@
       <skos:notation>JFQA0014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Evider</skos:notation>
+      <skos:notation>Evider</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HJFA0164</skos:notation>
@@ -7722,7 +7722,7 @@
       <skos:notation>AHFA01240</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CAM</skos:notation>
+      <skos:notation>CAM</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PADA0031</skos:notation>
@@ -8199,7 +8199,7 @@
       <skos:notation>EBFA019</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CT0</skos:notation>
+      <skos:notation>CT0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ZZMP010</skos:notation>
@@ -8214,7 +8214,7 @@
       <skos:notation>KCMA001</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CT1</skos:notation>
+      <skos:notation>CT1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>FGRB00710</skos:notation>
@@ -8382,7 +8382,7 @@
       <skos:notation>NFFA003</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Mettre_en_etat_de_fonctionner</skos:notation>
+      <skos:notation>Mettre_en_etat_de_fonctionner</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EBKA0014</skos:notation>
@@ -8934,7 +8934,7 @@
       <skos:notation>HJFA0104</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>Dent_8"</skos:notation>
+      <skos:notation>Dent_8</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>CCNB0014</skos:notation>
@@ -9945,7 +9945,7 @@
       <skos:notation>QAJA013</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CZ0</skos:notation>
+      <skos:notation>CZ0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DASA0025</skos:notation>
@@ -9960,7 +9960,7 @@
       <skos:notation>GEHE00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CZ1</skos:notation>
+      <skos:notation>CZ1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DASA0024</skos:notation>
@@ -11340,7 +11340,7 @@
       <skos:notation>NFQK00410</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_d_observation</skos:notation>
+      <skos:notation>Actions_d_observation</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JDCA004</skos:notation>
@@ -11826,7 +11826,7 @@
       <skos:notation>CAFA00710</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_CM0</skos:notation>
+      <skos:notation>CM0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LACA017</skos:notation>
@@ -14886,7 +14886,7 @@
       <skos:notation>NDCA0011</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Retirer_sans_remplacer</skos:notation>
+      <skos:notation>Retirer_sans_remplacer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ENSF0034</skos:notation>
@@ -15225,7 +15225,7 @@
       <skos:notation>ADPA0154</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_DEN</skos:notation>
+      <skos:notation>DEN</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EDSA0034</skos:notation>
@@ -15471,7 +15471,7 @@
       <skos:notation>KZFC00140</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Prelever</skos:notation>
+      <skos:notation>Prelever</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>02.04.06</skos:notation>
@@ -16368,7 +16368,7 @@
       <skos:notation>ECSF00240</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Couper</skos:notation>
+      <skos:notation>Couper</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JKFA01640</skos:notation>
@@ -22962,7 +22962,7 @@
       <skos:notation>EJMA9011</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_modifiant_ou_developpant_des_fonctions_ou_des_connaissances</skos:notation>
+      <skos:notation>Actions_modifiant_ou_developpant_des_fonctions_ou_des_connaissances</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JLNL00540</skos:notation>
@@ -24390,7 +24390,7 @@
       <skos:notation>BAFA00910</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Enlever</skos:notation>
+      <skos:notation>Enlever</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JACA00140</skos:notation>
@@ -25587,7 +25587,7 @@
       <skos:notation>HDFA0094</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Reunir</skos:notation>
+      <skos:notation>Reunir</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JDDC00240</skos:notation>
@@ -26109,7 +26109,7 @@
       <skos:notation>EECA003</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_sur_les_dimensions</skos:notation>
+      <skos:notation>Actions_sur_les_dimensions</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HFQL0031</skos:notation>
@@ -27057,7 +27057,7 @@
       <skos:notation>GBPA0031</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Fabriquer</skos:notation>
+      <skos:notation>Fabriquer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>QZFA031</skos:notation>
@@ -27121,6 +27121,9 @@
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NEMA0191</skos:notation>
+   </rdf:Description>
+   <rdf:Description>
+      <skos:notation>Modificateur_3</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LACA00440</skos:notation>
@@ -27375,7 +27378,7 @@
       <skos:notation>NEMA021</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Separer_des_parties</skos:notation>
+      <skos:notation>Separer_des_parties</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HEAH00110</skos:notation>
@@ -28269,7 +28272,7 @@
       <skos:notation>PAQL00510</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Enregistrer</skos:notation>
+      <skos:notation>Enregistrer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>BBLA00140</skos:notation>
@@ -29160,7 +29163,7 @@
       <skos:notation>AFLB006</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Retirer_et_remplacer</skos:notation>
+      <skos:notation>Retirer_et_remplacer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LAQK00510</skos:notation>
@@ -29331,7 +29334,7 @@
       <skos:notation>NEMA0174</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Reparer</skos:notation>
+      <skos:notation>Reparer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ZZNL051</skos:notation>
@@ -30621,7 +30624,7 @@
       <skos:notation>GHFA0041</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Diminuer_les_dimensions</skos:notation>
+      <skos:notation>Diminuer_les_dimensions</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ZZQP1021</skos:notation>
@@ -32181,7 +32184,7 @@
       <skos:notation>EMLA00140</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_END</skos:notation>
+      <skos:notation>END</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>AAFA00740</skos:notation>
@@ -34296,7 +34299,7 @@
       <skos:notation>ZZQX1331</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>TypeActe_ActeIsole</skos:notation>
+      <skos:notation>ActeIsole</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HBMD356</skos:notation>
@@ -37548,7 +37551,7 @@
       <skos:notation>JHCB00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_sur_le_parcours"</skos:notation>
+      <skos:notation>Actions_sur_le_parcours</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HENE00110</skos:notation>
@@ -37815,7 +37818,7 @@
       <skos:notation>NCCB002</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>Categorie_10</skos:notation>
+      <skos:notation>10</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ADFA0031</skos:notation>
@@ -37959,7 +37962,7 @@
       <skos:notation>AFCA00140</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>Categorie_19</skos:notation>
+      <skos:notation>19</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JGFA0051</skos:notation>
@@ -38052,7 +38055,7 @@
       <skos:notation>EBQM00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Fixer</skos:notation>
+      <skos:notation>Fixer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NFFA00440</skos:notation>
@@ -41199,10 +41202,10 @@
       <skos:notation>JMEA0024</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Separer</skos:notation>
+      <skos:notation>Separer</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Reeduquer</skos:notation>
+      <skos:notation>Reeduquer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LACB0014</skos:notation>
@@ -45372,7 +45375,7 @@
       <skos:notation>NAPA004</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Replacer</skos:notation>
+      <skos:notation>Replacer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>BJDA001</skos:notation>
@@ -49227,7 +49230,7 @@
       <skos:notation>DGKA02550</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Preparer</skos:notation>
+      <skos:notation>Preparer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DGFA01510</skos:notation>
@@ -49734,7 +49737,7 @@
       <skos:notation>14.01</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Comprimer</skos:notation>
+      <skos:notation>Comprimer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LBLD311</skos:notation>
@@ -50922,7 +50925,7 @@
       <skos:notation>ADPC0024</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Injecter</skos:notation>
+      <skos:notation>Injecter</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DAQL009</skos:notation>
@@ -53136,7 +53139,7 @@
       <skos:notation>BABA0014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Fragmenter</skos:notation>
+      <skos:notation>Fragmenter</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>AHPA01540</skos:notation>
@@ -60174,7 +60177,7 @@
       <skos:notation>QZMA009</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Occlure</skos:notation>
+      <skos:notation>Occlure</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HEMA00910</skos:notation>
@@ -60672,7 +60675,7 @@
       <skos:notation>HBLD0931</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_sur_la_position</skos:notation>
+      <skos:notation>Actions_sur_la_position</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LDMP0011</skos:notation>
@@ -61431,13 +61434,13 @@
       <skos:notation>HBLD0031</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PA0</skos:notation>
+      <skos:notation>PA0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NCFA0051</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PA1</skos:notation>
+      <skos:notation>PA1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>QZEA01210</skos:notation>
@@ -61860,7 +61863,7 @@
       <skos:notation>ZZQP11910</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PAR</skos:notation>
+      <skos:notation>PAR</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MCFA00410</skos:notation>
@@ -62022,7 +62025,7 @@
       <skos:notation>GENE00640</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PAM</skos:notation>
+      <skos:notation>PAM</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HLFA01740</skos:notation>
@@ -63303,7 +63306,7 @@
       <skos:notation>YYYY3151</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PDT</skos:notation>
+      <skos:notation>PDT</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JVRP0031</skos:notation>
@@ -63480,7 +63483,7 @@
       <skos:notation>HAPA001</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PFC</skos:notation>
+      <skos:notation>PFC</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GFCA00110</skos:notation>
@@ -63834,7 +63837,7 @@
       <skos:notation>LAPB0011</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PF0</skos:notation>
+      <skos:notation>PF0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>QEQK0011</skos:notation>
@@ -63846,7 +63849,7 @@
       <skos:notation>YYYY22210</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PF1</skos:notation>
+      <skos:notation>PF1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EEGA0014</skos:notation>
@@ -64221,7 +64224,7 @@
       <skos:notation>EBCA0174</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PFM</skos:notation>
+      <skos:notation>PFM</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DFFA00310</skos:notation>
@@ -67704,7 +67707,7 @@
       <skos:notation>HJFA010</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Augmenter_les_dimensions</skos:notation>
+      <skos:notation>Augmenter_les_dimensions</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MHEA00140</skos:notation>
@@ -67983,7 +67986,7 @@
       <skos:notation>HENE001</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Appliquer</skos:notation>
+      <skos:notation>Appliquer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DFCA0074</skos:notation>
@@ -68826,7 +68829,7 @@
       <skos:notation>LBPA0161</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>TypeActe_Procedure</skos:notation>
+      <skos:notation>Procedure</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EECA00910</skos:notation>
@@ -69261,7 +69264,7 @@
       <skos:notation>ABMA0034</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_PT0</skos:notation>
+      <skos:notation>PT0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HDPE0024</skos:notation>
@@ -70326,7 +70329,7 @@
       <skos:notation>ACQH004</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Combler</skos:notation>
+      <skos:notation>Combler</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ACFA008</skos:notation>
@@ -74532,7 +74535,7 @@
       <skos:notation>HBGD2811</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Regler</skos:notation>
+      <skos:notation>Regler</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EBEA0024</skos:notation>
@@ -75252,7 +75255,7 @@
       <skos:notation>HFMC00640</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Faire_disparaitre</skos:notation>
+      <skos:notation>Faire_disparaitre</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JDFA0241</skos:notation>
@@ -75654,7 +75657,7 @@
       <skos:notation>JCCA014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Exciser</skos:notation>
+      <skos:notation>Exciser</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EBSA0101</skos:notation>
@@ -75735,7 +75738,7 @@
       <skos:notation>KCHJ001</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Actions_sur_la_nature</skos:notation>
+      <skos:notation>Actions_sur_la_nature</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EZPP002</skos:notation>
@@ -77799,7 +77802,7 @@
       <skos:notation>LJFA00840</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Detruire</skos:notation>
+      <skos:notation>Detruire</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HASA00540</skos:notation>
@@ -79812,7 +79815,7 @@
       <skos:notation>PCPB002</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_RA0</skos:notation>
+      <skos:notation>RA0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PCPB001</skos:notation>
@@ -81897,7 +81900,7 @@
       <skos:notation>ZZHB002</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_RE1</skos:notation>
+      <skos:notation>RE1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>QZFA0144</skos:notation>
@@ -82353,7 +82356,7 @@
       <skos:notation>ANQP0051</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_RF0</skos:notation>
+      <skos:notation>RF0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DASA00150</skos:notation>
@@ -83331,7 +83334,7 @@
       <skos:notation>MCAA0014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Eduquer</skos:notation>
+      <skos:notation>Eduquer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LBGA0031</skos:notation>
@@ -85071,7 +85074,7 @@
       <skos:notation>HKMA006</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_IC0</skos:notation>
+      <skos:notation>IC0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>MCAA0011</skos:notation>
@@ -85092,7 +85095,7 @@
       <skos:notation>HKMA005</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_IC1</skos:notation>
+      <skos:notation>IC1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HFMA0041</skos:notation>
@@ -85626,7 +85629,7 @@
       <skos:notation>EAHF00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ICO</skos:notation>
+      <skos:notation>ICO</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JHHA0031</skos:notation>
@@ -86742,7 +86745,7 @@
       <skos:notation>LBPA04010</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_RPN</skos:notation>
+      <skos:notation>RPN</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HBMD07210</skos:notation>
@@ -87000,7 +87003,7 @@
       <skos:notation>LAPA009</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Agrandir</skos:notation>
+      <skos:notation>Agrandir</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>FAFA012</skos:notation>
@@ -87375,7 +87378,7 @@
       <skos:notation>Topographie_AA</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Changer_la_position_sans_retirer</skos:notation>
+      <skos:notation>Changer_la_position_sans_retirer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LECA00640</skos:notation>
@@ -87693,7 +87696,7 @@
       <skos:notation>DERP0011</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_RS0</skos:notation>
+      <skos:notation>RS0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NEQM0011</skos:notation>
@@ -89157,7 +89160,7 @@
       <skos:notation>14.02.06.01</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ACO</skos:notation>
+      <skos:notation>ACO</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HMCC00240</skos:notation>
@@ -89445,7 +89448,7 @@
       <skos:notation>Dent_44</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Ouvrir</skos:notation>
+      <skos:notation>Ouvrir</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EBQM0021</skos:notation>
@@ -89595,7 +89598,7 @@
       <skos:notation>03.01.04</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ADM</skos:notation>
+      <skos:notation>ADM</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HBLD084</skos:notation>
@@ -89700,7 +89703,7 @@
       <skos:notation>JGFA01640</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ADE</skos:notation>
+      <skos:notation>ADE</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ABSA004</skos:notation>
@@ -89757,7 +89760,7 @@
       <skos:notation>LACA00940</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ADC</skos:notation>
+      <skos:notation>ADC</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>Dent_63</skos:notation>
@@ -89790,7 +89793,7 @@
       <skos:notation>HESA0091</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ADI</skos:notation>
+      <skos:notation>ADI</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DEPF0124</skos:notation>
@@ -89919,7 +89922,7 @@
       <skos:notation>ECSF0044</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ADA</skos:notation>
+      <skos:notation>ADA</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LFAA00140</skos:notation>
@@ -90348,7 +90351,7 @@
       <skos:notation>14.04.04</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Reviser</skos:notation>
+      <skos:notation>Reviser</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NHDA0011</skos:notation>
@@ -90897,10 +90900,10 @@
       <skos:notation>DDAF01010</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_IMP</skos:notation>
+      <skos:notation>IMP</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_IN1</skos:notation>
+      <skos:notation>IN1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NDFA0034</skos:notation>
@@ -91302,7 +91305,7 @@
       <skos:notation>BGPA0021</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_INO</skos:notation>
+      <skos:notation>INO</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GFFA0101</skos:notation>
@@ -92580,7 +92583,7 @@
       <skos:notation>HHNE00340</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Examiner</skos:notation>
+      <skos:notation>Examiner</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JNMD0021</skos:notation>
@@ -93267,7 +93270,7 @@
       <skos:notation>MEMA01840</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Guider</skos:notation>
+      <skos:notation>Guider</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JAFC00840</skos:notation>
@@ -93858,7 +93861,7 @@
       <skos:notation>QZJA01840</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Ajouter_sans_retirer</skos:notation>
+      <skos:notation>Ajouter_sans_retirer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>NGJA0011</skos:notation>
@@ -95373,7 +95376,7 @@
       <skos:notation>Topographie_PB</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Liberer</skos:notation>
+      <skos:notation>Liberer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GAEA00210</skos:notation>
@@ -95421,7 +95424,7 @@
       <skos:notation>JKGE0014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_SDE</skos:notation>
+      <skos:notation>SDE</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EMLA0011</skos:notation>
@@ -96243,7 +96246,7 @@
       <skos:notation>DFGA00250</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ASC</skos:notation>
+      <skos:notation>ASC</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>YYYY49310</skos:notation>
@@ -96489,7 +96492,7 @@
       <skos:notation>ADCA0054</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_ATM</skos:notation>
+      <skos:notation>ATM</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>DGAF0081</skos:notation>
@@ -97356,7 +97359,7 @@
       <skos:notation>MAFA004</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>TypeActe_ActeComplementaire</skos:notation>
+      <skos:notation>ActeComplementaire</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>JHFA01710</skos:notation>
@@ -97950,7 +97953,7 @@
       <skos:notation>HBLD023</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Mesurer</skos:notation>
+      <skos:notation>Mesurer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>AAFA00210</skos:notation>
@@ -99666,7 +99669,7 @@
       <skos:notation>NBPA0154</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_AID</skos:notation>
+      <skos:notation>AID</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EDNF00340</skos:notation>
@@ -100581,7 +100584,7 @@
       <skos:notation>HGFC001</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Provoquer</skos:notation>
+      <skos:notation>Provoquer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>BCPA0041</skos:notation>
@@ -101205,7 +101208,7 @@
       <skos:notation>QAEA0104</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Drainer</skos:notation>
+      <skos:notation>Drainer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>16.05.04</skos:notation>
@@ -101817,7 +101820,7 @@
       <skos:notation>01.02.05</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_SU0</skos:notation>
+      <skos:notation>SU0</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ABJA007</skos:notation>
@@ -101832,7 +101835,7 @@
       <skos:notation>01.02.06</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_SU1</skos:notation>
+      <skos:notation>SU1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>ABJA008</skos:notation>
@@ -103674,7 +103677,7 @@
       <skos:notation>EMSA0021</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Deplacer</skos:notation>
+      <skos:notation>Deplacer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>QZJA01110</skos:notation>
@@ -105390,7 +105393,7 @@
       <skos:notation>ZCGA43310</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_AXI</skos:notation>
+      <skos:notation>AXI</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>LBPA03610</skos:notation>
@@ -107037,7 +107040,7 @@
       <skos:notation>06.02.06.02</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Garder_la_position</skos:notation>
+      <skos:notation>Garder_la_position</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EJQP00110</skos:notation>
@@ -107580,7 +107583,7 @@
       <skos:notation>QZEA014</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_TDS</skos:notation>
+      <skos:notation>TDS</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>BFKA0011</skos:notation>
@@ -107793,7 +107796,7 @@
       <skos:notation>HDJA00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Implanter</skos:notation>
+      <skos:notation>Implanter</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>HMFA0091</skos:notation>
@@ -108330,7 +108333,7 @@
       <skos:notation>NFMC0034</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>ActeActivite_BR1</skos:notation>
+      <skos:notation>BR1</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>Topographie_B</skos:notation>
@@ -110649,7 +110652,7 @@
       <skos:notation>QEBA00110</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Nettoyer</skos:notation>
+      <skos:notation>Nettoyer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>EZPF00310</skos:notation>
@@ -113262,7 +113265,7 @@
       <skos:notation>LBPA0241</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Extraire</skos:notation>
+      <skos:notation>Extraire</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>GABD002</skos:notation>
@@ -114003,7 +114006,7 @@
       <skos:notation>AHPA02540</skos:notation>
    </rdf:Description>
    <rdf:Description>
-      <skos:notation>VerbeAction_Changer</skos:notation>
+      <skos:notation>Changer</skos:notation>
    </rdf:Description>
    <rdf:Description>
       <skos:notation>PZQX00810</skos:notation>
