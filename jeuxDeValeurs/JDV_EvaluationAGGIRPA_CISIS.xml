@@ -1,68 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008"
-                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                          xsi:schemaLocation="urn:ihe:iti:svs:2008">
-   <ValueSet displayName="JDV_EvaluationAGGIRPA_CISIS"
-             effectiveDate="2024-09-18T00:00:00+01:00"
-             id="1.2.250.1.213.1.1.5.806"
-             revisionDate="2024-09-18T00:00:00+01:00"
-             version="test">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008">
+   <ValueSet displayName="JDV_EvaluationAGGIRPA_CISIS" effectiveDate="2024-09-18T00:00:00+01:00"
+      id="1.2.250.1.213.1.1.5.806" revisionDate="2024-09-18T00:00:00+01:00" version="test">
       <ConceptList>
-         <Concept code="d350"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Conversation"/>
-         <Concept code="b114"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Fonctions d'orientation"/>
-         <Concept code="d510"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Se laver"/>
-         <Concept code="d540"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="S'habiller"/>
-         <Concept code="d550"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Manger"/>
-         <Concept code="d5300"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Assurer la régulation de la miction "/>
-         <Concept code="d5301"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Assurer la régulation de la défécation"/>
-         <Concept code="d420 "
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Se transférer "/>
-         <Concept code="d4600"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Se déplacer dans la maison "/>
-         <Concept code="d4602"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Se déplacer en dehors de la maison et d'autres bâtiments "/>
-         <Concept code="d360"
-                  codeSystem="2.16.840.1.113883.6.254"
-                  dateFin=""
-                  dateValid="20240918000000"
-                  displayName="Utiliser des appareils et des techniques de communication "/>
+         <Concept code="d350" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Conversation"/>
+         <Concept code="b114" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Fonctions d'orientation"/>
+         <Concept code="d510" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Se laver"/>
+         <Concept code="d540" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="S'habiller"/>
+         <Concept code="d550" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Manger"/>
+         <Concept code="d5300" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Assurer la régulation de la miction "/>
+         <Concept code="d5301" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Assurer la régulation de la défécation"/>
+         <Concept code="d420" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Se transférer "/>
+         <Concept code="d4600" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000" displayName="Se déplacer dans la maison "/>
+         <Concept code="d4602" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000"
+            displayName="Se déplacer en dehors de la maison et d'autres bâtiments "/>
+         <Concept code="d360" codeSystem="2.16.840.1.113883.6.254" dateFin=""
+            dateValid="20240918000000"
+            displayName="Utiliser des appareils et des techniques de communication "/>
       </ConceptList>
    </ValueSet>
 </RetrieveValueSetResponse>
