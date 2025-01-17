@@ -160,7 +160,7 @@
         </name>
       </assignedPerson>
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>Centre de radiologie Ambroise</name>
         <telecom value="tel:0146000000"/>
         <addr>
@@ -209,7 +209,7 @@
   <custodian typeCode="CST">
     <assignedCustodian classCode="ASSIGNED">
       <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
-        <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>Centre de radiologie Ambroise</name>
         <telecom value="tel:0146000000"/>
         <addr>
@@ -251,7 +251,7 @@
         </name>
       </assignedPerson>
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>Centre de radiologie Ambroise</name>
         <telecom value="tel:0146000000"/>
         <addr>
@@ -293,7 +293,7 @@
         </name>
       </assignedPerson>
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>Centre de radiologie Ambroise</name>
         <telecom value="tel:0146000000"/>
         <addr>
@@ -335,7 +335,7 @@
         </name>
       </associatedPerson>
       <scopingOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>Cabinet du DR MEDIONI</name>
         <telecom value="tel:0147150000" use="WP"/>
         <addr>
@@ -411,7 +411,7 @@
           </assignedPerson>
           <representedOrganization>
             <!-- [1..1] Identifiant de l'établissement : obligatoire pour la DRIM Box -->
-            <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>Centre de radiologie Ambroise</name>
             <telecom value="tel:0146000000"/>
             <addr>
@@ -481,7 +481,7 @@
           </assignedPerson>
           <representedOrganization>
             <!-- [1..1] Identifiant de l'établissement : obligatoire pour la DRIM Box -->
-            <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>Centre de radiologie Ambroise</name>
             <telecom value="tel:0146000000"/>
             <addr>
@@ -550,7 +550,7 @@
           </assignedPerson>
           <representedOrganization>
             <!-- [1..1] Identifiant de l'établissement : obligatoire pour la DRIM Box -->
-            <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>Centre de radiologie Ambroise</name>
             <telecom value="tel:0146000000"/>
             <addr>
@@ -594,7 +594,7 @@
       </effectiveTime>
       <location>
         <healthCareFacility>
-          <id root="1.2.250.1.71.4.2.2" extension="101235555"/>
+          <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
           <code code="SA08" displayName="Cabinet de groupe" codeSystem="1.2.250.1.71.4.2.4"/>
           <location>
             <name>Centre de radiologie Ambroise</name>

@@ -146,7 +146,7 @@
             </name>
           </assignedPerson>
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Clinique du Dr. MULLER</name>
             <addr>
               <houseNumber>4</houseNumber>
@@ -279,7 +279,7 @@
           <!-- Etablissement de référence -->
           <scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <name>Clinique du Dr MULLER</name>
           </scopingOrganization>
@@ -313,7 +313,7 @@
           <!-- Etablissement de référence -->
           <scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <name>Clinique du Dr MULLER</name>
           </scopingOrganization>
@@ -347,7 +347,7 @@
           <!-- Etablissement de référence -->
           <scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <name>Clinique du Dr MULLER</name>
           </scopingOrganization>
@@ -698,7 +698,7 @@
                 </name>
               </assignedPerson>
               <representedOrganization>
-                <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                 <name>Clinique du Dr. MULLER</name>
                 <addr>
                   <houseNumber>4</houseNumber>
@@ -1877,7 +1877,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -1990,7 +1990,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -2124,7 +2124,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -2370,7 +2370,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -2448,7 +2448,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -2529,7 +2529,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -2967,7 +2967,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -3105,7 +3105,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>
@@ -3613,7 +3613,7 @@
                         </name>
                       </assignedPerson>
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Clinique du Dr. MULLER</name>
                         <addr>
                           <houseNumber>4</houseNumber>

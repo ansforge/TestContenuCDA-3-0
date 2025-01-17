@@ -149,7 +149,7 @@
       <!-- [0..1] Organisation de rattachement du PS -->
       <representedOrganization>
         <!-- [0..1] Identifiant de l'organisation de rattachement du PS (FINESS) -->
-        <id root="1.2.250.1.71.4.2.2" extension="101238887" />
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
         <!-- [0..1] Nom de l'organisation de rattachement du PS -->
         <name>Opticien du centre</name>
         <!-- [0..*] Télécom de l'organisation de rattachement du PS -->

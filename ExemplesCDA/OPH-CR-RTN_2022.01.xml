@@ -133,7 +133,7 @@
       </assignedPerson>
       <!-- Identifiant du cabinet de l'orthoptiste FINESS (1+n°FINESS)  -->
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="11238887" />
+        <id root="1.2.250.1.71.4.2.2" extension="1123888725" />
         <name>Cabinet Orthoptiste</name>
         <telecom nullFlavor="NAV" />
         <addr>
@@ -182,7 +182,7 @@
     <assignedCustodian>
       <representedCustodianOrganization>
         <!-- Identifiant du cabinet de l'orthoptiste FINESS (1+n°FINESS)  -->
-        <id root="1.2.250.1.71.4.2.2" extension="11238887" />
+        <id root="1.2.250.1.71.4.2.2" extension="1123888725" />
         <name>Cabinet Orthoptiste</name>
         <telecom value="tel:0442515151" use="WP" />
         <addr>
@@ -298,7 +298,7 @@
           </assignedPerson>
           <representedOrganization>
             <!-- Identifiant du cabinet de l'orthoptiste FINESS (1+n°FINESS)  -->
-            <id root="1.2.250.1.71.4.2.2" extension="11238887" />
+            <id root="1.2.250.1.71.4.2.2" extension="1123888725" />
             <name>Cabinet Orthoptiste</name>
             <telecom nullFlavor="MSK" />
             <addr nullFlavor="MSK" />
@@ -327,7 +327,7 @@
             </name>
           </assignedPerson>
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="11238887"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1123888725"/>
             <name>Cabinet Orthoptiste</name>
           </representedOrganization>
         </assignedEntity>

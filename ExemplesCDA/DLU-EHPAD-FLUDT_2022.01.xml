@@ -156,7 +156,7 @@
       </assignedPerson>
       <!-- ES de rattachement du PS -->
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>EHPAD DE BOULOGNE-BILLANCOURT</name>
         <telecom value="tel:0131931902" use="DIR"/>
         <telecom value="tel:0605061902" use="EC"/>
@@ -203,7 +203,7 @@
   <custodian>
     <assignedCustodian>
       <representedCustodianOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>EHPAD DE BOULOGNE-BILLANCOURT</name>
         <telecom value="tel:0131931902" use="DIR"/>
         <addr>
@@ -273,7 +273,7 @@
       </assignedPerson>
       <!-- ES de rattachement du PS -->
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
         <name>EHPAD DE BOULOGNE-BILLANCOURT</name>
         <telecom value="tel:0131931902" use="DIR"/>
         <telecom value="tel:0605061902" use="EC"/>
@@ -336,7 +336,7 @@
           </assignedPerson>
           <!-- Numéro FINESS de l'ES  -->
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>EHPAD DE BOULOGNE-BILLANCOURT</name>
             <telecom value="tel:0131931902" use="EC"/>
             <addr>
@@ -375,7 +375,7 @@
           </assignedPerson>
           <!-- Numéro FINESS de l'ES  -->
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>EHPAD DE BOULOGNE-BILLANCOURT</name>
             <telecom value="tel:0131931902" use="DIR"/>
             <telecom value="tel:0605061902" use="EC"/>

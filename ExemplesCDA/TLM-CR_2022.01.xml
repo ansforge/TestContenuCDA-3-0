@@ -368,7 +368,7 @@
                     </assignedPerson>
                     <!-- Etablissement de rattachement du PS -->
                     <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Centre de soins le Belvédère</name>
                         <addr>
                             <houseNumber>88</houseNumber>
@@ -423,7 +423,7 @@
                     </assignedPerson>
                     <!-- Etablissement de rattachement du PS -->
                     <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Centre de soins le Belvédère</name>
                         <addr>
                             <houseNumber>88</houseNumber>
@@ -478,7 +478,7 @@
                     </assignedPerson>
                     <!-- Etablissement de rattachement du PS -->
                     <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <name>Centre de soins le Belvédère</name>
                         <addr>
                             <houseNumber>88</houseNumber>

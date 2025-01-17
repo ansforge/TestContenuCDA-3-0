@@ -141,7 +141,7 @@
       </assignedPerson>
       <!-- Numéro FINESS de l'ES (optionnel)  -->
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="101238887" />
+        <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
         <name>Clinique du Belvédère</name>
         <telecom nullFlavor="NAV" />
         <addr>
@@ -413,7 +413,7 @@
             </name>
           </assignedPerson>
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="101238887" />
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
             <name>Clinique du Belvédère</name>
             <telecom nullFlavor="NAV" />
             <addr>
@@ -449,7 +449,7 @@
             </name>
           </assignedPerson>
           <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="101238887" />
+            <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
             <name>Clinique du Belvédère</name>
             <telecom nullFlavor="NAV" />
             <addr>
@@ -464,7 +464,7 @@
       </responsibleParty>
       <location>
         <healthCareFacility>
-          <id root="1.2.250.1.71.4.2.2" extension="101238887" />
+          <id root="1.2.250.1.71.4.2.2" extension="1750803447" />
           <code code="SA04" displayName="Etablissement privé non PSPH" codeSystem="1.2.250.1.71.4.2.4" />
           <location>
             <name>Clinique du Belvédère</name>

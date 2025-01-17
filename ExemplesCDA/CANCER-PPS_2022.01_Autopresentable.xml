@@ -156,7 +156,7 @@
             </c:name>
           </c:assignedPerson>
           <c:representedOrganization>
-            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <c:name>Clinique du Dr. MULLER</c:name>
             <c:addr>
               <c:houseNumber>4</c:houseNumber>
@@ -289,7 +289,7 @@
           <!-- Etablissement de référence -->
           <c:scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <c:name>Clinique du Dr MULLER</c:name>
           </c:scopingOrganization>
@@ -323,7 +323,7 @@
           <!-- Etablissement de référence -->
           <c:scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <c:name>Clinique du Dr MULLER</c:name>
           </c:scopingOrganization>
@@ -357,7 +357,7 @@
           <!-- Etablissement de référence -->
           <c:scopingOrganization>
             <!-- Identifiant FINESS de l'établissement -->
-            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <!-- Nom de l'établissement -->
             <c:name>Clinique du Dr MULLER</c:name>
           </c:scopingOrganization>
@@ -708,7 +708,7 @@
                 </c:name>
               </c:assignedPerson>
               <c:representedOrganization>
-                <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                 <c:name>Clinique du Dr. MULLER</c:name>
                 <c:addr>
                   <c:houseNumber>4</c:houseNumber>
@@ -1887,7 +1887,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2000,7 +2000,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2134,7 +2134,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2380,7 +2380,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2458,7 +2458,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2539,7 +2539,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -2977,7 +2977,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -3115,7 +3115,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>
@@ -3623,7 +3623,7 @@
                         </c:name>
                       </c:assignedPerson>
                       <c:representedOrganization>
-                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+                        <c:id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                         <c:name>Clinique du Dr. MULLER</c:name>
                         <c:addr>
                           <c:houseNumber>4</c:houseNumber>

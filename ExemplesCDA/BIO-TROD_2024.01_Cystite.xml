@@ -198,7 +198,7 @@
          </informationRecipient>
          <!-- Etablissement de rattachement du PS -->
          <receivedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Centre de soins le Belvédère</name>
             <addr>
                <houseNumber>3</houseNumber>
@@ -279,7 +279,7 @@
          </associatedPerson>
          <!-- Etablissement de rattachement du PS -->
          <scopingOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234567897"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Centre de soins le Belvédère</name>
             <addr>
                <houseNumber>3</houseNumber>

@@ -241,7 +241,7 @@
 				</name>
 			</informationRecipient>
 			<receivedOrganization>
-				<id root="1.2.250.1.71.4.2.2" extension="101238887"/>
+				<id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
 				<name>EHPAD DE BOULOGNE-BILLANCOURT</name>
 				<telecom value="tel:0131931902" use="DIR"/>
 				<telecom value="tel:0605061902" use="EC"/>
@@ -499,7 +499,7 @@
 							</effectiveTime>
 							<participant typeCode="DST">
 								<!-- Identifiant de l'ES de destination -->								
-								<templateId root="1.2.250.1.71.4.2.2" extension="101238887"/>
+								<templateId root="1.2.250.1.71.4.2.2" extension="1750803447"/>
 								<participantRole classCode="SDLOC">
 									<!-- Identifiant de l’entité ayant effectué le transfert -->
 									<id root="6DA489A9-D085-4D7E-B669-1EC4973EFA68"/>
