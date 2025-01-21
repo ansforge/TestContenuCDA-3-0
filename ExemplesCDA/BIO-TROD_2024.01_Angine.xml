@@ -143,7 +143,7 @@
             </name>
          </assignedPerson>
          <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234545678"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Pharmacie des 4 cantons</name>
             <telecom value="tel:0105584396"/>
             <addr>
@@ -160,7 +160,7 @@
    <custodian>
       <assignedCustodian>
          <representedCustodianOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234545678"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Pharmacie des 4 cantons</name>
             <telecom value="tel:0105584396"/>
             <addr>
@@ -235,7 +235,7 @@
             </name>
          </assignedPerson>
          <representedOrganization>
-            <id root="1.2.250.1.71.4.2.2" extension="2801234545678"/>
+            <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
             <name>Pharmacie des 4 cantons</name>
             <telecom value="tel:0105584396"/>
             <addr>
@@ -325,7 +325,7 @@
                   </name>
                </assignedPerson>
                <representedOrganization>
-                  <id root="1.2.250.1.71.4.2.2" extension="2801234545678"/>
+                  <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                   <name>Pharmacie des 4 cantons</name>
                   <telecom value="tel:0105584396"/>
                   <addr>
@@ -384,7 +384,7 @@
                   </name>
                </assignedPerson>
                <representedOrganization>
-                  <id root="1.2.250.1.71.4.2.2" extension="2801234545678"/>
+                  <id root="1.2.250.1.71.4.2.2" extension="2801234567"/>
                   <name>Pharmacie des 4 cantons</name>
                   <telecom value="tel:0105584396"/>
                   <addr>
