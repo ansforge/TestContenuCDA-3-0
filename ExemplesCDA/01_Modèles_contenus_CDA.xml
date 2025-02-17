@@ -1540,7 +1540,7 @@
 			<code code="24727-0"  displayName="CT Head W contrast IV"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
 				<!-- [0..1] code CCAM de l'acte documenté  --> 
 				<translation code="ACQH004"  displayName="Scanographie du crâne, de son contenu et du tronc, avec injection intraveineuse de produit de contraste" 
-					codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
+					codeSystem="1.2.250.1.215.300.1" codeSystemName="CCAM"/>
 				<!-- [1..*] Modalité d'imagerie : Valeur issue du JDV_ModaliteAcquisition-CISIS (1.2.250.1.213.1.1.5.618) -->
 				<translation code="CT" displayName="Tomodensitométrie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM">
 					<qualifier>
@@ -2452,7 +2452,7 @@
 							<id root="a6bc7fd2-ec3f-4e01-b567-854b087d1d9b"/>
 							<code code="DDAF004"
 								displayName="'Dilatation intraluminale de deux vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
-								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
+								codeSystem="1.2.250.1.215.300.1" codeSystemName="CCAM"/>
 							<text><reference value="#ant-chir-001-act"/></text>
 							<statusCode code="completed"/>
 							<effectiveTime value="20190812"/>
@@ -2461,10 +2461,10 @@
 								codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7:ActPriority"/>
 							<!-- Voie d'abord -->
 							<approachSiteCode code="F" displayName="ACCÈS INTRALUMINAL TRANSPARIÉTAL"
-								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
+								codeSystem="1.2.250.1.215.300.1" codeSystemName="CCAM"/>
 							<!-- Localisation anatomique -->
 							<targetSiteCode code="DD" displayName="Artères coronaires "
-								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
+								codeSystem="1.2.250.1.215.300.1" codeSystemName="CCAM"/>
 							<!-- Auteur -->
 							<author>
 								<time value="20190812091130+0100"/>
@@ -4649,7 +4649,7 @@
 							<id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D9B" />
 							<!-- Code de l'acte -->
 							<code code="CBLA001" displayName="Pose d'une prothèse auditive implantable dans l'oreille moyenne" 
-								codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM" />
+								codeSystem="1.2.250.1.215.300.1" codeSystemName="CCAM" />
 							<text><reference value="#plan-acte-02-code" /></text>
 							<!-- valeur issue du JDV_HL7_ActStatus-CISIS (2.16.840.1.113883.1.11.15933) -->
 							<statusCode code="active" />

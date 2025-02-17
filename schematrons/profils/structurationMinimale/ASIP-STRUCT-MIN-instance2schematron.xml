@@ -2,11 +2,7 @@
 <mappings>
     <!-- Chapter 1: Release Info (if publication is a release) -->
     <!-- ========= -->
-   <release project="1.2.250.1.213.1.1.1.1" prefix="ASIP-STRUCT-MIN-" signature="develop" date="2018-12-17T01:02:05">
-      <note language="fr-FR">
-         <div>There have been no changes to issues since the last intermediate version or release.</div>
-      </note>
-   </release>
+   <release project="1.2.250.1.213.1.1.1.1" prefix="ASIP-STRUCT-MIN-" signature="develop" date="2024-12-10T11:00:53" versionLabel="1.16"/>
    <!-- Chapter 2: Mapping based on model list -->
    <!-- ========= -->
    <!-- Used to map an instance to a specific Schematron. How to read:
