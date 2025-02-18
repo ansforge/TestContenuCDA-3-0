@@ -6,7 +6,7 @@
         Contrôle du code de la voie d'administration (nullFlavor autorisé)
 
     Paramètres d'appel :
-        "path_jdv" : chemin relatif du fichier jeu de valeurs (ici jdv_humanSubstance_administrationSite a été valorisé à ../../jeuxDeValeurs/JDV_HL7_HumanSubstanceAdministrationSite-CISIS.xml dans le schématron CI-SIS_StructurationMinimale.sch)
+        "path_jdv" : chemin relatif du fichier jeu de valeurs
         "vue_elt" : chemin de l'élément codé dans le CDA affiché dans le message d’erreur
         "xpath_elt" : contexte xpath de l'élément codé à contrôler dans le JDV
         "nullFlavor" : nullFlavor autorisé (1) ou non (0)

@@ -191,6 +191,7 @@
     <include href="../include/jeuxDeValeurs/JDV_Imputabilite.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_Gravite.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_Evolution.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_assignedAuthorCode.sch"/>
     
     
     
@@ -347,6 +348,7 @@
         <active pattern="JDV_Imputabilite"/> 
         <active pattern="JDV_Gravite"/> 
         <active pattern="JDV_Evolution"/> 
+        <active pattern="JDV_assignedAuthorCode"/>
         
     </phase>
     
@@ -376,6 +378,7 @@
         <let name="jdv_imputabilite" value="'../../jeuxDeValeurs/JDV_Imputabilite_CISIS.xml'"/>
         <let name="jdv_gravite" value="'../../jeuxDeValeurs/JDV_Gravite_CISIS.xml'"/>
         <let name="jdv_evolution" value="'../../jeuxDeValeurs/JDV_Evolution_CISIS.xml'"/>
+        <let name="jdv_assignedAuthorCode" value="'../../jeuxDeValeurs/JDV_J01_XdsAuthorSpecialty_CISIS.xml'"/>
     </pattern>
 
 </schema>
