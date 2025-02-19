@@ -132,7 +132,7 @@
     <time value="20110929094914+0100" />
     <assignedAuthor>
       <!-- PS identifié par son N°RPPS -->
-      <id root="1.2.250.1.71.4.2.1" extension="801234567897" />
+      <id root="1.2.250.1.71.4.2.1" extension="401234567890009" />
       <!-- Profession / Spécialité du PS -->
       <code code="G15_10/SM36" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie, opt médicale (SM)" />
       <!-- Adresse du PS -->
@@ -155,7 +155,7 @@
       </assignedPerson>
       <!-- Organisation du PS -->
       <representedOrganization>
-        <id root="1.2.250.1.71.4.2.2" extension="1801234567897" />
+        <id root="1.2.250.1.71.4.2.2" extension="1750100125" />
         <name>Centre Hospitalier d'Angers</name>
         <addr>
           <houseNumber>4</houseNumber>
